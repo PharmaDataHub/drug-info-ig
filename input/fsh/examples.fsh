@@ -199,6 +199,6 @@ Description: "Example of interaction"
 
 * type = #interaction
 
-* interaction.interactant[0].item.concept.text = "Opioids"
-* interaction.interactant[0].item.concept = http://snomed.info/sct#373873005 "Opioid analgesic (substance)"
+* interaction.interactant[0].itemCodeableConcept.text = "Opioids"
+* interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#373873005 "Opioid analgesic (substance)"
 * interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "Drug-Drug Interaction"

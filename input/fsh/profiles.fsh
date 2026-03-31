@@ -20,5 +20,7 @@ Description: "Perfil do recurso MedicationKnowledge para os ingredientes dos pro
 
 * name 1..1
 * definitional.doseForm 1..1
+* definitional.intendedRoute 1..*
 
 
+* clinicalUseIssue 1..*
