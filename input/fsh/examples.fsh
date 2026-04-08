@@ -1,7 +1,7 @@
 
 Instance: LorazepamBluepharma05mg
 InstanceOf: MedicationKnowledgePDH
-Description: "Example of Patient"
+Description: "Example of MedicationKnowledge resource for drug ingredients"
 
 
 * code = http://infarmed.pt/medicamentos#672984 "Lorazepam Bluepharma 0,5 mg [N05BA06]"
