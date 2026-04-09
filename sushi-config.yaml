@@ -164,21 +164,21 @@ jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#620 "Portugal"
 
 pages:
   index.md:
-    title: Home Page   
+    title: Home   
   background.md:
-    title: Background
+    title: Introdução
   spec.md:
-    title: Specification
+    title: Especificação
   downloads.html:
     title: Downloads
   changes.html:
     title: IG Change History
 		
 menu:
-  IG Home: index.html
-  Background: background.html
-  Specification: spec.html
-  Artifact Index: artifacts.html			
+  Home: index.html
+  Introdução: background.html
+  Especificação: spec.html
+  Artefactos: artifacts.html			
   Downloads: downloads.html
 # The parameters property represents IG.definition.parameter. Rather
 # than a list of code/value pairs (as in the ImplementationGuide
