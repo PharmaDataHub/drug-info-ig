@@ -13,14 +13,15 @@ Description: "Perfil do recurso MedicationKnowledge para os ingredientes dos pro
 * definitional.ingredient.item.concept 1..1
 
 * definitional.ingredient.item.reference 0..0
-* definitional.ingredient.item from http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity (required) //mudar
+//* definitional.ingredient.item from http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity (required) //mudar
+
 * definitional.ingredient.strengthQuantity.unit 1..1
 * definitional.ingredient.strengthQuantity MS
 
 
 * definitional.ingredient.type from http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity (required)
 * code 1..1
-* code from http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity (required) //mudar
+//* code from http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity (required) //mudar
 
 
 * name 1..1

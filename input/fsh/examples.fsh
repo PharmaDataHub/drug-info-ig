@@ -22,7 +22,7 @@ Description: "Example of MedicationKnowledge resource for drug ingredients"
 * definitional.ingredient[=].type = http://terminology.hl7.org/CodeSystem/v3-RoleClass#IACT
 
 * medicineClassification.type = http://terminology.hl7.org/CodeSystem/v3-ATC#N05BA06 "Lorazepam" //mudar
-* medicineClassification.classification = http://terminology.hl7.org/ValueSet/v3-ATC#N05BA06 "Lorazepam"
+* medicineClassification.classification = http://terminology.hl7.org/CodeSystem/v3-ATC#N05BA06 "Lorazepam"
 
 * definitional.doseForm = http://terminology.hl7.org/CodeSystem/v3-ActCode#TAB "Tablet" //mudar
 * definitional.intendedRoute = http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration#PO "Oral" //mudar
@@ -62,7 +62,7 @@ Description: "Example of MedicationKnowledge resource for drug ingredients"
 
 * indicationGuideline[0].dosingGuideline[0].dosage.dosage.maxDosePerPeriod.numerator = 2.5 'mg' "milligram"
 * indicationGuideline[0].dosingGuideline[0].dosage.dosage.maxDosePerPeriod.denominator = 1 'd' "day"
-* indicationGuideline[0].dosingGuideline[0].dosage.type = http://terminology.hl7.org/CodeSystem/v3-ActCode#MAXD "Maximum Dose" //mudar
+* indicationGuideline[0].dosingGuideline[0].dosage.type = DosageTypeCS#maximum-single-dose "Maximum Single Dose"
 
 
 * indicationGuideline[0].dosingGuideline[0].patientCharacteristic[0].type.text = "Population"
