@@ -56,7 +56,7 @@ Description: "Perfil do recurso MedicationKnowledge para os ingredientes dos pro
 * indicationGuideline.dosingGuideline.dosage.dosage.maxDosePerPeriod MS
 * indicationGuideline.dosingGuideline.patientCharacteristic MS
 
-* indicationGuideline.dosingGuideline.dosage.type from http://terminology.hl7.org/CodeSystem/v3-ActCode (required) //mudar
+* indicationGuideline.dosingGuideline.dosage.type from DosageTypeVS (required) //mudar
 
 
 Profile: InteracoesPDH

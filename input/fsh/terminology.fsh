@@ -25,3 +25,35 @@ Description: "ValueSet com os tipos de preço ativos definidos pelo INFARMED."
 * ^experimental = false
 
 * include codes from system TipoPrecoINFARMEDCS
+
+
+CodeSystem: DosageTypeCS
+Id: dosage-type-cs
+Title: "Dosage Type CodeSystem"
+Description: "Defines the semantic type of dosage instructions or constraints."
+* ^status = #active
+* ^content = #complete
+
+* #single-dose "Single Dose"
+* #daily-dose "Daily Dose"
+* #divided-dose "Divided Dose"
+* #maximum-single-dose "Maximum Single Dose"
+* #maximum-daily-dose "Maximum Daily Dose"
+* #maximum-dose-per-period "Maximum Dose per Period"
+* #maximum-treatment-duration "Maximum Treatment Duration"
+* #minimum-dose "Minimum Dose"
+* #titration-dose "Titration Dose"
+* #loading-dose "Loading Dose"
+* #maintenance-dose "Maintenance Dose"
+* #as-needed-dose "As Needed Dose"
+* #weight-based-dose "Weight-based Dose"
+* #body-surface-area-dose "Body Surface Area-based Dose"
+
+
+ValueSet: DosageTypeVS
+Id: dosage-type-vs
+Title: "Dosage Type ValueSet"
+Description: "ValueSet for types of dosage instructions and constraints."
+* ^status = #active
+
+* include codes from system DosageTypeCS

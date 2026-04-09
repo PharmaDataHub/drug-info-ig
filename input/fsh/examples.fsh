@@ -29,11 +29,11 @@ Description: "Example of MedicationKnowledge resource for drug ingredients"
 
 * cost[0].costMoney.value = 1.85 
 * cost[0].costMoney.currency = #EUR
-* cost[0].type = http://terminology.hl7.org/CodeSystem/v3-ActCode#COST "Preco Referencia" //mudar 
+* cost[0].type = TipoPrecoINFARMEDCS#101 "Preço Ref"
 
 * cost[1].costMoney.value = 1.56
 * cost[1].costMoney.currency = #EUR
-* cost[1].type = http://terminology.hl7.org/CodeSystem/v3-ActCode#COST "PVPMAX" //mudar 
+* cost[1].type = TipoPrecoINFARMEDCS#401 "PVP Max"
 
 * clinicalUseIssue[+] = Reference(LorazepamBluepharma05mg-CUD)
 * clinicalUseIssue[+] = Reference(LorazepamBluepharma05mg-CUD1)
@@ -201,4 +201,4 @@ Description: "Example of interaction"
 
 * interaction.interactant[0].itemCodeableConcept.text = "Opioids"
 * interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#373873005 "Opioid analgesic (substance)"
-* interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "Drug-Drug Interaction"
+* interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
