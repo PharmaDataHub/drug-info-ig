@@ -33,8 +33,8 @@ Description: "Example of MedicationKnowledge resource for Cipralex 20 mg/ml Gota
 * medicineClassification.type = http://terminology.hl7.org/CodeSystem/v3-ATC#N06AB10 "Escitalopram"
 * medicineClassification.classification = http://terminology.hl7.org/CodeSystem/v3-ATC#N06AB10 "Escitalopram"
 
-* definitional.doseForm = http://terminology.hl7.org/CodeSystem/v3-ActCode#[PREENCHER] "Gotas orais, solução"
-* definitional.intendedRoute = http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration#PO "Oral"
+* definitional.doseForm = FormaFarmaceuticaCS#1 "Gotas orais, solução"
+* definitional.intendedRoute = ViaAdministracaoCS#48 "Via oral"
 
 * clinicalUseIssue[+] = Reference(CipraplexGotas-CUD-contra1)
 * clinicalUseIssue[+] = Reference(CipraplexGotas-CUD-contra2)
