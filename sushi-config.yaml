@@ -169,6 +169,8 @@ pages:
     title: Introdução
   spec.md:
     title: Especificação
+  terminology.md:
+    title: Terminologias
   downloads.html:
     title: Downloads
   changes.html:
@@ -177,7 +179,9 @@ pages:
 menu:
   Home: index.html
   Introdução: background.html
-  Especificação: spec.html
+  Especificação: 
+    Conteúdo: spec.html
+    Terminologias: terminology.html
   Artefactos: artifacts.html			
   Downloads: downloads.html
 # The parameters property represents IG.definition.parameter. Rather

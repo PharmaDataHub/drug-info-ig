@@ -1,4 +1,4 @@
-|                                                     ATC Code                                                     |             Specification             |   |
+|                                                     ATC Code                                                     |             Specification             |  Exemplo  |
 |:----------------------------------------------------------------------------------------------------------------:|:-------------------------------------:|---|
 | A10BK - Inibidores do co-transportador 2   sódio-glucose (SGLT2)                                                 | Forxiga [A10BK01]                     |   |
 | C07 - AGENTES BLOQUEADORES DOS RECEPTORES   ADRENÉRGICOS BETA                                                    | Concor [C07AB07]                      |   |
