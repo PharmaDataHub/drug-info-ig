@@ -43,11 +43,11 @@ Este documento apresenta o mapeamento dos requisitos funcionais (extraídos da e
 
 **[EM_FALTA]:**
 
-| Elemento | Recurso FHIR | Notas |
-|---|---|---|
-| Alergias do doente | AllergyIntolerance.code | Registo de alergias do utilizador |
-| Medicação ativa | MedicationStatement.status + MedicationStatement.medication[x] | Lista de medicação ativa |
-| Indicador alergénico | Ingredient.allergenicIndicator | Flag que indica se o ingrediente é alergénico |
+| Elemento | Recurso FHIR | Notas | Owner |
+|---|---|---|---|
+| Alergias do doente | AllergyIntolerance.code | Registo de alergias do utilizador | HSC |
+| Medicação ativa | MedicationStatement.status + MedicationStatement.medication[x] | Lista de medicação ativa | HSC |
+| Indicador alergénico | Ingredient.allergenicIndicator | Flag que indica se o ingrediente é alergénico | PDH |
 
 ---
 
@@ -76,10 +76,10 @@ O mapeamento é idêntico ao **PRF-023**, acrescendo:
 
 **[EM_FALTA]:**
 
-| Elemento | Recurso FHIR | Notas |
-|---|---|---|
-| Prescrição (regime prescrito) | MedicationRequest.dosageInstruction | Dose, frequência, rota e método prescritos |
-| Medicação prescrita | MedicationRequest.medication[x] | Referência ao medicamento prescrito |
+| Elemento | Recurso FHIR | Notas | Owner |
+|---|---|---|---|
+| Prescrição (regime prescrito) | MedicationRequest.dosageInstruction | Dose, frequência, rota e método prescritos | HSC |
+| Medicação prescrita | MedicationRequest.medication[x] | Referência ao medicamento prescrito | HSC |
 
 ---
 
@@ -99,12 +99,12 @@ O mapeamento é idêntico ao **PRF-023**, acrescendo:
 
 **[EM_FALTA]:**
 
-| Elemento | Recurso FHIR | Notas |
-|---|---|---|
-| Dose mínima explícita | — | Não existe elemento nativo no Dosage para dose mínima |
-| Dosage.maxDosePerAdministration | Dosage.maxDosePerAdministration | Dose máxima por administração (não incluído no perfil) |
-| Dosage.maxDosePerLifetime | Dosage.maxDosePerLifetime | Dose máxima total na vida (não incluído no perfil) |
-| Prescrição (regime prescrito) | MedicationRequest.dosageInstruction | Para comparação com limites |
+| Elemento | Recurso FHIR | Notas | Owner |
+|---|---|---|---|
+| Dose mínima explícita | — | Não existe elemento nativo no Dosage para dose mínima | PDH |
+| Dosage.maxDosePerAdministration | Dosage.maxDosePerAdministration | Dose máxima por administração (não incluído no perfil) | PDH |
+| Dosage.maxDosePerLifetime | Dosage.maxDosePerLifetime | Dose máxima total na vida (não incluído no perfil) | PDH |
+| Prescrição (regime prescrito) | MedicationRequest.dosageInstruction | Para comparação com limites | HSC |
 
 ---
 
@@ -131,11 +131,11 @@ O mapeamento é idêntico ao **PRF-025** e **PRF-026**, dependendo do tipo de de
 
 **[EM_FALTA]:**
 
-| Elemento | Recurso FHIR | Notas |
-|---|---|---|
-| Lista de medicação ativa | MedicationStatement.status + MedicationStatement.medication[x] | Para comparação entre medicamentos |
-| Ingrediente — substância | Ingredient.substance.code[x] | Alternativa para obter substância ativa |
-| Classificação fonte | MedicationKnowledge.medicineClassification.source[x] | Origem da classificação (ATC) |
+| Elemento | Recurso FHIR | Notas | Owner |
+|---|---|---|---|
+| Lista de medicação ativa | MedicationStatement.status + MedicationStatement.medication[x] | Para comparação entre medicamentos | HSC |
+| Ingrediente — substância | Ingredient.substance.code[x] | Alternativa para obter substância ativa | PDH |
+| Classificação fonte | MedicationKnowledge.medicineClassification.source[x] | Origem da classificação (ATC) | PDH |
 
 ---
 
@@ -147,9 +147,9 @@ O mapeamento é idêntico ao **PRF-031**, acrescendo:
 
 **[EM_FALTA]:**
 
-| Elemento | Recurso FHIR | Notas |
-|---|---|---|
-| Regime PRN vs regular | MedicationStatement.dosage.asNeeded[x] ou MedicationRequest.dosageInstruction.asNeeded[x] | Distinção PRN (sos) vs regular |
+| Elemento | Recurso FHIR | Notas | Owner |
+|---|---|---|---|
+| Regime PRN vs regular | MedicationStatement.dosage.asNeeded[x] ou MedicationRequest.dosageInstruction.asNeeded[x] | Distinção PRN (sos) vs regular | HSC |
 
 ---
 
@@ -166,15 +166,15 @@ O mapeamento é idêntico ao **PRF-031**, acrescendo:
 
 **[EM_FALTA]:**
 
-| Elemento | Recurso FHIR | Notas |
-|---|---|---|
-| Medicamentos relacionados | MedicationKnowledge.relatedMedicationKnowledge.type + .reference | Relação entre medicamentos (alternativas) |
-| Medicamento associado | MedicationKnowledge.associatedMedication | Medicamento alternativo associado |
-| Custo de embalagem | MedicationKnowledge.packaging.cost | Custo ao nível da embalagem |
-| Produto embalado | MedicationKnowledge.packaging.packagedProduct | Referência ao produto embalado |
-| Data efetiva do custo | MedicationKnowledge.cost.effectiveDate | Validade do preço |
-| Fonte do custo | MedicationKnowledge.cost.source | Fonte da informação de preço |
-| Lógica de "alternativa custo-efetiva" | — | Não existe elemento nativo; requer lógica de comparação por classe e preço |
+| Elemento | Recurso FHIR | Notas | Owner |
+|---|---|---|---|
+| Medicamentos relacionados | MedicationKnowledge.relatedMedicationKnowledge.type + .reference | Relação entre medicamentos (alternativas) | PDH |
+| Medicamento associado | MedicationKnowledge.associatedMedication | Medicamento alternativo associado | PDH |
+| Custo de embalagem | MedicationKnowledge.packaging.cost | Custo ao nível da embalagem | PDH |
+| Produto embalado | MedicationKnowledge.packaging.packagedProduct | Referência ao produto embalado | PDH |
+| Data efetiva do custo | MedicationKnowledge.cost.effectiveDate | Validade do preço | PDH |
+| Fonte do custo | MedicationKnowledge.cost.source | Fonte da informação de preço | PDH |
+| Lógica de "alternativa custo-efetiva" | — | Não existe elemento nativo; requer lógica de comparação por classe e preço | PDH |
 
 ---
 
@@ -191,16 +191,16 @@ O mapeamento é idêntico ao **PRF-031**, acrescendo:
 
 **[EM_FALTA]:**
 
-| Elemento | Recurso FHIR | Notas |
-|---|---|---|
-| Condições clínicas do doente | Condition.code + Condition.clinicalStatus | Registo de condições de saúde |
-| Doença/procedimento da indicação | ClinicalUseDefinition.indication.diseaseSymptomProcedure | [EM_FALTA] no perfil IndicacoesPDH |
-| Estado da doença | ClinicalUseDefinition.indication.diseaseStatus | [EM_FALTA] no perfil IndicacoesPDH |
-| Comorbilidade | ClinicalUseDefinition.indication.comorbidity | [EM_FALTA] no perfil IndicacoesPDH |
-| Doença/procedimento da contraindicação | ClinicalUseDefinition.contraindication.diseaseSymptomProcedure | [EM_FALTA] no perfil ContraIndicacoesPDH |
-| Estado da doença (contraindicação) | ClinicalUseDefinition.contraindication.diseaseStatus | [EM_FALTA] no perfil ContraIndicacoesPDH |
-| Comorbilidade (contraindicação) | ClinicalUseDefinition.contraindication.comorbidity | [EM_FALTA] no perfil ContraIndicacoesPDH |
-| Medicação ativa do doente | MedicationStatement.medication[x] | Lista de medicação ativa |
+| Elemento | Recurso FHIR | Notas | Owner |
+|---|---|---|---|
+| Condições clínicas do doente | Condition.code + Condition.clinicalStatus | Registo de condições de saúde | HSC |
+| Doença/procedimento da indicação | ClinicalUseDefinition.indication.diseaseSymptomProcedure | [EM_FALTA] no perfil IndicacoesPDH | PDH |
+| Estado da doença | ClinicalUseDefinition.indication.diseaseStatus | [EM_FALTA] no perfil IndicacoesPDH | PDH |
+| Comorbilidade | ClinicalUseDefinition.indication.comorbidity | [EM_FALTA] no perfil IndicacoesPDH | PDH |
+| Doença/procedimento da contraindicação | ClinicalUseDefinition.contraindication.diseaseSymptomProcedure | [EM_FALTA] no perfil ContraIndicacoesPDH | PDH |
+| Estado da doença (contraindicação) | ClinicalUseDefinition.contraindication.diseaseStatus | [EM_FALTA] no perfil ContraIndicacoesPDH | PDH |
+| Comorbilidade (contraindicação) | ClinicalUseDefinition.contraindication.comorbidity | [EM_FALTA] no perfil ContraIndicacoesPDH | PDH |
+| Medicação ativa do doente | MedicationStatement.medication[x] | Lista de medicação ativa | HSC |
 
 ---
 
@@ -215,14 +215,14 @@ O mapeamento é idêntico ao **PRF-031**, acrescendo:
 
 **[EM_FALTA]:**
 
-| Elemento | Recurso FHIR | Notas |
-|---|---|---|
-| Condições clínicas do doente | Condition.code + Condition.clinicalStatus | Para cruzamento com contraindicações |
-| Doença/procedimento | ClinicalUseDefinition.contraindication.diseaseSymptomProcedure | [EM_FALTA] no perfil ContraIndicacoesPDH |
-| Estado da doença | ClinicalUseDefinition.contraindication.diseaseStatus | [EM_FALTA] no perfil ContraIndicacoesPDH |
-| Comorbilidade | ClinicalUseDefinition.contraindication.comorbidity | [EM_FALTA] no perfil ContraIndicacoesPDH |
-| Outra terapia — relação | ClinicalUseDefinition.contraindication.otherTherapy.relationshipType | [EM_FALTA] no perfil ContraIndicacoesPDH |
-| Outra terapia — tratamento | ClinicalUseDefinition.contraindication.otherTherapy.treatment | [EM_FALTA] no perfil ContraIndicacoesPDH |
+| Elemento | Recurso FHIR | Notas | Owner |
+|---|---|---|---|
+| Condições clínicas do doente | Condition.code + Condition.clinicalStatus | Para cruzamento com contraindicações | HSC |
+| Doença/procedimento | ClinicalUseDefinition.contraindication.diseaseSymptomProcedure | [EM_FALTA] no perfil ContraIndicacoesPDH | PDH |
+| Estado da doença | ClinicalUseDefinition.contraindication.diseaseStatus | [EM_FALTA] no perfil ContraIndicacoesPDH | PDH |
+| Comorbilidade | ClinicalUseDefinition.contraindication.comorbidity | [EM_FALTA] no perfil ContraIndicacoesPDH | PDH |
+| Outra terapia — relação | ClinicalUseDefinition.contraindication.otherTherapy.relationshipType | [EM_FALTA] no perfil ContraIndicacoesPDH | PDH |
+| Outra terapia — tratamento | ClinicalUseDefinition.contraindication.otherTherapy.treatment | [EM_FALTA] no perfil ContraIndicacoesPDH | PDH |
 
 ---
 
@@ -237,16 +237,16 @@ O mapeamento é idêntico ao **PRF-031**, acrescendo:
 
 **[EM_FALTA]:**
 
-| Elemento | Recurso FHIR | Notas |
-|---|---|---|
-| Condições clínicas do doente | Condition.code + Condition.clinicalStatus | Para comparação com indicações |
-| Doença/procedimento da indicação | ClinicalUseDefinition.indication.diseaseSymptomProcedure | [EM_FALTA] no perfil IndicacoesPDH |
-| Estado da doença | ClinicalUseDefinition.indication.diseaseStatus | [EM_FALTA] no perfil IndicacoesPDH |
-| Comorbilidade | ClinicalUseDefinition.indication.comorbidity | [EM_FALTA] no perfil IndicacoesPDH |
-| Efeito pretendido | ClinicalUseDefinition.indication.intendedEffect | [EM_FALTA] no perfil IndicacoesPDH |
-| Duração da indicação | ClinicalUseDefinition.indication.duration[x] | [EM_FALTA] no perfil IndicacoesPDH |
-| Indicador explícito de "off-label" | — | Não existe elemento nativo no FHIR |
-| Indicador de "indicação em falta" | — | Não existe elemento nativo no FHIR |
+| Elemento | Recurso FHIR | Notas | Owner |
+|---|---|---|---|
+| Condições clínicas do doente | Condition.code + Condition.clinicalStatus | Para comparação com indicações | HSC |
+| Doença/procedimento da indicação | ClinicalUseDefinition.indication.diseaseSymptomProcedure | [EM_FALTA] no perfil IndicacoesPDH | PDH |
+| Estado da doença | ClinicalUseDefinition.indication.diseaseStatus | [EM_FALTA] no perfil IndicacoesPDH | PDH |
+| Comorbilidade | ClinicalUseDefinition.indication.comorbidity | [EM_FALTA] no perfil IndicacoesPDH | PDH |
+| Efeito pretendido | ClinicalUseDefinition.indication.intendedEffect | [EM_FALTA] no perfil IndicacoesPDH | PDH |
+| Duração da indicação | ClinicalUseDefinition.indication.duration[x] | [EM_FALTA] no perfil IndicacoesPDH | PDH |
+| Indicador explícito de "off-label" | — | Não existe elemento nativo no FHIR | PDH |
+| Indicador de "indicação em falta" | — | Não existe elemento nativo no FHIR | PDH |
 
 ---
 
@@ -269,13 +269,13 @@ O mapeamento é idêntico ao **PRF-031**, acrescendo:
 
 **[EM_FALTA]:**
 
-| Elemento | Recurso FHIR | Notas |
-|---|---|---|
-| Idade do doente | Patient.birthDate | Para avaliação de PIM/POM por idade |
-| Condições clínicas do doente | Condition.code + Condition.clinicalStatus | Para avaliação de PIM/POM |
-| Respostas ao rastreio | QuestionnaireResponse.item.answer | Resultados do instrumento de rastreio (ex.: START/STOPP) |
-| Medicação ativa com detalhes | MedicationStatement.status + .medication[x] + .effective[x] + .dosage | Inclui data de início e posologia |
-| Prescrição com detalhes | MedicationRequest.status + .medication[x] + .authoredOn + .dosageInstruction | Alternativa à MedicationStatement |
+| Elemento | Recurso FHIR | Notas | Owner |
+|---|---|---|---|
+| Idade do doente | Patient.birthDate | Para avaliação de PIM/POM por idade | HSC |
+| Condições clínicas do doente | Condition.code + Condition.clinicalStatus | Para avaliação de PIM/POM | HSC |
+| Respostas ao rastreio | QuestionnaireResponse.item.answer | Resultados do instrumento de rastreio (ex.: START/STOPP) | HSC |
+| Medicação ativa com detalhes | MedicationStatement.status + .medication[x] + .effective[x] + .dosage | Inclui data de início e posologia | HSC |
+| Prescrição com detalhes | MedicationRequest.status + .medication[x] + .authoredOn + .dosageInstruction | Alternativa à MedicationStatement | HSC |
 
 ---
 
@@ -296,15 +296,15 @@ O mapeamento é idêntico ao **PRF-031**, acrescendo:
 
 **[EM_FALTA]:**
 
-| Elemento | Recurso FHIR | Notas |
-|---|---|---|
-| Eventos adversos | ClinicalUseDefinition (type=undesirable-effect) | [EM_FALTA] perfil para efeitos indesejáveis |
-| Interação — interagente | ClinicalUseDefinition.interaction.interactant.item[x] | [EM_FALTA] no perfil InteracoesPDH |
-| Interação — tipo | ClinicalUseDefinition.interaction.type | [EM_FALTA] no perfil InteracoesPDH |
-| Interação — efeito | ClinicalUseDefinition.interaction.effect | [EM_FALTA] no perfil InteracoesPDH |
-| Interação — incidência | ClinicalUseDefinition.interaction.incidence | [EM_FALTA] no perfil InteracoesPDH |
-| Interação — gestão | ClinicalUseDefinition.interaction.management | [EM_FALTA] no perfil InteracoesPDH |
-| Propriedades farmacodinâmicas | MedicationKnowledge.definitional.drugCharacteristic.type + .value[x] | [EM_FALTA] no perfil (ex.: atividade anticolinérgica) |
+| Elemento | Recurso FHIR | Notas | Owner |
+|---|---|---|---|
+| Eventos adversos | ClinicalUseDefinition (type=undesirable-effect) | [EM_FALTA] perfil para efeitos indesejáveis | PDH |
+| Interação — interagente | ClinicalUseDefinition.interaction.interactant.item[x] | [EM_FALTA] no perfil InteracoesPDH | PDH |
+| Interação — tipo | ClinicalUseDefinition.interaction.type | [EM_FALTA] no perfil InteracoesPDH | PDH |
+| Interação — efeito | ClinicalUseDefinition.interaction.effect | [EM_FALTA] no perfil InteracoesPDH | PDH |
+| Interação — incidência | ClinicalUseDefinition.interaction.incidence | [EM_FALTA] no perfil InteracoesPDH | PDH |
+| Interação — gestão | ClinicalUseDefinition.interaction.management | [EM_FALTA] no perfil InteracoesPDH | PDH |
+| Propriedades farmacodinâmicas | MedicationKnowledge.definitional.drugCharacteristic.type + .value[x] | [EM_FALTA] no perfil (ex.: atividade anticolinérgica) | PDH |
 
 ---
 
@@ -318,13 +318,13 @@ O mapeamento é idêntico ao **PRF-031**, acrescendo:
 
 **[EM_FALTA]:**
 
-| Elemento | Recurso FHIR | Notas |
-|---|---|---|
-| Definição do plano/clinical guideline | PlanDefinition.library + PlanDefinition.action.condition.kind + .expression | Regras computáveis do framework |
-| Biblioteca de lógica | Library.type + .content + .parameter + .dataRequirement | Lógica executável (CQL, etc.) |
-| Recurso/elemento específico para START/STOPP | — | Não existe elemento nativo no FHIR |
-| Recurso/elemento específico para Beers | — | Não existe elemento nativo no FHIR |
-| Recurso/elemento específico para EU(7)-PIM | — | Não existe elemento nativo no FHIR |
+| Elemento | Recurso FHIR | Notas | Owner |
+|---|---|---|---|
+| Definição do plano/clinical guideline | PlanDefinition.library + PlanDefinition.action.condition.kind + .expression | Regras computáveis do framework | PDH |
+| Biblioteca de lógica | Library.type + .content + .parameter + .dataRequirement | Lógica executável (CQL, etc.) | PDH |
+| Recurso/elemento específico para START/STOPP | — | Não existe elemento nativo no FHIR | PDH |
+| Recurso/elemento específico para Beers | — | Não existe elemento nativo no FHIR | PDH |
+| Recurso/elemento específico para EU(7)-PIM | — | Não existe elemento nativo no FHIR | PDH |
 
 ---
 
@@ -343,15 +343,15 @@ O mapeamento é idêntico ao **PRF-031**, acrescendo:
 
 **[EM_FALTA]:**
 
-| Elemento | Recurso FHIR | Notas |
-|---|---|---|
-| Condições clínicas do doente | Condition.code + Condition.clinicalStatus | Para avaliar necessidade de ajuste |
-| Medicação ativa com data de início | MedicationStatement.status + .medication[x] + .effective[x] + .dosage | Inclui data de início e posologia |
-| Parâmetros clínicos/biométricos | Observation.code + .value[x] + .effective[x] | PA, HbA1c, etc. |
-| Resultados PROMs | QuestionnaireResponse.item.answer | Patient-reported outcomes |
-| Metas terapêuticas | Goal.target.measure + Goal.target.detail[x] | Alvos terapêuticos específicos |
-| Regra computável de inércia | PlanDefinition.library + PlanDefinition.action.condition.expression + Library.content | Lógica de deteção de inércia |
-| Conceito explícito "inércia terapêutica" | — | Não existe elemento nativo no FHIR |
+| Elemento | Recurso FHIR | Notas | Owner |
+|---|---|---|---|
+| Condições clínicas do doente | Condition.code + Condition.clinicalStatus | Para avaliar necessidade de ajuste | HSC |
+| Medicação ativa com data de início | MedicationStatement.status + .medication[x] + .effective[x] + .dosage | Inclui data de início e posologia | HSC |
+| Parâmetros clínicos/biométricos | Observation.code + .value[x] + .effective[x] | PA, HbA1c, etc. | HSC |
+| Resultados PROMs | QuestionnaireResponse.item.answer | Patient-reported outcomes | HSC |
+| Metas terapêuticas | Goal.target.measure + Goal.target.detail[x] | Alvos terapêuticos específicos | HSC |
+| Regra computável de inércia | PlanDefinition.library + PlanDefinition.action.condition.expression + Library.content | Lógica de deteção de inércia | PDH |
+| Conceito explícito "inércia terapêutica" | — | Não existe elemento nativo no FHIR | PDH |
 
 ---
 
@@ -361,63 +361,63 @@ O mapeamento é idêntico ao **PRF-031**, acrescendo:
 
 Os seguintes elementos, referenciados nos requisitos mas **não incluídos no perfil**, necessitam de ser adicionados ou tratados noutros perfis:
 
-| Elemento | Path | Requisitos |
-|---|---|---|
-| drugCharacteristic | MedicationKnowledge.definitional.drugCharacteristic | FR-041 (propriedades farmacodinâmicas) |
-| relatedMedicationKnowledge | MedicationKnowledge.relatedMedicationKnowledge | PRF-037 (alternativas custo-efetivas) |
-| associatedMedication | MedicationKnowledge.associatedMedication | PRF-037 (alternativas custo-efetivas) |
-| packaging.cost | MedicationKnowledge.packaging.cost | PRF-037 (preço por embalagem) |
-| packaging.packagedProduct | MedicationKnowledge.packaging.packagedProduct | PRF-037 (referência ao produto embalado) |
-| cost.effectiveDate | MedicationKnowledge.cost.effectiveDate | PRF-037 (validade do preço) |
-| cost.source | MedicationKnowledge.cost.source | PRF-037 (fonte do preço) |
-| maxDosePerAdministration | Dosage.maxDosePerAdministration | PRF-026 (dose máxima por administração) |
-| maxDosePerLifetime | Dosage.maxDosePerLifetime | PRF-026 (dose máxima total na vida) |
+| Elemento | Path | Requisitos | Owner |
+|---|---|---|---|
+| drugCharacteristic | MedicationKnowledge.definitional.drugCharacteristic | FR-041 (propriedades farmacodinâmicas) | PDH |
+| relatedMedicationKnowledge | MedicationKnowledge.relatedMedicationKnowledge | PRF-037 (alternativas custo-efetivas) | PDH |
+| associatedMedication | MedicationKnowledge.associatedMedication | PRF-037 (alternativas custo-efetivas) | PDH |
+| packaging.cost | MedicationKnowledge.packaging.cost | PRF-037 (preço por embalagem) | PDH |
+| packaging.packagedProduct | MedicationKnowledge.packaging.packagedProduct | PRF-037 (referência ao produto embalado) | PDH |
+| cost.effectiveDate | MedicationKnowledge.cost.effectiveDate | PRF-037 (validade do preço) | PDH |
+| cost.source | MedicationKnowledge.cost.source | PRF-037 (fonte do preço) | PDH |
+| maxDosePerAdministration | Dosage.maxDosePerAdministration | PRF-026 (dose máxima por administração) | PDH |
+| maxDosePerLifetime | Dosage.maxDosePerLifetime | PRF-026 (dose máxima total na vida) | PDH |
 
 ### Lacunas nos Perfis ClinicalUseDefinition (IndicacoesPDH / ContraIndicacoesPDH / InteracoesPDH)
 
 Os seguintes elementos dos perfis derivados de ClinicalUseDefinition necessitam de ser adicionados:
 
-| Elemento | Perfil | Requisitos |
-|---|---|---|
-| indication.diseaseSymptomProcedure | IndicacoesPDH | PRF-028, PRF-030 |
-| indication.diseaseStatus | IndicacoesPDH | PRF-028, PRF-030 |
-| indication.comorbidity | IndicacoesPDH | PRF-028, PRF-030 |
-| indication.intendedEffect | IndicacoesPDH | PRF-030 |
-| indication.duration[x] | IndicacoesPDH | PRF-030 |
-| contraindication.diseaseSymptomProcedure | ContraIndicacoesPDH | PRF-028, PRF-029 |
-| contraindication.diseaseStatus | ContraIndicacoesPDH | PRF-028, PRF-029 |
-| contraindication.comorbidity | ContraIndicacoesPDH | PRF-028, PRF-029 |
-| contraindication.otherTherapy.relationshipType | ContraIndicacoesPDH | PRF-029 |
-| contraindication.otherTherapy.treatment | ContraIndicacoesPDH | PRF-029 |
-| interaction.interactant.item[x] | InteracoesPDH | FR-041 |
-| interaction.type | InteracoesPDH | FR-041 |
-| interaction.effect | InteracoesPDH | FR-041 |
-| interaction.incidence | InteracoesPDH | FR-041 |
-| interaction.management | InteracoesPDH | FR-041 |
+| Elemento | Perfil | Requisitos | Owner |
+|---|---|---|---|
+| indication.diseaseSymptomProcedure | IndicacoesPDH | PRF-028, PRF-030 | PDH |
+| indication.diseaseStatus | IndicacoesPDH | PRF-028, PRF-030 | PDH |
+| indication.comorbidity | IndicacoesPDH | PRF-028, PRF-030 | PDH |
+| indication.intendedEffect | IndicacoesPDH | PRF-030 | PDH |
+| indication.duration[x] | IndicacoesPDH | PRF-030 | PDH |
+| contraindication.diseaseSymptomProcedure | ContraIndicacoesPDH | PRF-028, PRF-029 | PDH |
+| contraindication.diseaseStatus | ContraIndicacoesPDH | PRF-028, PRF-029 | PDH |
+| contraindication.comorbidity | ContraIndicacoesPDH | PRF-028, PRF-029 | PDH |
+| contraindication.otherTherapy.relationshipType | ContraIndicacoesPDH | PRF-029 | PDH |
+| contraindication.otherTherapy.treatment | ContraIndicacoesPDH | PRF-029 | PDH |
+| interaction.interactant.item[x] | InteracoesPDH | FR-041 | PDH |
+| interaction.type | InteracoesPDH | FR-041 | PDH |
+| interaction.effect | InteracoesPDH | FR-041 | PDH |
+| interaction.incidence | InteracoesPDH | FR-041 | PDH |
+| interaction.management | InteracoesPDH | FR-041 | PDH |
 
 ### Lacunas Estruturais (sem recurso FHIR dedicado)
 
-| Necessidade | Requisitos | Notas |
-|---|---|---|
-| Dose mínima explícita | PRF-026 | Dosage não tem elemento nativo para dose mínima |
-| Indicador de "off-label" | PRF-030 | Não existe elemento nativo no FHIR |
-| Indicador de "indicação em falta" | PRF-030 | Não existe elemento nativo no FHIR |
-| Lógica "alternativa custo-efetiva" | PRF-037 | Requer lógica de comparação por classe e preço |
-| Regras START/STOPP / Beers / EU(7)-PIM | PRF-034 | Não existem recursos FHIR dedicados; usar PlanDefinition + Library |
-| Conceito "inércia terapêutica" | PRF-035 | Não existe elemento nativo no FHIR |
-| Efeitos indesejáveis (perfil) | FR-041 | Falta perfil ClinicalUseDefinition (type=undesirable-effect) |
+| Necessidade | Requisitos | Notas | Owner |
+|---|---|---|---|
+| Dose mínima explícita | PRF-026 | Dosage não tem elemento nativo para dose mínima | PDH |
+| Indicador de "off-label" | PRF-030 | Não existe elemento nativo no FHIR | PDH |
+| Indicador de "indicação em falta" | PRF-030 | Não existe elemento nativo no FHIR | PDH |
+| Lógica "alternativa custo-efetiva" | PRF-037 | Requer lógica de comparação por classe e preço | PDH |
+| Regras START/STOPP / Beers / EU(7)-PIM | PRF-034 | Não existem recursos FHIR dedicados; usar PlanDefinition + Library | PDH |
+| Conceito "inércia terapêutica" | PRF-035 | Não existe elemento nativo no FHIR | PDH |
+| Efeitos indesejáveis (perfil) | FR-041 | Falta perfil ClinicalUseDefinition (type=undesirable-effect) | PDH |
 
 ### Recursos Externos Necessários (fora do âmbito do MedicationKnowledgePDH)
 
-| Recurso | Requisitos |
-|---|---|
-| Patient | PRF-033, PRF-035 |
-| Condition | PRF-028, PRF-029, PRF-030, PRF-033, PRF-035 |
-| AllergyIntolerance | PRF-023, PRF-024 |
-| MedicationStatement | PRF-023, PRF-024, PRF-031, PRF-032, PRF-033, PRF-035 |
-| MedicationRequest | PRF-025, PRF-026 |
-| Observation | PRF-035 |
-| QuestionnaireResponse | PRF-033, PRF-035 |
-| Goal | PRF-035 |
-| PlanDefinition | PRF-034, PRF-035 |
-| Library | PRF-034, PRF-035 |
+| Recurso | Requisitos | Owner |
+|---|---|---|
+| Patient | PRF-033, PRF-035 | HSC |
+| Condition | PRF-028, PRF-029, PRF-030, PRF-033, PRF-035 | HSC |
+| AllergyIntolerance | PRF-023, PRF-024 | HSC |
+| MedicationStatement | PRF-023, PRF-024, PRF-031, PRF-032, PRF-033, PRF-035 | HSC |
+| MedicationRequest | PRF-025, PRF-026 | HSC |
+| Observation | PRF-035 | HSC |
+| QuestionnaireResponse | PRF-033, PRF-035 | HSC |
+| Goal | PRF-035 | HSC |
+| PlanDefinition | PRF-034, PRF-035 | PDH |
+| Library | PRF-034, PRF-035 | PDH |
