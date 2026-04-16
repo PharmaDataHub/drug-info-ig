@@ -30,7 +30,7 @@ Description: "Example of MedicationKnowledge resource for Cipralex 20 mg/ml Gota
 * definitional.ingredient[+].item = http://infarmed.pt/substancia#[PREENCHER] "Água purificada"
 * definitional.ingredient[=].type = http://terminology.hl7.org/CodeSystem/v3-RoleClass#IACT
 
-* medicineClassification.type = http://terminology.hl7.org/CodeSystem/v3-ATC#N06AB10 "Escitalopram"
+* medicineClassification.type = http://hl7.org/fhir/medication-classification-type#anatomical "Anatomical Class"
 * medicineClassification.classification = http://terminology.hl7.org/CodeSystem/v3-ATC#N06AB10 "Escitalopram"
 
 * definitional.doseForm = FormaFarmaceuticaCS#1 "Gotas orais, solução"

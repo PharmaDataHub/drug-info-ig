@@ -13,7 +13,6 @@ Description: "Perfil do recurso MedicationKnowledge para os ingredientes dos pro
 * definitional.ingredient.item.concept 1..1
 
 * definitional.ingredient.item.reference 0..0
-//* definitional.ingredient.item from http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity (required) //mudar
 
 * definitional.ingredient.strengthQuantity.unit 1..1
 * definitional.ingredient.strengthQuantity MS
@@ -38,6 +37,7 @@ Description: "Perfil do recurso MedicationKnowledge para os ingredientes dos pro
 * clinicalUseIssue only Reference(InteracoesPDH or IndicacoesPDH or ContraIndicacoesPDH)
 * code and name and definitional.ingredient.item and clinicalUseIssue MS
 * medicineClassification MS
+* medicineClassification.type from http://hl7.org/fhir/medication-classification-type (extensible) 
 * definitional.doseForm MS
 * definitional.intendedRoute MS
 * cost MS
