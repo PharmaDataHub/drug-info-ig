@@ -28,8 +28,8 @@ Description: "Perfil do recurso MedicationKnowledge para os ingredientes dos pro
 * name ^short = "Nome do produto medicinal"
 * name ^definition = "Nome do produto medicinal, que pode ser o nome comercial ou o nome genérico, dependendo do contexto de uso e da disponibilidade de informações. O nome deve ser claro e específico para evitar confusões com outros produtos."
 
-* definitional.doseForm 1..1
-* definitional.intendedRoute 1..*
+* definitional.doseForm from FormaFarmaceuticaVS (required)
+* definitional.intendedRoute from ViaAdministracaoVS (required)
 
 
 * clinicalUseIssue 1..*

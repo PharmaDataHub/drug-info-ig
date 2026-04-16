@@ -50,6 +50,26 @@ Description: "Defines the semantic type of dosage instructions or constraints."
 * #body-surface-area-dose "Body Surface Area-based Dose"
 
 
+ValueSet: FormaFarmaceuticaVS
+Id: forma-farmaceutica-vs
+Title: "Forma Farmacêutica ValueSet"
+Description: "ValueSet para formas farmacêuticas baseado no INFARMED."
+* ^status = #active
+* ^experimental = false
+
+* include codes from system FormaFarmaceuticaCS
+
+
+ValueSet: ViaAdministracaoVS
+Id: via-administracao-vs
+Title: "Via de Administração ValueSet"
+Description: "ValueSet para vias de administração baseado no INFARMED."
+* ^status = #active
+* ^experimental = false
+
+* include codes from system ViaAdministracaoCS
+
+
 ValueSet: DosageTypeVS
 Id: dosage-type-vs
 Title: "Dosage Type ValueSet"

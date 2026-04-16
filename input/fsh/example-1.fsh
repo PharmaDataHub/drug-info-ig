@@ -21,11 +21,11 @@ Description: "Example of MedicationKnowledge resource for drug ingredients"
 * definitional.ingredient[+].item = http://infarmed.pt/substancia#kkk "Estearato de magnésio"
 * definitional.ingredient[=].type = http://terminology.hl7.org/CodeSystem/v3-RoleClass#IACT
 
-* medicineClassification.type = http://terminology.hl7.org/CodeSystem/v3-ATC#N05BA06 "Lorazepam" //mudar
+* medicineClassification.type = http://terminology.hl7.org/CodeSystem/v3-ATC#N05BA06 "Lorazepam"
 * medicineClassification.classification = http://terminology.hl7.org/CodeSystem/v3-ATC#N05BA06 "Lorazepam"
 
-* definitional.doseForm = http://terminology.hl7.org/CodeSystem/v3-ActCode#TAB "Tablet" //mudar
-* definitional.intendedRoute = http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration#PO "Oral" //mudar
+* definitional.doseForm = FormaFarmaceuticaCS#271 "Comprimido"
+* definitional.intendedRoute = ViaAdministracaoCS#48 "Via oral"
 
 * cost[0].costMoney.value = 1.85 
 * cost[0].costMoney.currency = #EUR
