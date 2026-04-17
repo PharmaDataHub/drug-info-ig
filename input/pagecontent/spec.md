@@ -1,5 +1,12 @@
-| ATC Code | Specification | Exemplo |
 
+<style>
+table { border-collapse: collapse; }
+table, th, td { border: 1px solid black; padding: 6px; }
+table.em-falta, table.em-falta th, table.em-falta td { border: 1px solid #c0392b; background-color: #fdedec; }
+table.em-falta th { background-color: #f5b7b1; }
+</style>
+
+| ATC Code | Specification | Exemplo |
 | A10BK | Inibidores do co-transportador 2 sódio-glucose (SGLT2) | Forxiga [A10BK01] |
 | C07 | Agentes bloqueadores dos recetores adrenérgicos beta | Concor [C07AB07] |
 | C09B | Inibidores da ECA, associações | Lisonorm [C09BB03] |
