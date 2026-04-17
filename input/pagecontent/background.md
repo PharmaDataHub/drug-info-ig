@@ -44,7 +44,7 @@ O mapeamento é idêntico ao **PRF-023**, acrescendo:
 
 ---
 
-### PRF-025 — Erros de prescrição (dose/força, forma, frequência, rota)
+### PRF-025 — Erros de prescrição (dose/força, forma, frequência, via)
 
 > The system shall automatically check for prescription errors related to dose/strength, form, frequency, timing/schedule, and administration route.
 
@@ -62,7 +62,7 @@ O mapeamento é idêntico ao **PRF-023**, acrescendo:
 <table class="em-falta">
 <thead><tr><th>Elemento</th><th>Notas</th><th>Owner</th></tr></thead>
 <tbody>
-<tr><td>Prescrição (regime prescrito)</td><td>Dose, frequência, rota e método prescritos</td><td>HSC</td></tr>
+<tr><td>Prescrição (regime prescrito)</td><td>Dose, frequência, via e método prescritos</td><td>HSC</td></tr>
 <tr><td>Medicação prescrita</td><td>Referência ao medicamento prescrito</td><td>HSC</td></tr>
 </tbody>
 </table>
@@ -263,7 +263,7 @@ O mapeamento é idêntico ao **PRF-031**, acrescendo:
 <tr><td>Condições clínicas do doente</td><td>Para avaliação de PIM/POM</td><td>HSC</td></tr>
 <tr><td>Respostas ao rastreio</td><td>Resultados do instrumento de rastreio (ex.: START/STOPP)</td><td>HSC</td></tr>
 <tr><td>Medicação ativa com detalhes</td><td>Inclui data de início e posologia</td><td>HSC</td></tr>
-<tr><td>Prescrição com detalhes</td><td>Alternativa à MedicationStatement</td><td>HSC</td></tr>
+<tr><td>Prescrição com detalhes</td><td></td><td>HSC</td></tr>
 </tbody>
 </table>
 
@@ -314,11 +314,9 @@ O mapeamento é idêntico ao **PRF-031**, acrescendo:
 <table class="em-falta">
 <thead><tr><th>Elemento</th><th>Notas</th><th>Owner</th></tr></thead>
 <tbody>
-<tr><td>Definição do plano/clinical guideline</td><td>Regras computáveis do framework</td><td>PDH</td></tr>
-<tr><td>Biblioteca de lógica</td><td>Lógica executável (CQL, etc.)</td><td>PDH</td></tr>
-<tr><td>Recurso/elemento específico para START/STOPP</td><td>Não existe elemento nativo no FHIR</td><td>PDH</td></tr>
-<tr><td>Recurso/elemento específico para Beers</td><td>Não existe elemento nativo no FHIR</td><td>PDH</td></tr>
-<tr><td>Recurso/elemento específico para EU(7)-PIM</td><td>Não existe elemento nativo no FHIR</td><td>PDH</td></tr>
+<tr><td>Lógica para START/STOPP</td><td></td><td>HSC</td></tr>
+<tr><td>Lógica Beers</td><td></td><td>HSC</td></tr>
+<tr><td>Lógica EU(7)-PIM</td><td></td><td>HSC</td></tr>
 </tbody>
 </table>
 
@@ -347,14 +345,12 @@ O mapeamento é idêntico ao **PRF-031**, acrescendo:
 <tr><td>Parâmetros clínicos/biométricos</td><td>PA, HbA1c, etc.</td><td>HSC</td></tr>
 <tr><td>Resultados PROMs</td><td>Patient-reported outcomes</td><td>HSC</td></tr>
 <tr><td>Metas terapêuticas</td><td>Alvos terapêuticos específicos</td><td>HSC</td></tr>
-<tr><td>Regra computável de inércia</td><td>Lógica de deteção de inércia</td><td>PDH</td></tr>
-<tr><td>Conceito explícito "inércia terapêutica"</td><td>Não existe elemento nativo no FHIR</td><td>PDH</td></tr>
 </tbody>
 </table>
 
 ---
 
-## Resumo de Lacunas ([EM_FALTA])
+## Resumo de Lacunas neste IG([EM_FALTA])
 
 ### Lacunas no Perfil MedicationKnowledgePDH
 
@@ -392,8 +388,6 @@ Os seguintes elementos dos perfis derivados de ClinicalUseDefinition ainda neces
 <tbody>
 <tr><td>Indicador de "off-label"</td><td>PRF-030</td><td>Não existe elemento nativo no FHIR</td><td>PDH</td></tr>
 <tr><td>Indicador de "indicação em falta"</td><td>PRF-030</td><td>Não existe elemento nativo no FHIR</td><td>PDH</td></tr>
-<tr><td>Regras START/STOPP / Beers / EU(7)-PIM</td><td>PRF-034</td><td>Não existem recursos FHIR dedicados; usar PlanDefinition + Library</td><td>PDH</td></tr>
-<tr><td>Conceito "inércia terapêutica"</td><td>PRF-035</td><td>Não existe elemento nativo no FHIR</td><td>PDH</td></tr>
 <tr><td>Efeitos indesejáveis (perfil)</td><td>FR-041</td><td>Falta perfil ClinicalUseDefinition (type=undesirable-effect)</td><td>PDH</td></tr>
 </tbody>
 </table>
