@@ -1,0 +1,33 @@
+{
+  "resourceType" : "ClinicalUseDefinition",
+  "id" : "CipraplexGotas-CUD-int2",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ClinicalUseDefinition CipraplexGotas-CUD-int2</b></p><a name=\"CipraplexGotas-CUD-int2\"> </a><a name=\"hcCipraplexGotas-CUD-int2\"> </a><p><b>type</b>: Interaction</p><blockquote><p><b>interaction</b></p><h3>Interactants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Item[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct [PREENCHER]}\">Fármacos serotoninérgicos (opioides incluindo tramadol, triptanos incluindo sumatriptano)</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/interaction-type drug-drug}\">drug to drug interaction</span></p><h3>Effects</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Pode levar ao aparecimento da síndrome serotoninérgica. Utilizar com precaução.</span></td></tr></table></blockquote></div>"
+  },
+  "type" : "interaction",
+  "interaction" : {
+    "interactant" : [{
+      "itemCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "[PREENCHER]",
+          "display" : "Serotonergic drug (substance)"
+        }],
+        "text" : "Fármacos serotoninérgicos (opioides incluindo tramadol, triptanos incluindo sumatriptano)"
+      }
+    }],
+    "type" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/interaction-type",
+        "code" : "drug-drug",
+        "display" : "drug to drug interaction"
+      }]
+    },
+    "effect" : {
+      "concept" : {
+        "text" : "Pode levar ao aparecimento da síndrome serotoninérgica. Utilizar com precaução."
+      }
+    }
+  }
+}

@@ -1,0 +1,186 @@
+ExampleIG : Validation Results
+=========================================
+
+err = 47, warn = 29, info = 43
+$--
+Generated $--. FHIR version $-- for my-ig#$-- (canonical = http://example.com/fhir/example)
+ Build Errors : 0 / 2 / 0
+ /github/workspace/fsh-generated/resources/ClinicalUseDefinition-CipraplexGotas-CUD-contra1 : 1 / 0 / 2
+ /github/workspace/fsh-generated/resources/ClinicalUseDefinition-CipraplexGotas-CUD-contra2 : 2 / 0 / 3
+ /github/workspace/fsh-generated/resources/ClinicalUseDefinition-CipraplexGotas-CUD-contra3 : 1 / 0 / 2
+ /github/workspace/fsh-generated/resources/ClinicalUseDefinition-CipraplexGotas-CUD-ind1 : 1 / 0 / 2
+ /github/workspace/fsh-generated/resources/ClinicalUseDefinition-CipraplexGotas-CUD-ind2 : 1 / 0 / 2
+ /github/workspace/fsh-generated/resources/ClinicalUseDefinition-CipraplexGotas-CUD-ind3 : 1 / 0 / 2
+ /github/workspace/fsh-generated/resources/ClinicalUseDefinition-CipraplexGotas-CUD-ind4 : 1 / 0 / 2
+ /github/workspace/fsh-generated/resources/ClinicalUseDefinition-CipraplexGotas-CUD-ind5 : 1 / 0 / 2
+ /github/workspace/fsh-generated/resources/ClinicalUseDefinition-CipraplexGotas-CUD-int1 : 1 / 0 / 2
+ /github/workspace/fsh-generated/resources/ClinicalUseDefinition-CipraplexGotas-CUD-int2 : 1 / 0 / 2
+ /github/workspace/fsh-generated/resources/ClinicalUseDefinition-CipraplexGotas-CUD-int3 : 1 / 0 / 2
+ /github/workspace/fsh-generated/resources/ClinicalUseDefinition-LorazepamBluepharma05mg-CUD : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/ClinicalUseDefinition-LorazepamBluepharma05mg-CUD1 : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/ClinicalUseDefinition-LorazepamBluepharma05mg-CUD2 : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-dosage-type-cs : 0 / 2 / 3
+ /github/workspace/fsh-generated/resources/CodeSystem-forma-farmaceutica-cs : 0 / 2 / 3
+ /github/workspace/fsh-generated/resources/CodeSystem-tipo-preco-infarmed-cs : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-via-administracao-cs : 0 / 2 / 3
+ /github/workspace/fsh-generated/resources/ImplementationGuide-my-ig : 3 / 0 / 17
+ /github/workspace/fsh-generated/resources/MedicationKnowledge-Cipralex-20-mgml-Gotas-orais-solucao : 12 / 10 / 1
+ /github/workspace/fsh-generated/resources/MedicationKnowledge-LorazepamBluepharma05mg : 8 / 9 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ContraIndicacoesPDH : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-IndicacoesPDH : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-InteracoesPDH : 4 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedicationKnowledgePDH : 4 / 1 / 2
+ /github/workspace/fsh-generated/resources/ValueSet-dosage-type-vs : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/ValueSet-forma-farmaceutica-vs : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/ValueSet-tipo-preco-infarmed-vs : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/ValueSet-via-administracao-vs : 0 / 0 / 2
+</table>
+== n/a ==
+WARNING: ImplementationGuide.url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/ClinicalUseDefinition-CipraplexGotas-CUD-contra1.json ==
+ERROR: ClinicalUseDefinition/CipraplexGotas-CUD-contra1: ClinicalUseDefinition.contraindication.diseaseSymptomProcedure.concept.coding[0].code: Unknown code '[PREENCHER]' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+INFORMATION: ClinicalUseDefinition/CipraplexGotas-CUD-contra1: ClinicalUseDefinition.contraindication.diseaseSymptomProcedure.concept.coding[0].code: Not a valid expression: Concept not found (next char = "[", in "[PREENCHER]") at character 1
+== fsh-generated/resources/ClinicalUseDefinition-CipraplexGotas-CUD-contra2.json ==
+ERROR: ClinicalUseDefinition/CipraplexGotas-CUD-contra2: ClinicalUseDefinition.contraindication.diseaseSymptomProcedure.concept.coding[0].code: Unknown code '[PREENCHER]' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+INFORMATION: ClinicalUseDefinition/CipraplexGotas-CUD-contra2: ClinicalUseDefinition.contraindication.diseaseSymptomProcedure.concept.coding[0].code: Not a valid expression: Concept not found (next char = "[", in "[PREENCHER]") at character 1
+ERROR: ClinicalUseDefinition/CipraplexGotas-CUD-contra2: ClinicalUseDefinition.contraindication.comorbidity[0].concept.coding[0].code: Unknown code '[PREENCHER]' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+INFORMATION: ClinicalUseDefinition/CipraplexGotas-CUD-contra2: ClinicalUseDefinition.contraindication.comorbidity[0].concept.coding[0].code: Not a valid expression: Concept not found (next char = "[", in "[PREENCHER]") at character 1
+== fsh-generated/resources/ClinicalUseDefinition-CipraplexGotas-CUD-contra3.json ==
+ERROR: ClinicalUseDefinition/CipraplexGotas-CUD-contra3: ClinicalUseDefinition.contraindication.diseaseSymptomProcedure.concept.coding[0].code: Unknown code '[PREENCHER]' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+INFORMATION: ClinicalUseDefinition/CipraplexGotas-CUD-contra3: ClinicalUseDefinition.contraindication.diseaseSymptomProcedure.concept.coding[0].code: Not a valid expression: Concept not found (next char = "[", in "[PREENCHER]") at character 1
+== fsh-generated/resources/ClinicalUseDefinition-CipraplexGotas-CUD-ind1.json ==
+ERROR: ClinicalUseDefinition/CipraplexGotas-CUD-ind1: ClinicalUseDefinition.indication.diseaseSymptomProcedure.concept.coding[0].code: Unknown code '[PREENCHER]' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+INFORMATION: ClinicalUseDefinition/CipraplexGotas-CUD-ind1: ClinicalUseDefinition.indication.diseaseSymptomProcedure.concept.coding[0].code: Not a valid expression: Concept not found (next char = "[", in "[PREENCHER]") at character 1
+== fsh-generated/resources/ClinicalUseDefinition-CipraplexGotas-CUD-ind2.json ==
+ERROR: ClinicalUseDefinition/CipraplexGotas-CUD-ind2: ClinicalUseDefinition.indication.diseaseSymptomProcedure.concept.coding[0].code: Unknown code '[PREENCHER]' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+INFORMATION: ClinicalUseDefinition/CipraplexGotas-CUD-ind2: ClinicalUseDefinition.indication.diseaseSymptomProcedure.concept.coding[0].code: Not a valid expression: Concept not found (next char = "[", in "[PREENCHER]") at character 1
+== fsh-generated/resources/ClinicalUseDefinition-CipraplexGotas-CUD-ind3.json ==
+ERROR: ClinicalUseDefinition/CipraplexGotas-CUD-ind3: ClinicalUseDefinition.indication.diseaseSymptomProcedure.concept.coding[0].code: Unknown code '[PREENCHER]' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+INFORMATION: ClinicalUseDefinition/CipraplexGotas-CUD-ind3: ClinicalUseDefinition.indication.diseaseSymptomProcedure.concept.coding[0].code: Not a valid expression: Concept not found (next char = "[", in "[PREENCHER]") at character 1
+== fsh-generated/resources/ClinicalUseDefinition-CipraplexGotas-CUD-ind4.json ==
+ERROR: ClinicalUseDefinition/CipraplexGotas-CUD-ind4: ClinicalUseDefinition.indication.diseaseSymptomProcedure.concept.coding[0].code: Unknown code '[PREENCHER]' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+INFORMATION: ClinicalUseDefinition/CipraplexGotas-CUD-ind4: ClinicalUseDefinition.indication.diseaseSymptomProcedure.concept.coding[0].code: Not a valid expression: Concept not found (next char = "[", in "[PREENCHER]") at character 1
+== fsh-generated/resources/ClinicalUseDefinition-CipraplexGotas-CUD-ind5.json ==
+ERROR: ClinicalUseDefinition/CipraplexGotas-CUD-ind5: ClinicalUseDefinition.indication.diseaseSymptomProcedure.concept.coding[0].code: Unknown code '[PREENCHER]' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+INFORMATION: ClinicalUseDefinition/CipraplexGotas-CUD-ind5: ClinicalUseDefinition.indication.diseaseSymptomProcedure.concept.coding[0].code: Not a valid expression: Concept not found (next char = "[", in "[PREENCHER]") at character 1
+== fsh-generated/resources/ClinicalUseDefinition-CipraplexGotas-CUD-int1.json ==
+ERROR: ClinicalUseDefinition/CipraplexGotas-CUD-int1: ClinicalUseDefinition.interaction.interactant[0].item.ofType(CodeableConcept).coding[0].code: Unknown code '[PREENCHER]' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+INFORMATION: ClinicalUseDefinition/CipraplexGotas-CUD-int1: ClinicalUseDefinition.interaction.interactant[0].item.ofType(CodeableConcept).coding[0].code: Not a valid expression: Concept not found (next char = "[", in "[PREENCHER]") at character 1
+== fsh-generated/resources/ClinicalUseDefinition-CipraplexGotas-CUD-int2.json ==
+ERROR: ClinicalUseDefinition/CipraplexGotas-CUD-int2: ClinicalUseDefinition.interaction.interactant[0].item.ofType(CodeableConcept).coding[0].code: Unknown code '[PREENCHER]' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+INFORMATION: ClinicalUseDefinition/CipraplexGotas-CUD-int2: ClinicalUseDefinition.interaction.interactant[0].item.ofType(CodeableConcept).coding[0].code: Not a valid expression: Concept not found (next char = "[", in "[PREENCHER]") at character 1
+== fsh-generated/resources/ClinicalUseDefinition-CipraplexGotas-CUD-int3.json ==
+ERROR: ClinicalUseDefinition/CipraplexGotas-CUD-int3: ClinicalUseDefinition.interaction.interactant[0].item.ofType(CodeableConcept).coding[0].code: Unknown code '[PREENCHER]' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+INFORMATION: ClinicalUseDefinition/CipraplexGotas-CUD-int3: ClinicalUseDefinition.interaction.interactant[0].item.ofType(CodeableConcept).coding[0].code: Not a valid expression: Concept not found (next char = "[", in "[PREENCHER]") at character 1
+== fsh-generated/resources/ClinicalUseDefinition-LorazepamBluepharma05mg-CUD.json ==
+ERROR: ClinicalUseDefinition/LorazepamBluepharma05mg-CUD: ClinicalUseDefinition.contraindication.diseaseSymptomProcedure.concept.coding[0].code: Unknown code '237600008' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+== fsh-generated/resources/ClinicalUseDefinition-LorazepamBluepharma05mg-CUD1.json ==
+ERROR: ClinicalUseDefinition/LorazepamBluepharma05mg-CUD1: ClinicalUseDefinition.indication.diseaseSymptomProcedure.concept.coding[0].display: Wrong Display Name 'Anxiety disorder (disorder)' for http://snomed.info/sct#386661006. Valid display is one of 5 choices: 'Fever (finding)' (en), 'Fever' (en), 'Pyrexial' (en), 'Pyrexia' (en) or 'Febrile' (en) (for the language(s) 'en-US')
+== fsh-generated/resources/ClinicalUseDefinition-LorazepamBluepharma05mg-CUD2.json ==
+ERROR: ClinicalUseDefinition/LorazepamBluepharma05mg-CUD2: ClinicalUseDefinition.interaction.interactant[0].item.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Opioid analgesic (substance)' for http://snomed.info/sct#373873005. Valid display is one of 5 choices: 'Pharmaceutical / biologic product (product)' (en), 'Pharmaceutical / biologic product' (en), 'Medicinal product' (en), 'Drug product' (en) or 'Drug' (en) (for the language(s) 'en-US')
+ERROR: ClinicalUseDefinition/LorazepamBluepharma05mg-CUD2: ClinicalUseDefinition.interaction.type: Found a reference to a CodeSystem 'http://hl7.org/fhir/interaction-type' where a ValueSet belongs
+== fsh-generated/resources/CodeSystem-dosage-type-cs.json ==
+INFORMATION: CodeSystem/dosage-type-cs: CodeSystem.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: CodeSystem/dosage-type-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/dosage-type-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/dosage-type-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-forma-farmaceutica-cs.json ==
+INFORMATION: CodeSystem/forma-farmaceutica-cs: CodeSystem.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: CodeSystem/forma-farmaceutica-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/forma-farmaceutica-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/forma-farmaceutica-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-tipo-preco-infarmed-cs.json ==
+INFORMATION: CodeSystem/tipo-preco-infarmed-cs: CodeSystem.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/CodeSystem-via-administracao-cs.json ==
+INFORMATION: CodeSystem/via-administracao-cs: CodeSystem.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: CodeSystem/via-administracao-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/via-administracao-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/via-administracao-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/ImplementationGuide-my-ig.json ==
+ERROR: ImplementationGuide.where(url = 'http://example.com/fhir/example'): Conformance resource /github/workspace/fsh-generated/resources/ImplementationGuide-my-ig.json - the canonical URL (http://example.com/fhir/example/ImplementationGuide/my-ig) does not match the URL (http://example.com/fhir/example). Use the special-url parameter if you really mean for it not to match
+ERROR: ImplementationGuide.url: Resource id/url mismatch: my-ig/http://example.com/fhir/example
+INFORMATION: ImplementationGuide/my-ig: ImplementationGuide.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: ImplementationGuide/my-ig: ImplementationGuide.definition.parameter[4].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/my-ig: ImplementationGuide.definition.parameter[5].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/my-ig: ImplementationGuide.definition.parameter[6].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/my-ig: ImplementationGuide.definition.parameter[7].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/my-ig: ImplementationGuide.definition.parameter[8].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/my-ig: ImplementationGuide.definition.parameter[9].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/my-ig: ImplementationGuide.definition.parameter[10].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/my-ig: ImplementationGuide.definition.parameter[11].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/my-ig: ImplementationGuide.definition.parameter[12].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/my-ig: ImplementationGuide.definition.parameter[13].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/my-ig: ImplementationGuide.definition.parameter[14].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/my-ig: ImplementationGuide.definition.parameter[15].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/my-ig: ImplementationGuide.definition.parameter[16].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/my-ig: ImplementationGuide.definition.parameter[17].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/my-ig: ImplementationGuide.definition.parameter[23].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+ERROR: /github/workspace/fsh-generated/resources/ImplementationGuide-my-ig: URL Mismatch http://example.com/fhir/example/ImplementationGuide/my-ig vs http://example.com/fhir/example
+== fsh-generated/resources/MedicationKnowledge-Cipralex-20-mgml-Gotas-orais-solucao.json ==
+WARNING: MedicationKnowledge/Cipralex-20-mgml-Gotas-orais-solucao: MedicationKnowledge.code.coding[0].system: A definition for CodeSystem 'http://infarmed.pt/medicamentos' could not be found, so the code cannot be validated
+ERROR: MedicationKnowledge/Cipralex-20-mgml-Gotas-orais-solucao: MedicationKnowledge.indicationGuideline[0].dosingGuideline[0].dosage[0].type: No code provided, and a code is required from the value set 'Dosage Type ValueSet' (http://example.com/fhir/example/ValueSet/dosage-type-vs|1.0.0)
+ERROR: MedicationKnowledge/Cipralex-20-mgml-Gotas-orais-solucao: MedicationKnowledge.indicationGuideline[0].dosingGuideline[1].dosage[0].type: No code provided, and a code is required from the value set 'Dosage Type ValueSet' (http://example.com/fhir/example/ValueSet/dosage-type-vs|1.0.0)
+ERROR: MedicationKnowledge/Cipralex-20-mgml-Gotas-orais-solucao: MedicationKnowledge.indicationGuideline[1].dosingGuideline[0].dosage[0].type: No code provided, and a code is required from the value set 'Dosage Type ValueSet' (http://example.com/fhir/example/ValueSet/dosage-type-vs|1.0.0)
+ERROR: MedicationKnowledge/Cipralex-20-mgml-Gotas-orais-solucao: MedicationKnowledge.indicationGuideline[1].dosingGuideline[1].dosage[0].type: No code provided, and a code is required from the value set 'Dosage Type ValueSet' (http://example.com/fhir/example/ValueSet/dosage-type-vs|1.0.0)
+ERROR: MedicationKnowledge/Cipralex-20-mgml-Gotas-orais-solucao: MedicationKnowledge.indicationGuideline[2].dosingGuideline[0].dosage[0].type: No code provided, and a code is required from the value set 'Dosage Type ValueSet' (http://example.com/fhir/example/ValueSet/dosage-type-vs|1.0.0)
+ERROR: MedicationKnowledge/Cipralex-20-mgml-Gotas-orais-solucao: MedicationKnowledge.indicationGuideline[2].dosingGuideline[1].dosage[0].type: No code provided, and a code is required from the value set 'Dosage Type ValueSet' (http://example.com/fhir/example/ValueSet/dosage-type-vs|1.0.0)
+ERROR: MedicationKnowledge/Cipralex-20-mgml-Gotas-orais-solucao: MedicationKnowledge.indicationGuideline[3].dosingGuideline[0].dosage[0].type: No code provided, and a code is required from the value set 'Dosage Type ValueSet' (http://example.com/fhir/example/ValueSet/dosage-type-vs|1.0.0)
+ERROR: MedicationKnowledge/Cipralex-20-mgml-Gotas-orais-solucao: MedicationKnowledge.indicationGuideline[3].dosingGuideline[1].dosage[0].type: No code provided, and a code is required from the value set 'Dosage Type ValueSet' (http://example.com/fhir/example/ValueSet/dosage-type-vs|1.0.0)
+ERROR: MedicationKnowledge/Cipralex-20-mgml-Gotas-orais-solucao: MedicationKnowledge.indicationGuideline[4].dosingGuideline[0].dosage[0].type: No code provided, and a code is required from the value set 'Dosage Type ValueSet' (http://example.com/fhir/example/ValueSet/dosage-type-vs|1.0.0)
+ERROR: MedicationKnowledge/Cipralex-20-mgml-Gotas-orais-solucao: MedicationKnowledge.indicationGuideline[4].dosingGuideline[1].dosage[0].type: No code provided, and a code is required from the value set 'Dosage Type ValueSet' (http://example.com/fhir/example/ValueSet/dosage-type-vs|1.0.0)
+WARNING: MedicationKnowledge/Cipralex-20-mgml-Gotas-orais-solucao: MedicationKnowledge.medicineClassification[0].type: ValueSet 'http://hl7.org/fhir/medication-classification-type' not found
+WARNING: MedicationKnowledge/Cipralex-20-mgml-Gotas-orais-solucao: MedicationKnowledge.medicineClassification[0].type.coding[0].system: A definition for CodeSystem 'http://hl7.org/fhir/medication-classification-type' could not be found, so the code cannot be validated
+ERROR: MedicationKnowledge/Cipralex-20-mgml-Gotas-orais-solucao: MedicationKnowledge.medicineClassification[0].type.coding[0].system: No definition could be found for URL value 'http://hl7.org/fhir/medication-classification-type'
+WARNING: MedicationKnowledge/Cipralex-20-mgml-Gotas-orais-solucao: MedicationKnowledge.medicineClassification[0].classification[0].coding[0].system: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ATC' could not be found, so the code cannot be validated
+ERROR: MedicationKnowledge/Cipralex-20-mgml-Gotas-orais-solucao: MedicationKnowledge.medicineClassification[0].classification[0].coding[0].system: No definition could be found for URL value 'http://terminology.hl7.org/CodeSystem/v3-ATC'
+WARNING: MedicationKnowledge/Cipralex-20-mgml-Gotas-orais-solucao: MedicationKnowledge.definitional.ingredient[0].item.concept.coding[0].system: A definition for CodeSystem 'http://infarmed.pt/substancia' could not be found, so the code cannot be validated
+WARNING: MedicationKnowledge/Cipralex-20-mgml-Gotas-orais-solucao: MedicationKnowledge.definitional.ingredient[1].item.concept.coding[0]: A definition for CodeSystem 'http://infarmed.pt/substancia' could not be found, so the code cannot be validated
+WARNING: MedicationKnowledge/Cipralex-20-mgml-Gotas-orais-solucao: MedicationKnowledge.definitional.ingredient[2].item.concept.coding[0]: A definition for CodeSystem 'http://infarmed.pt/substancia' could not be found, so the code cannot be validated
+WARNING: MedicationKnowledge/Cipralex-20-mgml-Gotas-orais-solucao: MedicationKnowledge.definitional.ingredient[3].item.concept.coding[0]: A definition for CodeSystem 'http://infarmed.pt/substancia' could not be found, so the code cannot be validated
+WARNING: MedicationKnowledge/Cipralex-20-mgml-Gotas-orais-solucao: MedicationKnowledge.definitional.ingredient[4].item.concept.coding[0]: A definition for CodeSystem 'http://infarmed.pt/substancia' could not be found, so the code cannot be validated
+WARNING: MedicationKnowledge/Cipralex-20-mgml-Gotas-orais-solucao: MedicationKnowledge.definitional.ingredient[5].item.concept.coding[0]: A definition for CodeSystem 'http://infarmed.pt/substancia' could not be found, so the code cannot be validated
+== fsh-generated/resources/MedicationKnowledge-LorazepamBluepharma05mg.json ==
+WARNING: MedicationKnowledge/LorazepamBluepharma05mg: MedicationKnowledge.code.coding[0]: A definition for CodeSystem 'http://infarmed.pt/medicamentos' could not be found, so the code cannot be validated
+ERROR: MedicationKnowledge/LorazepamBluepharma05mg: MedicationKnowledge.indicationGuideline[1].dosingGuideline[0].dosage[0].type: No code provided, and a code is required from the value set 'Dosage Type ValueSet' (http://example.com/fhir/example/ValueSet/dosage-type-vs|1.0.0)
+ERROR: MedicationKnowledge/LorazepamBluepharma05mg: MedicationKnowledge.indicationGuideline[2].dosingGuideline[0].dosage[0].type: No code provided, and a code is required from the value set 'Dosage Type ValueSet' (http://example.com/fhir/example/ValueSet/dosage-type-vs|1.0.0)
+ERROR: MedicationKnowledge/LorazepamBluepharma05mg: MedicationKnowledge.indicationGuideline[3].dosingGuideline[0].dosage[0].type: No code provided, and a code is required from the value set 'Dosage Type ValueSet' (http://example.com/fhir/example/ValueSet/dosage-type-vs|1.0.0)
+ERROR: MedicationKnowledge/LorazepamBluepharma05mg: MedicationKnowledge.indicationGuideline[4].dosingGuideline[0].dosage[0].type: No code provided, and a code is required from the value set 'Dosage Type ValueSet' (http://example.com/fhir/example/ValueSet/dosage-type-vs|1.0.0)
+ERROR: MedicationKnowledge/LorazepamBluepharma05mg: MedicationKnowledge.indicationGuideline[5].dosingGuideline[0].dosage[0].type: No code provided, and a code is required from the value set 'Dosage Type ValueSet' (http://example.com/fhir/example/ValueSet/dosage-type-vs|1.0.0)
+ERROR: MedicationKnowledge/LorazepamBluepharma05mg: MedicationKnowledge.indicationGuideline[6].dosingGuideline[0].dosage[0].type: No code provided, and a code is required from the value set 'Dosage Type ValueSet' (http://example.com/fhir/example/ValueSet/dosage-type-vs|1.0.0)
+WARNING: MedicationKnowledge/LorazepamBluepharma05mg: MedicationKnowledge.medicineClassification[0].type: ValueSet 'http://hl7.org/fhir/medication-classification-type' not found
+WARNING: MedicationKnowledge/LorazepamBluepharma05mg: MedicationKnowledge.medicineClassification[0].type.coding[0].system: A definition for CodeSystem 'http://hl7.org/fhir/medication-classification-type' could not be found, so the code cannot be validated
+ERROR: MedicationKnowledge/LorazepamBluepharma05mg: MedicationKnowledge.medicineClassification[0].type.coding[0].system: No definition could be found for URL value 'http://hl7.org/fhir/medication-classification-type'
+WARNING: MedicationKnowledge/LorazepamBluepharma05mg: MedicationKnowledge.medicineClassification[0].classification[0].coding[0]: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ATC' could not be found, so the code cannot be validated
+ERROR: MedicationKnowledge/LorazepamBluepharma05mg: MedicationKnowledge.medicineClassification[0].classification[0].coding[0].system: No definition could be found for URL value 'http://terminology.hl7.org/CodeSystem/v3-ATC'
+WARNING: MedicationKnowledge/LorazepamBluepharma05mg: MedicationKnowledge.definitional.ingredient[0].item.concept.coding[0]: A definition for CodeSystem 'http://infarmed.pt/substancia' could not be found, so the code cannot be validated
+WARNING: MedicationKnowledge/LorazepamBluepharma05mg: MedicationKnowledge.definitional.ingredient[1].item.concept.coding[0]: A definition for CodeSystem 'http://infarmed.pt/substancia' could not be found, so the code cannot be validated
+WARNING: MedicationKnowledge/LorazepamBluepharma05mg: MedicationKnowledge.definitional.ingredient[2].item.concept.coding[0]: A definition for CodeSystem 'http://infarmed.pt/substancia' could not be found, so the code cannot be validated
+WARNING: MedicationKnowledge/LorazepamBluepharma05mg: MedicationKnowledge.definitional.ingredient[3].item.concept.coding[0]: A definition for CodeSystem 'http://infarmed.pt/substancia' could not be found, so the code cannot be validated
+WARNING: MedicationKnowledge/LorazepamBluepharma05mg: MedicationKnowledge.definitional.ingredient[4].item.concept.coding[0]: A definition for CodeSystem 'http://infarmed.pt/substancia' could not be found, so the code cannot be validated
+== fsh-generated/resources/StructureDefinition-ContraIndicacoesPDH.json ==
+INFORMATION: StructureDefinition/ContraIndicacoesPDH: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-IndicacoesPDH.json ==
+INFORMATION: StructureDefinition/IndicacoesPDH: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-InteracoesPDH.json ==
+INFORMATION: StructureDefinition/InteracoesPDH: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+ERROR: StructureDefinition/InteracoesPDH: StructureDefinition.snapshot.element[50].binding.valueSet: Canonical URL 'http://hl7.org/fhir/interaction-type' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+ERROR: StructureDefinition/InteracoesPDH: StructureDefinition.differential.element[3].binding.valueSet: Canonical URL 'http://hl7.org/fhir/interaction-type' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+ERROR: StructureDefinition/InteracoesPDH: StructureDefinition.differential.element[3].binding: The valueSet reference http://hl7.org/fhir/interaction-type on element ClinicalUseDefinition.interaction.type points to something that is not a value set (CodeSystem)
+ERROR: StructureDefinition/InteracoesPDH: StructureDefinition.snapshot.element[50].binding: The valueSet reference http://hl7.org/fhir/interaction-type on element ClinicalUseDefinition.interaction.type points to something that is not a value set (CodeSystem)
+== fsh-generated/resources/StructureDefinition-MedicationKnowledgePDH.json ==
+ERROR: StructureDefinition/MedicationKnowledgePDH: StructureDefinition.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/structuredefinition-implements could not be found so is not allowed here
+ERROR: StructureDefinition/MedicationKnowledgePDH: StructureDefinition.extension[0].url: No definition could be found for URL value 'http://hl7.org/fhir/StructureDefinition/structuredefinition-implements'
+INFORMATION: StructureDefinition/MedicationKnowledgePDH: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+ERROR: StructureDefinition/MedicationKnowledgePDH: StructureDefinition.snapshot.element[93].binding.valueSet: A definition could not be found for Canonical URL 'http://hl7.org/fhir/medication-classification-type'
+ERROR: StructureDefinition/MedicationKnowledgePDH: StructureDefinition.differential.element[16].binding.valueSet: A definition could not be found for Canonical URL 'http://hl7.org/fhir/medication-classification-type'
+WARNING: StructureDefinition/MedicationKnowledgePDH: StructureDefinition.snapshot.element[11].binding: The definition for the element 'MedicationKnowledge.status' binds to the value set 'http://hl7.org/fhir/ValueSet/medicationknowledge-status|5.0.0' which is experimental, but this structure is not labeled as experimental
+== fsh-generated/resources/ValueSet-dosage-type-vs.json ==
+INFORMATION: ValueSet/dosage-type-vs: ValueSet.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: ValueSet/dosage-type-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-forma-farmaceutica-vs.json ==
+INFORMATION: ValueSet/forma-farmaceutica-vs: ValueSet.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/ValueSet-tipo-preco-infarmed-vs.json ==
+INFORMATION: ValueSet/tipo-preco-infarmed-vs: ValueSet.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/ValueSet-via-administracao-vs.json ==
+INFORMATION: ValueSet/via-administracao-vs: ValueSet.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0

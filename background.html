@@ -1,0 +1,1058 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Introdução - HL7 PT FHIR Implementation Guide: IG de Exemplo Versão 1 | STU1 v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/affiliate.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a id="affiliate-logo" no-external="true" href="http://hl7.eu">
+    <img height="71" alt="Visit the HL7 affiliate website" src="assets/images/affiliate.png"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="30" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 PT FHIR Implementation Guide: IG de Exemplo Versão 1 | STU1</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - STU1
+
+
+
+  Portugal (PRT)
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="background.html">Introdução</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Especificação
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="spec.html">Conteúdo</a>
+      </li>
+      <li>
+        <a href="terminology.html">Terminologias</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artefactos</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Introdução</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">HL7 PT FHIR Implementation Guide: IG de Exemplo Versão 1 | STU1, published by HL7 Portugal. This guide is not an authorized publication; it is the continuous build for version 1.0.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href='https://github.com/PharmaDataHub/drug-info-ig/tree/master'>https://github.com/PharmaDataHub/drug-info-ig/tree/master</a> and changes regularly. See the <a href='http://example.com/fhir/example/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Introdução</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#mapeamento-de-requisitos-para-o-perfil-medicationknowledgepdh" id="markdown-toc-mapeamento-de-requisitos-para-o-perfil-medicationknowledgepdh">Mapeamento de Requisitos para o Perfil MedicationKnowledgePDH</a>    <ul>
+      <li><a href="#mapeamento-por-requisito" id="markdown-toc-mapeamento-por-requisito">Mapeamento por Requisito</a>        <ul>
+          <li><a href="#prf-023--constituintes-do-medicamento--verificação-de-alergias" id="markdown-toc-prf-023--constituintes-do-medicamento--verificação-de-alergias">PRF-023 — Constituintes do medicamento / Verificação de alergias</a></li>
+          <li><a href="#prf-024--alerta-de-alergia" id="markdown-toc-prf-024--alerta-de-alergia">PRF-024 — Alerta de alergia</a></li>
+          <li><a href="#prf-025--erros-de-prescrição-doseforça-forma-frequência-via" id="markdown-toc-prf-025--erros-de-prescrição-doseforça-forma-frequência-via">PRF-025 — Erros de prescrição (dose/força, forma, frequência, via)</a></li>
+          <li><a href="#prf-026--erros-de-prescrição-vs-limites-clínicos" id="markdown-toc-prf-026--erros-de-prescrição-vs-limites-clínicos">PRF-026 — Erros de prescrição vs limites clínicos</a></li>
+          <li><a href="#prf-027--alerta-de-desviopotencial-erro-de-prescrição" id="markdown-toc-prf-027--alerta-de-desviopotencial-erro-de-prescrição">PRF-027 — Alerta de desvio/potencial erro de prescrição</a></li>
+          <li><a href="#prf-031--duplicação-terapêutica-detecção" id="markdown-toc-prf-031--duplicação-terapêutica-detecção">PRF-031 — Duplicação terapêutica (detecção)</a></li>
+          <li><a href="#prf-032--alerta-de-duplicação-terapêutica" id="markdown-toc-prf-032--alerta-de-duplicação-terapêutica">PRF-032 — Alerta de duplicação terapêutica</a></li>
+          <li><a href="#prf-037--alternativas-custo-efetivas" id="markdown-toc-prf-037--alternativas-custo-efetivas">PRF-037 — Alternativas custo-efetivas</a></li>
+          <li><a href="#prf-028--indicaçõescontraindicações-em-falta" id="markdown-toc-prf-028--indicaçõescontraindicações-em-falta">PRF-028 — Indicações/contraindicações em falta</a></li>
+          <li><a href="#prf-029--alerta-de-contraindicação" id="markdown-toc-prf-029--alerta-de-contraindicação">PRF-029 — Alerta de contraindicação</a></li>
+          <li><a href="#prf-030--alerta-off-label--indicação-em-falta" id="markdown-toc-prf-030--alerta-off-label--indicação-em-falta">PRF-030 — Alerta off-label / indicação em falta</a></li>
+          <li><a href="#prf-033--pimpom-potentially-inappropriateomitted-medications" id="markdown-toc-prf-033--pimpom-potentially-inappropriateomitted-medications">PRF-033 — PIM/POM (Potentially Inappropriate/Omitted Medications)</a></li>
+          <li><a href="#fr-041--pimpom-com-dados-do-smpcpil" id="markdown-toc-fr-041--pimpom-com-dados-do-smpcpil">FR-041 — PIM/POM com dados do SmPC/PIL</a></li>
+          <li><a href="#prf-034--pimpom-com-frameworks-clínicas" id="markdown-toc-prf-034--pimpom-com-frameworks-clínicas">PRF-034 — PIM/POM com frameworks clínicas</a></li>
+          <li><a href="#prf-035--inércia-terapêutica" id="markdown-toc-prf-035--inércia-terapêutica">PRF-035 — Inércia terapêutica</a></li>
+        </ul>
+      </li>
+      <li><a href="#resumo-de-lacunas-neste-igem_falta" id="markdown-toc-resumo-de-lacunas-neste-igem_falta">Resumo de Lacunas neste IG([EM_FALTA])</a>        <ul>
+          <li><a href="#lacunas-no-perfil-medicationknowledgepdh" id="markdown-toc-lacunas-no-perfil-medicationknowledgepdh">Lacunas no Perfil MedicationKnowledgePDH</a></li>
+          <li><a href="#lacunas-nos-perfis-clinicalusedefinition-indicacoespdh--contraindicacoespdh--interacoespdh" id="markdown-toc-lacunas-nos-perfis-clinicalusedefinition-indicacoespdh--contraindicacoespdh--interacoespdh">Lacunas nos Perfis ClinicalUseDefinition (IndicacoesPDH / ContraIndicacoesPDH / InteracoesPDH)</a></li>
+          <li><a href="#lacunas-estruturais-sem-recurso-fhir-dedicado" id="markdown-toc-lacunas-estruturais-sem-recurso-fhir-dedicado">Lacunas Estruturais (sem recurso FHIR dedicado)</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h1 id="mapeamento-de-requisitos-para-o-perfil-medicationknowledgepdh">Mapeamento de Requisitos para o Perfil MedicationKnowledgePDH</h1>
+
+<style>
+table { border-collapse: collapse; }
+table, th, td { border: 1px solid black; padding: 6px; }
+table.em-falta, table.em-falta th, table.em-falta td { border: 1px solid #c0392b; background-color: #fdedec; }
+table.em-falta th { background-color: #f5b7b1; }
+</style>
+
+<p>Este documento apresenta o mapeamento dos requisitos funcionais (extraídos da especificação do projeto) para os elementos do perfil <strong>MedicationKnowledgePDH</strong>, derivado do recurso FHIR R4B/R5 <code class="language-plaintext highlighter-rouge">MedicationKnowledge</code>. Os elementos que não possuem mapeamento direto no perfil são marcados com <strong>[EM_FALTA]</strong>, identificando lacunas a abordar em futuras iterações.</p>
+
+<h2 id="mapeamento-por-requisito">Mapeamento por Requisito</h2>
+
+<h3 id="prf-023--constituintes-do-medicamento--verificação-de-alergias">PRF-023 — Constituintes do medicamento / Verificação de alergias</h3>
+
+<blockquote>
+  <p>The system shall automatically check for allergies by performing a comparison between the user's recorded allergies and the composition of each active medication listed. This comparison shall utilize structured data extracted from the SmPC/PIL on the medication's active substance and excipients.</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th>Elemento MedicationKnowledgePDH</th>
+      <th>Path</th>
+      <th>Notas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">definitional.ingredient</code></td>
+      <td>MedicationKnowledge.definitional.ingredient</td>
+      <td>Lista de ingredientes (princípio ativo + excipientes)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">definitional.ingredient.type</code></td>
+      <td>.type</td>
+      <td>Distingue princípio ativo de excipiente</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">definitional.ingredient.item.concept</code></td>
+      <td>.item.concept</td>
+      <td>Substância do ingrediente</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>[EM_FALTA]:</strong></p>
+
+<table class="em-falta">
+<thead><tr><th>Elemento</th><th>Notas</th><th>Owner</th></tr></thead>
+<tbody>
+<tr><td>Alergias do doente</td><td>Registo de alergias do utilizador</td><td>HSC</td></tr>
+<tr><td>Medicação ativa</td><td>Lista de medicação ativa</td><td>HSC</td></tr>
+<tr><td>Indicador alergénico</td><td>Flag que indica se o ingrediente é alergénico (propriedade do recurso Ingredient)</td><td>PDH</td></tr>
+</tbody>
+</table>
+
+<hr />
+
+<h3 id="prf-024--alerta-de-alergia">PRF-024 — Alerta de alergia</h3>
+
+<blockquote>
+  <p>The system shall generate an alert if a match is detected between an allergy recorded by the user/HCP and a substance (active or excipient) found in a currently listed active medication.</p>
+</blockquote>
+
+<p>O mapeamento é idêntico ao <strong>PRF-023</strong>, acrescendo:</p>
+
+<p><strong>[EM_FALTA]:</strong> Mesmos elementos do PRF-023, mais a lógica de cruzamento entre alergias do doente e <code class="language-plaintext highlighter-rouge">definitional.ingredient.item.concept</code>.</p>
+
+<hr />
+
+<h3 id="prf-025--erros-de-prescrição-doseforça-forma-frequência-via">PRF-025 — Erros de prescrição (dose/força, forma, frequência, via)</h3>
+
+<blockquote>
+  <p>The system shall automatically check for prescription errors related to dose/strength, form, frequency, timing/schedule, and administration route.</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th>Elemento MedicationKnowledgePDH</th>
+      <th>Path</th>
+      <th>Notas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">definitional.doseForm</code></td>
+      <td>MedicationKnowledge.definitional.doseForm</td>
+      <td>Forma farmacêutica</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">definitional.intendedRoute</code></td>
+      <td>MedicationKnowledge.definitional.intendedRoute</td>
+      <td>Via de administração pretendida</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">definitional.ingredient.strengthQuantity</code></td>
+      <td>.strengthQuantity</td>
+      <td>Força/dose do ingrediente</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">indicationGuideline.dosingGuideline.dosage.dosage.timing</code></td>
+      <td>Dosage.timing</td>
+      <td>Frequência e horário</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">indicationGuideline.dosingGuideline.dosage.dosage.doseAndRate</code></td>
+      <td>Dosage.doseAndRate</td>
+      <td>Dose e taxa</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">code</code></td>
+      <td>MedicationKnowledge.code</td>
+      <td>Identificação do medicamento</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>[EM_FALTA]:</strong></p>
+
+<table class="em-falta">
+<thead><tr><th>Elemento</th><th>Notas</th><th>Owner</th></tr></thead>
+<tbody>
+<tr><td>Prescrição (regime prescrito)</td><td>Dose, frequência, via e método prescritos</td><td>HSC</td></tr>
+<tr><td>Medicação prescrita</td><td>Referência ao medicamento prescrito</td><td>HSC</td></tr>
+</tbody>
+</table>
+
+<hr />
+
+<h3 id="prf-026--erros-de-prescrição-vs-limites-clínicos">PRF-026 — Erros de prescrição vs limites clínicos</h3>
+
+<blockquote>
+  <p>The check for prescription errors shall be performed by comparing the active medication and its prescribed dosage/administration information against clinical limits derived from authoritative sources (recommended/minimum/maximum dose, recommended timing/schedule).</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th>Elemento MedicationKnowledgePDH</th>
+      <th>Path</th>
+      <th>Notas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">indicationGuideline.indication</code></td>
+      <td>MedicationKnowledge.indicationGuideline.indication</td>
+      <td>Indicação terapêutica associada à posologia</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">indicationGuideline.dosingGuideline.dosage.dosage</code></td>
+      <td>Dosage</td>
+      <td>Posologia recomendada</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">indicationGuideline.dosingGuideline.dosage.dosage.timing</code></td>
+      <td>Dosage.timing</td>
+      <td>Horário recomendado</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">indicationGuideline.dosingGuideline.dosage.dosage.doseAndRate</code></td>
+      <td>Dosage.doseAndRate</td>
+      <td>Dose recomendada</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">indicationGuideline.dosingGuideline.dosage.maxDosePerPeriod</code></td>
+      <td>Dosage.maxDosePerPeriod</td>
+      <td>Dose máxima por período</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">indicationGuideline.dosingGuideline.dosage.type</code></td>
+      <td>DosageTypeVS</td>
+      <td>Tipo de posologia (recomendada, máxima, etc.) — inclui minimum-dose, maximum-single-dose, maximum-daily-dose, maximum-dose-per-period</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">definitional.ingredient.strengthQuantity</code></td>
+      <td>.strengthQuantity</td>
+      <td>Força do ingrediente</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>[EM_FALTA]:</strong></p>
+
+<table class="em-falta">
+<thead><tr><th>Elemento</th><th>Notas</th><th>Owner</th></tr></thead>
+<tbody>
+<tr><td>Prescrição (regime prescrito)</td><td>Para comparação com limites</td><td>HSC</td></tr>
+</tbody>
+</table>
+
+<hr />
+
+<h3 id="prf-027--alerta-de-desviopotencial-erro-de-prescrição">PRF-027 — Alerta de desvio/potencial erro de prescrição</h3>
+
+<blockquote>
+  <p>The system shall generate an alert if a deviation or potential prescription error is detected between the user's prescribed regimen and the structured recommendations/limitations defined in regulatory sources.</p>
+</blockquote>
+
+<p>O mapeamento é idêntico ao <strong>PRF-025</strong> e <strong>PRF-026</strong>, dependendo do tipo de desvio (dose/forma/frequência vs limites clínicos).</p>
+
+<p><strong>[EM_FALTA]:</strong> Mesmos elementos dos PRF-025 e PRF-026, mais a lógica de comparação entre regime prescrito e recomendado.</p>
+
+<hr />
+
+<h3 id="prf-031--duplicação-terapêutica-detecção">PRF-031 — Duplicação terapêutica (detecção)</h3>
+
+<blockquote>
+  <p>The system shall automatically detect therapeutic duplication by analysing the user's medication list and comparing active substances and pharmacological classes, using structured medication information from INFARMED and recognized clinical classifications (e.g., ATC).</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th>Elemento MedicationKnowledgePDH</th>
+      <th>Path</th>
+      <th>Notas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">definitional.ingredient.item.concept</code></td>
+      <td>.item.concept</td>
+      <td>Substância ativa</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">definitional.ingredient.type</code></td>
+      <td>.type</td>
+      <td>Identifica princípio ativo vs excipiente</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">medicineClassification</code></td>
+      <td>MedicationKnowledge.medicineClassification</td>
+      <td>Classificação ATC</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">code</code></td>
+      <td>MedicationKnowledge.code</td>
+      <td>Identificação do medicamento</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>[EM_FALTA]:</strong></p>
+
+<table class="em-falta">
+<thead><tr><th>Elemento</th><th>Notas</th><th>Owner</th></tr></thead>
+<tbody>
+<tr><td>Lista de medicação ativa</td><td>Para comparação entre medicamentos</td><td>HSC</td></tr>
+</tbody>
+</table>
+
+<hr />
+
+<h3 id="prf-032--alerta-de-duplicação-terapêutica">PRF-032 — Alerta de duplicação terapêutica</h3>
+
+<blockquote>
+  <p>The system shall generate an alert indicating potential therapeutic duplication when two or more medications sharing the same active substance or pharmacological class are concurrently present. PRN medications shall be excluded from class-based checks.</p>
+</blockquote>
+
+<p>O mapeamento é idêntico ao <strong>PRF-031</strong>, acrescendo:</p>
+
+<p><strong>[EM_FALTA]:</strong></p>
+
+<table class="em-falta">
+<thead><tr><th>Elemento</th><th>Notas</th><th>Owner</th></tr></thead>
+<tbody>
+<tr><td>Regime PRN vs regular</td><td>Distinção PRN (sos) vs regular</td><td>HSC</td></tr>
+</tbody>
+</table>
+
+<hr />
+
+<h3 id="prf-037--alternativas-custo-efetivas">PRF-037 — Alternativas custo-efetivas</h3>
+
+<blockquote>
+  <p>The system shall generate an alert when more cost-effective alternatives are available.</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th>Elemento MedicationKnowledgePDH</th>
+      <th>Path</th>
+      <th>Notas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cost</code></td>
+      <td>MedicationKnowledge.cost</td>
+      <td>Preço do medicamento</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cost.type</code></td>
+      <td>.type (TipoPrecoINFARMEDVS)</td>
+      <td>Tipo de preço (e.g., preço do doente, preço INFARMED)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">medicineClassification</code></td>
+      <td>MedicationKnowledge.medicineClassification</td>
+      <td>Classe farmacológica/ATC para identificar alternativas</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">code</code></td>
+      <td>MedicationKnowledge.code</td>
+      <td>Identificação do medicamento</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h3 id="prf-028--indicaçõescontraindicações-em-falta">PRF-028 — Indicações/contraindicações em falta</h3>
+
+<blockquote>
+  <p>The system shall automatically check for missing therapeutic indication or apparent contraindications by comparing the user's recorded health conditions against the approved indications and contraindications of all active medications.</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th>Elemento MedicationKnowledgePDH</th>
+      <th>Path</th>
+      <th>Notas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">clinicalUseIssue</code> (IndicacoesPDH)</td>
+      <td>MedicationKnowledge.clinicalUseIssue → ClinicalUseDefinition (type=indication)</td>
+      <td>Indicações aprovadas</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">clinicalUseIssue</code> (ContraIndicacoesPDH)</td>
+      <td>MedicationKnowledge.clinicalUseIssue → ClinicalUseDefinition (type=contraindication)</td>
+      <td>Contraindicações</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">indication.diseaseSymptomProcedure</code></td>
+      <td>ClinicalUseDefinition.indication.diseaseSymptomProcedure</td>
+      <td>Condição/doença indicada</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">contraindication.diseaseSymptomProcedure</code></td>
+      <td>ClinicalUseDefinition.contraindication.diseaseSymptomProcedure</td>
+      <td>Condição/doença contraindicada</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">contraindication.comorbidity</code></td>
+      <td>ClinicalUseDefinition.contraindication.comorbidity</td>
+      <td>Comorbilidade associada à contraindicação</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">code</code></td>
+      <td>MedicationKnowledge.code</td>
+      <td>Identificação do medicamento</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">name</code></td>
+      <td>MedicationKnowledge.name</td>
+      <td>Nome do medicamento</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>[EM_FALTA]:</strong></p>
+
+<table class="em-falta">
+<thead><tr><th>Elemento</th><th>Notas</th><th>Owner</th></tr></thead>
+<tbody>
+<tr><td>Estado da doença (indicação)</td><td>[EM_FALTA] no perfil IndicacoesPDH</td><td>PDH</td></tr>
+<tr><td>Comorbilidade (indicação)</td><td>[EM_FALTA] no perfil IndicacoesPDH</td><td>PDH</td></tr>
+<tr><td>Estado da doença (contraindicação)</td><td>[EM_FALTA] no perfil ContraIndicacoesPDH</td><td>PDH</td></tr>
+<tr><td>Condições clínicas do doente</td><td>Para comparação com indicações/contraindicações</td><td>HSC</td></tr>
+<tr><td>Medicação ativa do doente</td><td>Lista de medicação ativa</td><td>HSC</td></tr>
+</tbody>
+</table>
+
+<hr />
+
+<h3 id="prf-029--alerta-de-contraindicação">PRF-029 — Alerta de contraindicação</h3>
+
+<blockquote>
+  <p>The system shall generate an alert if a match is detected between any of the user's recorded health conditions and a known contraindication (absolute or relative) for an active medication.</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th>Elemento MedicationKnowledgePDH</th>
+      <th>Path</th>
+      <th>Notas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">clinicalUseIssue</code> (ContraIndicacoesPDH)</td>
+      <td>MedicationKnowledge.clinicalUseIssue → ClinicalUseDefinition (type=contraindication)</td>
+      <td>Contraindicações do medicamento</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">contraindication.diseaseSymptomProcedure</code></td>
+      <td>ClinicalUseDefinition.contraindication.diseaseSymptomProcedure</td>
+      <td>Condição/doença contraindicada</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">contraindication.comorbidity</code></td>
+      <td>ClinicalUseDefinition.contraindication.comorbidity</td>
+      <td>Comorbilidade associada à contraindicação</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">code</code></td>
+      <td>MedicationKnowledge.code</td>
+      <td>Identificação do medicamento</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>[EM_FALTA]:</strong></p>
+
+<table class="em-falta">
+<thead><tr><th>Elemento</th><th>Notas</th><th>Owner</th></tr></thead>
+<tbody>
+<tr><td>Estado da doença (contraindicação)</td><td>[EM_FALTA] no perfil ContraIndicacoesPDH</td><td>PDH</td></tr>
+<tr><td>Outra terapia — relação</td><td>[EM_FALTA] no perfil ContraIndicacoesPDH</td><td>PDH</td></tr>
+<tr><td>Outra terapia — tratamento</td><td>[EM_FALTA] no perfil ContraIndicacoesPDH</td><td>PDH</td></tr>
+<tr><td>Condições clínicas do doente</td><td>Para cruzamento com contraindicações</td><td>HSC</td></tr>
+</tbody>
+</table>
+
+<hr />
+
+<h3 id="prf-030--alerta-off-label--indicação-em-falta">PRF-030 — Alerta off-label / indicação em falta</h3>
+
+<blockquote>
+  <p>The system shall generate an alert if a mismatch is detected between the user's recorded health conditions and the approved indications for an active medication, suggesting potential off-label use or a missing therapeutic indication.</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th>Elemento MedicationKnowledgePDH</th>
+      <th>Path</th>
+      <th>Notas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">clinicalUseIssue</code> (IndicacoesPDH)</td>
+      <td>MedicationKnowledge.clinicalUseIssue → ClinicalUseDefinition (type=indication)</td>
+      <td>Indicações aprovadas do medicamento</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">indication.diseaseSymptomProcedure</code></td>
+      <td>ClinicalUseDefinition.indication.diseaseSymptomProcedure</td>
+      <td>Condição/doença indicada</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">indication.duration[x]</code></td>
+      <td>ClinicalUseDefinition.indication.duration[x]</td>
+      <td>Duração da indicação terapêutica</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">code</code></td>
+      <td>MedicationKnowledge.code</td>
+      <td>Identificação do medicamento</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>[EM_FALTA]:</strong></p>
+
+<table class="em-falta">
+<thead><tr><th>Elemento</th><th>Notas</th><th>Owner</th></tr></thead>
+<tbody>
+<tr><td>Estado da doença (indicação)</td><td>[EM_FALTA] no perfil IndicacoesPDH</td><td>PDH</td></tr>
+<tr><td>Comorbilidade (indicação)</td><td>[EM_FALTA] no perfil IndicacoesPDH</td><td>PDH</td></tr>
+<tr><td>Efeito pretendido</td><td>[EM_FALTA] no perfil IndicacoesPDH</td><td>PDH</td></tr>
+<tr><td>Indicador explícito de "off-label"</td><td>Não existe elemento nativo no FHIR</td><td>PDH</td></tr>
+<tr><td>Indicador de "indicação em falta"</td><td>Não existe elemento nativo no FHIR</td><td>PDH</td></tr>
+<tr><td>Condições clínicas do doente</td><td>Para comparação com indicações</td><td>HSC</td></tr>
+</tbody>
+</table>
+
+<hr />
+
+<h3 id="prf-033--pimpom-potentially-inappropriateomitted-medications">PRF-033 — PIM/POM (Potentially Inappropriate/Omitted Medications)</h3>
+
+<blockquote>
+  <p>The system shall automatically check for potentially inappropriate medications (PIM) / potentially omitted medications (POM) by evaluating age, health conditions, screening tool responses, and current medications (including start date, active substances, strength, form, and posological data).</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th>Elemento MedicationKnowledgePDH</th>
+      <th>Path</th>
+      <th>Notas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">definitional.ingredient</code></td>
+      <td>MedicationKnowledge.definitional.ingredient</td>
+      <td>Ingredientes (substitui ativo + excipientes)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">definitional.ingredient.type</code></td>
+      <td>.type</td>
+      <td>Tipo de ingrediente</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">definitional.ingredient.item.concept</code></td>
+      <td>.item.concept</td>
+      <td>Substância</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">definitional.ingredient.strengthQuantity</code></td>
+      <td>.strengthQuantity</td>
+      <td>Força</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">definitional.doseForm</code></td>
+      <td>MedicationKnowledge.definitional.doseForm</td>
+      <td>Forma farmacêutica</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">definitional.intendedRoute</code></td>
+      <td>MedicationKnowledge.definitional.intendedRoute</td>
+      <td>Via de administração</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">indicationGuideline.dosingGuideline.dosage</code></td>
+      <td>.dosage</td>
+      <td>Posologia</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">indicationGuideline.dosingGuideline.patientCharacteristic</code></td>
+      <td>.patientCharacteristic</td>
+      <td>Características do doente (ex.: idade)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">clinicalUseIssue</code></td>
+      <td>MedicationKnowledge.clinicalUseIssue</td>
+      <td>Indicações, contraindicações, interações</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">code</code></td>
+      <td>MedicationKnowledge.code</td>
+      <td>Identificação do medicamento</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>[EM_FALTA]:</strong></p>
+
+<table class="em-falta">
+<thead><tr><th>Elemento</th><th>Notas</th><th>Owner</th></tr></thead>
+<tbody>
+<tr><td>Idade do doente</td><td>Para avaliação de PIM/POM por idade</td><td>HSC</td></tr>
+<tr><td>Condições clínicas do doente</td><td>Para avaliação de PIM/POM</td><td>HSC</td></tr>
+<tr><td>Respostas ao rastreio</td><td>Resultados do instrumento de rastreio (ex.: START/STOPP)</td><td>HSC</td></tr>
+<tr><td>Medicação ativa com detalhes</td><td>Inclui data de início e posologia</td><td>HSC</td></tr>
+<tr><td>Prescrição com detalhes</td><td></td><td>HSC</td></tr>
+</tbody>
+</table>
+
+<hr />
+
+<h3 id="fr-041--pimpom-com-dados-do-smpcpil">FR-041 — PIM/POM com dados do SmPC/PIL</h3>
+
+<blockquote>
+  <p>The evaluation for PIM/POM shall incorporate structured data from the SmPC/PIL, including excipients, indications, contraindications, treatment duration, adverse events, interactions, and pharmacodynamic properties.</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th>Elemento MedicationKnowledgePDH</th>
+      <th>Path</th>
+      <th>Notas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">definitional.ingredient</code></td>
+      <td>MedicationKnowledge.definitional.ingredient</td>
+      <td>Excipientes clinicamente relevantes</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">definitional.ingredient.type</code></td>
+      <td>.type</td>
+      <td>Distinguir excipiente</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">definitional.ingredient.item.concept</code></td>
+      <td>.item.concept</td>
+      <td>Substância do excipiente</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">clinicalUseIssue</code> (IndicacoesPDH)</td>
+      <td>ClinicalUseDefinition (type=indication)</td>
+      <td>Indicações aprovadas</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">clinicalUseIssue</code> (ContraIndicacoesPDH)</td>
+      <td>ClinicalUseDefinition (type=contraindication)</td>
+      <td>Contraindicações</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">clinicalUseIssue</code> (InteracoesPDH)</td>
+      <td>ClinicalUseDefinition (type=interaction)</td>
+      <td>Interações medicamentosas</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">interaction.interactant</code></td>
+      <td>ClinicalUseDefinition.interaction.interactant</td>
+      <td>Substância/fármaco interagente</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">interaction.type</code></td>
+      <td>ClinicalUseDefinition.interaction.type</td>
+      <td>Tipo de interação</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">interaction.effect</code></td>
+      <td>ClinicalUseDefinition.interaction.effect</td>
+      <td>Efeito da interação</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">interaction.incidence</code></td>
+      <td>ClinicalUseDefinition.interaction.incidence</td>
+      <td>Incidência da interação</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">interaction.management</code></td>
+      <td>ClinicalUseDefinition.interaction.management</td>
+      <td>Gestão/recomendação clínica da interação</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">indicationGuideline.indication</code></td>
+      <td>MedicationKnowledge.indicationGuideline.indication</td>
+      <td>Duração recomendada do tratamento</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">indicationGuideline.dosingGuideline.dosage</code></td>
+      <td>.dosage</td>
+      <td>Posologia recomendada</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>[EM_FALTA]:</strong></p>
+
+<table class="em-falta">
+<thead><tr><th>Elemento</th><th>Notas</th><th>Owner</th></tr></thead>
+<tbody>
+<tr><td>Eventos adversos</td><td>[EM_FALTA] perfil para efeitos indesejáveis</td><td>PDH</td></tr>
+<tr><td>Propriedades farmacodinâmicas</td><td>[EM_FALTA] no perfil (ex.: atividade anticolinérgica)</td><td>PDH</td></tr>
+</tbody>
+</table>
+
+<hr />
+
+<h3 id="prf-034--pimpom-com-frameworks-clínicas">PRF-034 — PIM/POM com frameworks clínicas</h3>
+
+<blockquote>
+  <p>The system shall compare the data points against recognized medication appropriateness frameworks (START/STOPP, Beers, EU(7)-PIM) to identify PIMs/POMs and generate corresponding alerts.</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th>Elemento MedicationKnowledgePDH</th>
+      <th>Path</th>
+      <th>Notas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Nenhum elemento direto</td>
+      <td>—</td>
+      <td>Os dados do medicamento são fornecidos via MedicationKnowledgePDH, mas a lógica clínica reside noutros recursos</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>[EM_FALTA]:</strong></p>
+
+<table class="em-falta">
+<thead><tr><th>Elemento</th><th>Notas</th><th>Owner</th></tr></thead>
+<tbody>
+<tr><td>Lógica para START/STOPP</td><td></td><td>HSC</td></tr>
+<tr><td>Lógica Beers</td><td></td><td>HSC</td></tr>
+<tr><td>Lógica EU(7)-PIM</td><td></td><td>HSC</td></tr>
+</tbody>
+</table>
+
+<hr />
+
+<h3 id="prf-035--inércia-terapêutica">PRF-035 — Inércia terapêutica</h3>
+
+<blockquote>
+  <p>The system shall identify therapeutic inertia (failure to start, adjust, or intensify therapy when clinically justified), evaluating health conditions, medications (including start date, substances, strength, form, posology), clinical parameters (PROMs), and therapeutic targets.</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th>Elemento MedicationKnowledgePDH</th>
+      <th>Path</th>
+      <th>Notas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">indicationGuideline.indication</code></td>
+      <td>MedicationKnowledge.indicationGuideline.indication</td>
+      <td>Indicação para terapia</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">indicationGuideline.dosingGuideline.dosage.dosage</code></td>
+      <td>Dosage</td>
+      <td>Posologia recomendada</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">indicationGuideline.dosingGuideline.dosage.dosage.timing</code></td>
+      <td>Dosage.timing</td>
+      <td>Frequência/horário recomendado</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">indicationGuideline.dosingGuideline.dosage.dosage.doseAndRate</code></td>
+      <td>Dosage.doseAndRate</td>
+      <td>Dose recomendada</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">indicationGuideline.dosingGuideline.patientCharacteristic</code></td>
+      <td>.patientCharacteristic</td>
+      <td>Características do doente relevantes</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">clinicalUseIssue</code> (IndicacoesPDH)</td>
+      <td>ClinicalUseDefinition (type=indication)</td>
+      <td>Indicações para ajuste/intensificação</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>[EM_FALTA]:</strong></p>
+
+<table class="em-falta">
+<thead><tr><th>Elemento</th><th>Notas</th><th>Owner</th></tr></thead>
+<tbody>
+<tr><td>Condições clínicas do doente</td><td>Para avaliar necessidade de ajuste</td><td>HSC</td></tr>
+<tr><td>Medicação ativa com data de início</td><td>Inclui data de início e posologia</td><td>HSC</td></tr>
+<tr><td>Parâmetros clínicos/biométricos</td><td>PA, HbA1c, etc.</td><td>HSC</td></tr>
+<tr><td>Resultados PROMs</td><td>Patient-reported outcomes</td><td>HSC</td></tr>
+<tr><td>Metas terapêuticas</td><td>Alvos terapêuticos específicos</td><td>HSC</td></tr>
+</tbody>
+</table>
+
+<hr />
+
+<h2 id="resumo-de-lacunas-neste-igem_falta">Resumo de Lacunas neste IG([EM_FALTA])</h2>
+
+<h3 id="lacunas-no-perfil-medicationknowledgepdh">Lacunas no Perfil MedicationKnowledgePDH</h3>
+
+<p>Os seguintes elementos, referenciados nos requisitos mas <strong>não incluídos no perfil</strong>, necessitam de ser adicionados ou tratados noutros perfis:</p>
+
+<table class="em-falta">
+<thead><tr><th>Elemento</th><th>Path</th><th>Requisitos</th><th>Owner</th></tr></thead>
+<tbody>
+<tr><td>drugCharacteristic</td><td>MedicationKnowledge.definitional.drugCharacteristic</td><td>FR-041 (propriedades farmacodinâmicas)</td><td>PDH</td></tr>
+</tbody>
+</table>
+
+<h3 id="lacunas-nos-perfis-clinicalusedefinition-indicacoespdh--contraindicacoespdh--interacoespdh">Lacunas nos Perfis ClinicalUseDefinition (IndicacoesPDH / ContraIndicacoesPDH / InteracoesPDH)</h3>
+
+<p>Os seguintes elementos dos perfis derivados de ClinicalUseDefinition ainda necessitam de ser adicionados (os campos já usados nas instâncias — <code class="language-plaintext highlighter-rouge">diseaseSymptomProcedure</code>, <code class="language-plaintext highlighter-rouge">comorbidity</code>, <code class="language-plaintext highlighter-rouge">interactant</code>, <code class="language-plaintext highlighter-rouge">type</code>, <code class="language-plaintext highlighter-rouge">effect</code> — precisam de restrição formal nos perfis):</p>
+
+<table class="em-falta">
+<thead><tr><th>Elemento</th><th>Perfil</th><th>Requisitos</th><th>Owner</th></tr></thead>
+<tbody>
+<tr><td>indication.diseaseStatus</td><td>IndicacoesPDH</td><td>PRF-028, PRF-030</td><td>PDH</td></tr>
+<tr><td>indication.intendedEffect</td><td>IndicacoesPDH</td><td>PRF-030</td><td>PDH</td></tr>
+<tr><td>contraindication.diseaseStatus</td><td>ContraIndicacoesPDH</td><td>PRF-028, PRF-029</td><td>PDH</td></tr>
+<tr><td>contraindication.otherTherapy.relationshipType</td><td>ContraIndicacoesPDH</td><td>PRF-029</td><td>PDH</td></tr>
+<tr><td>contraindication.otherTherapy.treatment</td><td>ContraIndicacoesPDH</td><td>PRF-029</td><td>PDH</td></tr>
+</tbody>
+</table>
+
+<h3 id="lacunas-estruturais-sem-recurso-fhir-dedicado">Lacunas Estruturais (sem recurso FHIR dedicado)</h3>
+
+<table class="em-falta">
+<thead><tr><th>Necessidade</th><th>Requisitos</th><th>Notas</th><th>Owner</th></tr></thead>
+<tbody>
+<tr><td>Indicador de "off-label"</td><td>PRF-030</td><td>Não existe elemento nativo no FHIR</td><td>PDH</td></tr>
+<tr><td>Indicador de "indicação em falta"</td><td>PRF-030</td><td>Não existe elemento nativo no FHIR</td><td>PDH</td></tr>
+<tr><td>Efeitos indesejáveis (perfil)</td><td>FR-041</td><td>Falta perfil ClinicalUseDefinition (type=undesirable-effect)</td><td>PDH</td></tr>
+</tbody>
+</table>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.pt">HL7 Portugal</a>.  Package my-ig#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, Apr 20, 2026 09:10+0000">2026-04-20</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

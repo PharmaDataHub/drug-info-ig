@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClinicalUseDefinition xmlns="http://hl7.org/fhir">
+  <id value="LorazepamBluepharma05mg-CUD2"/>
+  <meta>
+    <profile value="http://example.com/fhir/example/StructureDefinition/InteracoesPDH"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ClinicalUseDefinition LorazepamBluepharma05mg-CUD2</b></p><a name="LorazepamBluepharma05mg-CUD2"> </a><a name="hcLorazepamBluepharma05mg-CUD2"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-InteracoesPDH.html">Perfil do recurso para interações de medicação</a></p></div><p><b>type</b>: Interaction</p><blockquote><p><b>interaction</b></p><h3>Interactants</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Item[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 373873005}">Opioids</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://hl7.org/fhir/interaction-type drug-drug}">drug to drug interaction</span></p></blockquote></div>
+  </text>
+  <type value="interaction"/>
+  <interaction>
+    <interactant>
+      <itemCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="373873005"/>
+          <display value="Opioid analgesic (substance)"/>
+        </coding>
+        <text value="Opioids"/>
+      </itemCodeableConcept>
+    </interactant>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/interaction-type"/>
+        <code value="drug-drug"/>
+        <display value="drug to drug interaction"/>
+      </coding>
+    </type>
+  </interaction>
+</ClinicalUseDefinition>

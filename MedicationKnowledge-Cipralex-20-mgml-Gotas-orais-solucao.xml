@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationKnowledge xmlns="http://hl7.org/fhir">
+  <id value="Cipralex-20-mgml-Gotas-orais-solucao"/>
+  <meta>
+    <profile value="http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: MedicationKnowledge Cipralex-20-mgml-Gotas-orais-solucao</b></p><a name="Cipralex-20-mgml-Gotas-orais-solucao"> </a><a name="hcCipralex-20-mgml-Gotas-orais-solucao"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-MedicationKnowledgePDH.html">Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento</a></p></div><p><b>code</b>: <span title="Codes:{http://infarmed.pt/medicamentos 5049739}">Cipralex 20 mg/ml Gotas orais, solução [N06AB10]</span></p><p><b>name</b>: Cipralex [Escitalopram] 20 mg/ml Gotas orais, solução</p><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Tratamento de episódios depressivos major</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose habitual diária</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dose habitual de 10 mg (10 gotas) uma vez por dia. A dose pode ser aumentada até um máximo de 20 mg (20 gotas) por dia. Dose máxima diária: 20 mg.</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>10 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table><p><b>maxDosePerPeriod</b>: 20 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style="background: LightGoldenRodYellow"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Adultos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose em doentes idosos</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dose inicial de 5 mg (5 gotas) uma vez por dia. A dose pode ser aumentada até um máximo de 10 mg (10 gotas) por dia.</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>5 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table><p><b>maxDosePerPeriod</b>: 10 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style="background: LightGoldenRodYellow"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Doentes idosos (&gt; 65 anos de idade)</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Tratamento de perturbações de pânico com ou sem agorafobia</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose inicial e de manutenção</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dose inicial de 5 mg (5 gotas) na primeira semana de tratamento, aumentando-se depois para 10 mg (10 gotas) por dia. A dose pode ser posteriormente aumentada até um máximo de 20 mg (20 gotas) por dia.</p><p><b>additionalInstruction</b>: <span title="Codes:">Iniciar com 5 mg/dia na 1.ª semana; aumentar para 10 mg/dia posteriormente.</span></p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>5 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table><p><b>maxDosePerPeriod</b>: 20 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style="background: LightGoldenRodYellow"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Adultos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose em doentes idosos</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dose inicial de 5 mg (5 gotas) uma vez por dia. A dose pode ser aumentada até um máximo de 10 mg (10 gotas) por dia.</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>5 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table><p><b>maxDosePerPeriod</b>: 10 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style="background: LightGoldenRodYellow"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Doentes idosos (&gt; 65 anos de idade)</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Tratamento da perturbação da ansiedade social (fobia social)</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose habitual diária</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dose habitual de 10 mg (10 gotas) uma vez por dia. A dose pode ser diminuída para 5 mg (5 gotas) ou aumentada para um máximo de 20 mg (20 gotas) por dia conforme resposta individual.</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>5-10 mg</td></tr></table><p><b>maxDosePerPeriod</b>: 20 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style="background: LightGoldenRodYellow"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Adultos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose em doentes idosos</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dose inicial de 5 mg (5 gotas) uma vez por dia. A dose pode ser aumentada até um máximo de 10 mg (10 gotas) por dia.</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>5 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table><p><b>maxDosePerPeriod</b>: 10 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style="background: LightGoldenRodYellow"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Doentes idosos (&gt; 65 anos de idade)</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Tratamento da perturbação da ansiedade generalizada</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose inicial e de manutenção</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dose inicial de 10 mg (10 gotas) uma vez por dia. A dose pode ser aumentada até um máximo de 20 mg (20 gotas) por dia.</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>10 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table><p><b>maxDosePerPeriod</b>: 20 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style="background: LightGoldenRodYellow"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Adultos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose em doentes idosos</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dose inicial de 5 mg (5 gotas) uma vez por dia. A dose pode ser aumentada até um máximo de 10 mg (10 gotas) por dia.</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>5 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table><p><b>maxDosePerPeriod</b>: 10 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style="background: LightGoldenRodYellow"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Doentes idosos (&gt; 65 anos de idade)</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Tratamento da perturbação obsessiva-compulsiva</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose inicial e de manutenção</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dose inicial de 10 mg (10 gotas) uma vez por dia. A dose pode ser aumentada até um máximo de 20 mg (20 gotas) por dia.</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>10 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table><p><b>maxDosePerPeriod</b>: 20 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style="background: LightGoldenRodYellow"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Adultos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose em doentes idosos</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dose inicial de 5 mg (5 gotas) uma vez por dia. A dose pode ser aumentada até um máximo de 10 mg (10 gotas) por dia.</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>5 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table><p><b>maxDosePerPeriod</b>: 10 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style="background: LightGoldenRodYellow"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Doentes idosos (&gt; 65 anos de idade)</span></td></tr></table></blockquote></blockquote><h3>MedicineClassifications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Classification</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://hl7.org/fhir/medication-classification-type anatomical}">Anatomical Class</span></td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ATC N06AB10}">Escitalopram</span></td></tr></table><p><b>clinicalUseIssue</b>: </p><ul><li><a href="ClinicalUseDefinition-CipraplexGotas-CUD-contra1.html">ClinicalUseDefinition: type = contraindication</a></li><li><a href="ClinicalUseDefinition-CipraplexGotas-CUD-contra2.html">ClinicalUseDefinition: type = contraindication</a></li><li><a href="ClinicalUseDefinition-CipraplexGotas-CUD-contra3.html">ClinicalUseDefinition: type = contraindication</a></li><li><a href="ClinicalUseDefinition-CipraplexGotas-CUD-ind1.html">ClinicalUseDefinition: type = indication</a></li><li><a href="ClinicalUseDefinition-CipraplexGotas-CUD-ind2.html">ClinicalUseDefinition: type = indication</a></li><li><a href="ClinicalUseDefinition-CipraplexGotas-CUD-ind3.html">ClinicalUseDefinition: type = indication</a></li><li><a href="ClinicalUseDefinition-CipraplexGotas-CUD-ind4.html">ClinicalUseDefinition: type = indication</a></li><li><a href="ClinicalUseDefinition-CipraplexGotas-CUD-ind5.html">ClinicalUseDefinition: type = indication</a></li><li><a href="ClinicalUseDefinition-CipraplexGotas-CUD-int1.html">ClinicalUseDefinition: type = interaction</a></li><li><a href="ClinicalUseDefinition-CipraplexGotas-CUD-int2.html">ClinicalUseDefinition: type = interaction</a></li><li><a href="ClinicalUseDefinition-CipraplexGotas-CUD-int3.html">ClinicalUseDefinition: type = interaction</a></li></ul><blockquote><p><b>definitional</b></p><p><b>doseForm</b>: <span title="Codes:{http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs 1}">Gotas orais, solução</span></p><p><b>intendedRoute</b>: <span title="Codes:{http://example.com/fhir/example/CodeSystem/via-administracao-cs 48}">Via oral</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Escitalopram</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass ACTI}">active ingredient</span></p><p><b>strength</b>: 20 milligram per milliliter<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg/mL = 'mg/mL')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Galhato de Propilo</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Ácido Cítrico, anidro</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Etanol 96%</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p><p><b>strength</b>: 100 milligram per milliliter<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg/mL = 'mg/mL')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Hidróxido de sódio</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Água purificada</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p></blockquote></blockquote></div>
+  </text>
+  <code>
+    <coding>
+      <system value="http://infarmed.pt/medicamentos"/>
+      <code value="5049739"/>
+      <display value="Cipralex 20 mg/ml Gotas orais, solução [N06AB10]"/>
+    </coding>
+  </code>
+  <name value="Cipralex [Escitalopram] 20 mg/ml Gotas orais, solução"/>
+  <indicationGuideline>
+    <indication>
+      <concept>
+        <text value="Tratamento de episódios depressivos major"/>
+      </concept>
+    </indication>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose habitual diária"/>
+        </type>
+        <dosage>
+          <text value="Dose habitual de 10 mg (10 gotas) uma vez por dia. A dose pode ser aumentada até um máximo de 20 mg (20 gotas) por dia. Dose máxima diária: 20 mg."/>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="10"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </doseQuantity>
+          </doseAndRate>
+          <maxDosePerPeriod>
+            <numerator>
+              <value value="20"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+              <unit value="day"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="d"/>
+            </denominator>
+          </maxDosePerPeriod>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Adultos"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose em doentes idosos"/>
+        </type>
+        <dosage>
+          <text value="Dose inicial de 5 mg (5 gotas) uma vez por dia. A dose pode ser aumentada até um máximo de 10 mg (10 gotas) por dia."/>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="5"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </doseQuantity>
+          </doseAndRate>
+          <maxDosePerPeriod>
+            <numerator>
+              <value value="10"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+              <unit value="day"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="d"/>
+            </denominator>
+          </maxDosePerPeriod>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Doentes idosos (&gt; 65 anos de idade)"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+  </indicationGuideline>
+  <indicationGuideline>
+    <indication>
+      <concept>
+        <text value="Tratamento de perturbações de pânico com ou sem agorafobia"/>
+      </concept>
+    </indication>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose inicial e de manutenção"/>
+        </type>
+        <dosage>
+          <text value="Dose inicial de 5 mg (5 gotas) na primeira semana de tratamento, aumentando-se depois para 10 mg (10 gotas) por dia. A dose pode ser posteriormente aumentada até um máximo de 20 mg (20 gotas) por dia."/>
+          <additionalInstruction>
+            <text value="Iniciar com 5 mg/dia na 1.ª semana; aumentar para 10 mg/dia posteriormente."/>
+          </additionalInstruction>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="5"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </doseQuantity>
+          </doseAndRate>
+          <maxDosePerPeriod>
+            <numerator>
+              <value value="20"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+              <unit value="day"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="d"/>
+            </denominator>
+          </maxDosePerPeriod>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Adultos"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose em doentes idosos"/>
+        </type>
+        <dosage>
+          <text value="Dose inicial de 5 mg (5 gotas) uma vez por dia. A dose pode ser aumentada até um máximo de 10 mg (10 gotas) por dia."/>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="5"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </doseQuantity>
+          </doseAndRate>
+          <maxDosePerPeriod>
+            <numerator>
+              <value value="10"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+              <unit value="day"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="d"/>
+            </denominator>
+          </maxDosePerPeriod>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Doentes idosos (&gt; 65 anos de idade)"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+  </indicationGuideline>
+  <indicationGuideline>
+    <indication>
+      <concept>
+        <text value="Tratamento da perturbação da ansiedade social (fobia social)"/>
+      </concept>
+    </indication>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose habitual diária"/>
+        </type>
+        <dosage>
+          <text value="Dose habitual de 10 mg (10 gotas) uma vez por dia. A dose pode ser diminuída para 5 mg (5 gotas) ou aumentada para um máximo de 20 mg (20 gotas) por dia conforme resposta individual."/>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseRange>
+              <low>
+                <value value="5"/>
+                <unit value="mg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg"/>
+              </low>
+              <high>
+                <value value="10"/>
+                <unit value="mg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg"/>
+              </high>
+            </doseRange>
+          </doseAndRate>
+          <maxDosePerPeriod>
+            <numerator>
+              <value value="20"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+              <unit value="day"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="d"/>
+            </denominator>
+          </maxDosePerPeriod>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Adultos"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose em doentes idosos"/>
+        </type>
+        <dosage>
+          <text value="Dose inicial de 5 mg (5 gotas) uma vez por dia. A dose pode ser aumentada até um máximo de 10 mg (10 gotas) por dia."/>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="5"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </doseQuantity>
+          </doseAndRate>
+          <maxDosePerPeriod>
+            <numerator>
+              <value value="10"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+              <unit value="day"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="d"/>
+            </denominator>
+          </maxDosePerPeriod>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Doentes idosos (&gt; 65 anos de idade)"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+  </indicationGuideline>
+  <indicationGuideline>
+    <indication>
+      <concept>
+        <text value="Tratamento da perturbação da ansiedade generalizada"/>
+      </concept>
+    </indication>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose inicial e de manutenção"/>
+        </type>
+        <dosage>
+          <text value="Dose inicial de 10 mg (10 gotas) uma vez por dia. A dose pode ser aumentada até um máximo de 20 mg (20 gotas) por dia."/>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="10"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </doseQuantity>
+          </doseAndRate>
+          <maxDosePerPeriod>
+            <numerator>
+              <value value="20"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+              <unit value="day"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="d"/>
+            </denominator>
+          </maxDosePerPeriod>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Adultos"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose em doentes idosos"/>
+        </type>
+        <dosage>
+          <text value="Dose inicial de 5 mg (5 gotas) uma vez por dia. A dose pode ser aumentada até um máximo de 10 mg (10 gotas) por dia."/>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="5"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </doseQuantity>
+          </doseAndRate>
+          <maxDosePerPeriod>
+            <numerator>
+              <value value="10"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+              <unit value="day"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="d"/>
+            </denominator>
+          </maxDosePerPeriod>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Doentes idosos (&gt; 65 anos de idade)"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+  </indicationGuideline>
+  <indicationGuideline>
+    <indication>
+      <concept>
+        <text value="Tratamento da perturbação obsessiva-compulsiva"/>
+      </concept>
+    </indication>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose inicial e de manutenção"/>
+        </type>
+        <dosage>
+          <text value="Dose inicial de 10 mg (10 gotas) uma vez por dia. A dose pode ser aumentada até um máximo de 20 mg (20 gotas) por dia."/>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="10"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </doseQuantity>
+          </doseAndRate>
+          <maxDosePerPeriod>
+            <numerator>
+              <value value="20"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+              <unit value="day"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="d"/>
+            </denominator>
+          </maxDosePerPeriod>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Adultos"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose em doentes idosos"/>
+        </type>
+        <dosage>
+          <text value="Dose inicial de 5 mg (5 gotas) uma vez por dia. A dose pode ser aumentada até um máximo de 10 mg (10 gotas) por dia."/>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="5"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </doseQuantity>
+          </doseAndRate>
+          <maxDosePerPeriod>
+            <numerator>
+              <value value="10"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+              <unit value="day"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="d"/>
+            </denominator>
+          </maxDosePerPeriod>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Doentes idosos (&gt; 65 anos de idade)"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+  </indicationGuideline>
+  <medicineClassification>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/medication-classification-type"/>
+        <code value="anatomical"/>
+        <display value="Anatomical Class"/>
+      </coding>
+    </type>
+    <classification>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ATC"/>
+        <code value="N06AB10"/>
+        <display value="Escitalopram"/>
+      </coding>
+    </classification>
+  </medicineClassification>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/CipraplexGotas-CUD-contra1"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/CipraplexGotas-CUD-contra2"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/CipraplexGotas-CUD-contra3"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/CipraplexGotas-CUD-ind1"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/CipraplexGotas-CUD-ind2"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/CipraplexGotas-CUD-ind3"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/CipraplexGotas-CUD-ind4"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/CipraplexGotas-CUD-ind5"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/CipraplexGotas-CUD-int1"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/CipraplexGotas-CUD-int2"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/CipraplexGotas-CUD-int3"/>
+  </clinicalUseIssue>
+  <definitional>
+    <doseForm>
+      <coding>
+        <system value="http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs"/>
+        <code value="1"/>
+        <display value="Gotas orais, solução"/>
+      </coding>
+    </doseForm>
+    <intendedRoute>
+      <coding>
+        <system value="http://example.com/fhir/example/CodeSystem/via-administracao-cs"/>
+        <code value="48"/>
+        <display value="Via oral"/>
+      </coding>
+    </intendedRoute>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Escitalopram"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="ACTI"/>
+        </coding>
+      </type>
+      <strengthQuantity>
+        <value value="20"/>
+        <unit value="milligram per milliliter"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mg/mL"/>
+      </strengthQuantity>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Galhato de Propilo"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Ácido Cítrico, anidro"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Etanol 96%"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+      <strengthQuantity>
+        <value value="100"/>
+        <unit value="milligram per milliliter"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mg/mL"/>
+      </strengthQuantity>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Hidróxido de sódio"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Água purificada"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+    </ingredient>
+  </definitional>
+</MedicationKnowledge>

@@ -1,0 +1,91 @@
+[{
+  "id" : "my-ig",
+  "type" : "ImplementationGuide",
+  "url" : "http://example.com/fhir/example",
+  "version" : "1.0.0",
+  "name" : "ExampleIG"
+},
+{
+  "id" : "dosage-type-cs",
+  "type" : "CodeSystem",
+  "url" : "http://example.com/fhir/example/CodeSystem/dosage-type-cs",
+  "version" : "1.0.0",
+  "name" : "DosageTypeCS"
+},
+{
+  "id" : "forma-farmaceutica-cs",
+  "type" : "CodeSystem",
+  "url" : "http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs",
+  "version" : "1.0.0",
+  "name" : "FormaFarmaceuticaCS"
+},
+{
+  "id" : "tipo-preco-infarmed-cs",
+  "type" : "CodeSystem",
+  "url" : "http://example.com/fhir/example/CodeSystem/tipo-preco-infarmed-cs",
+  "version" : "1.0.0",
+  "name" : "TipoPrecoINFARMEDCS"
+},
+{
+  "id" : "via-administracao-cs",
+  "type" : "CodeSystem",
+  "url" : "http://example.com/fhir/example/CodeSystem/via-administracao-cs",
+  "version" : "1.0.0",
+  "name" : "ViaAdministracaoCS"
+},
+{
+  "id" : "ContraIndicacoesPDH",
+  "type" : "StructureDefinition",
+  "url" : "http://example.com/fhir/example/StructureDefinition/ContraIndicacoesPDH",
+  "version" : "1.0.0",
+  "name" : "ContraIndicacoesPDH"
+},
+{
+  "id" : "IndicacoesPDH",
+  "type" : "StructureDefinition",
+  "url" : "http://example.com/fhir/example/StructureDefinition/IndicacoesPDH",
+  "version" : "1.0.0",
+  "name" : "IndicacoesPDH"
+},
+{
+  "id" : "InteracoesPDH",
+  "type" : "StructureDefinition",
+  "url" : "http://example.com/fhir/example/StructureDefinition/InteracoesPDH",
+  "version" : "1.0.0",
+  "name" : "InteracoesPDH"
+},
+{
+  "id" : "MedicationKnowledgePDH",
+  "type" : "StructureDefinition",
+  "url" : "http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH",
+  "version" : "1.0.0",
+  "name" : "MedicationKnowledgePDH"
+},
+{
+  "id" : "dosage-type-vs",
+  "type" : "ValueSet",
+  "url" : "http://example.com/fhir/example/ValueSet/dosage-type-vs",
+  "version" : "1.0.0",
+  "name" : "DosageTypeVS"
+},
+{
+  "id" : "forma-farmaceutica-vs",
+  "type" : "ValueSet",
+  "url" : "http://example.com/fhir/example/ValueSet/forma-farmaceutica-vs",
+  "version" : "1.0.0",
+  "name" : "FormaFarmaceuticaVS"
+},
+{
+  "id" : "tipo-preco-infarmed-vs",
+  "type" : "ValueSet",
+  "url" : "http://example.com/fhir/example/ValueSet/tipo-preco-infarmed-vs",
+  "version" : "1.0.0",
+  "name" : "TipoPrecoINFARMEDVS"
+},
+{
+  "id" : "via-administracao-vs",
+  "type" : "ValueSet",
+  "url" : "http://example.com/fhir/example/ValueSet/via-administracao-vs",
+  "version" : "1.0.0",
+  "name" : "ViaAdministracaoVS"
+}]

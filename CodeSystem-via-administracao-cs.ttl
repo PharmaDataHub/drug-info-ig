@@ -1,0 +1,439 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/CodeSystem/via-administracao-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "via-administracao-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem via-administracao-cs</b></p><a name=\"via-administracao-cs\"> </a><a name=\"hcvia-administracao-cs\"> </a><p>This  code system <code>http://example.com/fhir/example/CodeSystem/via-administracao-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">43<a name=\"via-administracao-cs-43\"> </a></td><td>Via intravesical</td><td>IVesical</td></tr><tr><td style=\"white-space:nowrap\">27<a name=\"via-administracao-cs-27\"> </a></td><td>Via intralinfática</td><td>ILinfáti</td></tr><tr><td style=\"white-space:nowrap\">81<a name=\"via-administracao-cs-81\"> </a></td><td>Uso gengival</td><td>Gengival</td></tr><tr><td style=\"white-space:nowrap\">52<a name=\"via-administracao-cs-52\"> </a></td><td>Via periarticular</td><td>Periarticular</td></tr><tr><td style=\"white-space:nowrap\">31<a name=\"via-administracao-cs-31\"> </a></td><td>Uso intraocular</td><td>IOcular</td></tr><tr><td style=\"white-space:nowrap\">26<a name=\"via-administracao-cs-26\"> </a></td><td>Uso intralesional</td><td>Intralesional</td></tr><tr><td style=\"white-space:nowrap\">57<a name=\"via-administracao-cs-57\"> </a></td><td>Via subconjuntival</td><td>Subconjuntival</td></tr><tr><td style=\"white-space:nowrap\">30<a name=\"via-administracao-cs-30\"> </a></td><td>Via intramuscular</td><td>IM</td></tr><tr><td style=\"white-space:nowrap\">110<a name=\"via-administracao-cs-110\"> </a></td><td>Via intraesternal</td><td>Via intraesternal</td></tr><tr><td style=\"white-space:nowrap\">24<a name=\"via-administracao-cs-24\"> </a></td><td>Via intradiscal</td><td>Via intradiscal</td></tr><tr><td style=\"white-space:nowrap\">19<a name=\"via-administracao-cs-19\"> </a></td><td>Via intracervical</td><td>ICervical</td></tr><tr><td style=\"white-space:nowrap\">80<a name=\"via-administracao-cs-80\"> </a></td><td>Via gastroentérica</td><td>Gastro-enteri</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"via-administracao-cs-10\"> </a></td><td>Hemodiálise</td><td>Hemodi</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"via-administracao-cs-4\"> </a></td><td>Uso dental</td><td>Dental</td></tr><tr><td style=\"white-space:nowrap\">16<a name=\"via-administracao-cs-16\"> </a></td><td>Via intracardíaca</td><td>ICardíaca</td></tr><tr><td style=\"white-space:nowrap\">13<a name=\"via-administracao-cs-13\"> </a></td><td>Via intra-arterial</td><td>IA</td></tr><tr><td style=\"white-space:nowrap\">14<a name=\"via-administracao-cs-14\"> </a></td><td>Via intra-articular</td><td>IArticular</td></tr><tr><td style=\"white-space:nowrap\">71<a name=\"via-administracao-cs-71\"> </a></td><td>Via inalatória</td><td>Inalatória</td></tr><tr><td style=\"white-space:nowrap\">808<a name=\"via-administracao-cs-808\"> </a></td><td>EC - Uso intratorácico</td><td>EC - Uso intratorácico</td></tr><tr><td style=\"white-space:nowrap\">806<a name=\"via-administracao-cs-806\"> </a></td><td>EC - Uso intrasinovial</td><td>EC - Uso intrasinovial</td></tr><tr><td style=\"white-space:nowrap\">123<a name=\"via-administracao-cs-123\"> </a></td><td>Uso periodontal</td><td>Periodontal</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"via-administracao-cs-7\"> </a></td><td>Via endotraqueobrônquica</td><td>Endotraqueo</td></tr><tr><td style=\"white-space:nowrap\">127<a name=\"via-administracao-cs-127\"> </a></td><td>Uso epilesional</td><td>Epilesional</td></tr><tr><td style=\"white-space:nowrap\">72<a name=\"via-administracao-cs-72\"> </a></td><td>Via intravítreo</td><td>Intravítreo</td></tr><tr><td style=\"white-space:nowrap\">821<a name=\"via-administracao-cs-821\"> </a></td><td>EC - Via desconhecida</td><td>EC - Via desconhecida</td></tr><tr><td style=\"white-space:nowrap\">130<a name=\"via-administracao-cs-130\"> </a></td><td>Via justaescleral posterior</td><td>Via justaescleral posterior</td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"via-administracao-cs-1\"> </a></td><td>Uso auricular</td><td>Auricular</td></tr><tr><td style=\"white-space:nowrap\">822<a name=\"via-administracao-cs-822\"> </a></td><td>Para implantação</td><td>Implantação</td></tr><tr><td style=\"white-space:nowrap\">823<a name=\"via-administracao-cs-823\"> </a></td><td>Via intraepidérmica</td><td>Via intraepidérmica</td></tr><tr><td style=\"white-space:nowrap\">58<a name=\"via-administracao-cs-58\"> </a></td><td>Via subcutânea</td><td>SC</td></tr><tr><td style=\"white-space:nowrap\">66<a name=\"via-administracao-cs-66\"> </a></td><td>Via uretral</td><td>Uretral</td></tr><tr><td style=\"white-space:nowrap\">115<a name=\"via-administracao-cs-115\"> </a></td><td>Via de administração não especificada</td><td>NEsp</td></tr><tr><td style=\"white-space:nowrap\">145<a name=\"via-administracao-cs-145\"> </a></td><td>Via intraglandular</td><td>IGlandul</td></tr><tr><td style=\"white-space:nowrap\">148<a name=\"via-administracao-cs-148\"> </a></td><td>Via intraputaminal</td><td>Via intraputaminal</td></tr><tr><td style=\"white-space:nowrap\">69<a name=\"via-administracao-cs-69\"> </a></td><td>Uso laringofaríngeo</td><td>Laringofarín</td></tr><tr><td style=\"white-space:nowrap\">829<a name=\"via-administracao-cs-829\"> </a></td><td>Uso intracameral</td><td>Intracameral</td></tr><tr><td style=\"white-space:nowrap\">45<a name=\"via-administracao-cs-45\"> </a></td><td>Via nasal</td><td>Nasal</td></tr><tr><td style=\"white-space:nowrap\">820<a name=\"via-administracao-cs-820\"> </a></td><td>EC - Uso transplacentário</td><td>EC - Uso transplacentário</td></tr><tr><td style=\"white-space:nowrap\">826<a name=\"via-administracao-cs-826\"> </a></td><td>EC - Via Intraprostática</td><td>EC - Via Intraprostática</td></tr><tr><td style=\"white-space:nowrap\">35<a name=\"via-administracao-cs-35\"> </a></td><td>Via intrassinovial</td><td>ISsinovial</td></tr><tr><td style=\"white-space:nowrap\">134<a name=\"via-administracao-cs-134\"> </a></td><td>Via peritumoral</td><td>Peritumoral</td></tr><tr><td style=\"white-space:nowrap\">42<a name=\"via-administracao-cs-42\"> </a></td><td>Via intravenosa</td><td>IV</td></tr><tr><td style=\"white-space:nowrap\">70<a name=\"via-administracao-cs-70\"> </a></td><td>Via intrapericárdica</td><td>Via intrapericárdica</td></tr><tr><td style=\"white-space:nowrap\">17<a name=\"via-administracao-cs-17\"> </a></td><td>Via intracavernosa</td><td>ICaver</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"via-administracao-cs-2\"> </a></td><td>Via bucal</td><td>Bucal</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"via-administracao-cs-6\"> </a></td><td>Uso endossinusal</td><td>Uso endossinusal</td></tr><tr><td style=\"white-space:nowrap\">59<a name=\"via-administracao-cs-59\"> </a></td><td>Uso intraósseo</td><td>IÓssea</td></tr><tr><td style=\"white-space:nowrap\">802<a name=\"via-administracao-cs-802\"> </a></td><td>EC - Uso intracorneal</td><td>EC - Uso intracorneal</td></tr><tr><td style=\"white-space:nowrap\">15<a name=\"via-administracao-cs-15\"> </a></td><td>Via intrauterina</td><td>IUterina</td></tr><tr><td style=\"white-space:nowrap\">819<a name=\"via-administracao-cs-819\"> </a></td><td>EC - Uso transmamário</td><td>EC - Uso transmamário</td></tr><tr><td style=\"white-space:nowrap\">811<a name=\"via-administracao-cs-811\"> </a></td><td>EC - Via intravenosa (perfusão)</td><td>EC - Via intravenosa (perfusão)</td></tr><tr><td style=\"white-space:nowrap\">814<a name=\"via-administracao-cs-814\"> </a></td><td>EC - Outros</td><td>EC - Outros</td></tr><tr><td style=\"white-space:nowrap\">812<a name=\"via-administracao-cs-812\"> </a></td><td>EC - Iontoforese</td><td>EC - Iontoforese</td></tr><tr><td style=\"white-space:nowrap\">813<a name=\"via-administracao-cs-813\"> </a></td><td>EC - Usada em técnica de pensos oclusivos</td><td>EC - Usada em técnica de pensos oclusivos</td></tr><tr><td style=\"white-space:nowrap\">816<a name=\"via-administracao-cs-816\"> </a></td><td>EC - Uso retrobulbar</td><td>EC - Uso retrobulbar</td></tr><tr><td style=\"white-space:nowrap\">122<a name=\"via-administracao-cs-122\"> </a></td><td>Via intratumoral</td><td>ITumoral</td></tr><tr><td style=\"white-space:nowrap\">817<a name=\"via-administracao-cs-817\"> </a></td><td>EC - Uso subdérmica</td><td>EC - Uso subdérmica</td></tr><tr><td style=\"white-space:nowrap\">827<a name=\"via-administracao-cs-827\"> </a></td><td>EC - Não mencionado</td><td>EC - Não mencionado</td></tr><tr><td style=\"white-space:nowrap\">815<a name=\"via-administracao-cs-815\"> </a></td><td>EC - Uso parentérico</td><td>EC - Uso parentérico</td></tr><tr><td style=\"white-space:nowrap\">126<a name=\"via-administracao-cs-126\"> </a></td><td>Via intracerebral</td><td>ICerebral</td></tr><tr><td style=\"white-space:nowrap\">129<a name=\"via-administracao-cs-129\"> </a></td><td>Via intestinal</td><td>Via intestinal</td></tr><tr><td style=\"white-space:nowrap\">33<a name=\"via-administracao-cs-33\"> </a></td><td>Via intraperitoneal</td><td>IPeritoneal</td></tr><tr><td style=\"white-space:nowrap\">23<a name=\"via-administracao-cs-23\"> </a></td><td>Via intradérmica</td><td>ID</td></tr><tr><td style=\"white-space:nowrap\">135<a name=\"via-administracao-cs-135\"> </a></td><td>Infiltração</td><td>Infiltra</td></tr><tr><td style=\"white-space:nowrap\">143<a name=\"via-administracao-cs-143\"> </a></td><td>Via intracerebroventricular</td><td>ICerebroventric</td></tr><tr><td style=\"white-space:nowrap\">146<a name=\"via-administracao-cs-146\"> </a></td><td>Via subretiniana</td><td>Subretin</td></tr><tr><td style=\"white-space:nowrap\">149<a name=\"via-administracao-cs-149\"> </a></td><td>Via submucosa</td><td>Submucosa</td></tr><tr><td style=\"white-space:nowrap\">67<a name=\"via-administracao-cs-67\"> </a></td><td>Uso vaginal</td><td>Vaginal</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"via-administracao-cs-3\"> </a></td><td>Uso cutâneo</td><td>Cutâneo</td></tr><tr><td style=\"white-space:nowrap\">62<a name=\"via-administracao-cs-62\"> </a></td><td>Via transdérmica</td><td>Transder</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"via-administracao-cs-9\"> </a></td><td>Via extra-amniótica</td><td>Via extra-amniótica</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"via-administracao-cs-8\"> </a></td><td>Via epidural</td><td>Epidural</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"via-administracao-cs-12\"> </a></td><td>Via intra-amniótica</td><td>IAmniótica</td></tr><tr><td style=\"white-space:nowrap\">74<a name=\"via-administracao-cs-74\"> </a></td><td>Uso subgengival</td><td>Subgengival</td></tr><tr><td style=\"white-space:nowrap\">803<a name=\"via-administracao-cs-803\"> </a></td><td>EC - Uso intra-hepático</td><td>EC - Uso intra-hepático</td></tr><tr><td style=\"white-space:nowrap\">805<a name=\"via-administracao-cs-805\"> </a></td><td>EC - Uso intrameningial</td><td>EC - Uso intrameningial</td></tr><tr><td style=\"white-space:nowrap\">73<a name=\"via-administracao-cs-73\"> </a></td><td>Via sublingual</td><td>Sublingual</td></tr><tr><td style=\"white-space:nowrap\">818<a name=\"via-administracao-cs-818\"> </a></td><td>EC - Uso tópico</td><td>EC - Uso tópico</td></tr><tr><td style=\"white-space:nowrap\">828<a name=\"via-administracao-cs-828\"> </a></td><td>EC - Uso  periósseo</td><td>EC - Uso  periósseo</td></tr><tr><td style=\"white-space:nowrap\">825<a name=\"via-administracao-cs-825\"> </a></td><td>EC - Via Intracartilaginosa</td><td>EC - Via Intracartilaginosa</td></tr><tr><td style=\"white-space:nowrap\">128<a name=\"via-administracao-cs-128\"> </a></td><td>Via gástrica</td><td>Gástrica</td></tr><tr><td style=\"white-space:nowrap\">124<a name=\"via-administracao-cs-124\"> </a></td><td>Uso epicutâneo</td><td>Epicutâneo</td></tr><tr><td style=\"white-space:nowrap\">144<a name=\"via-administracao-cs-144\"> </a></td><td>Uso extracorpóreo</td><td>Extracorp</td></tr><tr><td style=\"white-space:nowrap\">37<a name=\"via-administracao-cs-37\"> </a></td><td>Via intratecal</td><td>IT</td></tr><tr><td style=\"white-space:nowrap\">34<a name=\"via-administracao-cs-34\"> </a></td><td>Via intrapleural</td><td>IPleural</td></tr><tr><td style=\"white-space:nowrap\">47<a name=\"via-administracao-cs-47\"> </a></td><td>Uso oftálmico</td><td>Oftálmico</td></tr><tr><td style=\"white-space:nowrap\">54<a name=\"via-administracao-cs-54\"> </a></td><td>Via retal</td><td>Rectal</td></tr><tr><td style=\"white-space:nowrap\">53<a name=\"via-administracao-cs-53\"> </a></td><td>Via perineural</td><td>Perineural</td></tr><tr><td style=\"white-space:nowrap\">22<a name=\"via-administracao-cs-22\"> </a></td><td>Via intracoronária</td><td>Intracoronária</td></tr><tr><td style=\"white-space:nowrap\">48<a name=\"via-administracao-cs-48\"> </a></td><td>Via oral</td><td>Oral</td></tr><tr><td style=\"white-space:nowrap\">68<a name=\"via-administracao-cs-68\"> </a></td><td>Uso orofaríngeo</td><td>Orofaríngeo</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"via-administracao-cs-5\"> </a></td><td>Via endocervical</td><td>Via endocervical</td></tr><tr><td style=\"white-space:nowrap\">801<a name=\"via-administracao-cs-801\"> </a></td><td>EC - Uso intracisternal</td><td>EC - Uso intracisternal</td></tr><tr><td style=\"white-space:nowrap\">809<a name=\"via-administracao-cs-809\"> </a></td><td>EC - Uso intratraqueal</td><td>EC - Uso intratraqueal</td></tr><tr><td style=\"white-space:nowrap\">810<a name=\"via-administracao-cs-810\"> </a></td><td>EC - Via intravenosa (bólus)</td><td>EC - Via intravenosa (bólus)</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://example.com/fhir/example/CodeSystem/via-administracao-cs"^^xsd:anyURI ;
+     fhir:l <http://example.com/fhir/example/CodeSystem/via-administracao-cs>
+  ] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "ViaAdministracaoCS"] ; # 
+  fhir:title [ fhir:v "Via de Administração"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2026-04-20T09:10:31+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "CodeSystem para vias de administração baseado na tabela fornecida"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ;
+         fhir:l <http://unstats.un.org/unsd/methods/m49/m49.htm>
+       ] ;
+       fhir:code [ fhir:v "620" ] ;
+       fhir:display [ fhir:v "Portugal (PRT)" ]
+     ] )
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "95"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "43" ] ;
+     fhir:display [ fhir:v "Via intravesical" ] ;
+     fhir:definition [ fhir:v "IVesical" ]
+  ] [
+     fhir:code [ fhir:v "27" ] ;
+     fhir:display [ fhir:v "Via intralinfática" ] ;
+     fhir:definition [ fhir:v "ILinfáti" ]
+  ] [
+     fhir:code [ fhir:v "81" ] ;
+     fhir:display [ fhir:v "Uso gengival" ] ;
+     fhir:definition [ fhir:v "Gengival" ]
+  ] [
+     fhir:code [ fhir:v "52" ] ;
+     fhir:display [ fhir:v "Via periarticular" ] ;
+     fhir:definition [ fhir:v "Periarticular" ]
+  ] [
+     fhir:code [ fhir:v "31" ] ;
+     fhir:display [ fhir:v "Uso intraocular" ] ;
+     fhir:definition [ fhir:v "IOcular" ]
+  ] [
+     fhir:code [ fhir:v "26" ] ;
+     fhir:display [ fhir:v "Uso intralesional" ] ;
+     fhir:definition [ fhir:v "Intralesional" ]
+  ] [
+     fhir:code [ fhir:v "57" ] ;
+     fhir:display [ fhir:v "Via subconjuntival" ] ;
+     fhir:definition [ fhir:v "Subconjuntival" ]
+  ] [
+     fhir:code [ fhir:v "30" ] ;
+     fhir:display [ fhir:v "Via intramuscular" ] ;
+     fhir:definition [ fhir:v "IM" ]
+  ] [
+     fhir:code [ fhir:v "110" ] ;
+     fhir:display [ fhir:v "Via intraesternal" ] ;
+     fhir:definition [ fhir:v "Via intraesternal" ]
+  ] [
+     fhir:code [ fhir:v "24" ] ;
+     fhir:display [ fhir:v "Via intradiscal" ] ;
+     fhir:definition [ fhir:v "Via intradiscal" ]
+  ] [
+     fhir:code [ fhir:v "19" ] ;
+     fhir:display [ fhir:v "Via intracervical" ] ;
+     fhir:definition [ fhir:v "ICervical" ]
+  ] [
+     fhir:code [ fhir:v "80" ] ;
+     fhir:display [ fhir:v "Via gastroentérica" ] ;
+     fhir:definition [ fhir:v "Gastro-enteri" ]
+  ] [
+     fhir:code [ fhir:v "10" ] ;
+     fhir:display [ fhir:v "Hemodiálise" ] ;
+     fhir:definition [ fhir:v "Hemodi" ]
+  ] [
+     fhir:code [ fhir:v "4" ] ;
+     fhir:display [ fhir:v "Uso dental" ] ;
+     fhir:definition [ fhir:v "Dental" ]
+  ] [
+     fhir:code [ fhir:v "16" ] ;
+     fhir:display [ fhir:v "Via intracardíaca" ] ;
+     fhir:definition [ fhir:v "ICardíaca" ]
+  ] [
+     fhir:code [ fhir:v "13" ] ;
+     fhir:display [ fhir:v "Via intra-arterial" ] ;
+     fhir:definition [ fhir:v "IA" ]
+  ] [
+     fhir:code [ fhir:v "14" ] ;
+     fhir:display [ fhir:v "Via intra-articular" ] ;
+     fhir:definition [ fhir:v "IArticular" ]
+  ] [
+     fhir:code [ fhir:v "71" ] ;
+     fhir:display [ fhir:v "Via inalatória" ] ;
+     fhir:definition [ fhir:v "Inalatória" ]
+  ] [
+     fhir:code [ fhir:v "808" ] ;
+     fhir:display [ fhir:v "EC - Uso intratorácico" ] ;
+     fhir:definition [ fhir:v "EC - Uso intratorácico" ]
+  ] [
+     fhir:code [ fhir:v "806" ] ;
+     fhir:display [ fhir:v "EC - Uso intrasinovial" ] ;
+     fhir:definition [ fhir:v "EC - Uso intrasinovial" ]
+  ] [
+     fhir:code [ fhir:v "123" ] ;
+     fhir:display [ fhir:v "Uso periodontal" ] ;
+     fhir:definition [ fhir:v "Periodontal" ]
+  ] [
+     fhir:code [ fhir:v "7" ] ;
+     fhir:display [ fhir:v "Via endotraqueobrônquica" ] ;
+     fhir:definition [ fhir:v "Endotraqueo" ]
+  ] [
+     fhir:code [ fhir:v "127" ] ;
+     fhir:display [ fhir:v "Uso epilesional" ] ;
+     fhir:definition [ fhir:v "Epilesional" ]
+  ] [
+     fhir:code [ fhir:v "72" ] ;
+     fhir:display [ fhir:v "Via intravítreo" ] ;
+     fhir:definition [ fhir:v "Intravítreo" ]
+  ] [
+     fhir:code [ fhir:v "821" ] ;
+     fhir:display [ fhir:v "EC - Via desconhecida" ] ;
+     fhir:definition [ fhir:v "EC - Via desconhecida" ]
+  ] [
+     fhir:code [ fhir:v "130" ] ;
+     fhir:display [ fhir:v "Via justaescleral posterior" ] ;
+     fhir:definition [ fhir:v "Via justaescleral posterior" ]
+  ] [
+     fhir:code [ fhir:v "1" ] ;
+     fhir:display [ fhir:v "Uso auricular" ] ;
+     fhir:definition [ fhir:v "Auricular" ]
+  ] [
+     fhir:code [ fhir:v "822" ] ;
+     fhir:display [ fhir:v "Para implantação" ] ;
+     fhir:definition [ fhir:v "Implantação" ]
+  ] [
+     fhir:code [ fhir:v "823" ] ;
+     fhir:display [ fhir:v "Via intraepidérmica" ] ;
+     fhir:definition [ fhir:v "Via intraepidérmica" ]
+  ] [
+     fhir:code [ fhir:v "58" ] ;
+     fhir:display [ fhir:v "Via subcutânea" ] ;
+     fhir:definition [ fhir:v "SC" ]
+  ] [
+     fhir:code [ fhir:v "66" ] ;
+     fhir:display [ fhir:v "Via uretral" ] ;
+     fhir:definition [ fhir:v "Uretral" ]
+  ] [
+     fhir:code [ fhir:v "115" ] ;
+     fhir:display [ fhir:v "Via de administração não especificada" ] ;
+     fhir:definition [ fhir:v "NEsp" ]
+  ] [
+     fhir:code [ fhir:v "145" ] ;
+     fhir:display [ fhir:v "Via intraglandular" ] ;
+     fhir:definition [ fhir:v "IGlandul" ]
+  ] [
+     fhir:code [ fhir:v "148" ] ;
+     fhir:display [ fhir:v "Via intraputaminal" ] ;
+     fhir:definition [ fhir:v "Via intraputaminal" ]
+  ] [
+     fhir:code [ fhir:v "69" ] ;
+     fhir:display [ fhir:v "Uso laringofaríngeo" ] ;
+     fhir:definition [ fhir:v "Laringofarín" ]
+  ] [
+     fhir:code [ fhir:v "829" ] ;
+     fhir:display [ fhir:v "Uso intracameral" ] ;
+     fhir:definition [ fhir:v "Intracameral" ]
+  ] [
+     fhir:code [ fhir:v "45" ] ;
+     fhir:display [ fhir:v "Via nasal" ] ;
+     fhir:definition [ fhir:v "Nasal" ]
+  ] [
+     fhir:code [ fhir:v "820" ] ;
+     fhir:display [ fhir:v "EC - Uso transplacentário" ] ;
+     fhir:definition [ fhir:v "EC - Uso transplacentário" ]
+  ] [
+     fhir:code [ fhir:v "826" ] ;
+     fhir:display [ fhir:v "EC - Via Intraprostática" ] ;
+     fhir:definition [ fhir:v "EC - Via Intraprostática" ]
+  ] [
+     fhir:code [ fhir:v "35" ] ;
+     fhir:display [ fhir:v "Via intrassinovial" ] ;
+     fhir:definition [ fhir:v "ISsinovial" ]
+  ] [
+     fhir:code [ fhir:v "134" ] ;
+     fhir:display [ fhir:v "Via peritumoral" ] ;
+     fhir:definition [ fhir:v "Peritumoral" ]
+  ] [
+     fhir:code [ fhir:v "42" ] ;
+     fhir:display [ fhir:v "Via intravenosa" ] ;
+     fhir:definition [ fhir:v "IV" ]
+  ] [
+     fhir:code [ fhir:v "70" ] ;
+     fhir:display [ fhir:v "Via intrapericárdica" ] ;
+     fhir:definition [ fhir:v "Via intrapericárdica" ]
+  ] [
+     fhir:code [ fhir:v "17" ] ;
+     fhir:display [ fhir:v "Via intracavernosa" ] ;
+     fhir:definition [ fhir:v "ICaver" ]
+  ] [
+     fhir:code [ fhir:v "2" ] ;
+     fhir:display [ fhir:v "Via bucal" ] ;
+     fhir:definition [ fhir:v "Bucal" ]
+  ] [
+     fhir:code [ fhir:v "6" ] ;
+     fhir:display [ fhir:v "Uso endossinusal" ] ;
+     fhir:definition [ fhir:v "Uso endossinusal" ]
+  ] [
+     fhir:code [ fhir:v "59" ] ;
+     fhir:display [ fhir:v "Uso intraósseo" ] ;
+     fhir:definition [ fhir:v "IÓssea" ]
+  ] [
+     fhir:code [ fhir:v "802" ] ;
+     fhir:display [ fhir:v "EC - Uso intracorneal" ] ;
+     fhir:definition [ fhir:v "EC - Uso intracorneal" ]
+  ] [
+     fhir:code [ fhir:v "15" ] ;
+     fhir:display [ fhir:v "Via intrauterina" ] ;
+     fhir:definition [ fhir:v "IUterina" ]
+  ] [
+     fhir:code [ fhir:v "819" ] ;
+     fhir:display [ fhir:v "EC - Uso transmamário" ] ;
+     fhir:definition [ fhir:v "EC - Uso transmamário" ]
+  ] [
+     fhir:code [ fhir:v "811" ] ;
+     fhir:display [ fhir:v "EC - Via intravenosa (perfusão)" ] ;
+     fhir:definition [ fhir:v "EC - Via intravenosa (perfusão)" ]
+  ] [
+     fhir:code [ fhir:v "814" ] ;
+     fhir:display [ fhir:v "EC - Outros" ] ;
+     fhir:definition [ fhir:v "EC - Outros" ]
+  ] [
+     fhir:code [ fhir:v "812" ] ;
+     fhir:display [ fhir:v "EC - Iontoforese" ] ;
+     fhir:definition [ fhir:v "EC - Iontoforese" ]
+  ] [
+     fhir:code [ fhir:v "813" ] ;
+     fhir:display [ fhir:v "EC - Usada em técnica de pensos oclusivos" ] ;
+     fhir:definition [ fhir:v "EC - Usada em técnica de pensos oclusivos" ]
+  ] [
+     fhir:code [ fhir:v "816" ] ;
+     fhir:display [ fhir:v "EC - Uso retrobulbar" ] ;
+     fhir:definition [ fhir:v "EC - Uso retrobulbar" ]
+  ] [
+     fhir:code [ fhir:v "122" ] ;
+     fhir:display [ fhir:v "Via intratumoral" ] ;
+     fhir:definition [ fhir:v "ITumoral" ]
+  ] [
+     fhir:code [ fhir:v "817" ] ;
+     fhir:display [ fhir:v "EC - Uso subdérmica" ] ;
+     fhir:definition [ fhir:v "EC - Uso subdérmica" ]
+  ] [
+     fhir:code [ fhir:v "827" ] ;
+     fhir:display [ fhir:v "EC - Não mencionado" ] ;
+     fhir:definition [ fhir:v "EC - Não mencionado" ]
+  ] [
+     fhir:code [ fhir:v "815" ] ;
+     fhir:display [ fhir:v "EC - Uso parentérico" ] ;
+     fhir:definition [ fhir:v "EC - Uso parentérico" ]
+  ] [
+     fhir:code [ fhir:v "126" ] ;
+     fhir:display [ fhir:v "Via intracerebral" ] ;
+     fhir:definition [ fhir:v "ICerebral" ]
+  ] [
+     fhir:code [ fhir:v "129" ] ;
+     fhir:display [ fhir:v "Via intestinal" ] ;
+     fhir:definition [ fhir:v "Via intestinal" ]
+  ] [
+     fhir:code [ fhir:v "33" ] ;
+     fhir:display [ fhir:v "Via intraperitoneal" ] ;
+     fhir:definition [ fhir:v "IPeritoneal" ]
+  ] [
+     fhir:code [ fhir:v "23" ] ;
+     fhir:display [ fhir:v "Via intradérmica" ] ;
+     fhir:definition [ fhir:v "ID" ]
+  ] [
+     fhir:code [ fhir:v "135" ] ;
+     fhir:display [ fhir:v "Infiltração" ] ;
+     fhir:definition [ fhir:v "Infiltra" ]
+  ] [
+     fhir:code [ fhir:v "143" ] ;
+     fhir:display [ fhir:v "Via intracerebroventricular" ] ;
+     fhir:definition [ fhir:v "ICerebroventric" ]
+  ] [
+     fhir:code [ fhir:v "146" ] ;
+     fhir:display [ fhir:v "Via subretiniana" ] ;
+     fhir:definition [ fhir:v "Subretin" ]
+  ] [
+     fhir:code [ fhir:v "149" ] ;
+     fhir:display [ fhir:v "Via submucosa" ] ;
+     fhir:definition [ fhir:v "Submucosa" ]
+  ] [
+     fhir:code [ fhir:v "67" ] ;
+     fhir:display [ fhir:v "Uso vaginal" ] ;
+     fhir:definition [ fhir:v "Vaginal" ]
+  ] [
+     fhir:code [ fhir:v "3" ] ;
+     fhir:display [ fhir:v "Uso cutâneo" ] ;
+     fhir:definition [ fhir:v "Cutâneo" ]
+  ] [
+     fhir:code [ fhir:v "62" ] ;
+     fhir:display [ fhir:v "Via transdérmica" ] ;
+     fhir:definition [ fhir:v "Transder" ]
+  ] [
+     fhir:code [ fhir:v "9" ] ;
+     fhir:display [ fhir:v "Via extra-amniótica" ] ;
+     fhir:definition [ fhir:v "Via extra-amniótica" ]
+  ] [
+     fhir:code [ fhir:v "8" ] ;
+     fhir:display [ fhir:v "Via epidural" ] ;
+     fhir:definition [ fhir:v "Epidural" ]
+  ] [
+     fhir:code [ fhir:v "12" ] ;
+     fhir:display [ fhir:v "Via intra-amniótica" ] ;
+     fhir:definition [ fhir:v "IAmniótica" ]
+  ] [
+     fhir:code [ fhir:v "74" ] ;
+     fhir:display [ fhir:v "Uso subgengival" ] ;
+     fhir:definition [ fhir:v "Subgengival" ]
+  ] [
+     fhir:code [ fhir:v "803" ] ;
+     fhir:display [ fhir:v "EC - Uso intra-hepático" ] ;
+     fhir:definition [ fhir:v "EC - Uso intra-hepático" ]
+  ] [
+     fhir:code [ fhir:v "805" ] ;
+     fhir:display [ fhir:v "EC - Uso intrameningial" ] ;
+     fhir:definition [ fhir:v "EC - Uso intrameningial" ]
+  ] [
+     fhir:code [ fhir:v "73" ] ;
+     fhir:display [ fhir:v "Via sublingual" ] ;
+     fhir:definition [ fhir:v "Sublingual" ]
+  ] [
+     fhir:code [ fhir:v "818" ] ;
+     fhir:display [ fhir:v "EC - Uso tópico" ] ;
+     fhir:definition [ fhir:v "EC - Uso tópico" ]
+  ] [
+     fhir:code [ fhir:v "828" ] ;
+     fhir:display [ fhir:v "EC - Uso  periósseo" ] ;
+     fhir:definition [ fhir:v "EC - Uso  periósseo" ]
+  ] [
+     fhir:code [ fhir:v "825" ] ;
+     fhir:display [ fhir:v "EC - Via Intracartilaginosa" ] ;
+     fhir:definition [ fhir:v "EC - Via Intracartilaginosa" ]
+  ] [
+     fhir:code [ fhir:v "128" ] ;
+     fhir:display [ fhir:v "Via gástrica" ] ;
+     fhir:definition [ fhir:v "Gástrica" ]
+  ] [
+     fhir:code [ fhir:v "124" ] ;
+     fhir:display [ fhir:v "Uso epicutâneo" ] ;
+     fhir:definition [ fhir:v "Epicutâneo" ]
+  ] [
+     fhir:code [ fhir:v "144" ] ;
+     fhir:display [ fhir:v "Uso extracorpóreo" ] ;
+     fhir:definition [ fhir:v "Extracorp" ]
+  ] [
+     fhir:code [ fhir:v "37" ] ;
+     fhir:display [ fhir:v "Via intratecal" ] ;
+     fhir:definition [ fhir:v "IT" ]
+  ] [
+     fhir:code [ fhir:v "34" ] ;
+     fhir:display [ fhir:v "Via intrapleural" ] ;
+     fhir:definition [ fhir:v "IPleural" ]
+  ] [
+     fhir:code [ fhir:v "47" ] ;
+     fhir:display [ fhir:v "Uso oftálmico" ] ;
+     fhir:definition [ fhir:v "Oftálmico" ]
+  ] [
+     fhir:code [ fhir:v "54" ] ;
+     fhir:display [ fhir:v "Via retal" ] ;
+     fhir:definition [ fhir:v "Rectal" ]
+  ] [
+     fhir:code [ fhir:v "53" ] ;
+     fhir:display [ fhir:v "Via perineural" ] ;
+     fhir:definition [ fhir:v "Perineural" ]
+  ] [
+     fhir:code [ fhir:v "22" ] ;
+     fhir:display [ fhir:v "Via intracoronária" ] ;
+     fhir:definition [ fhir:v "Intracoronária" ]
+  ] [
+     fhir:code [ fhir:v "48" ] ;
+     fhir:display [ fhir:v "Via oral" ] ;
+     fhir:definition [ fhir:v "Oral" ]
+  ] [
+     fhir:code [ fhir:v "68" ] ;
+     fhir:display [ fhir:v "Uso orofaríngeo" ] ;
+     fhir:definition [ fhir:v "Orofaríngeo" ]
+  ] [
+     fhir:code [ fhir:v "5" ] ;
+     fhir:display [ fhir:v "Via endocervical" ] ;
+     fhir:definition [ fhir:v "Via endocervical" ]
+  ] [
+     fhir:code [ fhir:v "801" ] ;
+     fhir:display [ fhir:v "EC - Uso intracisternal" ] ;
+     fhir:definition [ fhir:v "EC - Uso intracisternal" ]
+  ] [
+     fhir:code [ fhir:v "809" ] ;
+     fhir:display [ fhir:v "EC - Uso intratraqueal" ] ;
+     fhir:definition [ fhir:v "EC - Uso intratraqueal" ]
+  ] [
+     fhir:code [ fhir:v "810" ] ;
+     fhir:display [ fhir:v "EC - Via intravenosa (bólus)" ] ;
+     fhir:definition [ fhir:v "EC - Via intravenosa (bólus)" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

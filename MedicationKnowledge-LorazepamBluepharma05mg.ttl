@@ -1,0 +1,592 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/MedicationKnowledge/LorazepamBluepharma05mg> a fhir:MedicationKnowledge ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "LorazepamBluepharma05mg"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH"^^xsd:anyURI ;
+       fhir:l <http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationKnowledge LorazepamBluepharma05mg</b></p><a name=\"LorazepamBluepharma05mg\"> </a><a name=\"hcLorazepamBluepharma05mg\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MedicationKnowledgePDH.html\">Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento</a></p></div><p><b>code</b>: <span title=\"Codes:{http://infarmed.pt/medicamentos 672984}\">Lorazepam Bluepharma 0,5 mg [N05BA06]</span></p><p><b>name</b>: Lorazepam Bluepharma [Lorazepam] 0,5 mg Comprimido</p><blockquote><p><b>cost</b></p><p><b>type</b>: <span title=\"Codes:{http://example.com/fhir/example/CodeSystem/tipo-preco-infarmed-cs 101}\">Preço Ref</span></p><p><b>cost</b>: <span title=\"Euro\">€1.85</span> (EUR)</p></blockquote><blockquote><p><b>cost</b></p><p><b>type</b>: <span title=\"Codes:{http://example.com/fhir/example/CodeSystem/tipo-preco-infarmed-cs 401}\">PVP Max</span></p><p><b>cost</b>: <span title=\"Euro\">€1.56</span> (EUR)</p></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Treatment of anxiety, tension and agitation</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:{http://example.com/fhir/example/CodeSystem/dosage-type-cs maximum-single-dose}\">Usual daily dosing</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 0.5 to 2.5 mg daily in 2 to 3 divided doses. Maximum 7.5 mg/day.</p><p><b>additionalInstruction</b>: <span title=\"Codes:\">Use the lowest effective dose for the shortest duration possible.</span></p><p><b>timing</b>: 2-3 per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>0.5-2.5 mg</td></tr></table><p><b>maxDosePerPeriod</b>: 2.5 milligram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Adults</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Sleep disturbances caused by anxiety, tension or agitation</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Single bedtime dosing</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 0.5 to 2.5 mg as a single dose approximately 30 minutes before bedtime.</p><p><b>timing</b>: 30min , before sleeping, Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>0.5-2.5 mg</td></tr></table><p><b>maxDosePerAdministration</b>: 2.5 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></p></blockquote></blockquote></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Premedication before diagnostic or surgical procedures (night before)</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Premedication night before procedure</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 1 to 2.5 mg on the night before the procedure.</p><p><b>timing</b>: Code </p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>1-2.5 mg</td></tr></table><p><b>maxDosePerAdministration</b>: 2.5 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></p></blockquote></blockquote></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Premedication before diagnostic or surgical procedures (1-2 hours before)</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Premedication 1 to 2 hours before procedure</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 2 to 4 mg approximately 1 to 2 hours before the procedure.</p><p><b>timing</b>: Code </p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>2-4 mg</td></tr></table><p><b>maxDosePerAdministration</b>: 4 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></p></blockquote></blockquote></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Post-operative use</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Post-operative dosing</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 1 to 2.5 mg at appropriate intervals post-operatively.</p><p><b>timing</b>: Code </p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>1-2.5 mg</td></tr></table></blockquote></blockquote></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Use in children and adolescents</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Pediatric dosing</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>MaxDosePerAdministration</b></td></tr><tr><td style=\"display: none\">*</td><td>Reduce the dose in children. Single doses should not exceed 0.5 to 1 mg and 0.05 mg/kg body weight.</td><td>1 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Use in elderly or debilitated patients</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose adjustment in elderly or debilitated patients</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td></tr><tr><td style=\"display: none\">*</td><td>Initial total daily dose should be reduced to approximately 50% in elderly or debilitated patients. Dose should be adjusted according to effect and tolerability.</td><td><span title=\"Codes:\">Reduce initial total daily dose to approximately 50%.</span></td></tr></table></blockquote></blockquote></blockquote><h3>MedicineClassifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Classification</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://hl7.org/fhir/medication-classification-type anatomical}\">Anatomical Class</span></td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ATC N05BA06}\">Lorazepam</span></td></tr></table><p><b>clinicalUseIssue</b>: </p><ul><li><a href=\"ClinicalUseDefinition-LorazepamBluepharma05mg-CUD.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-LorazepamBluepharma05mg-CUD1.html\">ClinicalUseDefinition: type = indication</a></li><li><a href=\"ClinicalUseDefinition-LorazepamBluepharma05mg-CUD2.html\">ClinicalUseDefinition: type = interaction</a></li></ul><blockquote><p><b>definitional</b></p><p><b>doseForm</b>: <span title=\"Codes:{http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs 271}\">Comprimido</span></p><p><b>intendedRoute</b>: <span title=\"Codes:{http://example.com/fhir/example/CodeSystem/via-administracao-cs 48}\">Via oral</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia 7612}\">Lorazepam</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass ACTI}\">active ingredient</span></p><p><b>strength</b>: 0.5 milligram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia xxx}\">Lactose</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass BASE}\">base</span></p><p><b>strength</b>: 48 milligram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia yyy}\">Celulose microcristalina tipo 102</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia jjj}\">Carboximetilamido sódico (tipo A)</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia kkk}\">Estearato de magnésio</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://infarmed.pt/medicamentos"^^xsd:anyURI ;
+         fhir:l <http://infarmed.pt/medicamentos>
+       ] ;
+       fhir:code [ fhir:v "672984" ] ;
+       fhir:display [ fhir:v "Lorazepam Bluepharma 0,5 mg [N05BA06]" ]
+     ] )
+  ] ; # 
+  fhir:name ( [ fhir:v "Lorazepam Bluepharma [Lorazepam] 0,5 mg Comprimido"] ) ; # 
+  fhir:cost ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://example.com/fhir/example/CodeSystem/tipo-preco-infarmed-cs"^^xsd:anyURI ;
+           fhir:l <http://example.com/fhir/example/CodeSystem/tipo-preco-infarmed-cs>
+         ] ;
+         fhir:code [ fhir:v "101" ] ;
+         fhir:display [ fhir:v "Preço Ref" ]
+       ] )
+     ] ;
+     fhir:cost [
+       a fhir:Money ;
+       fhir:value [ fhir:v 1.85 ] ;
+       fhir:currency [ fhir:v "EUR" ]
+     ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://example.com/fhir/example/CodeSystem/tipo-preco-infarmed-cs"^^xsd:anyURI ;
+           fhir:l <http://example.com/fhir/example/CodeSystem/tipo-preco-infarmed-cs>
+         ] ;
+         fhir:code [ fhir:v "401" ] ;
+         fhir:display [ fhir:v "PVP Max" ]
+       ] )
+     ] ;
+     fhir:cost [
+       a fhir:Money ;
+       fhir:value [ fhir:v 1.56 ] ;
+       fhir:currency [ fhir:v "EUR" ]
+     ]
+  ] ) ; # 
+  fhir:indicationGuideline ( [
+     fhir:indication ( [
+       fhir:concept [
+         fhir:text [ fhir:v "Treatment of anxiety, tension and agitation" ]
+       ]
+     ] ) ;
+     fhir:dosingGuideline ( [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:coding ( [
+             fhir:system [
+               fhir:v "http://example.com/fhir/example/CodeSystem/dosage-type-cs"^^xsd:anyURI ;
+               fhir:l <http://example.com/fhir/example/CodeSystem/dosage-type-cs>
+             ] ;
+             fhir:code [ fhir:v "maximum-single-dose" ] ;
+             fhir:display [ fhir:v "Maximum Single Dose" ]
+           ] ) ;
+           fhir:text [ fhir:v "Usual daily dosing" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "0.5 to 2.5 mg daily in 2 to 3 divided doses. Maximum 7.5 mg/day." ] ;
+           fhir:additionalInstruction ( [
+             fhir:text [ fhir:v "Use the lowest effective dose for the shortest duration possible." ]
+           ] ) ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:frequency [ fhir:v "2"^^xsd:positiveInteger ] ;
+               fhir:frequencyMax [ fhir:v "3"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ] ;
+           fhir:doseAndRate ( [
+             fhir:dose [
+               a fhir:Range ;
+               fhir:low [
+                 fhir:value [ fhir:v 0.5 ] ;
+                 fhir:unit [ fhir:v "mg" ] ;
+                 fhir:system [
+                   fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+                   fhir:l <http://unitsofmeasure.org>
+                 ] ;
+                 fhir:code [ fhir:v "mg" ]
+               ] ;
+               fhir:high [
+                 fhir:value [ fhir:v 2.5 ] ;
+                 fhir:unit [ fhir:v "mg" ] ;
+                 fhir:system [
+                   fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+                   fhir:l <http://unitsofmeasure.org>
+                 ] ;
+                 fhir:code [ fhir:v "mg" ]
+               ]
+             ]
+           ] ) ;
+           fhir:maxDosePerPeriod ( [
+             fhir:numerator [
+               fhir:value [ fhir:v 2.5 ] ;
+               fhir:unit [ fhir:v "milligram" ] ;
+               fhir:system [
+                 fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+                 fhir:l <http://unitsofmeasure.org>
+               ] ;
+               fhir:code [ fhir:v "mg" ]
+             ] ;
+             fhir:denominator [
+               fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "day" ] ;
+               fhir:system [
+                 fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+                 fhir:l <http://unitsofmeasure.org>
+               ] ;
+               fhir:code [ fhir:v "d" ]
+             ]
+           ] )
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Adults" ]
+         ]
+       ] )
+     ] )
+  ] [
+     fhir:indication ( [
+       fhir:concept [
+         fhir:text [ fhir:v "Sleep disturbances caused by anxiety, tension or agitation" ]
+       ]
+     ] ) ;
+     fhir:dosingGuideline ( [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Single bedtime dosing" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "0.5 to 2.5 mg as a single dose approximately 30 minutes before bedtime." ] ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ] ;
+               fhir:when ( [ fhir:v "HS" ] ) ;
+               fhir:offset [ fhir:v "30"^^xsd:nonNegativeInteger ]
+             ]
+           ] ;
+           fhir:doseAndRate ( [
+             fhir:dose [
+               a fhir:Range ;
+               fhir:low [
+                 fhir:value [ fhir:v 0.5 ] ;
+                 fhir:unit [ fhir:v "mg" ] ;
+                 fhir:system [
+                   fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+                   fhir:l <http://unitsofmeasure.org>
+                 ] ;
+                 fhir:code [ fhir:v "mg" ]
+               ] ;
+               fhir:high [
+                 fhir:value [ fhir:v 2.5 ] ;
+                 fhir:unit [ fhir:v "mg" ] ;
+                 fhir:system [
+                   fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+                   fhir:l <http://unitsofmeasure.org>
+                 ] ;
+                 fhir:code [ fhir:v "mg" ]
+               ]
+             ]
+           ] ) ;
+           fhir:maxDosePerAdministration [
+             fhir:value [ fhir:v 2.5 ] ;
+             fhir:unit [ fhir:v "mg" ] ;
+             fhir:system [
+               fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+               fhir:l <http://unitsofmeasure.org>
+             ] ;
+             fhir:code [ fhir:v "mg" ]
+           ]
+         ] )
+       ] )
+     ] )
+  ] [
+     fhir:indication ( [
+       fhir:concept [
+         fhir:text [ fhir:v "Premedication before diagnostic or surgical procedures (night before)" ]
+       ]
+     ] ) ;
+     fhir:dosingGuideline ( [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Premedication night before procedure" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "1 to 2.5 mg on the night before the procedure." ] ;
+           fhir:timing [
+             fhir:code [
+               fhir:text [ fhir:v "Night before procedure" ]
+             ]
+           ] ;
+           fhir:doseAndRate ( [
+             fhir:dose [
+               a fhir:Range ;
+               fhir:low [
+                 fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+                 fhir:unit [ fhir:v "mg" ] ;
+                 fhir:system [
+                   fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+                   fhir:l <http://unitsofmeasure.org>
+                 ] ;
+                 fhir:code [ fhir:v "mg" ]
+               ] ;
+               fhir:high [
+                 fhir:value [ fhir:v 2.5 ] ;
+                 fhir:unit [ fhir:v "mg" ] ;
+                 fhir:system [
+                   fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+                   fhir:l <http://unitsofmeasure.org>
+                 ] ;
+                 fhir:code [ fhir:v "mg" ]
+               ]
+             ]
+           ] ) ;
+           fhir:maxDosePerAdministration [
+             fhir:value [ fhir:v 2.5 ] ;
+             fhir:unit [ fhir:v "mg" ] ;
+             fhir:system [
+               fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+               fhir:l <http://unitsofmeasure.org>
+             ] ;
+             fhir:code [ fhir:v "mg" ]
+           ]
+         ] )
+       ] )
+     ] )
+  ] [
+     fhir:indication ( [
+       fhir:concept [
+         fhir:text [ fhir:v "Premedication before diagnostic or surgical procedures (1-2 hours before)" ]
+       ]
+     ] ) ;
+     fhir:dosingGuideline ( [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Premedication 1 to 2 hours before procedure" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "2 to 4 mg approximately 1 to 2 hours before the procedure." ] ;
+           fhir:timing [
+             fhir:code [
+               fhir:text [ fhir:v "1 to 2 hours before procedure" ]
+             ]
+           ] ;
+           fhir:doseAndRate ( [
+             fhir:dose [
+               a fhir:Range ;
+               fhir:low [
+                 fhir:value [ fhir:v "2"^^xsd:decimal ] ;
+                 fhir:unit [ fhir:v "mg" ] ;
+                 fhir:system [
+                   fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+                   fhir:l <http://unitsofmeasure.org>
+                 ] ;
+                 fhir:code [ fhir:v "mg" ]
+               ] ;
+               fhir:high [
+                 fhir:value [ fhir:v "4"^^xsd:decimal ] ;
+                 fhir:unit [ fhir:v "mg" ] ;
+                 fhir:system [
+                   fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+                   fhir:l <http://unitsofmeasure.org>
+                 ] ;
+                 fhir:code [ fhir:v "mg" ]
+               ]
+             ]
+           ] ) ;
+           fhir:maxDosePerAdministration [
+             fhir:value [ fhir:v "4"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "mg" ] ;
+             fhir:system [
+               fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+               fhir:l <http://unitsofmeasure.org>
+             ] ;
+             fhir:code [ fhir:v "mg" ]
+           ]
+         ] )
+       ] )
+     ] )
+  ] [
+     fhir:indication ( [
+       fhir:concept [
+         fhir:text [ fhir:v "Post-operative use" ]
+       ]
+     ] ) ;
+     fhir:dosingGuideline ( [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Post-operative dosing" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "1 to 2.5 mg at appropriate intervals post-operatively." ] ;
+           fhir:timing [
+             fhir:code [
+               fhir:text [ fhir:v "At appropriate intervals post-operatively" ]
+             ]
+           ] ;
+           fhir:doseAndRate ( [
+             fhir:dose [
+               a fhir:Range ;
+               fhir:low [
+                 fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+                 fhir:unit [ fhir:v "mg" ] ;
+                 fhir:system [
+                   fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+                   fhir:l <http://unitsofmeasure.org>
+                 ] ;
+                 fhir:code [ fhir:v "mg" ]
+               ] ;
+               fhir:high [
+                 fhir:value [ fhir:v 2.5 ] ;
+                 fhir:unit [ fhir:v "mg" ] ;
+                 fhir:system [
+                   fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+                   fhir:l <http://unitsofmeasure.org>
+                 ] ;
+                 fhir:code [ fhir:v "mg" ]
+               ]
+             ]
+           ] )
+         ] )
+       ] )
+     ] )
+  ] [
+     fhir:indication ( [
+       fhir:concept [
+         fhir:text [ fhir:v "Use in children and adolescents" ]
+       ]
+     ] ) ;
+     fhir:dosingGuideline ( [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Pediatric dosing" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Reduce the dose in children. Single doses should not exceed 0.5 to 1 mg and 0.05 mg/kg body weight." ] ;
+           fhir:maxDosePerAdministration [
+             fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "mg" ] ;
+             fhir:system [
+               fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+               fhir:l <http://unitsofmeasure.org>
+             ] ;
+             fhir:code [ fhir:v "mg" ]
+           ]
+         ] )
+       ] )
+     ] )
+  ] [
+     fhir:indication ( [
+       fhir:concept [
+         fhir:text [ fhir:v "Use in elderly or debilitated patients" ]
+       ]
+     ] ) ;
+     fhir:dosingGuideline ( [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose adjustment in elderly or debilitated patients" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Initial total daily dose should be reduced to approximately 50% in elderly or debilitated patients. Dose should be adjusted according to effect and tolerability." ] ;
+           fhir:additionalInstruction ( [
+             fhir:text [ fhir:v "Reduce initial total daily dose to approximately 50%." ]
+           ] )
+         ] )
+       ] )
+     ] )
+  ] ) ; # 
+  fhir:medicineClassification ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/medication-classification-type"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/medication-classification-type>
+         ] ;
+         fhir:code [ fhir:v "anatomical" ] ;
+         fhir:display [ fhir:v "Anatomical Class" ]
+       ] )
+     ] ;
+     fhir:classification ( [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v3-ATC"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/v3-ATC>
+         ] ;
+         fhir:code [ fhir:v "N05BA06" ] ;
+         fhir:display [ fhir:v "Lorazepam" ]
+       ] )
+     ] )
+  ] ) ; # 
+  fhir:clinicalUseIssue ( [
+     fhir:l <http://example.com/fhir/example/ClinicalUseDefinition/LorazepamBluepharma05mg-CUD> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/LorazepamBluepharma05mg-CUD" ]
+  ] [
+     fhir:l <http://example.com/fhir/example/ClinicalUseDefinition/LorazepamBluepharma05mg-CUD1> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/LorazepamBluepharma05mg-CUD1" ]
+  ] [
+     fhir:l <http://example.com/fhir/example/ClinicalUseDefinition/LorazepamBluepharma05mg-CUD2> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/LorazepamBluepharma05mg-CUD2" ]
+  ] ) ; # 
+  fhir:definitional [
+     fhir:doseForm [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs"^^xsd:anyURI ;
+           fhir:l <http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs>
+         ] ;
+         fhir:code [ fhir:v "271" ] ;
+         fhir:display [ fhir:v "Comprimido" ]
+       ] )
+     ] ;
+     fhir:intendedRoute ( [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://example.com/fhir/example/CodeSystem/via-administracao-cs"^^xsd:anyURI ;
+           fhir:l <http://example.com/fhir/example/CodeSystem/via-administracao-cs>
+         ] ;
+         fhir:code [ fhir:v "48" ] ;
+         fhir:display [ fhir:v "Via oral" ]
+       ] )
+     ] ) ;
+     fhir:ingredient ( [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [
+               fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ;
+               fhir:l <http://infarmed.pt/substancia>
+             ] ;
+             fhir:code [ fhir:v "7612" ] ;
+             fhir:display [ fhir:v "Lorazepam" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ;
+             fhir:l <http://terminology.hl7.org/CodeSystem/v3-RoleClass>
+           ] ;
+           fhir:code [ fhir:v "ACTI" ]
+         ] )
+       ] ;
+       fhir:strength [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v 0.5 ] ;
+         fhir:unit [ fhir:v "milligram" ] ;
+         fhir:system [
+           fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+           fhir:l <http://unitsofmeasure.org>
+         ] ;
+         fhir:code [ fhir:v "mg" ]
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [
+               fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ;
+               fhir:l <http://infarmed.pt/substancia>
+             ] ;
+             fhir:code [ fhir:v "xxx" ] ;
+             fhir:display [ fhir:v "Lactose" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ;
+             fhir:l <http://terminology.hl7.org/CodeSystem/v3-RoleClass>
+           ] ;
+           fhir:code [ fhir:v "BASE" ]
+         ] )
+       ] ;
+       fhir:strength [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "48"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "milligram" ] ;
+         fhir:system [
+           fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+           fhir:l <http://unitsofmeasure.org>
+         ] ;
+         fhir:code [ fhir:v "mg" ]
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [
+               fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ;
+               fhir:l <http://infarmed.pt/substancia>
+             ] ;
+             fhir:code [ fhir:v "yyy" ] ;
+             fhir:display [ fhir:v "Celulose microcristalina tipo 102" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ;
+             fhir:l <http://terminology.hl7.org/CodeSystem/v3-RoleClass>
+           ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [
+               fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ;
+               fhir:l <http://infarmed.pt/substancia>
+             ] ;
+             fhir:code [ fhir:v "jjj" ] ;
+             fhir:display [ fhir:v "Carboximetilamido sódico (tipo A)" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ;
+             fhir:l <http://terminology.hl7.org/CodeSystem/v3-RoleClass>
+           ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [
+               fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ;
+               fhir:l <http://infarmed.pt/substancia>
+             ] ;
+             fhir:code [ fhir:v "kkk" ] ;
+             fhir:display [ fhir:v "Estearato de magnésio" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ;
+             fhir:l <http://terminology.hl7.org/CodeSystem/v3-RoleClass>
+           ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

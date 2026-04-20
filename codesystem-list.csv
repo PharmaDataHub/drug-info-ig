@@ -1,0 +1,5 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+http://example.com/fhir/example/CodeSystem/dosage-type-cs,1.0.0,active,,DosageTypeCS,Dosage Type CodeSystem,"Defines the semantic type of dosage instructions or constraints.",
+http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs,1.0.0,active,,FormaFarmaceuticaCS,Forma Farmacêutica,"CodeSystem para formas farmacêuticas baseado na tabela fornecida",
+http://example.com/fhir/example/CodeSystem/tipo-preco-infarmed-cs,1.0.0,active,,TipoPrecoINFARMEDCS,Tipo de Preço INFARMED,"CodeSystem para os tipos de preço de medicamentos, baseado na tabela fornecida, incluindo apenas os códigos ativos.",
+http://example.com/fhir/example/CodeSystem/via-administracao-cs,1.0.0,active,,ViaAdministracaoCS,Via de Administração,"CodeSystem para vias de administração baseado na tabela fornecida",

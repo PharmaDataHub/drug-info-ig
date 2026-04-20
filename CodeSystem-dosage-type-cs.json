@@ -1,0 +1,100 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "dosage-type-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem dosage-type-cs</b></p><a name=\"dosage-type-cs\"> </a><a name=\"hcdosage-type-cs\"> </a><p>This  code system <code>http://example.com/fhir/example/CodeSystem/dosage-type-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">single-dose<a name=\"dosage-type-cs-single-dose\"> </a></td><td>Single Dose</td></tr><tr><td style=\"white-space:nowrap\">daily-dose<a name=\"dosage-type-cs-daily-dose\"> </a></td><td>Daily Dose</td></tr><tr><td style=\"white-space:nowrap\">divided-dose<a name=\"dosage-type-cs-divided-dose\"> </a></td><td>Divided Dose</td></tr><tr><td style=\"white-space:nowrap\">maximum-single-dose<a name=\"dosage-type-cs-maximum-single-dose\"> </a></td><td>Maximum Single Dose</td></tr><tr><td style=\"white-space:nowrap\">maximum-daily-dose<a name=\"dosage-type-cs-maximum-daily-dose\"> </a></td><td>Maximum Daily Dose</td></tr><tr><td style=\"white-space:nowrap\">maximum-dose-per-period<a name=\"dosage-type-cs-maximum-dose-per-period\"> </a></td><td>Maximum Dose per Period</td></tr><tr><td style=\"white-space:nowrap\">maximum-treatment-duration<a name=\"dosage-type-cs-maximum-treatment-duration\"> </a></td><td>Maximum Treatment Duration</td></tr><tr><td style=\"white-space:nowrap\">minimum-dose<a name=\"dosage-type-cs-minimum-dose\"> </a></td><td>Minimum Dose</td></tr><tr><td style=\"white-space:nowrap\">titration-dose<a name=\"dosage-type-cs-titration-dose\"> </a></td><td>Titration Dose</td></tr><tr><td style=\"white-space:nowrap\">loading-dose<a name=\"dosage-type-cs-loading-dose\"> </a></td><td>Loading Dose</td></tr><tr><td style=\"white-space:nowrap\">maintenance-dose<a name=\"dosage-type-cs-maintenance-dose\"> </a></td><td>Maintenance Dose</td></tr><tr><td style=\"white-space:nowrap\">as-needed-dose<a name=\"dosage-type-cs-as-needed-dose\"> </a></td><td>As Needed Dose</td></tr><tr><td style=\"white-space:nowrap\">weight-based-dose<a name=\"dosage-type-cs-weight-based-dose\"> </a></td><td>Weight-based Dose</td></tr><tr><td style=\"white-space:nowrap\">body-surface-area-dose<a name=\"dosage-type-cs-body-surface-area-dose\"> </a></td><td>Body Surface Area-based Dose</td></tr></table></div>"
+  },
+  "url" : "http://example.com/fhir/example/CodeSystem/dosage-type-cs",
+  "version" : "1.0.0",
+  "name" : "DosageTypeCS",
+  "title" : "Dosage Type CodeSystem",
+  "status" : "active",
+  "date" : "2026-04-20T09:10:31+00:00",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Defines the semantic type of dosage instructions or constraints.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "620",
+      "display" : "Portugal (PRT)"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 14,
+  "concept" : [{
+    "code" : "single-dose",
+    "display" : "Single Dose"
+  },
+  {
+    "code" : "daily-dose",
+    "display" : "Daily Dose"
+  },
+  {
+    "code" : "divided-dose",
+    "display" : "Divided Dose"
+  },
+  {
+    "code" : "maximum-single-dose",
+    "display" : "Maximum Single Dose"
+  },
+  {
+    "code" : "maximum-daily-dose",
+    "display" : "Maximum Daily Dose"
+  },
+  {
+    "code" : "maximum-dose-per-period",
+    "display" : "Maximum Dose per Period"
+  },
+  {
+    "code" : "maximum-treatment-duration",
+    "display" : "Maximum Treatment Duration"
+  },
+  {
+    "code" : "minimum-dose",
+    "display" : "Minimum Dose"
+  },
+  {
+    "code" : "titration-dose",
+    "display" : "Titration Dose"
+  },
+  {
+    "code" : "loading-dose",
+    "display" : "Loading Dose"
+  },
+  {
+    "code" : "maintenance-dose",
+    "display" : "Maintenance Dose"
+  },
+  {
+    "code" : "as-needed-dose",
+    "display" : "As Needed Dose"
+  },
+  {
+    "code" : "weight-based-dose",
+    "display" : "Weight-based Dose"
+  },
+  {
+    "code" : "body-surface-area-dose",
+    "display" : "Body Surface Area-based Dose"
+  }]
+}

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="dosage-type-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem dosage-type-cs</b></p><a name="dosage-type-cs"> </a><a name="hcdosage-type-cs"> </a><p>This  code system <code>http://example.com/fhir/example/CodeSystem/dosage-type-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">single-dose<a name="dosage-type-cs-single-dose"> </a></td><td>Single Dose</td></tr><tr><td style="white-space:nowrap">daily-dose<a name="dosage-type-cs-daily-dose"> </a></td><td>Daily Dose</td></tr><tr><td style="white-space:nowrap">divided-dose<a name="dosage-type-cs-divided-dose"> </a></td><td>Divided Dose</td></tr><tr><td style="white-space:nowrap">maximum-single-dose<a name="dosage-type-cs-maximum-single-dose"> </a></td><td>Maximum Single Dose</td></tr><tr><td style="white-space:nowrap">maximum-daily-dose<a name="dosage-type-cs-maximum-daily-dose"> </a></td><td>Maximum Daily Dose</td></tr><tr><td style="white-space:nowrap">maximum-dose-per-period<a name="dosage-type-cs-maximum-dose-per-period"> </a></td><td>Maximum Dose per Period</td></tr><tr><td style="white-space:nowrap">maximum-treatment-duration<a name="dosage-type-cs-maximum-treatment-duration"> </a></td><td>Maximum Treatment Duration</td></tr><tr><td style="white-space:nowrap">minimum-dose<a name="dosage-type-cs-minimum-dose"> </a></td><td>Minimum Dose</td></tr><tr><td style="white-space:nowrap">titration-dose<a name="dosage-type-cs-titration-dose"> </a></td><td>Titration Dose</td></tr><tr><td style="white-space:nowrap">loading-dose<a name="dosage-type-cs-loading-dose"> </a></td><td>Loading Dose</td></tr><tr><td style="white-space:nowrap">maintenance-dose<a name="dosage-type-cs-maintenance-dose"> </a></td><td>Maintenance Dose</td></tr><tr><td style="white-space:nowrap">as-needed-dose<a name="dosage-type-cs-as-needed-dose"> </a></td><td>As Needed Dose</td></tr><tr><td style="white-space:nowrap">weight-based-dose<a name="dosage-type-cs-weight-based-dose"> </a></td><td>Weight-based Dose</td></tr><tr><td style="white-space:nowrap">body-surface-area-dose<a name="dosage-type-cs-body-surface-area-dose"> </a></td><td>Body Surface Area-based Dose</td></tr></table></div>
+  </text>
+  <url value="http://example.com/fhir/example/CodeSystem/dosage-type-cs"/>
+  <version value="1.0.0"/>
+  <name value="DosageTypeCS"/>
+  <title value="Dosage Type CodeSystem"/>
+  <status value="active"/>
+  <date value="2026-04-20T09:10:31+00:00"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Defines the semantic type of dosage instructions or constraints."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="620"/>
+      <display value="Portugal (PRT)"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="14"/>
+  <concept>
+    <code value="single-dose"/>
+    <display value="Single Dose"/>
+  </concept>
+  <concept>
+    <code value="daily-dose"/>
+    <display value="Daily Dose"/>
+  </concept>
+  <concept>
+    <code value="divided-dose"/>
+    <display value="Divided Dose"/>
+  </concept>
+  <concept>
+    <code value="maximum-single-dose"/>
+    <display value="Maximum Single Dose"/>
+  </concept>
+  <concept>
+    <code value="maximum-daily-dose"/>
+    <display value="Maximum Daily Dose"/>
+  </concept>
+  <concept>
+    <code value="maximum-dose-per-period"/>
+    <display value="Maximum Dose per Period"/>
+  </concept>
+  <concept>
+    <code value="maximum-treatment-duration"/>
+    <display value="Maximum Treatment Duration"/>
+  </concept>
+  <concept>
+    <code value="minimum-dose"/>
+    <display value="Minimum Dose"/>
+  </concept>
+  <concept>
+    <code value="titration-dose"/>
+    <display value="Titration Dose"/>
+  </concept>
+  <concept>
+    <code value="loading-dose"/>
+    <display value="Loading Dose"/>
+  </concept>
+  <concept>
+    <code value="maintenance-dose"/>
+    <display value="Maintenance Dose"/>
+  </concept>
+  <concept>
+    <code value="as-needed-dose"/>
+    <display value="As Needed Dose"/>
+  </concept>
+  <concept>
+    <code value="weight-based-dose"/>
+    <display value="Weight-based Dose"/>
+  </concept>
+  <concept>
+    <code value="body-surface-area-dose"/>
+    <display value="Body Surface Area-based Dose"/>
+  </concept>
+</CodeSystem>

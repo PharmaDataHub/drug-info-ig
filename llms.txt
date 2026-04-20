@@ -1,0 +1,57 @@
+# my-ig#1.0.0: HL7 PT FHIR Implementation Guide: IG de Exemplo Versão 1 | STU1
+
+## Pages
+
+* [Home](index.md)
+* [Downloads](downloads.md)
+* [IG Change History](changes.md)
+* [Artifacts Summary](artifacts.md)
+* [Terminologias](terminology.md)
+* [Especificação](spec.md)
+* [Introdução](background.md)
+
+## Resources
+
+### CodeSystems
+
+* [Dosage Type CodeSystem](CodeSystem-dosage-type-cs.md)
+* [Forma Farmacêutica](CodeSystem-forma-farmaceutica-cs.md)
+* [Tipo de Preço INFARMED](CodeSystem-tipo-preco-infarmed-cs.md)
+* [Via de Administração](CodeSystem-via-administracao-cs.md)
+
+### ValueSets
+
+* [Dosage Type ValueSet](ValueSet-dosage-type-vs.md)
+* [Forma Farmacêutica ValueSet](ValueSet-forma-farmaceutica-vs.md)
+* [Tipos de Preço INFARMED](ValueSet-tipo-preco-infarmed-vs.md)
+* [Via de Administração ValueSet](ValueSet-via-administracao-vs.md)
+
+### Resource Profiles
+
+* [Perfil do recurso para contraindicações de medicação](StructureDefinition-ContraIndicacoesPDH.md)
+* [Perfil do recurso para indicações de medicação](StructureDefinition-IndicacoesPDH.md)
+* [Perfil do recurso para interações de medicação](StructureDefinition-InteracoesPDH.md)
+* [Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento](StructureDefinition-MedicationKnowledgePDH.md)
+
+### ImplementationGuides
+
+* [HL7 PT FHIR Implementation Guide: IG de Exemplo Versão 1 | STU1](index.md)
+
+### Examples
+
+* [CipraplexGotas-CUD-contra1 (ClinicalUseDefinition)](ClinicalUseDefinition-CipraplexGotas-CUD-contra1.md)
+* [CipraplexGotas-CUD-contra2 (ClinicalUseDefinition)](ClinicalUseDefinition-CipraplexGotas-CUD-contra2.md)
+* [CipraplexGotas-CUD-contra3 (ClinicalUseDefinition)](ClinicalUseDefinition-CipraplexGotas-CUD-contra3.md)
+* [CipraplexGotas-CUD-ind1 (ClinicalUseDefinition)](ClinicalUseDefinition-CipraplexGotas-CUD-ind1.md)
+* [CipraplexGotas-CUD-ind2 (ClinicalUseDefinition)](ClinicalUseDefinition-CipraplexGotas-CUD-ind2.md)
+* [CipraplexGotas-CUD-ind3 (ClinicalUseDefinition)](ClinicalUseDefinition-CipraplexGotas-CUD-ind3.md)
+* [CipraplexGotas-CUD-ind4 (ClinicalUseDefinition)](ClinicalUseDefinition-CipraplexGotas-CUD-ind4.md)
+* [CipraplexGotas-CUD-ind5 (ClinicalUseDefinition)](ClinicalUseDefinition-CipraplexGotas-CUD-ind5.md)
+* [CipraplexGotas-CUD-int1 (ClinicalUseDefinition)](ClinicalUseDefinition-CipraplexGotas-CUD-int1.md)
+* [CipraplexGotas-CUD-int2 (ClinicalUseDefinition)](ClinicalUseDefinition-CipraplexGotas-CUD-int2.md)
+* [CipraplexGotas-CUD-int3 (ClinicalUseDefinition)](ClinicalUseDefinition-CipraplexGotas-CUD-int3.md)
+* [LorazepamBluepharma05mg-CUD (ClinicalUseDefinition)](ClinicalUseDefinition-LorazepamBluepharma05mg-CUD.md)
+* [LorazepamBluepharma05mg-CUD1 (ClinicalUseDefinition)](ClinicalUseDefinition-LorazepamBluepharma05mg-CUD1.md)
+* [LorazepamBluepharma05mg-CUD2 (ClinicalUseDefinition)](ClinicalUseDefinition-LorazepamBluepharma05mg-CUD2.md)
+* [Cipralex-20-mgml-Gotas-orais-solucao (MedicationKnowledge)](MedicationKnowledge-Cipralex-20-mgml-Gotas-orais-solucao.md)
+* [LorazepamBluepharma05mg (MedicationKnowledge)](MedicationKnowledge-LorazepamBluepharma05mg.md)

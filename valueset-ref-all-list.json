@@ -1,0 +1,543 @@
+{
+  "codeSystems" : [{
+    "url" : "http://example.com/fhir/example/ValueSet/dosage-type-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "DosageTypeVS",
+    "title" : "Dosage Type ValueSet",
+    "description" : "ValueSet for types of dosage instructions and constraints.",
+    "systems" : ["http://example.com/fhir/example/CodeSystem/dosage-type-cs"],
+    "uses" : {
+    },
+    "StructureDefinition-MedicationKnowledgePDH.html" : "Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento"
+  },
+  {
+    "url" : "http://example.com/fhir/example/ValueSet/forma-farmaceutica-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "FormaFarmaceuticaVS",
+    "title" : "Forma Farmacêutica ValueSet",
+    "description" : "ValueSet para formas farmacêuticas baseado no INFARMED.",
+    "systems" : ["http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs"],
+    "uses" : {
+    },
+    "StructureDefinition-MedicationKnowledgePDH.html" : "Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento"
+  },
+  {
+    "url" : "http://example.com/fhir/example/ValueSet/tipo-preco-infarmed-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "TipoPrecoINFARMEDVS",
+    "title" : "Tipos de Preço INFARMED",
+    "description" : "ValueSet com os tipos de preço ativos definidos pelo INFARMED.",
+    "systems" : ["http://example.com/fhir/example/CodeSystem/tipo-preco-infarmed-cs"],
+    "uses" : {
+    },
+    "StructureDefinition-MedicationKnowledgePDH.html" : "Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento"
+  },
+  {
+    "url" : "http://example.com/fhir/example/ValueSet/via-administracao-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "ViaAdministracaoVS",
+    "title" : "Via de Administração ValueSet",
+    "description" : "ValueSet para vias de administração baseado no INFARMED.",
+    "systems" : ["http://example.com/fhir/example/CodeSystem/via-administracao-cs"],
+    "uses" : {
+    },
+    "StructureDefinition-MedicationKnowledgePDH.html" : "Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/additional-instruction-codes",
+    "version" : "5.0.0",
+    "status" : "draft",
+    "name" : "SNOMEDCTAdditionalDosageInstructions",
+    "title" : "SNOMED CT Additional Dosage Instructions",
+    "description" : "This value set includes all SNOMED CT Additional Dosage Instructions.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.95"],
+    "sources" : ["2.16.840.1.113883.4.642.3.95"],
+    "uses" : {
+    },
+    "StructureDefinition-MedicationKnowledgePDH.html" : "Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/administration-method-codes",
+    "version" : "5.0.0",
+    "status" : "draft",
+    "name" : "SNOMEDCTAdministrationMethodCodes",
+    "title" : "SNOMED CT Administration Method Codes",
+    "description" : "This value set includes some method codes from SNOMED CT - provided as an exemplar",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.90", "2.16.840.1.113883.4.642.3.97"],
+    "sources" : ["2.16.840.1.113883.4.642.3.90", "2.16.840.1.113883.4.642.3.97"],
+    "uses" : {
+    },
+    "StructureDefinition-MedicationKnowledgePDH.html" : "Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/all-languages",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "AllLanguages",
+    "title" : "All Languages",
+    "description" : "This value set includes all possible codes from BCP-47 (see http://tools.ietf.org/html/bcp47)",
+    "systems" : ["urn:ietf:bcp:47"],
+    "oids" : ["2.16.840.1.113883.4.642.3.21"],
+    "sources" : ["2.16.840.1.113883.4.642.3.21"],
+    "uses" : {
+    },
+    "StructureDefinition-InteracoesPDH.html" : "Perfil do recurso para interações de medicação",
+    "StructureDefinition-ContraIndicacoesPDH.html" : "Perfil do recurso para contraindicações de medicação",
+    "StructureDefinition-IndicacoesPDH.html" : "Perfil do recurso para indicações de medicação",
+    "StructureDefinition-MedicationKnowledgePDH.html" : "Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/approach-site-codes",
+    "version" : "5.0.0",
+    "status" : "draft",
+    "name" : "SNOMEDCTAnatomicalStructureAdministrationSites",
+    "title" : "SNOMED CT Anatomical Structure for Administration Site Codes",
+    "description" : "This value set includes Anatomical Structure codes from SNOMED CT - provided as an exemplar.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.346"],
+    "sources" : ["2.16.840.1.113883.4.642.3.346"],
+    "uses" : {
+    },
+    "StructureDefinition-MedicationKnowledgePDH.html" : "Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/clinical-use-definition-category",
+    "version" : "5.0.0",
+    "status" : "draft",
+    "name" : "ClinicalUseDefinitionCategory",
+    "title" : "Clinical Use Definition Category",
+    "description" : "A categorisation for a clinical use information item.",
+    "systems" : ["http://hl7.org/fhir/clinical-use-definition-category"],
+    "oids" : ["2.16.840.1.113883.4.642.3.3109"],
+    "sources" : ["2.16.840.1.113883.4.642.3.3109"],
+    "uses" : {
+    },
+    "StructureDefinition-InteracoesPDH.html" : "Perfil do recurso para interações de medicação",
+    "StructureDefinition-ContraIndicacoesPDH.html" : "Perfil do recurso para contraindicações de medicação",
+    "StructureDefinition-IndicacoesPDH.html" : "Perfil do recurso para indicações de medicação"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/clinical-use-definition-type",
+    "version" : "5.0.0",
+    "status" : "draft",
+    "name" : "ClinicalUseDefinitionType",
+    "title" : "Clinical Use Definition Type",
+    "description" : "Overall defining type of this clinical use definition.",
+    "systems" : ["http://hl7.org/fhir/clinical-use-definition-type"],
+    "oids" : ["2.16.840.1.113883.4.642.3.3107"],
+    "sources" : ["2.16.840.1.113883.4.642.3.3107"],
+    "uses" : {
+    },
+    "StructureDefinition-InteracoesPDH.html" : "Perfil do recurso para interações de medicação",
+    "StructureDefinition-ContraIndicacoesPDH.html" : "Perfil do recurso para contraindicações de medicação",
+    "StructureDefinition-IndicacoesPDH.html" : "Perfil do recurso para indicações de medicação"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/disease-status",
+    "version" : "5.0.0",
+    "status" : "draft",
+    "name" : "DiseaseStatus",
+    "title" : "Disease Status",
+    "description" : "The status of a disease or symptom.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.3117"],
+    "sources" : ["2.16.840.1.113883.4.642.3.3117"],
+    "uses" : {
+    },
+    "StructureDefinition-InteracoesPDH.html" : "Perfil do recurso para interações de medicação",
+    "StructureDefinition-ContraIndicacoesPDH.html" : "Perfil do recurso para contraindicações de medicação",
+    "StructureDefinition-IndicacoesPDH.html" : "Perfil do recurso para indicações de medicação"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/disease-symptom-procedure",
+    "version" : "5.0.0",
+    "status" : "draft",
+    "name" : "DiseaseSymptomProcedure",
+    "title" : "Disease Symptom Procedure",
+    "description" : "A symptom, disease or procedure.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.3114"],
+    "sources" : ["2.16.840.1.113883.4.642.3.3114"],
+    "uses" : {
+    },
+    "StructureDefinition-InteracoesPDH.html" : "Perfil do recurso para interações de medicação",
+    "StructureDefinition-ContraIndicacoesPDH.html" : "Perfil do recurso para contraindicações de medicação",
+    "StructureDefinition-IndicacoesPDH.html" : "Perfil do recurso para indicações de medicação"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/interactant",
+    "version" : "5.0.0",
+    "status" : "draft",
+    "name" : "Interactant",
+    "title" : "Interactant",
+    "description" : "An interactant - a substance that may have a clinically significant effect on another.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.3105"],
+    "sources" : ["2.16.840.1.113883.4.642.3.3105"],
+    "uses" : {
+    },
+    "StructureDefinition-InteracoesPDH.html" : "Perfil do recurso para interações de medicação",
+    "StructureDefinition-ContraIndicacoesPDH.html" : "Perfil do recurso para contraindicações de medicação",
+    "StructureDefinition-IndicacoesPDH.html" : "Perfil do recurso para indicações de medicação"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/interaction-effect",
+    "version" : "5.0.0",
+    "status" : "draft",
+    "name" : "InteractionEffect",
+    "title" : "Interaction Effect",
+    "description" : "A interaction effect of clinical use of a medication or other substance.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.3111"],
+    "sources" : ["2.16.840.1.113883.4.642.3.3111"],
+    "uses" : {
+    },
+    "StructureDefinition-InteracoesPDH.html" : "Perfil do recurso para interações de medicação",
+    "StructureDefinition-ContraIndicacoesPDH.html" : "Perfil do recurso para contraindicações de medicação",
+    "StructureDefinition-IndicacoesPDH.html" : "Perfil do recurso para indicações de medicação"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/interaction-incidence",
+    "version" : "5.0.0",
+    "status" : "draft",
+    "name" : "InteractionIncidence",
+    "title" : "Interaction Incidence",
+    "description" : "A categorisation for incidence of occurence of an interaction.",
+    "systems" : ["http://hl7.org/fhir/interaction-incidence"],
+    "oids" : ["2.16.840.1.113883.4.642.3.3108"],
+    "sources" : ["2.16.840.1.113883.4.642.3.3108"],
+    "uses" : {
+    },
+    "StructureDefinition-InteracoesPDH.html" : "Perfil do recurso para interações de medicação",
+    "StructureDefinition-ContraIndicacoesPDH.html" : "Perfil do recurso para contraindicações de medicação",
+    "StructureDefinition-IndicacoesPDH.html" : "Perfil do recurso para indicações de medicação"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/interaction-management",
+    "version" : "5.0.0",
+    "status" : "draft",
+    "name" : "InteractionManagement",
+    "title" : "Interaction Management",
+    "description" : "A type of management for an interaction of a medication or other substance.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.3110"],
+    "sources" : ["2.16.840.1.113883.4.642.3.3110"],
+    "uses" : {
+    },
+    "StructureDefinition-InteracoesPDH.html" : "Perfil do recurso para interações de medicação",
+    "StructureDefinition-ContraIndicacoesPDH.html" : "Perfil do recurso para contraindicações de medicação",
+    "StructureDefinition-IndicacoesPDH.html" : "Perfil do recurso para indicações de medicação"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/interaction-type",
+    "version" : "5.0.0",
+    "status" : "draft",
+    "name" : "InteractionType",
+    "title" : "Interaction Type",
+    "description" : "A categorisation for an interaction between two substances.",
+    "systems" : ["http://hl7.org/fhir/interaction-type"],
+    "oids" : ["2.16.840.1.113883.4.642.3.3115"],
+    "sources" : ["2.16.840.1.113883.4.642.3.3115"],
+    "uses" : {
+    },
+    "StructureDefinition-ContraIndicacoesPDH.html" : "Perfil do recurso para contraindicações de medicação",
+    "StructureDefinition-IndicacoesPDH.html" : "Perfil do recurso para indicações de medicação"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/languages",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "CommonLanguages",
+    "title" : "Common Languages",
+    "description" : "This value set includes common codes from BCP-47 (see http://tools.ietf.org/html/bcp47)",
+    "systems" : ["urn:ietf:bcp:47"],
+    "oids" : ["2.16.840.1.113883.4.642.3.891",
+    "2.16.840.1.113883.4.642.3.20"],
+    "sources" : ["2.16.840.1.113883.4.642.3.891",
+    "2.16.840.1.113883.4.642.3.20"],
+    "uses" : {
+    },
+    "StructureDefinition-InteracoesPDH.html" : "Perfil do recurso para interações de medicação",
+    "StructureDefinition-ContraIndicacoesPDH.html" : "Perfil do recurso para contraindicações de medicação",
+    "StructureDefinition-IndicacoesPDH.html" : "Perfil do recurso para indicações de medicação",
+    "StructureDefinition-MedicationKnowledgePDH.html" : "Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/medication-as-needed-reason",
+    "version" : "5.0.0",
+    "status" : "draft",
+    "name" : "SNOMEDCTMedicationAsNeededReasonCodes",
+    "title" : "SNOMED CT Medication As Needed Reason Codes",
+    "description" : "This value set includes all clinical findings from SNOMED CT - provided as an exemplar value set.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.89", "2.16.840.1.113883.4.642.3.96"],
+    "sources" : ["2.16.840.1.113883.4.642.3.89", "2.16.840.1.113883.4.642.3.96"],
+    "uses" : {
+    },
+    "StructureDefinition-MedicationKnowledgePDH.html" : "Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/medication-codes",
+    "version" : "5.0.0",
+    "status" : "draft",
+    "name" : "SNOMEDCTMedicationCodes",
+    "title" : "SNOMED CT Medication Codes",
+    "description" : "This value set includes all drug or medicament substance codes and all pharmaceutical/biologic products from SNOMED CT - provided as an exemplar value set.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.375",
+    "2.16.840.1.113883.4.642.2.199",
+    "2.16.840.1.113883.4.642.3.360"],
+    "sources" : ["2.16.840.1.113883.4.642.3.375",
+    "2.16.840.1.113883.4.642.2.199",
+    "2.16.840.1.113883.4.642.3.360"],
+    "uses" : {
+    },
+    "StructureDefinition-MedicationKnowledgePDH.html" : "Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/medication-cost-category",
+    "version" : "5.0.0",
+    "status" : "draft",
+    "name" : "MedicationCostCategoryCodes",
+    "title" : "Medication Cost Category Codes",
+    "description" : "Medication Cost Category Codes",
+    "systems" : ["http://hl7.org/fhir/medication-cost-category"],
+    "oids" : ["2.16.840.1.113883.4.642.3.3230"],
+    "sources" : ["2.16.840.1.113883.4.642.3.3230"],
+    "uses" : {
+    },
+    "StructureDefinition-MedicationKnowledgePDH.html" : "Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/medication-ingredientstrength",
+    "version" : "5.0.0",
+    "status" : "draft",
+    "name" : "MedicationIngredientStrengthCodes",
+    "title" : "Medication Ingredient Strength Codes",
+    "description" : "Medication Ingredient Strength Codes",
+    "systems" : ["http://hl7.org/fhir/CodeSystem/medication-ingredientstrength"],
+    "oids" : ["2.16.840.1.113883.4.642.3.1953"],
+    "sources" : ["2.16.840.1.113883.4.642.3.1953"],
+    "uses" : {
+    },
+    "StructureDefinition-MedicationKnowledgePDH.html" : "Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/medicationknowledge-characteristic",
+    "version" : "5.0.0",
+    "status" : "draft",
+    "name" : "MedicationKnowledgeCharacteristicCodes",
+    "title" : "medicationKnowledge Characteristic Codes",
+    "description" : "MedicationKnowledge Characteristic Codes",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/medicationknowledge-characteristic"],
+    "oids" : ["2.16.840.1.113883.4.642.3.1337"],
+    "sources" : ["2.16.840.1.113883.4.642.3.1337"],
+    "uses" : {
+    },
+    "StructureDefinition-MedicationKnowledgePDH.html" : "Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/medicationknowledge-status",
+    "version" : "5.0.0",
+    "status" : "draft",
+    "name" : "MedicationKnowledgeStatusCodes",
+    "title" : "MedicationKnowledge Status Codes",
+    "description" : "MedicationKnowledge Status Codes",
+    "systems" : ["http://hl7.org/fhir/CodeSystem/medicationknowledge-status"],
+    "oids" : ["2.16.840.1.113883.4.642.3.1335"],
+    "sources" : ["2.16.840.1.113883.4.642.3.1335"],
+    "uses" : {
+    },
+    "StructureDefinition-MedicationKnowledgePDH.html" : "Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/product-intended-use",
+    "version" : "5.0.0",
+    "status" : "draft",
+    "name" : "ProductIntendedUse",
+    "title" : "Product Intended Use",
+    "description" : "The overall intended use of a product.",
+    "systems" : ["http://hl7.org/fhir/product-intended-use"],
+    "oids" : ["2.16.840.1.113883.4.642.3.2996"],
+    "sources" : ["2.16.840.1.113883.4.642.3.2996"],
+    "uses" : {
+    },
+    "StructureDefinition-InteracoesPDH.html" : "Perfil do recurso para interações de medicação",
+    "StructureDefinition-ContraIndicacoesPDH.html" : "Perfil do recurso para contraindicações de medicação",
+    "StructureDefinition-IndicacoesPDH.html" : "Perfil do recurso para indicações de medicação"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/publication-status",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "PublicationStatus",
+    "title" : "PublicationStatus",
+    "description" : "The lifecycle status of an artifact.",
+    "systems" : ["http://hl7.org/fhir/publication-status"],
+    "oids" : ["2.16.840.1.113883.4.642.3.3"],
+    "sources" : ["2.16.840.1.113883.4.642.3.3"],
+    "uses" : {
+    },
+    "StructureDefinition-InteracoesPDH.html" : "Perfil do recurso para interações de medicação",
+    "StructureDefinition-ContraIndicacoesPDH.html" : "Perfil do recurso para contraindicações de medicação",
+    "StructureDefinition-IndicacoesPDH.html" : "Perfil do recurso para indicações de medicação"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/quantity-comparator",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "QuantityComparator",
+    "title" : "QuantityComparator",
+    "description" : "How the Quantity should be understood and represented.",
+    "systems" : ["http://hl7.org/fhir/quantity-comparator"],
+    "oids" : ["2.16.840.1.113883.4.642.3.59"],
+    "sources" : ["2.16.840.1.113883.4.642.3.59"],
+    "uses" : {
+    },
+    "StructureDefinition-MedicationKnowledgePDH.html" : "Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/route-codes",
+    "version" : "5.0.0",
+    "status" : "draft",
+    "name" : "SNOMEDCTRouteCodes",
+    "title" : "SNOMED CT Route Codes",
+    "description" : "This value set includes all Route codes from SNOMED CT - provided as an exemplar.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.98"],
+    "sources" : ["2.16.840.1.113883.4.642.3.98"],
+    "uses" : {
+    },
+    "StructureDefinition-MedicationKnowledgePDH.html" : "Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/therapy",
+    "version" : "5.0.0",
+    "status" : "draft",
+    "name" : "Therapy",
+    "title" : "Therapy",
+    "description" : "A therapy.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.3112"],
+    "sources" : ["2.16.840.1.113883.4.642.3.3112"],
+    "uses" : {
+    },
+    "StructureDefinition-InteracoesPDH.html" : "Perfil do recurso para interações de medicação",
+    "StructureDefinition-ContraIndicacoesPDH.html" : "Perfil do recurso para contraindicações de medicação",
+    "StructureDefinition-IndicacoesPDH.html" : "Perfil do recurso para indicações de medicação"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/therapy-relationship-type",
+    "version" : "5.0.0",
+    "status" : "draft",
+    "name" : "TherapyRelationshipType",
+    "title" : "Therapy Relationship Type",
+    "description" : "Classification of relationship between a therapy and a contraindication or an indication.",
+    "systems" : ["http://hl7.org/fhir/therapy-relationship-type"],
+    "oids" : ["2.16.840.1.113883.4.642.3.3113"],
+    "sources" : ["2.16.840.1.113883.4.642.3.3113"],
+    "uses" : {
+    },
+    "StructureDefinition-InteracoesPDH.html" : "Perfil do recurso para interações de medicação",
+    "StructureDefinition-ContraIndicacoesPDH.html" : "Perfil do recurso para contraindicações de medicação",
+    "StructureDefinition-IndicacoesPDH.html" : "Perfil do recurso para indicações de medicação"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/undesirable-effect-classification",
+    "version" : "5.0.0",
+    "status" : "draft",
+    "name" : "UndesirableEffectClassification",
+    "title" : "Undesirable Effect Classification",
+    "description" : "A categorisation for an undesirable effect.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.3116"],
+    "sources" : ["2.16.840.1.113883.4.642.3.3116"],
+    "uses" : {
+    },
+    "StructureDefinition-InteracoesPDH.html" : "Perfil do recurso para interações de medicação",
+    "StructureDefinition-ContraIndicacoesPDH.html" : "Perfil do recurso para contraindicações de medicação",
+    "StructureDefinition-IndicacoesPDH.html" : "Perfil do recurso para indicações de medicação"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/undesirable-effect-frequency",
+    "version" : "5.0.0",
+    "status" : "draft",
+    "name" : "UndesirablEffectFrequency",
+    "title" : "Undesirabl Effect Frequency",
+    "description" : "A categorisation for a frequency of occurence of an undesirable effect.",
+    "systems" : ["http://hl7.org/fhir/undesirable-effect-frequency"],
+    "oids" : ["2.16.840.1.113883.4.642.3.3118"],
+    "sources" : ["2.16.840.1.113883.4.642.3.3118"],
+    "uses" : {
+    },
+    "StructureDefinition-InteracoesPDH.html" : "Perfil do recurso para interações de medicação",
+    "StructureDefinition-ContraIndicacoesPDH.html" : "Perfil do recurso para contraindicações de medicação",
+    "StructureDefinition-IndicacoesPDH.html" : "Perfil do recurso para indicações de medicação"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/undesirable-effect-symptom",
+    "version" : "5.0.0",
+    "status" : "draft",
+    "name" : "UndesirableEffectSymptom",
+    "title" : "Undesirable Effect Symptom",
+    "description" : "An undesirable effect of clinical use.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.3106"],
+    "sources" : ["2.16.840.1.113883.4.642.3.3106"],
+    "uses" : {
+    },
+    "StructureDefinition-InteracoesPDH.html" : "Perfil do recurso para interações de medicação",
+    "StructureDefinition-ContraIndicacoesPDH.html" : "Perfil do recurso para contraindicações de medicação",
+    "StructureDefinition-IndicacoesPDH.html" : "Perfil do recurso para indicações de medicação"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/warning-type",
+    "version" : "5.0.0",
+    "status" : "draft",
+    "name" : "WarningType",
+    "title" : "Warning Type",
+    "description" : "Classification of warning type.",
+    "systems" : ["http://hl7.org/fhir/warning-type"],
+    "oids" : ["2.16.840.1.113883.4.642.3.3104"],
+    "sources" : ["2.16.840.1.113883.4.642.3.3104"],
+    "uses" : {
+    },
+    "StructureDefinition-InteracoesPDH.html" : "Perfil do recurso para interações de medicação",
+    "StructureDefinition-ContraIndicacoesPDH.html" : "Perfil do recurso para contraindicações de medicação",
+    "StructureDefinition-IndicacoesPDH.html" : "Perfil do recurso para indicações de medicação"
+  },
+  {
+    "url" : "http://terminology.hl7.org/ValueSet/dose-rate-type",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "DoseAndRateType",
+    "title" : "DoseAndRateType",
+    "description" : "The kind of dose or rate specified.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/dose-rate-type"],
+    "oids" : ["2.16.840.1.113883.4.642.3.981"],
+    "sources" : ["2.16.840.1.113883.4.642.3.981"],
+    "uses" : {
+    },
+    "StructureDefinition-MedicationKnowledgePDH.html" : "Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento"
+  },
+  {
+    "url" : "http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "RoleClassIngredientEntity",
+    "title" : "RoleClassIngredientEntity",
+    "description" : "Relates a component (player) to a mixture (scoper). E.g., Glucose and Water are ingredients of D5W, latex may be an ingredient in a tracheal tube.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-RoleClass"],
+    "oids" : ["2.16.840.1.113883.1.11.10430"],
+    "sources" : ["2.16.840.1.113883.1.11.10430"],
+    "uses" : {
+    },
+    "StructureDefinition-MedicationKnowledgePDH.html" : "Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento"
+  }]
+}

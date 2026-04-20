@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="my-ig"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide my-ig</b></p><a name="my-ig"> </a><a name="hcmy-ig"> </a><h2>ExampleIG</h2><p>The official URL for this implementation guide is: </p><pre>http://example.com/fhir/example</pre><div><p>IG de exemplo que exercita os principais campos de uma configuração SUSHI.</p>
+</div></div>
+  </text>
+  <url value="http://example.com/fhir/example"/>
+  <version value="1.0.0"/>
+  <name value="ExampleIG"/>
+  <title value="HL7 PT FHIR Implementation Guide: IG de Exemplo Versão 1 | STU1"/>
+  <status value="active"/>
+  <date value="2026-02-26"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="IG de exemplo que exercita os principais campos de uma configuração SUSHI."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="620"/>
+      <display value="Portugal (PRT)"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="my-ig"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="5.0.0"/>
+  <dependsOn id="hl7tx">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+    </extension>
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r5"/>
+    <version value="7.1.0"/>
+  </dependsOn>
+  <dependsOn id="hl7ext">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions.r5"/>
+    <version value="5.2.0"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+      <valueCode value="hl7.fhir.uv.tools.r5#1.1.2"/>
+    </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/Cipralex-20-mgml-Gotas-orais-solucao"/>
+      </reference>
+      <name value="Cipralex-20-mgml-Gotas-orais-solucao"/>
+      <description value="Example of MedicationKnowledge resource for Cipralex 20 mg/ml Gotas orais, solução"/>
+      <isExample value="true"/>
+      <profile value="http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ClinicalUseDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ClinicalUseDefinition/CipraplexGotas-CUD-contra1"/>
+      </reference>
+      <name value="CipraplexGotas-CUD-contra1"/>
+      <description value="Contraindicação: Hipersensibilidade ao escitalopram ou excipientes"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ClinicalUseDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ClinicalUseDefinition/CipraplexGotas-CUD-contra2"/>
+      </reference>
+      <name value="CipraplexGotas-CUD-contra2"/>
+      <description value="Contraindicação: Uso concomitante com IMAOs não seletivos e irreversíveis"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ClinicalUseDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ClinicalUseDefinition/CipraplexGotas-CUD-contra3"/>
+      </reference>
+      <name value="CipraplexGotas-CUD-contra3"/>
+      <description value="Contraindicação: Prolongamento do intervalo QT ou síndrome de QT longo congénito"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ClinicalUseDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ClinicalUseDefinition/CipraplexGotas-CUD-ind1"/>
+      </reference>
+      <name value="CipraplexGotas-CUD-ind1"/>
+      <description value="Indicação: Episódios depressivos major"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ClinicalUseDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ClinicalUseDefinition/CipraplexGotas-CUD-ind2"/>
+      </reference>
+      <name value="CipraplexGotas-CUD-ind2"/>
+      <description value="Indicação: Perturbações de pânico com ou sem agorafobia"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ClinicalUseDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ClinicalUseDefinition/CipraplexGotas-CUD-ind3"/>
+      </reference>
+      <name value="CipraplexGotas-CUD-ind3"/>
+      <description value="Indicação: Perturbação da ansiedade social (fobia social)"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ClinicalUseDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ClinicalUseDefinition/CipraplexGotas-CUD-ind4"/>
+      </reference>
+      <name value="CipraplexGotas-CUD-ind4"/>
+      <description value="Indicação: Perturbação da ansiedade generalizada"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ClinicalUseDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ClinicalUseDefinition/CipraplexGotas-CUD-ind5"/>
+      </reference>
+      <name value="CipraplexGotas-CUD-ind5"/>
+      <description value="Indicação: Perturbação obsessiva-compulsiva"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ClinicalUseDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ClinicalUseDefinition/CipraplexGotas-CUD-int1"/>
+      </reference>
+      <name value="CipraplexGotas-CUD-int1"/>
+      <description value="Interação: IMAOs irreversíveis não seletivos (associação contraindicada)"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ClinicalUseDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ClinicalUseDefinition/CipraplexGotas-CUD-int2"/>
+      </reference>
+      <name value="CipraplexGotas-CUD-int2"/>
+      <description value="Interação: Fármacos serotoninérgicos (opioides incl. tramadol, triptanos)"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ClinicalUseDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ClinicalUseDefinition/CipraplexGotas-CUD-int3"/>
+      </reference>
+      <name value="CipraplexGotas-CUD-int3"/>
+      <description value="Interação: Medicamentos que prolongam o intervalo QT (associação contraindicada)"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/dosage-type-cs"/>
+      </reference>
+      <name value="Dosage Type CodeSystem"/>
+      <description value="Defines the semantic type of dosage instructions or constraints."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/dosage-type-vs"/>
+      </reference>
+      <name value="Dosage Type ValueSet"/>
+      <description value="ValueSet for types of dosage instructions and constraints."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/forma-farmaceutica-cs"/>
+      </reference>
+      <name value="Forma Farmacêutica"/>
+      <description value="CodeSystem para formas farmacêuticas baseado na tabela fornecida"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/forma-farmaceutica-vs"/>
+      </reference>
+      <name value="Forma Farmacêutica ValueSet"/>
+      <description value="ValueSet para formas farmacêuticas baseado no INFARMED."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/LorazepamBluepharma05mg"/>
+      </reference>
+      <name value="LorazepamBluepharma05mg"/>
+      <description value="Example of MedicationKnowledge resource for Lorazepam Bluepharma 0,5 mg"/>
+      <isExample value="true"/>
+      <profile value="http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ClinicalUseDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ClinicalUseDefinition/LorazepamBluepharma05mg-CUD"/>
+      </reference>
+      <name value="LorazepamBluepharma05mg-CUD"/>
+      <description value="Example of Contraindication"/>
+      <isExample value="true"/>
+      <profile value="http://example.com/fhir/example/StructureDefinition/ContraIndicacoesPDH"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ClinicalUseDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ClinicalUseDefinition/LorazepamBluepharma05mg-CUD1"/>
+      </reference>
+      <name value="LorazepamBluepharma05mg-CUD1"/>
+      <description value="Example of Indication"/>
+      <isExample value="true"/>
+      <profile value="http://example.com/fhir/example/StructureDefinition/IndicacoesPDH"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ClinicalUseDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ClinicalUseDefinition/LorazepamBluepharma05mg-CUD2"/>
+      </reference>
+      <name value="LorazepamBluepharma05mg-CUD2"/>
+      <description value="Example of interaction"/>
+      <isExample value="true"/>
+      <profile value="http://example.com/fhir/example/StructureDefinition/InteracoesPDH"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/MedicationKnowledgePDH"/>
+      </reference>
+      <name value="Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento"/>
+      <description value="Perfil do recurso MedicationKnowledge para os ingredientes dos produtos, indicações, dosagem, forma farmacêutica, via de administração, e outras informações relevantes para o uso seguro e eficaz dos medicamentos."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ContraIndicacoesPDH"/>
+      </reference>
+      <name value="Perfil do recurso para contraindicações de medicação"/>
+      <description value="Perfil do recurso para contraindicações de medicação"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/IndicacoesPDH"/>
+      </reference>
+      <name value="Perfil do recurso para indicações de medicação"/>
+      <description value="Perfil do recurso para indicações de medicação"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/InteracoesPDH"/>
+      </reference>
+      <name value="Perfil do recurso para interações de medicação"/>
+      <description value="Perfil do recurso para interações de medicação"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/tipo-preco-infarmed-cs"/>
+      </reference>
+      <name value="Tipo de Preço INFARMED"/>
+      <description value="CodeSystem para os tipos de preço de medicamentos, baseado na tabela fornecida, incluindo apenas os códigos ativos."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/tipo-preco-infarmed-vs"/>
+      </reference>
+      <name value="Tipos de Preço INFARMED"/>
+      <description value="ValueSet com os tipos de preço ativos definidos pelo INFARMED."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/via-administracao-cs"/>
+      </reference>
+      <name value="Via de Administração"/>
+      <description value="CodeSystem para vias de administração baseado na tabela fornecida"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/via-administracao-vs"/>
+      </reference>
+      <name value="Via de Administração ValueSet"/>
+      <description value="ValueSet para vias de administração baseado no INFARMED."/>
+      <isExample value="false"/>
+    </resource>
+    <page>
+      <sourceUrl value="toc.html"/>
+      <name value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <sourceUrl value="index.html"/>
+        <name value="index.html"/>
+        <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="background.html"/>
+        <name value="background.html"/>
+        <title value="Introdução"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="spec.html"/>
+        <name value="spec.html"/>
+        <title value="Especificação"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="terminology.html"/>
+        <name value="terminology.html"/>
+        <title value="Terminologias"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="downloads.html"/>
+        <name value="downloads.html"/>
+        <title value="Downloads"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <sourceUrl value="changes.html"/>
+        <name value="changes.html"/>
+        <title value="IG Change History"/>
+        <generation value="html"/>
+      </page>
+    </page>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="copyrightyear"/>
+      </code>
+      <value value="2026+"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="releaselabel"/>
+      </code>
+      <value value="STU1"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="produce-jekyll-data"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="autoload-resources"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-pages"/>
+      </code>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-pages"/>
+      </code>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-liquid"/>
+      </code>
+      <value value="template/liquid"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-liquid"/>
+      </code>
+      <value value="input/liquid"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-qa"/>
+      </code>
+      <value value="temp/qa"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-temp"/>
+      </code>
+      <value value="temp/pages"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-output"/>
+      </code>
+      <value value="output"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-tx-cache"/>
+      </code>
+      <value value="input-cache/txcache"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-suppressed-warnings"/>
+      </code>
+      <value value="input/ignoreWarnings.txt"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-history"/>
+      </code>
+      <value value="history.html"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="template-html"/>
+      </code>
+      <value value="template-page.html"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="template-md"/>
+      </code>
+      <value value="template-page-md.html"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-contact"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-context"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-copyright"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-jurisdiction"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-license"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-publisher"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-version"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-wg"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="active-tables"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="fmm-definition"/>
+      </code>
+      <value value="http://hl7.org/fhir/versions.html#maturity"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="propagate-status"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="excludelogbinaryformat"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="tabbed-snapshots"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

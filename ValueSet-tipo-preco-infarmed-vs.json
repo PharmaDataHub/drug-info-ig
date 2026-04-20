@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "tipo-preco-infarmed-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet tipo-preco-infarmed-vs</b></p><a name=\"tipo-preco-infarmed-vs\"> </a><a name=\"hctipo-preco-infarmed-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-tipo-preco-infarmed-cs.html\"><code>http://example.com/fhir/example/CodeSystem/tipo-preco-infarmed-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;1.0.0</span></li></ul></div>"
+  },
+  "url" : "http://example.com/fhir/example/ValueSet/tipo-preco-infarmed-vs",
+  "version" : "1.0.0",
+  "name" : "TipoPrecoINFARMEDVS",
+  "title" : "Tipos de Preço INFARMED",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-04-20T09:10:31+00:00",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "ValueSet com os tipos de preço ativos definidos pelo INFARMED.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "620",
+      "display" : "Portugal (PRT)"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://example.com/fhir/example/CodeSystem/tipo-preco-infarmed-cs"
+    }]
+  }
+}

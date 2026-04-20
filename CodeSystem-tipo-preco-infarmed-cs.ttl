@@ -1,0 +1,91 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/CodeSystem/tipo-preco-infarmed-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "tipo-preco-infarmed-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem tipo-preco-infarmed-cs</b></p><a name=\"tipo-preco-infarmed-cs\"> </a><a name=\"hctipo-preco-infarmed-cs\"> </a><p>This case-sensitive code system <code>http://example.com/fhir/example/CodeSystem/tipo-preco-infarmed-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"tipo-preco-infarmed-cs-1\"> </a></td><td>Preço</td><td>Preço de venda ao público (PVP) praticado.</td></tr><tr><td style=\"white-space:nowrap\">101<a name=\"tipo-preco-infarmed-cs-101\"> </a></td><td>Preço Ref</td><td>Corresponde à média dos 5 preços mais baixos dos medicamentos que integram cada grupo homogéneo.</td></tr><tr><td style=\"white-space:nowrap\">301<a name=\"tipo-preco-infarmed-cs-301\"> </a></td><td>PVPMAX100%RE</td><td>Valor até ao qual o medicamento é comparticipado em 95% do preço de referência para os utentes do regime especial nos escalões B (69%), C (37%) e D (15%), vulgarmente designado por 5º preço mais baixo.</td></tr><tr><td style=\"white-space:nowrap\">401<a name=\"tipo-preco-infarmed-cs-401\"> </a></td><td>PVP Max</td><td>Preço atribuído pelo Infarmed; este valor surge nas bases de dados do Infarmed sob a designação P. Max ou PVP Max.</td></tr><tr><td style=\"white-space:nowrap\">510<a name=\"tipo-preco-infarmed-cs-510\"> </a></td><td>PVH c/ IVA</td><td/></tr><tr><td style=\"white-space:nowrap\">601<a name=\"tipo-preco-infarmed-cs-601\"> </a></td><td>PVH s/ IVA</td><td/></tr><tr><td style=\"white-space:nowrap\">602<a name=\"tipo-preco-infarmed-cs-602\"> </a></td><td>PVP Notificado</td><td>Preço correspondente à aplicação da Portaria n.º 154/2016, de 27 de maio.</td></tr><tr><td style=\"white-space:nowrap\">603<a name=\"tipo-preco-infarmed-cs-603\"> </a></td><td>Preço acordo farmácias</td><td>Preço a considerar para efeitos de remuneração específica às farmácias.</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://example.com/fhir/example/CodeSystem/tipo-preco-infarmed-cs"^^xsd:anyURI ;
+     fhir:l <http://example.com/fhir/example/CodeSystem/tipo-preco-infarmed-cs>
+  ] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "TipoPrecoINFARMEDCS"] ; # 
+  fhir:title [ fhir:v "Tipo de Preço INFARMED"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-04-20T09:10:31+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "CodeSystem para os tipos de preço de medicamentos, baseado na tabela fornecida, incluindo apenas os códigos ativos."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ;
+         fhir:l <http://unstats.un.org/unsd/methods/m49/m49.htm>
+       ] ;
+       fhir:code [ fhir:v "620" ] ;
+       fhir:display [ fhir:v "Portugal (PRT)" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "8"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "1" ] ;
+     fhir:display [ fhir:v "Preço" ] ;
+     fhir:definition [ fhir:v "Preço de venda ao público (PVP) praticado." ]
+  ] [
+     fhir:code [ fhir:v "101" ] ;
+     fhir:display [ fhir:v "Preço Ref" ] ;
+     fhir:definition [ fhir:v "Corresponde à média dos 5 preços mais baixos dos medicamentos que integram cada grupo homogéneo." ]
+  ] [
+     fhir:code [ fhir:v "301" ] ;
+     fhir:display [ fhir:v "PVPMAX100%RE" ] ;
+     fhir:definition [ fhir:v "Valor até ao qual o medicamento é comparticipado em 95% do preço de referência para os utentes do regime especial nos escalões B (69%), C (37%) e D (15%), vulgarmente designado por 5º preço mais baixo." ]
+  ] [
+     fhir:code [ fhir:v "401" ] ;
+     fhir:display [ fhir:v "PVP Max" ] ;
+     fhir:definition [ fhir:v "Preço atribuído pelo Infarmed; este valor surge nas bases de dados do Infarmed sob a designação P. Max ou PVP Max." ]
+  ] [
+     fhir:code [ fhir:v "510" ] ;
+     fhir:display [ fhir:v "PVH c/ IVA" ]
+  ] [
+     fhir:code [ fhir:v "601" ] ;
+     fhir:display [ fhir:v "PVH s/ IVA" ]
+  ] [
+     fhir:code [ fhir:v "602" ] ;
+     fhir:display [ fhir:v "PVP Notificado" ] ;
+     fhir:definition [ fhir:v "Preço correspondente à aplicação da Portaria n.º 154/2016, de 27 de maio." ]
+  ] [
+     fhir:code [ fhir:v "603" ] ;
+     fhir:display [ fhir:v "Preço acordo farmácias" ] ;
+     fhir:definition [ fhir:v "Preço a considerar para efeitos de remuneração específica às farmácias." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

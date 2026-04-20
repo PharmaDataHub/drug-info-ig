@@ -1,0 +1,793 @@
+# Home - HL7 PT FHIR Implementation Guide: IG de Exemplo Versão 1 | STU1 v1.0.0
+
+* [**Table of Contents**](toc.md)
+* **Home**
+
+## Home
+
+| | |
+| :--- | :--- |
+| *Official URL*:http://example.com/fhir/example | *Version*:1.0.0 |
+| Active as of 2026-02-26 | *Computable Name*:ExampleIG |
+
+> A especificação aqui documentada é, por enquanto, uma especificação de prova de conceito e não pode ser usada para fins de implementação. Nenhuma responsabilidade pode ser inferida do uso ou mau uso desta especificação, ou de suas consequências.
+
+### Âmbito
+
+Esta publicação serve para demonstrar os mecanismos HL7 FHIR para o projecto Allymed
+
+### Introdução
+
+tal e tal
+
+### Dependências
+
+
+
+### IP e Licença
+
+This publication includes IP covered under the following statements.
+
+* This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact [https://www.snomed.org/get-snomed](https://www.snomed.org/get-snomed) or [info@snomed.org](mailto:info@snomed.org).
+
+* SNOMED Clinical Terms&reg; (SNOMED CT&reg;): [ClinicalUseDefinition/CipraplexGotas-CUD-contra1](ClinicalUseDefinition-CipraplexGotas-CUD-contra1.md), [ClinicalUseDefinition/CipraplexGotas-CUD-contra2](ClinicalUseDefinition-CipraplexGotas-CUD-contra2.md)... Show 12 more, [ClinicalUseDefinition/CipraplexGotas-CUD-contra3](ClinicalUseDefinition-CipraplexGotas-CUD-contra3.md), [ClinicalUseDefinition/CipraplexGotas-CUD-ind1](ClinicalUseDefinition-CipraplexGotas-CUD-ind1.md), [ClinicalUseDefinition/CipraplexGotas-CUD-ind2](ClinicalUseDefinition-CipraplexGotas-CUD-ind2.md), [ClinicalUseDefinition/CipraplexGotas-CUD-ind3](ClinicalUseDefinition-CipraplexGotas-CUD-ind3.md), [ClinicalUseDefinition/CipraplexGotas-CUD-ind4](ClinicalUseDefinition-CipraplexGotas-CUD-ind4.md), [ClinicalUseDefinition/CipraplexGotas-CUD-ind5](ClinicalUseDefinition-CipraplexGotas-CUD-ind5.md), [ClinicalUseDefinition/CipraplexGotas-CUD-int1](ClinicalUseDefinition-CipraplexGotas-CUD-int1.md), [ClinicalUseDefinition/CipraplexGotas-CUD-int2](ClinicalUseDefinition-CipraplexGotas-CUD-int2.md), [ClinicalUseDefinition/CipraplexGotas-CUD-int3](ClinicalUseDefinition-CipraplexGotas-CUD-int3.md), [ClinicalUseDefinition/LorazepamBluepharma05mg-CUD](ClinicalUseDefinition-LorazepamBluepharma05mg-CUD.md), [ClinicalUseDefinition/LorazepamBluepharma05mg-CUD1](ClinicalUseDefinition-LorazepamBluepharma05mg-CUD1.md) and [ClinicalUseDefinition/LorazepamBluepharma05mg-CUD2](ClinicalUseDefinition-LorazepamBluepharma05mg-CUD2.md)
+
+
+* This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)
+
+* [RoleClass](http://terminology.hl7.org/7.1.0/CodeSystem-v3-RoleClass.html): [Cipralex [Escitalopram] 20 mg/ml Gotas orais, solução](MedicationKnowledge-Cipralex-20-mgml-Gotas-orais-solucao.md), [Lorazepam Bluepharma [Lorazepam] 0,5 mg Comprimido](MedicationKnowledge-LorazepamBluepharma05mg.md) and [MedicationKnowledgePDH](StructureDefinition-MedicationKnowledgePDH.md)
+
+
+### Autores e contribuidores
+
+| | | | |
+| :--- | :--- | :--- | :--- |
+| Autor | João Almeida | PDH /VC | joaofilipe90 at gmail |
+| Autor | xxx |  | dssd |
+| Autor | asdasd | asdasd | asdas |
+| Autor | asdasd |  | dasda |
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "ImplementationGuide",
+  "id" : "my-ig",
+  "url" : "http://example.com/fhir/example",
+  "version" : "1.0.0",
+  "name" : "ExampleIG",
+  "title" : "HL7 PT FHIR Implementation Guide: IG de Exemplo Versão 1 | STU1",
+  "status" : "active",
+  "date" : "2026-02-26",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "IG de exemplo que exercita os principais campos de uma configuração SUSHI.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "620",
+      "display" : "Portugal (PRT)"
+    }]
+  }],
+  "packageId" : "my-ig",
+  "license" : "CC0-1.0",
+  "fhirVersion" : ["5.0.0"],
+  "dependsOn" : [{
+    "id" : "hl7tx",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on HL7 Terminology"
+    }],
+    "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
+    "packageId" : "hl7.terminology.r5",
+    "version" : "7.1.0"
+  },
+  {
+    "id" : "hl7ext",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
+    }],
+    "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+    "packageId" : "hl7.fhir.uv.extensions.r5",
+    "version" : "5.2.0"
+  }],
+  "definition" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
+      "valueCode" : "hl7.fhir.uv.tools.r5#1.1.2"
+    }],
+    "resource" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationKnowledge"
+      }],
+      "reference" : {
+        "reference" : "MedicationKnowledge/Cipralex-20-mgml-Gotas-orais-solucao"
+      },
+      "name" : "Cipralex-20-mgml-Gotas-orais-solucao",
+      "description" : "Example of MedicationKnowledge resource for Cipralex 20 mg/ml Gotas orais, solução",
+      "isExample" : true,
+      "profile" : ["http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ClinicalUseDefinition"
+      }],
+      "reference" : {
+        "reference" : "ClinicalUseDefinition/CipraplexGotas-CUD-contra1"
+      },
+      "name" : "CipraplexGotas-CUD-contra1",
+      "description" : "Contraindicação: Hipersensibilidade ao escitalopram ou excipientes",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ClinicalUseDefinition"
+      }],
+      "reference" : {
+        "reference" : "ClinicalUseDefinition/CipraplexGotas-CUD-contra2"
+      },
+      "name" : "CipraplexGotas-CUD-contra2",
+      "description" : "Contraindicação: Uso concomitante com IMAOs não seletivos e irreversíveis",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ClinicalUseDefinition"
+      }],
+      "reference" : {
+        "reference" : "ClinicalUseDefinition/CipraplexGotas-CUD-contra3"
+      },
+      "name" : "CipraplexGotas-CUD-contra3",
+      "description" : "Contraindicação: Prolongamento do intervalo QT ou síndrome de QT longo congénito",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ClinicalUseDefinition"
+      }],
+      "reference" : {
+        "reference" : "ClinicalUseDefinition/CipraplexGotas-CUD-ind1"
+      },
+      "name" : "CipraplexGotas-CUD-ind1",
+      "description" : "Indicação: Episódios depressivos major",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ClinicalUseDefinition"
+      }],
+      "reference" : {
+        "reference" : "ClinicalUseDefinition/CipraplexGotas-CUD-ind2"
+      },
+      "name" : "CipraplexGotas-CUD-ind2",
+      "description" : "Indicação: Perturbações de pânico com ou sem agorafobia",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ClinicalUseDefinition"
+      }],
+      "reference" : {
+        "reference" : "ClinicalUseDefinition/CipraplexGotas-CUD-ind3"
+      },
+      "name" : "CipraplexGotas-CUD-ind3",
+      "description" : "Indicação: Perturbação da ansiedade social (fobia social)",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ClinicalUseDefinition"
+      }],
+      "reference" : {
+        "reference" : "ClinicalUseDefinition/CipraplexGotas-CUD-ind4"
+      },
+      "name" : "CipraplexGotas-CUD-ind4",
+      "description" : "Indicação: Perturbação da ansiedade generalizada",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ClinicalUseDefinition"
+      }],
+      "reference" : {
+        "reference" : "ClinicalUseDefinition/CipraplexGotas-CUD-ind5"
+      },
+      "name" : "CipraplexGotas-CUD-ind5",
+      "description" : "Indicação: Perturbação obsessiva-compulsiva",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ClinicalUseDefinition"
+      }],
+      "reference" : {
+        "reference" : "ClinicalUseDefinition/CipraplexGotas-CUD-int1"
+      },
+      "name" : "CipraplexGotas-CUD-int1",
+      "description" : "Interação: IMAOs irreversíveis não seletivos (associação contraindicada)",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ClinicalUseDefinition"
+      }],
+      "reference" : {
+        "reference" : "ClinicalUseDefinition/CipraplexGotas-CUD-int2"
+      },
+      "name" : "CipraplexGotas-CUD-int2",
+      "description" : "Interação: Fármacos serotoninérgicos (opioides incl. tramadol, triptanos)",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ClinicalUseDefinition"
+      }],
+      "reference" : {
+        "reference" : "ClinicalUseDefinition/CipraplexGotas-CUD-int3"
+      },
+      "name" : "CipraplexGotas-CUD-int3",
+      "description" : "Interação: Medicamentos que prolongam o intervalo QT (associação contraindicada)",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/dosage-type-cs"
+      },
+      "name" : "Dosage Type CodeSystem",
+      "description" : "Defines the semantic type of dosage instructions or constraints.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/dosage-type-vs"
+      },
+      "name" : "Dosage Type ValueSet",
+      "description" : "ValueSet for types of dosage instructions and constraints.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/forma-farmaceutica-cs"
+      },
+      "name" : "Forma Farmacêutica",
+      "description" : "CodeSystem para formas farmacêuticas baseado na tabela fornecida",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/forma-farmaceutica-vs"
+      },
+      "name" : "Forma Farmacêutica ValueSet",
+      "description" : "ValueSet para formas farmacêuticas baseado no INFARMED.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationKnowledge"
+      }],
+      "reference" : {
+        "reference" : "MedicationKnowledge/LorazepamBluepharma05mg"
+      },
+      "name" : "LorazepamBluepharma05mg",
+      "description" : "Example of MedicationKnowledge resource for Lorazepam Bluepharma 0,5 mg",
+      "isExample" : true,
+      "profile" : ["http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ClinicalUseDefinition"
+      }],
+      "reference" : {
+        "reference" : "ClinicalUseDefinition/LorazepamBluepharma05mg-CUD"
+      },
+      "name" : "LorazepamBluepharma05mg-CUD",
+      "description" : "Example of Contraindication",
+      "isExample" : true,
+      "profile" : ["http://example.com/fhir/example/StructureDefinition/ContraIndicacoesPDH"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ClinicalUseDefinition"
+      }],
+      "reference" : {
+        "reference" : "ClinicalUseDefinition/LorazepamBluepharma05mg-CUD1"
+      },
+      "name" : "LorazepamBluepharma05mg-CUD1",
+      "description" : "Example of Indication",
+      "isExample" : true,
+      "profile" : ["http://example.com/fhir/example/StructureDefinition/IndicacoesPDH"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ClinicalUseDefinition"
+      }],
+      "reference" : {
+        "reference" : "ClinicalUseDefinition/LorazepamBluepharma05mg-CUD2"
+      },
+      "name" : "LorazepamBluepharma05mg-CUD2",
+      "description" : "Example of interaction",
+      "isExample" : true,
+      "profile" : ["http://example.com/fhir/example/StructureDefinition/InteracoesPDH"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/MedicationKnowledgePDH"
+      },
+      "name" : "Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento",
+      "description" : "Perfil do recurso MedicationKnowledge para os ingredientes dos produtos, indicações, dosagem, forma farmacêutica, via de administração, e outras informações relevantes para o uso seguro e eficaz dos medicamentos.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ContraIndicacoesPDH"
+      },
+      "name" : "Perfil do recurso para contraindicações de medicação",
+      "description" : "Perfil do recurso para contraindicações de medicação",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/IndicacoesPDH"
+      },
+      "name" : "Perfil do recurso para indicações de medicação",
+      "description" : "Perfil do recurso para indicações de medicação",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/InteracoesPDH"
+      },
+      "name" : "Perfil do recurso para interações de medicação",
+      "description" : "Perfil do recurso para interações de medicação",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/tipo-preco-infarmed-cs"
+      },
+      "name" : "Tipo de Preço INFARMED",
+      "description" : "CodeSystem para os tipos de preço de medicamentos, baseado na tabela fornecida, incluindo apenas os códigos ativos.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/tipo-preco-infarmed-vs"
+      },
+      "name" : "Tipos de Preço INFARMED",
+      "description" : "ValueSet com os tipos de preço ativos definidos pelo INFARMED.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/via-administracao-cs"
+      },
+      "name" : "Via de Administração",
+      "description" : "CodeSystem para vias de administração baseado na tabela fornecida",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/via-administracao-vs"
+      },
+      "name" : "Via de Administração ValueSet",
+      "description" : "ValueSet para vias de administração baseado no INFARMED.",
+      "isExample" : false
+    }],
+    "page" : {
+      "sourceUrl" : "toc.html",
+      "name" : "toc.html",
+      "title" : "Table of Contents",
+      "generation" : "html",
+      "page" : [{
+        "sourceUrl" : "index.html",
+        "name" : "index.html",
+        "title" : "Home",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "background.html",
+        "name" : "background.html",
+        "title" : "Introdução",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "spec.html",
+        "name" : "spec.html",
+        "title" : "Especificação",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "terminology.html",
+        "name" : "terminology.html",
+        "title" : "Terminologias",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "downloads.html",
+        "name" : "downloads.html",
+        "title" : "Downloads",
+        "generation" : "html"
+      },
+      {
+        "sourceUrl" : "changes.html",
+        "name" : "changes.html",
+        "title" : "IG Change History",
+        "generation" : "html"
+      }]
+    },
+    "parameter" : [{
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "copyrightyear"
+      },
+      "value" : "2026+"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "releaselabel"
+      },
+      "value" : "STU1"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "produce-jekyll-data"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "autoload-resources"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/capabilities"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/examples"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/extensions"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/models"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/operations"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/profiles"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/resources"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/vocabulary"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/maps"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/testing"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/history"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "fsh-generated/resources"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-pages"
+      },
+      "value" : "template/config"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-pages"
+      },
+      "value" : "input/images"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-liquid"
+      },
+      "value" : "template/liquid"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-liquid"
+      },
+      "value" : "input/liquid"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-qa"
+      },
+      "value" : "temp/qa"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-temp"
+      },
+      "value" : "temp/pages"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-output"
+      },
+      "value" : "output"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-tx-cache"
+      },
+      "value" : "input-cache/txcache"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-suppressed-warnings"
+      },
+      "value" : "input/ignoreWarnings.txt"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-history"
+      },
+      "value" : "history.html"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "template-html"
+      },
+      "value" : "template-page.html"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "template-md"
+      },
+      "value" : "template-page-md.html"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-contact"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-context"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-copyright"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-jurisdiction"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-license"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-publisher"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-version"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-wg"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "active-tables"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "fmm-definition"
+      },
+      "value" : "http://hl7.org/fhir/versions.html#maturity"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "propagate-status"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "excludelogbinaryformat"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "tabbed-snapshots"
+      },
+      "value" : "true"
+    }]
+  }
+}
+
+```

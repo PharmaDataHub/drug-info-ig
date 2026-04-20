@@ -1,0 +1,50 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/ClinicalUseDefinition/CipraplexGotas-CUD-contra2> a fhir:ClinicalUseDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CipraplexGotas-CUD-contra2"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ClinicalUseDefinition CipraplexGotas-CUD-contra2</b></p><a name=\"CipraplexGotas-CUD-contra2\"> </a><a name=\"hcCipraplexGotas-CUD-contra2\"> </a><p><b>type</b>: Contraindication</p><blockquote><p><b>contraindication</b></p><h3>DiseaseSymptomProcedures</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct [PREENCHER]}\">Risco de síndrome serotoninérgica com inibidores não seletivos e irreversíveis da monoamino oxidase (IMAOs)</span></td></tr></table><h3>Comorbidities</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct [PREENCHER]}\">Tratamento concomitante com IMAO não seletivo e irreversível</span></td></tr></table></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:type [ fhir:v "contraindication"] ; # 
+  fhir:contraindication [
+     fhir:diseaseSymptomProcedure [
+       fhir:concept [
+         fhir:coding ( [
+           a sct:[PREENCHER] ;
+           fhir:system [
+             fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+             fhir:l <http://snomed.info/sct>
+           ] ;
+           fhir:code [ fhir:v "[PREENCHER]" ] ;
+           fhir:display [ fhir:v "Serotonin syndrome (disorder)" ]
+         ] ) ;
+         fhir:text [ fhir:v "Risco de síndrome serotoninérgica com inibidores não seletivos e irreversíveis da monoamino oxidase (IMAOs)" ]
+       ]
+     ] ;
+     fhir:comorbidity ( [
+       fhir:concept [
+         fhir:coding ( [
+           a sct:[PREENCHER] ;
+           fhir:system [
+             fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+             fhir:l <http://snomed.info/sct>
+           ] ;
+           fhir:code [ fhir:v "[PREENCHER]" ] ;
+           fhir:display [ fhir:v "Drug interaction with monoamine oxidase inhibitor (finding)" ]
+         ] ) ;
+         fhir:text [ fhir:v "Tratamento concomitante com IMAO não seletivo e irreversível" ]
+       ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

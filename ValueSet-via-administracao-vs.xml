@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="via-administracao-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet via-administracao-vs</b></p><a name="via-administracao-vs"> </a><a name="hcvia-administracao-vs"> </a><ul><li>Include all codes defined in <a href="CodeSystem-via-administracao-cs.html"><code>http://example.com/fhir/example/CodeSystem/via-administracao-cs</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;1.0.0</span></li></ul></div>
+  </text>
+  <url value="http://example.com/fhir/example/ValueSet/via-administracao-vs"/>
+  <version value="1.0.0"/>
+  <name value="ViaAdministracaoVS"/>
+  <title value="Via de Administração ValueSet"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-04-20T09:10:31+00:00"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="ValueSet para vias de administração baseado no INFARMED."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="620"/>
+      <display value="Portugal (PRT)"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://example.com/fhir/example/CodeSystem/via-administracao-cs"/>
+    </include>
+  </compose>
+</ValueSet>

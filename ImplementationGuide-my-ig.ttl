@@ -1,0 +1,1089 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/ImplementationGuide/my-ig> a fhir:ImplementationGuide ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "my-ig"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide my-ig</b></p><a name=\"my-ig\"> </a><a name=\"hcmy-ig\"> </a><h2>ExampleIG</h2><p>The official URL for this implementation guide is: </p><pre>http://example.com/fhir/example</pre><div><p>IG de exemplo que exercita os principais campos de uma configuração SUSHI.</p>\n</div></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://example.com/fhir/example"^^xsd:anyURI ;
+     fhir:l <http://example.com/fhir/example>
+  ] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "ExampleIG"] ; # 
+  fhir:title [ fhir:v "HL7 PT FHIR Implementation Guide: IG de Exemplo Versão 1 | STU1"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2026-02-26"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "IG de exemplo que exercita os principais campos de uma configuração SUSHI."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ;
+         fhir:l <http://unstats.un.org/unsd/methods/m49/m49.htm>
+       ] ;
+       fhir:code [ fhir:v "620" ] ;
+       fhir:display [ fhir:v "Portugal (PRT)" ]
+     ] )
+  ] ) ; # 
+  fhir:packageId [ fhir:v "my-ig"] ; # 
+  fhir:license [ fhir:v "CC0-1.0"] ; # 
+  fhir:fhirVersion ( [ fhir:v "5.0.0"] ) ; # 
+  fhir:dependsOn ( [
+     fhir:id [ fhir:v "hl7tx" ] ;
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment>
+       ] ;
+       fhir:value [
+         a fhir:Markdown ;
+         fhir:v "Automatically added as a dependency - all IGs depend on HL7 Terminology"
+       ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://terminology.hl7.org/ImplementationGuide/hl7.terminology"^^xsd:anyURI ;
+       fhir:l <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.terminology.r5" ] ;
+     fhir:version [ fhir:v "7.1.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7ext" ] ;
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment>
+       ] ;
+       fhir:value [
+         a fhir:Markdown ;
+         fhir:v "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
+       ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r5" ] ;
+     fhir:version [ fhir:v "5.2.0" ]
+  ] ) ; # 
+  fhir:definition [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency>
+       ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "hl7.fhir.uv.tools.r5#1.1.2"
+       ]
+     ] ) ;
+     fhir:resource ( [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "MedicationKnowledge"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://example.com/fhir/example/MedicationKnowledge/Cipralex-20-mgml-Gotas-orais-solucao> ;
+         fhir:reference [ fhir:v "MedicationKnowledge/Cipralex-20-mgml-Gotas-orais-solucao" ]
+       ] ;
+       fhir:name [ fhir:v "Cipralex-20-mgml-Gotas-orais-solucao" ] ;
+       fhir:description [ fhir:v "Example of MedicationKnowledge resource for Cipralex 20 mg/ml Gotas orais, solução" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH"^^xsd:anyURI ;
+         fhir:l <http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ClinicalUseDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://example.com/fhir/example/ClinicalUseDefinition/CipraplexGotas-CUD-contra1> ;
+         fhir:reference [ fhir:v "ClinicalUseDefinition/CipraplexGotas-CUD-contra1" ]
+       ] ;
+       fhir:name [ fhir:v "CipraplexGotas-CUD-contra1" ] ;
+       fhir:description [ fhir:v "Contraindicação: Hipersensibilidade ao escitalopram ou excipientes" ] ;
+       fhir:isExample [ fhir:v true ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ClinicalUseDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://example.com/fhir/example/ClinicalUseDefinition/CipraplexGotas-CUD-contra2> ;
+         fhir:reference [ fhir:v "ClinicalUseDefinition/CipraplexGotas-CUD-contra2" ]
+       ] ;
+       fhir:name [ fhir:v "CipraplexGotas-CUD-contra2" ] ;
+       fhir:description [ fhir:v "Contraindicação: Uso concomitante com IMAOs não seletivos e irreversíveis" ] ;
+       fhir:isExample [ fhir:v true ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ClinicalUseDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://example.com/fhir/example/ClinicalUseDefinition/CipraplexGotas-CUD-contra3> ;
+         fhir:reference [ fhir:v "ClinicalUseDefinition/CipraplexGotas-CUD-contra3" ]
+       ] ;
+       fhir:name [ fhir:v "CipraplexGotas-CUD-contra3" ] ;
+       fhir:description [ fhir:v "Contraindicação: Prolongamento do intervalo QT ou síndrome de QT longo congénito" ] ;
+       fhir:isExample [ fhir:v true ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ClinicalUseDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://example.com/fhir/example/ClinicalUseDefinition/CipraplexGotas-CUD-ind1> ;
+         fhir:reference [ fhir:v "ClinicalUseDefinition/CipraplexGotas-CUD-ind1" ]
+       ] ;
+       fhir:name [ fhir:v "CipraplexGotas-CUD-ind1" ] ;
+       fhir:description [ fhir:v "Indicação: Episódios depressivos major" ] ;
+       fhir:isExample [ fhir:v true ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ClinicalUseDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://example.com/fhir/example/ClinicalUseDefinition/CipraplexGotas-CUD-ind2> ;
+         fhir:reference [ fhir:v "ClinicalUseDefinition/CipraplexGotas-CUD-ind2" ]
+       ] ;
+       fhir:name [ fhir:v "CipraplexGotas-CUD-ind2" ] ;
+       fhir:description [ fhir:v "Indicação: Perturbações de pânico com ou sem agorafobia" ] ;
+       fhir:isExample [ fhir:v true ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ClinicalUseDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://example.com/fhir/example/ClinicalUseDefinition/CipraplexGotas-CUD-ind3> ;
+         fhir:reference [ fhir:v "ClinicalUseDefinition/CipraplexGotas-CUD-ind3" ]
+       ] ;
+       fhir:name [ fhir:v "CipraplexGotas-CUD-ind3" ] ;
+       fhir:description [ fhir:v "Indicação: Perturbação da ansiedade social (fobia social)" ] ;
+       fhir:isExample [ fhir:v true ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ClinicalUseDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://example.com/fhir/example/ClinicalUseDefinition/CipraplexGotas-CUD-ind4> ;
+         fhir:reference [ fhir:v "ClinicalUseDefinition/CipraplexGotas-CUD-ind4" ]
+       ] ;
+       fhir:name [ fhir:v "CipraplexGotas-CUD-ind4" ] ;
+       fhir:description [ fhir:v "Indicação: Perturbação da ansiedade generalizada" ] ;
+       fhir:isExample [ fhir:v true ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ClinicalUseDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://example.com/fhir/example/ClinicalUseDefinition/CipraplexGotas-CUD-ind5> ;
+         fhir:reference [ fhir:v "ClinicalUseDefinition/CipraplexGotas-CUD-ind5" ]
+       ] ;
+       fhir:name [ fhir:v "CipraplexGotas-CUD-ind5" ] ;
+       fhir:description [ fhir:v "Indicação: Perturbação obsessiva-compulsiva" ] ;
+       fhir:isExample [ fhir:v true ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ClinicalUseDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://example.com/fhir/example/ClinicalUseDefinition/CipraplexGotas-CUD-int1> ;
+         fhir:reference [ fhir:v "ClinicalUseDefinition/CipraplexGotas-CUD-int1" ]
+       ] ;
+       fhir:name [ fhir:v "CipraplexGotas-CUD-int1" ] ;
+       fhir:description [ fhir:v "Interação: IMAOs irreversíveis não seletivos (associação contraindicada)" ] ;
+       fhir:isExample [ fhir:v true ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ClinicalUseDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://example.com/fhir/example/ClinicalUseDefinition/CipraplexGotas-CUD-int2> ;
+         fhir:reference [ fhir:v "ClinicalUseDefinition/CipraplexGotas-CUD-int2" ]
+       ] ;
+       fhir:name [ fhir:v "CipraplexGotas-CUD-int2" ] ;
+       fhir:description [ fhir:v "Interação: Fármacos serotoninérgicos (opioides incl. tramadol, triptanos)" ] ;
+       fhir:isExample [ fhir:v true ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ClinicalUseDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://example.com/fhir/example/ClinicalUseDefinition/CipraplexGotas-CUD-int3> ;
+         fhir:reference [ fhir:v "ClinicalUseDefinition/CipraplexGotas-CUD-int3" ]
+       ] ;
+       fhir:name [ fhir:v "CipraplexGotas-CUD-int3" ] ;
+       fhir:description [ fhir:v "Interação: Medicamentos que prolongam o intervalo QT (associação contraindicada)" ] ;
+       fhir:isExample [ fhir:v true ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://example.com/fhir/example/CodeSystem/dosage-type-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/dosage-type-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Dosage Type CodeSystem" ] ;
+       fhir:description [ fhir:v "Defines the semantic type of dosage instructions or constraints." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://example.com/fhir/example/ValueSet/dosage-type-vs> ;
+         fhir:reference [ fhir:v "ValueSet/dosage-type-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Dosage Type ValueSet" ] ;
+       fhir:description [ fhir:v "ValueSet for types of dosage instructions and constraints." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/forma-farmaceutica-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Forma Farmacêutica" ] ;
+       fhir:description [ fhir:v "CodeSystem para formas farmacêuticas baseado na tabela fornecida" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://example.com/fhir/example/ValueSet/forma-farmaceutica-vs> ;
+         fhir:reference [ fhir:v "ValueSet/forma-farmaceutica-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Forma Farmacêutica ValueSet" ] ;
+       fhir:description [ fhir:v "ValueSet para formas farmacêuticas baseado no INFARMED." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "MedicationKnowledge"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://example.com/fhir/example/MedicationKnowledge/LorazepamBluepharma05mg> ;
+         fhir:reference [ fhir:v "MedicationKnowledge/LorazepamBluepharma05mg" ]
+       ] ;
+       fhir:name [ fhir:v "LorazepamBluepharma05mg" ] ;
+       fhir:description [ fhir:v "Example of MedicationKnowledge resource for Lorazepam Bluepharma 0,5 mg" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH"^^xsd:anyURI ;
+         fhir:l <http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ClinicalUseDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://example.com/fhir/example/ClinicalUseDefinition/LorazepamBluepharma05mg-CUD> ;
+         fhir:reference [ fhir:v "ClinicalUseDefinition/LorazepamBluepharma05mg-CUD" ]
+       ] ;
+       fhir:name [ fhir:v "LorazepamBluepharma05mg-CUD" ] ;
+       fhir:description [ fhir:v "Example of Contraindication" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "http://example.com/fhir/example/StructureDefinition/ContraIndicacoesPDH"^^xsd:anyURI ;
+         fhir:l <http://example.com/fhir/example/StructureDefinition/ContraIndicacoesPDH>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ClinicalUseDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://example.com/fhir/example/ClinicalUseDefinition/LorazepamBluepharma05mg-CUD1> ;
+         fhir:reference [ fhir:v "ClinicalUseDefinition/LorazepamBluepharma05mg-CUD1" ]
+       ] ;
+       fhir:name [ fhir:v "LorazepamBluepharma05mg-CUD1" ] ;
+       fhir:description [ fhir:v "Example of Indication" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "http://example.com/fhir/example/StructureDefinition/IndicacoesPDH"^^xsd:anyURI ;
+         fhir:l <http://example.com/fhir/example/StructureDefinition/IndicacoesPDH>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ClinicalUseDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://example.com/fhir/example/ClinicalUseDefinition/LorazepamBluepharma05mg-CUD2> ;
+         fhir:reference [ fhir:v "ClinicalUseDefinition/LorazepamBluepharma05mg-CUD2" ]
+       ] ;
+       fhir:name [ fhir:v "LorazepamBluepharma05mg-CUD2" ] ;
+       fhir:description [ fhir:v "Example of interaction" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "http://example.com/fhir/example/StructureDefinition/InteracoesPDH"^^xsd:anyURI ;
+         fhir:l <http://example.com/fhir/example/StructureDefinition/InteracoesPDH>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH> ;
+         fhir:reference [ fhir:v "StructureDefinition/MedicationKnowledgePDH" ]
+       ] ;
+       fhir:name [ fhir:v "Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento" ] ;
+       fhir:description [ fhir:v "Perfil do recurso MedicationKnowledge para os ingredientes dos produtos, indicações, dosagem, forma farmacêutica, via de administração, e outras informações relevantes para o uso seguro e eficaz dos medicamentos." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://example.com/fhir/example/StructureDefinition/ContraIndicacoesPDH> ;
+         fhir:reference [ fhir:v "StructureDefinition/ContraIndicacoesPDH" ]
+       ] ;
+       fhir:name [ fhir:v "Perfil do recurso para contraindicações de medicação" ] ;
+       fhir:description [ fhir:v "Perfil do recurso para contraindicações de medicação" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://example.com/fhir/example/StructureDefinition/IndicacoesPDH> ;
+         fhir:reference [ fhir:v "StructureDefinition/IndicacoesPDH" ]
+       ] ;
+       fhir:name [ fhir:v "Perfil do recurso para indicações de medicação" ] ;
+       fhir:description [ fhir:v "Perfil do recurso para indicações de medicação" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://example.com/fhir/example/StructureDefinition/InteracoesPDH> ;
+         fhir:reference [ fhir:v "StructureDefinition/InteracoesPDH" ]
+       ] ;
+       fhir:name [ fhir:v "Perfil do recurso para interações de medicação" ] ;
+       fhir:description [ fhir:v "Perfil do recurso para interações de medicação" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://example.com/fhir/example/CodeSystem/tipo-preco-infarmed-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/tipo-preco-infarmed-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Tipo de Preço INFARMED" ] ;
+       fhir:description [ fhir:v "CodeSystem para os tipos de preço de medicamentos, baseado na tabela fornecida, incluindo apenas os códigos ativos." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://example.com/fhir/example/ValueSet/tipo-preco-infarmed-vs> ;
+         fhir:reference [ fhir:v "ValueSet/tipo-preco-infarmed-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Tipos de Preço INFARMED" ] ;
+       fhir:description [ fhir:v "ValueSet com os tipos de preço ativos definidos pelo INFARMED." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://example.com/fhir/example/CodeSystem/via-administracao-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/via-administracao-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Via de Administração" ] ;
+       fhir:description [ fhir:v "CodeSystem para vias de administração baseado na tabela fornecida" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://example.com/fhir/example/ValueSet/via-administracao-vs> ;
+         fhir:reference [ fhir:v "ValueSet/via-administracao-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Via de Administração ValueSet" ] ;
+       fhir:description [ fhir:v "ValueSet para vias de administração baseado no INFARMED." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] ) ;
+     fhir:page [
+       fhir:source [
+         a fhir:Url ;
+         fhir:v "toc.html"^^xsd:anyURI ;
+         fhir:l fhir:toc.html
+       ] ;
+       fhir:name [
+         fhir:v "toc.html"^^xsd:anyURI ;
+         fhir:l fhir:toc.html
+       ] ;
+       fhir:title [ fhir:v "Table of Contents" ] ;
+       fhir:generation [ fhir:v "html" ] ;
+       fhir:page ( [
+         fhir:source [
+           a fhir:Url ;
+           fhir:v "index.html"^^xsd:anyURI ;
+           fhir:l fhir:index.html
+         ] ;
+         fhir:name [
+           fhir:v "index.html"^^xsd:anyURI ;
+           fhir:l fhir:index.html
+         ] ;
+         fhir:title [ fhir:v "Home" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [
+           a fhir:Url ;
+           fhir:v "background.html"^^xsd:anyURI ;
+           fhir:l fhir:background.html
+         ] ;
+         fhir:name [
+           fhir:v "background.html"^^xsd:anyURI ;
+           fhir:l fhir:background.html
+         ] ;
+         fhir:title [ fhir:v "Introdução" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [
+           a fhir:Url ;
+           fhir:v "spec.html"^^xsd:anyURI ;
+           fhir:l fhir:spec.html
+         ] ;
+         fhir:name [
+           fhir:v "spec.html"^^xsd:anyURI ;
+           fhir:l fhir:spec.html
+         ] ;
+         fhir:title [ fhir:v "Especificação" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [
+           a fhir:Url ;
+           fhir:v "terminology.html"^^xsd:anyURI ;
+           fhir:l fhir:terminology.html
+         ] ;
+         fhir:name [
+           fhir:v "terminology.html"^^xsd:anyURI ;
+           fhir:l fhir:terminology.html
+         ] ;
+         fhir:title [ fhir:v "Terminologias" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [
+           a fhir:Url ;
+           fhir:v "downloads.html"^^xsd:anyURI ;
+           fhir:l fhir:downloads.html
+         ] ;
+         fhir:name [
+           fhir:v "downloads.html"^^xsd:anyURI ;
+           fhir:l fhir:downloads.html
+         ] ;
+         fhir:title [ fhir:v "Downloads" ] ;
+         fhir:generation [ fhir:v "html" ]
+       ] [
+         fhir:source [
+           a fhir:Url ;
+           fhir:v "changes.html"^^xsd:anyURI ;
+           fhir:l fhir:changes.html
+         ] ;
+         fhir:name [
+           fhir:v "changes.html"^^xsd:anyURI ;
+           fhir:l fhir:changes.html
+         ] ;
+         fhir:title [ fhir:v "IG Change History" ] ;
+         fhir:generation [ fhir:v "html" ]
+       ] )
+     ] ;
+     fhir:parameter ( [
+       fhir:code [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
+         ] ;
+         fhir:code [ fhir:v "copyrightyear" ]
+       ] ;
+       fhir:value [ fhir:v "2026+" ]
+     ] [
+       fhir:code [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
+         ] ;
+         fhir:code [ fhir:v "releaselabel" ]
+       ] ;
+       fhir:value [ fhir:v "STU1" ]
+     ] [
+       fhir:code [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
+         ] ;
+         fhir:code [ fhir:v "produce-jekyll-data" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
+         ] ;
+         fhir:code [ fhir:v "autoload-resources" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/guide-parameter-code>
+         ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/capabilities" ]
+     ] [
+       fhir:code [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/guide-parameter-code>
+         ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/examples" ]
+     ] [
+       fhir:code [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/guide-parameter-code>
+         ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/extensions" ]
+     ] [
+       fhir:code [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/guide-parameter-code>
+         ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/models" ]
+     ] [
+       fhir:code [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/guide-parameter-code>
+         ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/operations" ]
+     ] [
+       fhir:code [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/guide-parameter-code>
+         ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/profiles" ]
+     ] [
+       fhir:code [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/guide-parameter-code>
+         ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/resources" ]
+     ] [
+       fhir:code [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/guide-parameter-code>
+         ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/vocabulary" ]
+     ] [
+       fhir:code [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/guide-parameter-code>
+         ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/maps" ]
+     ] [
+       fhir:code [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/guide-parameter-code>
+         ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/testing" ]
+     ] [
+       fhir:code [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/guide-parameter-code>
+         ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/history" ]
+     ] [
+       fhir:code [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/guide-parameter-code>
+         ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "fsh-generated/resources" ]
+     ] [
+       fhir:code [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/guide-parameter-code>
+         ] ;
+         fhir:code [ fhir:v "path-pages" ]
+       ] ;
+       fhir:value [ fhir:v "template/config" ]
+     ] [
+       fhir:code [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/guide-parameter-code>
+         ] ;
+         fhir:code [ fhir:v "path-pages" ]
+       ] ;
+       fhir:value [ fhir:v "input/images" ]
+     ] [
+       fhir:code [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
+         ] ;
+         fhir:code [ fhir:v "path-liquid" ]
+       ] ;
+       fhir:value [ fhir:v "template/liquid" ]
+     ] [
+       fhir:code [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
+         ] ;
+         fhir:code [ fhir:v "path-liquid" ]
+       ] ;
+       fhir:value [ fhir:v "input/liquid" ]
+     ] [
+       fhir:code [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
+         ] ;
+         fhir:code [ fhir:v "path-qa" ]
+       ] ;
+       fhir:value [ fhir:v "temp/qa" ]
+     ] [
+       fhir:code [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
+         ] ;
+         fhir:code [ fhir:v "path-temp" ]
+       ] ;
+       fhir:value [ fhir:v "temp/pages" ]
+     ] [
+       fhir:code [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
+         ] ;
+         fhir:code [ fhir:v "path-output" ]
+       ] ;
+       fhir:value [ fhir:v "output" ]
+     ] [
+       fhir:code [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/guide-parameter-code>
+         ] ;
+         fhir:code [ fhir:v "path-tx-cache" ]
+       ] ;
+       fhir:value [ fhir:v "input-cache/txcache" ]
+     ] [
+       fhir:code [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
+         ] ;
+         fhir:code [ fhir:v "path-suppressed-warnings" ]
+       ] ;
+       fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
+     ] [
+       fhir:code [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
+         ] ;
+         fhir:code [ fhir:v "path-history" ]
+       ] ;
+       fhir:value [ fhir:v "history.html" ]
+     ] [
+       fhir:code [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
+         ] ;
+         fhir:code [ fhir:v "template-html" ]
+       ] ;
+       fhir:value [ fhir:v "template-page.html" ]
+     ] [
+       fhir:code [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
+         ] ;
+         fhir:code [ fhir:v "template-md" ]
+       ] ;
+       fhir:value [ fhir:v "template-page-md.html" ]
+     ] [
+       fhir:code [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
+         ] ;
+         fhir:code [ fhir:v "apply-contact" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
+         ] ;
+         fhir:code [ fhir:v "apply-context" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
+         ] ;
+         fhir:code [ fhir:v "apply-copyright" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
+         ] ;
+         fhir:code [ fhir:v "apply-jurisdiction" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
+         ] ;
+         fhir:code [ fhir:v "apply-license" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
+         ] ;
+         fhir:code [ fhir:v "apply-publisher" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
+         ] ;
+         fhir:code [ fhir:v "apply-version" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
+         ] ;
+         fhir:code [ fhir:v "apply-wg" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
+         ] ;
+         fhir:code [ fhir:v "active-tables" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
+         ] ;
+         fhir:code [ fhir:v "fmm-definition" ]
+       ] ;
+       fhir:value [ fhir:v "http://hl7.org/fhir/versions.html#maturity" ]
+     ] [
+       fhir:code [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
+         ] ;
+         fhir:code [ fhir:v "propagate-status" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
+         ] ;
+         fhir:code [ fhir:v "excludelogbinaryformat" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
+         ] ;
+         fhir:code [ fhir:v "tabbed-snapshots" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,796 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Via de Administração - XML Representation - HL7 PT FHIR Implementation Guide: IG de Exemplo Versão 1 | STU1 v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/affiliate.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"7.12"}
+    h3,h4,h5,h6{--heading-prefix:"7.12"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a id="affiliate-logo" no-external="true" href="http://hl7.eu">
+    <img height="71" alt="Visit the HL7 affiliate website" src="assets/images/affiliate.png"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="30" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 PT FHIR Implementation Guide: IG de Exemplo Versão 1 | STU1</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - STU1
+
+
+
+  Portugal (PRT)
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="background.html">Introdução</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Especificação
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="spec.html">Conteúdo</a>
+      </li>
+      <li>
+        <a href="terminology.html">Terminologias</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artefactos</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Via de Administração</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 7" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">HL7 PT FHIR Implementation Guide: IG de Exemplo Versão 1 | STU1, published by HL7 Portugal. This guide is not an authorized publication; it is the continuous build for version 1.0.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href='https://github.com/PharmaDataHub/drug-info-ig/tree/master'>https://github.com/PharmaDataHub/drug-info-ig/tree/master</a> and changes regularly. See the <a href='http://example.com/fhir/example/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-via-administracao-cs.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li class="active">
+      <a href="#">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-via-administracao-cs.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-via-administracao-cs.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Via de Administração - XML Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2026-04-20
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CodeSystem-via-administracao-cs.xml" no-download="true">Raw xml</a> | <a href="CodeSystem-via-administracao-cs.xml" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="xml" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">
+&lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem">CodeSystem</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/resource.html#XCodeSystem.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;via-administracao-cs&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/domainresource.html#XCodeSystem.text">text</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#XNarrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem via-administracao-cs&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;via-administracao-cs&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcvia-administracao-cs&quot;&gt; &lt;/a&gt;&lt;p&gt;This  code system &lt;code&gt;http://example.com/fhir/example/CodeSystem/via-administracao-cs&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=&quot;codes&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;43&lt;a name=&quot;via-administracao-cs-43&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intravesical&lt;/td&gt;&lt;td&gt;IVesical&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;27&lt;a name=&quot;via-administracao-cs-27&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intralinfática&lt;/td&gt;&lt;td&gt;ILinfáti&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;81&lt;a name=&quot;via-administracao-cs-81&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uso gengival&lt;/td&gt;&lt;td&gt;Gengival&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;52&lt;a name=&quot;via-administracao-cs-52&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via periarticular&lt;/td&gt;&lt;td&gt;Periarticular&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;31&lt;a name=&quot;via-administracao-cs-31&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uso intraocular&lt;/td&gt;&lt;td&gt;IOcular&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;26&lt;a name=&quot;via-administracao-cs-26&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uso intralesional&lt;/td&gt;&lt;td&gt;Intralesional&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;57&lt;a name=&quot;via-administracao-cs-57&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via subconjuntival&lt;/td&gt;&lt;td&gt;Subconjuntival&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;30&lt;a name=&quot;via-administracao-cs-30&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intramuscular&lt;/td&gt;&lt;td&gt;IM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;110&lt;a name=&quot;via-administracao-cs-110&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intraesternal&lt;/td&gt;&lt;td&gt;Via intraesternal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;24&lt;a name=&quot;via-administracao-cs-24&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intradiscal&lt;/td&gt;&lt;td&gt;Via intradiscal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;19&lt;a name=&quot;via-administracao-cs-19&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intracervical&lt;/td&gt;&lt;td&gt;ICervical&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;80&lt;a name=&quot;via-administracao-cs-80&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via gastroentérica&lt;/td&gt;&lt;td&gt;Gastro-enteri&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;10&lt;a name=&quot;via-administracao-cs-10&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hemodiálise&lt;/td&gt;&lt;td&gt;Hemodi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;4&lt;a name=&quot;via-administracao-cs-4&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uso dental&lt;/td&gt;&lt;td&gt;Dental&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;16&lt;a name=&quot;via-administracao-cs-16&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intracardíaca&lt;/td&gt;&lt;td&gt;ICardíaca&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;13&lt;a name=&quot;via-administracao-cs-13&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intra-arterial&lt;/td&gt;&lt;td&gt;IA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;14&lt;a name=&quot;via-administracao-cs-14&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intra-articular&lt;/td&gt;&lt;td&gt;IArticular&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;71&lt;a name=&quot;via-administracao-cs-71&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via inalatória&lt;/td&gt;&lt;td&gt;Inalatória&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;808&lt;a name=&quot;via-administracao-cs-808&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EC - Uso intratorácico&lt;/td&gt;&lt;td&gt;EC - Uso intratorácico&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;806&lt;a name=&quot;via-administracao-cs-806&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EC - Uso intrasinovial&lt;/td&gt;&lt;td&gt;EC - Uso intrasinovial&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;123&lt;a name=&quot;via-administracao-cs-123&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uso periodontal&lt;/td&gt;&lt;td&gt;Periodontal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;7&lt;a name=&quot;via-administracao-cs-7&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via endotraqueobrônquica&lt;/td&gt;&lt;td&gt;Endotraqueo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;127&lt;a name=&quot;via-administracao-cs-127&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uso epilesional&lt;/td&gt;&lt;td&gt;Epilesional&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;72&lt;a name=&quot;via-administracao-cs-72&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intravítreo&lt;/td&gt;&lt;td&gt;Intravítreo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;821&lt;a name=&quot;via-administracao-cs-821&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EC - Via desconhecida&lt;/td&gt;&lt;td&gt;EC - Via desconhecida&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;130&lt;a name=&quot;via-administracao-cs-130&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via justaescleral posterior&lt;/td&gt;&lt;td&gt;Via justaescleral posterior&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;1&lt;a name=&quot;via-administracao-cs-1&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uso auricular&lt;/td&gt;&lt;td&gt;Auricular&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;822&lt;a name=&quot;via-administracao-cs-822&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Para implantação&lt;/td&gt;&lt;td&gt;Implantação&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;823&lt;a name=&quot;via-administracao-cs-823&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intraepidérmica&lt;/td&gt;&lt;td&gt;Via intraepidérmica&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;58&lt;a name=&quot;via-administracao-cs-58&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via subcutânea&lt;/td&gt;&lt;td&gt;SC&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;66&lt;a name=&quot;via-administracao-cs-66&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via uretral&lt;/td&gt;&lt;td&gt;Uretral&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;115&lt;a name=&quot;via-administracao-cs-115&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via de administração não especificada&lt;/td&gt;&lt;td&gt;NEsp&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;145&lt;a name=&quot;via-administracao-cs-145&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intraglandular&lt;/td&gt;&lt;td&gt;IGlandul&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;148&lt;a name=&quot;via-administracao-cs-148&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intraputaminal&lt;/td&gt;&lt;td&gt;Via intraputaminal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;69&lt;a name=&quot;via-administracao-cs-69&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uso laringofaríngeo&lt;/td&gt;&lt;td&gt;Laringofarín&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;829&lt;a name=&quot;via-administracao-cs-829&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uso intracameral&lt;/td&gt;&lt;td&gt;Intracameral&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;45&lt;a name=&quot;via-administracao-cs-45&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via nasal&lt;/td&gt;&lt;td&gt;Nasal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;820&lt;a name=&quot;via-administracao-cs-820&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EC - Uso transplacentário&lt;/td&gt;&lt;td&gt;EC - Uso transplacentário&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;826&lt;a name=&quot;via-administracao-cs-826&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EC - Via Intraprostática&lt;/td&gt;&lt;td&gt;EC - Via Intraprostática&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;35&lt;a name=&quot;via-administracao-cs-35&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intrassinovial&lt;/td&gt;&lt;td&gt;ISsinovial&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;134&lt;a name=&quot;via-administracao-cs-134&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via peritumoral&lt;/td&gt;&lt;td&gt;Peritumoral&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;42&lt;a name=&quot;via-administracao-cs-42&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intravenosa&lt;/td&gt;&lt;td&gt;IV&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;70&lt;a name=&quot;via-administracao-cs-70&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intrapericárdica&lt;/td&gt;&lt;td&gt;Via intrapericárdica&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;17&lt;a name=&quot;via-administracao-cs-17&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intracavernosa&lt;/td&gt;&lt;td&gt;ICaver&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;2&lt;a name=&quot;via-administracao-cs-2&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via bucal&lt;/td&gt;&lt;td&gt;Bucal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;6&lt;a name=&quot;via-administracao-cs-6&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uso endossinusal&lt;/td&gt;&lt;td&gt;Uso endossinusal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;59&lt;a name=&quot;via-administracao-cs-59&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uso intraósseo&lt;/td&gt;&lt;td&gt;IÓssea&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;802&lt;a name=&quot;via-administracao-cs-802&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EC - Uso intracorneal&lt;/td&gt;&lt;td&gt;EC - Uso intracorneal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;15&lt;a name=&quot;via-administracao-cs-15&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intrauterina&lt;/td&gt;&lt;td&gt;IUterina&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;819&lt;a name=&quot;via-administracao-cs-819&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EC - Uso transmamário&lt;/td&gt;&lt;td&gt;EC - Uso transmamário&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;811&lt;a name=&quot;via-administracao-cs-811&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EC - Via intravenosa (perfusão)&lt;/td&gt;&lt;td&gt;EC - Via intravenosa (perfusão)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;814&lt;a name=&quot;via-administracao-cs-814&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EC - Outros&lt;/td&gt;&lt;td&gt;EC - Outros&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;812&lt;a name=&quot;via-administracao-cs-812&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EC - Iontoforese&lt;/td&gt;&lt;td&gt;EC - Iontoforese&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;813&lt;a name=&quot;via-administracao-cs-813&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EC - Usada em técnica de pensos oclusivos&lt;/td&gt;&lt;td&gt;EC - Usada em técnica de pensos oclusivos&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;816&lt;a name=&quot;via-administracao-cs-816&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EC - Uso retrobulbar&lt;/td&gt;&lt;td&gt;EC - Uso retrobulbar&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;122&lt;a name=&quot;via-administracao-cs-122&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intratumoral&lt;/td&gt;&lt;td&gt;ITumoral&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;817&lt;a name=&quot;via-administracao-cs-817&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EC - Uso subdérmica&lt;/td&gt;&lt;td&gt;EC - Uso subdérmica&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;827&lt;a name=&quot;via-administracao-cs-827&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EC - Não mencionado&lt;/td&gt;&lt;td&gt;EC - Não mencionado&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;815&lt;a name=&quot;via-administracao-cs-815&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EC - Uso parentérico&lt;/td&gt;&lt;td&gt;EC - Uso parentérico&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;126&lt;a name=&quot;via-administracao-cs-126&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intracerebral&lt;/td&gt;&lt;td&gt;ICerebral&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;129&lt;a name=&quot;via-administracao-cs-129&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intestinal&lt;/td&gt;&lt;td&gt;Via intestinal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;33&lt;a name=&quot;via-administracao-cs-33&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intraperitoneal&lt;/td&gt;&lt;td&gt;IPeritoneal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;23&lt;a name=&quot;via-administracao-cs-23&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intradérmica&lt;/td&gt;&lt;td&gt;ID&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;135&lt;a name=&quot;via-administracao-cs-135&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Infiltração&lt;/td&gt;&lt;td&gt;Infiltra&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;143&lt;a name=&quot;via-administracao-cs-143&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intracerebroventricular&lt;/td&gt;&lt;td&gt;ICerebroventric&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;146&lt;a name=&quot;via-administracao-cs-146&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via subretiniana&lt;/td&gt;&lt;td&gt;Subretin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;149&lt;a name=&quot;via-administracao-cs-149&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via submucosa&lt;/td&gt;&lt;td&gt;Submucosa&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;67&lt;a name=&quot;via-administracao-cs-67&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uso vaginal&lt;/td&gt;&lt;td&gt;Vaginal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;3&lt;a name=&quot;via-administracao-cs-3&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uso cutâneo&lt;/td&gt;&lt;td&gt;Cutâneo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;62&lt;a name=&quot;via-administracao-cs-62&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via transdérmica&lt;/td&gt;&lt;td&gt;Transder&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;9&lt;a name=&quot;via-administracao-cs-9&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via extra-amniótica&lt;/td&gt;&lt;td&gt;Via extra-amniótica&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;8&lt;a name=&quot;via-administracao-cs-8&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via epidural&lt;/td&gt;&lt;td&gt;Epidural&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;12&lt;a name=&quot;via-administracao-cs-12&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intra-amniótica&lt;/td&gt;&lt;td&gt;IAmniótica&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;74&lt;a name=&quot;via-administracao-cs-74&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uso subgengival&lt;/td&gt;&lt;td&gt;Subgengival&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;803&lt;a name=&quot;via-administracao-cs-803&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EC - Uso intra-hepático&lt;/td&gt;&lt;td&gt;EC - Uso intra-hepático&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;805&lt;a name=&quot;via-administracao-cs-805&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EC - Uso intrameningial&lt;/td&gt;&lt;td&gt;EC - Uso intrameningial&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;73&lt;a name=&quot;via-administracao-cs-73&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via sublingual&lt;/td&gt;&lt;td&gt;Sublingual&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;818&lt;a name=&quot;via-administracao-cs-818&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EC - Uso tópico&lt;/td&gt;&lt;td&gt;EC - Uso tópico&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;828&lt;a name=&quot;via-administracao-cs-828&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EC - Uso  periósseo&lt;/td&gt;&lt;td&gt;EC - Uso  periósseo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;825&lt;a name=&quot;via-administracao-cs-825&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EC - Via Intracartilaginosa&lt;/td&gt;&lt;td&gt;EC - Via Intracartilaginosa&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;128&lt;a name=&quot;via-administracao-cs-128&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via gástrica&lt;/td&gt;&lt;td&gt;Gástrica&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;124&lt;a name=&quot;via-administracao-cs-124&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uso epicutâneo&lt;/td&gt;&lt;td&gt;Epicutâneo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;144&lt;a name=&quot;via-administracao-cs-144&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uso extracorpóreo&lt;/td&gt;&lt;td&gt;Extracorp&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;37&lt;a name=&quot;via-administracao-cs-37&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intratecal&lt;/td&gt;&lt;td&gt;IT&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;34&lt;a name=&quot;via-administracao-cs-34&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intrapleural&lt;/td&gt;&lt;td&gt;IPleural&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;47&lt;a name=&quot;via-administracao-cs-47&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uso oftálmico&lt;/td&gt;&lt;td&gt;Oftálmico&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;54&lt;a name=&quot;via-administracao-cs-54&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via retal&lt;/td&gt;&lt;td&gt;Rectal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;53&lt;a name=&quot;via-administracao-cs-53&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via perineural&lt;/td&gt;&lt;td&gt;Perineural&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;22&lt;a name=&quot;via-administracao-cs-22&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intracoronária&lt;/td&gt;&lt;td&gt;Intracoronária&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;48&lt;a name=&quot;via-administracao-cs-48&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via oral&lt;/td&gt;&lt;td&gt;Oral&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;68&lt;a name=&quot;via-administracao-cs-68&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uso orofaríngeo&lt;/td&gt;&lt;td&gt;Orofaríngeo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;5&lt;a name=&quot;via-administracao-cs-5&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via endocervical&lt;/td&gt;&lt;td&gt;Via endocervical&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;801&lt;a name=&quot;via-administracao-cs-801&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EC - Uso intracisternal&lt;/td&gt;&lt;td&gt;EC - Uso intracisternal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;809&lt;a name=&quot;via-administracao-cs-809&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EC - Uso intratraqueal&lt;/td&gt;&lt;td&gt;EC - Uso intratraqueal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;810&lt;a name=&quot;via-administracao-cs-810&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EC - Via intravenosa (bólus)&lt;/td&gt;&lt;td&gt;EC - Via intravenosa (bólus)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+  &lt;/<a href="http://hl7.org/fhir/R5/domainresource.html#XCodeSystem.text">text</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.url">url</a>
+       <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://example.com/fhir/example/CodeSystem/via-administracao-cs&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.version">version</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;1.0.0&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ViaAdministracaoCS&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.title">title</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via de Administração&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.date">date</a> <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">value</a>=&quot;2026-04-20T09:10:31+00:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.publisher">publisher</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;HL7 Portugal&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.contact">contact</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;HL7 Portugal&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.telecom">telecom</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;url&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;http://hl7.pt&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.telecom">telecom</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.telecom">telecom</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;email&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;info@hl7.pt&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.telecom">telecom</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.contact">contact</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.contact">contact</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;HL7 Portugal&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.telecom">telecom</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;email&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;geral@hl7.pt&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.use">use</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;work&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.telecom">telecom</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.contact">contact</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.description">description</a>
+               <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;CodeSystem para vias de administração baseado na tabela fornecida&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.jurisdiction">jurisdiction</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://unstats.un.org/unsd/methods/m49/m49.htm&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;620&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Portugal (PRT)&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.jurisdiction">jurisdiction</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.content">content</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;complete&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.count">count</a> <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">value</a>=&quot;95&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;43&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via intravesical&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;IVesical&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;27&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via intralinfática&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ILinfáti&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;81&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Uso gengival&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Gengival&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;52&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via periarticular&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Periarticular&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;31&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Uso intraocular&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;IOcular&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;26&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Uso intralesional&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Intralesional&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;57&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via subconjuntival&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Subconjuntival&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;30&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via intramuscular&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;IM&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;110&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via intraesternal&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via intraesternal&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;24&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via intradiscal&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via intradiscal&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;19&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via intracervical&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ICervical&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;80&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via gastroentérica&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Gastro-enteri&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;10&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Hemodiálise&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Hemodi&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;4&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Uso dental&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Dental&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;16&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via intracardíaca&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ICardíaca&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;13&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via intra-arterial&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;IA&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;14&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via intra-articular&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;IArticular&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;71&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via inalatória&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Inalatória&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;808&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Uso intratorácico&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Uso intratorácico&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;806&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Uso intrasinovial&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Uso intrasinovial&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;123&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Uso periodontal&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Periodontal&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;7&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via endotraqueobrônquica&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Endotraqueo&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;127&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Uso epilesional&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Epilesional&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;72&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via intravítreo&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Intravítreo&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;821&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Via desconhecida&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Via desconhecida&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;130&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via justaescleral posterior&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via justaescleral posterior&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;1&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Uso auricular&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Auricular&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;822&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Para implantação&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Implantação&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;823&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via intraepidérmica&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via intraepidérmica&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;58&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via subcutânea&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;SC&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;66&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via uretral&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Uretral&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;115&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via de administração não especificada&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;NEsp&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;145&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via intraglandular&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;IGlandul&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;148&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via intraputaminal&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via intraputaminal&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;69&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Uso laringofaríngeo&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Laringofarín&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;829&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Uso intracameral&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Intracameral&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;45&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via nasal&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Nasal&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;820&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Uso transplacentário&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Uso transplacentário&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;826&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Via Intraprostática&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Via Intraprostática&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;35&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via intrassinovial&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ISsinovial&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;134&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via peritumoral&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Peritumoral&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;42&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via intravenosa&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;IV&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;70&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via intrapericárdica&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via intrapericárdica&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;17&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via intracavernosa&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ICaver&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;2&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via bucal&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Bucal&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;6&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Uso endossinusal&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Uso endossinusal&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;59&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Uso intraósseo&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;IÓssea&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;802&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Uso intracorneal&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Uso intracorneal&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;15&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via intrauterina&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;IUterina&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;819&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Uso transmamário&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Uso transmamário&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;811&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Via intravenosa (perfusão)&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Via intravenosa (perfusão)&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;814&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Outros&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Outros&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;812&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Iontoforese&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Iontoforese&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;813&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Usada em técnica de pensos oclusivos&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Usada em técnica de pensos oclusivos&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;816&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Uso retrobulbar&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Uso retrobulbar&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;122&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via intratumoral&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ITumoral&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;817&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Uso subdérmica&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Uso subdérmica&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;827&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Não mencionado&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Não mencionado&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;815&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Uso parentérico&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Uso parentérico&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;126&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via intracerebral&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ICerebral&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;129&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via intestinal&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via intestinal&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;33&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via intraperitoneal&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;IPeritoneal&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;23&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via intradérmica&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ID&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;135&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Infiltração&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Infiltra&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;143&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via intracerebroventricular&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ICerebroventric&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;146&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via subretiniana&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Subretin&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;149&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via submucosa&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Submucosa&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;67&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Uso vaginal&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Vaginal&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;3&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Uso cutâneo&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Cutâneo&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;62&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via transdérmica&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Transder&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;9&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via extra-amniótica&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via extra-amniótica&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;8&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via epidural&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Epidural&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;12&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via intra-amniótica&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;IAmniótica&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;74&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Uso subgengival&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Subgengival&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;803&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Uso intra-hepático&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Uso intra-hepático&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;805&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Uso intrameningial&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Uso intrameningial&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;73&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via sublingual&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Sublingual&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;818&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Uso tópico&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Uso tópico&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;828&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Uso  periósseo&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Uso  periósseo&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;825&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Via Intracartilaginosa&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Via Intracartilaginosa&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;128&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via gástrica&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Gástrica&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;124&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Uso epicutâneo&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Epicutâneo&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;144&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Uso extracorpóreo&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Extracorp&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;37&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via intratecal&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;IT&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;34&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via intrapleural&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;IPleural&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;47&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Uso oftálmico&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Oftálmico&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;54&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via retal&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Rectal&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;53&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via perineural&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Perineural&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;22&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via intracoronária&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Intracoronária&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;48&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via oral&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Oral&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;68&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Uso orofaríngeo&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Orofaríngeo&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;5&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via endocervical&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via endocervical&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;801&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Uso intracisternal&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Uso intracisternal&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;809&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Uso intratraqueal&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Uso intratraqueal&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;810&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Via intravenosa (bólus)&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EC - Via intravenosa (bólus)&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>&gt;
+&lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem">CodeSystem</a>&gt;</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.pt">HL7 Portugal</a>.  Package my-ig#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, Apr 20, 2026 09:10+0000">2026-04-20</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

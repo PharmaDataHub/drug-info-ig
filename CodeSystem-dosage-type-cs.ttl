@@ -1,0 +1,101 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/CodeSystem/dosage-type-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "dosage-type-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem dosage-type-cs</b></p><a name=\"dosage-type-cs\"> </a><a name=\"hcdosage-type-cs\"> </a><p>This  code system <code>http://example.com/fhir/example/CodeSystem/dosage-type-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">single-dose<a name=\"dosage-type-cs-single-dose\"> </a></td><td>Single Dose</td></tr><tr><td style=\"white-space:nowrap\">daily-dose<a name=\"dosage-type-cs-daily-dose\"> </a></td><td>Daily Dose</td></tr><tr><td style=\"white-space:nowrap\">divided-dose<a name=\"dosage-type-cs-divided-dose\"> </a></td><td>Divided Dose</td></tr><tr><td style=\"white-space:nowrap\">maximum-single-dose<a name=\"dosage-type-cs-maximum-single-dose\"> </a></td><td>Maximum Single Dose</td></tr><tr><td style=\"white-space:nowrap\">maximum-daily-dose<a name=\"dosage-type-cs-maximum-daily-dose\"> </a></td><td>Maximum Daily Dose</td></tr><tr><td style=\"white-space:nowrap\">maximum-dose-per-period<a name=\"dosage-type-cs-maximum-dose-per-period\"> </a></td><td>Maximum Dose per Period</td></tr><tr><td style=\"white-space:nowrap\">maximum-treatment-duration<a name=\"dosage-type-cs-maximum-treatment-duration\"> </a></td><td>Maximum Treatment Duration</td></tr><tr><td style=\"white-space:nowrap\">minimum-dose<a name=\"dosage-type-cs-minimum-dose\"> </a></td><td>Minimum Dose</td></tr><tr><td style=\"white-space:nowrap\">titration-dose<a name=\"dosage-type-cs-titration-dose\"> </a></td><td>Titration Dose</td></tr><tr><td style=\"white-space:nowrap\">loading-dose<a name=\"dosage-type-cs-loading-dose\"> </a></td><td>Loading Dose</td></tr><tr><td style=\"white-space:nowrap\">maintenance-dose<a name=\"dosage-type-cs-maintenance-dose\"> </a></td><td>Maintenance Dose</td></tr><tr><td style=\"white-space:nowrap\">as-needed-dose<a name=\"dosage-type-cs-as-needed-dose\"> </a></td><td>As Needed Dose</td></tr><tr><td style=\"white-space:nowrap\">weight-based-dose<a name=\"dosage-type-cs-weight-based-dose\"> </a></td><td>Weight-based Dose</td></tr><tr><td style=\"white-space:nowrap\">body-surface-area-dose<a name=\"dosage-type-cs-body-surface-area-dose\"> </a></td><td>Body Surface Area-based Dose</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://example.com/fhir/example/CodeSystem/dosage-type-cs"^^xsd:anyURI ;
+     fhir:l <http://example.com/fhir/example/CodeSystem/dosage-type-cs>
+  ] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "DosageTypeCS"] ; # 
+  fhir:title [ fhir:v "Dosage Type CodeSystem"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2026-04-20T09:10:31+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Defines the semantic type of dosage instructions or constraints."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ;
+         fhir:l <http://unstats.un.org/unsd/methods/m49/m49.htm>
+       ] ;
+       fhir:code [ fhir:v "620" ] ;
+       fhir:display [ fhir:v "Portugal (PRT)" ]
+     ] )
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "14"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "single-dose" ] ;
+     fhir:display [ fhir:v "Single Dose" ]
+  ] [
+     fhir:code [ fhir:v "daily-dose" ] ;
+     fhir:display [ fhir:v "Daily Dose" ]
+  ] [
+     fhir:code [ fhir:v "divided-dose" ] ;
+     fhir:display [ fhir:v "Divided Dose" ]
+  ] [
+     fhir:code [ fhir:v "maximum-single-dose" ] ;
+     fhir:display [ fhir:v "Maximum Single Dose" ]
+  ] [
+     fhir:code [ fhir:v "maximum-daily-dose" ] ;
+     fhir:display [ fhir:v "Maximum Daily Dose" ]
+  ] [
+     fhir:code [ fhir:v "maximum-dose-per-period" ] ;
+     fhir:display [ fhir:v "Maximum Dose per Period" ]
+  ] [
+     fhir:code [ fhir:v "maximum-treatment-duration" ] ;
+     fhir:display [ fhir:v "Maximum Treatment Duration" ]
+  ] [
+     fhir:code [ fhir:v "minimum-dose" ] ;
+     fhir:display [ fhir:v "Minimum Dose" ]
+  ] [
+     fhir:code [ fhir:v "titration-dose" ] ;
+     fhir:display [ fhir:v "Titration Dose" ]
+  ] [
+     fhir:code [ fhir:v "loading-dose" ] ;
+     fhir:display [ fhir:v "Loading Dose" ]
+  ] [
+     fhir:code [ fhir:v "maintenance-dose" ] ;
+     fhir:display [ fhir:v "Maintenance Dose" ]
+  ] [
+     fhir:code [ fhir:v "as-needed-dose" ] ;
+     fhir:display [ fhir:v "As Needed Dose" ]
+  ] [
+     fhir:code [ fhir:v "weight-based-dose" ] ;
+     fhir:display [ fhir:v "Weight-based Dose" ]
+  ] [
+     fhir:code [ fhir:v "body-surface-area-dose" ] ;
+     fhir:display [ fhir:v "Body Surface Area-based Dose" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

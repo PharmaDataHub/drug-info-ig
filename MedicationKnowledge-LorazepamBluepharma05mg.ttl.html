@@ -1,0 +1,684 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>LorazepamBluepharma05mg - TTL Representation - HL7 PT FHIR Implementation Guide: IG de Exemplo Versão 1 | STU1 v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/affiliate.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"7.25"}
+    h3,h4,h5,h6{--heading-prefix:"7.25"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a id="affiliate-logo" no-external="true" href="http://hl7.eu">
+    <img height="71" alt="Visit the HL7 affiliate website" src="assets/images/affiliate.png"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="30" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 PT FHIR Implementation Guide: IG de Exemplo Versão 1 | STU1</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - STU1
+
+
+
+  Portugal (PRT)
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="background.html">Introdução</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Especificação
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="spec.html">Conteúdo</a>
+      </li>
+      <li>
+        <a href="terminology.html">Terminologias</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artefactos</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>LorazepamBluepharma05mg</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 9" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">HL7 PT FHIR Implementation Guide: IG de Exemplo Versão 1 | STU1, published by HL7 Portugal. This guide is not an authorized publication; it is the continuous build for version 1.0.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href='https://github.com/PharmaDataHub/drug-info-ig/tree/master'>https://github.com/PharmaDataHub/drug-info-ig/tree/master</a> and changes regularly. See the <a href='http://example.com/fhir/example/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="MedicationKnowledge-LorazepamBluepharma05mg.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="MedicationKnowledge-LorazepamBluepharma05mg.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="MedicationKnowledge-LorazepamBluepharma05mg.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: LorazepamBluepharma05mg - TTL Representation</h2>
+
+
+<p><a href="MedicationKnowledge-LorazepamBluepharma05mg.ttl" no-download="true">Raw ttl</a> | <a href="MedicationKnowledge-LorazepamBluepharma05mg.ttl" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="rdf" data-fhir="generated" style="white-space: pre; overflow: hidden">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:MedicationKnowledge ;
+  <a href="http://hl7.org/fhir/R5/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="http://hl7.org/fhir/R5/resource.html#XMedicationKnowledge.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;LorazepamBluepharma05mg&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/resource.html#XMedicationKnowledge.meta">fhir:meta</a> [
+    ( <a href="http://hl7.org/fhir/R5/resource.html#Meta#XMeta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:l</a> &lt;http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH&gt;     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R5/domainresource.html#XMedicationKnowledge.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#XNarrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#XNarrative.div">fhir:div</a> [ <a href="http://hl7.org/fhir/R5/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: MedicationKnowledge LorazepamBluepharma05mg&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;LorazepamBluepharma05mg\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcLorazepamBluepharma05mg\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-MedicationKnowledgePDH.html\&quot;&gt;Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://infarmed.pt/medicamentos 672984}\&quot;&gt;Lorazepam Bluepharma 0,5 mg [N05BA06]&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Lorazepam Bluepharma [Lorazepam] 0,5 mg Comprimido&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;cost&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://example.com/fhir/example/CodeSystem/tipo-preco-infarmed-cs 101}\&quot;&gt;Preço Ref&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;cost&lt;/b&gt;: &lt;span title=\&quot;Euro\&quot;&gt;€1.85&lt;/span&gt; (EUR)&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;cost&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://example.com/fhir/example/CodeSystem/tipo-preco-infarmed-cs 401}\&quot;&gt;PVP Max&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;cost&lt;/b&gt;: &lt;span title=\&quot;Euro\&quot;&gt;€1.56&lt;/span&gt; (EUR)&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;indicationGuideline&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Indications&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Concept&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:\&quot;&gt;Treatment of anxiety, tension and agitation&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;dosingGuideline&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;dosage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://example.com/fhir/example/CodeSystem/dosage-type-cs maximum-single-dose}\&quot;&gt;Usual daily dosing&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;dosage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;text&lt;/b&gt;: 0.5 to 2.5 mg daily in 2 to 3 divided doses. Maximum 7.5 mg/day.&lt;/p&gt;&lt;p&gt;&lt;b&gt;additionalInstruction&lt;/b&gt;: &lt;span title=\&quot;Codes:\&quot;&gt;Use the lowest effective dose for the shortest duration possible.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;timing&lt;/b&gt;: 2-3 per 1 day&lt;/p&gt;&lt;h3&gt;DoseAndRates&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Dose[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;0.5-2.5 mg&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;maxDosePerPeriod&lt;/b&gt;: 2.5 milligram&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemg = 'mg')&lt;/span&gt;/1 day&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  coded = 'd')&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;h3&gt;PatientCharacteristics&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:\&quot;&gt;Population&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:\&quot;&gt;Adults&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;indicationGuideline&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Indications&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Concept&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:\&quot;&gt;Sleep disturbances caused by anxiety, tension or agitation&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;dosingGuideline&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;dosage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes:\&quot;&gt;Single bedtime dosing&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;dosage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;text&lt;/b&gt;: 0.5 to 2.5 mg as a single dose approximately 30 minutes before bedtime.&lt;/p&gt;&lt;p&gt;&lt;b&gt;timing&lt;/b&gt;: 30min , before sleeping, Once per 1 day&lt;/p&gt;&lt;h3&gt;DoseAndRates&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Dose[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;0.5-2.5 mg&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;maxDosePerAdministration&lt;/b&gt;: 2.5 mg&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemg = 'mg')&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;indicationGuideline&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Indications&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Concept&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:\&quot;&gt;Premedication before diagnostic or surgical procedures (night before)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;dosingGuideline&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;dosage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes:\&quot;&gt;Premedication night before procedure&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;dosage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;text&lt;/b&gt;: 1 to 2.5 mg on the night before the procedure.&lt;/p&gt;&lt;p&gt;&lt;b&gt;timing&lt;/b&gt;: Code &lt;/p&gt;&lt;h3&gt;DoseAndRates&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Dose[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;1-2.5 mg&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;maxDosePerAdministration&lt;/b&gt;: 2.5 mg&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemg = 'mg')&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;indicationGuideline&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Indications&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Concept&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:\&quot;&gt;Premedication before diagnostic or surgical procedures (1-2 hours before)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;dosingGuideline&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;dosage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes:\&quot;&gt;Premedication 1 to 2 hours before procedure&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;dosage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;text&lt;/b&gt;: 2 to 4 mg approximately 1 to 2 hours before the procedure.&lt;/p&gt;&lt;p&gt;&lt;b&gt;timing&lt;/b&gt;: Code &lt;/p&gt;&lt;h3&gt;DoseAndRates&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Dose[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;2-4 mg&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;maxDosePerAdministration&lt;/b&gt;: 4 mg&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemg = 'mg')&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;indicationGuideline&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Indications&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Concept&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:\&quot;&gt;Post-operative use&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;dosingGuideline&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;dosage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes:\&quot;&gt;Post-operative dosing&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;dosage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;text&lt;/b&gt;: 1 to 2.5 mg at appropriate intervals post-operatively.&lt;/p&gt;&lt;p&gt;&lt;b&gt;timing&lt;/b&gt;: Code &lt;/p&gt;&lt;h3&gt;DoseAndRates&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Dose[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;1-2.5 mg&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;indicationGuideline&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Indications&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Concept&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:\&quot;&gt;Use in children and adolescents&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;dosingGuideline&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;dosage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes:\&quot;&gt;Pediatric dosing&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Dosages&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Text&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;MaxDosePerAdministration&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;Reduce the dose in children. Single doses should not exceed 0.5 to 1 mg and 0.05 mg/kg body weight.&lt;/td&gt;&lt;td&gt;1 mg&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemg = 'mg')&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;indicationGuideline&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Indications&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Concept&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:\&quot;&gt;Use in elderly or debilitated patients&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;dosingGuideline&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;dosage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes:\&quot;&gt;Dose adjustment in elderly or debilitated patients&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Dosages&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Text&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;AdditionalInstruction&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;Initial total daily dose should be reduced to approximately 50% in elderly or debilitated patients. Dose should be adjusted according to effect and tolerability.&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:\&quot;&gt;Reduce initial total daily dose to approximately 50%.&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;h3&gt;MedicineClassifications&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Classification&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{http://hl7.org/fhir/medication-classification-type anatomical}\&quot;&gt;Anatomical Class&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/v3-ATC N05BA06}\&quot;&gt;Lorazepam&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;clinicalUseIssue&lt;/b&gt;: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=\&quot;ClinicalUseDefinition-LorazepamBluepharma05mg-CUD.html\&quot;&gt;ClinicalUseDefinition: type = contraindication&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;ClinicalUseDefinition-LorazepamBluepharma05mg-CUD1.html\&quot;&gt;ClinicalUseDefinition: type = indication&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;ClinicalUseDefinition-LorazepamBluepharma05mg-CUD2.html\&quot;&gt;ClinicalUseDefinition: type = interaction&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;definitional&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;doseForm&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs 271}\&quot;&gt;Comprimido&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;intendedRoute&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://example.com/fhir/example/CodeSystem/via-administracao-cs 48}\&quot;&gt;Via oral&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;ingredient&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Items&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Concept&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{http://infarmed.pt/substancia 7612}\&quot;&gt;Lorazepam&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass ACTI}\&quot;&gt;active ingredient&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;strength&lt;/b&gt;: 0.5 milligram&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemg = 'mg')&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;ingredient&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Items&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Concept&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{http://infarmed.pt/substancia xxx}\&quot;&gt;Lactose&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass BASE}\&quot;&gt;base&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;strength&lt;/b&gt;: 48 milligram&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemg = 'mg')&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;ingredient&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Items&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Concept&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{http://infarmed.pt/substancia yyy}\&quot;&gt;Celulose microcristalina tipo 102&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\&quot;&gt;inactive ingredient&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;ingredient&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Items&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Concept&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{http://infarmed.pt/substancia jjj}\&quot;&gt;Carboximetilamido sódico (tipo A)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\&quot;&gt;inactive ingredient&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;ingredient&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Items&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Concept&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{http://infarmed.pt/substancia kkk}\&quot;&gt;Estearato de magnésio&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\&quot;&gt;inactive ingredient&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.code">fhir:code</a> [
+    ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://infarmed.pt/medicamentos&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://infarmed.pt/medicamentos&gt;       ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;672984&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Lorazepam Bluepharma 0,5 mg [N05BA06]&quot; ]     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.name">fhir:name</a> ( [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Lorazepam Bluepharma [Lorazepam] 0,5 mg Comprimido&quot;] ) ; # 
+  <a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.cost">fhir:cost</a> ( [
+<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.cost.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://example.com/fhir/example/CodeSystem/tipo-preco-infarmed-cs&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://example.com/fhir/example/CodeSystem/tipo-preco-infarmed-cs&gt;         ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;101&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Preço Ref&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.cost.cost_x_">fhir:cost</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Money">a</a> fhir:Money ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Money#XMoney.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">fhir:v</a> 1.85 ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Money#XMoney.currency">fhir:currency</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;EUR&quot; ]     ]
+  ] [
+<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.cost.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://example.com/fhir/example/CodeSystem/tipo-preco-infarmed-cs&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://example.com/fhir/example/CodeSystem/tipo-preco-infarmed-cs&gt;         ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;401&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;PVP Max&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.cost.cost_x_">fhir:cost</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Money">a</a> fhir:Money ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Money#XMoney.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">fhir:v</a> 1.56 ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Money#XMoney.currency">fhir:currency</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;EUR&quot; ]     ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline">fhir:indicationGuideline</a> ( [
+    ( <a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.indication">fhir:indication</a> [
+<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.concept">fhir:concept</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Treatment of anxiety, tension and agitation&quot; ]       ]     ] ) ;
+    ( <a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline">fhir:dosingGuideline</a> [
+      ( <a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.dosage">fhir:dosage</a> [
+<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.dosage.type">fhir:type</a> [
+          ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://example.com/fhir/example/CodeSystem/dosage-type-cs&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://example.com/fhir/example/CodeSystem/dosage-type-cs&gt;             ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;maximum-single-dose&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Maximum Single Dose&quot; ]           ] ) ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Usual daily dosing&quot; ]         ] ;
+        ( <a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.dosage.dosage">fhir:dosage</a> [
+<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;0.5 to 2.5 mg daily in 2 to 3 divided doses. Maximum 7.5 mg/day.&quot; ] ;
+          ( <a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.additionalInstruction">fhir:additionalInstruction</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Use the lowest effective dose for the shortest duration possible.&quot; ]           ] ) ;
+<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.timing">fhir:timing</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#XTiming.repeat">fhir:repeat</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#XTiming.repeat.frequency">fhir:frequency</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#positiveInt">fhir:v</a> &quot;2&quot;^^xsd:positiveInteger ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#XTiming.repeat.frequencyMax">fhir:frequencyMax</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#positiveInt">fhir:v</a> &quot;3&quot;^^xsd:positiveInteger ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#XTiming.repeat.period">fhir:period</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">fhir:v</a> &quot;1&quot;^^xsd:decimal ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#XTiming.repeat.periodUnit">fhir:periodUnit</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;d&quot; ]             ]           ] ;
+          ( <a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.doseAndRate">fhir:doseAndRate</a> [
+<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.doseAndRate.dose_x_">fhir:dose</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Range">a</a> fhir:Range ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Range#XRange.low">fhir:low</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">fhir:v</a> 0.5 ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.unit">fhir:unit</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;mg&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://unitsofmeasure.org&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://unitsofmeasure.org&gt;                 ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;mg&quot; ]               ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Range#XRange.high">fhir:high</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">fhir:v</a> 2.5 ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.unit">fhir:unit</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;mg&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://unitsofmeasure.org&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://unitsofmeasure.org&gt;                 ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;mg&quot; ]               ]             ]           ] ) ;
+          ( <a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.maxDosePerPeriod">fhir:maxDosePerPeriod</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Ratio#XRatio.numerator">fhir:numerator</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">fhir:v</a> 2.5 ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.unit">fhir:unit</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;milligram&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://unitsofmeasure.org&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://unitsofmeasure.org&gt;               ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;mg&quot; ]             ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Ratio#XRatio.denominator">fhir:denominator</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">fhir:v</a> &quot;1&quot;^^xsd:decimal ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.unit">fhir:unit</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;day&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://unitsofmeasure.org&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://unitsofmeasure.org&gt;               ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;d&quot; ]             ]           ] )         ] )       ] ) ;
+      ( <a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.patientCharacteristic">fhir:patientCharacteristic</a> [
+<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.patientCharacteristic.type">fhir:type</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Population&quot; ]         ] ;
+<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.patientCharacteristic.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">a</a> fhir:CodeableConcept ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Adults&quot; ]         ]       ] )     ] )
+  ] [
+    ( <a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.indication">fhir:indication</a> [
+<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.concept">fhir:concept</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Sleep disturbances caused by anxiety, tension or agitation&quot; ]       ]     ] ) ;
+    ( <a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline">fhir:dosingGuideline</a> [
+      ( <a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.dosage">fhir:dosage</a> [
+<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.dosage.type">fhir:type</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Single bedtime dosing&quot; ]         ] ;
+        ( <a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.dosage.dosage">fhir:dosage</a> [
+<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;0.5 to 2.5 mg as a single dose approximately 30 minutes before bedtime.&quot; ] ;
+<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.timing">fhir:timing</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#XTiming.repeat">fhir:repeat</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#XTiming.repeat.frequency">fhir:frequency</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#positiveInt">fhir:v</a> &quot;1&quot;^^xsd:positiveInteger ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#XTiming.repeat.period">fhir:period</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">fhir:v</a> &quot;1&quot;^^xsd:decimal ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#XTiming.repeat.periodUnit">fhir:periodUnit</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;d&quot; ] ;
+              ( <a href="http://hl7.org/fhir/R5/datatypes.html#Timing#XTiming.repeat.when">fhir:when</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;HS&quot; ] ) ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#XTiming.repeat.offset">fhir:offset</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;30&quot;^^xsd:nonNegativeInteger ]             ]           ] ;
+          ( <a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.doseAndRate">fhir:doseAndRate</a> [
+<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.doseAndRate.dose_x_">fhir:dose</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Range">a</a> fhir:Range ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Range#XRange.low">fhir:low</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">fhir:v</a> 0.5 ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.unit">fhir:unit</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;mg&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://unitsofmeasure.org&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://unitsofmeasure.org&gt;                 ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;mg&quot; ]               ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Range#XRange.high">fhir:high</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">fhir:v</a> 2.5 ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.unit">fhir:unit</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;mg&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://unitsofmeasure.org&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://unitsofmeasure.org&gt;                 ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;mg&quot; ]               ]             ]           ] ) ;
+<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.maxDosePerAdministration">fhir:maxDosePerAdministration</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">fhir:v</a> 2.5 ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.unit">fhir:unit</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;mg&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://unitsofmeasure.org&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://unitsofmeasure.org&gt;             ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;mg&quot; ]           ]         ] )       ] )     ] )
+  ] [
+    ( <a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.indication">fhir:indication</a> [
+<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.concept">fhir:concept</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Premedication before diagnostic or surgical procedures (night before)&quot; ]       ]     ] ) ;
+    ( <a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline">fhir:dosingGuideline</a> [
+      ( <a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.dosage">fhir:dosage</a> [
+<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.dosage.type">fhir:type</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Premedication night before procedure&quot; ]         ] ;
+        ( <a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.dosage.dosage">fhir:dosage</a> [
+<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1 to 2.5 mg on the night before the procedure.&quot; ] ;
+<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.timing">fhir:timing</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#XTiming.code">fhir:code</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Night before procedure&quot; ]             ]           ] ;
+          ( <a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.doseAndRate">fhir:doseAndRate</a> [
+<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.doseAndRate.dose_x_">fhir:dose</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Range">a</a> fhir:Range ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Range#XRange.low">fhir:low</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">fhir:v</a> &quot;1&quot;^^xsd:decimal ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.unit">fhir:unit</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;mg&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://unitsofmeasure.org&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://unitsofmeasure.org&gt;                 ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;mg&quot; ]               ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Range#XRange.high">fhir:high</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">fhir:v</a> 2.5 ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.unit">fhir:unit</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;mg&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://unitsofmeasure.org&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://unitsofmeasure.org&gt;                 ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;mg&quot; ]               ]             ]           ] ) ;
+<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.maxDosePerAdministration">fhir:maxDosePerAdministration</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">fhir:v</a> 2.5 ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.unit">fhir:unit</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;mg&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://unitsofmeasure.org&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://unitsofmeasure.org&gt;             ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;mg&quot; ]           ]         ] )       ] )     ] )
+  ] [
+    ( <a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.indication">fhir:indication</a> [
+<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.concept">fhir:concept</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Premedication before diagnostic or surgical procedures (1-2 hours before)&quot; ]       ]     ] ) ;
+    ( <a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline">fhir:dosingGuideline</a> [
+      ( <a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.dosage">fhir:dosage</a> [
+<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.dosage.type">fhir:type</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Premedication 1 to 2 hours before procedure&quot; ]         ] ;
+        ( <a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.dosage.dosage">fhir:dosage</a> [
+<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;2 to 4 mg approximately 1 to 2 hours before the procedure.&quot; ] ;
+<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.timing">fhir:timing</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#XTiming.code">fhir:code</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1 to 2 hours before procedure&quot; ]             ]           ] ;
+          ( <a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.doseAndRate">fhir:doseAndRate</a> [
+<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.doseAndRate.dose_x_">fhir:dose</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Range">a</a> fhir:Range ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Range#XRange.low">fhir:low</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">fhir:v</a> &quot;2&quot;^^xsd:decimal ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.unit">fhir:unit</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;mg&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://unitsofmeasure.org&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://unitsofmeasure.org&gt;                 ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;mg&quot; ]               ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Range#XRange.high">fhir:high</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">fhir:v</a> &quot;4&quot;^^xsd:decimal ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.unit">fhir:unit</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;mg&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://unitsofmeasure.org&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://unitsofmeasure.org&gt;                 ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;mg&quot; ]               ]             ]           ] ) ;
+<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.maxDosePerAdministration">fhir:maxDosePerAdministration</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">fhir:v</a> &quot;4&quot;^^xsd:decimal ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.unit">fhir:unit</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;mg&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://unitsofmeasure.org&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://unitsofmeasure.org&gt;             ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;mg&quot; ]           ]         ] )       ] )     ] )
+  ] [
+    ( <a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.indication">fhir:indication</a> [
+<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.concept">fhir:concept</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Post-operative use&quot; ]       ]     ] ) ;
+    ( <a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline">fhir:dosingGuideline</a> [
+      ( <a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.dosage">fhir:dosage</a> [
+<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.dosage.type">fhir:type</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Post-operative dosing&quot; ]         ] ;
+        ( <a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.dosage.dosage">fhir:dosage</a> [
+<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1 to 2.5 mg at appropriate intervals post-operatively.&quot; ] ;
+<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.timing">fhir:timing</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#XTiming.code">fhir:code</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;At appropriate intervals post-operatively&quot; ]             ]           ] ;
+          ( <a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.doseAndRate">fhir:doseAndRate</a> [
+<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.doseAndRate.dose_x_">fhir:dose</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Range">a</a> fhir:Range ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Range#XRange.low">fhir:low</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">fhir:v</a> &quot;1&quot;^^xsd:decimal ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.unit">fhir:unit</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;mg&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://unitsofmeasure.org&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://unitsofmeasure.org&gt;                 ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;mg&quot; ]               ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Range#XRange.high">fhir:high</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">fhir:v</a> 2.5 ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.unit">fhir:unit</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;mg&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://unitsofmeasure.org&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://unitsofmeasure.org&gt;                 ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;mg&quot; ]               ]             ]           ] )         ] )       ] )     ] )
+  ] [
+    ( <a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.indication">fhir:indication</a> [
+<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.concept">fhir:concept</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Use in children and adolescents&quot; ]       ]     ] ) ;
+    ( <a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline">fhir:dosingGuideline</a> [
+      ( <a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.dosage">fhir:dosage</a> [
+<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.dosage.type">fhir:type</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Pediatric dosing&quot; ]         ] ;
+        ( <a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.dosage.dosage">fhir:dosage</a> [
+<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Reduce the dose in children. Single doses should not exceed 0.5 to 1 mg and 0.05 mg/kg body weight.&quot; ] ;
+<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.maxDosePerAdministration">fhir:maxDosePerAdministration</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">fhir:v</a> &quot;1&quot;^^xsd:decimal ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.unit">fhir:unit</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;mg&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://unitsofmeasure.org&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://unitsofmeasure.org&gt;             ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;mg&quot; ]           ]         ] )       ] )     ] )
+  ] [
+    ( <a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.indication">fhir:indication</a> [
+<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.concept">fhir:concept</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Use in elderly or debilitated patients&quot; ]       ]     ] ) ;
+    ( <a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline">fhir:dosingGuideline</a> [
+      ( <a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.dosage">fhir:dosage</a> [
+<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.dosage.type">fhir:type</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Dose adjustment in elderly or debilitated patients&quot; ]         ] ;
+        ( <a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.dosage.dosage">fhir:dosage</a> [
+<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Initial total daily dose should be reduced to approximately 50% in elderly or debilitated patients. Dose should be adjusted according to effect and tolerability.&quot; ] ;
+          ( <a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.additionalInstruction">fhir:additionalInstruction</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Reduce initial total daily dose to approximately 50%.&quot; ]           ] )         ] )       ] )     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.medicineClassification">fhir:medicineClassification</a> ( [
+<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.medicineClassification.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/medication-classification-type&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://hl7.org/fhir/medication-classification-type&gt;         ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;anatomical&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Anatomical Class&quot; ]       ] )     ] ;
+    ( <a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.medicineClassification.classification">fhir:classification</a> [
+      ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/v3-ATC&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://terminology.hl7.org/CodeSystem/v3-ATC&gt;         ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;N05BA06&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Lorazepam&quot; ]       ] )     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">fhir:clinicalUseIssue</a> ( [
+<a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:l</a> fhir:ClinicalUseDefinition/LorazepamBluepharma05mg-CUD ;
+<a href="http://hl7.org/fhir/R5/references.html#Reference#XReference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;ClinicalUseDefinition/LorazepamBluepharma05mg-CUD&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:l</a> fhir:ClinicalUseDefinition/LorazepamBluepharma05mg-CUD1 ;
+<a href="http://hl7.org/fhir/R5/references.html#Reference#XReference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;ClinicalUseDefinition/LorazepamBluepharma05mg-CUD1&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:l</a> fhir:ClinicalUseDefinition/LorazepamBluepharma05mg-CUD2 ;
+<a href="http://hl7.org/fhir/R5/references.html#Reference#XReference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;ClinicalUseDefinition/LorazepamBluepharma05mg-CUD2&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional">fhir:definitional</a> [
+<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.doseForm">fhir:doseForm</a> [
+      ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs&gt;         ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;271&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Comprimido&quot; ]       ] )     ] ;
+    ( <a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.intendedRoute">fhir:intendedRoute</a> [
+      ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://example.com/fhir/example/CodeSystem/via-administracao-cs&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://example.com/fhir/example/CodeSystem/via-administracao-cs&gt;         ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;48&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Via oral&quot; ]       ] )     ] ) ;
+    ( <a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient">fhir:ingredient</a> [
+<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.item">fhir:item</a> [
+<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.concept">fhir:concept</a> [
+          ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://infarmed.pt/substancia&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://infarmed.pt/substancia&gt;             ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;7612&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Lorazepam&quot; ]           ] )         ]       ] ;
+<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.type">fhir:type</a> [
+        ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/v3-RoleClass&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://terminology.hl7.org/CodeSystem/v3-RoleClass&gt;           ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;ACTI&quot; ]         ] )       ] ;
+<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.strength_x_">fhir:strength</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity">a</a> fhir:Quantity ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">fhir:v</a> 0.5 ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.unit">fhir:unit</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;milligram&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://unitsofmeasure.org&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://unitsofmeasure.org&gt;         ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;mg&quot; ]       ]     ] [
+<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.item">fhir:item</a> [
+<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.concept">fhir:concept</a> [
+          ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://infarmed.pt/substancia&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://infarmed.pt/substancia&gt;             ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;xxx&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Lactose&quot; ]           ] )         ]       ] ;
+<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.type">fhir:type</a> [
+        ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/v3-RoleClass&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://terminology.hl7.org/CodeSystem/v3-RoleClass&gt;           ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;BASE&quot; ]         ] )       ] ;
+<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.strength_x_">fhir:strength</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity">a</a> fhir:Quantity ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">fhir:v</a> &quot;48&quot;^^xsd:decimal ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.unit">fhir:unit</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;milligram&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://unitsofmeasure.org&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://unitsofmeasure.org&gt;         ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;mg&quot; ]       ]     ] [
+<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.item">fhir:item</a> [
+<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.concept">fhir:concept</a> [
+          ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://infarmed.pt/substancia&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://infarmed.pt/substancia&gt;             ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;yyy&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Celulose microcristalina tipo 102&quot; ]           ] )         ]       ] ;
+<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.type">fhir:type</a> [
+        ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/v3-RoleClass&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://terminology.hl7.org/CodeSystem/v3-RoleClass&gt;           ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;IACT&quot; ]         ] )       ]     ] [
+<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.item">fhir:item</a> [
+<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.concept">fhir:concept</a> [
+          ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://infarmed.pt/substancia&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://infarmed.pt/substancia&gt;             ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;jjj&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Carboximetilamido sódico (tipo A)&quot; ]           ] )         ]       ] ;
+<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.type">fhir:type</a> [
+        ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/v3-RoleClass&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://terminology.hl7.org/CodeSystem/v3-RoleClass&gt;           ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;IACT&quot; ]         ] )       ]     ] [
+<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.item">fhir:item</a> [
+<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.concept">fhir:concept</a> [
+          ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://infarmed.pt/substancia&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://infarmed.pt/substancia&gt;             ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;kkk&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Estearato de magnésio&quot; ]           ] )         ]       ] ;
+<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.type">fhir:type</a> [
+        ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/v3-RoleClass&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://terminology.hl7.org/CodeSystem/v3-RoleClass&gt;           ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;IACT&quot; ]         ] )       ]     ] )
+  ] . # 
+
+</pre>
+
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.pt">HL7 Portugal</a>.  Package my-ig#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, Apr 20, 2026 09:10+0000">2026-04-20</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

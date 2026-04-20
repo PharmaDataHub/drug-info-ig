@@ -1,0 +1,886 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/MedicationKnowledge/Cipralex-20-mgml-Gotas-orais-solucao> a fhir:MedicationKnowledge ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Cipralex-20-mgml-Gotas-orais-solucao"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH"^^xsd:anyURI ;
+       fhir:l <http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationKnowledge Cipralex-20-mgml-Gotas-orais-solucao</b></p><a name=\"Cipralex-20-mgml-Gotas-orais-solucao\"> </a><a name=\"hcCipralex-20-mgml-Gotas-orais-solucao\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MedicationKnowledgePDH.html\">Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento</a></p></div><p><b>code</b>: <span title=\"Codes:{http://infarmed.pt/medicamentos 5049739}\">Cipralex 20 mg/ml Gotas orais, solução [N06AB10]</span></p><p><b>name</b>: Cipralex [Escitalopram] 20 mg/ml Gotas orais, solução</p><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Tratamento de episódios depressivos major</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose habitual diária</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dose habitual de 10 mg (10 gotas) uma vez por dia. A dose pode ser aumentada até um máximo de 20 mg (20 gotas) por dia. Dose máxima diária: 20 mg.</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>10 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table><p><b>maxDosePerPeriod</b>: 20 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Adultos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose em doentes idosos</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dose inicial de 5 mg (5 gotas) uma vez por dia. A dose pode ser aumentada até um máximo de 10 mg (10 gotas) por dia.</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>5 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table><p><b>maxDosePerPeriod</b>: 10 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Doentes idosos (&gt; 65 anos de idade)</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Tratamento de perturbações de pânico com ou sem agorafobia</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose inicial e de manutenção</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dose inicial de 5 mg (5 gotas) na primeira semana de tratamento, aumentando-se depois para 10 mg (10 gotas) por dia. A dose pode ser posteriormente aumentada até um máximo de 20 mg (20 gotas) por dia.</p><p><b>additionalInstruction</b>: <span title=\"Codes:\">Iniciar com 5 mg/dia na 1.ª semana; aumentar para 10 mg/dia posteriormente.</span></p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>5 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table><p><b>maxDosePerPeriod</b>: 20 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Adultos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose em doentes idosos</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dose inicial de 5 mg (5 gotas) uma vez por dia. A dose pode ser aumentada até um máximo de 10 mg (10 gotas) por dia.</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>5 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table><p><b>maxDosePerPeriod</b>: 10 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Doentes idosos (&gt; 65 anos de idade)</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Tratamento da perturbação da ansiedade social (fobia social)</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose habitual diária</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dose habitual de 10 mg (10 gotas) uma vez por dia. A dose pode ser diminuída para 5 mg (5 gotas) ou aumentada para um máximo de 20 mg (20 gotas) por dia conforme resposta individual.</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>5-10 mg</td></tr></table><p><b>maxDosePerPeriod</b>: 20 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Adultos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose em doentes idosos</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dose inicial de 5 mg (5 gotas) uma vez por dia. A dose pode ser aumentada até um máximo de 10 mg (10 gotas) por dia.</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>5 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table><p><b>maxDosePerPeriod</b>: 10 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Doentes idosos (&gt; 65 anos de idade)</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Tratamento da perturbação da ansiedade generalizada</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose inicial e de manutenção</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dose inicial de 10 mg (10 gotas) uma vez por dia. A dose pode ser aumentada até um máximo de 20 mg (20 gotas) por dia.</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>10 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table><p><b>maxDosePerPeriod</b>: 20 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Adultos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose em doentes idosos</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dose inicial de 5 mg (5 gotas) uma vez por dia. A dose pode ser aumentada até um máximo de 10 mg (10 gotas) por dia.</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>5 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table><p><b>maxDosePerPeriod</b>: 10 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Doentes idosos (&gt; 65 anos de idade)</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Tratamento da perturbação obsessiva-compulsiva</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose inicial e de manutenção</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dose inicial de 10 mg (10 gotas) uma vez por dia. A dose pode ser aumentada até um máximo de 20 mg (20 gotas) por dia.</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>10 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table><p><b>maxDosePerPeriod</b>: 20 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Adultos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose em doentes idosos</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dose inicial de 5 mg (5 gotas) uma vez por dia. A dose pode ser aumentada até um máximo de 10 mg (10 gotas) por dia.</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>5 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table><p><b>maxDosePerPeriod</b>: 10 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Doentes idosos (&gt; 65 anos de idade)</span></td></tr></table></blockquote></blockquote><h3>MedicineClassifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Classification</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://hl7.org/fhir/medication-classification-type anatomical}\">Anatomical Class</span></td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ATC N06AB10}\">Escitalopram</span></td></tr></table><p><b>clinicalUseIssue</b>: </p><ul><li><a href=\"ClinicalUseDefinition-CipraplexGotas-CUD-contra1.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-CipraplexGotas-CUD-contra2.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-CipraplexGotas-CUD-contra3.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-CipraplexGotas-CUD-ind1.html\">ClinicalUseDefinition: type = indication</a></li><li><a href=\"ClinicalUseDefinition-CipraplexGotas-CUD-ind2.html\">ClinicalUseDefinition: type = indication</a></li><li><a href=\"ClinicalUseDefinition-CipraplexGotas-CUD-ind3.html\">ClinicalUseDefinition: type = indication</a></li><li><a href=\"ClinicalUseDefinition-CipraplexGotas-CUD-ind4.html\">ClinicalUseDefinition: type = indication</a></li><li><a href=\"ClinicalUseDefinition-CipraplexGotas-CUD-ind5.html\">ClinicalUseDefinition: type = indication</a></li><li><a href=\"ClinicalUseDefinition-CipraplexGotas-CUD-int1.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-CipraplexGotas-CUD-int2.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-CipraplexGotas-CUD-int3.html\">ClinicalUseDefinition: type = interaction</a></li></ul><blockquote><p><b>definitional</b></p><p><b>doseForm</b>: <span title=\"Codes:{http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs 1}\">Gotas orais, solução</span></p><p><b>intendedRoute</b>: <span title=\"Codes:{http://example.com/fhir/example/CodeSystem/via-administracao-cs 48}\">Via oral</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Escitalopram</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass ACTI}\">active ingredient</span></p><p><b>strength</b>: 20 milligram per milliliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/mL = 'mg/mL')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Galhato de Propilo</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Ácido Cítrico, anidro</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Etanol 96%</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p><p><b>strength</b>: 100 milligram per milliliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/mL = 'mg/mL')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Hidróxido de sódio</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Água purificada</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://infarmed.pt/medicamentos"^^xsd:anyURI ;
+         fhir:l <http://infarmed.pt/medicamentos>
+       ] ;
+       fhir:code [ fhir:v "5049739" ] ;
+       fhir:display [ fhir:v "Cipralex 20 mg/ml Gotas orais, solução [N06AB10]" ]
+     ] )
+  ] ; # 
+  fhir:name ( [ fhir:v "Cipralex [Escitalopram] 20 mg/ml Gotas orais, solução"] ) ; # 
+  fhir:indicationGuideline ( [
+     fhir:indication ( [
+       fhir:concept [
+         fhir:text [ fhir:v "Tratamento de episódios depressivos major" ]
+       ]
+     ] ) ;
+     fhir:dosingGuideline ( [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose habitual diária" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Dose habitual de 10 mg (10 gotas) uma vez por dia. A dose pode ser aumentada até um máximo de 20 mg (20 gotas) por dia. Dose máxima diária: 20 mg." ] ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ] ;
+           fhir:doseAndRate ( [
+             fhir:dose [
+               a fhir:Quantity ;
+               fhir:value [ fhir:v "10"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "mg" ] ;
+               fhir:system [
+                 fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+                 fhir:l <http://unitsofmeasure.org>
+               ] ;
+               fhir:code [ fhir:v "mg" ]
+             ]
+           ] ) ;
+           fhir:maxDosePerPeriod ( [
+             fhir:numerator [
+               fhir:value [ fhir:v "20"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "mg" ] ;
+               fhir:system [
+                 fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+                 fhir:l <http://unitsofmeasure.org>
+               ] ;
+               fhir:code [ fhir:v "mg" ]
+             ] ;
+             fhir:denominator [
+               fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "day" ] ;
+               fhir:system [
+                 fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+                 fhir:l <http://unitsofmeasure.org>
+               ] ;
+               fhir:code [ fhir:v "d" ]
+             ]
+           ] )
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Adultos" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose em doentes idosos" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Dose inicial de 5 mg (5 gotas) uma vez por dia. A dose pode ser aumentada até um máximo de 10 mg (10 gotas) por dia." ] ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ] ;
+           fhir:doseAndRate ( [
+             fhir:dose [
+               a fhir:Quantity ;
+               fhir:value [ fhir:v "5"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "mg" ] ;
+               fhir:system [
+                 fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+                 fhir:l <http://unitsofmeasure.org>
+               ] ;
+               fhir:code [ fhir:v "mg" ]
+             ]
+           ] ) ;
+           fhir:maxDosePerPeriod ( [
+             fhir:numerator [
+               fhir:value [ fhir:v "10"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "mg" ] ;
+               fhir:system [
+                 fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+                 fhir:l <http://unitsofmeasure.org>
+               ] ;
+               fhir:code [ fhir:v "mg" ]
+             ] ;
+             fhir:denominator [
+               fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "day" ] ;
+               fhir:system [
+                 fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+                 fhir:l <http://unitsofmeasure.org>
+               ] ;
+               fhir:code [ fhir:v "d" ]
+             ]
+           ] )
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Doentes idosos (> 65 anos de idade)" ]
+         ]
+       ] )
+     ] )
+  ] [
+     fhir:indication ( [
+       fhir:concept [
+         fhir:text [ fhir:v "Tratamento de perturbações de pânico com ou sem agorafobia" ]
+       ]
+     ] ) ;
+     fhir:dosingGuideline ( [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose inicial e de manutenção" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Dose inicial de 5 mg (5 gotas) na primeira semana de tratamento, aumentando-se depois para 10 mg (10 gotas) por dia. A dose pode ser posteriormente aumentada até um máximo de 20 mg (20 gotas) por dia." ] ;
+           fhir:additionalInstruction ( [
+             fhir:text [ fhir:v "Iniciar com 5 mg/dia na 1.ª semana; aumentar para 10 mg/dia posteriormente." ]
+           ] ) ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ] ;
+           fhir:doseAndRate ( [
+             fhir:dose [
+               a fhir:Quantity ;
+               fhir:value [ fhir:v "5"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "mg" ] ;
+               fhir:system [
+                 fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+                 fhir:l <http://unitsofmeasure.org>
+               ] ;
+               fhir:code [ fhir:v "mg" ]
+             ]
+           ] ) ;
+           fhir:maxDosePerPeriod ( [
+             fhir:numerator [
+               fhir:value [ fhir:v "20"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "mg" ] ;
+               fhir:system [
+                 fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+                 fhir:l <http://unitsofmeasure.org>
+               ] ;
+               fhir:code [ fhir:v "mg" ]
+             ] ;
+             fhir:denominator [
+               fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "day" ] ;
+               fhir:system [
+                 fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+                 fhir:l <http://unitsofmeasure.org>
+               ] ;
+               fhir:code [ fhir:v "d" ]
+             ]
+           ] )
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Adultos" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose em doentes idosos" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Dose inicial de 5 mg (5 gotas) uma vez por dia. A dose pode ser aumentada até um máximo de 10 mg (10 gotas) por dia." ] ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ] ;
+           fhir:doseAndRate ( [
+             fhir:dose [
+               a fhir:Quantity ;
+               fhir:value [ fhir:v "5"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "mg" ] ;
+               fhir:system [
+                 fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+                 fhir:l <http://unitsofmeasure.org>
+               ] ;
+               fhir:code [ fhir:v "mg" ]
+             ]
+           ] ) ;
+           fhir:maxDosePerPeriod ( [
+             fhir:numerator [
+               fhir:value [ fhir:v "10"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "mg" ] ;
+               fhir:system [
+                 fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+                 fhir:l <http://unitsofmeasure.org>
+               ] ;
+               fhir:code [ fhir:v "mg" ]
+             ] ;
+             fhir:denominator [
+               fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "day" ] ;
+               fhir:system [
+                 fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+                 fhir:l <http://unitsofmeasure.org>
+               ] ;
+               fhir:code [ fhir:v "d" ]
+             ]
+           ] )
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Doentes idosos (> 65 anos de idade)" ]
+         ]
+       ] )
+     ] )
+  ] [
+     fhir:indication ( [
+       fhir:concept [
+         fhir:text [ fhir:v "Tratamento da perturbação da ansiedade social (fobia social)" ]
+       ]
+     ] ) ;
+     fhir:dosingGuideline ( [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose habitual diária" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Dose habitual de 10 mg (10 gotas) uma vez por dia. A dose pode ser diminuída para 5 mg (5 gotas) ou aumentada para um máximo de 20 mg (20 gotas) por dia conforme resposta individual." ] ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ] ;
+           fhir:doseAndRate ( [
+             fhir:dose [
+               a fhir:Range ;
+               fhir:low [
+                 fhir:value [ fhir:v "5"^^xsd:decimal ] ;
+                 fhir:unit [ fhir:v "mg" ] ;
+                 fhir:system [
+                   fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+                   fhir:l <http://unitsofmeasure.org>
+                 ] ;
+                 fhir:code [ fhir:v "mg" ]
+               ] ;
+               fhir:high [
+                 fhir:value [ fhir:v "10"^^xsd:decimal ] ;
+                 fhir:unit [ fhir:v "mg" ] ;
+                 fhir:system [
+                   fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+                   fhir:l <http://unitsofmeasure.org>
+                 ] ;
+                 fhir:code [ fhir:v "mg" ]
+               ]
+             ]
+           ] ) ;
+           fhir:maxDosePerPeriod ( [
+             fhir:numerator [
+               fhir:value [ fhir:v "20"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "mg" ] ;
+               fhir:system [
+                 fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+                 fhir:l <http://unitsofmeasure.org>
+               ] ;
+               fhir:code [ fhir:v "mg" ]
+             ] ;
+             fhir:denominator [
+               fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "day" ] ;
+               fhir:system [
+                 fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+                 fhir:l <http://unitsofmeasure.org>
+               ] ;
+               fhir:code [ fhir:v "d" ]
+             ]
+           ] )
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Adultos" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose em doentes idosos" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Dose inicial de 5 mg (5 gotas) uma vez por dia. A dose pode ser aumentada até um máximo de 10 mg (10 gotas) por dia." ] ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ] ;
+           fhir:doseAndRate ( [
+             fhir:dose [
+               a fhir:Quantity ;
+               fhir:value [ fhir:v "5"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "mg" ] ;
+               fhir:system [
+                 fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+                 fhir:l <http://unitsofmeasure.org>
+               ] ;
+               fhir:code [ fhir:v "mg" ]
+             ]
+           ] ) ;
+           fhir:maxDosePerPeriod ( [
+             fhir:numerator [
+               fhir:value [ fhir:v "10"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "mg" ] ;
+               fhir:system [
+                 fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+                 fhir:l <http://unitsofmeasure.org>
+               ] ;
+               fhir:code [ fhir:v "mg" ]
+             ] ;
+             fhir:denominator [
+               fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "day" ] ;
+               fhir:system [
+                 fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+                 fhir:l <http://unitsofmeasure.org>
+               ] ;
+               fhir:code [ fhir:v "d" ]
+             ]
+           ] )
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Doentes idosos (> 65 anos de idade)" ]
+         ]
+       ] )
+     ] )
+  ] [
+     fhir:indication ( [
+       fhir:concept [
+         fhir:text [ fhir:v "Tratamento da perturbação da ansiedade generalizada" ]
+       ]
+     ] ) ;
+     fhir:dosingGuideline ( [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose inicial e de manutenção" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Dose inicial de 10 mg (10 gotas) uma vez por dia. A dose pode ser aumentada até um máximo de 20 mg (20 gotas) por dia." ] ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ] ;
+           fhir:doseAndRate ( [
+             fhir:dose [
+               a fhir:Quantity ;
+               fhir:value [ fhir:v "10"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "mg" ] ;
+               fhir:system [
+                 fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+                 fhir:l <http://unitsofmeasure.org>
+               ] ;
+               fhir:code [ fhir:v "mg" ]
+             ]
+           ] ) ;
+           fhir:maxDosePerPeriod ( [
+             fhir:numerator [
+               fhir:value [ fhir:v "20"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "mg" ] ;
+               fhir:system [
+                 fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+                 fhir:l <http://unitsofmeasure.org>
+               ] ;
+               fhir:code [ fhir:v "mg" ]
+             ] ;
+             fhir:denominator [
+               fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "day" ] ;
+               fhir:system [
+                 fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+                 fhir:l <http://unitsofmeasure.org>
+               ] ;
+               fhir:code [ fhir:v "d" ]
+             ]
+           ] )
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Adultos" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose em doentes idosos" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Dose inicial de 5 mg (5 gotas) uma vez por dia. A dose pode ser aumentada até um máximo de 10 mg (10 gotas) por dia." ] ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ] ;
+           fhir:doseAndRate ( [
+             fhir:dose [
+               a fhir:Quantity ;
+               fhir:value [ fhir:v "5"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "mg" ] ;
+               fhir:system [
+                 fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+                 fhir:l <http://unitsofmeasure.org>
+               ] ;
+               fhir:code [ fhir:v "mg" ]
+             ]
+           ] ) ;
+           fhir:maxDosePerPeriod ( [
+             fhir:numerator [
+               fhir:value [ fhir:v "10"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "mg" ] ;
+               fhir:system [
+                 fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+                 fhir:l <http://unitsofmeasure.org>
+               ] ;
+               fhir:code [ fhir:v "mg" ]
+             ] ;
+             fhir:denominator [
+               fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "day" ] ;
+               fhir:system [
+                 fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+                 fhir:l <http://unitsofmeasure.org>
+               ] ;
+               fhir:code [ fhir:v "d" ]
+             ]
+           ] )
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Doentes idosos (> 65 anos de idade)" ]
+         ]
+       ] )
+     ] )
+  ] [
+     fhir:indication ( [
+       fhir:concept [
+         fhir:text [ fhir:v "Tratamento da perturbação obsessiva-compulsiva" ]
+       ]
+     ] ) ;
+     fhir:dosingGuideline ( [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose inicial e de manutenção" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Dose inicial de 10 mg (10 gotas) uma vez por dia. A dose pode ser aumentada até um máximo de 20 mg (20 gotas) por dia." ] ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ] ;
+           fhir:doseAndRate ( [
+             fhir:dose [
+               a fhir:Quantity ;
+               fhir:value [ fhir:v "10"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "mg" ] ;
+               fhir:system [
+                 fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+                 fhir:l <http://unitsofmeasure.org>
+               ] ;
+               fhir:code [ fhir:v "mg" ]
+             ]
+           ] ) ;
+           fhir:maxDosePerPeriod ( [
+             fhir:numerator [
+               fhir:value [ fhir:v "20"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "mg" ] ;
+               fhir:system [
+                 fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+                 fhir:l <http://unitsofmeasure.org>
+               ] ;
+               fhir:code [ fhir:v "mg" ]
+             ] ;
+             fhir:denominator [
+               fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "day" ] ;
+               fhir:system [
+                 fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+                 fhir:l <http://unitsofmeasure.org>
+               ] ;
+               fhir:code [ fhir:v "d" ]
+             ]
+           ] )
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Adultos" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose em doentes idosos" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Dose inicial de 5 mg (5 gotas) uma vez por dia. A dose pode ser aumentada até um máximo de 10 mg (10 gotas) por dia." ] ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ] ;
+           fhir:doseAndRate ( [
+             fhir:dose [
+               a fhir:Quantity ;
+               fhir:value [ fhir:v "5"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "mg" ] ;
+               fhir:system [
+                 fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+                 fhir:l <http://unitsofmeasure.org>
+               ] ;
+               fhir:code [ fhir:v "mg" ]
+             ]
+           ] ) ;
+           fhir:maxDosePerPeriod ( [
+             fhir:numerator [
+               fhir:value [ fhir:v "10"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "mg" ] ;
+               fhir:system [
+                 fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+                 fhir:l <http://unitsofmeasure.org>
+               ] ;
+               fhir:code [ fhir:v "mg" ]
+             ] ;
+             fhir:denominator [
+               fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "day" ] ;
+               fhir:system [
+                 fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+                 fhir:l <http://unitsofmeasure.org>
+               ] ;
+               fhir:code [ fhir:v "d" ]
+             ]
+           ] )
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Doentes idosos (> 65 anos de idade)" ]
+         ]
+       ] )
+     ] )
+  ] ) ; # 
+  fhir:medicineClassification ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/medication-classification-type"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/medication-classification-type>
+         ] ;
+         fhir:code [ fhir:v "anatomical" ] ;
+         fhir:display [ fhir:v "Anatomical Class" ]
+       ] )
+     ] ;
+     fhir:classification ( [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v3-ATC"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/v3-ATC>
+         ] ;
+         fhir:code [ fhir:v "N06AB10" ] ;
+         fhir:display [ fhir:v "Escitalopram" ]
+       ] )
+     ] )
+  ] ) ; # 
+  fhir:clinicalUseIssue ( [
+     fhir:l <http://example.com/fhir/example/ClinicalUseDefinition/CipraplexGotas-CUD-contra1> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/CipraplexGotas-CUD-contra1" ]
+  ] [
+     fhir:l <http://example.com/fhir/example/ClinicalUseDefinition/CipraplexGotas-CUD-contra2> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/CipraplexGotas-CUD-contra2" ]
+  ] [
+     fhir:l <http://example.com/fhir/example/ClinicalUseDefinition/CipraplexGotas-CUD-contra3> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/CipraplexGotas-CUD-contra3" ]
+  ] [
+     fhir:l <http://example.com/fhir/example/ClinicalUseDefinition/CipraplexGotas-CUD-ind1> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/CipraplexGotas-CUD-ind1" ]
+  ] [
+     fhir:l <http://example.com/fhir/example/ClinicalUseDefinition/CipraplexGotas-CUD-ind2> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/CipraplexGotas-CUD-ind2" ]
+  ] [
+     fhir:l <http://example.com/fhir/example/ClinicalUseDefinition/CipraplexGotas-CUD-ind3> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/CipraplexGotas-CUD-ind3" ]
+  ] [
+     fhir:l <http://example.com/fhir/example/ClinicalUseDefinition/CipraplexGotas-CUD-ind4> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/CipraplexGotas-CUD-ind4" ]
+  ] [
+     fhir:l <http://example.com/fhir/example/ClinicalUseDefinition/CipraplexGotas-CUD-ind5> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/CipraplexGotas-CUD-ind5" ]
+  ] [
+     fhir:l <http://example.com/fhir/example/ClinicalUseDefinition/CipraplexGotas-CUD-int1> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/CipraplexGotas-CUD-int1" ]
+  ] [
+     fhir:l <http://example.com/fhir/example/ClinicalUseDefinition/CipraplexGotas-CUD-int2> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/CipraplexGotas-CUD-int2" ]
+  ] [
+     fhir:l <http://example.com/fhir/example/ClinicalUseDefinition/CipraplexGotas-CUD-int3> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/CipraplexGotas-CUD-int3" ]
+  ] ) ; # 
+  fhir:definitional [
+     fhir:doseForm [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs"^^xsd:anyURI ;
+           fhir:l <http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs>
+         ] ;
+         fhir:code [ fhir:v "1" ] ;
+         fhir:display [ fhir:v "Gotas orais, solução" ]
+       ] )
+     ] ;
+     fhir:intendedRoute ( [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://example.com/fhir/example/CodeSystem/via-administracao-cs"^^xsd:anyURI ;
+           fhir:l <http://example.com/fhir/example/CodeSystem/via-administracao-cs>
+         ] ;
+         fhir:code [ fhir:v "48" ] ;
+         fhir:display [ fhir:v "Via oral" ]
+       ] )
+     ] ) ;
+     fhir:ingredient ( [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [
+               fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ;
+               fhir:l <http://infarmed.pt/substancia>
+             ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Escitalopram" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ;
+             fhir:l <http://terminology.hl7.org/CodeSystem/v3-RoleClass>
+           ] ;
+           fhir:code [ fhir:v "ACTI" ]
+         ] )
+       ] ;
+       fhir:strength [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "20"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "milligram per milliliter" ] ;
+         fhir:system [
+           fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+           fhir:l <http://unitsofmeasure.org>
+         ] ;
+         fhir:code [ fhir:v "mg/mL" ]
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [
+               fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ;
+               fhir:l <http://infarmed.pt/substancia>
+             ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Galhato de Propilo" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ;
+             fhir:l <http://terminology.hl7.org/CodeSystem/v3-RoleClass>
+           ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [
+               fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ;
+               fhir:l <http://infarmed.pt/substancia>
+             ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Ácido Cítrico, anidro" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ;
+             fhir:l <http://terminology.hl7.org/CodeSystem/v3-RoleClass>
+           ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [
+               fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ;
+               fhir:l <http://infarmed.pt/substancia>
+             ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Etanol 96%" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ;
+             fhir:l <http://terminology.hl7.org/CodeSystem/v3-RoleClass>
+           ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ] ;
+       fhir:strength [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "100"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "milligram per milliliter" ] ;
+         fhir:system [
+           fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+           fhir:l <http://unitsofmeasure.org>
+         ] ;
+         fhir:code [ fhir:v "mg/mL" ]
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [
+               fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ;
+               fhir:l <http://infarmed.pt/substancia>
+             ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Hidróxido de sódio" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ;
+             fhir:l <http://terminology.hl7.org/CodeSystem/v3-RoleClass>
+           ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [
+               fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ;
+               fhir:l <http://infarmed.pt/substancia>
+             ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Água purificada" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ;
+             fhir:l <http://terminology.hl7.org/CodeSystem/v3-RoleClass>
+           ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

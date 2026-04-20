@@ -1,0 +1,1790 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Forma Farmacêutica - HL7 PT FHIR Implementation Guide: IG de Exemplo Versão 1 | STU1 v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/affiliate.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"7.10"}
+    h3,h4,h5,h6{--heading-prefix:"7.10"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a id="affiliate-logo" no-external="true" href="http://hl7.eu">
+    <img height="71" alt="Visit the HL7 affiliate website" src="assets/images/affiliate.png"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="30" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 PT FHIR Implementation Guide: IG de Exemplo Versão 1 | STU1</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - STU1
+
+
+
+  Portugal (PRT)
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="background.html">Introdução</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Especificação
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="spec.html">Conteúdo</a>
+      </li>
+      <li>
+        <a href="terminology.html">Terminologias</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artefactos</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Forma Farmacêutica</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">HL7 PT FHIR Implementation Guide: IG de Exemplo Versão 1 | STU1, published by HL7 Portugal. This guide is not an authorized publication; it is the continuous build for version 1.0.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href='https://github.com/PharmaDataHub/drug-info-ig/tree/master'>https://github.com/PharmaDataHub/drug-info-ig/tree/master</a> and changes regularly. See the <a href='http://example.com/fhir/example/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-forma-farmaceutica-cs.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-forma-farmaceutica-cs.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-forma-farmaceutica-cs.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: Forma Farmacêutica
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">1.0.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs|1.0.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2026-04-20
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">FormaFarmaceuticaCS</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>CodeSystem para formas farmacêuticas baseado na tabela fornecida</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="ValueSet-forma-farmaceutica-vs.html">FormaFarmaceuticaVS</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"></p><a name="forma-farmaceutica-cs"> </a><a name="hcforma-farmaceutica-cs"> </a><p>This  code system <code>http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs</code> defines the following codes:</p>
+<table class="codes" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr>
+<tr><td style="white-space:nowrap">957<a name="forma-farmaceutica-cs-957"> </a></td>
+<td>Comprimido e cápsula mole</td>
+<td>Comprimido e cápsula mole</td></tr>
+<tr><td style="white-space:nowrap">1013<a name="forma-farmaceutica-cs-1013"> </a></td>
+<td>Concentrado e solvente para solução oral</td>
+<td>Conc e solv sol oral</td></tr>
+<tr><td style="white-space:nowrap">1014<a name="forma-farmaceutica-cs-1014"> </a></td>
+<td>Dispersão injetável ou para perfusão</td>
+<td>Disp inj</td></tr>
+<tr><td style="white-space:nowrap">959<a name="forma-farmaceutica-cs-959"> </a></td>
+<td>Concentrado para solução para irrigação intraocular</td>
+<td>Concentrado para solução para irrigação intraocular</td></tr>
+<tr><td style="white-space:nowrap">960<a name="forma-farmaceutica-cs-960"> </a></td>
+<td>Solução oral em saqueta</td>
+<td>Sol oral</td></tr>
+<tr><td style="white-space:nowrap">961<a name="forma-farmaceutica-cs-961"> </a></td>
+<td>Pó, solvente e matriz para matriz para implantação</td>
+<td>Pó, solv e matriz impl</td></tr>
+<tr><td style="white-space:nowrap">962<a name="forma-farmaceutica-cs-962"> </a></td>
+<td>Implante em seringa pré-cheia</td>
+<td>Impl</td></tr>
+<tr><td style="white-space:nowrap">963<a name="forma-farmaceutica-cs-963"> </a></td>
+<td>Sistema transdérmico</td>
+<td>Sist transd</td></tr>
+<tr><td style="white-space:nowrap">964<a name="forma-farmaceutica-cs-964"> </a></td>
+<td>Pó para concentrado e solução para solução para perfusão</td>
+<td>Pó conc sol sol inj</td></tr>
+<tr><td style="white-space:nowrap">965<a name="forma-farmaceutica-cs-965"> </a></td>
+<td>Pó e veículo para suspensão injetável em seringa pré-cheia</td>
+<td>Pó susp inj</td></tr>
+<tr><td style="white-space:nowrap">1015<a name="forma-farmaceutica-cs-1015"> </a></td>
+<td>Solução sublingual</td>
+<td>Sol subling</td></tr>
+<tr><td style="white-space:nowrap">1016<a name="forma-farmaceutica-cs-1016"> </a></td>
+<td>Pó e solvente para solução injetável em caneta pré-cheia</td>
+<td>Pó sol inj</td></tr>
+<tr><td style="white-space:nowrap">1017<a name="forma-farmaceutica-cs-1017"> </a></td>
+<td>Comprimido para mastigar de libertação prolongada</td>
+<td>Comp mast LP</td></tr>
+<tr><td style="white-space:nowrap">966<a name="forma-farmaceutica-cs-966"> </a></td>
+<td>Pó para suspensão oral ou retal em saqueta</td>
+<td>Pó susp oral</td></tr>
+<tr><td style="white-space:nowrap">967<a name="forma-farmaceutica-cs-967"> </a></td>
+<td>Pó para solução intravesical ou para solução injetável ou para perfusão</td>
+<td>Pó sol inj</td></tr>
+<tr><td style="white-space:nowrap">968<a name="forma-farmaceutica-cs-968"> </a></td>
+<td>Granulado para solução oral em saqueta</td>
+<td>Pó sol oral</td></tr>
+<tr><td style="white-space:nowrap">1018<a name="forma-farmaceutica-cs-1018"> </a></td>
+<td>Suspensão e gel para gel</td>
+<td>Suspensão e gel para gel</td></tr>
+<tr><td style="white-space:nowrap">1019<a name="forma-farmaceutica-cs-1019"> </a></td>
+<td>Pó para concentrado para dispersão para perfusão</td>
+<td>Pó conc disp inj</td></tr>
+<tr><td style="white-space:nowrap">969<a name="forma-farmaceutica-cs-969"> </a></td>
+<td>Solução para pulverização bucal</td>
+<td>Solução para pulverização bucal</td></tr>
+<tr><td style="white-space:nowrap">970<a name="forma-farmaceutica-cs-970"> </a></td>
+<td>Emulsão injetável ou para perfusão em seringa pré-cheia</td>
+<td>Emul inj</td></tr>
+<tr><td style="white-space:nowrap">971<a name="forma-farmaceutica-cs-971"> </a></td>
+<td>Pó oral em saqueta</td>
+<td>Pó oral</td></tr>
+<tr><td style="white-space:nowrap">972<a name="forma-farmaceutica-cs-972"> </a></td>
+<td>Solução para pulverização transdérmica</td>
+<td>Sol pulv transd</td></tr>
+<tr><td style="white-space:nowrap">973<a name="forma-farmaceutica-cs-973"> </a></td>
+<td>Granulado em cápsulas para abrir</td>
+<td>Gran, cáps abrir</td></tr>
+<tr><td style="white-space:nowrap">974<a name="forma-farmaceutica-cs-974"> </a></td>
+<td>Solução para pulverização nasal em recipiente unidose</td>
+<td>Sol pulv nas</td></tr>
+<tr><td style="white-space:nowrap">975<a name="forma-farmaceutica-cs-975"> </a></td>
+<td>Gotas auriculares, solução em recipiente unidose</td>
+<td>Got aur sol</td></tr>
+<tr><td style="white-space:nowrap">976<a name="forma-farmaceutica-cs-976"> </a></td>
+<td>Solução para cardioplegia ou conservação de órgãos</td>
+<td>Sol cardiopleg conserv org</td></tr>
+<tr><td style="white-space:nowrap">977<a name="forma-farmaceutica-cs-977"> </a></td>
+<td>Solução injetável em recipiente multidose</td>
+<td>Solução injetável em recipiente multidose</td></tr>
+<tr><td style="white-space:nowrap">978<a name="forma-farmaceutica-cs-978"> </a></td>
+<td>Pó para solução injetável ou para perfusão ou para solução oral</td>
+<td>Pó sol inj ou sol oral</td></tr>
+<tr><td style="white-space:nowrap">979<a name="forma-farmaceutica-cs-979"> </a></td>
+<td>Granulado para suspensão oral em saqueta</td>
+<td>Pó susp oral</td></tr>
+<tr><td style="white-space:nowrap">980<a name="forma-farmaceutica-cs-980"> </a></td>
+<td>Granulado em saqueta</td>
+<td>Gran</td></tr>
+<tr><td style="white-space:nowrap">981<a name="forma-farmaceutica-cs-981"> </a></td>
+<td>Solução injetável de libertação prolongada</td>
+<td>Sol inj LP</td></tr>
+<tr><td style="white-space:nowrap">982<a name="forma-farmaceutica-cs-982"> </a></td>
+<td>Solução injetável ou para perfusão em seringa pré-cheia</td>
+<td>Sol inj</td></tr>
+<tr><td style="white-space:nowrap">983<a name="forma-farmaceutica-cs-983"> </a></td>
+<td>Suspensão oral em saqueta</td>
+<td>Susp oral</td></tr>
+<tr><td style="white-space:nowrap">984<a name="forma-farmaceutica-cs-984"> </a></td>
+<td>Solução oral em recipiente unidose</td>
+<td>Sol oral</td></tr>
+<tr><td style="white-space:nowrap">0<a name="forma-farmaceutica-cs-0"> </a></td>
+<td>N.A.</td>
+<td>N.A.</td></tr>
+<tr><td style="white-space:nowrap">985<a name="forma-farmaceutica-cs-985"> </a></td>
+<td>Pó para dispersão para perfusão</td>
+<td>Pó disp inj</td></tr>
+<tr><td style="white-space:nowrap">986<a name="forma-farmaceutica-cs-986"> </a></td>
+<td>Solução injetável em injetor pré-cheio</td>
+<td>Sol inj</td></tr>
+<tr><td style="white-space:nowrap">992<a name="forma-farmaceutica-cs-992"> </a></td>
+<td>Larva medicinal</td>
+<td>Larva</td></tr>
+<tr><td style="white-space:nowrap">994<a name="forma-farmaceutica-cs-994"> </a></td>
+<td>Pó e veículo para suspensão injetável de libertação prolongada em seringa pré-cheia</td>
+<td>Pó susp inj LP</td></tr>
+<tr><td style="white-space:nowrap">995<a name="forma-farmaceutica-cs-995"> </a></td>
+<td>Pó efervescente e pó para suspensão oral</td>
+<td>Pó eferv + Pó susp oral</td></tr>
+<tr><td style="white-space:nowrap">996<a name="forma-farmaceutica-cs-996"> </a></td>
+<td>Substância de origem vegetal para inalação por vaporização</td>
+<td>Subst veg inal vap</td></tr>
+<tr><td style="white-space:nowrap">997<a name="forma-farmaceutica-cs-997"> </a></td>
+<td>Gel intrauterino</td>
+<td>Gel iuteri</td></tr>
+<tr><td style="white-space:nowrap">998<a name="forma-farmaceutica-cs-998"> </a></td>
+<td>Concentrado para dispersão injetável</td>
+<td>Conc disp inj</td></tr>
+<tr><td style="white-space:nowrap">999<a name="forma-farmaceutica-cs-999"> </a></td>
+<td>Pó oral em cápsulas para abrir</td>
+<td>Pó oral em cápsulas para abrir</td></tr>
+<tr><td style="white-space:nowrap">1000<a name="forma-farmaceutica-cs-1000"> </a></td>
+<td>Solução para perfusão em cartucho</td>
+<td>Sol inj</td></tr>
+<tr><td style="white-space:nowrap">1001<a name="forma-farmaceutica-cs-1001"> </a></td>
+<td>Gel oftálmico em recipiente unidose</td>
+<td>Gel oft</td></tr>
+<tr><td style="white-space:nowrap">1002<a name="forma-farmaceutica-cs-1002"> </a></td>
+<td>Película sublingual</td>
+<td>Película subling</td></tr>
+<tr><td style="white-space:nowrap">1003<a name="forma-farmaceutica-cs-1003"> </a></td>
+<td>Pó, dispersão e veículo para concentrado para dispersão para perfusão</td>
+<td>Pó disp conc disp inj</td></tr>
+<tr><td style="white-space:nowrap">1004<a name="forma-farmaceutica-cs-1004"> </a></td>
+<td>Solução de libertação prolongada para feridas</td>
+<td>Solução de libertação prolongada para feridas</td></tr>
+<tr><td style="white-space:nowrap">1005<a name="forma-farmaceutica-cs-1005"> </a></td>
+<td>Zaragatoa cutânea impregnada</td>
+<td>Zar cut impreg</td></tr>
+<tr><td style="white-space:nowrap">1006<a name="forma-farmaceutica-cs-1006"> </a></td>
+<td>Solução para cardioplegia</td>
+<td>Sol cardiopleg</td></tr>
+<tr><td style="white-space:nowrap">1007<a name="forma-farmaceutica-cs-1007"> </a></td>
+<td>Solução injetável em cartucho para dispensador de dose</td>
+<td>Sol inj</td></tr>
+<tr><td style="white-space:nowrap">1008<a name="forma-farmaceutica-cs-1008"> </a></td>
+<td>Emulsão e solução para emulsão injetável</td>
+<td>Emulsão e solução para emulsão injetável</td></tr>
+<tr><td style="white-space:nowrap">1009<a name="forma-farmaceutica-cs-1009"> </a></td>
+<td>Suspensão de libertação prolongada em seringa pré-cheia</td>
+<td>Susp inj LP</td></tr>
+<tr><td style="white-space:nowrap">951<a name="forma-farmaceutica-cs-951"> </a></td>
+<td>Matriz para Implantação</td>
+<td>Matriz Impl</td></tr>
+<tr><td style="white-space:nowrap">952<a name="forma-farmaceutica-cs-952"> </a></td>
+<td>Granulado orodispersível</td>
+<td>Gran orodisp</td></tr>
+<tr><td style="white-space:nowrap">953<a name="forma-farmaceutica-cs-953"> </a></td>
+<td>Matriz selante</td>
+<td>Matriz</td></tr>
+<tr><td style="white-space:nowrap">954<a name="forma-farmaceutica-cs-954"> </a></td>
+<td>Dispersão para perfusão</td>
+<td>Disp inj</td></tr>
+<tr><td style="white-space:nowrap">1010<a name="forma-farmaceutica-cs-1010"> </a></td>
+<td>Dispersão injetável em seringa pré-cheia</td>
+<td>Disp inj</td></tr>
+<tr><td style="white-space:nowrap">1011<a name="forma-farmaceutica-cs-1011"> </a></td>
+<td>Solução e emulsão para emulsão injetável</td>
+<td>Sol emul emul inj</td></tr>
+<tr><td style="white-space:nowrap">955<a name="forma-farmaceutica-cs-955"> </a></td>
+<td>Pó e solvente para solução injectável ou para perfusão ou para solução oral</td>
+<td>Pó sol inj ou sol oral</td></tr>
+<tr><td style="white-space:nowrap">956<a name="forma-farmaceutica-cs-956"> </a></td>
+<td>Adesivo transdérmico</td>
+<td>Adesivo transd</td></tr>
+<tr><td style="white-space:nowrap">1012<a name="forma-farmaceutica-cs-1012"> </a></td>
+<td>Xarope em saquetas</td>
+<td>Xar</td></tr>
+<tr><td style="white-space:nowrap">527<a name="forma-farmaceutica-cs-527"> </a></td>
+<td>Comprimido revestido + Comprimido</td>
+<td>Comp rev + Comp</td></tr>
+<tr><td style="white-space:nowrap">288<a name="forma-farmaceutica-cs-288"> </a></td>
+<td>Granulado para solução oral ou retal</td>
+<td>Gran sol oral ou rect</td></tr>
+<tr><td style="white-space:nowrap">287<a name="forma-farmaceutica-cs-287"> </a></td>
+<td>Cápsula mole para mastigar</td>
+<td>Caps mast</td></tr>
+<tr><td style="white-space:nowrap">289<a name="forma-farmaceutica-cs-289"> </a></td>
+<td>Suspensão em emulsão injetável</td>
+<td>Suspensão em emulsão injetável</td></tr>
+<tr><td style="white-space:nowrap">539<a name="forma-farmaceutica-cs-539"> </a></td>
+<td>Pó e veículo para dispersão injetável</td>
+<td>Pó disp inj</td></tr>
+<tr><td style="white-space:nowrap">541<a name="forma-farmaceutica-cs-541"> </a></td>
+<td>Pó para solução vaginal</td>
+<td>Pó sol vag</td></tr>
+<tr><td style="white-space:nowrap">537<a name="forma-farmaceutica-cs-537"> </a></td>
+<td>Pó para solução injetável ou para perfusão</td>
+<td>Pó sol inj</td></tr>
+<tr><td style="white-space:nowrap">542<a name="forma-farmaceutica-cs-542"> </a></td>
+<td>Granulado e veículo para suspensão oral</td>
+<td>Pó susp oral</td></tr>
+<tr><td style="white-space:nowrap">266<a name="forma-farmaceutica-cs-266"> </a></td>
+<td>Gel injetável</td>
+<td>Gel injetável</td></tr>
+<tr><td style="white-space:nowrap">565<a name="forma-farmaceutica-cs-565"> </a></td>
+<td>Pó para concentrado para solução para perfusão</td>
+<td>Pó conc sol inj</td></tr>
+<tr><td style="white-space:nowrap">314<a name="forma-farmaceutica-cs-314"> </a></td>
+<td>Sistema transdérmico por iontoforese</td>
+<td>Sist transd iontof</td></tr>
+<tr><td style="white-space:nowrap">540<a name="forma-farmaceutica-cs-540"> </a></td>
+<td>Solução e emulsão para perfusão</td>
+<td>Sol e emul inj</td></tr>
+<tr><td style="white-space:nowrap">270<a name="forma-farmaceutica-cs-270"> </a></td>
+<td>Pó para dispersão injetável</td>
+<td>Pó para dispersão injetável</td></tr>
+<tr><td style="white-space:nowrap">536<a name="forma-farmaceutica-cs-536"> </a></td>
+<td>Pó e solvente para concentrado para solução para perfusão</td>
+<td>Pó conc sol inj</td></tr>
+<tr><td style="white-space:nowrap">277<a name="forma-farmaceutica-cs-277"> </a></td>
+<td>Pó para solução ou para suspensão injetável</td>
+<td>Pó sol ou susp inj</td></tr>
+<tr><td style="white-space:nowrap">279<a name="forma-farmaceutica-cs-279"> </a></td>
+<td>Pó para cola para tecidos</td>
+<td>Pó para cola para tecidos</td></tr>
+<tr><td style="white-space:nowrap">280<a name="forma-farmaceutica-cs-280"> </a></td>
+<td>Solvente para cola para tecidos</td>
+<td>Solvente para cola para tecidos</td></tr>
+<tr><td style="white-space:nowrap">286<a name="forma-farmaceutica-cs-286"> </a></td>
+<td>Solução para hemodiálise, hemodiafiltração e hemofiltração</td>
+<td>Sol hemodi, hemodiaf e hemof</td></tr>
+<tr><td style="white-space:nowrap">282<a name="forma-farmaceutica-cs-282"> </a></td>
+<td>Pó para gel endocervical</td>
+<td>Pó para gel endocervical</td></tr>
+<tr><td style="white-space:nowrap">549<a name="forma-farmaceutica-cs-549"> </a></td>
+<td>Pó e solvente para solução injetável ou para perfusão</td>
+<td>Pó sol inj</td></tr>
+<tr><td style="white-space:nowrap">284<a name="forma-farmaceutica-cs-284"> </a></td>
+<td>Solvente para gel endocervical</td>
+<td>Solvente para gel endocervical</td></tr>
+<tr><td style="white-space:nowrap">285<a name="forma-farmaceutica-cs-285"> </a></td>
+<td>Solvente para solução para instilação endotraqueobrônquica</td>
+<td>Solvente para solução para instilação endotraqueobrônquica</td></tr>
+<tr><td style="white-space:nowrap">9<a name="forma-farmaceutica-cs-9"> </a></td>
+<td>Granulado para solução oral</td>
+<td>Pó sol oral</td></tr>
+<tr><td style="white-space:nowrap">8<a name="forma-farmaceutica-cs-8"> </a></td>
+<td>Pó para suspensão oral</td>
+<td>Pó susp oral</td></tr>
+<tr><td style="white-space:nowrap">548<a name="forma-farmaceutica-cs-548"> </a></td>
+<td>Solução injetável ou para perfusão</td>
+<td>Sol inj</td></tr>
+<tr><td style="white-space:nowrap">271<a name="forma-farmaceutica-cs-271"> </a></td>
+<td>Comprimido</td>
+<td>Comp</td></tr>
+<tr><td style="white-space:nowrap">267<a name="forma-farmaceutica-cs-267"> </a></td>
+<td>Líquido oral</td>
+<td>Líq oral</td></tr>
+<tr><td style="white-space:nowrap">550<a name="forma-farmaceutica-cs-550"> </a></td>
+<td>Esponja medicamentosa</td>
+<td>Esp medic</td></tr>
+<tr><td style="white-space:nowrap">275<a name="forma-farmaceutica-cs-275"> </a></td>
+<td>Líquido cutâneo</td>
+<td>Líq cut</td></tr>
+<tr><td style="white-space:nowrap">283<a name="forma-farmaceutica-cs-283"> </a></td>
+<td>Óvulo</td>
+<td>Óvulo</td></tr>
+<tr><td style="white-space:nowrap">37<a name="forma-farmaceutica-cs-37"> </a></td>
+<td>Comprimido orodispersível</td>
+<td>Comp orodisp</td></tr>
+<tr><td style="white-space:nowrap">52<a name="forma-farmaceutica-cs-52"> </a></td>
+<td>Solução para hemodiafiltração</td>
+<td>Sol hemof</td></tr>
+<tr><td style="white-space:nowrap">166<a name="forma-farmaceutica-cs-166"> </a></td>
+<td>Chá medicinal instantâneo</td>
+<td>Chá med inst</td></tr>
+<tr><td style="white-space:nowrap">526<a name="forma-farmaceutica-cs-526"> </a></td>
+<td>Dispositivo de libertação intrauterino</td>
+<td>Disp lib iuteri</td></tr>
+<tr><td style="white-space:nowrap">552<a name="forma-farmaceutica-cs-552"> </a></td>
+<td>Emplastro para teste cutâneo</td>
+<td>Empl teste cut</td></tr>
+<tr><td style="white-space:nowrap">312<a name="forma-farmaceutica-cs-312"> </a></td>
+<td>Pastilha mole</td>
+<td>Pastilha</td></tr>
+<tr><td style="white-space:nowrap">551<a name="forma-farmaceutica-cs-551"> </a></td>
+<td>Pó e solvente para solução para uso intravesical</td>
+<td>Pó sol ivesical</td></tr>
+<tr><td style="white-space:nowrap">313<a name="forma-farmaceutica-cs-313"> </a></td>
+<td>Comprimido de libertação prolongada revestido por película</td>
+<td>Comp LP</td></tr>
+<tr><td style="white-space:nowrap">553<a name="forma-farmaceutica-cs-553"> </a></td>
+<td>Solução injetável para uso intraocular</td>
+<td>Sol inj, uso i ocular</td></tr>
+<tr><td style="white-space:nowrap">554<a name="forma-farmaceutica-cs-554"> </a></td>
+<td>Liofilizado para suspensão</td>
+<td>Liofilizado para suspensão</td></tr>
+<tr><td style="white-space:nowrap">555<a name="forma-farmaceutica-cs-555"> </a></td>
+<td>Gel periodontal</td>
+<td>Gel period</td></tr>
+<tr><td style="white-space:nowrap">556<a name="forma-farmaceutica-cs-556"> </a></td>
+<td>Inserto periodontal</td>
+<td>Inserto periodontal</td></tr>
+<tr><td style="white-space:nowrap">557<a name="forma-farmaceutica-cs-557"> </a></td>
+<td>Gotas auriculares, pó e veículo para suspensão</td>
+<td>Gotas auriculares, pó e veículo para suspensão</td></tr>
+<tr><td style="white-space:nowrap">558<a name="forma-farmaceutica-cs-558"> </a></td>
+<td>Liofilizado para solução para perfusão</td>
+<td>Liof sol inj</td></tr>
+<tr><td style="white-space:nowrap">531<a name="forma-farmaceutica-cs-531"> </a></td>
+<td>Concentrado e solvente para solução para perfusão</td>
+<td>Conc e solv sol inj</td></tr>
+<tr><td style="white-space:nowrap">559<a name="forma-farmaceutica-cs-559"> </a></td>
+<td>Liofilizado para solução injetável</td>
+<td>Liof sol inj</td></tr>
+<tr><td style="white-space:nowrap">560<a name="forma-farmaceutica-cs-560"> </a></td>
+<td>Liofilizado para suspensão injetável</td>
+<td>Pó susp inj</td></tr>
+<tr><td style="white-space:nowrap">561<a name="forma-farmaceutica-cs-561"> </a></td>
+<td>Solução para teste cutâneo em picada</td>
+<td>Sol teste cut em picada</td></tr>
+<tr><td style="white-space:nowrap">532<a name="forma-farmaceutica-cs-532"> </a></td>
+<td>Emulsão injetável ou para perfusão</td>
+<td>Emul inj</td></tr>
+<tr><td style="white-space:nowrap">353<a name="forma-farmaceutica-cs-353"> </a></td>
+<td>Gotas auriculares, colírio ou gotas nasais, solução</td>
+<td>Gotas auriculares, colírio ou gotas nasais, solução</td></tr>
+<tr><td style="white-space:nowrap">562<a name="forma-farmaceutica-cs-562"> </a></td>
+<td>Pó para concentrado para solução injetável ou para perfusão</td>
+<td>Pó conc sol inj</td></tr>
+<tr><td style="white-space:nowrap">352<a name="forma-farmaceutica-cs-352"> </a></td>
+<td>Gotas auriculares ou colírio, solução</td>
+<td>Got aur ou Col, sol</td></tr>
+<tr><td style="white-space:nowrap">355<a name="forma-farmaceutica-cs-355"> </a></td>
+<td>Granulado de libertação prolongada para suspensão oral</td>
+<td>Gran LP susp oral</td></tr>
+<tr><td style="white-space:nowrap">356<a name="forma-farmaceutica-cs-356"> </a></td>
+<td>Granulado e veículo para suspensão injetável</td>
+<td>Granulado e veículo para suspensão injetável</td></tr>
+<tr><td style="white-space:nowrap">354<a name="forma-farmaceutica-cs-354"> </a></td>
+<td>Granulado de libertação modificada para suspensão oral</td>
+<td>Granulado de libertação modificada para suspensão oral</td></tr>
+<tr><td style="white-space:nowrap">357<a name="forma-farmaceutica-cs-357"> </a></td>
+<td>Granulado para gotas orais, solução</td>
+<td>Granulado para gotas orais, solução</td></tr>
+<tr><td style="white-space:nowrap">358<a name="forma-farmaceutica-cs-358"> </a></td>
+<td>Granulado para suspensão oral ou retal</td>
+<td>Granulado para suspensão oral ou retal</td></tr>
+<tr><td style="white-space:nowrap">359<a name="forma-farmaceutica-cs-359"> </a></td>
+<td>Pasta dental</td>
+<td>Pasta dental</td></tr>
+<tr><td style="white-space:nowrap">360<a name="forma-farmaceutica-cs-360"> </a></td>
+<td>Pó e concentrado para solução para hemodiálise</td>
+<td>Pó e concentrado para solução para hemodiálise</td></tr>
+<tr><td style="white-space:nowrap">361<a name="forma-farmaceutica-cs-361"> </a></td>
+<td>Pó e solvente para gel dental</td>
+<td>Pó e solvente para gel dental</td></tr>
+<tr><td style="white-space:nowrap">362<a name="forma-farmaceutica-cs-362"> </a></td>
+<td>Pó e solvente para gel gengival</td>
+<td>Pó e solvente para gel gengival</td></tr>
+<tr><td style="white-space:nowrap">544<a name="forma-farmaceutica-cs-544"> </a></td>
+<td>Solução para pulverização nasal ou bucal</td>
+<td>Sol pulv bucal ou nas</td></tr>
+<tr><td style="white-space:nowrap">363<a name="forma-farmaceutica-cs-363"> </a></td>
+<td>Pó e solvente para solução endossinusal</td>
+<td>Pó e solvente para solução endossinusal</td></tr>
+<tr><td style="white-space:nowrap">364<a name="forma-farmaceutica-cs-364"> </a></td>
+<td>Pó e solvente para solução para instilação intraocular</td>
+<td>Pó sol instil iocular</td></tr>
+<tr><td style="white-space:nowrap">365<a name="forma-farmaceutica-cs-365"> </a></td>
+<td>Pó e veículo para suspensão injetável de libertação prolongada</td>
+<td>Pó susp inj LP</td></tr>
+<tr><td style="white-space:nowrap">367<a name="forma-farmaceutica-cs-367"> </a></td>
+<td>Pó para gotas orais, suspensão</td>
+<td>Pó para gotas orais, suspensão</td></tr>
+<tr><td style="white-space:nowrap">368<a name="forma-farmaceutica-cs-368"> </a></td>
+<td>Pó para inalação, comprimido</td>
+<td>Pó para inalação, comprimido</td></tr>
+<tr><td style="white-space:nowrap">369<a name="forma-farmaceutica-cs-369"> </a></td>
+<td>Pó para solução intravesical</td>
+<td>Pó para solução intravesical</td></tr>
+<tr><td style="white-space:nowrap">370<a name="forma-farmaceutica-cs-370"> </a></td>
+<td>Pó para solução para irrigação intraocular</td>
+<td>Pó para solução para irrigação intraocular</td></tr>
+<tr><td style="white-space:nowrap">371<a name="forma-farmaceutica-cs-371"> </a></td>
+<td>Pó para solução para pulverização nasal</td>
+<td>Pó para solução para pulverização nasal</td></tr>
+<tr><td style="white-space:nowrap">372<a name="forma-farmaceutica-cs-372"> </a></td>
+<td>Pó para suspensão intravesical</td>
+<td>Pó para suspensão intravesical</td></tr>
+<tr><td style="white-space:nowrap">373<a name="forma-farmaceutica-cs-373"> </a></td>
+<td>Pomada auricular ou oftálmica</td>
+<td>Pomada auricular ou oftálmica</td></tr>
+<tr><td style="white-space:nowrap">375<a name="forma-farmaceutica-cs-375"> </a></td>
+<td>Pomada para pulverização cutânea</td>
+<td>Pomada para pulverização cutânea</td></tr>
+<tr><td style="white-space:nowrap">374<a name="forma-farmaceutica-cs-374"> </a></td>
+<td>Pomada cutânea e nasal</td>
+<td>Pomada cutânea e nasal</td></tr>
+<tr><td style="white-space:nowrap">547<a name="forma-farmaceutica-cs-547"> </a></td>
+<td>Solvente para solução cutânea</td>
+<td>Solvente para solução cutânea</td></tr>
+<tr><td style="white-space:nowrap">381<a name="forma-farmaceutica-cs-381"> </a></td>
+<td>Solução para hemodiálise ou hemofiltração</td>
+<td>Sol hemodi hemofi</td></tr>
+<tr><td style="white-space:nowrap">377<a name="forma-farmaceutica-cs-377"> </a></td>
+<td>Solução bucal ou laringofaríngea</td>
+<td>Solução bucal ou laringofaríngea</td></tr>
+<tr><td style="white-space:nowrap">378<a name="forma-farmaceutica-cs-378"> </a></td>
+<td>Solução intraperitoneal</td>
+<td>Solução intraperitoneal</td></tr>
+<tr><td style="white-space:nowrap">376<a name="forma-farmaceutica-cs-376"> </a></td>
+<td>Solução bucal e para pulverização nasal</td>
+<td>Solução bucal e para pulverização nasal</td></tr>
+<tr><td style="white-space:nowrap">379<a name="forma-farmaceutica-cs-379"> </a></td>
+<td>Solução oral e para perfusão</td>
+<td>Solução oral e para perfusão</td></tr>
+<tr><td style="white-space:nowrap">383<a name="forma-farmaceutica-cs-383"> </a></td>
+<td>Solução para precursor radiofarmacêutico</td>
+<td>Sol prec radiof</td></tr>
+<tr><td style="white-space:nowrap">382<a name="forma-farmaceutica-cs-382"> </a></td>
+<td>Solução para inalação</td>
+<td>Sol inal</td></tr>
+<tr><td style="white-space:nowrap">380<a name="forma-farmaceutica-cs-380"> </a></td>
+<td>Solução para gargarejar ou para lavagem da boca</td>
+<td>Solução para gargarejar ou para lavagem da boca</td></tr>
+<tr><td style="white-space:nowrap">384<a name="forma-farmaceutica-cs-384"> </a></td>
+<td>Solução para pulverização bucal ou laringofaríngea</td>
+<td>Solução para pulverização bucal ou laringofaríngea</td></tr>
+<tr><td style="white-space:nowrap">385<a name="forma-farmaceutica-cs-385"> </a></td>
+<td>Solvente para solução para irrigação intraocular</td>
+<td>Solvente para solução para irrigação intraocular</td></tr>
+<tr><td style="white-space:nowrap">386<a name="forma-farmaceutica-cs-386"> </a></td>
+<td>Solvente para solução para perfusão</td>
+<td>Solvente para solução para perfusão</td></tr>
+<tr><td style="white-space:nowrap">387<a name="forma-farmaceutica-cs-387"> </a></td>
+<td>Suspensão e granulado efervescente para suspensão oral</td>
+<td>Susp e Gran eferv susp oral</td></tr>
+<tr><td style="white-space:nowrap">390<a name="forma-farmaceutica-cs-390"> </a></td>
+<td>Suspensão para lavagem endossinusal</td>
+<td>Suspensão para lavagem endossinusal</td></tr>
+<tr><td style="white-space:nowrap">388<a name="forma-farmaceutica-cs-388"> </a></td>
+<td>Suspensão oral ou retal</td>
+<td>Suspensão oral ou retal</td></tr>
+<tr><td style="white-space:nowrap">391<a name="forma-farmaceutica-cs-391"> </a></td>
+<td>Suspensão para perfusão</td>
+<td>Suspensão para perfusão</td></tr>
+<tr><td style="white-space:nowrap">546<a name="forma-farmaceutica-cs-546"> </a></td>
+<td>Pó e solvente para solução cutânea</td>
+<td>Pó sol cut</td></tr>
+<tr><td style="white-space:nowrap">392<a name="forma-farmaceutica-cs-392"> </a></td>
+<td>Tampão medicamentoso para inalação por vaporização</td>
+<td>Tampão medicamentoso para inalação por vaporização</td></tr>
+<tr><td style="white-space:nowrap">530<a name="forma-farmaceutica-cs-530"> </a></td>
+<td>Pó para solução injetável ou para solução para inalação por nebulização</td>
+<td>Pó sol inj ou sol neb</td></tr>
+<tr><td style="white-space:nowrap">323<a name="forma-farmaceutica-cs-323"> </a></td>
+<td>Pó e solvente para pasta para implantação</td>
+<td>Pó e solvente para pasta para implantação</td></tr>
+<tr><td style="white-space:nowrap">834<a name="forma-farmaceutica-cs-834"> </a></td>
+<td>Soluções para cola para tecidos</td>
+<td>Sol cola tecido</td></tr>
+<tr><td style="white-space:nowrap">321<a name="forma-farmaceutica-cs-321"> </a></td>
+<td>Gel intestinal</td>
+<td>Gel intest</td></tr>
+<tr><td style="white-space:nowrap">322<a name="forma-farmaceutica-cs-322"> </a></td>
+<td>Fio medicamentoso</td>
+<td>Fio medicamentoso</td></tr>
+<tr><td style="white-space:nowrap">320<a name="forma-farmaceutica-cs-320"> </a></td>
+<td>Colírio, emulsão</td>
+<td>Col, emul</td></tr>
+<tr><td style="white-space:nowrap">528<a name="forma-farmaceutica-cs-528"> </a></td>
+<td>Solvente para solução oral</td>
+<td>Solvente para solução oral</td></tr>
+<tr><td style="white-space:nowrap">529<a name="forma-farmaceutica-cs-529"> </a></td>
+<td>Veículo para suspensão oral</td>
+<td>Veículo para suspensão oral</td></tr>
+<tr><td style="white-space:nowrap">925<a name="forma-farmaceutica-cs-925"> </a></td>
+<td>Pó e solvente para solução para inalação por nebulização</td>
+<td>Pó sol inal neb</td></tr>
+<tr><td style="white-space:nowrap">917<a name="forma-farmaceutica-cs-917"> </a></td>
+<td>Solução para perfusão e para solução oral</td>
+<td>Sol inj e oral</td></tr>
+<tr><td style="white-space:nowrap">927<a name="forma-farmaceutica-cs-927"> </a></td>
+<td>Pó e veículo para suspensão para uso intravesical</td>
+<td>Pó susp ivesical</td></tr>
+<tr><td style="white-space:nowrap">947<a name="forma-farmaceutica-cs-947"> </a></td>
+<td>Granulado revestido em saqueta</td>
+<td>Gran</td></tr>
+<tr><td style="white-space:nowrap">946<a name="forma-farmaceutica-cs-946"> </a></td>
+<td>Comprimido gastrorresistente de libertação prolongada</td>
+<td>Comp GR de LP</td></tr>
+<tr><td style="white-space:nowrap">948<a name="forma-farmaceutica-cs-948"> </a></td>
+<td>Granulado gastrorresistente de libertação prolongada</td>
+<td>Gran GR LP</td></tr>
+<tr><td style="white-space:nowrap">273<a name="forma-farmaceutica-cs-273"> </a></td>
+<td>Tampão medicamentoso</td>
+<td>Tampão medicamentoso</td></tr>
+<tr><td style="white-space:nowrap">272<a name="forma-farmaceutica-cs-272"> </a></td>
+<td>Esponja cutânea</td>
+<td>Esponja cutânea</td></tr>
+<tr><td style="white-space:nowrap">274<a name="forma-farmaceutica-cs-274"> </a></td>
+<td>Inserto dental</td>
+<td>Inserto dental</td></tr>
+<tr><td style="white-space:nowrap">566<a name="forma-farmaceutica-cs-566"> </a></td>
+<td>Conjunto para preparações radiofarmacêuticas para perfusão</td>
+<td>Conjunto para preparações radiofarmacêuticas para perfusão</td></tr>
+<tr><td style="white-space:nowrap">318<a name="forma-farmaceutica-cs-318"> </a></td>
+<td>Liofilizado e solvente para solução injetável</td>
+<td>Liof e solv sol inj</td></tr>
+<tr><td style="white-space:nowrap">324<a name="forma-farmaceutica-cs-324"> </a></td>
+<td>Granulado gastrorresistente para suspensão oral</td>
+<td>Gran GR susp oral</td></tr>
+<tr><td style="white-space:nowrap">317<a name="forma-farmaceutica-cs-317"> </a></td>
+<td>Pó para suspensão oral ou retal</td>
+<td>Pó susp oral</td></tr>
+<tr><td style="white-space:nowrap">327<a name="forma-farmaceutica-cs-327"> </a></td>
+<td>Comprimido dispersível ou para mastigar</td>
+<td>Comp disp mast</td></tr>
+<tr><td style="white-space:nowrap">325<a name="forma-farmaceutica-cs-325"> </a></td>
+<td>Adesivo bucal</td>
+<td>Adesivo bucal</td></tr>
+<tr><td style="white-space:nowrap">326<a name="forma-farmaceutica-cs-326"> </a></td>
+<td>Comprimido de libertação modificada revestido por película</td>
+<td>Comprimido de libertação modificada revestido por película</td></tr>
+<tr><td style="white-space:nowrap">328<a name="forma-farmaceutica-cs-328"> </a></td>
+<td>Comprimido e pó para solução oral</td>
+<td>Comprimido e pó para solução oral</td></tr>
+<tr><td style="white-space:nowrap">336<a name="forma-farmaceutica-cs-336"> </a></td>
+<td>Concentrado e solvente para solução injetável</td>
+<td>Conc e solv sol inj</td></tr>
+<tr><td style="white-space:nowrap">335<a name="forma-farmaceutica-cs-335"> </a></td>
+<td>Concentrado e solvente para solução cutânea</td>
+<td>Concentrado e solvente para solução cutânea</td></tr>
+<tr><td style="white-space:nowrap">334<a name="forma-farmaceutica-cs-334"> </a></td>
+<td>Concentrado e solvente para injetável</td>
+<td>Concentrado e solvente para injetável</td></tr>
+<tr><td style="white-space:nowrap">333<a name="forma-farmaceutica-cs-333"> </a></td>
+<td>Concentrado e solvente para concentrado para solução para perfusão</td>
+<td>Conc conc sol inj</td></tr>
+<tr><td style="white-space:nowrap">329<a name="forma-farmaceutica-cs-329"> </a></td>
+<td>Comprimido e veículo para suspensão retal</td>
+<td>Comprimido e veículo para suspensão retal</td></tr>
+<tr><td style="white-space:nowrap">330<a name="forma-farmaceutica-cs-330"> </a></td>
+<td>Comprimido efervescente para inalação por vaporização</td>
+<td>Comprimido efervescente para inalação por vaporização</td></tr>
+<tr><td style="white-space:nowrap">331<a name="forma-farmaceutica-cs-331"> </a></td>
+<td>Comprimido para suspensão oral</td>
+<td>Comprimido para suspensão oral</td></tr>
+<tr><td style="white-space:nowrap">332<a name="forma-farmaceutica-cs-332"> </a></td>
+<td>Comprimido revestido gastrorresistente</td>
+<td>Comp GR</td></tr>
+<tr><td style="white-space:nowrap">339<a name="forma-farmaceutica-cs-339"> </a></td>
+<td>Concentrado e solvente para uso cutâneo</td>
+<td>Concentrado e solvente para uso cutâneo</td></tr>
+<tr><td style="white-space:nowrap">341<a name="forma-farmaceutica-cs-341"> </a></td>
+<td>Concentrado para emulsão para pulverização cutânea</td>
+<td>Concentrado para emulsão para pulverização cutânea</td></tr>
+<tr><td style="white-space:nowrap">340<a name="forma-farmaceutica-cs-340"> </a></td>
+<td>Concentrado e veículo para suspensão injetável</td>
+<td>Concentrado e veículo para suspensão injetável</td></tr>
+<tr><td style="white-space:nowrap">342<a name="forma-farmaceutica-cs-342"> </a></td>
+<td>Concentrado para solução injetável ou para perfusão</td>
+<td>Sol inj</td></tr>
+<tr><td style="white-space:nowrap">343<a name="forma-farmaceutica-cs-343"> </a></td>
+<td>Concentrado para solução oral</td>
+<td>Conc sol oral</td></tr>
+<tr><td style="white-space:nowrap">344<a name="forma-farmaceutica-cs-344"> </a></td>
+<td>Concentrado para solução oral ou retal</td>
+<td>Concentrado para solução oral ou retal</td></tr>
+<tr><td style="white-space:nowrap">345<a name="forma-farmaceutica-cs-345"> </a></td>
+<td>Concentrado para solução para diálise peritoneal</td>
+<td>Concentrado para solução para diálise peritoneal</td></tr>
+<tr><td style="white-space:nowrap">346<a name="forma-farmaceutica-cs-346"> </a></td>
+<td>Concentrado para solução para uso intravesical</td>
+<td>Concentrado para solução para uso intravesical</td></tr>
+<tr><td style="white-space:nowrap">349<a name="forma-farmaceutica-cs-349"> </a></td>
+<td>Emulsão para inalação por vaporização</td>
+<td>Emulsão para inalação por vaporização</td></tr>
+<tr><td style="white-space:nowrap">350<a name="forma-farmaceutica-cs-350"> </a></td>
+<td>Gás e veículo para dispersão injetável ou para perfusão</td>
+<td>Gás disp inj</td></tr>
+<tr><td style="white-space:nowrap">348<a name="forma-farmaceutica-cs-348"> </a></td>
+<td>Dispersão injetável</td>
+<td>Disp inj</td></tr>
+<tr><td style="white-space:nowrap">923<a name="forma-farmaceutica-cs-923"> </a></td>
+<td>Implante intravítreo em aplicador</td>
+<td>Impl intravítreo</td></tr>
+<tr><td style="white-space:nowrap">351<a name="forma-farmaceutica-cs-351"> </a></td>
+<td>Gás liquefeito para uso dental</td>
+<td>Gás liquefeito para uso dental</td></tr>
+<tr><td style="white-space:nowrap">347<a name="forma-farmaceutica-cs-347"> </a></td>
+<td>Concentrado para suspensão para perfusão</td>
+<td>Susp inj</td></tr>
+<tr><td style="white-space:nowrap">924<a name="forma-farmaceutica-cs-924"> </a></td>
+<td>Suspensão para implantação</td>
+<td>Susp impl</td></tr>
+<tr><td style="white-space:nowrap">290<a name="forma-farmaceutica-cs-290"> </a></td>
+<td>Suspensão para instilação endotraqueal</td>
+<td>Suspensão para instilação endotraqueal</td></tr>
+<tr><td style="white-space:nowrap">928<a name="forma-farmaceutica-cs-928"> </a></td>
+<td>Película bucal</td>
+<td>Película bucal</td></tr>
+<tr><td style="white-space:nowrap">929<a name="forma-farmaceutica-cs-929"> </a></td>
+<td>Pó e solução para solução injetável</td>
+<td>Pó sol inj</td></tr>
+<tr><td style="white-space:nowrap">930<a name="forma-farmaceutica-cs-930"> </a></td>
+<td>Película orodispersível</td>
+<td>Película orodisp</td></tr>
+<tr><td style="white-space:nowrap">931<a name="forma-farmaceutica-cs-931"> </a></td>
+<td>Pó para concentrado e solvente para solução para perfusão</td>
+<td>Pó para concentrado e solvente para solução para perfusão</td></tr>
+<tr><td style="white-space:nowrap">932<a name="forma-farmaceutica-cs-932"> </a></td>
+<td>Solução para perfusão em sistema de administração</td>
+<td>Sol inj, sist admin</td></tr>
+<tr><td style="white-space:nowrap">926<a name="forma-farmaceutica-cs-926"> </a></td>
+<td>Solvente para solução para inalação por nebulização</td>
+<td>Solvente para solução para inalação por nebulização</td></tr>
+<tr><td style="white-space:nowrap">29<a name="forma-farmaceutica-cs-29"> </a></td>
+<td>Cápsula</td>
+<td>Cáps</td></tr>
+<tr><td style="white-space:nowrap">945<a name="forma-farmaceutica-cs-945"> </a></td>
+<td>Suspensão oleosa</td>
+<td>Suspensão oleosa</td></tr>
+<tr><td style="white-space:nowrap">944<a name="forma-farmaceutica-cs-944"> </a></td>
+<td>Suspensão injetável de libertação prolongada</td>
+<td>Susp inj LP</td></tr>
+<tr><td style="white-space:nowrap">30<a name="forma-farmaceutica-cs-30"> </a></td>
+<td>Cápsula mole</td>
+<td>Cáps</td></tr>
+<tr><td style="white-space:nowrap">933<a name="forma-farmaceutica-cs-933"> </a></td>
+<td>Emulsão para pulverização cutânea</td>
+<td>Emulsão para pulverização cutânea</td></tr>
+<tr><td style="white-space:nowrap">934<a name="forma-farmaceutica-cs-934"> </a></td>
+<td>Concentrado para dispersão para perfusão</td>
+<td>Disp inj</td></tr>
+<tr><td style="white-space:nowrap">31<a name="forma-farmaceutica-cs-31"> </a></td>
+<td>Cápsula gastrorresistente</td>
+<td>Cáps GR</td></tr>
+<tr><td style="white-space:nowrap">23<a name="forma-farmaceutica-cs-23"> </a></td>
+<td>Granulado</td>
+<td>Gran</td></tr>
+<tr><td style="white-space:nowrap">24<a name="forma-farmaceutica-cs-24"> </a></td>
+<td>Granulado efervescente</td>
+<td>Gran eferv</td></tr>
+<tr><td style="white-space:nowrap">25<a name="forma-farmaceutica-cs-25"> </a></td>
+<td>Granulado gastrorresistente</td>
+<td>Gran GR</td></tr>
+<tr><td style="white-space:nowrap">26<a name="forma-farmaceutica-cs-26"> </a></td>
+<td>Granulado de libertação prolongada</td>
+<td>Gran LP</td></tr>
+<tr><td style="white-space:nowrap">27<a name="forma-farmaceutica-cs-27"> </a></td>
+<td>Granulado de libertação modificada</td>
+<td>Gran LM</td></tr>
+<tr><td style="white-space:nowrap">301<a name="forma-farmaceutica-cs-301"> </a></td>
+<td>Cápsula + Pó e solvente para solução injetável</td>
+<td>Cáps + Pó e solv sol Inj</td></tr>
+<tr><td style="white-space:nowrap">305<a name="forma-farmaceutica-cs-305"> </a></td>
+<td>Comprimido revestido + Supositório</td>
+<td>Comp + Sup</td></tr>
+<tr><td style="white-space:nowrap">307<a name="forma-farmaceutica-cs-307"> </a></td>
+<td>Pó para suspensão injetável + Suspensão injetável</td>
+<td>Pó susp inj + Susp inj</td></tr>
+<tr><td style="white-space:nowrap">306<a name="forma-farmaceutica-cs-306"> </a></td>
+<td>Creme vaginal + Óvulo</td>
+<td>Cr vag + Óvulo</td></tr>
+<tr><td style="white-space:nowrap">309<a name="forma-farmaceutica-cs-309"> </a></td>
+<td>Implante, pó para suspensão</td>
+<td>Pó susp impl</td></tr>
+<tr><td style="white-space:nowrap">302<a name="forma-farmaceutica-cs-302"> </a></td>
+<td>Cápsula + Supositório</td>
+<td>Cáps + Sup</td></tr>
+<tr><td style="white-space:nowrap">308<a name="forma-farmaceutica-cs-308"> </a></td>
+<td>Pomada retal + Supositório</td>
+<td>Pom rect</td></tr>
+<tr><td style="white-space:nowrap">303<a name="forma-farmaceutica-cs-303"> </a></td>
+<td>Comprimido + Supositório</td>
+<td>Comp + Sup</td></tr>
+<tr><td style="white-space:nowrap">310<a name="forma-farmaceutica-cs-310"> </a></td>
+<td>Anel vaginal</td>
+<td>Anel vag</td></tr>
+<tr><td style="white-space:nowrap">509<a name="forma-farmaceutica-cs-509"> </a></td>
+<td>Pó para suspensão para instilação intrapleural</td>
+<td>Pó para susp instil Intrapleu</td></tr>
+<tr><td style="white-space:nowrap">304<a name="forma-farmaceutica-cs-304"> </a></td>
+<td>Comprimido + Suspensão Oral</td>
+<td>Comp + Susp oral</td></tr>
+<tr><td style="white-space:nowrap">900<a name="forma-farmaceutica-cs-900"> </a></td>
+<td>Colírio, comprimido e solvente para solução</td>
+<td>Col + comp e solv sol</td></tr>
+<tr><td style="white-space:nowrap">311<a name="forma-farmaceutica-cs-311"> </a></td>
+<td>Solução oral + Pó para solução oral</td>
+<td>Sol oral + Pó sol oral</td></tr>
+<tr><td style="white-space:nowrap">513<a name="forma-farmaceutica-cs-513"> </a></td>
+<td>Dispersão</td>
+<td>Dispersão</td></tr>
+<tr><td style="white-space:nowrap">514<a name="forma-farmaceutica-cs-514"> </a></td>
+<td>Solução anticoagulante e conservante para sangue</td>
+<td>Solução anticoagulante e conservante para sangue</td></tr>
+<tr><td style="white-space:nowrap">515<a name="forma-farmaceutica-cs-515"> </a></td>
+<td>Solução para modificação de fração sanguínea</td>
+<td>Sol modificação frac sang</td></tr>
+<tr><td style="white-space:nowrap">517<a name="forma-farmaceutica-cs-517"> </a></td>
+<td>Comprimido para chupar</td>
+<td>Comp chupar</td></tr>
+<tr><td style="white-space:nowrap">516<a name="forma-farmaceutica-cs-516"> </a></td>
+<td>Laca dental</td>
+<td>Laca dental</td></tr>
+<tr><td style="white-space:nowrap">519<a name="forma-farmaceutica-cs-519"> </a></td>
+<td>Emplastro medicamentoso</td>
+<td>Empl medic</td></tr>
+<tr><td style="white-space:nowrap">518<a name="forma-farmaceutica-cs-518"> </a></td>
+<td>Equivalente de tecido vivo</td>
+<td>Equivalente de tecido vivo</td></tr>
+<tr><td style="white-space:nowrap">525<a name="forma-farmaceutica-cs-525"> </a></td>
+<td>Sistema de libertação vaginal</td>
+<td>Sist lib vag</td></tr>
+<tr><td style="white-space:nowrap">222<a name="forma-farmaceutica-cs-222"> </a></td>
+<td>Implante, comprimido</td>
+<td>Impl comp</td></tr>
+<tr><td style="white-space:nowrap">223<a name="forma-farmaceutica-cs-223"> </a></td>
+<td>Implante em cadeia</td>
+<td>Impl cadeia</td></tr>
+<tr><td style="white-space:nowrap">224<a name="forma-farmaceutica-cs-224"> </a></td>
+<td>Solução para diálise peritoneal</td>
+<td>Sol DP</td></tr>
+<tr><td style="white-space:nowrap">218<a name="forma-farmaceutica-cs-218"> </a></td>
+<td>Concentrado para solução para perfusão</td>
+<td>Sol inj</td></tr>
+<tr><td style="white-space:nowrap">220<a name="forma-farmaceutica-cs-220"> </a></td>
+<td>Solvente/Veículo para uso parentérico</td>
+<td>Sol inj</td></tr>
+<tr><td style="white-space:nowrap">221<a name="forma-farmaceutica-cs-221"> </a></td>
+<td>Implante</td>
+<td>Impl</td></tr>
+<tr><td style="white-space:nowrap">219<a name="forma-farmaceutica-cs-219"> </a></td>
+<td>Pó e solvente para solução para perfusão</td>
+<td>Pó sol inj</td></tr>
+<tr><td style="white-space:nowrap">213<a name="forma-farmaceutica-cs-213"> </a></td>
+<td>Pó e veículo para suspensão injetável</td>
+<td>Pó susp inj</td></tr>
+<tr><td style="white-space:nowrap">217<a name="forma-farmaceutica-cs-217"> </a></td>
+<td>Pó para solução para perfusão</td>
+<td>Pó sol inj</td></tr>
+<tr><td style="white-space:nowrap">225<a name="forma-farmaceutica-cs-225"> </a></td>
+<td>Solução para hemofiltração</td>
+<td>Sol hemofi</td></tr>
+<tr><td style="white-space:nowrap">214<a name="forma-farmaceutica-cs-214"> </a></td>
+<td>Concentrado para solução injetável</td>
+<td>Sol inj</td></tr>
+<tr><td style="white-space:nowrap">215<a name="forma-farmaceutica-cs-215"> </a></td>
+<td>Solução para perfusão</td>
+<td>Sol inj</td></tr>
+<tr><td style="white-space:nowrap">212<a name="forma-farmaceutica-cs-212"> </a></td>
+<td>Pó e solvente para solução injetável</td>
+<td>Pó sol inj</td></tr>
+<tr><td style="white-space:nowrap">216<a name="forma-farmaceutica-cs-216"> </a></td>
+<td>Emulsão para perfusão</td>
+<td>Emul inj</td></tr>
+<tr><td style="white-space:nowrap">208<a name="forma-farmaceutica-cs-208"> </a></td>
+<td>Suspensão injetável</td>
+<td>Susp inj</td></tr>
+<tr><td style="white-space:nowrap">209<a name="forma-farmaceutica-cs-209"> </a></td>
+<td>Emulsão injetável</td>
+<td>Emul inj</td></tr>
+<tr><td style="white-space:nowrap">211<a name="forma-farmaceutica-cs-211"> </a></td>
+<td>Pó para suspensão injetável</td>
+<td>Pó susp inj</td></tr>
+<tr><td style="white-space:nowrap">210<a name="forma-farmaceutica-cs-210"> </a></td>
+<td>Pó para solução injetável</td>
+<td>Pó sol inj</td></tr>
+<tr><td style="white-space:nowrap">206<a name="forma-farmaceutica-cs-206"> </a></td>
+<td>Gás para inalação</td>
+<td>Gás inal</td></tr>
+<tr><td style="white-space:nowrap">204<a name="forma-farmaceutica-cs-204"> </a></td>
+<td>Pomada para inalação por vaporização</td>
+<td>Pomada para inalação por vaporização</td></tr>
+<tr><td style="white-space:nowrap">205<a name="forma-farmaceutica-cs-205"> </a></td>
+<td>Líquido para inalação por vaporização</td>
+<td>Líq inal vapo</td></tr>
+<tr><td style="white-space:nowrap">207<a name="forma-farmaceutica-cs-207"> </a></td>
+<td>Solução injetável</td>
+<td>Sol inj</td></tr>
+<tr><td style="white-space:nowrap">199<a name="forma-farmaceutica-cs-199"> </a></td>
+<td>Pó para inalação em recipiente unidose</td>
+<td>Pó inal, recip unid</td></tr>
+<tr><td style="white-space:nowrap">203<a name="forma-farmaceutica-cs-203"> </a></td>
+<td>Comprimido para inalação por vaporização</td>
+<td>Comprimido para inalação por vaporização</td></tr>
+<tr><td style="white-space:nowrap">200<a name="forma-farmaceutica-cs-200"> </a></td>
+<td>Pó para inalação por vaporização</td>
+<td>Pó para inalação por vaporização</td></tr>
+<tr><td style="white-space:nowrap">201<a name="forma-farmaceutica-cs-201"> </a></td>
+<td>Cápsula para inalação por vaporização</td>
+<td>Cáps inal vapo</td></tr>
+<tr><td style="white-space:nowrap">202<a name="forma-farmaceutica-cs-202"> </a></td>
+<td>Solução para inalação por vaporização</td>
+<td>Sol inal vap</td></tr>
+<tr><td style="white-space:nowrap">198<a name="forma-farmaceutica-cs-198"> </a></td>
+<td>Pó para inalação, cápsula</td>
+<td>Pó inal, cáps</td></tr>
+<tr><td style="white-space:nowrap">194<a name="forma-farmaceutica-cs-194"> </a></td>
+<td>Solução pressurizada para inalação</td>
+<td>Sol pressu inal</td></tr>
+<tr><td style="white-space:nowrap">178<a name="forma-farmaceutica-cs-178"> </a></td>
+<td>Solução retal</td>
+<td>Sol rect</td></tr>
+<tr><td style="white-space:nowrap">190<a name="forma-farmaceutica-cs-190"> </a></td>
+<td>Suspensão para inalação por nebulização</td>
+<td>Susp inal neb</td></tr>
+<tr><td style="white-space:nowrap">196<a name="forma-farmaceutica-cs-196"> </a></td>
+<td>Emulsão pressurizada para inalação</td>
+<td>Emulsão pressurizada para inalação</td></tr>
+<tr><td style="white-space:nowrap">177<a name="forma-farmaceutica-cs-177"> </a></td>
+<td>Espuma retal</td>
+<td>Espuma rect</td></tr>
+<tr><td style="white-space:nowrap">191<a name="forma-farmaceutica-cs-191"> </a></td>
+<td>Pó para suspensão para inalação por nebulização</td>
+<td>Pó para suspensão para inalação por nebulização</td></tr>
+<tr><td style="white-space:nowrap">183<a name="forma-farmaceutica-cs-183"> </a></td>
+<td>Pó para suspensão retal</td>
+<td>Pó susp rect</td></tr>
+<tr><td style="white-space:nowrap">192<a name="forma-farmaceutica-cs-192"> </a></td>
+<td>Pó para solução para inalação por nebulização</td>
+<td>Pó sol inal neb</td></tr>
+<tr><td style="white-space:nowrap">184<a name="forma-farmaceutica-cs-184"> </a></td>
+<td>Comprimido para solução retal</td>
+<td>Comprimido para solução retal</td></tr>
+<tr><td style="white-space:nowrap">197<a name="forma-farmaceutica-cs-197"> </a></td>
+<td>Pó para inalação</td>
+<td>Pó inal</td></tr>
+<tr><td style="white-space:nowrap">193<a name="forma-farmaceutica-cs-193"> </a></td>
+<td>Emulsão para inalação por nebulização</td>
+<td>Emulsão para inalação por nebulização</td></tr>
+<tr><td style="white-space:nowrap">182<a name="forma-farmaceutica-cs-182"> </a></td>
+<td>Pó para solução retal</td>
+<td>Pó sol rect</td></tr>
+<tr><td style="white-space:nowrap">186<a name="forma-farmaceutica-cs-186"> </a></td>
+<td>Supositório</td>
+<td>Sup</td></tr>
+<tr><td style="white-space:nowrap">181<a name="forma-farmaceutica-cs-181"> </a></td>
+<td>Concentrado para solução retal</td>
+<td>Concentrado para solução retal</td></tr>
+<tr><td style="white-space:nowrap">195<a name="forma-farmaceutica-cs-195"> </a></td>
+<td>Suspensão pressurizada para inalação</td>
+<td>Susp pressu inal</td></tr>
+<tr><td style="white-space:nowrap">185<a name="forma-farmaceutica-cs-185"> </a></td>
+<td>Comprimido para suspensão retal</td>
+<td>Comp susp rect</td></tr>
+<tr><td style="white-space:nowrap">189<a name="forma-farmaceutica-cs-189"> </a></td>
+<td>Solução para inalação por nebulização</td>
+<td>Sol inal neb</td></tr>
+<tr><td style="white-space:nowrap">188<a name="forma-farmaceutica-cs-188"> </a></td>
+<td>Tampão retal</td>
+<td>Tampão retal</td></tr>
+<tr><td style="white-space:nowrap">187<a name="forma-farmaceutica-cs-187"> </a></td>
+<td>Cápsula retal</td>
+<td>Cáps rect</td></tr>
+<tr><td style="white-space:nowrap">179<a name="forma-farmaceutica-cs-179"> </a></td>
+<td>Suspensão retal</td>
+<td>Susp rect</td></tr>
+<tr><td style="white-space:nowrap">176<a name="forma-farmaceutica-cs-176"> </a></td>
+<td>Pomada retal</td>
+<td>Pom rect</td></tr>
+<tr><td style="white-space:nowrap">180<a name="forma-farmaceutica-cs-180"> </a></td>
+<td>Emulsão retal</td>
+<td>Emulsão retal</td></tr>
+<tr><td style="white-space:nowrap">175<a name="forma-farmaceutica-cs-175"> </a></td>
+<td>Gel retal</td>
+<td>Gel rect</td></tr>
+<tr><td style="white-space:nowrap">169<a name="forma-farmaceutica-cs-169"> </a></td>
+<td>Comprimido vaginal</td>
+<td>Comp vag</td></tr>
+<tr><td style="white-space:nowrap">174<a name="forma-farmaceutica-cs-174"> </a></td>
+<td>Creme retal</td>
+<td>Cr rect</td></tr>
+<tr><td style="white-space:nowrap">168<a name="forma-farmaceutica-cs-168"> </a></td>
+<td>Cápsula mole vaginal</td>
+<td>Cáps vag</td></tr>
+<tr><td style="white-space:nowrap">170<a name="forma-farmaceutica-cs-170"> </a></td>
+<td>Comprimido efervescente vaginal</td>
+<td>Comprimido efervescente vaginal</td></tr>
+<tr><td style="white-space:nowrap">171<a name="forma-farmaceutica-cs-171"> </a></td>
+<td>Tampão vaginal medicamentoso</td>
+<td>Tamp vag</td></tr>
+<tr><td style="white-space:nowrap">167<a name="forma-farmaceutica-cs-167"> </a></td>
+<td>Cápsula vaginal</td>
+<td>Cáps vag</td></tr>
+<tr><td style="white-space:nowrap">261<a name="forma-farmaceutica-cs-261"> </a></td>
+<td>Solução para conservação de órgãos</td>
+<td>Sol conserv org</td></tr>
+<tr><td style="white-space:nowrap">265<a name="forma-farmaceutica-cs-265"> </a></td>
+<td>Pó e solvente para cola para tecidos</td>
+<td>Pó cola tec</td></tr>
+<tr><td style="white-space:nowrap">259<a name="forma-farmaceutica-cs-259"> </a></td>
+<td>Suspensão gastroentérica</td>
+<td>Suspensão gastroentérica</td></tr>
+<tr><td style="white-space:nowrap">163<a name="forma-farmaceutica-cs-163"> </a></td>
+<td>Suspensão vaginal</td>
+<td>Suspensão vaginal</td></tr>
+<tr><td style="white-space:nowrap">164<a name="forma-farmaceutica-cs-164"> </a></td>
+<td>Emulsão vaginal</td>
+<td>Emulsão vaginal</td></tr>
+<tr><td style="white-space:nowrap">258<a name="forma-farmaceutica-cs-258"> </a></td>
+<td>Solução gastroentérica</td>
+<td>Sol gastro-ent</td></tr>
+<tr><td style="white-space:nowrap">262<a name="forma-farmaceutica-cs-262"> </a></td>
+<td>Solução para irrigação</td>
+<td>Sol irrig</td></tr>
+<tr><td style="white-space:nowrap">264<a name="forma-farmaceutica-cs-264"> </a></td>
+<td>Cola para tecidos</td>
+<td>Cola tecido</td></tr>
+<tr><td style="white-space:nowrap">260<a name="forma-farmaceutica-cs-260"> </a></td>
+<td>Emulsão gastroentérica</td>
+<td>Emulsão gastroentérica</td></tr>
+<tr><td style="white-space:nowrap">263<a name="forma-farmaceutica-cs-263"> </a></td>
+<td>Líquido para lavagem gástrica</td>
+<td>Líquido para lavagem gástrica</td></tr>
+<tr><td style="white-space:nowrap">949<a name="forma-farmaceutica-cs-949"> </a></td>
+<td>Solução para perfusão em seringa pré-cheia</td>
+<td>Sol inj</td></tr>
+<tr><td style="white-space:nowrap">545<a name="forma-farmaceutica-cs-545"> </a></td>
+<td>Pó periodontal</td>
+<td>Pó period</td></tr>
+<tr><td style="white-space:nowrap">950<a name="forma-farmaceutica-cs-950"> </a></td>
+<td>Pó para solução oral em saqueta</td>
+<td>Pó sol oral</td></tr>
+<tr><td style="white-space:nowrap">293<a name="forma-farmaceutica-cs-293"> </a></td>
+<td>Solução para teste cutâneo por escarificação</td>
+<td>Solução para teste cutâneo por escarificação</td></tr>
+<tr><td style="white-space:nowrap">294<a name="forma-farmaceutica-cs-294"> </a></td>
+<td>Solução para prova de provocação</td>
+<td>Solução para prova de provocação</td></tr>
+<tr><td style="white-space:nowrap">838<a name="forma-farmaceutica-cs-838"> </a></td>
+<td>Solução oral ou concentrado para solução para nebulização</td>
+<td>Solução oral ou concentrado para solução para nebulização</td></tr>
+<tr><td style="white-space:nowrap">295<a name="forma-farmaceutica-cs-295"> </a></td>
+<td>Emplastro para prova de provocação</td>
+<td>Empl prova provoc</td></tr>
+<tr><td style="white-space:nowrap">296<a name="forma-farmaceutica-cs-296"> </a></td>
+<td>Gás medicinal comprimido</td>
+<td>Gás inal</td></tr>
+<tr><td style="white-space:nowrap">298<a name="forma-farmaceutica-cs-298"> </a></td>
+<td>Gás medicinal liquefeito</td>
+<td>Gás liq</td></tr>
+<tr><td style="white-space:nowrap">297<a name="forma-farmaceutica-cs-297"> </a></td>
+<td>Gás medicinal criogénico</td>
+<td>Gás inal</td></tr>
+<tr><td style="white-space:nowrap">315<a name="forma-farmaceutica-cs-315"> </a></td>
+<td>Solução oral ou para inalação para nebulização</td>
+<td>Solução oral ou para inalação para nebulização</td></tr>
+<tr><td style="white-space:nowrap">833<a name="forma-farmaceutica-cs-833"> </a></td>
+<td>Solução injetável ou concentrado para solução para perfusão</td>
+<td>Sol inj</td></tr>
+<tr><td style="white-space:nowrap">835<a name="forma-farmaceutica-cs-835"> </a></td>
+<td>Solução injetável em seringa pré-cheia</td>
+<td>Sol inj</td></tr>
+<tr><td style="white-space:nowrap">255<a name="forma-farmaceutica-cs-255"> </a></td>
+<td>Precursor radiofarmacêutico</td>
+<td>Prec radiof</td></tr>
+<tr><td style="white-space:nowrap">256<a name="forma-farmaceutica-cs-256"> </a></td>
+<td>Gerador de radionuclidos</td>
+<td>Ger radio</td></tr>
+<tr><td style="white-space:nowrap">254<a name="forma-farmaceutica-cs-254"> </a></td>
+<td>Lápis para lesões</td>
+<td>Lápis para lesões</td></tr>
+<tr><td style="white-space:nowrap">257<a name="forma-farmaceutica-cs-257"> </a></td>
+<td>Conjunto para preparações radiofarmacêuticas</td>
+<td>Conj prep radiof</td></tr>
+<tr><td style="white-space:nowrap">253<a name="forma-farmaceutica-cs-253"> </a></td>
+<td>Solução para nebulização VET</td>
+<td>Solução para nebulização VET</td></tr>
+<tr><td style="white-space:nowrap">836<a name="forma-farmaceutica-cs-836"> </a></td>
+<td>Tira oftálmica</td>
+<td>Tira oftálmica</td></tr>
+<tr><td style="white-space:nowrap">840<a name="forma-farmaceutica-cs-840"> </a></td>
+<td>Pó bucal em bolsa</td>
+<td>Pó bucal em bolsa</td></tr>
+<tr><td style="white-space:nowrap">839<a name="forma-farmaceutica-cs-839"> </a></td>
+<td>Granulado para solução vaginal</td>
+<td>Granulado para solução vaginal</td></tr>
+<tr><td style="white-space:nowrap">837<a name="forma-farmaceutica-cs-837"> </a></td>
+<td>Colírio, solução em recipiente unidose</td>
+<td>Col, sol</td></tr>
+<tr><td style="white-space:nowrap">842<a name="forma-farmaceutica-cs-842"> </a></td>
+<td>Suspensão e solução para pulverização</td>
+<td>Suspensão e solução para pulverização</td></tr>
+<tr><td style="white-space:nowrap">841<a name="forma-farmaceutica-cs-841"> </a></td>
+<td>Pó e suspensão para suspensão injetável</td>
+<td>Pó susp inj</td></tr>
+<tr><td style="white-space:nowrap">902<a name="forma-farmaceutica-cs-902"> </a></td>
+<td>Pó para solução para lavagem da boca</td>
+<td>Pó para solução para lavagem da boca</td></tr>
+<tr><td style="white-space:nowrap">901<a name="forma-farmaceutica-cs-901"> </a></td>
+<td>Adesivo cutâneo</td>
+<td>Adesivo cut</td></tr>
+<tr><td style="white-space:nowrap">319<a name="forma-farmaceutica-cs-319"> </a></td>
+<td>Solução para dispersão injetável ou para perfusão</td>
+<td>Sol disp inj</td></tr>
+<tr><td style="white-space:nowrap">907<a name="forma-farmaceutica-cs-907"> </a></td>
+<td>Solução injetável em caneta pré-cheia</td>
+<td>Sol inj</td></tr>
+<tr><td style="white-space:nowrap">908<a name="forma-farmaceutica-cs-908"> </a></td>
+<td>Suspensão injetável em cartucho</td>
+<td>Susp inj</td></tr>
+<tr><td style="white-space:nowrap">906<a name="forma-farmaceutica-cs-906"> </a></td>
+<td>Solução injetável em cartucho</td>
+<td>Sol inj</td></tr>
+<tr><td style="white-space:nowrap">909<a name="forma-farmaceutica-cs-909"> </a></td>
+<td>Suspensão injetável em caneta pré-cheia</td>
+<td>Susp inj</td></tr>
+<tr><td style="white-space:nowrap">910<a name="forma-farmaceutica-cs-910"> </a></td>
+<td>Suspensão injetável em seringa pré-cheia</td>
+<td>Susp inj</td></tr>
+<tr><td style="white-space:nowrap">914<a name="forma-farmaceutica-cs-914"> </a></td>
+<td>Concentrado para emulsão para perfusão</td>
+<td>Concentrado para emulsão para perfusão</td></tr>
+<tr><td style="white-space:nowrap">134<a name="forma-farmaceutica-cs-134"> </a></td>
+<td>Pomada auricular</td>
+<td>Pomada auricular</td></tr>
+<tr><td style="white-space:nowrap">912<a name="forma-farmaceutica-cs-912"> </a></td>
+<td>Granulado para administração na água de bebida</td>
+<td>Granulado para administração na água de bebida</td></tr>
+<tr><td style="white-space:nowrap">915<a name="forma-farmaceutica-cs-915"> </a></td>
+<td>Chá medicinal em saqueta</td>
+<td>Chá medicinal em saqueta</td></tr>
+<tr><td style="white-space:nowrap">133<a name="forma-farmaceutica-cs-133"> </a></td>
+<td>Gel auricular</td>
+<td>Gel auricular</td></tr>
+<tr><td style="white-space:nowrap">131<a name="forma-farmaceutica-cs-131"> </a></td>
+<td>Inserto oftálmico</td>
+<td>Inserto oft</td></tr>
+<tr><td style="white-space:nowrap">135<a name="forma-farmaceutica-cs-135"> </a></td>
+<td>Gotas auriculares, solução</td>
+<td>Got aur sol</td></tr>
+<tr><td style="white-space:nowrap">913<a name="forma-farmaceutica-cs-913"> </a></td>
+<td>Emulsão e suspensão para emulsão injetável</td>
+<td>Emul inj</td></tr>
+<tr><td style="white-space:nowrap">918<a name="forma-farmaceutica-cs-918"> </a></td>
+<td>Pó para suspensão para implantação</td>
+<td>Pó susp impl</td></tr>
+<tr><td style="white-space:nowrap">132<a name="forma-farmaceutica-cs-132"> </a></td>
+<td>Creme auricular</td>
+<td>Creme auricular</td></tr>
+<tr><td style="white-space:nowrap">919<a name="forma-farmaceutica-cs-919"> </a></td>
+<td>Pó para suspensão para perfusão</td>
+<td>Pó susp inj</td></tr>
+<tr><td style="white-space:nowrap">129<a name="forma-farmaceutica-cs-129"> </a></td>
+<td>Solução para lavagem oftálmica</td>
+<td>Sol lav oft</td></tr>
+<tr><td style="white-space:nowrap">920<a name="forma-farmaceutica-cs-920"> </a></td>
+<td>Pó e solvente para solução injetável em seringa pré-cheia</td>
+<td>Pó sol inj</td></tr>
+<tr><td style="white-space:nowrap">128<a name="forma-farmaceutica-cs-128"> </a></td>
+<td>Colírio de libertação prolongada</td>
+<td>Col LP</td></tr>
+<tr><td style="white-space:nowrap">127<a name="forma-farmaceutica-cs-127"> </a></td>
+<td>Solvente/Veículo para colírio</td>
+<td>Solvente/Veículo para colírio</td></tr>
+<tr><td style="white-space:nowrap">130<a name="forma-farmaceutica-cs-130"> </a></td>
+<td>Solvente para solução para lavagem oftálmica</td>
+<td>Solvente para solução para lavagem oftálmica</td></tr>
+<tr><td style="white-space:nowrap">123<a name="forma-farmaceutica-cs-123"> </a></td>
+<td>Colírio, solução</td>
+<td>Col, sol</td></tr>
+<tr><td style="white-space:nowrap">235<a name="forma-farmaceutica-cs-235"> </a></td>
+<td>Suspensão para instilação endotraqueobrônquica</td>
+<td>Susp inst endotraq</td></tr>
+<tr><td style="white-space:nowrap">244<a name="forma-farmaceutica-cs-244"> </a></td>
+<td>Dispositivo intrauterino</td>
+<td>Disp iuteri</td></tr>
+<tr><td style="white-space:nowrap">124<a name="forma-farmaceutica-cs-124"> </a></td>
+<td>Colírio, suspensão</td>
+<td>Col, susp</td></tr>
+<tr><td style="white-space:nowrap">237<a name="forma-farmaceutica-cs-237"> </a></td>
+<td>Gel endocervical</td>
+<td>Gel endocer</td></tr>
+<tr><td style="white-space:nowrap">236<a name="forma-farmaceutica-cs-236"> </a></td>
+<td>Pó e solvente para solução para instilação endotraqueobrônquica</td>
+<td>Pó e solvente para solução para instilação endotraqueobrônquica</td></tr>
+<tr><td style="white-space:nowrap">238<a name="forma-farmaceutica-cs-238"> </a></td>
+<td>Pó e solvente para gel endocervical</td>
+<td>Pó gel endoc</td></tr>
+<tr><td style="white-space:nowrap">227<a name="forma-farmaceutica-cs-227"> </a></td>
+<td>Concentrado para solução para hemodiálise</td>
+<td>Conc sol hemod</td></tr>
+<tr><td style="white-space:nowrap">226<a name="forma-farmaceutica-cs-226"> </a></td>
+<td>Solução para hemodiálise</td>
+<td>Sol hemodi</td></tr>
+<tr><td style="white-space:nowrap">230<a name="forma-farmaceutica-cs-230"> </a></td>
+<td>Pó para líquido para irrigação vesical</td>
+<td>Pó irrig vesical</td></tr>
+<tr><td style="white-space:nowrap">234<a name="forma-farmaceutica-cs-234"> </a></td>
+<td>Pó para solução para instilação endotraqueobrônquica</td>
+<td>Pó para solução para instilação endotraqueobrônquica</td></tr>
+<tr><td style="white-space:nowrap">232<a name="forma-farmaceutica-cs-232"> </a></td>
+<td>Lápis uretral</td>
+<td>Lápis uret</td></tr>
+<tr><td style="white-space:nowrap">233<a name="forma-farmaceutica-cs-233"> </a></td>
+<td>Solução para instilação endotraqueobrônquica</td>
+<td>Sol instilação endotraqueobrônquica</td></tr>
+<tr><td style="white-space:nowrap">231<a name="forma-farmaceutica-cs-231"> </a></td>
+<td>Gel uretral</td>
+<td>Gel uret</td></tr>
+<tr><td style="white-space:nowrap">126<a name="forma-farmaceutica-cs-126"> </a></td>
+<td>Colírio, pó e veículo para suspensão</td>
+<td>Colírio, pó e veículo para suspensão</td></tr>
+<tr><td style="white-space:nowrap">125<a name="forma-farmaceutica-cs-125"> </a></td>
+<td>Colírio, pó e solvente para solução</td>
+<td>Col, pó e solv susp</td></tr>
+<tr><td style="white-space:nowrap">122<a name="forma-farmaceutica-cs-122"> </a></td>
+<td>Pomada oftálmica</td>
+<td>Pom oft</td></tr>
+<tr><td style="white-space:nowrap">19<a name="forma-farmaceutica-cs-19"> </a></td>
+<td>Gel oral</td>
+<td>Gel oral</td></tr>
+<tr><td style="white-space:nowrap">228<a name="forma-farmaceutica-cs-228"> </a></td>
+<td>Solução intravesical</td>
+<td>sol ivesical</td></tr>
+<tr><td style="white-space:nowrap">229<a name="forma-farmaceutica-cs-229"> </a></td>
+<td>Líquido para irrigação vesical</td>
+<td>Líq irrig vesi</td></tr>
+<tr><td style="white-space:nowrap">20<a name="forma-farmaceutica-cs-20"> </a></td>
+<td>Pasta oral</td>
+<td>Pasta oral</td></tr>
+<tr><td style="white-space:nowrap">121<a name="forma-farmaceutica-cs-121"> </a></td>
+<td>Gel oftálmico</td>
+<td>Gel oft</td></tr>
+<tr><td style="white-space:nowrap">120<a name="forma-farmaceutica-cs-120"> </a></td>
+<td>Creme oftálmico</td>
+<td>Creme oftálmico</td></tr>
+<tr><td style="white-space:nowrap">21<a name="forma-farmaceutica-cs-21"> </a></td>
+<td>Pó oral</td>
+<td>Pó oral</td></tr>
+<tr><td style="white-space:nowrap">15<a name="forma-farmaceutica-cs-15"> </a></td>
+<td>Granulado para xarope</td>
+<td>Gran xar</td></tr>
+<tr><td style="white-space:nowrap">22<a name="forma-farmaceutica-cs-22"> </a></td>
+<td>Pó efervescente</td>
+<td>Pó eferv</td></tr>
+<tr><td style="white-space:nowrap">103<a name="forma-farmaceutica-cs-103"> </a></td>
+<td>Penso impregnado</td>
+<td>Pens impreg</td></tr>
+<tr><td style="white-space:nowrap">100<a name="forma-farmaceutica-cs-100"> </a></td>
+<td>Verniz para as unhas medicamentoso</td>
+<td>Verniz med unhas</td></tr>
+<tr><td style="white-space:nowrap">101<a name="forma-farmaceutica-cs-101"> </a></td>
+<td>Cataplasma</td>
+<td>Cataplasma</td></tr>
+<tr><td style="white-space:nowrap">102<a name="forma-farmaceutica-cs-102"> </a></td>
+<td>Lápis cutâneo</td>
+<td>Lápis cut</td></tr>
+<tr><td style="white-space:nowrap">97<a name="forma-farmaceutica-cs-97"> </a></td>
+<td>Solução para iontoforese</td>
+<td>Solução para iontoforese</td></tr>
+<tr><td style="white-space:nowrap">96<a name="forma-farmaceutica-cs-96"> </a></td>
+<td>Pó cutâneo</td>
+<td>Pó cut</td></tr>
+<tr><td style="white-space:nowrap">17<a name="forma-farmaceutica-cs-17"> </a></td>
+<td>Comprimido dispersível</td>
+<td>Comp disp</td></tr>
+<tr><td style="white-space:nowrap">11<a name="forma-farmaceutica-cs-11"> </a></td>
+<td>Pó e solvente para solução oral</td>
+<td>Pó sol oral</td></tr>
+<tr><td style="white-space:nowrap">18<a name="forma-farmaceutica-cs-18"> </a></td>
+<td>Chá medicinal</td>
+<td>Chá med</td></tr>
+<tr><td style="white-space:nowrap">16<a name="forma-farmaceutica-cs-16"> </a></td>
+<td>Comprimido solúvel</td>
+<td>Comp solúvel</td></tr>
+<tr><td style="white-space:nowrap">10<a name="forma-farmaceutica-cs-10"> </a></td>
+<td>Granulado para suspensão oral</td>
+<td>Pó susp oral</td></tr>
+<tr><td style="white-space:nowrap">99<a name="forma-farmaceutica-cs-99"> </a></td>
+<td>Colódio</td>
+<td>Colódio</td></tr>
+<tr><td style="white-space:nowrap">12<a name="forma-farmaceutica-cs-12"> </a></td>
+<td>Pó e veículo para suspensão oral</td>
+<td>Pó susp oral</td></tr>
+<tr><td style="white-space:nowrap">13<a name="forma-farmaceutica-cs-13"> </a></td>
+<td>Xarope</td>
+<td>Xar</td></tr>
+<tr><td style="white-space:nowrap">95<a name="forma-farmaceutica-cs-95"> </a></td>
+<td>Emulsão cutânea</td>
+<td>Emul cut</td></tr>
+<tr><td style="white-space:nowrap">91<a name="forma-farmaceutica-cs-91"> </a></td>
+<td>Pó para pulverização cutânea</td>
+<td>Pó pulv cut</td></tr>
+<tr><td style="white-space:nowrap">92<a name="forma-farmaceutica-cs-92"> </a></td>
+<td>Solução cutânea</td>
+<td>Sol cut</td></tr>
+<tr><td style="white-space:nowrap">93<a name="forma-farmaceutica-cs-93"> </a></td>
+<td>Concentrado para solução cutânea</td>
+<td>Conc sol cut</td></tr>
+<tr><td style="white-space:nowrap">94<a name="forma-farmaceutica-cs-94"> </a></td>
+<td>Suspensão cutânea</td>
+<td>Susp cut</td></tr>
+<tr><td style="white-space:nowrap">87<a name="forma-farmaceutica-cs-87"> </a></td>
+<td>Espuma cutânea</td>
+<td>Espuma cut</td></tr>
+<tr><td style="white-space:nowrap">88<a name="forma-farmaceutica-cs-88"> </a></td>
+<td>Champô</td>
+<td>Champô</td></tr>
+<tr><td style="white-space:nowrap">89<a name="forma-farmaceutica-cs-89"> </a></td>
+<td>Solução para pulverização cutânea</td>
+<td>Sol pulv cut</td></tr>
+<tr><td style="white-space:nowrap">84<a name="forma-farmaceutica-cs-84"> </a></td>
+<td>Gel</td>
+<td>Gel</td></tr>
+<tr><td style="white-space:nowrap">90<a name="forma-farmaceutica-cs-90"> </a></td>
+<td>Suspensão para pulverização cutânea</td>
+<td>Susp pulv cut</td></tr>
+<tr><td style="white-space:nowrap">83<a name="forma-farmaceutica-cs-83"> </a></td>
+<td>Creme</td>
+<td>Cr</td></tr>
+<tr><td style="white-space:nowrap">86<a name="forma-farmaceutica-cs-86"> </a></td>
+<td>Pasta cutânea</td>
+<td>Pasta cut</td></tr>
+<tr><td style="white-space:nowrap">82<a name="forma-farmaceutica-cs-82"> </a></td>
+<td>Aditivo para banho</td>
+<td>Aditivo banho</td></tr>
+<tr><td style="white-space:nowrap">75<a name="forma-farmaceutica-cs-75"> </a></td>
+<td>Gel dental</td>
+<td>Gel dental</td></tr>
+<tr><td style="white-space:nowrap">76<a name="forma-farmaceutica-cs-76"> </a></td>
+<td>Lápis dental</td>
+<td>Lápis dental</td></tr>
+<tr><td style="white-space:nowrap">68<a name="forma-farmaceutica-cs-68"> </a></td>
+<td>Gel gengival</td>
+<td>Gel gengiv</td></tr>
+<tr><td style="white-space:nowrap">77<a name="forma-farmaceutica-cs-77"> </a></td>
+<td>Pó dental</td>
+<td>Pó dental</td></tr>
+<tr><td style="white-space:nowrap">74<a name="forma-farmaceutica-cs-74"> </a></td>
+<td>Pastilha</td>
+<td>Pastilha</td></tr>
+<tr><td style="white-space:nowrap">85<a name="forma-farmaceutica-cs-85"> </a></td>
+<td>Pomada</td>
+<td>Pom</td></tr>
+<tr><td style="white-space:nowrap">81<a name="forma-farmaceutica-cs-81"> </a></td>
+<td>Pasta dentífrica</td>
+<td>Pasta dent</td></tr>
+<tr><td style="white-space:nowrap">79<a name="forma-farmaceutica-cs-79"> </a></td>
+<td>Suspensão dental</td>
+<td>Susp dental</td></tr>
+<tr><td style="white-space:nowrap">69<a name="forma-farmaceutica-cs-69"> </a></td>
+<td>Pasta gengival</td>
+<td>Pasta gengiv</td></tr>
+<tr><td style="white-space:nowrap">73<a name="forma-farmaceutica-cs-73"> </a></td>
+<td>Comprimido bucal</td>
+<td>Comp bucal</td></tr>
+<tr><td style="white-space:nowrap">70<a name="forma-farmaceutica-cs-70"> </a></td>
+<td>Cápsula bucal</td>
+<td>Cáps bucal</td></tr>
+<tr><td style="white-space:nowrap">78<a name="forma-farmaceutica-cs-78"> </a></td>
+<td>Solução dental</td>
+<td>Sol dental</td></tr>
+<tr><td style="white-space:nowrap">71<a name="forma-farmaceutica-cs-71"> </a></td>
+<td>Comprimido sublingual</td>
+<td>Comp subling</td></tr>
+<tr><td style="white-space:nowrap">80<a name="forma-farmaceutica-cs-80"> </a></td>
+<td>Emulsão dental</td>
+<td>Emulsão dental</td></tr>
+<tr><td style="white-space:nowrap">72<a name="forma-farmaceutica-cs-72"> </a></td>
+<td>Comprimido bucal mucoadesivo</td>
+<td>Comp bucal mucoad</td></tr>
+<tr><td style="white-space:nowrap">64<a name="forma-farmaceutica-cs-64"> </a></td>
+<td>Solução gengival</td>
+<td>Sol gengiv</td></tr>
+<tr><td style="white-space:nowrap">66<a name="forma-farmaceutica-cs-66"> </a></td>
+<td>Pasta bucal</td>
+<td>Pasta bucal</td></tr>
+<tr><td style="white-space:nowrap">67<a name="forma-farmaceutica-cs-67"> </a></td>
+<td>Goma para mascar medicamentosa</td>
+<td>Pastilha</td></tr>
+<tr><td style="white-space:nowrap">65<a name="forma-farmaceutica-cs-65"> </a></td>
+<td>Gel bucal</td>
+<td>Gel bucal</td></tr>
+<tr><td style="white-space:nowrap">59<a name="forma-farmaceutica-cs-59"> </a></td>
+<td>Gotas bucais</td>
+<td>Gotas bucais</td></tr>
+<tr><td style="white-space:nowrap">60<a name="forma-farmaceutica-cs-60"> </a></td>
+<td>Solução para pulverização bucal</td>
+<td>Sol pulv bucal</td></tr>
+<tr><td style="white-space:nowrap">61<a name="forma-farmaceutica-cs-61"> </a></td>
+<td>Preparação para pulverização sublingual</td>
+<td>Prep pulv subling</td></tr>
+<tr><td style="white-space:nowrap">63<a name="forma-farmaceutica-cs-63"> </a></td>
+<td>Comprimido para solução para lavagem da boca</td>
+<td>Comprimido para solução para lavagem da boca</td></tr>
+<tr><td style="white-space:nowrap">62<a name="forma-farmaceutica-cs-62"> </a></td>
+<td>Solução para lavagem da boca</td>
+<td>Sol lav boca</td></tr>
+<tr><td style="white-space:nowrap">55<a name="forma-farmaceutica-cs-55"> </a></td>
+<td>Pó para solução para gargarejar</td>
+<td>Pó para solução para gargarejar</td></tr>
+<tr><td style="white-space:nowrap">57<a name="forma-farmaceutica-cs-57"> </a></td>
+<td>Solução bucal</td>
+<td>Sol bucal</td></tr>
+<tr><td style="white-space:nowrap">56<a name="forma-farmaceutica-cs-56"> </a></td>
+<td>Comprimido para solução para gargarejar</td>
+<td>Comprimido para solução para gargarejar</td></tr>
+<tr><td style="white-space:nowrap">58<a name="forma-farmaceutica-cs-58"> </a></td>
+<td>Suspensão bucal</td>
+<td>Suspensão bucal</td></tr>
+<tr><td style="white-space:nowrap">47<a name="forma-farmaceutica-cs-47"> </a></td>
+<td>Grânulos</td>
+<td>Grânulos</td></tr>
+<tr><td style="white-space:nowrap">46<a name="forma-farmaceutica-cs-46"> </a></td>
+<td>Goma oral</td>
+<td>Goma oral</td></tr>
+<tr><td style="white-space:nowrap">53<a name="forma-farmaceutica-cs-53"> </a></td>
+<td>Solução para gargarejar</td>
+<td>Sol garg</td></tr>
+<tr><td style="white-space:nowrap">54<a name="forma-farmaceutica-cs-54"> </a></td>
+<td>Concentrado para solução para gargarejar</td>
+<td>Conc sol garg</td></tr>
+<tr><td style="white-space:nowrap">14<a name="forma-farmaceutica-cs-14"> </a></td>
+<td>Pó para xarope</td>
+<td>Pó para xarope</td></tr>
+<tr><td style="white-space:nowrap">1<a name="forma-farmaceutica-cs-1"> </a></td>
+<td>Gotas orais, solução</td>
+<td>Sol oral</td></tr>
+<tr><td style="white-space:nowrap">161<a name="forma-farmaceutica-cs-161"> </a></td>
+<td>Espuma vaginal</td>
+<td>Espuma vag</td></tr>
+<tr><td style="white-space:nowrap">160<a name="forma-farmaceutica-cs-160"> </a></td>
+<td>Pomada vaginal</td>
+<td>Pom vag</td></tr>
+<tr><td style="white-space:nowrap">2<a name="forma-farmaceutica-cs-2"> </a></td>
+<td>Gotas orais, suspensão</td>
+<td>Susp oral</td></tr>
+<tr><td style="white-space:nowrap">3<a name="forma-farmaceutica-cs-3"> </a></td>
+<td>Gotas orais, emulsão</td>
+<td>Emul oral</td></tr>
+<tr><td style="white-space:nowrap">4<a name="forma-farmaceutica-cs-4"> </a></td>
+<td>Solução oral</td>
+<td>Sol oral</td></tr>
+<tr><td style="white-space:nowrap">165<a name="forma-farmaceutica-cs-165"> </a></td>
+<td>Comprimido para solução vaginal</td>
+<td>Comprimido para solução vaginal</td></tr>
+<tr><td style="white-space:nowrap">159<a name="forma-farmaceutica-cs-159"> </a></td>
+<td>Gel vaginal</td>
+<td>Gel vag</td></tr>
+<tr><td style="white-space:nowrap">7<a name="forma-farmaceutica-cs-7"> </a></td>
+<td>Pó para solução oral</td>
+<td>Pó sol oral</td></tr>
+<tr><td style="white-space:nowrap">156<a name="forma-farmaceutica-cs-156"> </a></td>
+<td>Solução para lavagem nasal</td>
+<td>Sol lav nas</td></tr>
+<tr><td style="white-space:nowrap">158<a name="forma-farmaceutica-cs-158"> </a></td>
+<td>Creme vaginal</td>
+<td>Cr vag</td></tr>
+<tr><td style="white-space:nowrap">152<a name="forma-farmaceutica-cs-152"> </a></td>
+<td>Pó nasal</td>
+<td>Pó nas</td></tr>
+<tr><td style="white-space:nowrap">6<a name="forma-farmaceutica-cs-6"> </a></td>
+<td>Emulsão oral</td>
+<td>Emul oral</td></tr>
+<tr><td style="white-space:nowrap">162<a name="forma-farmaceutica-cs-162"> </a></td>
+<td>Solução vaginal</td>
+<td>Sol vag</td></tr>
+<tr><td style="white-space:nowrap">154<a name="forma-farmaceutica-cs-154"> </a></td>
+<td>Suspensão para pulverização nasal</td>
+<td>Susp pulv nas</td></tr>
+<tr><td style="white-space:nowrap">5<a name="forma-farmaceutica-cs-5"> </a></td>
+<td>Suspensão oral</td>
+<td>Susp oral</td></tr>
+<tr><td style="white-space:nowrap">155<a name="forma-farmaceutica-cs-155"> </a></td>
+<td>Emulsão para pulverização nasal</td>
+<td>Emulsão para pulverização nasal</td></tr>
+<tr><td style="white-space:nowrap">150<a name="forma-farmaceutica-cs-150"> </a></td>
+<td>Gotas nasais, suspensão</td>
+<td>Got nas, susp</td></tr>
+<tr><td style="white-space:nowrap">153<a name="forma-farmaceutica-cs-153"> </a></td>
+<td>Solução para pulverização nasal</td>
+<td>Sol pulv nas</td></tr>
+<tr><td style="white-space:nowrap">151<a name="forma-farmaceutica-cs-151"> </a></td>
+<td>Gotas nasais, emulsão</td>
+<td>Gotas nasais, emulsão</td></tr>
+<tr><td style="white-space:nowrap">149<a name="forma-farmaceutica-cs-149"> </a></td>
+<td>Gotas nasais, solução</td>
+<td>Got nas, sol</td></tr>
+<tr><td style="white-space:nowrap">157<a name="forma-farmaceutica-cs-157"> </a></td>
+<td>Lápis nasal</td>
+<td>Lápis nasal</td></tr>
+<tr><td style="white-space:nowrap">146<a name="forma-farmaceutica-cs-146"> </a></td>
+<td>Creme nasal</td>
+<td>Creme nasal</td></tr>
+<tr><td style="white-space:nowrap">148<a name="forma-farmaceutica-cs-148"> </a></td>
+<td>Pomada nasal</td>
+<td>Pom nas</td></tr>
+<tr><td style="white-space:nowrap">145<a name="forma-farmaceutica-cs-145"> </a></td>
+<td>Lápis auricular</td>
+<td>Lápis auricular</td></tr>
+<tr><td style="white-space:nowrap">147<a name="forma-farmaceutica-cs-147"> </a></td>
+<td>Gel nasal</td>
+<td>Gel nas</td></tr>
+<tr><td style="white-space:nowrap">141<a name="forma-farmaceutica-cs-141"> </a></td>
+<td>Emulsão para pulverização auricular</td>
+<td>Emul pulv aur</td></tr>
+<tr><td style="white-space:nowrap">142<a name="forma-farmaceutica-cs-142"> </a></td>
+<td>Solução para lavagem auricular</td>
+<td>Sol lav aur</td></tr>
+<tr><td style="white-space:nowrap">143<a name="forma-farmaceutica-cs-143"> </a></td>
+<td>Emulsão para lavagem auricular</td>
+<td>Emulsão para lavagem auricular</td></tr>
+<tr><td style="white-space:nowrap">144<a name="forma-farmaceutica-cs-144"> </a></td>
+<td>Tampão auricular</td>
+<td>Tampão auricular</td></tr>
+<tr><td style="white-space:nowrap">140<a name="forma-farmaceutica-cs-140"> </a></td>
+<td>Suspensão para pulverização auricular</td>
+<td>Suspensão para pulverização auricular</td></tr>
+<tr><td style="white-space:nowrap">136<a name="forma-farmaceutica-cs-136"> </a></td>
+<td>Gotas auriculares, suspensão</td>
+<td>Got aur susp</td></tr>
+<tr><td style="white-space:nowrap">137<a name="forma-farmaceutica-cs-137"> </a></td>
+<td>Gotas auriculares, emulsão</td>
+<td>Gotas auriculares, emulsão</td></tr>
+<tr><td style="white-space:nowrap">138<a name="forma-farmaceutica-cs-138"> </a></td>
+<td>Pó auricular</td>
+<td>Pó auricular</td></tr>
+<tr><td style="white-space:nowrap">41<a name="forma-farmaceutica-cs-41"> </a></td>
+<td>Liofilizado oral</td>
+<td>Liof oral</td></tr>
+<tr><td style="white-space:nowrap">139<a name="forma-farmaceutica-cs-139"> </a></td>
+<td>Solução para pulverização auricular</td>
+<td>Sol pulv aur</td></tr>
+<tr><td style="white-space:nowrap">42<a name="forma-farmaceutica-cs-42"> </a></td>
+<td>Comprimido gastrorresistente</td>
+<td>Comp GR</td></tr>
+<tr><td style="white-space:nowrap">43<a name="forma-farmaceutica-cs-43"> </a></td>
+<td>Comprimido de libertação prolongada</td>
+<td>Comp LP</td></tr>
+<tr><td style="white-space:nowrap">45<a name="forma-farmaceutica-cs-45"> </a></td>
+<td>Comprimido para mastigar</td>
+<td>Comp mast</td></tr>
+<tr><td style="white-space:nowrap">44<a name="forma-farmaceutica-cs-44"> </a></td>
+<td>Comprimido de libertação modificada</td>
+<td>Comp LM</td></tr>
+<tr><td style="white-space:nowrap">38<a name="forma-farmaceutica-cs-38"> </a></td>
+<td>Comprimido revestido</td>
+<td>Comp</td></tr>
+<tr><td style="white-space:nowrap">39<a name="forma-farmaceutica-cs-39"> </a></td>
+<td>Comprimido revestido por película</td>
+<td>Comp</td></tr>
+<tr><td style="white-space:nowrap">40<a name="forma-farmaceutica-cs-40"> </a></td>
+<td>Comprimido efervescente</td>
+<td>Comp eferv</td></tr>
+<tr><td style="white-space:nowrap">32<a name="forma-farmaceutica-cs-32"> </a></td>
+<td>Cápsula mole gastrorresistente</td>
+<td>Cáps GR</td></tr>
+<tr><td style="white-space:nowrap">33<a name="forma-farmaceutica-cs-33"> </a></td>
+<td>Cápsula de libertação prolongada</td>
+<td>Cáps LP</td></tr>
+<tr><td style="white-space:nowrap">34<a name="forma-farmaceutica-cs-34"> </a></td>
+<td>Cápsula mole de libertação prolongada</td>
+<td>Cáps LP</td></tr>
+<tr><td style="white-space:nowrap">35<a name="forma-farmaceutica-cs-35"> </a></td>
+<td>Cápsula de libertação modificada</td>
+<td>Cáps LM</td></tr>
+<tr><td style="white-space:nowrap">36<a name="forma-farmaceutica-cs-36"> </a></td>
+<td>Cápsula mole de libertação modificada</td>
+<td>Cáps LM</td></tr>
+<tr><td style="white-space:nowrap">28<a name="forma-farmaceutica-cs-28"> </a></td>
+<td>Hóstia</td>
+<td>Hóstia</td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.pt">HL7 Portugal</a>.  Package my-ig#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, Apr 20, 2026 09:10+0000">2026-04-20</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
