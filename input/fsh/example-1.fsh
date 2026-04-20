@@ -1,7 +1,7 @@
 
 Instance: LorazepamBluepharma05mg
 InstanceOf: MedicationKnowledgePDH
-Description: "Example of MedicationKnowledge resource for drug ingredients"
+Description: "Example of MedicationKnowledge resource for Lorazepam Bluepharma 0,5 mg"
 
 
 * code = http://infarmed.pt/medicamentos#672984 "Lorazepam Bluepharma 0,5 mg [N05BA06]"
@@ -168,21 +168,17 @@ Description: "Example of MedicationKnowledge resource for drug ingredients"
 
 
 Instance: LorazepamBluepharma05mg-CUD
-InstanceOf: ClinicalUseDefinition
+InstanceOf: ContraIndicacoesPDH
 Description: "Example of Contraindication"
 
-
-* type = #contraindication
 
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Miastenia grave"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#237600008 "Myasthenia gravis (disorder)"
 
 Instance: LorazepamBluepharma05mg-CUD1
-InstanceOf: ClinicalUseDefinition
+InstanceOf: IndicacoesPDH
 Description: "Example of Indication"
 
-
-* type = #indication
 
 * indication.diseaseSymptomProcedure[0].concept.text = "Treatment of anxiety, tension and agitation"
 * indication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#386661006 "Anxiety disorder (disorder)"
@@ -193,11 +189,9 @@ Description: "Example of Indication"
 //* indication.diseaseSymptomProcedure[4].concept.text = "Post-operative use"
 
 Instance: LorazepamBluepharma05mg-CUD2 //mudar isto para generico e fazer referencia no med - reutlizar
-InstanceOf: ClinicalUseDefinition
+InstanceOf: InteracoesPDH
 Description: "Example of interaction"
 
-
-* type = #interaction
 
 * interaction.interactant[0].itemCodeableConcept.text = "Opioids"
 * interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#373873005 "Opioid analgesic (substance)"

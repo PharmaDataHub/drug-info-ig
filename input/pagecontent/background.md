@@ -218,6 +218,7 @@ O mapeamento é idêntico ao **PRF-031**, acrescendo:
 |---|---|---|
 | `clinicalUseIssue` (IndicacoesPDH) | MedicationKnowledge.clinicalUseIssue → ClinicalUseDefinition (type=indication) | Indicações aprovadas do medicamento |
 | `indication.diseaseSymptomProcedure` | ClinicalUseDefinition.indication.diseaseSymptomProcedure | Condição/doença indicada |
+| `indication.duration[x]` | ClinicalUseDefinition.indication.duration[x] | Duração da indicação terapêutica |
 | `code` | MedicationKnowledge.code | Identificação do medicamento |
 
 **[EM_FALTA]:**
@@ -228,7 +229,6 @@ O mapeamento é idêntico ao **PRF-031**, acrescendo:
 <tr><td>Estado da doença (indicação)</td><td>[EM_FALTA] no perfil IndicacoesPDH</td><td>PDH</td></tr>
 <tr><td>Comorbilidade (indicação)</td><td>[EM_FALTA] no perfil IndicacoesPDH</td><td>PDH</td></tr>
 <tr><td>Efeito pretendido</td><td>[EM_FALTA] no perfil IndicacoesPDH</td><td>PDH</td></tr>
-<tr><td>Duração da indicação</td><td>[EM_FALTA] no perfil IndicacoesPDH</td><td>PDH</td></tr>
 <tr><td>Indicador explícito de "off-label"</td><td>Não existe elemento nativo no FHIR</td><td>PDH</td></tr>
 <tr><td>Indicador de "indicação em falta"</td><td>Não existe elemento nativo no FHIR</td><td>PDH</td></tr>
 <tr><td>Condições clínicas do doente</td><td>Para comparação com indicações</td><td>HSC</td></tr>
@@ -284,6 +284,8 @@ O mapeamento é idêntico ao **PRF-031**, acrescendo:
 | `interaction.interactant` | ClinicalUseDefinition.interaction.interactant | Substância/fármaco interagente |
 | `interaction.type` | ClinicalUseDefinition.interaction.type | Tipo de interação |
 | `interaction.effect` | ClinicalUseDefinition.interaction.effect | Efeito da interação |
+| `interaction.incidence` | ClinicalUseDefinition.interaction.incidence | Incidência da interação |
+| `interaction.management` | ClinicalUseDefinition.interaction.management | Gestão/recomendação clínica da interação |
 | `indicationGuideline.indication` | MedicationKnowledge.indicationGuideline.indication | Duração recomendada do tratamento |
 | `indicationGuideline.dosingGuideline.dosage` | .dosage | Posologia recomendada |
 
@@ -293,8 +295,6 @@ O mapeamento é idêntico ao **PRF-031**, acrescendo:
 <thead><tr><th>Elemento</th><th>Notas</th><th>Owner</th></tr></thead>
 <tbody>
 <tr><td>Eventos adversos</td><td>[EM_FALTA] perfil para efeitos indesejáveis</td><td>PDH</td></tr>
-<tr><td>Interação — incidência</td><td>[EM_FALTA] no perfil InteracoesPDH</td><td>PDH</td></tr>
-<tr><td>Interação — gestão</td><td>[EM_FALTA] no perfil InteracoesPDH</td><td>PDH</td></tr>
 <tr><td>Propriedades farmacodinâmicas</td><td>[EM_FALTA] no perfil (ex.: atividade anticolinérgica)</td><td>PDH</td></tr>
 </tbody>
 </table>
@@ -372,12 +372,9 @@ Os seguintes elementos dos perfis derivados de ClinicalUseDefinition ainda neces
 <tbody>
 <tr><td>indication.diseaseStatus</td><td>IndicacoesPDH</td><td>PRF-028, PRF-030</td><td>PDH</td></tr>
 <tr><td>indication.intendedEffect</td><td>IndicacoesPDH</td><td>PRF-030</td><td>PDH</td></tr>
-<tr><td>indication.duration[x]</td><td>IndicacoesPDH</td><td>PRF-030</td><td>PDH</td></tr>
 <tr><td>contraindication.diseaseStatus</td><td>ContraIndicacoesPDH</td><td>PRF-028, PRF-029</td><td>PDH</td></tr>
 <tr><td>contraindication.otherTherapy.relationshipType</td><td>ContraIndicacoesPDH</td><td>PRF-029</td><td>PDH</td></tr>
 <tr><td>contraindication.otherTherapy.treatment</td><td>ContraIndicacoesPDH</td><td>PRF-029</td><td>PDH</td></tr>
-<tr><td>interaction.incidence</td><td>InteracoesPDH</td><td>FR-041</td><td>PDH</td></tr>
-<tr><td>interaction.management</td><td>InteracoesPDH</td><td>FR-041</td><td>PDH</td></tr>
 </tbody>
 </table>
 

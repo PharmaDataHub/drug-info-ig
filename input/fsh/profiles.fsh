@@ -2,8 +2,8 @@
 //errors related to dose/strength, form, frequency, timing/schedule, and administration route. 
 Profile: MedicationKnowledgePDH
 Parent: MedicationKnowledge
-Title: "Perfil do recurso MedicationKnowledge para os ingredientes dos produtos"
-Description: "Perfil do recurso MedicationKnowledge para os ingredientes dos produtos"
+Title: "Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento"
+Description: "Perfil do recurso MedicationKnowledge para os ingredientes dos produtos, indicações, dosagem, forma farmacêutica, via de administração, e outras informações relevantes para o uso seguro e eficaz dos medicamentos."
 
 * definitional.ingredient ^short = "Ingredientes dos produtos"
 * definitional.ingredient ^definition = "Lista de ingredientes dos produtos, incluindo a substância ativa e os excipientes, com suas respectivas quantidades e unidades de medida."
@@ -62,21 +62,32 @@ Description: "Perfil do recurso MedicationKnowledge para os ingredientes dos pro
 
 Profile: InteracoesPDH
 Parent: ClinicalUseDefinition
-Title: "Perfil do recurso MedicationKnowledge para os ingredientes dos produtos"
-Description: "Perfil do recurso MedicationKnowledge para os ingredientes dos produtos"
+Title: "Perfil do recurso para interações de medicação"
+Description: "Perfil do recurso para interações de medicação"
+
 
 * type = #interaction
+* interaction 1..1
+* interaction.type 1..1 
+* interaction.type from http://hl7.org/fhir/interaction-type (required)
+* interaction.incidence MS
+* interaction.management MS
+
 
 Profile: IndicacoesPDH
 Parent: ClinicalUseDefinition
-Title: "Perfil do recurso MedicationKnowledge para os ingredientes dos produtos"
-Description: "Perfil do recurso MedicationKnowledge para os ingredientes dos produtos"
+Title: "Perfil do recurso para indicações de medicação"
+Description: "Perfil do recurso para indicações de medicação"
 
 * type = #indication
+* indication 1..1
+* indication.duration[x] MS
+
 
 Profile: ContraIndicacoesPDH
 Parent: ClinicalUseDefinition
-Title: "Perfil do recurso MedicationKnowledge para os ingredientes dos produtos"
-Description: "Perfil do recurso MedicationKnowledge para os ingredientes dos produtos"
+Title: "Perfil do recurso para contraindicações de medicação"
+Description: "Perfil do recurso para contraindicações de medicação"
 
 * type = #contraindication
+* contraindication 1..1
