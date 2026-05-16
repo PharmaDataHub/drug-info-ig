@@ -28,7 +28,6 @@ Este documento apresenta o mapeamento dos requisitos funcionais (extraídos da e
 <tbody>
 <tr><td>Alergias do doente</td><td>Registo de alergias do utilizador</td><td>HSC</td></tr>
 <tr><td>Medicação ativa</td><td>Lista de medicação ativa</td><td>HSC</td></tr>
-<tr><td>Indicador alergénico</td><td>Flag que indica se o ingrediente é alergénico (propriedade do recurso Ingredient)</td><td>PDH</td></tr>
 </tbody>
 </table>
 
@@ -193,7 +192,7 @@ O mapeamento é idêntico ao **PRF-031**, acrescendo:
 |---|---|---|
 | `clinicalUseIssue` (ContraIndicacoesPDH) | MedicationKnowledge.clinicalUseIssue → ClinicalUseDefinition (type=contraindication) | Contraindicações do medicamento |
 | `contraindication.diseaseSymptomProcedure` | ClinicalUseDefinition.contraindication.diseaseSymptomProcedure | Condição/doença contraindicada |
-| `contraindication.comorbidity` | ClinicalUseDefinition.contraindication.comorbidity | Comorbilidade associada à contraindicação |
+| `contraindication.comorbidity` | ClinicalUseDefinition.contraindication.comorbidity | Potencial de usar para comorbilidade associada à contraindicação |
 | `code` | MedicationKnowledge.code | Identificação do medicamento |
 
 **[EM_FALTA]:**
@@ -201,9 +200,6 @@ O mapeamento é idêntico ao **PRF-031**, acrescendo:
 <table class="em-falta">
 <thead><tr><th>Elemento</th><th>Notas</th><th>Owner</th></tr></thead>
 <tbody>
-<tr><td>Estado da doença (contraindicação)</td><td>[EM_FALTA] no perfil ContraIndicacoesPDH</td><td>PDH</td></tr>
-<tr><td>Outra terapia — relação</td><td>[EM_FALTA] no perfil ContraIndicacoesPDH</td><td>PDH</td></tr>
-<tr><td>Outra terapia — tratamento</td><td>[EM_FALTA] no perfil ContraIndicacoesPDH</td><td>PDH</td></tr>
 <tr><td>Condições clínicas do doente</td><td>Para cruzamento com contraindicações</td><td>HSC</td></tr>
 </tbody>
 </table>
@@ -229,7 +225,6 @@ O mapeamento é idêntico ao **PRF-031**, acrescendo:
 <tr><td>Estado da doença (indicação)</td><td>[EM_FALTA] no perfil IndicacoesPDH</td><td>PDH</td></tr>
 <tr><td>Comorbilidade (indicação)</td><td>[EM_FALTA] no perfil IndicacoesPDH</td><td>PDH</td></tr>
 <tr><td>Efeito pretendido</td><td>[EM_FALTA] no perfil IndicacoesPDH</td><td>PDH</td></tr>
-<tr><td>Indicador explícito de "off-label"</td><td>Não existe elemento nativo no FHIR</td><td>PDH</td></tr>
 <tr><td>Indicador de "indicação em falta"</td><td>Não existe elemento nativo no FHIR</td><td>PDH</td></tr>
 <tr><td>Condições clínicas do doente</td><td>Para comparação com indicações</td><td>HSC</td></tr>
 </tbody>
@@ -383,7 +378,6 @@ Os seguintes elementos dos perfis derivados de ClinicalUseDefinition ainda neces
 <table class="em-falta">
 <thead><tr><th>Necessidade</th><th>Requisitos</th><th>Notas</th><th>Owner</th></tr></thead>
 <tbody>
-<tr><td>Indicador de "off-label"</td><td>PRF-030</td><td>Não existe elemento nativo no FHIR</td><td>PDH</td></tr>
 <tr><td>Indicador de "indicação em falta"</td><td>PRF-030</td><td>Não existe elemento nativo no FHIR</td><td>PDH</td></tr>
 <tr><td>Efeitos indesejáveis (perfil)</td><td>FR-041</td><td>Falta perfil ClinicalUseDefinition (type=undesirable-effect)</td><td>PDH</td></tr>
 </tbody>

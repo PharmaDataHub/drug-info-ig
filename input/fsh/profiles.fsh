@@ -55,6 +55,8 @@ Description: "Perfil do recurso MedicationKnowledge para os ingredientes dos pro
 * indicationGuideline.dosingGuideline.dosage.dosage.timing MS
 * indicationGuideline.dosingGuideline.dosage.dosage.doseAndRate MS
 * indicationGuideline.dosingGuideline.dosage.dosage.maxDosePerPeriod MS
+* indicationGuideline.dosingGuideline.dosage.dosage.maxDosePerAdministration MS
+
 * indicationGuideline.dosingGuideline.patientCharacteristic MS
 
 * indicationGuideline.dosingGuideline.dosage.type from DosageTypeVS (required) //mudar

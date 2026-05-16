@@ -34,12 +34,7 @@ Description: "Defines the semantic type of dosage instructions or constraints."
 * ^status = #active
 * ^content = #complete
 
-* #single-dose "Single Dose"
-* #daily-dose "Daily Dose"
 * #divided-dose "Divided Dose"
-* #maximum-single-dose "Maximum Single Dose"
-* #maximum-daily-dose "Maximum Daily Dose"
-* #maximum-dose-per-period "Maximum Dose per Period"
 * #maximum-treatment-duration "Maximum Treatment Duration"
 * #minimum-dose "Minimum Dose"
 * #titration-dose "Titration Dose"

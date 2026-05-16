@@ -62,7 +62,6 @@ Description: "Example of MedicationKnowledge resource for Lorazepam Bluepharma 0
 
 * indicationGuideline[0].dosingGuideline[0].dosage.dosage.maxDosePerPeriod.numerator = 2.5 'mg' "milligram"
 * indicationGuideline[0].dosingGuideline[0].dosage.dosage.maxDosePerPeriod.denominator = 1 'd' "day"
-* indicationGuideline[0].dosingGuideline[0].dosage.type = DosageTypeCS#maximum-single-dose "Maximum Single Dose"
 
 
 * indicationGuideline[0].dosingGuideline[0].patientCharacteristic[0].type.text = "Population"
