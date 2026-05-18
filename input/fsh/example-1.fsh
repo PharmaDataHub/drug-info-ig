@@ -4,7 +4,7 @@ InstanceOf: MedicationKnowledgePDH
 Description: "Example of MedicationKnowledge resource for Lorazepam Bluepharma 0,5 mg"
 
 
-* code = http://infarmed.pt/medicamentos#672984 "Lorazepam Bluepharma 0,5 mg [N05BA06]"
+* code = http://infarmed.pt/medicamentos/prod_id#672984 "Lorazepam Bluepharma 0,5 mg [N05BA06]"
 * name = "Lorazepam Bluepharma [Lorazepam] 0,5 mg Comprimido"
 * definitional.ingredient[0].item = http://infarmed.pt/substancia#7612 "Lorazepam"
 * definitional.ingredient[0].type = http://terminology.hl7.org/CodeSystem/v3-RoleClass#ACTI

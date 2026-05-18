@@ -4,7 +4,7 @@ InstanceOf: MedicationKnowledgePDH
 Description: "Example of MedicationKnowledge resource for Cipralex 20 mg/ml Gotas orais, solução"
 
 
-* code = http://infarmed.pt/medicamentos#5049739 "Cipralex 20 mg/ml Gotas orais, solução [N06AB10]"
+* code = http://infarmed.pt/medicamentos/prod_id#5049739 "Cipralex 20 mg/ml Gotas orais, solução [N06AB10]"
 * name = "Cipralex [Escitalopram] 20 mg/ml Gotas orais, solução"
 
 // Active ingredient: Escitalopram 20 mg/ml (equivalent to 25.551 mg escitalopram oxalate)
