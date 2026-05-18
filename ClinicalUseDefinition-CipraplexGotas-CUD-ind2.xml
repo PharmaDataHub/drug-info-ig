@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClinicalUseDefinition xmlns="http://hl7.org/fhir">
+  <id value="CipraplexGotas-CUD-ind2"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ClinicalUseDefinition CipraplexGotas-CUD-ind2</b></p><a name="CipraplexGotas-CUD-ind2"> </a><a name="hcCipraplexGotas-CUD-ind2"> </a><p><b>type</b>: Indication</p><blockquote><p><b>indication</b></p><h3>DiseaseSymptomProcedures</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct [PREENCHER]}">Tratamento de perturbações de pânico com ou sem agorafobia</span></td></tr></table></blockquote></div>
+  </text>
+  <type value="indication"/>
+  <indication>
+    <diseaseSymptomProcedure>
+      <concept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="[PREENCHER]"/>
+          <display value="Panic disorder (disorder)"/>
+        </coding>
+        <text value="Tratamento de perturbações de pânico com ou sem agorafobia"/>
+      </concept>
+    </diseaseSymptomProcedure>
+  </indication>
+</ClinicalUseDefinition>

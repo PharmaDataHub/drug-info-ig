@@ -1,0 +1,238 @@
+{
+  "codeSystems" : [{
+    "url" : "http://example.com/fhir/example/CodeSystem/dosage-type-cs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "DosageTypeCS",
+    "title" : "Dosage Type CodeSystem",
+    "description" : "Defines the semantic type of dosage instructions or constraints.",
+    "uses" : {
+    },
+    "ValueSet-dosage-type-vs.html" : "Dosage Type ValueSet"
+  },
+  {
+    "url" : "http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "FormaFarmaceuticaCS",
+    "title" : "Forma Farmacêutica",
+    "description" : "CodeSystem para formas farmacêuticas baseado na tabela fornecida",
+    "uses" : {
+    },
+    "ValueSet-forma-farmaceutica-vs.html" : "Forma Farmacêutica ValueSet"
+  },
+  {
+    "url" : "http://example.com/fhir/example/CodeSystem/tipo-preco-infarmed-cs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "TipoPrecoINFARMEDCS",
+    "title" : "Tipo de Preço INFARMED",
+    "description" : "CodeSystem para os tipos de preço de medicamentos, baseado na tabela fornecida, incluindo apenas os códigos ativos.",
+    "uses" : {
+    },
+    "ValueSet-tipo-preco-infarmed-vs.html" : "Tipos de Preço INFARMED"
+  },
+  {
+    "url" : "http://example.com/fhir/example/CodeSystem/via-administracao-cs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "ViaAdministracaoCS",
+    "title" : "Via de Administração",
+    "description" : "CodeSystem para vias de administração baseado na tabela fornecida",
+    "uses" : {
+    },
+    "ValueSet-via-administracao-vs.html" : "Via de Administração ValueSet"
+  },
+  {
+    "url" : "http://hl7.org/fhir/CodeSystem/medication-ingredientstrength",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "MedicationIngredientStrengthCodes",
+    "title" : "Medication Ingredient Strength Codes",
+    "description" : "Medication Ingredient Strength Codes",
+    "oids" : ["2.16.840.1.113883.4.642.4.2062"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-medication-ingredientstrength.html" : "Medication Ingredient Strength Codes"
+  },
+  {
+    "url" : "http://hl7.org/fhir/CodeSystem/medicationknowledge-status",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "MedicationKnowledgeStatusCodes",
+    "title" : "MedicationKnowledge Status Codes",
+    "description" : "MedicationKnowledge Status Codes",
+    "oids" : ["2.16.840.1.113883.4.642.4.2067"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-medicationknowledge-status.html" : "MedicationKnowledge Status Codes"
+  },
+  {
+    "url" : "http://hl7.org/fhir/clinical-use-definition-category",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "ClinicalUseDefinitionCategory",
+    "title" : "Clinical Use Definition Category",
+    "description" : "ClinicalUseDefinitionCategory",
+    "oids" : ["2.16.840.1.113883.4.642.4.1993"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-clinical-use-definition-category.html" : "Clinical Use Definition Category"
+  },
+  {
+    "url" : "http://hl7.org/fhir/clinical-use-definition-type",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "ClinicalUseDefinitionType",
+    "title" : "Clinical Use Definition Type",
+    "description" : "Overall defining type of this clinical use definition.",
+    "oids" : ["2.16.840.1.113883.4.642.4.1990"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-clinical-use-definition-type.html" : "Clinical Use Definition Type"
+  },
+  {
+    "url" : "http://hl7.org/fhir/interaction-incidence",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "InteractionIncidence",
+    "title" : "Interaction Incidence",
+    "description" : "A categorisation for a frequency of occurence of an undesirable effect.",
+    "oids" : ["2.16.840.1.113883.4.642.4.1991"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-interaction-incidence.html" : "Interaction Incidence"
+  },
+  {
+    "url" : "http://hl7.org/fhir/interaction-type",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "InteractionType",
+    "title" : "Interaction Type",
+    "description" : "A categorisation for an interaction between two substances.",
+    "oids" : ["2.16.840.1.113883.4.642.4.1992"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-interaction-type.html" : "Interaction Type"
+  },
+  {
+    "url" : "http://hl7.org/fhir/medication-cost-category",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "MedicationCostCategoryCodes",
+    "title" : "Medication Cost Category Codes",
+    "description" : "Medication Cost Category Codes",
+    "oids" : ["2.16.840.1.113883.4.642.4.2068"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-medication-cost-category.html" : "Medication Cost Category Codes"
+  },
+  {
+    "url" : "http://hl7.org/fhir/product-intended-use",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "ProductIntendedUse",
+    "title" : "Product Intended Use",
+    "description" : "ProductIntendedUse",
+    "oids" : ["2.16.840.1.113883.4.642.4.1908"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-product-intended-use.html" : "Product Intended Use"
+  },
+  {
+    "url" : "http://hl7.org/fhir/publication-status",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "PublicationStatus",
+    "title" : "PublicationStatus",
+    "description" : "The lifecycle status of an artifact.",
+    "oids" : ["2.16.840.1.113883.4.642.4.4"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-publication-status.html" : "PublicationStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/quantity-comparator",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "QuantityComparator",
+    "title" : "QuantityComparator",
+    "description" : "How the Quantity should be understood and represented.",
+    "oids" : ["2.16.840.1.113883.4.642.4.60"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-quantity-comparator.html" : "QuantityComparator"
+  },
+  {
+    "url" : "http://hl7.org/fhir/therapy-relationship-type",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "TherapyRelationshipType",
+    "title" : "Therapy Relationship Type",
+    "description" : "Classification of relationship between a therapy and a contraindication or an indication.",
+    "oids" : ["2.16.840.1.113883.4.642.4.1994"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-therapy-relationship-type.html" : "Therapy Relationship Type"
+  },
+  {
+    "url" : "http://hl7.org/fhir/undesirable-effect-frequency",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "UndesirablEffectFrequency",
+    "title" : "Undesirabl Effect Frequency",
+    "description" : "A categorisation for a frequency of occurence of an undesirable effect.",
+    "oids" : ["2.16.840.1.113883.4.642.4.1995"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-undesirable-effect-frequency.html" : "Undesirabl Effect Frequency"
+  },
+  {
+    "url" : "http://hl7.org/fhir/warning-type",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "WarningType",
+    "title" : "Warning Type",
+    "description" : "Classification of warning type.",
+    "oids" : ["2.16.840.1.113883.4.642.4.1996"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-warning-type.html" : "Warning Type"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/dose-rate-type",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "DoseAndRateType",
+    "title" : "DoseAndRateType",
+    "description" : "The kind of dose or rate specified.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1069"],
+    "uses" : {
+    },
+    "http://terminology.hl7.org/7.1.0/ValueSet-dose-rate-type.html" : "DoseAndRateType"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/medicationknowledge-characteristic",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "MedicationKnowledgeCharacteristicCodes",
+    "title" : "MedicationKnowledge Characteristic Codes",
+    "description" : "MedicationKnowledge Characteristic Codes",
+    "oids" : ["2.16.840.1.113883.4.642.1.1338"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-medicationknowledge-characteristic.html" : "medicationKnowledge Characteristic Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "RoleClass",
+    "title" : "RoleClass",
+    "description" : "Codes for the Role class hierarchy. The values in this hierarchy, represent a Role which is an association or relationship between two entities - the entity that plays the role and the entity that scopes the role. Roles names are derived from the name of the playing entity in that role.\r\n\r\nThe role hierarchy stems from three core concepts, or abstract domains:\r\n\r\n *  **RoleClassOntological** is an abstract domain that collects roles in which the playing entity is defined or specified by the scoping entity.\r\n *  **RoleClassPartitive** collects roles in which the playing entity is in some sense a \"part\" of the scoping entity.\r\n *  **RoleClassAssociative** collects all of the remaining forms of association between the playing entity and the scoping entity. This set of roles is further partitioned between:\r\n    \r\n     *  **RoleClassPassive** which are roles in which the playing entity is used, known, treated, handled, built, or destroyed, etc. under the auspices of the scoping entity. The playing entity is passive in these roles in that the role exists without an agreement from the playing entity.\r\n     *  **RoleClassMutualRelationship** which are relationships based on mutual behavior of the two entities. The basis of these relationship may be formal agreements or they may be *de facto* behavior. Thus, this sub-domain is further divided into:\r\n        \r\n         *  **RoleClassRelationshipFormal** in which the relationship is formally defined, frequently by a contract or agreement.\r\n         *  **Personal relationship** which inks two people in a personal relationship.\r\n\r\nThe hierarchy discussed above is represented In the current vocabulary tables as a set of abstract domains, with the exception of the \"Personal relationship\" which is a leaf concept.\r\n\r\n*OpenIssue:* Description copied from Concept Domain of same name. Must be verified.",
+    "oids" : ["2.16.840.1.113883.5.110"],
+    "uses" : {
+    },
+    "http://terminology.hl7.org/7.1.0/ValueSet-v3-RoleClassIngredientEntity.html" : "RoleClassIngredientEntity"
+  }]
+}

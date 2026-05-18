@@ -1,0 +1,21 @@
+{
+  "resourceType" : "ClinicalUseDefinition",
+  "id" : "CipraplexGotas-CUD-contra1",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ClinicalUseDefinition CipraplexGotas-CUD-contra1</b></p><a name=\"CipraplexGotas-CUD-contra1\"> </a><a name=\"hcCipraplexGotas-CUD-contra1\"> </a><p><b>type</b>: Contraindication</p><blockquote><p><b>contraindication</b></p><h3>DiseaseSymptomProcedures</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct [PREENCHER]}\">Hipersensibilidade à substância ativa ou a qualquer dos excipientes</span></td></tr></table></blockquote></div>"
+  },
+  "type" : "contraindication",
+  "contraindication" : {
+    "diseaseSymptomProcedure" : {
+      "concept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "[PREENCHER]",
+          "display" : "Hypersensitivity to escitalopram (finding)"
+        }],
+        "text" : "Hipersensibilidade à substância ativa ou a qualquer dos excipientes"
+      }
+    }
+  }
+}

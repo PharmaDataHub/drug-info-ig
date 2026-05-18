@@ -1,0 +1,34 @@
+{
+  "codeSystems" : [{
+    "url" : "http://example.com/fhir/example/CodeSystem/dosage-type-cs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "DosageTypeCS",
+    "title" : "Dosage Type CodeSystem",
+    "description" : "Defines the semantic type of dosage instructions or constraints."
+  },
+  {
+    "url" : "http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "FormaFarmaceuticaCS",
+    "title" : "Forma Farmacêutica",
+    "description" : "CodeSystem para formas farmacêuticas baseado na tabela fornecida"
+  },
+  {
+    "url" : "http://example.com/fhir/example/CodeSystem/tipo-preco-infarmed-cs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "TipoPrecoINFARMEDCS",
+    "title" : "Tipo de Preço INFARMED",
+    "description" : "CodeSystem para os tipos de preço de medicamentos, baseado na tabela fornecida, incluindo apenas os códigos ativos."
+  },
+  {
+    "url" : "http://example.com/fhir/example/CodeSystem/via-administracao-cs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "ViaAdministracaoCS",
+    "title" : "Via de Administração",
+    "description" : "CodeSystem para vias de administração baseado na tabela fornecida"
+  }]
+}

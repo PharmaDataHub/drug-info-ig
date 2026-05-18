@@ -1,0 +1,33 @@
+{
+  "resourceType" : "ClinicalUseDefinition",
+  "id" : "CipraplexGotas-CUD-int3",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ClinicalUseDefinition CipraplexGotas-CUD-int3</b></p><a name=\"CipraplexGotas-CUD-int3\"> </a><a name=\"hcCipraplexGotas-CUD-int3\"> </a><p><b>type</b>: Interaction</p><blockquote><p><b>interaction</b></p><h3>Interactants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Item[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct [PREENCHER]}\">Medicamentos conhecidos por prolongar o intervalo QT (antiarrítmicos classes IA e III, antipsicóticos, antidepressivos tricíclicos, alguns antimicrobianos, alguns anti-histamínicos)</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/interaction-type drug-drug}\">drug to drug interaction</span></p><h3>Effects</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Efeito aditivo no prolongamento do intervalo QT. Associação contraindicada.</span></td></tr></table></blockquote></div>"
+  },
+  "type" : "interaction",
+  "interaction" : {
+    "interactant" : [{
+      "itemCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "[PREENCHER]",
+          "display" : "Drug with QT-prolonging effect (substance)"
+        }],
+        "text" : "Medicamentos conhecidos por prolongar o intervalo QT (antiarrítmicos classes IA e III, antipsicóticos, antidepressivos tricíclicos, alguns antimicrobianos, alguns anti-histamínicos)"
+      }
+    }],
+    "type" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/interaction-type",
+        "code" : "drug-drug",
+        "display" : "drug to drug interaction"
+      }]
+    },
+    "effect" : {
+      "concept" : {
+        "text" : "Efeito aditivo no prolongamento do intervalo QT. Associação contraindicada."
+      }
+    }
+  }
+}

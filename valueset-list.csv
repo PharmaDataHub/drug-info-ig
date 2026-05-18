@@ -1,0 +1,5 @@
+URL,Version,Status,OIDs,Name,Title,Description,Uses,Used,Sources
+http://example.com/fhir/example/ValueSet/dosage-type-vs,1.0.0,active,,DosageTypeVS,Dosage Type ValueSet,"ValueSet for types of dosage instructions and constraints.",,"Internal"
+http://example.com/fhir/example/ValueSet/forma-farmaceutica-vs,1.0.0,active,,FormaFarmaceuticaVS,Forma Farmacêutica ValueSet,"ValueSet para formas farmacêuticas baseado no INFARMED.",,"Internal"
+http://example.com/fhir/example/ValueSet/tipo-preco-infarmed-vs,1.0.0,active,,TipoPrecoINFARMEDVS,Tipos de Preço INFARMED,"ValueSet com os tipos de preço ativos definidos pelo INFARMED.",,"Internal"
+http://example.com/fhir/example/ValueSet/via-administracao-vs,1.0.0,active,,ViaAdministracaoVS,Via de Administração ValueSet,"ValueSet para vias de administração baseado no INFARMED.",,"Internal"

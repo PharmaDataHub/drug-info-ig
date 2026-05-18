@@ -1,0 +1,6 @@
+URL,Version,Status,OIDs,Name,Title,Description,Uses,Used,Sources
+http://example.com/fhir/example/ValueSet/dosage-type-vs,1.0.0,active,,DosageTypeVS,Dosage Type ValueSet,"ValueSet for types of dosage instructions and constraints.","StructureDefinition/MedicationKnowledgePDH","Internal"
+http://example.com/fhir/example/ValueSet/forma-farmaceutica-vs,1.0.0,active,,FormaFarmaceuticaVS,Forma Farmacêutica ValueSet,"ValueSet para formas farmacêuticas baseado no INFARMED.","StructureDefinition/MedicationKnowledgePDH","Internal"
+http://example.com/fhir/example/ValueSet/tipo-preco-infarmed-vs,1.0.0,active,,TipoPrecoINFARMEDVS,Tipos de Preço INFARMED,"ValueSet com os tipos de preço ativos definidos pelo INFARMED.","StructureDefinition/MedicationKnowledgePDH","Internal"
+http://example.com/fhir/example/ValueSet/via-administracao-vs,1.0.0,active,,ViaAdministracaoVS,Via de Administração ValueSet,"ValueSet para vias de administração baseado no INFARMED.","StructureDefinition/MedicationKnowledgePDH","Internal"
+http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity,3.0.0,active,"2.16.840.1.113883.1.11.10430",RoleClassIngredientEntity,RoleClassIngredientEntity,"Relates a component (player) to a mixture (scoper). E.g., Glucose and Water are ingredients of D5W, latex may be an ingredient in a tracheal tube.","StructureDefinition/MedicationKnowledgePDH","THO (V3)"

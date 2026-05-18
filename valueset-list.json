@@ -1,0 +1,38 @@
+{
+  "codeSystems" : [{
+    "url" : "http://example.com/fhir/example/ValueSet/dosage-type-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "DosageTypeVS",
+    "title" : "Dosage Type ValueSet",
+    "description" : "ValueSet for types of dosage instructions and constraints.",
+    "systems" : ["http://example.com/fhir/example/CodeSystem/dosage-type-cs"]
+  },
+  {
+    "url" : "http://example.com/fhir/example/ValueSet/forma-farmaceutica-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "FormaFarmaceuticaVS",
+    "title" : "Forma Farmacêutica ValueSet",
+    "description" : "ValueSet para formas farmacêuticas baseado no INFARMED.",
+    "systems" : ["http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs"]
+  },
+  {
+    "url" : "http://example.com/fhir/example/ValueSet/tipo-preco-infarmed-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "TipoPrecoINFARMEDVS",
+    "title" : "Tipos de Preço INFARMED",
+    "description" : "ValueSet com os tipos de preço ativos definidos pelo INFARMED.",
+    "systems" : ["http://example.com/fhir/example/CodeSystem/tipo-preco-infarmed-cs"]
+  },
+  {
+    "url" : "http://example.com/fhir/example/ValueSet/via-administracao-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "ViaAdministracaoVS",
+    "title" : "Via de Administração ValueSet",
+    "description" : "ValueSet para vias de administração baseado no INFARMED.",
+    "systems" : ["http://example.com/fhir/example/CodeSystem/via-administracao-cs"]
+  }]
+}
