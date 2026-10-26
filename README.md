@@ -2,6 +2,7 @@
 
 Este IG serve de template para novos IGs no ecossistema Português.
 
+
 ---
 
 ## Pré-requisitos
