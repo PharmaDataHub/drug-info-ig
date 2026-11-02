@@ -11,7 +11,8 @@ Description: "Litmuxair 60 mg comprimidos efervescentes - cloridrato de ambroxol
 * medicineClassification[1].classification.text = "5.2.2. Aparelho respiratório. Antitússicos e expetorantes. Expetorantes"
 
 // Forma farmacêutica e via de administração
-* definitional.doseForm = FormaFarmaceuticaCS#40 "Comprimido efervescente"
+* definitional.doseForm.coding[0] = FormaFarmaceuticaCS#40 "Comprimido efervescente"
+* definitional.doseForm.coding[1] = https://extranet.infarmed.pt/INFOMED-fo/detalhes-medicamento.xhtml#040 "Comprimido efervescente"
 * definitional.intendedRoute = ViaAdministracaoCS#48 "Via oral"
 
 // Ingrediente ativo
@@ -91,46 +92,40 @@ Description: "Litmuxair 60 mg comprimidos efervescentes - cloridrato de ambroxol
 * indicationGuideline[0].indication[0].concept.text = "Terapêutica mucolítica da tosse produtiva em doenças broncopulmonares agudas e crónicas associadas a secreção anormal de muco e transporte deficiente do muco, em adultos e adolescentes com mais de 12 anos"
 * indicationGuideline[0].indication[0].concept = http://snomed.info/sct#[PREENCHER] "Tosse produtiva em doença broncopulmonar"
 
-// Posologia adultos e adolescentes > 12 anos - fase inicial
+// Posologia adultos e adolescentes com mais de 12 anos - um dosage por regime/fase, cada um autónomo
+// (dose, frequência, duração, máximo e condições no mesmo dosage)
+
+// Regime 1: dose inicial (primeiros 2 a 3 dias)
 * indicationGuideline[0].dosingGuideline[0].dosage[0].type.text = "Dose inicial"
-* indicationGuideline[0].dosingGuideline[0].dosage[0].dosage[0].text = "Meio comprimido efervescente de 60 mg (30 mg de cloridrato de ambroxol), três vezes por dia"
+* indicationGuideline[0].dosingGuideline[0].dosage[0].dosage[0].text = "Meio comprimido efervescente de 60 mg (30 mg de cloridrato de ambroxol), três vezes por dia, durante os primeiros 2 a 3 dias (equivalente a 90 mg por dia)"
 * indicationGuideline[0].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.frequency = 3
 * indicationGuideline[0].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.period = 1
 * indicationGuideline[0].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[0].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.boundsRange.low = 2 'd' "day"
+* indicationGuideline[0].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.boundsRange.high = 3 'd' "day"
 * indicationGuideline[0].dosingGuideline[0].dosage[0].dosage[0].doseAndRate[0].doseQuantity = 30 'mg' "mg"
-* indicationGuideline[0].dosingGuideline[0].dosage[0].dosage[0].maxDosePerPeriod.numerator = 90 'mg' "mg"
-* indicationGuideline[0].dosingGuideline[0].dosage[0].dosage[0].maxDosePerPeriod.denominator = 1 'd' "day"
-* indicationGuideline[0].dosingGuideline[0].dosage[1].type.text = "Duração da dose inicial"
-* indicationGuideline[0].dosingGuideline[0].dosage[1].dosage[0].text = "Durante os primeiros 2 a 3 dias"
-* indicationGuideline[0].dosingGuideline[0].dosage[1].dosage[0].timing.repeat.duration = 2
-* indicationGuideline[0].dosingGuideline[0].dosage[1].dosage[0].timing.repeat.durationMax = 3
-* indicationGuideline[0].dosingGuideline[0].dosage[1].dosage[0].timing.repeat.durationUnit = #d
+* indicationGuideline[0].dosingGuideline[0].dosage[0].dosage[0].additionalInstruction[0].text = "Não tomar durante mais de 5 dias sem aconselhamento médico; se os sintomas não melhorarem ou se agravarem após 5 dias de tratamento, procurar aconselhamento médico"
 
-// Posologia adultos e adolescentes > 12 anos - manutenção
-* indicationGuideline[0].dosingGuideline[0].dosage[2].type.text = "Dose de manutenção"
-* indicationGuideline[0].dosingGuideline[0].dosage[2].dosage[0].text = "Meio comprimido efervescente de 60 mg (30 mg de cloridrato de ambroxol), duas vezes por dia"
+// Regime 2: dose de manutenção (após a dose inicial)
+* indicationGuideline[0].dosingGuideline[0].dosage[1].type.text = "Dose de manutenção"
+* indicationGuideline[0].dosingGuideline[0].dosage[1].dosage[0].text = "Meio comprimido efervescente de 60 mg (30 mg de cloridrato de ambroxol), duas vezes por dia (equivalente a 60 mg por dia)"
+* indicationGuideline[0].dosingGuideline[0].dosage[1].dosage[0].timing.repeat.frequency = 2
+* indicationGuideline[0].dosingGuideline[0].dosage[1].dosage[0].timing.repeat.period = 1
+* indicationGuideline[0].dosingGuideline[0].dosage[1].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[0].dosingGuideline[0].dosage[1].dosage[0].doseAndRate[0].doseQuantity = 30 'mg' "mg"
+* indicationGuideline[0].dosingGuideline[0].dosage[1].dosage[0].additionalInstruction[0].text = "Não tomar durante mais de 5 dias sem aconselhamento médico; se os sintomas não melhorarem ou se agravarem após 5 dias de tratamento, procurar aconselhamento médico"
+
+// Regime 3: dose aumentada, se necessário
+* indicationGuideline[0].dosingGuideline[0].dosage[2].type.text = "Dose aumentada (se necessário)"
+* indicationGuideline[0].dosingGuideline[0].dosage[2].dosage[0].text = "Se necessário, a dose pode ser aumentada até 60 mg de cloridrato de ambroxol, duas vezes por dia (equivalente a 120 mg por dia)"
 * indicationGuideline[0].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.frequency = 2
 * indicationGuideline[0].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.period = 1
 * indicationGuideline[0].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.periodUnit = #d
-* indicationGuideline[0].dosingGuideline[0].dosage[2].dosage[0].doseAndRate[0].doseQuantity = 30 'mg' "mg"
-* indicationGuideline[0].dosingGuideline[0].dosage[2].dosage[0].maxDosePerPeriod.numerator = 60 'mg' "mg"
-* indicationGuideline[0].dosingGuideline[0].dosage[2].dosage[0].maxDosePerPeriod.denominator = 1 'd' "day"
+* indicationGuideline[0].dosingGuideline[0].dosage[2].dosage[0].doseAndRate[0].doseQuantity = 60 'mg' "mg"
+* indicationGuideline[0].dosingGuideline[0].dosage[2].dosage[0].maxDosePerAdministration = 60 'mg' "mg"
+* indicationGuideline[0].dosingGuideline[0].dosage[2].dosage[0].additionalInstruction[0].text = "Não tomar durante mais de 5 dias sem aconselhamento médico; se os sintomas não melhorarem ou se agravarem após 5 dias de tratamento, procurar aconselhamento médico"
 
-// Posologia adultos e adolescentes > 12 anos - dose máxima
-* indicationGuideline[0].dosingGuideline[0].dosage[3].type.text = "Dose máxima"
-* indicationGuideline[0].dosingGuideline[0].dosage[3].dosage[0].text = "Se necessário, aumentar até 60 mg de cloridrato de ambroxol, duas vezes por dia"
-* indicationGuideline[0].dosingGuideline[0].dosage[3].dosage[0].timing.repeat.frequency = 2
-* indicationGuideline[0].dosingGuideline[0].dosage[3].dosage[0].timing.repeat.period = 1
-* indicationGuideline[0].dosingGuideline[0].dosage[3].dosage[0].timing.repeat.periodUnit = #d
-* indicationGuideline[0].dosingGuideline[0].dosage[3].dosage[0].doseAndRate[0].doseQuantity = 60 'mg' "mg"
-* indicationGuideline[0].dosingGuideline[0].dosage[3].dosage[0].maxDosePerPeriod.numerator = 120 'mg' "mg"
-* indicationGuideline[0].dosingGuideline[0].dosage[3].dosage[0].maxDosePerPeriod.denominator = 1 'd' "day"
 
-// Posologia adultos e adolescentes > 12 anos - duração máxima sem aconselhamento médico
-* indicationGuideline[0].dosingGuideline[0].dosage[4].type.text = "Duração máxima do tratamento"
-* indicationGuideline[0].dosingGuideline[0].dosage[4].dosage[0].text = "Não tomar durante mais de 5 dias"
-* indicationGuideline[0].dosingGuideline[0].dosage[4].dosage[0].additionalInstruction[0].text = "Sem aconselhamento médico; se os sintomas não melhorarem ou se agravarem após 5 dias, procurar aconselhamento médico"
-* indicationGuideline[0].dosingGuideline[0].dosage[4].dosage[0].timing.repeat.boundsDuration = 5 'd' "day"
 * indicationGuideline[0].dosingGuideline[0].patientCharacteristic[0].type.text = "Population"
 * indicationGuideline[0].dosingGuideline[0].patientCharacteristic[0].valueCodeableConcept.text = "Adultos e adolescentes com mais de 12 anos"
 

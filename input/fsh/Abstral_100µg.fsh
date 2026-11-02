@@ -1,7 +1,7 @@
 
 Instance: Abstral-100-microgramas-Comprimido-sublingual
 InstanceOf: MedicationKnowledgePDH
-Description: "Example of MedicationKnowledge resource for Abstral 100 microgramas comprimidos sublinguais"
+Description: "Informação do medicamento Abstral [Fentanilo] 100 microgramas Comprimido sublingual: composição, forma farmacêutica, via de administração, indicações, posologia, contraindicações e interações."
 
 
 * code = http://infarmed.pt/medicamentos/prod_id#42334 "Abstral 100 microgramas [N02AB03]"
@@ -10,7 +10,7 @@ Description: "Example of MedicationKnowledge resource for Abstral 100 micrograma
 // Active ingredient: cada comprimido sublingual contém 100 microgramas de fentanilo (como citrato)
 * definitional.ingredient[0].item = http://infarmed.pt/substancia#7897 "Fentanilo"
 * definitional.ingredient[0].type = http://terminology.hl7.org/CodeSystem/v3-RoleClass#ACTI
-* definitional.ingredient[0].strengthQuantity = 100 'ug' "microgram"
+* definitional.ingredient[0].strengthQuantity = 100 'ug' "µg"
 
 // Excipients (secção 6.1)
 * definitional.ingredient[+].item = http://infarmed.pt/substancia#[PREENCHER] "Manitol (E421)"
@@ -25,10 +25,13 @@ Description: "Example of MedicationKnowledge resource for Abstral 100 micrograma
 * definitional.ingredient[+].item = http://infarmed.pt/substancia#[PREENCHER] "Estearato de magnésio"
 * definitional.ingredient[=].type = http://terminology.hl7.org/CodeSystem/v3-RoleClass#IACT
 
-* medicineClassification.type = http://hl7.org/fhir/medication-classification-type#anatomical "Anatomical Class"
-* medicineClassification.classification = http://terminology.hl7.org/CodeSystem/v3-ATC#N02AB03 "Fentanilo"
+* medicineClassification[0].type.text = "Código ATC"
+* medicineClassification[0].classification = http://terminology.hl7.org/CodeSystem/v3-ATC#N02AB03 "Fentanilo"
+* medicineClassification[1].type.text = "Grupo farmacoterapêutico"
+* medicineClassification[1].classification.text = "2.12. – Sistema Nervoso Central. Analgésicos estupefacientes"
 
-* definitional.doseForm = FormaFarmaceuticaCS#71 "Comprimido sublingual"
+* definitional.doseForm.coding[0] = FormaFarmaceuticaCS#71 "Comprimido sublingual"
+* definitional.doseForm.coding[1] = https://extranet.infarmed.pt/INFOMED-fo/detalhes-medicamento.xhtml#071 "Comprimido sublingual"
 * definitional.intendedRoute = ViaAdministracaoCS#73 "Via sublingual"
 
 * clinicalUseIssue[+] = Reference(Abstral100mcg-CUD-contra1)
@@ -60,8 +63,8 @@ Description: "Example of MedicationKnowledge resource for Abstral 100 micrograma
 * indicationGuideline[0].dosingGuideline[0].dosage[0].dosage[0].additionalInstruction[0].text = "Abstral só deve ser administrado a doentes considerados tolerantes ao tratamento com opioides para a dor persistente provocada pelo cancro, isto é, que tomem pelo menos 60 mg de morfina por via oral diariamente, pelo menos 25 microgramas de fentanilo transdérmico por hora, pelo menos 30 mg de oxicodona diariamente, pelo menos 8 mg de hidromorfona por via oral diariamente ou uma dose equianalgésica de outro opioide, durante uma semana ou mais."
 * indicationGuideline[0].dosingGuideline[0].dosage[0].dosage[0].additionalInstruction[1].text = "A mudança de outros medicamentos que contenham fentanilo para Abstral não deverá ocorrer num rácio de 1:1 devido aos diferentes perfis de absorção; é necessário proceder a novo ajuste de dose. Durante a titulação os doentes devem esperar pelo menos duas horas antes de tratar outro caso de dor disruptiva. Não devem ser utilizados mais de quatro comprimidos de uma só vez. A eficácia e segurança de doses superiores a 800 microgramas não foram avaliadas."
 * indicationGuideline[0].dosingGuideline[0].dosage[0].dosage[0].additionalInstruction[2].text = "Administrar diretamente debaixo da língua, na sua parte mais profunda. Os comprimidos não devem ser engolidos, mastigados ou sugados, devendo dissolver-se completamente na cavidade sublingual. Os doentes não devem comer nem beber até o comprimido estar completamente dissolvido. Nos doentes com xerostomia poderá usar-se água para humedecer a mucosa bucal antes da administração."
-* indicationGuideline[0].dosingGuideline[0].dosage[0].dosage[0].doseAndRate[0].doseQuantity = 100 'ug' "microgram"
-* indicationGuideline[0].dosingGuideline[0].dosage[0].dosage[0].maxDosePerAdministration = 200 'ug' "microgram"
+* indicationGuideline[0].dosingGuideline[0].dosage[0].dosage[0].doseAndRate[0].doseQuantity = 100 'ug' "µg"
+* indicationGuideline[0].dosingGuideline[0].dosage[0].dosage[0].maxDosePerAdministration = 200 'ug' "µg"
 * indicationGuideline[0].dosingGuideline[0].patientCharacteristic[0].type.text = "Population"
 * indicationGuideline[0].dosingGuideline[0].patientCharacteristic[0].valueCodeableConcept.text = "Adultos tolerantes a opioides — fase de titulação"
 

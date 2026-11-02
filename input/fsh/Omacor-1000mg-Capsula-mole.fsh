@@ -11,12 +11,13 @@ Description: "Omacor 1000 mg cápsulas moles - ésteres etílicos 90 do ácido �
 * medicineClassification[1].classification.text = "3.7 Aparelho Cardiovascular, Antidislipidémicos"
 
 // Forma farmacêutica e via de administração
-* definitional.doseForm = FormaFarmaceuticaCS#30 "Cápsula mole"
+* definitional.doseForm.coding[0] = FormaFarmaceuticaCS#30 "Cápsula mole"
+* definitional.doseForm.coding[1] = https://extranet.infarmed.pt/INFOMED-fo/detalhes-medicamento.xhtml#030 "Cápsula mole"
 * definitional.intendedRoute = ViaAdministracaoCS#48 "Via oral"
 
 // Ingrediente ativo
 // Compreende 840 mg de EPA (460 mg) e DHA (380 mg) em ésteres etílicos
-* definitional.ingredient[0].item = http://infarmed.pt/substancia#[PREENCHER] "ésteres etílicos 90 do ácido ómega-3"
+* definitional.ingredient[0].item = http://infarmed.pt/substancia#41863 "ésteres etílicos 90 do ácido ómega-3"
 * definitional.ingredient[0].type = http://terminology.hl7.org/CodeSystem/v3-RoleClass#ACTI
 * definitional.ingredient[0].strengthQuantity = 1000 'mg' "mg"
 

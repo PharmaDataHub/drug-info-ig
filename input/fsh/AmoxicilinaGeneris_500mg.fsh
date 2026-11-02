@@ -1,7 +1,7 @@
 
 Instance: AmoxicilinaGeneris-500-mg-Comprimido-revestido-por-pelicula
 InstanceOf: MedicationKnowledgePDH
-Description: "Example of MedicationKnowledge resource for Amoxicilina Generis 500 mg comprimidos revestidos por película"
+Description: "Informação do medicamento Amoxicilina Generis [Amoxicilina] 500 mg Comprimido revestido por película: composição, forma farmacêutica, via de administração, indicações, posologia, contraindicações e interações."
 
 
 * code = http://infarmed.pt/medicamentos/prod_id#645424 "Amoxicilina Generis 500 mg [J01CA04]"
@@ -10,7 +10,7 @@ Description: "Example of MedicationKnowledge resource for Amoxicilina Generis 50
 // Active ingredient: cada comprimido contém amoxicilina tri-hidratada equivalente a 500 mg de amoxicilina
 * definitional.ingredient[0].item = http://infarmed.pt/substancia#21465 "Amoxicilina"
 * definitional.ingredient[0].type = http://terminology.hl7.org/CodeSystem/v3-RoleClass#ACTI
-* definitional.ingredient[0].strengthQuantity = 500 'mg' "milligram"
+* definitional.ingredient[0].strengthQuantity = 500 'mg' "mg"
 
 // Excipients — núcleo do comprimido (secção 6.1)
 * definitional.ingredient[+].item = http://infarmed.pt/substancia#[PREENCHER] "Celulose microcristalina (Grau 101)"
@@ -38,10 +38,13 @@ Description: "Example of MedicationKnowledge resource for Amoxicilina Generis 50
 * definitional.ingredient[+].item = http://infarmed.pt/substancia#[PREENCHER] "Dióxido de titânio (E171)"
 * definitional.ingredient[=].type = http://terminology.hl7.org/CodeSystem/v3-RoleClass#IACT
 
-* medicineClassification.type = http://hl7.org/fhir/medication-classification-type#anatomical "Anatomical Class"
-* medicineClassification.classification = http://terminology.hl7.org/CodeSystem/v3-ATC#J01CA04 "Amoxicilina"
+* medicineClassification[0].type.text = "Código ATC"
+* medicineClassification[0].classification = http://terminology.hl7.org/CodeSystem/v3-ATC#J01CA04 "Amoxicilina"
+* medicineClassification[1].type.text = "Grupo farmacoterapêutico"
+* medicineClassification[1].classification.text = "1.1.1.2. Medicamentos anti-infeciosos. Antibacterianos. Penicilinas. Aminopenicilinas"
 
-* definitional.doseForm = FormaFarmaceuticaCS#39 "Comprimido revestido por película"
+* definitional.doseForm.coding[0] = FormaFarmaceuticaCS#39 "Comprimido revestido por película"
+* definitional.doseForm.coding[1] = https://extranet.infarmed.pt/INFOMED-fo/detalhes-medicamento.xhtml#039 "Comprimido revestido por película"
 * definitional.intendedRoute = ViaAdministracaoCS#48 "Via oral"
 
 * clinicalUseIssue[+] = Reference(AmoxicilinaGeneris500mg-CUD-contra1)

@@ -2,7 +2,7 @@ Instance: AmoxicilinaGeneris-1000mg-Comprimido-revestido
 InstanceOf: MedicationKnowledgePDH
 Description: "Amoxicilina Generis 1000 mg comprimidos revestidos por película - amoxicilina 1000 mg por comprimido. Comprimidos biconvexos, oblongos, brancos a esbranquiçados, gravados com A1000 e com ranhura."
 
-* code = http://infarmed.pt/medicamentos#5819016 "Amoxicilina Generis 1000 mg comprimidos revestidos por película [J01CA04]"
+* code = http://infarmed.pt/medicamentos/prod_id#645426 "Amoxicilina Generis 1000 mg [J01CA04]"
 * name = "Amoxicilina Generis [amoxicilina] 1000 mg comprimido revestido por película"
 
 * medicineClassification[0].type.text = "Código ATC"
@@ -11,11 +11,12 @@ Description: "Amoxicilina Generis 1000 mg comprimidos revestidos por película -
 * medicineClassification[1].classification.text = "1.1.1.2. Medicamentos anti-infeciosos. Antibacterianos. Penicilinas. Aminopenicilinas"
 
 // Forma farmacêutica e via de administração
-* definitional.doseForm = FormaFarmaceuticaCS#39 "Comprimido revestido por película"
+* definitional.doseForm.coding[0] = FormaFarmaceuticaCS#39 "Comprimido revestido por película"
+* definitional.doseForm.coding[1] = https://extranet.infarmed.pt/INFOMED-fo/detalhes-medicamento.xhtml#039 "Comprimido revestido por película"
 * definitional.intendedRoute = ViaAdministracaoCS#48 "Via oral"
 
 // Ingrediente ativo (amoxicilina tri-hidratada equivalente a 1000 mg de amoxicilina)
-* definitional.ingredient[0].item = http://infarmed.pt/substancia#[PREENCHER] "amoxicilina"
+* definitional.ingredient[0].item = http://infarmed.pt/substancia#21465 "Amoxicilina"
 * definitional.ingredient[0].type = http://terminology.hl7.org/CodeSystem/v3-RoleClass#ACTI
 * definitional.ingredient[0].strengthQuantity = 1000 'mg' "mg"
 
@@ -196,8 +197,7 @@ Description: "Amoxicilina Generis 1000 mg comprimidos revestidos por película -
 * indicationGuideline[1].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.frequency = 1
 * indicationGuideline[1].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.period = 8
 * indicationGuideline[1].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.periodUnit = #h
-* indicationGuideline[1].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.duration = 10
-* indicationGuideline[1].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.durationUnit = #d
+* indicationGuideline[1].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.boundsDuration = 10 'd' "day"
 * indicationGuideline[1].dosingGuideline[0].dosage[2].dosage[0].doseAndRate[0].doseRange.low = 750 'mg' "mg"
 * indicationGuideline[1].dosingGuideline[0].dosage[2].dosage[0].doseAndRate[0].doseRange.high = 1 'g' "g"
 * indicationGuideline[1].dosingGuideline[0].patientCharacteristic[0].type.text = "Population"
@@ -307,8 +307,7 @@ Description: "Amoxicilina Generis 1000 mg comprimidos revestidos por película -
 * indicationGuideline[2].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.frequency = 1
 * indicationGuideline[2].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.period = 8
 * indicationGuideline[2].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.periodUnit = #h
-* indicationGuideline[2].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.duration = 10
-* indicationGuideline[2].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.durationUnit = #d
+* indicationGuideline[2].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.boundsDuration = 10 'd' "day"
 * indicationGuideline[2].dosingGuideline[0].dosage[2].dosage[0].doseAndRate[0].doseRange.low = 750 'mg' "mg"
 * indicationGuideline[2].dosingGuideline[0].dosage[2].dosage[0].doseAndRate[0].doseRange.high = 1 'g' "g"
 * indicationGuideline[2].dosingGuideline[0].patientCharacteristic[0].type.text = "Population"
@@ -418,8 +417,7 @@ Description: "Amoxicilina Generis 1000 mg comprimidos revestidos por película -
 * indicationGuideline[3].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.frequency = 1
 * indicationGuideline[3].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.period = 8
 * indicationGuideline[3].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.periodUnit = #h
-* indicationGuideline[3].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.duration = 10
-* indicationGuideline[3].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.durationUnit = #d
+* indicationGuideline[3].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.boundsDuration = 10 'd' "day"
 * indicationGuideline[3].dosingGuideline[0].dosage[2].dosage[0].doseAndRate[0].doseRange.low = 750 'mg' "mg"
 * indicationGuideline[3].dosingGuideline[0].dosage[2].dosage[0].doseAndRate[0].doseRange.high = 1 'g' "g"
 * indicationGuideline[3].dosingGuideline[0].patientCharacteristic[0].type.text = "Population"
@@ -620,8 +618,7 @@ Description: "Amoxicilina Generis 1000 mg comprimidos revestidos por película -
 * indicationGuideline[5].dosingGuideline[0].dosage[3].dosage[0].timing.repeat.frequency = 2
 * indicationGuideline[5].dosingGuideline[0].dosage[3].dosage[0].timing.repeat.period = 1
 * indicationGuideline[5].dosingGuideline[0].dosage[3].dosage[0].timing.repeat.periodUnit = #d
-* indicationGuideline[5].dosingGuideline[0].dosage[3].dosage[0].timing.repeat.duration = 1
-* indicationGuideline[5].dosingGuideline[0].dosage[3].dosage[0].timing.repeat.durationUnit = #d
+* indicationGuideline[5].dosingGuideline[0].dosage[3].dosage[0].timing.repeat.boundsDuration = 1 'd' "day"
 * indicationGuideline[5].dosingGuideline[0].dosage[3].dosage[0].doseAndRate[0].doseQuantity = 3 'g' "g"
 * indicationGuideline[5].dosingGuideline[0].patientCharacteristic[0].type.text = "Population"
 * indicationGuideline[5].dosingGuideline[0].patientCharacteristic[0].valueCodeableConcept.text = "Adultos e crianças ≥ 40 kg"
@@ -1208,8 +1205,7 @@ Description: "Amoxicilina Generis 1000 mg comprimidos revestidos por película -
 * indicationGuideline[11].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.frequency = 2
 * indicationGuideline[11].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.period = 1
 * indicationGuideline[11].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.periodUnit = #d
-* indicationGuideline[11].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.duration = 7
-* indicationGuideline[11].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.durationUnit = #d
+* indicationGuideline[11].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.boundsDuration = 7 'd' "day"
 * indicationGuideline[11].dosingGuideline[0].dosage[0].dosage[0].doseAndRate[0].doseRange.low = 750 'mg' "mg"
 * indicationGuideline[11].dosingGuideline[0].dosage[0].dosage[0].doseAndRate[0].doseRange.high = 1 'g' "g"
 * indicationGuideline[11].dosingGuideline[0].patientCharacteristic[0].type.text = "Population"
@@ -1293,8 +1289,7 @@ Description: "Amoxicilina Generis 1000 mg comprimidos revestidos por película -
 * indicationGuideline[12].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.frequency = 1
 * indicationGuideline[12].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.period = 8
 * indicationGuideline[12].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.periodUnit = #h
-* indicationGuideline[12].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.duration = 14
-* indicationGuideline[12].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.durationUnit = #d
+* indicationGuideline[12].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.boundsDuration = 14 'd' "day"
 * indicationGuideline[12].dosingGuideline[0].dosage[0].dosage[0].doseAndRate[0].doseRange.low = 500 'mg' "mg"
 * indicationGuideline[12].dosingGuideline[0].dosage[0].dosage[0].doseAndRate[0].doseRange.high = 1 'g' "g"
 * indicationGuideline[12].dosingGuideline[0].dosage[0].dosage[0].maxDosePerPeriod.numerator = 4 'g' "g"
@@ -1304,9 +1299,8 @@ Description: "Amoxicilina Generis 1000 mg comprimidos revestidos por película -
 * indicationGuideline[12].dosingGuideline[0].dosage[1].dosage[0].timing.repeat.frequency = 1
 * indicationGuideline[12].dosingGuideline[0].dosage[1].dosage[0].timing.repeat.period = 8
 * indicationGuideline[12].dosingGuideline[0].dosage[1].dosage[0].timing.repeat.periodUnit = #h
-* indicationGuideline[12].dosingGuideline[0].dosage[1].dosage[0].timing.repeat.duration = 10
-* indicationGuideline[12].dosingGuideline[0].dosage[1].dosage[0].timing.repeat.durationMax = 30
-* indicationGuideline[12].dosingGuideline[0].dosage[1].dosage[0].timing.repeat.durationUnit = #d
+* indicationGuideline[12].dosingGuideline[0].dosage[1].dosage[0].timing.repeat.boundsRange.low = 10 'd' "day"
+* indicationGuideline[12].dosingGuideline[0].dosage[1].dosage[0].timing.repeat.boundsRange.high = 30 'd' "day"
 * indicationGuideline[12].dosingGuideline[0].dosage[1].dosage[0].doseAndRate[0].doseRange.low = 500 'mg' "mg"
 * indicationGuideline[12].dosingGuideline[0].dosage[1].dosage[0].doseAndRate[0].doseRange.high = 2 'g' "g"
 * indicationGuideline[12].dosingGuideline[0].dosage[1].dosage[0].maxDosePerPeriod.numerator = 6 'g' "g"
@@ -1318,17 +1312,15 @@ Description: "Amoxicilina Generis 1000 mg comprimidos revestidos por película -
 * indicationGuideline[12].dosingGuideline[1].dosage[0].dosage[0].timing.repeat.frequency = 3
 * indicationGuideline[12].dosingGuideline[1].dosage[0].dosage[0].timing.repeat.period = 1
 * indicationGuideline[12].dosingGuideline[1].dosage[0].dosage[0].timing.repeat.periodUnit = #d
-* indicationGuideline[12].dosingGuideline[1].dosage[0].dosage[0].timing.repeat.duration = 10
-* indicationGuideline[12].dosingGuideline[1].dosage[0].dosage[0].timing.repeat.durationMax = 21
-* indicationGuideline[12].dosingGuideline[1].dosage[0].dosage[0].timing.repeat.durationUnit = #d
+* indicationGuideline[12].dosingGuideline[1].dosage[0].dosage[0].timing.repeat.boundsRange.low = 10 'd' "day"
+* indicationGuideline[12].dosingGuideline[1].dosage[0].dosage[0].timing.repeat.boundsRange.high = 21 'd' "day"
 * indicationGuideline[12].dosingGuideline[1].dosage[1].type.text = "Fase tardia (envolvimento sistémico)"
 * indicationGuideline[12].dosingGuideline[1].dosage[1].dosage[0].text = "100 mg/kg/dia em três doses divididas durante 10 a 30 dias"
 * indicationGuideline[12].dosingGuideline[1].dosage[1].dosage[0].timing.repeat.frequency = 3
 * indicationGuideline[12].dosingGuideline[1].dosage[1].dosage[0].timing.repeat.period = 1
 * indicationGuideline[12].dosingGuideline[1].dosage[1].dosage[0].timing.repeat.periodUnit = #d
-* indicationGuideline[12].dosingGuideline[1].dosage[1].dosage[0].timing.repeat.duration = 10
-* indicationGuideline[12].dosingGuideline[1].dosage[1].dosage[0].timing.repeat.durationMax = 30
-* indicationGuideline[12].dosingGuideline[1].dosage[1].dosage[0].timing.repeat.durationUnit = #d
+* indicationGuideline[12].dosingGuideline[1].dosage[1].dosage[0].timing.repeat.boundsRange.low = 10 'd' "day"
+* indicationGuideline[12].dosingGuideline[1].dosage[1].dosage[0].timing.repeat.boundsRange.high = 30 'd' "day"
 * indicationGuideline[12].dosingGuideline[1].patientCharacteristic[0].type.text = "Population"
 * indicationGuideline[12].dosingGuideline[1].patientCharacteristic[0].valueCodeableConcept.text = "Crianças < 40 kg"
 * indicationGuideline[12].dosingGuideline[2].dosage[0].type.text = "Ajuste da dose"

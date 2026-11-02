@@ -23,4 +23,4 @@ Este documento lista todos os CodeSystems e ValueSets utilizados nos exemplos e 
 
 | System | Elemento | Questão | Ficheiro:Linha |
 |---|---|---|---|
-| `http://terminology.hl7.org/CodeSystem/v3-ATC` | `medicineClassification.type` (exemplos) | Exemplos usam v3-ATC como `type`; devem ser atualizados para usar código do VS `medication-classification-type` (ex.: `http://hl7.org/fhir/medication-classification-type#ATC`) | `example-1.fsh:24`, `example-2.fsh:33` |
+| `http://terminology.hl7.org/CodeSystem/v3-ATC` | `medicineClassification.type` (exemplos) | Exemplos usam v3-ATC como `type`; devem ser atualizados para usar código do VS `medication-classification-type` (ex.: `http://hl7.org/fhir/medication-classification-type#ATC`) | `Abstral_100µg.fsh`, `AmoxicilinaGeneris_500mg.fsh`, `Concor_5mg.fsh`, `Concor_10mg.fsh`, `forxiga_5mg.fsh`, `forxiga_10mg.fsh`, `Lisonorm_20mg+5mg.fsh`, `Slenyto_1mg.fsh`, `Slenyto_5mg.fsh`, `Triveram_10mg+5mg+5mg.fsh` |

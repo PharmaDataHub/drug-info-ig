@@ -2,7 +2,7 @@ Instance: Cipralex-20-mgml-Gotas-orais-solucao
 InstanceOf: MedicationKnowledgePDH
 Description: "Cipralex 20 mg/ml gotas orais, solução - escitalopram 20 mg/ml (1 mg por gota). Solução límpida, ligeiramente incolor a amarelada, com paladar amargo."
 
-* code = http://infarmed.pt/medicamentos#5049739 "Cipralex 20 mg/ml gotas orais, solução [N06AB10]"
+* code = http://infarmed.pt/medicamentos/prod_id#44201 "Cipralex 20 mg/ml [N06AB10]"
 * name = "Cipralex [escitalopram] 20 mg/ml gotas orais, solução"
 
 * medicineClassification[0].type.text = "Código ATC"
@@ -11,7 +11,8 @@ Description: "Cipralex 20 mg/ml gotas orais, solução - escitalopram 20 mg/ml (
 * medicineClassification[1].classification.text = "2.9.3 Sistema Nervoso Central. Psicofármacos. Antidepressores"
 
 // Forma farmacêutica e via de administração
-* definitional.doseForm = FormaFarmaceuticaCS#1 "Gotas orais, solução"
+* definitional.doseForm.coding[0] = FormaFarmaceuticaCS#1 "Gotas orais, solução"
+* definitional.doseForm.coding[1] = https://extranet.infarmed.pt/INFOMED-fo/detalhes-medicamento.xhtml#001 "Gotas orais, solução"
 * definitional.intendedRoute = ViaAdministracaoCS#48 "Via oral"
 
 // Ingrediente ativo (20 mg de escitalopram por ml, como 25,551 mg de oxalato de escitalopram)
@@ -89,8 +90,7 @@ Description: "Cipralex 20 mg/ml gotas orais, solução - escitalopram 20 mg/ml (
 * indicationGuideline[0].dosingGuideline[3].dosage[0].dosage[0].timing.repeat.frequency = 1
 * indicationGuideline[0].dosingGuideline[3].dosage[0].dosage[0].timing.repeat.period = 1
 * indicationGuideline[0].dosingGuideline[3].dosage[0].dosage[0].timing.repeat.periodUnit = #d
-* indicationGuideline[0].dosingGuideline[3].dosage[0].dosage[0].timing.repeat.duration = 2
-* indicationGuideline[0].dosingGuideline[3].dosage[0].dosage[0].timing.repeat.durationUnit = #wk
+* indicationGuideline[0].dosingGuideline[3].dosage[0].dosage[0].timing.repeat.boundsDuration = 2 'wk' "week"
 * indicationGuideline[0].dosingGuideline[3].dosage[0].dosage[0].doseAndRate[0].doseQuantity = 5 'mg' "mg"
 * indicationGuideline[0].dosingGuideline[3].dosage[1].type.text = "Insuficiência hepática ligeira ou moderada - após as duas primeiras semanas"
 * indicationGuideline[0].dosingGuideline[3].dosage[1].dosage[0].text = "Dependendo da resposta individual, a dose poderá ser aumentada para 10 mg (10 gotas) por dia"
@@ -107,8 +107,7 @@ Description: "Cipralex 20 mg/ml gotas orais, solução - escitalopram 20 mg/ml (
 * indicationGuideline[0].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.frequency = 1
 * indicationGuideline[0].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.period = 1
 * indicationGuideline[0].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.periodUnit = #d
-* indicationGuideline[0].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.duration = 2
-* indicationGuideline[0].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.durationUnit = #wk
+* indicationGuideline[0].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.boundsDuration = 2 'wk' "week"
 * indicationGuideline[0].dosingGuideline[4].dosage[0].dosage[0].doseAndRate[0].doseQuantity = 5 'mg' "mg"
 * indicationGuideline[0].dosingGuideline[4].dosage[1].type.text = "Após as duas primeiras semanas"
 * indicationGuideline[0].dosingGuideline[4].dosage[1].dosage[0].text = "Dependendo da resposta individual, a dose poderá ser aumentada para 10 mg (10 gotas) por dia"
@@ -127,8 +126,7 @@ Description: "Cipralex 20 mg/ml gotas orais, solução - escitalopram 20 mg/ml (
 * indicationGuideline[1].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.frequency = 1
 * indicationGuideline[1].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.period = 1
 * indicationGuideline[1].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.periodUnit = #d
-* indicationGuideline[1].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.duration = 1
-* indicationGuideline[1].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.durationUnit = #wk
+* indicationGuideline[1].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.boundsDuration = 1 'wk' "week"
 * indicationGuideline[1].dosingGuideline[0].dosage[0].dosage[0].doseAndRate[0].doseQuantity = 5 'mg' "mg"
 * indicationGuideline[1].dosingGuideline[0].dosage[1].type.text = "Fase seguinte"
 * indicationGuideline[1].dosingGuideline[0].dosage[1].dosage[0].text = "10 mg (10 gotas) por dia após a primeira semana; a dose pode ser posteriormente aumentada até um máximo de 20 mg (20 gotas) por dia, dependendo da resposta individual"
@@ -163,8 +161,7 @@ Description: "Cipralex 20 mg/ml gotas orais, solução - escitalopram 20 mg/ml (
 * indicationGuideline[1].dosingGuideline[3].dosage[0].dosage[0].timing.repeat.frequency = 1
 * indicationGuideline[1].dosingGuideline[3].dosage[0].dosage[0].timing.repeat.period = 1
 * indicationGuideline[1].dosingGuideline[3].dosage[0].dosage[0].timing.repeat.periodUnit = #d
-* indicationGuideline[1].dosingGuideline[3].dosage[0].dosage[0].timing.repeat.duration = 2
-* indicationGuideline[1].dosingGuideline[3].dosage[0].dosage[0].timing.repeat.durationUnit = #wk
+* indicationGuideline[1].dosingGuideline[3].dosage[0].dosage[0].timing.repeat.boundsDuration = 2 'wk' "week"
 * indicationGuideline[1].dosingGuideline[3].dosage[0].dosage[0].doseAndRate[0].doseQuantity = 5 'mg' "mg"
 * indicationGuideline[1].dosingGuideline[3].dosage[1].type.text = "Insuficiência hepática ligeira ou moderada - após as duas primeiras semanas"
 * indicationGuideline[1].dosingGuideline[3].dosage[1].dosage[0].text = "Dependendo da resposta individual, a dose poderá ser aumentada para 10 mg (10 gotas) por dia"
@@ -181,8 +178,7 @@ Description: "Cipralex 20 mg/ml gotas orais, solução - escitalopram 20 mg/ml (
 * indicationGuideline[1].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.frequency = 1
 * indicationGuideline[1].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.period = 1
 * indicationGuideline[1].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.periodUnit = #d
-* indicationGuideline[1].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.duration = 2
-* indicationGuideline[1].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.durationUnit = #wk
+* indicationGuideline[1].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.boundsDuration = 2 'wk' "week"
 * indicationGuideline[1].dosingGuideline[4].dosage[0].dosage[0].doseAndRate[0].doseQuantity = 5 'mg' "mg"
 * indicationGuideline[1].dosingGuideline[4].dosage[1].type.text = "Após as duas primeiras semanas"
 * indicationGuideline[1].dosingGuideline[4].dosage[1].dosage[0].text = "Dependendo da resposta individual, a dose poderá ser aumentada para 10 mg (10 gotas) por dia"
@@ -230,8 +226,7 @@ Description: "Cipralex 20 mg/ml gotas orais, solução - escitalopram 20 mg/ml (
 * indicationGuideline[2].dosingGuideline[3].dosage[0].dosage[0].timing.repeat.frequency = 1
 * indicationGuideline[2].dosingGuideline[3].dosage[0].dosage[0].timing.repeat.period = 1
 * indicationGuideline[2].dosingGuideline[3].dosage[0].dosage[0].timing.repeat.periodUnit = #d
-* indicationGuideline[2].dosingGuideline[3].dosage[0].dosage[0].timing.repeat.duration = 2
-* indicationGuideline[2].dosingGuideline[3].dosage[0].dosage[0].timing.repeat.durationUnit = #wk
+* indicationGuideline[2].dosingGuideline[3].dosage[0].dosage[0].timing.repeat.boundsDuration = 2 'wk' "week"
 * indicationGuideline[2].dosingGuideline[3].dosage[0].dosage[0].doseAndRate[0].doseQuantity = 5 'mg' "mg"
 * indicationGuideline[2].dosingGuideline[3].dosage[1].type.text = "Insuficiência hepática ligeira ou moderada - após as duas primeiras semanas"
 * indicationGuideline[2].dosingGuideline[3].dosage[1].dosage[0].text = "Dependendo da resposta individual, a dose poderá ser aumentada para 10 mg (10 gotas) por dia"
@@ -248,8 +243,7 @@ Description: "Cipralex 20 mg/ml gotas orais, solução - escitalopram 20 mg/ml (
 * indicationGuideline[2].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.frequency = 1
 * indicationGuideline[2].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.period = 1
 * indicationGuideline[2].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.periodUnit = #d
-* indicationGuideline[2].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.duration = 2
-* indicationGuideline[2].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.durationUnit = #wk
+* indicationGuideline[2].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.boundsDuration = 2 'wk' "week"
 * indicationGuideline[2].dosingGuideline[4].dosage[0].dosage[0].doseAndRate[0].doseQuantity = 5 'mg' "mg"
 * indicationGuideline[2].dosingGuideline[4].dosage[1].type.text = "Após as duas primeiras semanas"
 * indicationGuideline[2].dosingGuideline[4].dosage[1].dosage[0].text = "Dependendo da resposta individual, a dose poderá ser aumentada para 10 mg (10 gotas) por dia"
@@ -296,8 +290,7 @@ Description: "Cipralex 20 mg/ml gotas orais, solução - escitalopram 20 mg/ml (
 * indicationGuideline[3].dosingGuideline[3].dosage[0].dosage[0].timing.repeat.frequency = 1
 * indicationGuideline[3].dosingGuideline[3].dosage[0].dosage[0].timing.repeat.period = 1
 * indicationGuideline[3].dosingGuideline[3].dosage[0].dosage[0].timing.repeat.periodUnit = #d
-* indicationGuideline[3].dosingGuideline[3].dosage[0].dosage[0].timing.repeat.duration = 2
-* indicationGuideline[3].dosingGuideline[3].dosage[0].dosage[0].timing.repeat.durationUnit = #wk
+* indicationGuideline[3].dosingGuideline[3].dosage[0].dosage[0].timing.repeat.boundsDuration = 2 'wk' "week"
 * indicationGuideline[3].dosingGuideline[3].dosage[0].dosage[0].doseAndRate[0].doseQuantity = 5 'mg' "mg"
 * indicationGuideline[3].dosingGuideline[3].dosage[1].type.text = "Insuficiência hepática ligeira ou moderada - após as duas primeiras semanas"
 * indicationGuideline[3].dosingGuideline[3].dosage[1].dosage[0].text = "Dependendo da resposta individual, a dose poderá ser aumentada para 10 mg (10 gotas) por dia"
@@ -314,8 +307,7 @@ Description: "Cipralex 20 mg/ml gotas orais, solução - escitalopram 20 mg/ml (
 * indicationGuideline[3].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.frequency = 1
 * indicationGuideline[3].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.period = 1
 * indicationGuideline[3].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.periodUnit = #d
-* indicationGuideline[3].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.duration = 2
-* indicationGuideline[3].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.durationUnit = #wk
+* indicationGuideline[3].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.boundsDuration = 2 'wk' "week"
 * indicationGuideline[3].dosingGuideline[4].dosage[0].dosage[0].doseAndRate[0].doseQuantity = 5 'mg' "mg"
 * indicationGuideline[3].dosingGuideline[4].dosage[1].type.text = "Após as duas primeiras semanas"
 * indicationGuideline[3].dosingGuideline[4].dosage[1].dosage[0].text = "Dependendo da resposta individual, a dose poderá ser aumentada para 10 mg (10 gotas) por dia"
@@ -362,8 +354,7 @@ Description: "Cipralex 20 mg/ml gotas orais, solução - escitalopram 20 mg/ml (
 * indicationGuideline[4].dosingGuideline[3].dosage[0].dosage[0].timing.repeat.frequency = 1
 * indicationGuideline[4].dosingGuideline[3].dosage[0].dosage[0].timing.repeat.period = 1
 * indicationGuideline[4].dosingGuideline[3].dosage[0].dosage[0].timing.repeat.periodUnit = #d
-* indicationGuideline[4].dosingGuideline[3].dosage[0].dosage[0].timing.repeat.duration = 2
-* indicationGuideline[4].dosingGuideline[3].dosage[0].dosage[0].timing.repeat.durationUnit = #wk
+* indicationGuideline[4].dosingGuideline[3].dosage[0].dosage[0].timing.repeat.boundsDuration = 2 'wk' "week"
 * indicationGuideline[4].dosingGuideline[3].dosage[0].dosage[0].doseAndRate[0].doseQuantity = 5 'mg' "mg"
 * indicationGuideline[4].dosingGuideline[3].dosage[1].type.text = "Insuficiência hepática ligeira ou moderada - após as duas primeiras semanas"
 * indicationGuideline[4].dosingGuideline[3].dosage[1].dosage[0].text = "Dependendo da resposta individual, a dose poderá ser aumentada para 10 mg (10 gotas) por dia"
@@ -380,8 +371,7 @@ Description: "Cipralex 20 mg/ml gotas orais, solução - escitalopram 20 mg/ml (
 * indicationGuideline[4].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.frequency = 1
 * indicationGuideline[4].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.period = 1
 * indicationGuideline[4].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.periodUnit = #d
-* indicationGuideline[4].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.duration = 2
-* indicationGuideline[4].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.durationUnit = #wk
+* indicationGuideline[4].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.boundsDuration = 2 'wk' "week"
 * indicationGuideline[4].dosingGuideline[4].dosage[0].dosage[0].doseAndRate[0].doseQuantity = 5 'mg' "mg"
 * indicationGuideline[4].dosingGuideline[4].dosage[1].type.text = "Após as duas primeiras semanas"
 * indicationGuideline[4].dosingGuideline[4].dosage[1].dosage[0].text = "Dependendo da resposta individual, a dose poderá ser aumentada para 10 mg (10 gotas) por dia"

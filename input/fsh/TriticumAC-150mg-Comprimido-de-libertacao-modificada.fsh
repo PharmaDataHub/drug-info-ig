@@ -11,9 +11,9 @@ Description: "Triticum AC 150 mg comprimidos de libertação modificada - clorid
 * medicineClassification[1].classification.text = "2.9.3 - Sistema Nervoso Central. Psicofármacos. Antidepressores"
 
 // Forma farmacêutica e via de administração
-* definitional.doseForm = FormaFarmaceuticaCS#44 "Comprimido de libertação modificada"
+* definitional.doseForm.coding[0] = FormaFarmaceuticaCS#44 "Comprimido de libertação modificada"
 // Código da forma farmacêutica (INFOMED): por verificar no registo INFOMED do medicamento
-* definitional.doseForm.coding[+] = https://extranet.infarmed.pt/INFOMED-fo/detalhes-medicamento.xhtml#[PREENCHER] "Comprimido de libertação modificada"
+* definitional.doseForm.coding[1] = https://extranet.infarmed.pt/INFOMED-fo/detalhes-medicamento.xhtml#044 "Comprimido de libertação modificada"
 * definitional.intendedRoute = ViaAdministracaoCS#48 "Via oral"
 
 // Ingrediente ativo: cada comprimido contém 150 mg de cloridrato de trazodona
@@ -75,8 +75,7 @@ Description: "Triticum AC 150 mg comprimidos de libertação modificada - clorid
 * indicationGuideline[0].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.period = 1
 * indicationGuideline[0].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.periodUnit = #d
 * indicationGuideline[0].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.when = #HS
-* indicationGuideline[0].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.duration = 1
-* indicationGuideline[0].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.durationUnit = #mo
+* indicationGuideline[0].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.boundsRange.low = 1 'mo' "month"
 * indicationGuideline[0].dosingGuideline[0].dosage[0].dosage[0].additionalInstruction[0].text = "Os comprimidos são divisíveis em 3 partes para permitir uma posologia progressiva com doses fracionadas segundo a gravidade da doença, do peso, da idade e do estado geral do doente"
 * indicationGuideline[0].dosingGuideline[0].patientCharacteristic[0].type.text = "Population"
 * indicationGuideline[0].dosingGuideline[0].patientCharacteristic[0].valueCodeableConcept.text = "Doses gerais (população não especificada na RCM)"

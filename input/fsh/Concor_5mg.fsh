@@ -1,7 +1,7 @@
 
 Instance: Concor-5-mg-Comprimido-revestido
 InstanceOf: MedicationKnowledgePDH
-Description: "Example of MedicationKnowledge resource for Concor 5 mg comprimido revestido"
+Description: "Informação do medicamento Concor [Bisoprolol] 5 mg Comprimido revestido: composição, forma farmacêutica, via de administração, indicações, posologia, contraindicações e interações."
 
 
 * code = http://infarmed.pt/medicamentos/prod_id#2143 "Concor 5 mg [C07AB07]"
@@ -10,7 +10,7 @@ Description: "Example of MedicationKnowledge resource for Concor 5 mg comprimido
 // Active ingredient: cada comprimido contém 5 mg de bisoprolol, fumarato
 * definitional.ingredient[0].item = http://infarmed.pt/substancia#21790 "Bisoprolol, fumarato"
 * definitional.ingredient[0].type = http://terminology.hl7.org/CodeSystem/v3-RoleClass#ACTI
-* definitional.ingredient[0].strengthQuantity = 5 'mg' "milligram"
+* definitional.ingredient[0].strengthQuantity = 5 'mg' "mg"
 
 // Excipients — núcleo do comprimido (secção 6.1)
 * definitional.ingredient[+].item = http://infarmed.pt/substancia#[PREENCHER] "Sílica anidra coloidal"
@@ -47,10 +47,13 @@ Description: "Example of MedicationKnowledge resource for Concor 5 mg comprimido
 * definitional.ingredient[+].item = http://infarmed.pt/substancia#[PREENCHER] "Hipromelose"
 * definitional.ingredient[=].type = http://terminology.hl7.org/CodeSystem/v3-RoleClass#IACT
 
-* medicineClassification.type = http://hl7.org/fhir/medication-classification-type#anatomical "Anatomical Class"
-* medicineClassification.classification = http://terminology.hl7.org/CodeSystem/v3-ATC#C07AB07 "Bisoprolol"
+* medicineClassification[0].type.text = "Código ATC"
+* medicineClassification[0].classification = http://terminology.hl7.org/CodeSystem/v3-ATC#C07AB07 "Bisoprolol"
+* medicineClassification[1].type.text = "Grupo farmacoterapêutico"
+* medicineClassification[1].classification.text = "3.4.4.2.1 - Aparelho cardiovascular. Anti-hipertensores. Depressores de atividade adrenérgica. Bloqueadores Beta. Seletivos cardíacos"
 
-* definitional.doseForm = FormaFarmaceuticaCS#38 "Comprimido revestido"
+* definitional.doseForm.coding[0] = FormaFarmaceuticaCS#38 "Comprimido revestido"
+* definitional.doseForm.coding[1] = https://extranet.infarmed.pt/INFOMED-fo/detalhes-medicamento.xhtml#038 "Comprimido revestido"
 * definitional.intendedRoute = ViaAdministracaoCS#48 "Via oral"
 
 * clinicalUseIssue[+] = Reference(Concor5mg-CUD-contra1)

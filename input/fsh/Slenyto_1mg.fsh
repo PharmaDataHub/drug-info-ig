@@ -1,7 +1,7 @@
 
 Instance: Slenyto-1-mg-Comprimido-de-libertacao-prolongada
 InstanceOf: MedicationKnowledgePDH
-Description: "Example of MedicationKnowledge resource for Slenyto 1 mg comprimidos de libertação prolongada"
+Description: "Informação do medicamento Slenyto [Melatonina] 1 mg Comprimido de libertação prolongada: composição, forma farmacêutica, via de administração, indicações, posologia, contraindicações e interações."
 
 
 * code = http://infarmed.pt/medicamentos/prod_id#638506 "Slenyto 1 mg [N05CH01]"
@@ -10,7 +10,7 @@ Description: "Example of MedicationKnowledge resource for Slenyto 1 mg comprimid
 // Active ingredient: cada comprimido de libertação prolongada contém 1 mg de melatonina
 * definitional.ingredient[0].item = http://infarmed.pt/substancia#30206 "Melatonina"
 * definitional.ingredient[0].type = http://terminology.hl7.org/CodeSystem/v3-RoleClass#ACTI
-* definitional.ingredient[0].strengthQuantity = 1 'mg' "milligram"
+* definitional.ingredient[0].strengthQuantity = 1 'mg' "mg"
 
 // Excipients — núcleo do comprimido (secção 6.1)
 * definitional.ingredient[+].item = http://infarmed.pt/substancia#[PREENCHER] "Copolímero tipo B do metacrilato de amónio"
@@ -22,7 +22,7 @@ Description: "Example of MedicationKnowledge resource for Slenyto 1 mg comprimid
 // Excipiente com efeito conhecido: lactose mono-hidratada equivalente a 8,32 mg de lactose (secção 2)
 * definitional.ingredient[+].item = http://infarmed.pt/substancia#[PREENCHER] "Lactose mono-hidratada"
 * definitional.ingredient[=].type = http://terminology.hl7.org/CodeSystem/v3-RoleClass#BASE
-* definitional.ingredient[=].strengthQuantity = 8.32 'mg' "milligram"
+* definitional.ingredient[=].strengthQuantity = 8.32 'mg' "mg"
 
 * definitional.ingredient[+].item = http://infarmed.pt/substancia#[PREENCHER] "Sílica coloidal anidra"
 * definitional.ingredient[=].type = http://terminology.hl7.org/CodeSystem/v3-RoleClass#IACT
@@ -55,10 +55,13 @@ Description: "Example of MedicationKnowledge resource for Slenyto 1 mg comprimid
 * definitional.ingredient[+].item = http://infarmed.pt/substancia#[PREENCHER] "Óxido de ferro amarelo (E172)"
 * definitional.ingredient[=].type = http://terminology.hl7.org/CodeSystem/v3-RoleClass#IACT
 
-* medicineClassification.type = http://hl7.org/fhir/medication-classification-type#anatomical "Anatomical Class"
-* medicineClassification.classification = http://terminology.hl7.org/CodeSystem/v3-ATC#N05CH01 "Melatonina"
+* medicineClassification[0].type.text = "Código ATC"
+* medicineClassification[0].classification = http://terminology.hl7.org/CodeSystem/v3-ATC#N05CH01 "Melatonina"
+* medicineClassification[1].type.text = "Grupo farmacoterapêutico"
+* medicineClassification[1].classification.text = "Psicolépticos, agonistas do recetor da melatonina"
 
-* definitional.doseForm = FormaFarmaceuticaCS#43 "Comprimido de libertação prolongada"
+* definitional.doseForm.coding[0] = FormaFarmaceuticaCS#43 "Comprimido de libertação prolongada"
+* definitional.doseForm.coding[1] = https://extranet.infarmed.pt/INFOMED-fo/detalhes-medicamento.xhtml#043 "Comprimido de libertação prolongada"
 * definitional.intendedRoute = ViaAdministracaoCS#48 "Via oral"
 
 * clinicalUseIssue[+] = Reference(Slenyto1mg-CUD-contra1)

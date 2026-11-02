@@ -1,7 +1,7 @@
 
 Instance: Triveram-10-mg-5-mg-5-mg-Comprimido-revestido-por-pelicula
 InstanceOf: MedicationKnowledgePDH
-Description: "Example of MedicationKnowledge resource for Triveram 10 mg + 5 mg + 5 mg comprimidos revestidos por película"
+Description: "Informação do medicamento Triveram [Atorvastatina + Perindopril + Amlodipina] 10 mg + 5 mg + 5 mg Comprimido revestido por película: composição, forma farmacêutica, via de administração, indicações, posologia, contraindicações e interações."
 
 
 * code = http://infarmed.pt/medicamentos/prod_id#590004 "Triveram 10 mg + 5 mg + 5 mg [C10BX11]"
@@ -10,22 +10,22 @@ Description: "Example of MedicationKnowledge resource for Triveram 10 mg + 5 mg 
 // Active ingredient 1: 10,82 mg de atorvastatina cálcica trihidratada equivalente a 10 mg de atorvastatina
 * definitional.ingredient[0].item = http://infarmed.pt/substancia#46114 "Atorvastatina"
 * definitional.ingredient[0].type = http://terminology.hl7.org/CodeSystem/v3-RoleClass#ACTI
-* definitional.ingredient[0].strengthQuantity = 10 'mg' "milligram"
+* definitional.ingredient[0].strengthQuantity = 10 'mg' "mg"
 
 // Active ingredient 2: 5 mg de perindopril arginina equivalente a 3,40 mg de perindopril
 * definitional.ingredient[+].item = http://infarmed.pt/substancia#43060 "Perindopril arginina"
 * definitional.ingredient[=].type = http://terminology.hl7.org/CodeSystem/v3-RoleClass#ACTI
-* definitional.ingredient[=].strengthQuantity = 5 'mg' "milligram"
+* definitional.ingredient[=].strengthQuantity = 5 'mg' "mg"
 
 // Active ingredient 3: 6,94 mg de amlodipina besilato equivalente a 5 mg de amlodipina
 * definitional.ingredient[+].item = http://infarmed.pt/substancia#28811 "Amlodipina"
 * definitional.ingredient[=].type = http://terminology.hl7.org/CodeSystem/v3-RoleClass#ACTI
-* definitional.ingredient[=].strengthQuantity = 5 'mg' "milligram"
+* definitional.ingredient[=].strengthQuantity = 5 'mg' "mg"
 
 // Excipiente com efeito conhecido: lactose mono-hidratada 27,46 mg, contendo 26,09 mg de lactose (secção 2)
 * definitional.ingredient[+].item = http://infarmed.pt/substancia#[PREENCHER] "Lactose mono-hidratada"
 * definitional.ingredient[=].type = http://terminology.hl7.org/CodeSystem/v3-RoleClass#BASE
-* definitional.ingredient[=].strengthQuantity = 27.46 'mg' "milligram"
+* definitional.ingredient[=].strengthQuantity = 27.46 'mg' "mg"
 
 // Excipients — núcleo do comprimido (secção 6.1)
 * definitional.ingredient[+].item = http://infarmed.pt/substancia#[PREENCHER] "Carbonato de cálcio (E170)"
@@ -63,10 +63,13 @@ Description: "Example of MedicationKnowledge resource for Triveram 10 mg + 5 mg 
 * definitional.ingredient[+].item = http://infarmed.pt/substancia#[PREENCHER] "Óxido de ferro amarelo (E172)"
 * definitional.ingredient[=].type = http://terminology.hl7.org/CodeSystem/v3-RoleClass#IACT
 
-* medicineClassification.type = http://hl7.org/fhir/medication-classification-type#anatomical "Anatomical Class"
-* medicineClassification.classification = http://terminology.hl7.org/CodeSystem/v3-ATC#C10BX11 "Atorvastatina, amlodipina e perindopril"
+* medicineClassification[0].type.text = "Código ATC"
+* medicineClassification[0].classification = http://terminology.hl7.org/CodeSystem/v3-ATC#C10BX11 "Atorvastatina, amlodipina e perindopril"
+* medicineClassification[1].type.text = "Grupo farmacoterapêutico"
+* medicineClassification[1].classification.text = "3.4. Aparelho cardiovascular. Anti-hipertensores. 3.7 Aparelho cardiovascular. Antidislipidémicos"
 
-* definitional.doseForm = FormaFarmaceuticaCS#39 "Comprimido revestido por película"
+* definitional.doseForm.coding[0] = FormaFarmaceuticaCS#39 "Comprimido revestido por película"
+* definitional.doseForm.coding[1] = https://extranet.infarmed.pt/INFOMED-fo/detalhes-medicamento.xhtml#039 "Comprimido revestido por película"
 * definitional.intendedRoute = ViaAdministracaoCS#48 "Via oral"
 
 * clinicalUseIssue[+] = Reference(Triveram1055mg-CUD-contra1)

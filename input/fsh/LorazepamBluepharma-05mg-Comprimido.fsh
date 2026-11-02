@@ -1,9 +1,9 @@
-Instance: LorazepamBluepharm-05mg-Comprimido
+Instance: LorazepamBluepharma-05mg-Comprimido
 InstanceOf: MedicationKnowledgePDH
 Description: "Lorazepam Bluepharm 0,5 mg comprimidos - lorazepam 0,5 mg por comprimido. Comprimido liso, redondo, branco ou quase branco, diâmetro 4,5 mm."
 
-* code = http://infarmed.pt/medicamentos#[PREENCHER] "Lorazepam Bluepharm 0,5 mg comprimidos [N05BA06]"
-* name = "Lorazepam Bluepharm [lorazepam] 0,5 mg comprimido"
+* code = http://infarmed.pt/medicamentos/prod_id#672984 "Lorazepam Bluepharma 0,5 mg [N05BA06]"
+* name = "Lorazepam Bluepharma [lorazepam] 0,5 mg comprimido"
 
 * medicineClassification[0].type.text = "Código ATC"
 * medicineClassification[0].classification = http://terminology.hl7.org/CodeSystem/v3-ATC#N05BA06 "lorazepam"
@@ -11,11 +11,12 @@ Description: "Lorazepam Bluepharm 0,5 mg comprimidos - lorazepam 0,5 mg por comp
 * medicineClassification[1].classification.text = "2.9.1 - Ansiolíticos, sedativos e hipnóticos, derivados das benzodiazepinas"
 
 // Forma farmacêutica e via de administração
-* definitional.doseForm = FormaFarmaceuticaCS#271 "Comprimido"
+* definitional.doseForm.coding[0] = FormaFarmaceuticaCS#271 "Comprimido"
+* definitional.doseForm.coding[1] = https://extranet.infarmed.pt/INFOMED-fo/detalhes-medicamento.xhtml#271 "Comprimido"
 * definitional.intendedRoute = ViaAdministracaoCS#48 "Via oral"
 
 // Ingrediente ativo
-* definitional.ingredient[0].item = http://infarmed.pt/substancia#[PREENCHER] "lorazepam"
+* definitional.ingredient[0].item = http://infarmed.pt/substancia#7612 "Lorazepam"
 * definitional.ingredient[0].type = http://terminology.hl7.org/CodeSystem/v3-RoleClass#ACTI
 * definitional.ingredient[0].strengthQuantity = 0.5 'mg' "mg"
 
@@ -181,7 +182,7 @@ InstanceOf: ContraIndicacoesPDH
 Instance: LorazepamBluepharm-CUD-contra5
 InstanceOf: ContraIndicacoesPDH
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Miastenia grave"
-* contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Miastenia grave"
+* contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#237600008 "Myasthenia gravis (disorder)"
 
 Instance: LorazepamBluepharm-CUD-contra6
 InstanceOf: ContraIndicacoesPDH
@@ -231,7 +232,7 @@ InstanceOf: ContraIndicacoesPDH
 Instance: LorazepamBluepharm-CUD-int1
 InstanceOf: InteracoesPDH
 * interaction.interactant[0].itemCodeableConcept.text = "Opioides"
-* interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Opioides"
+* interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#373873005 "Opioid analgesic (substance)"
 * interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
 * interaction.effect.concept.text = "Risco aumentado de sedação, depressão respiratória, coma e morte. Utilizar dose mais baixa e duração mais curta possível. Monitorização rigorosa."
 

@@ -1,7 +1,7 @@
 
 Instance: Forxiga-10-mg-Comprimido-revestido-por-pelicula
 InstanceOf: MedicationKnowledgePDH
-Description: "Example of MedicationKnowledge resource for Forxiga 10 mg comprimidos revestidos por película"
+Description: "Informação do medicamento Forxiga [Dapagliflozina] 10 mg Comprimido revestido por película: composição, forma farmacêutica, via de administração, indicações, posologia, contraindicações e interações."
 
 
 * code = http://infarmed.pt/medicamentos/prod_id#54633 "Forxiga 10 mg [A10BK01]"
@@ -10,7 +10,7 @@ Description: "Example of MedicationKnowledge resource for Forxiga 10 mg comprimi
 // Active ingredient: cada comprimido contém dapagliflozina propanodiol mono-hidratada equivalente a 10 mg de dapagliflozina
 * definitional.ingredient[0].item = http://infarmed.pt/substancia#45232 "Dapagliflozina"
 * definitional.ingredient[0].type = http://terminology.hl7.org/CodeSystem/v3-RoleClass#ACTI
-* definitional.ingredient[0].strengthQuantity = 10 'mg' "milligram"
+* definitional.ingredient[0].strengthQuantity = 10 'mg' "mg"
 
 // Excipients — núcleo do comprimido (secção 6.1)
 * definitional.ingredient[+].item = http://infarmed.pt/substancia#[PREENCHER] "Celulose microcristalina (E460i)"
@@ -19,7 +19,7 @@ Description: "Example of MedicationKnowledge resource for Forxiga 10 mg comprimi
 // Excipient with known effect: cada comprimido de 10 mg contém 50 mg de lactose (secção 2)
 * definitional.ingredient[+].item = http://infarmed.pt/substancia#[PREENCHER] "Lactose"
 * definitional.ingredient[=].type = http://terminology.hl7.org/CodeSystem/v3-RoleClass#BASE
-* definitional.ingredient[=].strengthQuantity = 50 'mg' "milligram"
+* definitional.ingredient[=].strengthQuantity = 50 'mg' "mg"
 
 * definitional.ingredient[+].item = http://infarmed.pt/substancia#[PREENCHER] "Crospovidona (E1202)"
 * definitional.ingredient[=].type = http://terminology.hl7.org/CodeSystem/v3-RoleClass#IACT
@@ -46,10 +46,13 @@ Description: "Example of MedicationKnowledge resource for Forxiga 10 mg comprimi
 * definitional.ingredient[+].item = http://infarmed.pt/substancia#[PREENCHER] "Óxido de ferro amarelo (E172)"
 * definitional.ingredient[=].type = http://terminology.hl7.org/CodeSystem/v3-RoleClass#IACT
 
-* medicineClassification.type = http://hl7.org/fhir/medication-classification-type#anatomical "Anatomical Class"
-* medicineClassification.classification = http://terminology.hl7.org/CodeSystem/v3-ATC#A10BK01 "Dapagliflozina"
+* medicineClassification[0].type.text = "Código ATC"
+* medicineClassification[0].classification = http://terminology.hl7.org/CodeSystem/v3-ATC#A10BK01 "Dapagliflozina"
+* medicineClassification[1].type.text = "Grupo farmacoterapêutico"
+* medicineClassification[1].classification.text = "Fármacos usados na diabetes, inibidores do co-transportador de sódio e glucose 2 (SGLT2)"
 
-* definitional.doseForm = FormaFarmaceuticaCS#39 "Comprimido revestido por película"
+* definitional.doseForm.coding[0] = FormaFarmaceuticaCS#39 "Comprimido revestido por película"
+* definitional.doseForm.coding[1] = https://extranet.infarmed.pt/INFOMED-fo/detalhes-medicamento.xhtml#039 "Comprimido revestido por película"
 * definitional.intendedRoute = ViaAdministracaoCS#48 "Via oral"
 
 * clinicalUseIssue[+] = Reference(Forxiga10mg-CUD-contra1)

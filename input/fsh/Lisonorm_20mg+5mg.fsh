@@ -1,7 +1,7 @@
 
 Instance: Lisonorm-20-mg-5-mg-Comprimido
 InstanceOf: MedicationKnowledgePDH
-Description: "Example of MedicationKnowledge resource for Lisonorm 20 mg + 5 mg comprimidos"
+Description: "Informação do medicamento Lisonorm [Lisinopril + Amlodipina] 20 mg + 5 mg Comprimido: composição, forma farmacêutica, via de administração, indicações, posologia, contraindicações e interações."
 
 
 * code = http://infarmed.pt/medicamentos/prod_id#52934 "Lisonorm 20 mg + 5 mg [C09BB03]"
@@ -10,12 +10,12 @@ Description: "Example of MedicationKnowledge resource for Lisonorm 20 mg + 5 mg 
 // Active ingredient 1: cada comprimido contém 20 mg de lisinopril (sob a forma de di-hidrato)
 * definitional.ingredient[0].item = http://infarmed.pt/substancia#29567 "Lisinopril"
 * definitional.ingredient[0].type = http://terminology.hl7.org/CodeSystem/v3-RoleClass#ACTI
-* definitional.ingredient[0].strengthQuantity = 20 'mg' "milligram"
+* definitional.ingredient[0].strengthQuantity = 20 'mg' "mg"
 
 // Active ingredient 2: cada comprimido contém 5 mg de amlodipina (sob a forma de besilato)
 * definitional.ingredient[+].item = http://infarmed.pt/substancia#28811 "Amlodipina"
 * definitional.ingredient[=].type = http://terminology.hl7.org/CodeSystem/v3-RoleClass#ACTI
-* definitional.ingredient[=].strengthQuantity = 5 'mg' "milligram"
+* definitional.ingredient[=].strengthQuantity = 5 'mg' "mg"
 
 // Excipients (secção 6.1)
 * definitional.ingredient[+].item = http://infarmed.pt/substancia#[PREENCHER] "Celulose microcristalina"
@@ -28,10 +28,13 @@ Description: "Example of MedicationKnowledge resource for Lisonorm 20 mg + 5 mg 
 * definitional.ingredient[+].item = http://infarmed.pt/substancia#[PREENCHER] "Estearato de magnésio"
 * definitional.ingredient[=].type = http://terminology.hl7.org/CodeSystem/v3-RoleClass#IACT
 
-* medicineClassification.type = http://hl7.org/fhir/medication-classification-type#anatomical "Anatomical Class"
-* medicineClassification.classification = http://terminology.hl7.org/CodeSystem/v3-ATC#C09BB03 "Lisinopril e amlodipina"
+* medicineClassification[0].type.text = "Código ATC"
+* medicineClassification[0].classification = http://terminology.hl7.org/CodeSystem/v3-ATC#C09BB03 "Lisinopril e amlodipina"
+* medicineClassification[1].type.text = "Grupo farmacoterapêutico"
+* medicineClassification[1].classification.text = "3.4.2.1 – Aparelho cardiovascular. Anti-hipertensores. Modificadores do eixo renina angiotensina. Inibidores da Enzima de Conversão da Angiotensina 3.4.3 – Aparelho cardiovascular. Anti-hipertensores. Bloqueadores dos canais de cálcio 3.5.1 Aparelho Cardiovascular. Vasodilatadores. Antianginosos"
 
-* definitional.doseForm = FormaFarmaceuticaCS#271 "Comprimido"
+* definitional.doseForm.coding[0] = FormaFarmaceuticaCS#271 "Comprimido"
+* definitional.doseForm.coding[1] = https://extranet.infarmed.pt/INFOMED-fo/detalhes-medicamento.xhtml#271 "Comprimido"
 * definitional.intendedRoute = ViaAdministracaoCS#48 "Via oral"
 
 * clinicalUseIssue[+] = Reference(Lisonorm205mg-CUD-contra1)
