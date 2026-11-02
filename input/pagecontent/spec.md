@@ -63,7 +63,7 @@ table.em-falta th { background-color: #f5b7b1; }
 | N05AA02 | Levomepromazina | | |
 | N05CF | Benzodiazepinas substâncias afins | | |
 | N06AA | Inibidores não selectivos da recaptação de monoaminas | | |
-| N06AB10 | Escitalopram | | [MedicationKnowledge-Cipralex-20-mgml-Gotas-orais-solucao.html](MedicationKnowledge-Cipralex-20-mgml-Gotas-orais-solucao.html) |
+| N06AB10 | Escitalopram | | [MedicationKnowledge-Cipralex-Ana-20-mgml-Gotas-orais-solucao.html](MedicationKnowledge-Cipralex-Ana-20-mgml-Gotas-orais-solucao.html) |
 | N06AX21 | Duloxetina | | |
 | N06DX01 | Memantina | | |
 | N07AA | Anticholinesterases | | |

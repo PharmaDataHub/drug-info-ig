@@ -84,44 +84,37 @@ Description: "Omacor 1000 mg cápsulas moles - ésteres etílicos 90 do ácido �
 
 // CUDs
 Instance: Omacor-CUD-ind1
-InstanceOf: ClinicalUseDefinition
-* type = #indication
+InstanceOf: IndicacoesPDH
 * indication.diseaseSymptomProcedure[0].concept.text = "Hipertrigliceridemia endógena tipo IV em monoterapia, como suplemento à dieta, quando as medidas de dietas isoladas são por si só insuficientes para produzir uma resposta adequada"
 * indication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Hipertrigliceridemia endógena tipo IV"
 
 Instance: Omacor-CUD-ind2
-InstanceOf: ClinicalUseDefinition
-* type = #indication
+InstanceOf: IndicacoesPDH
 * indication.diseaseSymptomProcedure[0].concept.text = "Hipertrigliceridemia endógena tipo IIb/III em associação com estatinas, como suplemento à dieta, quando o controlo dos triglicéridos é insuficiente"
 * indication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Hipertrigliceridemia endógena tipo IIb/III"
 
 Instance: Omacor-CUD-contra1
-InstanceOf: ClinicalUseDefinition
-* type = #contraindication
+InstanceOf: ContraIndicacoesPDH
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Hipersensibilidade à substância ativa"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Hipersensibilidade à substância ativa"
 
 Instance: Omacor-CUD-contra2
-InstanceOf: ClinicalUseDefinition
-* type = #contraindication
+InstanceOf: ContraIndicacoesPDH
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Hipersensibilidade à soja"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Alergia à soja"
 
 Instance: Omacor-CUD-contra3
-InstanceOf: ClinicalUseDefinition
-* type = #contraindication
+InstanceOf: ContraIndicacoesPDH
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Hipersensibilidade a qualquer um dos excipientes"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Hipersensibilidade a excipientes"
 
 Instance: Omacor-CUD-contra4
-InstanceOf: ClinicalUseDefinition
-* type = #contraindication
+InstanceOf: ContraIndicacoesPDH
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Alergia ao amendoim (o medicamento contém óleo de soja)"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Alergia ao amendoim"
 
 Instance: Omacor-CUD-int1
-InstanceOf: ClinicalUseDefinition
-* type = #interaction
+InstanceOf: InteracoesPDH
 * interaction.interactant[0].itemCodeableConcept.text = "Anticoagulantes orais (varfarina)"
 * interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Anticoagulantes orais"
 * interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"

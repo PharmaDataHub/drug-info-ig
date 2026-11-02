@@ -136,32 +136,27 @@ Description: "Litmuxair 60 mg comprimidos efervescentes - cloridrato de ambroxol
 
 // CUDs
 Instance: Litmuxair-CUD-ind1
-InstanceOf: ClinicalUseDefinition
-* type = #indication
+InstanceOf: IndicacoesPDH
 * indication.diseaseSymptomProcedure[0].concept.text = "Terapêutica mucolítica da tosse produtiva em doenças broncopulmonares agudas e crónicas associadas a secreção anormal de muco e transporte deficiente do muco"
 * indication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Tosse produtiva em doença broncopulmonar"
 
 Instance: Litmuxair-CUD-contra1
-InstanceOf: ClinicalUseDefinition
-* type = #contraindication
+InstanceOf: ContraIndicacoesPDH
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Hipersensibilidade à substância ativa"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Hipersensibilidade à substância ativa"
 
 Instance: Litmuxair-CUD-contra2
-InstanceOf: ClinicalUseDefinition
-* type = #contraindication
+InstanceOf: ContraIndicacoesPDH
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Hipersensibilidade a qualquer um dos excipientes"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Hipersensibilidade a excipientes"
 
 Instance: Litmuxair-CUD-contra3
-InstanceOf: ClinicalUseDefinition
-* type = #contraindication
+InstanceOf: ContraIndicacoesPDH
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Crianças com menos de 12 anos (devido ao elevado conteúdo de substância ativa, não se destina a esta população)"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Restrição pediátrica"
 
 Instance: Litmuxair-CUD-int1
-InstanceOf: ClinicalUseDefinition
-* type = #interaction
+InstanceOf: InteracoesPDH
 * interaction.interactant[0].itemCodeableConcept.text = "Antitússicos"
 * interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Antitússicos"
 * interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"

@@ -149,136 +149,115 @@ Description: "Lorazepam Bluepharm 0,5 mg comprimidos - lorazepam 0,5 mg por comp
 
 // CUDs
 Instance: LorazepamBluepharm-CUD-ind1
-InstanceOf: ClinicalUseDefinition
-* type = #indication
+InstanceOf: IndicacoesPDH
 * indication.diseaseSymptomProcedure[0].concept.text = "Tratamento sintomático de curta duração de ansiedade, tensão e agitação, perturbações do sono causadas por estas condições"
 * indication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Ansiedade/tensão/perturbações do sono"
 
 Instance: LorazepamBluepharm-CUD-ind2
-InstanceOf: ClinicalUseDefinition
-* type = #indication
+InstanceOf: IndicacoesPDH
 * indication.diseaseSymptomProcedure[0].concept.text = "Pré-medicação antes de intervenções de diagnóstico, bem como antes e após uma cirurgia"
 * indication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Pré-medicação"
 
 Instance: LorazepamBluepharm-CUD-contra1
-InstanceOf: ClinicalUseDefinition
-* type = #contraindication
+InstanceOf: ContraIndicacoesPDH
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Hipersensibilidade à substância ativa (lorazepam)"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Hipersensibilidade ao lorazepam"
 
 Instance: LorazepamBluepharm-CUD-contra2
-InstanceOf: ClinicalUseDefinition
-* type = #contraindication
+InstanceOf: ContraIndicacoesPDH
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Hipersensibilidade a outras benzodiazepinas"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Hipersensibilidade a benzodiazepinas"
 
 Instance: LorazepamBluepharm-CUD-contra3
-InstanceOf: ClinicalUseDefinition
-* type = #contraindication
+InstanceOf: ContraIndicacoesPDH
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Hipersensibilidade a qualquer um dos excipientes"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Hipersensibilidade a excipientes"
 
 Instance: LorazepamBluepharm-CUD-contra4
-InstanceOf: ClinicalUseDefinition
-* type = #contraindication
+InstanceOf: ContraIndicacoesPDH
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Doentes com historial médico de dependência"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Dependência de substâncias"
 
 Instance: LorazepamBluepharm-CUD-contra5
-InstanceOf: ClinicalUseDefinition
-* type = #contraindication
+InstanceOf: ContraIndicacoesPDH
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Miastenia grave"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Miastenia grave"
 
 Instance: LorazepamBluepharm-CUD-contra6
-InstanceOf: ClinicalUseDefinition
-* type = #contraindication
+InstanceOf: ContraIndicacoesPDH
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Ataxia espinal"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Ataxia espinal"
 
 Instance: LorazepamBluepharm-CUD-contra7
-InstanceOf: ClinicalUseDefinition
-* type = #contraindication
+InstanceOf: ContraIndicacoesPDH
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Ataxia cerebelosa"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Ataxia cerebelosa"
 
 Instance: LorazepamBluepharm-CUD-contra8
-InstanceOf: ClinicalUseDefinition
-* type = #contraindication
+InstanceOf: ContraIndicacoesPDH
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Intoxicação aguda por álcool"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Intoxicação aguda por álcool"
 
 Instance: LorazepamBluepharm-CUD-contra9
-InstanceOf: ClinicalUseDefinition
-* type = #contraindication
+InstanceOf: ContraIndicacoesPDH
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Intoxicação aguda por medicamentos depressores do SNC"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Intoxicação por depressores do sistema nervoso central"
 
 Instance: LorazepamBluepharm-CUD-contra10
-InstanceOf: ClinicalUseDefinition
-* type = #contraindication
+InstanceOf: ContraIndicacoesPDH
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Síndrome de apneia do sono"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Síndrome de apneia do sono"
 
 Instance: LorazepamBluepharm-CUD-contra11
-InstanceOf: ClinicalUseDefinition
-* type = #contraindication
+InstanceOf: ContraIndicacoesPDH
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Doença pulmonar obstrutiva crónica"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Doença pulmonar obstrutiva crónica"
 
 Instance: LorazepamBluepharm-CUD-contra12
-InstanceOf: ClinicalUseDefinition
-* type = #contraindication
+InstanceOf: ContraIndicacoesPDH
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Insuficiência hepática grave"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Insuficiência hepática grave"
 
 Instance: LorazepamBluepharm-CUD-contra13
-InstanceOf: ClinicalUseDefinition
-* type = #contraindication
+InstanceOf: ContraIndicacoesPDH
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Crianças e adolescentes com menos de 18 anos, exceto indicação urgente de sedação antes de intervenções de diagnóstico e antes e após uma cirurgia"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Restrição pediátrica"
 
 Instance: LorazepamBluepharm-CUD-contra14
-InstanceOf: ClinicalUseDefinition
-* type = #contraindication
+InstanceOf: ContraIndicacoesPDH
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Crianças com menos de 6 anos (não recomendado)"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Restrição pediátrica em crianças com menos de 6 anos"
 
 Instance: LorazepamBluepharm-CUD-int1
-InstanceOf: ClinicalUseDefinition
-* type = #interaction
+InstanceOf: InteracoesPDH
 * interaction.interactant[0].itemCodeableConcept.text = "Opioides"
 * interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Opioides"
 * interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
 * interaction.effect.concept.text = "Risco aumentado de sedação, depressão respiratória, coma e morte. Utilizar dose mais baixa e duração mais curta possível. Monitorização rigorosa."
 
 Instance: LorazepamBluepharm-CUD-int2
-InstanceOf: ClinicalUseDefinition
-* type = #interaction
+InstanceOf: InteracoesPDH
 * interaction.interactant[0].itemCodeableConcept.text = "Outros depressores do SNC e álcool"
 * interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Depressores do sistema nervoso central"
 * interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
 * interaction.effect.concept.text = "Potenciação mútua dos efeitos depressores do SNC."
 
 Instance: LorazepamBluepharm-CUD-int3
-InstanceOf: ClinicalUseDefinition
-* type = #interaction
+InstanceOf: InteracoesPDH
 * interaction.interactant[0].itemCodeableConcept.text = "Ácido valproico"
 * interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Ácido valproico"
 * interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
 * interaction.effect.concept.text = "Concentrações plasmáticas elevadas e redução da depuração de lorazepam. Reduzir dose para cerca de 50%."
 
 Instance: LorazepamBluepharm-CUD-int4
-InstanceOf: ClinicalUseDefinition
-* type = #interaction
+InstanceOf: InteracoesPDH
 * interaction.interactant[0].itemCodeableConcept.text = "Probenecida"
 * interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Probenecida"
 * interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
 * interaction.effect.concept.text = "Início mais rápido ou efeito prolongado. Reduzir dose para cerca de 50%."
 
 Instance: LorazepamBluepharm-CUD-int5
-InstanceOf: ClinicalUseDefinition
-* type = #interaction
+InstanceOf: InteracoesPDH
 * interaction.interactant[0].itemCodeableConcept.text = "Teofilina / Aminofilina"
 * interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Teofilina"
 * interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"

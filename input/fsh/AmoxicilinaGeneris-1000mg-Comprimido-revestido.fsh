@@ -1492,150 +1492,127 @@ Description: "Amoxicilina Generis 1000 mg comprimidos revestidos por película -
 
 // CUDs - Indicações
 Instance: AmoxicilinaGeneris-CUD-ind1
-InstanceOf: ClinicalUseDefinition
-* type = #indication
+InstanceOf: IndicacoesPDH
 * indication.diseaseSymptomProcedure[0].concept.text = "Sinusite bacteriana aguda"
 * indication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Sinusite bacteriana aguda"
 
 Instance: AmoxicilinaGeneris-CUD-ind2
-InstanceOf: ClinicalUseDefinition
-* type = #indication
+InstanceOf: IndicacoesPDH
 * indication.diseaseSymptomProcedure[0].concept.text = "Otite média aguda"
 * indication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Otite média aguda"
 
 Instance: AmoxicilinaGeneris-CUD-ind3
-InstanceOf: ClinicalUseDefinition
-* type = #indication
+InstanceOf: IndicacoesPDH
 * indication.diseaseSymptomProcedure[0].concept.text = "Amigdalite e faringite agudas estreptocócicas"
 * indication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Amigdalite e faringite estreptocócicas agudas"
 
 Instance: AmoxicilinaGeneris-CUD-ind4
-InstanceOf: ClinicalUseDefinition
-* type = #indication
+InstanceOf: IndicacoesPDH
 * indication.diseaseSymptomProcedure[0].concept.text = "Exacerbações agudas da bronquite crónica"
 * indication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Exacerbação aguda de bronquite crónica"
 
 Instance: AmoxicilinaGeneris-CUD-ind5
-InstanceOf: ClinicalUseDefinition
-* type = #indication
+InstanceOf: IndicacoesPDH
 * indication.diseaseSymptomProcedure[0].concept.text = "Pneumonia adquirida na comunidade"
 * indication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Pneumonia adquirida na comunidade"
 
 Instance: AmoxicilinaGeneris-CUD-ind6
-InstanceOf: ClinicalUseDefinition
-* type = #indication
+InstanceOf: IndicacoesPDH
 * indication.diseaseSymptomProcedure[0].concept.text = "Cistite aguda"
 * indication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Cistite aguda"
 
 Instance: AmoxicilinaGeneris-CUD-ind7
-InstanceOf: ClinicalUseDefinition
-* type = #indication
+InstanceOf: IndicacoesPDH
 * indication.diseaseSymptomProcedure[0].concept.text = "Bacteriúria assintomática na gravidez"
 * indication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Bacteriúria assintomática na gravidez"
 
 Instance: AmoxicilinaGeneris-CUD-ind8
-InstanceOf: ClinicalUseDefinition
-* type = #indication
+InstanceOf: IndicacoesPDH
 * indication.diseaseSymptomProcedure[0].concept.text = "Pielonefrite aguda"
 * indication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Pielonefrite aguda"
 
 Instance: AmoxicilinaGeneris-CUD-ind9
-InstanceOf: ClinicalUseDefinition
-* type = #indication
+InstanceOf: IndicacoesPDH
 * indication.diseaseSymptomProcedure[0].concept.text = "Febre tifoide e paratifoide"
 * indication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Febre tifoide e paratifoide"
 
 Instance: AmoxicilinaGeneris-CUD-ind10
-InstanceOf: ClinicalUseDefinition
-* type = #indication
+InstanceOf: IndicacoesPDH
 * indication.diseaseSymptomProcedure[0].concept.text = "Abcesso dentário com celulite disseminada"
 * indication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Abcesso dentário com celulite disseminada"
 
 Instance: AmoxicilinaGeneris-CUD-ind11
-InstanceOf: ClinicalUseDefinition
-* type = #indication
+InstanceOf: IndicacoesPDH
 * indication.diseaseSymptomProcedure[0].concept.text = "Infeções de próteses articulares"
 * indication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Infeção de prótese articular"
 
 Instance: AmoxicilinaGeneris-CUD-ind12
-InstanceOf: ClinicalUseDefinition
-* type = #indication
+InstanceOf: IndicacoesPDH
 * indication.diseaseSymptomProcedure[0].concept.text = "Erradicação de Helicobacter pylori"
 * indication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Erradicação de Helicobacter pylori"
 
 Instance: AmoxicilinaGeneris-CUD-ind13
-InstanceOf: ClinicalUseDefinition
-* type = #indication
+InstanceOf: IndicacoesPDH
 * indication.diseaseSymptomProcedure[0].concept.text = "Doença de Lyme"
 * indication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Doença de Lyme"
 
 Instance: AmoxicilinaGeneris-CUD-ind14
-InstanceOf: ClinicalUseDefinition
-* type = #indication
+InstanceOf: IndicacoesPDH
 * indication.diseaseSymptomProcedure[0].concept.text = "Profilaxia da endocardite"
 * indication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Profilaxia da endocardite"
 
 // CUDs - Contraindicações
 Instance: AmoxicilinaGeneris-CUD-contra1
-InstanceOf: ClinicalUseDefinition
-* type = #contraindication
+InstanceOf: ContraIndicacoesPDH
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Hipersensibilidade à substância ativa (amoxicilina)"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Hipersensibilidade à amoxicilina"
 
 Instance: AmoxicilinaGeneris-CUD-contra2
-InstanceOf: ClinicalUseDefinition
-* type = #contraindication
+InstanceOf: ContraIndicacoesPDH
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Hipersensibilidade a qualquer uma das penicilinas"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Hipersensibilidade a penicilinas"
 
 Instance: AmoxicilinaGeneris-CUD-contra3
-InstanceOf: ClinicalUseDefinition
-* type = #contraindication
+InstanceOf: ContraIndicacoesPDH
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Hipersensibilidade a qualquer um dos excipientes"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Hipersensibilidade a excipientes"
 
 Instance: AmoxicilinaGeneris-CUD-contra4
-InstanceOf: ClinicalUseDefinition
-* type = #contraindication
+InstanceOf: ContraIndicacoesPDH
 * contraindication.diseaseSymptomProcedure[0].concept.text = "História de reação de hipersensibilidade imediata grave (por exemplo, anafilaxia) a outro agente beta-lactâmico (por exemplo, cefalosporinas, carbapenemes, monobactam)"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Reação de hipersensibilidade imediata grave a beta-lactâmico"
 
 // CUDs - Interações
 Instance: AmoxicilinaGeneris-CUD-int1
-InstanceOf: ClinicalUseDefinition
-* type = #interaction
+InstanceOf: InteracoesPDH
 * interaction.interactant[0].itemCodeableConcept.text = "Probenecida"
 * interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Probenecida"
 * interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
 * interaction.effect.concept.text = "Administração concomitante não recomendada. A probenecida diminui a secreção tubular renal da amoxicilina, podendo aumentar e prolongar os níveis sanguíneos de amoxicilina."
 
 Instance: AmoxicilinaGeneris-CUD-int2
-InstanceOf: ClinicalUseDefinition
-* type = #interaction
+InstanceOf: InteracoesPDH
 * interaction.interactant[0].itemCodeableConcept.text = "Anticoagulantes orais"
 * interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Anticoagulantes orais"
 * interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
 * interaction.effect.concept.text = "Possível aumento da relação normalizada internacional (acenocumarol, varfarina). Monitorizar cuidadosamente o tempo de protrombina ou INR; podem ser necessários ajustes de dose do anticoagulante."
 
 Instance: AmoxicilinaGeneris-CUD-int3
-InstanceOf: ClinicalUseDefinition
-* type = #interaction
+InstanceOf: InteracoesPDH
 * interaction.interactant[0].itemCodeableConcept.text = "Metotrexato"
 * interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Metotrexato"
 * interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
 * interaction.effect.concept.text = "As penicilinas podem reduzir a excreção do metotrexato, com potencial aumento da toxicidade."
 
 Instance: AmoxicilinaGeneris-CUD-int4
-InstanceOf: ClinicalUseDefinition
-* type = #interaction
+InstanceOf: InteracoesPDH
 * interaction.interactant[0].itemCodeableConcept.text = "Alopurinol"
 * interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Alopurinol"
 * interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
 * interaction.effect.concept.text = "Pode aumentar a probabilidade de reações cutâneas alérgicas."
 
 Instance: AmoxicilinaGeneris-CUD-int5
-InstanceOf: ClinicalUseDefinition
-* type = #interaction
+InstanceOf: InteracoesPDH
 * interaction.interactant[0].itemCodeableConcept.text = "Tetraciclinas e outros fármacos bacteriostáticos"
 * interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Tetraciclinas"
 * interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"

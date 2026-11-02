@@ -1,5 +1,5 @@
 
-Instance: Cipralex-20-mgml-Gotas-orais-solucao
+Instance: Cipralex-Ana-20-mgml-Gotas-orais-solucao
 InstanceOf: MedicationKnowledgePDH
 Description: "Example of MedicationKnowledge resource for Cipralex 20 mg/ml Gotas orais, solução"
 

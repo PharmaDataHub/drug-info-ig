@@ -33,25 +33,25 @@ Description: "Cipralex 20 mg/ml gotas orais, solução - escitalopram 20 mg/ml (
 * definitional.ingredient[=].type = http://terminology.hl7.org/CodeSystem/v3-RoleClass#IACT
 
 // Referências a ClinicalUseDefinition
-* clinicalUseIssue[+] = Reference(Cipralex-CUD-ind1)
-* clinicalUseIssue[+] = Reference(Cipralex-CUD-ind2)
-* clinicalUseIssue[+] = Reference(Cipralex-CUD-ind3)
-* clinicalUseIssue[+] = Reference(Cipralex-CUD-ind4)
-* clinicalUseIssue[+] = Reference(Cipralex-CUD-ind5)
-* clinicalUseIssue[+] = Reference(Cipralex-CUD-contra1)
-* clinicalUseIssue[+] = Reference(Cipralex-CUD-contra2)
-* clinicalUseIssue[+] = Reference(Cipralex-CUD-contra3)
-* clinicalUseIssue[+] = Reference(Cipralex-CUD-contra4)
-* clinicalUseIssue[+] = Reference(Cipralex-CUD-contra5)
-* clinicalUseIssue[+] = Reference(Cipralex-CUD-contra6)
-* clinicalUseIssue[+] = Reference(Cipralex-CUD-contra7)
-* clinicalUseIssue[+] = Reference(Cipralex-CUD-contra8)
-* clinicalUseIssue[+] = Reference(Cipralex-CUD-contra9)
-* clinicalUseIssue[+] = Reference(Cipralex-CUD-int1)
-* clinicalUseIssue[+] = Reference(Cipralex-CUD-int2)
-* clinicalUseIssue[+] = Reference(Cipralex-CUD-int3)
-* clinicalUseIssue[+] = Reference(Cipralex-CUD-int4)
-* clinicalUseIssue[+] = Reference(Cipralex-CUD-int5)
+* clinicalUseIssue[+] = Reference(Cipralex-Ana-CUD-ind1)
+* clinicalUseIssue[+] = Reference(Cipralex-Ana-CUD-ind2)
+* clinicalUseIssue[+] = Reference(Cipralex-Ana-CUD-ind3)
+* clinicalUseIssue[+] = Reference(Cipralex-Ana-CUD-ind4)
+* clinicalUseIssue[+] = Reference(Cipralex-Ana-CUD-ind5)
+* clinicalUseIssue[+] = Reference(Cipralex-Ana-CUD-contra1)
+* clinicalUseIssue[+] = Reference(Cipralex-Ana-CUD-contra2)
+* clinicalUseIssue[+] = Reference(Cipralex-Ana-CUD-contra3)
+* clinicalUseIssue[+] = Reference(Cipralex-Ana-CUD-contra4)
+* clinicalUseIssue[+] = Reference(Cipralex-Ana-CUD-contra5)
+* clinicalUseIssue[+] = Reference(Cipralex-Ana-CUD-contra6)
+* clinicalUseIssue[+] = Reference(Cipralex-Ana-CUD-contra7)
+* clinicalUseIssue[+] = Reference(Cipralex-Ana-CUD-contra8)
+* clinicalUseIssue[+] = Reference(Cipralex-Ana-CUD-contra9)
+* clinicalUseIssue[+] = Reference(Cipralex-Ana-CUD-int1)
+* clinicalUseIssue[+] = Reference(Cipralex-Ana-CUD-int2)
+* clinicalUseIssue[+] = Reference(Cipralex-Ana-CUD-int3)
+* clinicalUseIssue[+] = Reference(Cipralex-Ana-CUD-int4)
+* clinicalUseIssue[+] = Reference(Cipralex-Ana-CUD-int5)
 
 // Indicação 1 - Episódios depressivos major
 * indicationGuideline[0].indication[0].concept.text = "Tratamento de episódios depressivos major"
@@ -393,93 +393,93 @@ Description: "Cipralex 20 mg/ml gotas orais, solução - escitalopram 20 mg/ml (
 * indicationGuideline[4].dosingGuideline[4].patientCharacteristic[0].valueCodeableConcept.text = "Metabolizadores fracos no que se refere ao CYP2C19"
 
 // CUDs - Indicações
-Instance: Cipralex-CUD-ind1
+Instance: Cipralex-Ana-CUD-ind1
 InstanceOf: ClinicalUseDefinition
 * type = #indication
 * indication.diseaseSymptomProcedure[0].concept.text = "Tratamento de episódios depressivos major"
 * indication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#35489007 "Major depressive disorder"
 
-Instance: Cipralex-CUD-ind2
+Instance: Cipralex-Ana-CUD-ind2
 InstanceOf: ClinicalUseDefinition
 * type = #indication
 * indication.diseaseSymptomProcedure[0].concept.text = "Tratamento de perturbações de pânico com ou sem agorafobia"
 * indication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#371631005 "Panic disorder"
 
-Instance: Cipralex-CUD-ind3
+Instance: Cipralex-Ana-CUD-ind3
 InstanceOf: ClinicalUseDefinition
 * type = #indication
 * indication.diseaseSymptomProcedure[0].concept.text = "Tratamento da perturbação da ansiedade social (fobia social)"
 * indication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#394924000 "Social anxiety disorder"
 
-Instance: Cipralex-CUD-ind4
+Instance: Cipralex-Ana-CUD-ind4
 InstanceOf: ClinicalUseDefinition
 * type = #indication
 * indication.diseaseSymptomProcedure[0].concept.text = "Tratamento da perturbação da ansiedade generalizada"
 * indication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#21897009 "Generalized anxiety disorder"
 
-Instance: Cipralex-CUD-ind5
+Instance: Cipralex-Ana-CUD-ind5
 InstanceOf: ClinicalUseDefinition
 * type = #indication
 * indication.diseaseSymptomProcedure[0].concept.text = "Tratamento da perturbação obsessiva-compulsiva"
 * indication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#191736004 "Obsessive-compulsive disorder"
 
 // CUDs - Contraindicações
-Instance: Cipralex-CUD-contra1
+Instance: Cipralex-Ana-CUD-contra1
 InstanceOf: ClinicalUseDefinition
 * type = #contraindication
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Hipersensibilidade à substância ativa (escitalopram)"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Hipersensibilidade ao escitalopram"
 
-Instance: Cipralex-CUD-contra2
+Instance: Cipralex-Ana-CUD-contra2
 InstanceOf: ClinicalUseDefinition
 * type = #contraindication
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Hipersensibilidade a qualquer dos excipientes"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Hipersensibilidade a excipientes"
 
-Instance: Cipralex-CUD-contra3
+Instance: Cipralex-Ana-CUD-contra3
 InstanceOf: ClinicalUseDefinition
 * type = #contraindication
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Tratamento concomitante com inibidores não seletivos e irreversíveis da monoamino oxidase (IMAO), devido ao risco de síndrome serotoninérgica (agitação, tremor, hipertermia, etc.)"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Tratamento concomitante com inibidor não seletivo e irreversível da MAO"
 
-Instance: Cipralex-CUD-contra4
+Instance: Cipralex-Ana-CUD-contra4
 InstanceOf: ClinicalUseDefinition
 * type = #contraindication
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Combinação com inibidores reversíveis da MAO-A (ex. moclobemida), devido ao risco de síndrome serotoninérgica"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Tratamento concomitante com inibidor reversível da MAO-A"
 
-Instance: Cipralex-CUD-contra5
+Instance: Cipralex-Ana-CUD-contra5
 InstanceOf: ClinicalUseDefinition
 * type = #contraindication
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Combinação com o inibidor não seletivo reversível da MAO linezolida, devido ao risco de síndrome serotoninérgica"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Tratamento concomitante com linezolida"
 
-Instance: Cipralex-CUD-contra6
+Instance: Cipralex-Ana-CUD-contra6
 InstanceOf: ClinicalUseDefinition
 * type = #contraindication
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Doentes com prolongamento do intervalo QT conhecido"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Prolongamento do intervalo QT"
 
-Instance: Cipralex-CUD-contra7
+Instance: Cipralex-Ana-CUD-contra7
 InstanceOf: ClinicalUseDefinition
 * type = #contraindication
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Síndrome de QT longo congénito"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#76544001 "Long QT syndrome"
 
-Instance: Cipralex-CUD-contra8
+Instance: Cipralex-Ana-CUD-contra8
 InstanceOf: ClinicalUseDefinition
 * type = #contraindication
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Uso concomitante com outros medicamentos conhecidos por prolongarem o intervalo QT"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Tratamento concomitante com medicamentos que prolongam o intervalo QT"
 
-Instance: Cipralex-CUD-contra9
+Instance: Cipralex-Ana-CUD-contra9
 InstanceOf: ClinicalUseDefinition
 * type = #contraindication
 * contraindication.diseaseSymptomProcedure[0].concept.text = "População pediátrica: não deve ser utilizado no tratamento de crianças e adolescentes com idade inferior a 18 anos (secção 4.2)"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Restrição pediátrica (menores de 18 anos)"
 
 // CUDs - Interações
-Instance: Cipralex-CUD-int1
+Instance: Cipralex-Ana-CUD-int1
 InstanceOf: ClinicalUseDefinition
 * type = #interaction
 * interaction.interactant[0].itemCodeableConcept.text = "IMAOs irreversíveis não seletivos"
@@ -487,7 +487,7 @@ InstanceOf: ClinicalUseDefinition
 * interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
 * interaction.effect.concept.text = "Associação contraindicada: reações graves, incluindo síndrome serotoninérgica. Iniciar escitalopram 14 dias após parar um IMAO irreversível; aguardar pelo menos 7 dias após parar escitalopram antes de iniciar um IMAO não seletivo."
 
-Instance: Cipralex-CUD-int2
+Instance: Cipralex-Ana-CUD-int2
 InstanceOf: ClinicalUseDefinition
 * type = #interaction
 * interaction.interactant[0].itemCodeableConcept.text = "Inibidores reversíveis da MAO (moclobemida, linezolida)"
@@ -495,7 +495,7 @@ InstanceOf: ClinicalUseDefinition
 * interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
 * interaction.effect.concept.text = "Risco de síndrome serotoninérgica; combinação contraindicada (secção 4.3). Se necessária, iniciar na dose mínima e reforçar a monitorização clínica."
 
-Instance: Cipralex-CUD-int3
+Instance: Cipralex-Ana-CUD-int3
 InstanceOf: ClinicalUseDefinition
 * type = #interaction
 * interaction.interactant[0].itemCodeableConcept.text = "Medicamentos que prolongam o intervalo QT"
@@ -503,7 +503,7 @@ InstanceOf: ClinicalUseDefinition
 * interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
 * interaction.effect.concept.text = "Associação contraindicada: efeito aditivo no prolongamento do intervalo QT (antiarrítmicos das classes IA e III, antipsicóticos, antidepressivos tricíclicos, alguns antimicrobianos, antimaláricos e anti-histamínicos)."
 
-Instance: Cipralex-CUD-int4
+Instance: Cipralex-Ana-CUD-int4
 InstanceOf: ClinicalUseDefinition
 * type = #interaction
 * interaction.interactant[0].itemCodeableConcept.text = "Medicamentos serotoninérgicos (triptanos, opioides incluindo tramadol, lítio, triptofano, hipericão)"
@@ -511,7 +511,7 @@ InstanceOf: ClinicalUseDefinition
 * interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
 * interaction.effect.concept.text = "Precaução: pode levar ao aparecimento de síndrome serotoninérgica; lítio, triptofano e hipericão podem aumentar os efeitos ou a incidência de reações adversas."
 
-Instance: Cipralex-CUD-int5
+Instance: Cipralex-Ana-CUD-int5
 InstanceOf: ClinicalUseDefinition
 * type = #interaction
 * interaction.interactant[0].itemCodeableConcept.text = "Inibidores do CYP2C19 (omeprazol, esomeprazol, fluconazol, fluvoxamina, lansoprazol, ticlopidina) e cimetidina"
