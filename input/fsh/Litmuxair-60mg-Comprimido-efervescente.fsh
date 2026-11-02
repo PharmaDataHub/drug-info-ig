@@ -2,7 +2,7 @@ Instance: Litmuxair-60mg-Comprimido-efervescente
 InstanceOf: MedicationKnowledgePDH
 Description: "Litmuxair 60 mg comprimidos efervescentes - cloridrato de ambroxol 60 mg por comprimido. Comprimidos brancos, redondos, 18 mm de diâmetro, com linha de divisão numa das faces e aroma a cereja."
 
-* code = http://infarmed.pt/medicamentos#[PREENCHER] "Litmuxair 60 mg comprimidos efervescentes [R05CB06]"
+* code = http://infarmed.pt/medicamentos/prod_id#667924 "Litmuxair 60 mg [R05CB06]"
 * name = "Litmuxair [cloridrato de ambroxol] 60 mg comprimido efervescente"
 
 * medicineClassification[0].type.text = "Código ATC"
@@ -15,7 +15,7 @@ Description: "Litmuxair 60 mg comprimidos efervescentes - cloridrato de ambroxol
 * definitional.intendedRoute = ViaAdministracaoCS#48 "Via oral"
 
 // Ingrediente ativo
-* definitional.ingredient[0].item = http://infarmed.pt/substancia#[PREENCHER] "cloridrato de ambroxol"
+* definitional.ingredient[0].item = http://infarmed.pt/substancia#17427 "Ambroxol, cloridrato"
 * definitional.ingredient[0].type = http://terminology.hl7.org/CodeSystem/v3-RoleClass#ACTI
 * definitional.ingredient[0].strengthQuantity = 60 'mg' "mg"
 
