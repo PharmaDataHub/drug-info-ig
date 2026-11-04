@@ -9,13 +9,13 @@ table.em-falta th { background-color: #f5b7b1; }
 | ATC Code | Specification | Exemplo | Exemplo FHIR |
 |---|---|---|---|
 | A10BK | Inibidores do co-transportador 2 sódio-glucose (SGLT2) | Forxiga 5 mg [A10BK01]<br>Forxiga 10 mg [A10BK01] | [MedicationKnowledge-Forxiga-5-mg-Comprimido-revestido-por-pelicula.html](MedicationKnowledge-Forxiga-5-mg-Comprimido-revestido-por-pelicula.html)<br>[MedicationKnowledge-Forxiga-10-mg-Comprimido-revestido-por-pelicula.html](MedicationKnowledge-Forxiga-10-mg-Comprimido-revestido-por-pelicula.html) |
-| C07 | Agentes bloqueadores dos recetores adrenérgicos beta | Concor 5 mg [C07AB07]<br>Concor 10 mg [C07AB07] | [MedicationKnowledge-Concor-5-mg-Comprimido-revestido.html](MedicationKnowledge-Concor-5-mg-Comprimido-revestido.html)<br>[MedicationKnowledge-Concor-10-mg-Comprimido-revestido.html](MedicationKnowledge-Concor-10-mg-Comprimido-revestido.html) |
+| C07 | Agentes bloqueadores dos recetores adrenérgicos beta | Concor 5 mg [C07AB07]<br>Concor 10 mg [C07AB07] | [MedicationKnowledge-Concor-5mg-Comprimido-revestido.html](MedicationKnowledge-Concor-5mg-Comprimido-revestido.html)<br>[MedicationKnowledge-Concor-10-mg-Comprimido-revestido.html](MedicationKnowledge-Concor-10-mg-Comprimido-revestido.html) |
 | C09B | Inibidores da ECA, associações | Lisonorm 20 mg + 5 mg [C09BB03] | [MedicationKnowledge-Lisonorm-20-mg-5-mg-Comprimido.html](MedicationKnowledge-Lisonorm-20-mg-5-mg-Comprimido.html) |
 | J01 | Anti-bacterianos de uso sistémico | Amoxicilina Generis 500 mg [J01CA04]<br>Amoxicilina Generis 1000 mg [J01CA04] | [MedicationKnowledge-AmoxicilinaGeneris-500-mg-Comprimido-revestido-por-pelicula.html](MedicationKnowledge-AmoxicilinaGeneris-500-mg-Comprimido-revestido-por-pelicula.html)<br>[MedicationKnowledge-AmoxicilinaGeneris-1000mg-Comprimido-revestido.html](MedicationKnowledge-AmoxicilinaGeneris-1000mg-Comprimido-revestido.html) |
 | N02AB03 | Fentanil | Abstral 100 µg [N02AB03] | [MedicationKnowledge-Abstral-100-microgramas-Comprimido-sublingual.html](MedicationKnowledge-Abstral-100-microgramas-Comprimido-sublingual.html) |
 | N05BA | Derivados da benzodiazepina | Lorazepam Bluepharma 0,5 mg [N05BA06] | [MedicationKnowledge-LorazepamBluepharma-05mg-Comprimido.html](MedicationKnowledge-LorazepamBluepharma-05mg-Comprimido.html) |
 | N06A | Antidepressivos | Triticum AC 150 mg [N06AX05] | [MedicationKnowledge-TriticumAC-150mg-Comprimido-de-libertacao-modificada.html](MedicationKnowledge-TriticumAC-150mg-Comprimido-de-libertacao-modificada.html) |
-| A02BC | Inibidores da bomba de protões | | |
+| A02BC | Inibidores da bomba de protões | Pantoc 20 mg [A02BC02] | [MedicationKnowledge-Pantoc-20mg-Comprimido-gastrorresistente.html](MedicationKnowledge-Pantoc-20mg-Comprimido-gastrorresistente.html) |
 | A03FA01 | Metoclopramida | | |
 | A06AD | Laxantes osmóticos | | |
 | A10BB12 | Glimepirida | | |
@@ -63,7 +63,7 @@ table.em-falta th { background-color: #f5b7b1; }
 | N05AA02 | Levomepromazina | | |
 | N05CF | Benzodiazepinas substâncias afins | | |
 | N06AA | Inibidores não selectivos da recaptação de monoaminas | | |
-| N06AB10 | Escitalopram | | [MedicationKnowledge-Cipralex-20-mgml-Gotas-orais-solucao.html](MedicationKnowledge-Cipralex-20-mgml-Gotas-orais-solucao.html) |
+| N06AB10 | Escitalopram | | [MedicationKnowledge-Cipralex-20mgml-Gotas-orais-solucao.html](MedicationKnowledge-Cipralex-20mgml-Gotas-orais-solucao.html) |
 | N06AX21 | Duloxetina | | |
 | N06DX01 | Memantina | | |
 | N07AA | Anticholinesterases | | |

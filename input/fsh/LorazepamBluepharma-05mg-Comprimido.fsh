@@ -56,6 +56,8 @@ Description: "Lorazepam Bluepharm 0,5 mg comprimidos - lorazepam 0,5 mg por comp
 * clinicalUseIssue[+] = Reference(LorazepamBluepharm-CUD-int3)
 * clinicalUseIssue[+] = Reference(LorazepamBluepharm-CUD-int4)
 * clinicalUseIssue[+] = Reference(LorazepamBluepharm-CUD-int5)
+* clinicalUseIssue[+] = Reference(LorazepamBluepharm-CUD-int6)
+* clinicalUseIssue[+] = Reference(LorazepamBluepharm-CUD-int7)
 
 // Indicação 1
 * indicationGuideline[0].indication[0].concept.text = "Tratamento sintomático de curta duração de ansiedade, tensão e agitação, perturbações do sono causadas por estas condições"
@@ -263,3 +265,17 @@ InstanceOf: InteracoesPDH
 * interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Teofilina"
 * interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
 * interaction.effect.concept.text = "Pode reduzir o efeito sedativo das benzodiazepinas."
+
+Instance: LorazepamBluepharm-CUD-int6
+InstanceOf: InteracoesPDH
+* interaction.interactant[0].itemCodeableConcept.text = "Relaxantes musculares e analgésicos"
+* interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Relaxantes musculares e analgésicos"
+* interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
+* interaction.effect.concept.text = "O efeito de relaxantes musculares e analgésicos pode ser potenciado."
+
+Instance: LorazepamBluepharm-CUD-int7
+InstanceOf: InteracoesPDH
+* interaction.interactant[0].itemCodeableConcept.text = "Clozapina"
+* interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Clozapina"
+* interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
+* interaction.effect.concept.text = "Podem ocorrer sedação significativa, salivação excessiva e doenças do movimento."

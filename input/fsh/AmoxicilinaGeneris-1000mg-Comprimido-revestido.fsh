@@ -16,7 +16,7 @@ Description: "Amoxicilina Generis 1000 mg comprimidos revestidos por película -
 * definitional.intendedRoute = ViaAdministracaoCS#48 "Via oral"
 
 // Ingrediente ativo (amoxicilina tri-hidratada equivalente a 1000 mg de amoxicilina)
-* definitional.ingredient[0].item = http://infarmed.pt/substancia#21465 "Amoxicilina"
+* definitional.ingredint[0].item = http://infarmed.pt/substancia#21465 "Amoxicilina"
 * definitional.ingredient[0].type = http://terminology.hl7.org/CodeSystem/v3-RoleClass#ACTI
 * definitional.ingredient[0].strengthQuantity = 1000 'mg' "mg"
 

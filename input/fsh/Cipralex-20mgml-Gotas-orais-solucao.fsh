@@ -1,4 +1,4 @@
-Instance: Cipralex-20-mgml-Gotas-orais-solucao
+Instance: Cipralex-20mgml-Gotas-orais-solucao
 InstanceOf: MedicationKnowledgePDH
 Description: "Cipralex 20 mg/ml gotas orais, solução - escitalopram 20 mg/ml (1 mg por gota). Solução límpida, ligeiramente incolor a amarelada, com paladar amargo."
 
@@ -53,6 +53,17 @@ Description: "Cipralex 20 mg/ml gotas orais, solução - escitalopram 20 mg/ml (
 * clinicalUseIssue[+] = Reference(Cipralex-CUD-int3)
 * clinicalUseIssue[+] = Reference(Cipralex-CUD-int4)
 * clinicalUseIssue[+] = Reference(Cipralex-CUD-int5)
+* clinicalUseIssue[+] = Reference(Cipralex-CUD-int6)
+* clinicalUseIssue[+] = Reference(Cipralex-CUD-int7)
+* clinicalUseIssue[+] = Reference(Cipralex-CUD-int8)
+* clinicalUseIssue[+] = Reference(Cipralex-CUD-int9)
+* clinicalUseIssue[+] = Reference(Cipralex-CUD-int10)
+* clinicalUseIssue[+] = Reference(Cipralex-CUD-int11)
+* clinicalUseIssue[+] = Reference(Cipralex-CUD-int12)
+* clinicalUseIssue[+] = Reference(Cipralex-CUD-int13)
+* clinicalUseIssue[+] = Reference(Cipralex-CUD-int14)
+* clinicalUseIssue[+] = Reference(Cipralex-CUD-int15)
+* clinicalUseIssue[+] = Reference(Cipralex-CUD-int16)
 
 // Indicação 1 - Episódios depressivos major
 * indicationGuideline[0].indication[0].concept.text = "Tratamento de episódios depressivos major"
@@ -464,28 +475,105 @@ InstanceOf: InteracoesPDH
 
 Instance: Cipralex-CUD-int2
 InstanceOf: InteracoesPDH
-* interaction.interactant[0].itemCodeableConcept.text = "Inibidores reversíveis da MAO (moclobemida, linezolida)"
-* interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Inibidores reversíveis da monoamino oxidase"
+* interaction.interactant[0].itemCodeableConcept.text = "Inibidor seletivo e reversível da MAO-A (moclobemida)"
+* interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Moclobemida"
 * interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
-* interaction.effect.concept.text = "Risco de síndrome serotoninérgica; combinação contraindicada (secção 4.3). Se necessária, iniciar na dose mínima e reforçar a monitorização clínica."
+* interaction.effect.concept.text = "Associação contraindicada (secção 4.3) devido ao risco de síndrome serotoninérgica. Se a combinação se mostrar necessária, deve ser iniciada na dose mínima recomendada e reforçar-se a monitorização clínica."
 
 Instance: Cipralex-CUD-int3
+InstanceOf: InteracoesPDH
+* interaction.interactant[0].itemCodeableConcept.text = "Inibidor reversível não seletivo da MAO (linezolida)"
+* interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Linezolida"
+* interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
+* interaction.effect.concept.text = "Associação contraindicada (secção 4.3): a linezolida não deve ser administrada a doentes em tratamento com escitalopram. Se a combinação se mostrar necessária, devem ser utilizadas as dosagens mínimas e reforçar-se a monitorização clínica."
+
+Instance: Cipralex-CUD-int4
 InstanceOf: InteracoesPDH
 * interaction.interactant[0].itemCodeableConcept.text = "Medicamentos que prolongam o intervalo QT"
 * interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Medicamentos que prolongam o intervalo QT"
 * interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
-* interaction.effect.concept.text = "Associação contraindicada: efeito aditivo no prolongamento do intervalo QT (antiarrítmicos das classes IA e III, antipsicóticos, antidepressivos tricíclicos, alguns antimicrobianos, antimaláricos e anti-histamínicos)."
-
-Instance: Cipralex-CUD-int4
-InstanceOf: InteracoesPDH
-* interaction.interactant[0].itemCodeableConcept.text = "Medicamentos serotoninérgicos (triptanos, opioides incluindo tramadol, lítio, triptofano, hipericão)"
-* interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Medicamentos serotoninérgicos"
-* interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
-* interaction.effect.concept.text = "Precaução: pode levar ao aparecimento de síndrome serotoninérgica; lítio, triptofano e hipericão podem aumentar os efeitos ou a incidência de reações adversas."
+* interaction.effect.concept.text = "Associação contraindicada: não pode ser excluído um efeito aditivo no prolongamento do intervalo QT (antiarrítmicos das classes IA e III, antipsicóticos como derivados das fenotiazinas, pimozida e haloperidol, antidepressivos tricíclicos, alguns agentes antimicrobianos como esparfloxacina, moxifloxacina, eritromicina IV e pentamidina, antimaláricos com especial atenção para a halofantrina, alguns anti-histamínicos como astemizol, hidroxizina e mizolastina, entre outros)."
 
 Instance: Cipralex-CUD-int5
+InstanceOf: InteracoesPDH
+* interaction.interactant[0].itemCodeableConcept.text = "Inibidor irreversível seletivo da MAO-B (selegilina)"
+* interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Selegilina"
+* interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
+* interaction.effect.concept.text = "Precaução na administração concomitante, devido ao risco de síndrome serotoninérgica. Doses de selegilina até 10 mg/dia foram administradas com segurança concomitantemente com a mistura racémica de citalopram."
+
+Instance: Cipralex-CUD-int6
+InstanceOf: InteracoesPDH
+* interaction.interactant[0].itemCodeableConcept.text = "Medicamentos serotoninérgicos (opioides incluindo tramadol, triptanos incluindo sumatriptano)"
+* interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Medicamentos serotoninérgicos"
+* interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
+* interaction.effect.concept.text = "Precaução: a administração concomitante pode levar ao aparecimento de síndrome serotoninérgica."
+
+Instance: Cipralex-CUD-int7
+InstanceOf: InteracoesPDH
+* interaction.interactant[0].itemCodeableConcept.text = "Medicamentos que diminuem o limiar convulsivo (antidepressores tricíclicos e ISRS, neurolépticos como fenotiazinas, tioxantenos e butirofenonas, mefloquina, bupropiona, tramadol)"
+* interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Medicamentos que diminuem o limiar convulsivo"
+* interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
+* interaction.effect.concept.text = "Precaução: os ISRS podem diminuir o limiar convulsivo."
+
+Instance: Cipralex-CUD-int8
+InstanceOf: InteracoesPDH
+* interaction.interactant[0].itemCodeableConcept.text = "Lítio, triptofano"
+* interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Lítio e triptofano"
+* interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
+* interaction.effect.concept.text = "Precaução: foram notificados aumentos de efeitos quando os ISRS foram administrados juntamente com lítio ou triptofano."
+
+Instance: Cipralex-CUD-int9
+InstanceOf: InteracoesPDH
+* interaction.interactant[0].itemCodeableConcept.text = "Hipericão (Hypericum perforatum)"
+* interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Hypericum perforatum"
+* interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
+* interaction.effect.concept.text = "A utilização concomitante de ISRS e produtos fitofarmacêuticos contendo hipericão pode resultar num aumento da incidência de reações adversas."
+
+Instance: Cipralex-CUD-int10
+InstanceOf: InteracoesPDH
+* interaction.interactant[0].itemCodeableConcept.text = "Anticoagulantes orais"
+* interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Anticoagulantes orais"
+* interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
+* interaction.effect.concept.text = "A coadministração pode provocar uma alteração dos efeitos anticoagulantes. Monitorização cuidadosa dos parâmetros de coagulação quando a administração de escitalopram é iniciada ou descontinuada."
+
+Instance: Cipralex-CUD-int11
+InstanceOf: InteracoesPDH
+* interaction.interactant[0].itemCodeableConcept.text = "Anti-inflamatórios não esteroides (AINEs)"
+* interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Anti-inflamatórios não esteroides"
+* interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
+* interaction.effect.concept.text = "A utilização concomitante pode aumentar a tendência para hemorragia."
+
+Instance: Cipralex-CUD-int12
+InstanceOf: InteracoesPDH
+* interaction.interactant[0].itemCodeableConcept.text = "Álcool"
+* interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Álcool"
+* interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
+* interaction.effect.concept.text = "Não são esperadas interações farmacodinâmicas ou farmacocinéticas entre o escitalopram e o álcool. Contudo, à semelhança de outros medicamentos psicotrópicos, não é aconselhada a combinação com o álcool."
+
+Instance: Cipralex-CUD-int13
+InstanceOf: InteracoesPDH
+* interaction.interactant[0].itemCodeableConcept.text = "Medicamentos que induzem hipocaliemia/hipomagnesemia"
+* interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Medicamentos que induzem hipocaliemia ou hipomagnesemia"
+* interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
+* interaction.effect.concept.text = "Precaução: estas condições aumentam o risco de arritmias malignas."
+
+Instance: Cipralex-CUD-int14
 InstanceOf: InteracoesPDH
 * interaction.interactant[0].itemCodeableConcept.text = "Inibidores do CYP2C19 (omeprazol, esomeprazol, fluconazol, fluvoxamina, lansoprazol, ticlopidina) e cimetidina"
 * interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Inibidores do CYP2C19"
 * interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
-* interaction.effect.concept.text = "Precaução: aumento das concentrações plasmáticas de escitalopram (cerca de 50% com omeprazol e 70% com cimetidina); pode ser necessária redução da dose."
+* interaction.effect.concept.text = "Precaução: aumento das concentrações plasmáticas de escitalopram (cerca de 50% com omeprazol 30 mg uma vez por dia e cerca de 70% com cimetidina 400 mg duas vezes por dia). Pode ser necessária uma redução na dose de escitalopram de acordo com a monitorização de efeitos secundários."
+
+Instance: Cipralex-CUD-int15
+InstanceOf: InteracoesPDH
+* interaction.interactant[0].itemCodeableConcept.text = "Medicamentos metabolizados pelo CYP2D6 com índice terapêutico estreito (flecaínida, propafenona, metoprolol na insuficiência cardíaca, desipramina, clomipramina, nortriptilina, risperidona, tioridazina, haloperidol)"
+* interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Substratos do CYP2D6"
+* interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
+* interaction.effect.concept.text = "Precaução: o escitalopram é um inibidor do CYP2D6. A administração concomitante de desipramina ou metoprolol resultou numa duplicação dos níveis plasmáticos destes substratos. Poderá ser necessário um ajuste da dose."
+
+Instance: Cipralex-CUD-int16
+InstanceOf: InteracoesPDH
+* interaction.interactant[0].itemCodeableConcept.text = "Medicamentos metabolizados pelo CYP2C19"
+* interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Substratos do CYP2C19"
+* interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
+* interaction.effect.concept.text = "Precaução: estudos in vitro demonstraram que o escitalopram pode causar uma inibição fraca do CYP2C19."
