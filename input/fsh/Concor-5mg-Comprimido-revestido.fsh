@@ -40,7 +40,7 @@ RuleSet: ConcorDosing(g)
 
 Instance: Concor-5mg-Comprimido-revestido
 InstanceOf: MedicationKnowledgePDH
-Description: "Informação do medicamento Concor [Bisoprolol] 5 mg Comprimido revestido: composição, forma farmacêutica, via de administração, indicações, posologia, contraindicações e interações."
+Description: "Concor [Bisoprolol] 5 mg Comprimido revestido, código ATC C07AB07"
 
 * code = http://infarmed.pt/medicamentos/prod_id#2143 "Concor 5 mg [C07AB07]"
 * name = "Concor [Bisoprolol] 5 mg Comprimido revestido"
@@ -77,10 +77,10 @@ Description: "Informação do medicamento Concor [Bisoprolol] 5 mg Comprimido re
 * definitional.ingredient[=].type = http://terminology.hl7.org/CodeSystem/v3-RoleClass#IACT
 
 // Classificação (secção 5.1)
-* medicineClassification[0].type = http://terminology.hl7.org/CodeSystem/medication-classification-type#anatomical
+* medicineClassification[0].type = http://hl7.org/fhir/medication-classification-type#anatomical
 * medicineClassification[0].type.text = "Código ATC"
 * medicineClassification[0].classification = http://terminology.hl7.org/CodeSystem/v3-ATC#C07AB07 "Bisoprolol"
-* medicineClassification[1].type = http://terminology.hl7.org/CodeSystem/medication-classification-type#therapeutic
+* medicineClassification[1].type = http://hl7.org/fhir/medication-classification-type#therapeutic
 * medicineClassification[1].type.text = "Grupo farmacoterapêutico"
 * medicineClassification[1].classification.text = "3.4.4.2.1 - Aparelho cardiovascular. Anti-hipertensores. Depressores de atividade adrenérgica. Bloqueadores Beta. Seletivos cardíacos"
 

@@ -5,15 +5,15 @@ Description: "Triticum AC 150 mg comprimidos de libertação modificada - clorid
 * code = http://infarmed.pt/medicamentos/prod_id#9533 "Triticum AC 150 mg [N06AX05]"
 * name = "Triticum AC [trazodona] 150 mg comprimido de libertação modificada"
 
+* medicineClassification[0].type = http://hl7.org/fhir/medication-classification-type#anatomical
 * medicineClassification[0].type.text = "Código ATC"
 * medicineClassification[0].classification = http://terminology.hl7.org/CodeSystem/v3-ATC#N06AX05 "trazodona"
+* medicineClassification[1].type = http://hl7.org/fhir/medication-classification-type#therapeutic
 * medicineClassification[1].type.text = "Grupo farmacoterapêutico"
 * medicineClassification[1].classification.text = "2.9.3 - Sistema Nervoso Central. Psicofármacos. Antidepressores"
 
 // Forma farmacêutica e via de administração
-* definitional.doseForm.coding[0] = FormaFarmaceuticaCS#44 "Comprimido de libertação modificada"
-// Código da forma farmacêutica (INFOMED): por verificar no registo INFOMED do medicamento
-* definitional.doseForm.coding[1] = https://extranet.infarmed.pt/INFOMED-fo/detalhes-medicamento.xhtml#044 "Comprimido de libertação modificada"
+* definitional.doseForm = FormaFarmaceuticaCS#44 "Comprimido de libertação modificada"
 * definitional.intendedRoute = ViaAdministracaoCS#48 "Via oral"
 
 // Ingrediente ativo: cada comprimido contém 150 mg de cloridrato de trazodona
@@ -37,31 +37,31 @@ Description: "Triticum AC 150 mg comprimidos de libertação modificada - clorid
 * definitional.ingredient[=].type = http://terminology.hl7.org/CodeSystem/v3-RoleClass#IACT
 
 // Referências a ClinicalUseDefinition
-* clinicalUseIssue[+] = Reference(TriticumAC-CUD-ind1)
-* clinicalUseIssue[+] = Reference(TriticumAC-CUD-contra1)
-* clinicalUseIssue[+] = Reference(TriticumAC-CUD-contra2)
-* clinicalUseIssue[+] = Reference(TriticumAC-CUD-contra3)
-* clinicalUseIssue[+] = Reference(TriticumAC-CUD-contra4)
-* clinicalUseIssue[+] = Reference(TriticumAC-CUD-contra5)
-* clinicalUseIssue[+] = Reference(TriticumAC-CUD-contra6)
-* clinicalUseIssue[+] = Reference(TriticumAC-CUD-int1)
-* clinicalUseIssue[+] = Reference(TriticumAC-CUD-int2)
-* clinicalUseIssue[+] = Reference(TriticumAC-CUD-int3)
-* clinicalUseIssue[+] = Reference(TriticumAC-CUD-int4)
-* clinicalUseIssue[+] = Reference(TriticumAC-CUD-int5)
-* clinicalUseIssue[+] = Reference(TriticumAC-CUD-int6)
-* clinicalUseIssue[+] = Reference(TriticumAC-CUD-int7)
-* clinicalUseIssue[+] = Reference(TriticumAC-CUD-int8)
-* clinicalUseIssue[+] = Reference(TriticumAC-CUD-int9)
-* clinicalUseIssue[+] = Reference(TriticumAC-CUD-int10)
-* clinicalUseIssue[+] = Reference(TriticumAC-CUD-int11)
-* clinicalUseIssue[+] = Reference(TriticumAC-CUD-int12)
-* clinicalUseIssue[+] = Reference(TriticumAC-CUD-int13)
-* clinicalUseIssue[+] = Reference(TriticumAC-CUD-int14)
-* clinicalUseIssue[+] = Reference(TriticumAC-CUD-int15)
-* clinicalUseIssue[+] = Reference(TriticumAC-CUD-int16)
-* clinicalUseIssue[+] = Reference(TriticumAC-CUD-int17)
-* clinicalUseIssue[+] = Reference(TriticumAC-CUD-int18)
+* clinicalUseIssue[+] = Reference(TriticumAC150mg-CUD-ind1)
+* clinicalUseIssue[+] = Reference(TriticumAC150mg-CUD-contra1)
+* clinicalUseIssue[+] = Reference(TriticumAC150mg-CUD-contra2)
+* clinicalUseIssue[+] = Reference(TriticumAC150mg-CUD-contra3)
+* clinicalUseIssue[+] = Reference(TriticumAC150mg-CUD-contra4)
+* clinicalUseIssue[+] = Reference(TriticumAC150mg-CUD-contra5)
+* clinicalUseIssue[+] = Reference(TriticumAC150mg-CUD-contra6)
+* clinicalUseIssue[+] = Reference(TriticumAC150mg-CUD-int1)
+* clinicalUseIssue[+] = Reference(TriticumAC150mg-CUD-int2)
+* clinicalUseIssue[+] = Reference(TriticumAC150mg-CUD-int3)
+* clinicalUseIssue[+] = Reference(TriticumAC150mg-CUD-int4)
+* clinicalUseIssue[+] = Reference(TriticumAC150mg-CUD-int5)
+* clinicalUseIssue[+] = Reference(TriticumAC150mg-CUD-int6)
+* clinicalUseIssue[+] = Reference(TriticumAC150mg-CUD-int7)
+* clinicalUseIssue[+] = Reference(TriticumAC150mg-CUD-int8)
+* clinicalUseIssue[+] = Reference(TriticumAC150mg-CUD-int9)
+* clinicalUseIssue[+] = Reference(TriticumAC150mg-CUD-int10)
+* clinicalUseIssue[+] = Reference(TriticumAC150mg-CUD-int11)
+* clinicalUseIssue[+] = Reference(TriticumAC150mg-CUD-int12)
+* clinicalUseIssue[+] = Reference(TriticumAC150mg-CUD-int13)
+* clinicalUseIssue[+] = Reference(TriticumAC150mg-CUD-int14)
+* clinicalUseIssue[+] = Reference(TriticumAC150mg-CUD-int15)
+* clinicalUseIssue[+] = Reference(TriticumAC150mg-CUD-int16)
+* clinicalUseIssue[+] = Reference(TriticumAC150mg-CUD-int17)
+* clinicalUseIssue[+] = Reference(TriticumAC150mg-CUD-int18)
 
 // Indicação 1
 * indicationGuideline[0].indication[0].concept.text = "Depressão de natureza vária com ou sem componente ansiosa"
@@ -99,163 +99,163 @@ Description: "Triticum AC 150 mg comprimidos de libertação modificada - clorid
 * indicationGuideline[0].dosingGuideline[2].patientCharacteristic[0].type.text = "Population"
 * indicationGuideline[0].dosingGuideline[2].patientCharacteristic[0].valueCodeableConcept.text = "Insuficiência renal"
 // CUDs - Indicação
-Instance: TriticumAC-CUD-ind1
+Instance: TriticumAC150mg-CUD-ind1
 InstanceOf: IndicacoesPDH
 * indication.diseaseSymptomProcedure[0].concept.text = "Depressão de natureza vária com ou sem componente ansiosa"
 * indication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Depressão"
 
 // CUDs - Contraindicações
-Instance: TriticumAC-CUD-contra1
+Instance: TriticumAC150mg-CUD-contra1
 InstanceOf: ContraIndicacoesPDH
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Hipersensibilidade à substância ativa"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Hipersensibilidade à substância ativa"
 
-Instance: TriticumAC-CUD-contra2
+Instance: TriticumAC150mg-CUD-contra2
 InstanceOf: ContraIndicacoesPDH
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Hipersensibilidade a qualquer dos excipientes"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Hipersensibilidade a excipientes"
 
-Instance: TriticumAC-CUD-contra3
+Instance: TriticumAC150mg-CUD-contra3
 InstanceOf: ContraIndicacoesPDH
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Indivíduos de idade inferior a 18 anos"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Restrição pediátrica"
 
-Instance: TriticumAC-CUD-contra4
+Instance: TriticumAC150mg-CUD-contra4
 InstanceOf: ContraIndicacoesPDH
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Intoxicação por álcool"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Intoxicação por álcool"
 
-Instance: TriticumAC-CUD-contra5
+Instance: TriticumAC150mg-CUD-contra5
 InstanceOf: ContraIndicacoesPDH
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Intoxicação por hipnóticos"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Intoxicação por hipnóticos"
 
-Instance: TriticumAC-CUD-contra6
+Instance: TriticumAC150mg-CUD-contra6
 InstanceOf: ContraIndicacoesPDH
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Fase de recuperação de enfarte agudo do miocárdio"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Enfarte agudo do miocárdio"
 
 // CUDs - Interações
-Instance: TriticumAC-CUD-int1
+Instance: TriticumAC150mg-CUD-int1
 InstanceOf: InteracoesPDH
 * interaction.interactant[0].itemCodeableConcept.text = "Inibidores da monoamina oxidase (IMAO)"
 * interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Inibidores da monoamina oxidase"
 * interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
 * interaction.effect.concept.text = "Não se recomenda o uso de trazodona concomitantemente com inibidores da MAO, ou no período de duas semanas da descontinuação destas substâncias; também não se recomenda a administração de inibidores da MAO no período de uma semana da descontinuação do tratamento com trazodona"
 
-Instance: TriticumAC-CUD-int2
+Instance: TriticumAC150mg-CUD-int2
 InstanceOf: InteracoesPDH
 * interaction.interactant[0].itemCodeableConcept.text = "Inibidores potentes do CYP3A4 (eritromicina, cetoconazol, itraconazol, ritonavir, indinavir, nefazodona)"
 * interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Inibidores do CYP3A4"
 * interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
 * interaction.effect.concept.text = "Podem provocar um aumento substancial das concentrações plasmáticas de trazodona (ritonavir 200 mg 2 vezes/dia aumentou os níveis plasmáticos para mais do dobro, provocando náuseas, síncope e hipotensão); deve evitar-se a administração concomitante com um potente inibidor do CYP3A4 e, se administrados em conjunto, deve considerar-se uma dose mais baixa de trazodona"
 
-Instance: TriticumAC-CUD-int3
+Instance: TriticumAC150mg-CUD-int3
 InstanceOf: InteracoesPDH
 * interaction.interactant[0].itemCodeableConcept.text = "Antidepressivos tricíclicos"
 * interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Antidepressivos tricíclicos"
 * interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
 * interaction.effect.concept.text = "Deve evitar-se a administração concomitante devido ao risco de interação; a síndrome serotoninérgica e os efeitos indesejáveis cardiovasculares devem ser acautelados"
 
-Instance: TriticumAC-CUD-int4
+Instance: TriticumAC150mg-CUD-int4
 InstanceOf: InteracoesPDH
 * interaction.interactant[0].itemCodeableConcept.text = "Álcool"
 * interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Álcool"
 * interaction.type = http://hl7.org/fhir/interaction-type#drug-food "drug to food interaction"
 * interaction.effect.concept.text = "A trazodona intensifica os efeitos sedativos do álcool, pelo que este deve ser evitado durante a terapêutica com trazodona"
 
-Instance: TriticumAC-CUD-int5
+Instance: TriticumAC150mg-CUD-int5
 InstanceOf: InteracoesPDH
 * interaction.interactant[0].itemCodeableConcept.text = "Fármacos que prolongam o intervalo QT"
 * interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Fármacos que prolongam o intervalo QT"
 * interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
 * interaction.effect.concept.text = "O uso concomitante pode aumentar o risco de arritmias ventriculares, incluindo torsade de pointes; deverá ter-se precaução"
 
-Instance: TriticumAC-CUD-int6
+Instance: TriticumAC150mg-CUD-int6
 InstanceOf: InteracoesPDH
 * interaction.interactant[0].itemCodeableConcept.text = "Fenotiazinas (clorpromazina, flufenazina, levomepromazina, perfenazina)"
 * interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Fenotiazinas"
 * interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
 * interaction.effect.concept.text = "Foi observada hipotensão ortostática grave em caso de utilização concomitante"
 
-Instance: TriticumAC-CUD-int7
+Instance: TriticumAC150mg-CUD-int7
 InstanceOf: InteracoesPDH
 * interaction.interactant[0].itemCodeableConcept.text = "Antipsicóticos, hipnóticos, sedativos ansiolíticos e medicamentos anti-histamínicos"
 * interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Depressores do sistema nervoso central"
 * interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
 * interaction.effect.concept.text = "Os efeitos sedativos podem ser intensificados; nestes casos, recomenda-se a redução da dosagem"
 
-Instance: TriticumAC-CUD-int8
+Instance: TriticumAC150mg-CUD-int8
 InstanceOf: InteracoesPDH
 * interaction.interactant[0].itemCodeableConcept.text = "Contracetivos orais, fenitoína, carbamazepina e barbitúricos"
 * interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Indutores enzimáticos hepáticos"
 * interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
 * interaction.effect.concept.text = "O metabolismo dos antidepressivos é acelerado devido aos efeitos hepáticos"
 
-Instance: TriticumAC-CUD-int9
+Instance: TriticumAC150mg-CUD-int9
 InstanceOf: InteracoesPDH
 * interaction.interactant[0].itemCodeableConcept.text = "Cimetidina e outros antipsicóticos"
 * interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Cimetidina"
 * interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
 * interaction.effect.concept.text = "O metabolismo dos antidepressivos é inibido"
 
-Instance: TriticumAC-CUD-int10
+Instance: TriticumAC150mg-CUD-int10
 InstanceOf: InteracoesPDH
 * interaction.interactant[0].itemCodeableConcept.text = "Carbamazepina"
 * interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Carbamazepina"
 * interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
 * interaction.effect.concept.text = "A administração conjunta reduz as concentrações plasmáticas de trazodona (400 mg/dia de carbamazepina diminuíram as concentrações de trazodona e do seu metabolito ativo m-clorofenilpiperazina em 76 % e 60 %, respetivamente); os doentes devem ser cuidadosamente monitorizados para avaliar a eventual necessidade de aumentar a dose de trazodona"
 
-Instance: TriticumAC-CUD-int11
+Instance: TriticumAC150mg-CUD-int11
 InstanceOf: InteracoesPDH
 * interaction.interactant[0].itemCodeableConcept.text = "Fluoxetina"
 * interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Fluoxetina"
 * interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
 * interaction.effect.concept.text = "Foram notificados casos raros de níveis plasmáticos elevados de trazodona e efeitos adversos; não se pode excluir uma interação farmacodinâmica (síndrome serotoninérgica)"
 
-Instance: TriticumAC-CUD-int12
+Instance: TriticumAC150mg-CUD-int12
 InstanceOf: InteracoesPDH
 * interaction.interactant[0].itemCodeableConcept.text = "Anestésicos voláteis e relaxantes musculares"
 * interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Anestésicos voláteis e relaxantes musculares"
 * interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
 * interaction.effect.concept.text = "O cloridrato de trazodona pode intensificar os efeitos dos relaxantes musculares e dos anestésicos voláteis, pelo que deve ter-se precaução"
 
-Instance: TriticumAC-CUD-int13
+Instance: TriticumAC150mg-CUD-int13
 InstanceOf: InteracoesPDH
 * interaction.interactant[0].itemCodeableConcept.text = "Levodopa"
 * interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Levodopa"
 * interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
 * interaction.effect.concept.text = "Os antidepressivos podem acelerar o metabolismo da levodopa"
 
-Instance: TriticumAC-CUD-int14
+Instance: TriticumAC150mg-CUD-int14
 InstanceOf: InteracoesPDH
 * interaction.interactant[0].itemCodeableConcept.text = "Anticoagulantes orais e/ou antiplaquetários"
 * interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Anticoagulantes orais e antiplaquetários"
 * interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
 * interaction.effect.concept.text = "Foram reportados casos raros de alterações nas funções anticoagulantes (valores laboratoriais e/ou sinais e sintomas clínicos) com aumento de hemorragia"
 
-Instance: TriticumAC-CUD-int15
+Instance: TriticumAC150mg-CUD-int15
 InstanceOf: InteracoesPDH
 * interaction.interactant[0].itemCodeableConcept.text = "Varfarina"
 * interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Varfarina"
 * interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
 * interaction.effect.concept.text = "Têm havido notificações de alterações no tempo de protrombina em doentes a fazerem tratamento concomitante com trazodona e varfarina"
 
-Instance: TriticumAC-CUD-int16
+Instance: TriticumAC150mg-CUD-int16
 InstanceOf: InteracoesPDH
 * interaction.interactant[0].itemCodeableConcept.text = "Digoxina e fenitoína"
 * interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Digoxina e fenitoína"
 * interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
 * interaction.effect.concept.text = "O uso concomitante pode resultar em níveis séricos elevados destas substâncias; a monitorização dos níveis séricos deve ser considerada"
 
-Instance: TriticumAC-CUD-int17
+Instance: TriticumAC150mg-CUD-int17
 InstanceOf: InteracoesPDH
 * interaction.interactant[0].itemCodeableConcept.text = "Preparações que contêm Hypericum perforatum"
 * interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Hypericum perforatum"
 * interaction.type = http://hl7.org/fhir/interaction-type#other "other interaction"
 * interaction.effect.concept.text = "Os efeitos indesejáveis podem ser mais frequentes quando administrada juntamente com preparações que contêm Hypericum perforatum"
 
-Instance: TriticumAC-CUD-int18
+Instance: TriticumAC150mg-CUD-int18
 InstanceOf: InteracoesPDH
 * interaction.interactant[0].itemCodeableConcept.text = "Medicamentos anti-hipertensores (guanetidina, clonidina)"
 * interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Anti-hipertensores"

@@ -27,7 +27,7 @@ RuleSet: PantocSpecialPops(g, h, r, e, p)
 
 Instance: Pantoc-20mg-Comprimido-gastrorresistente
 InstanceOf: MedicationKnowledgePDH
-Description: "Informação do medicamento Pantoc [Pantoprazol] 20 mg Comprimido gastrorresistente: composição, forma farmacêutica, via de administração, indicações, posologia, contraindicações e interações."
+Description: "Pantoc [Pantoprazol] 20 mg Comprimido gastrorresistente, código ATC A02BC02"
 
 * code = http://infarmed.pt/medicamentos/prod_id#9891 "Pantoc 20 mg [A02BC02]"
 * name = "Pantoc [Pantoprazol] 20 mg Comprimido gastrorresistente"
@@ -80,10 +80,10 @@ Description: "Informação do medicamento Pantoc [Pantoprazol] 20 mg Comprimido 
 * definitional.ingredient[=].type = http://terminology.hl7.org/CodeSystem/v3-RoleClass#IACT
 
 // Classificação (secção 5.1)
-* medicineClassification[0].type = http://terminology.hl7.org/CodeSystem/medication-classification-type#anatomical
+* medicineClassification[0].type = http://hl7.org/fhir/medication-classification-type#anatomical
 * medicineClassification[0].type.text = "Código ATC"
 * medicineClassification[0].classification = http://terminology.hl7.org/CodeSystem/v3-ATC#A02BC02 "Pantoprazol"
-* medicineClassification[1].type = http://terminology.hl7.org/CodeSystem/medication-classification-type#therapeutic
+* medicineClassification[1].type = http://hl7.org/fhir/medication-classification-type#therapeutic
 * medicineClassification[1].type.text = "Grupo farmacoterapêutico"
 * medicineClassification[1].classification.text = "6.2.2.3 - Aparelho Digestivo. Antiácidos e antiulcerosos. Modificadores da secreção gástrica. Inibidores da bomba de protões"
 

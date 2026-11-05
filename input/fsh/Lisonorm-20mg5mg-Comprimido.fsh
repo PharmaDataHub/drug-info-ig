@@ -1,7 +1,7 @@
 
-Instance: Lisonorm-20-mg-5-mg-Comprimido
+Instance: Lisonorm-20mg5mg-Comprimido
 InstanceOf: MedicationKnowledgePDH
-Description: "Informação do medicamento Lisonorm [Lisinopril + Amlodipina] 20 mg + 5 mg Comprimido: composição, forma farmacêutica, via de administração, indicações, posologia, contraindicações e interações."
+Description: "Lisonorm [Lisinopril + Amlodipina] 20 mg + 5 mg Comprimido, código ATC C09BB03"
 
 
 * code = http://infarmed.pt/medicamentos/prod_id#52934 "Lisonorm 20 mg + 5 mg [C09BB03]"
@@ -28,37 +28,38 @@ Description: "Informação do medicamento Lisonorm [Lisinopril + Amlodipina] 20 
 * definitional.ingredient[+].item = http://infarmed.pt/substancia#[PREENCHER] "Estearato de magnésio"
 * definitional.ingredient[=].type = http://terminology.hl7.org/CodeSystem/v3-RoleClass#IACT
 
+* medicineClassification[0].type = http://hl7.org/fhir/medication-classification-type#anatomical
 * medicineClassification[0].type.text = "Código ATC"
 * medicineClassification[0].classification = http://terminology.hl7.org/CodeSystem/v3-ATC#C09BB03 "Lisinopril e amlodipina"
+* medicineClassification[1].type = http://hl7.org/fhir/medication-classification-type#therapeutic
 * medicineClassification[1].type.text = "Grupo farmacoterapêutico"
 * medicineClassification[1].classification.text = "3.4.2.1 – Aparelho cardiovascular. Anti-hipertensores. Modificadores do eixo renina angiotensina. Inibidores da Enzima de Conversão da Angiotensina 3.4.3 – Aparelho cardiovascular. Anti-hipertensores. Bloqueadores dos canais de cálcio 3.5.1 Aparelho Cardiovascular. Vasodilatadores. Antianginosos"
 
-* definitional.doseForm.coding[0] = FormaFarmaceuticaCS#271 "Comprimido"
-* definitional.doseForm.coding[1] = https://extranet.infarmed.pt/INFOMED-fo/detalhes-medicamento.xhtml#271 "Comprimido"
+* definitional.doseForm = FormaFarmaceuticaCS#271 "Comprimido"
 * definitional.intendedRoute = ViaAdministracaoCS#48 "Via oral"
 
-* clinicalUseIssue[+] = Reference(Lisonorm205mg-CUD-contra1)
-* clinicalUseIssue[+] = Reference(Lisonorm205mg-CUD-contra2)
-* clinicalUseIssue[+] = Reference(Lisonorm205mg-CUD-contra3)
-* clinicalUseIssue[+] = Reference(Lisonorm205mg-CUD-contra4)
-* clinicalUseIssue[+] = Reference(Lisonorm205mg-CUD-contra5)
-* clinicalUseIssue[+] = Reference(Lisonorm205mg-CUD-contra6)
-* clinicalUseIssue[+] = Reference(Lisonorm205mg-CUD-contra7)
-* clinicalUseIssue[+] = Reference(Lisonorm205mg-CUD-contra8)
-* clinicalUseIssue[+] = Reference(Lisonorm205mg-CUD-contra9)
-* clinicalUseIssue[+] = Reference(Lisonorm205mg-CUD-contra10)
-* clinicalUseIssue[+] = Reference(Lisonorm205mg-CUD-contra11)
-* clinicalUseIssue[+] = Reference(Lisonorm205mg-CUD-contra12)
-* clinicalUseIssue[+] = Reference(Lisonorm205mg-CUD-ind1)
-* clinicalUseIssue[+] = Reference(Lisonorm205mg-CUD-int1)
-* clinicalUseIssue[+] = Reference(Lisonorm205mg-CUD-int2)
-* clinicalUseIssue[+] = Reference(Lisonorm205mg-CUD-int3)
-* clinicalUseIssue[+] = Reference(Lisonorm205mg-CUD-int4)
-* clinicalUseIssue[+] = Reference(Lisonorm205mg-CUD-int5)
-* clinicalUseIssue[+] = Reference(Lisonorm205mg-CUD-int6)
-* clinicalUseIssue[+] = Reference(Lisonorm205mg-CUD-int7)
-* clinicalUseIssue[+] = Reference(Lisonorm205mg-CUD-int8)
-* clinicalUseIssue[+] = Reference(Lisonorm205mg-CUD-int9)
+* clinicalUseIssue[+] = Reference(Lisonorm20mg5mg-CUD-contra1)
+* clinicalUseIssue[+] = Reference(Lisonorm20mg5mg-CUD-contra2)
+* clinicalUseIssue[+] = Reference(Lisonorm20mg5mg-CUD-contra3)
+* clinicalUseIssue[+] = Reference(Lisonorm20mg5mg-CUD-contra4)
+* clinicalUseIssue[+] = Reference(Lisonorm20mg5mg-CUD-contra5)
+* clinicalUseIssue[+] = Reference(Lisonorm20mg5mg-CUD-contra6)
+* clinicalUseIssue[+] = Reference(Lisonorm20mg5mg-CUD-contra7)
+* clinicalUseIssue[+] = Reference(Lisonorm20mg5mg-CUD-contra8)
+* clinicalUseIssue[+] = Reference(Lisonorm20mg5mg-CUD-contra9)
+* clinicalUseIssue[+] = Reference(Lisonorm20mg5mg-CUD-contra10)
+* clinicalUseIssue[+] = Reference(Lisonorm20mg5mg-CUD-contra11)
+* clinicalUseIssue[+] = Reference(Lisonorm20mg5mg-CUD-contra12)
+* clinicalUseIssue[+] = Reference(Lisonorm20mg5mg-CUD-ind1)
+* clinicalUseIssue[+] = Reference(Lisonorm20mg5mg-CUD-int1)
+* clinicalUseIssue[+] = Reference(Lisonorm20mg5mg-CUD-int2)
+* clinicalUseIssue[+] = Reference(Lisonorm20mg5mg-CUD-int3)
+* clinicalUseIssue[+] = Reference(Lisonorm20mg5mg-CUD-int4)
+* clinicalUseIssue[+] = Reference(Lisonorm20mg5mg-CUD-int5)
+* clinicalUseIssue[+] = Reference(Lisonorm20mg5mg-CUD-int6)
+* clinicalUseIssue[+] = Reference(Lisonorm20mg5mg-CUD-int7)
+* clinicalUseIssue[+] = Reference(Lisonorm20mg5mg-CUD-int8)
+* clinicalUseIssue[+] = Reference(Lisonorm20mg5mg-CUD-int9)
 
 
 // ---------------------------------------------------------
@@ -108,7 +109,7 @@ Description: "Informação do medicamento Lisonorm [Lisinopril + Amlodipina] 20 
 
 // --- Relacionadas com o lisinopril ---
 
-Instance: Lisonorm205mg-CUD-contra1
+Instance: Lisonorm20mg5mg-CUD-contra1
 InstanceOf: ContraIndicacoesPDH
 Description: "Contraindicação: Hipersensibilidade ao lisinopril ou a qualquer outro inibidor da ECA"
 
@@ -117,7 +118,7 @@ Description: "Contraindicação: Hipersensibilidade ao lisinopril ou a qualquer 
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Hypersensitivity to angiotensin-converting enzyme inhibitor (finding)"
 
 
-Instance: Lisonorm205mg-CUD-contra2
+Instance: Lisonorm20mg5mg-CUD-contra2
 InstanceOf: ContraIndicacoesPDH
 Description: "Contraindicação: Antecedentes de angioedema associado a terapêutica anterior com um IECA"
 
@@ -126,7 +127,7 @@ Description: "Contraindicação: Antecedentes de angioedema associado a terapêu
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "History of angioedema (situation)"
 
 
-Instance: Lisonorm205mg-CUD-contra3
+Instance: Lisonorm20mg5mg-CUD-contra3
 InstanceOf: ContraIndicacoesPDH
 Description: "Contraindicação: Angioedema hereditário ou idiopático"
 
@@ -135,7 +136,7 @@ Description: "Contraindicação: Angioedema hereditário ou idiopático"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Hereditary angioedema (disorder)"
 
 
-Instance: Lisonorm205mg-CUD-contra4
+Instance: Lisonorm20mg5mg-CUD-contra4
 InstanceOf: ContraIndicacoesPDH
 Description: "Contraindicação: 2.º e 3.º trimestres da gravidez"
 
@@ -144,7 +145,7 @@ Description: "Contraindicação: 2.º e 3.º trimestres da gravidez"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Pregnancy (finding)"
 
 
-Instance: Lisonorm205mg-CUD-contra5
+Instance: Lisonorm20mg5mg-CUD-contra5
 InstanceOf: ContraIndicacoesPDH
 Description: "Contraindicação: Uso concomitante com aliscireno em doentes com diabetes mellitus ou compromisso renal"
 
@@ -155,7 +156,7 @@ Description: "Contraindicação: Uso concomitante com aliscireno em doentes com 
 * contraindication.comorbidity[0].concept = http://snomed.info/sct#[PREENCHER] "Diabetes mellitus (disorder)"
 
 
-Instance: Lisonorm205mg-CUD-contra6
+Instance: Lisonorm20mg5mg-CUD-contra6
 InstanceOf: ContraIndicacoesPDH
 Description: "Contraindicação: Uso concomitante de terapêutica com sacubitril/valsartan"
 
@@ -166,7 +167,7 @@ Description: "Contraindicação: Uso concomitante de terapêutica com sacubitril
 
 // --- Relacionadas com a amlodipina ---
 
-Instance: Lisonorm205mg-CUD-contra7
+Instance: Lisonorm20mg5mg-CUD-contra7
 InstanceOf: ContraIndicacoesPDH
 Description: "Contraindicação: Hipersensibilidade à amlodipina ou a qualquer outro derivado da di-hidropiridina"
 
@@ -175,7 +176,7 @@ Description: "Contraindicação: Hipersensibilidade à amlodipina ou a qualquer 
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Hypersensitivity to dihydropyridine calcium channel blocker (finding)"
 
 
-Instance: Lisonorm205mg-CUD-contra8
+Instance: Lisonorm20mg5mg-CUD-contra8
 InstanceOf: ContraIndicacoesPDH
 Description: "Contraindicação: Hipotensão grave"
 
@@ -184,7 +185,7 @@ Description: "Contraindicação: Hipotensão grave"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Severe hypotension (disorder)"
 
 
-Instance: Lisonorm205mg-CUD-contra9
+Instance: Lisonorm20mg5mg-CUD-contra9
 InstanceOf: ContraIndicacoesPDH
 Description: "Contraindicação: Choque, incluindo choque cardiogénico"
 
@@ -193,7 +194,7 @@ Description: "Contraindicação: Choque, incluindo choque cardiogénico"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Cardiogenic shock (disorder)"
 
 
-Instance: Lisonorm205mg-CUD-contra10
+Instance: Lisonorm20mg5mg-CUD-contra10
 InstanceOf: ContraIndicacoesPDH
 Description: "Contraindicação: Obstrução da via de ejeção do ventrículo esquerdo"
 
@@ -202,7 +203,7 @@ Description: "Contraindicação: Obstrução da via de ejeção do ventrículo e
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Left ventricular outflow tract obstruction (disorder)"
 
 
-Instance: Lisonorm205mg-CUD-contra11
+Instance: Lisonorm20mg5mg-CUD-contra11
 InstanceOf: ContraIndicacoesPDH
 Description: "Contraindicação: Insuficiência cardíaca com instabilidade hemodinâmica após enfarte agudo do miocárdio"
 
@@ -213,7 +214,7 @@ Description: "Contraindicação: Insuficiência cardíaca com instabilidade hemo
 
 // --- Relacionadas com Lisonorm ---
 
-Instance: Lisonorm205mg-CUD-contra12
+Instance: Lisonorm20mg5mg-CUD-contra12
 InstanceOf: ContraIndicacoesPDH
 Description: "Contraindicação: Hipersensibilidade a qualquer dos excipientes"
 
@@ -226,7 +227,7 @@ Description: "Contraindicação: Hipersensibilidade a qualquer dos excipientes"
 // ClinicalUseDefinition — Indicações (secção 4.1)
 // =============================================================
 
-Instance: Lisonorm205mg-CUD-ind1
+Instance: Lisonorm20mg5mg-CUD-ind1
 InstanceOf: IndicacoesPDH
 Description: "Indicação: Hipertensão essencial em adultos"
 
@@ -239,7 +240,7 @@ Description: "Indicação: Hipertensão essencial em adultos"
 // ClinicalUseDefinition — Interações (secção 4.5)
 // =============================================================
 
-Instance: Lisonorm205mg-CUD-int1
+Instance: Lisonorm20mg5mg-CUD-int1
 InstanceOf: InteracoesPDH
 Description: "Interação: Sacubitril/valsartan (associação contraindicada — risco de angioedema)"
 
@@ -250,7 +251,7 @@ Description: "Interação: Sacubitril/valsartan (associação contraindicada —
 * interaction.effect.concept.text = "O uso concomitante de inibidores da ECA com sacubitril/valsartan é contraindicado, uma vez que aumenta o risco de angioedema. Lisonorm não deve ser iniciado antes de 36 horas após a última dose de sacubitril/valsartan."
 
 
-Instance: Lisonorm205mg-CUD-int2
+Instance: Lisonorm20mg5mg-CUD-int2
 InstanceOf: InteracoesPDH
 Description: "Interação: Aliscireno e duplo bloqueio do SRAA"
 
@@ -261,7 +262,7 @@ Description: "Interação: Aliscireno e duplo bloqueio do SRAA"
 * interaction.effect.concept.text = "O duplo bloqueio do SRAA está associado a uma maior frequência de hipotensão, hipercaliemia e função renal diminuída (incluindo insuficiência renal aguda). O uso concomitante com aliscireno é contraindicado em doentes com diabetes mellitus ou compromisso renal (TFG < 60 mL/min/1,73 m2)."
 
 
-Instance: Lisonorm205mg-CUD-int3
+Instance: Lisonorm20mg5mg-CUD-int3
 InstanceOf: InteracoesPDH
 Description: "Interação: Medicamentos que aumentam o risco de angioedema (inibidores mTOR, NEP, vildagliptina)"
 
@@ -272,7 +273,7 @@ Description: "Interação: Medicamentos que aumentam o risco de angioedema (inib
 * interaction.effect.concept.text = "O uso concomitante com inibidores da ECA pode levar a um aumento do risco de angioedema."
 
 
-Instance: Lisonorm205mg-CUD-int4
+Instance: Lisonorm20mg5mg-CUD-int4
 InstanceOf: InteracoesPDH
 Description: "Interação: Agentes que aumentam o potássio sérico (associação não recomendada)"
 
@@ -283,7 +284,7 @@ Description: "Interação: Agentes que aumentam o potássio sérico (associaçã
 * interaction.effect.concept.text = "Risco de aumentos significativos do potássio sérico e hipercaliemia, particularmente em doentes com insuficiência renal. A associação não é recomendada; se a utilização concomitante for indicada, monitorizar frequentemente o potássio sérico."
 
 
-Instance: Lisonorm205mg-CUD-int5
+Instance: Lisonorm20mg5mg-CUD-int5
 InstanceOf: InteracoesPDH
 Description: "Interação: Lítio (associação não recomendada)"
 
@@ -294,7 +295,7 @@ Description: "Interação: Lítio (associação não recomendada)"
 * interaction.effect.concept.text = "Foram notificados aumentos reversíveis das concentrações séricas de lítio e toxicidade durante a administração concomitante com inibidores da ECA. A associação não é recomendada; se for necessária, monitorizar cuidadosamente os níveis séricos de lítio."
 
 
-Instance: Lisonorm205mg-CUD-int6
+Instance: Lisonorm20mg5mg-CUD-int6
 InstanceOf: InteracoesPDH
 Description: "Interação: AINEs, incluindo ácido acetilsalicílico em dose ≥ 3 g/dia"
 
@@ -305,7 +306,7 @@ Description: "Interação: AINEs, incluindo ácido acetilsalicílico em dose ≥
 * interaction.effect.concept.text = "Pode ocorrer atenuação do efeito anti-hipertensor, risco mais elevado de agravamento da função renal (incluindo possível falha renal aguda) e aumento do potássio sérico. Administrar com precaução, especialmente em idosos, com hidratação adequada e monitorização da função renal."
 
 
-Instance: Lisonorm205mg-CUD-int7
+Instance: Lisonorm20mg5mg-CUD-int7
 InstanceOf: InteracoesPDH
 Description: "Interação: Inibidores potentes ou moderados da CYP3A4 (risco de hipotensão)"
 
@@ -316,7 +317,7 @@ Description: "Interação: Inibidores potentes ou moderados da CYP3A4 (risco de 
 * interaction.effect.concept.text = "Aumento significativo da exposição à amlodipina, resultando num risco aumentado de hipotensão, mais pronunciado nos idosos. Recomenda-se monitorização clínica e eventual ajuste posológico."
 
 
-Instance: Lisonorm205mg-CUD-int8
+Instance: Lisonorm20mg5mg-CUD-int8
 InstanceOf: InteracoesPDH
 Description: "Interação: Sinvastatina (limitar a dose a 20 mg/dia)"
 
@@ -327,7 +328,7 @@ Description: "Interação: Sinvastatina (limitar a dose a 20 mg/dia)"
 * interaction.effect.concept.text = "A coadministração de doses múltiplas de 10 mg de amlodipina com 80 mg de sinvastatina resultou num aumento de 77% da exposição à sinvastatina. Limitar a dose de sinvastatina em doentes a fazerem amlodipina para 20 mg por dia."
 
 
-Instance: Lisonorm205mg-CUD-int9
+Instance: Lisonorm20mg5mg-CUD-int9
 InstanceOf: InteracoesPDH
 Description: "Interação: Toranja e sumo de toranja (não recomendado)"
 

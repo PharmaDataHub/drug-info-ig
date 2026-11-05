@@ -1,7 +1,7 @@
 
-Instance: Triveram-10-mg-5-mg-5-mg-Comprimido-revestido-por-pelicula
+Instance: Triveram-10mg5mg5mg-Comprimido-revestido-por-pelicula
 InstanceOf: MedicationKnowledgePDH
-Description: "Informação do medicamento Triveram [Atorvastatina + Perindopril + Amlodipina] 10 mg + 5 mg + 5 mg Comprimido revestido por película: composição, forma farmacêutica, via de administração, indicações, posologia, contraindicações e interações."
+Description: "Triveram [Atorvastatina + Perindopril + Amlodipina] 10 mg + 5 mg + 5 mg Comprimido revestido por película, código ATC C10BX11"
 
 
 * code = http://infarmed.pt/medicamentos/prod_id#590004 "Triveram 10 mg + 5 mg + 5 mg [C10BX11]"
@@ -63,51 +63,52 @@ Description: "Informação do medicamento Triveram [Atorvastatina + Perindopril 
 * definitional.ingredient[+].item = http://infarmed.pt/substancia#[PREENCHER] "Óxido de ferro amarelo (E172)"
 * definitional.ingredient[=].type = http://terminology.hl7.org/CodeSystem/v3-RoleClass#IACT
 
+* medicineClassification[0].type = http://hl7.org/fhir/medication-classification-type#anatomical
 * medicineClassification[0].type.text = "Código ATC"
 * medicineClassification[0].classification = http://terminology.hl7.org/CodeSystem/v3-ATC#C10BX11 "Atorvastatina, amlodipina e perindopril"
+* medicineClassification[1].type = http://hl7.org/fhir/medication-classification-type#therapeutic
 * medicineClassification[1].type.text = "Grupo farmacoterapêutico"
 * medicineClassification[1].classification.text = "3.4. Aparelho cardiovascular. Anti-hipertensores. 3.7 Aparelho cardiovascular. Antidislipidémicos"
 
-* definitional.doseForm.coding[0] = FormaFarmaceuticaCS#39 "Comprimido revestido por película"
-* definitional.doseForm.coding[1] = https://extranet.infarmed.pt/INFOMED-fo/detalhes-medicamento.xhtml#039 "Comprimido revestido por película"
+* definitional.doseForm = FormaFarmaceuticaCS#39 "Comprimido revestido por película"
 * definitional.intendedRoute = ViaAdministracaoCS#48 "Via oral"
 
-* clinicalUseIssue[+] = Reference(Triveram1055mg-CUD-contra1)
-* clinicalUseIssue[+] = Reference(Triveram1055mg-CUD-contra2)
-* clinicalUseIssue[+] = Reference(Triveram1055mg-CUD-contra3)
-* clinicalUseIssue[+] = Reference(Triveram1055mg-CUD-contra4)
-* clinicalUseIssue[+] = Reference(Triveram1055mg-CUD-contra5)
-* clinicalUseIssue[+] = Reference(Triveram1055mg-CUD-contra6)
-* clinicalUseIssue[+] = Reference(Triveram1055mg-CUD-contra7)
-* clinicalUseIssue[+] = Reference(Triveram1055mg-CUD-contra8)
-* clinicalUseIssue[+] = Reference(Triveram1055mg-CUD-contra9)
-* clinicalUseIssue[+] = Reference(Triveram1055mg-CUD-contra10)
-* clinicalUseIssue[+] = Reference(Triveram1055mg-CUD-contra11)
-* clinicalUseIssue[+] = Reference(Triveram1055mg-CUD-contra12)
-* clinicalUseIssue[+] = Reference(Triveram1055mg-CUD-contra13)
-* clinicalUseIssue[+] = Reference(Triveram1055mg-CUD-contra14)
-* clinicalUseIssue[+] = Reference(Triveram1055mg-CUD-ind1)
-* clinicalUseIssue[+] = Reference(Triveram1055mg-CUD-int1)
-* clinicalUseIssue[+] = Reference(Triveram1055mg-CUD-int2)
-* clinicalUseIssue[+] = Reference(Triveram1055mg-CUD-int3)
-* clinicalUseIssue[+] = Reference(Triveram1055mg-CUD-int4)
-* clinicalUseIssue[+] = Reference(Triveram1055mg-CUD-int5)
-* clinicalUseIssue[+] = Reference(Triveram1055mg-CUD-int6)
-* clinicalUseIssue[+] = Reference(Triveram1055mg-CUD-int7)
-* clinicalUseIssue[+] = Reference(Triveram1055mg-CUD-int8)
-* clinicalUseIssue[+] = Reference(Triveram1055mg-CUD-int9)
-* clinicalUseIssue[+] = Reference(Triveram1055mg-CUD-int10)
-* clinicalUseIssue[+] = Reference(Triveram1055mg-CUD-int11)
-* clinicalUseIssue[+] = Reference(Triveram1055mg-CUD-int12)
-* clinicalUseIssue[+] = Reference(Triveram1055mg-CUD-int13)
-* clinicalUseIssue[+] = Reference(Triveram1055mg-CUD-int14)
-* clinicalUseIssue[+] = Reference(Triveram1055mg-CUD-int15)
-* clinicalUseIssue[+] = Reference(Triveram1055mg-CUD-int16)
-* clinicalUseIssue[+] = Reference(Triveram1055mg-CUD-int17)
-* clinicalUseIssue[+] = Reference(Triveram1055mg-CUD-int18)
-* clinicalUseIssue[+] = Reference(Triveram1055mg-CUD-int19)
-* clinicalUseIssue[+] = Reference(Triveram1055mg-CUD-int20)
-* clinicalUseIssue[+] = Reference(Triveram1055mg-CUD-int21)
+* clinicalUseIssue[+] = Reference(Triveram10mg5mg5mg-CUD-contra1)
+* clinicalUseIssue[+] = Reference(Triveram10mg5mg5mg-CUD-contra2)
+* clinicalUseIssue[+] = Reference(Triveram10mg5mg5mg-CUD-contra3)
+* clinicalUseIssue[+] = Reference(Triveram10mg5mg5mg-CUD-contra4)
+* clinicalUseIssue[+] = Reference(Triveram10mg5mg5mg-CUD-contra5)
+* clinicalUseIssue[+] = Reference(Triveram10mg5mg5mg-CUD-contra6)
+* clinicalUseIssue[+] = Reference(Triveram10mg5mg5mg-CUD-contra7)
+* clinicalUseIssue[+] = Reference(Triveram10mg5mg5mg-CUD-contra8)
+* clinicalUseIssue[+] = Reference(Triveram10mg5mg5mg-CUD-contra9)
+* clinicalUseIssue[+] = Reference(Triveram10mg5mg5mg-CUD-contra10)
+* clinicalUseIssue[+] = Reference(Triveram10mg5mg5mg-CUD-contra11)
+* clinicalUseIssue[+] = Reference(Triveram10mg5mg5mg-CUD-contra12)
+* clinicalUseIssue[+] = Reference(Triveram10mg5mg5mg-CUD-contra13)
+* clinicalUseIssue[+] = Reference(Triveram10mg5mg5mg-CUD-contra14)
+* clinicalUseIssue[+] = Reference(Triveram10mg5mg5mg-CUD-ind1)
+* clinicalUseIssue[+] = Reference(Triveram10mg5mg5mg-CUD-int1)
+* clinicalUseIssue[+] = Reference(Triveram10mg5mg5mg-CUD-int2)
+* clinicalUseIssue[+] = Reference(Triveram10mg5mg5mg-CUD-int3)
+* clinicalUseIssue[+] = Reference(Triveram10mg5mg5mg-CUD-int4)
+* clinicalUseIssue[+] = Reference(Triveram10mg5mg5mg-CUD-int5)
+* clinicalUseIssue[+] = Reference(Triveram10mg5mg5mg-CUD-int6)
+* clinicalUseIssue[+] = Reference(Triveram10mg5mg5mg-CUD-int7)
+* clinicalUseIssue[+] = Reference(Triveram10mg5mg5mg-CUD-int8)
+* clinicalUseIssue[+] = Reference(Triveram10mg5mg5mg-CUD-int9)
+* clinicalUseIssue[+] = Reference(Triveram10mg5mg5mg-CUD-int10)
+* clinicalUseIssue[+] = Reference(Triveram10mg5mg5mg-CUD-int11)
+* clinicalUseIssue[+] = Reference(Triveram10mg5mg5mg-CUD-int12)
+* clinicalUseIssue[+] = Reference(Triveram10mg5mg5mg-CUD-int13)
+* clinicalUseIssue[+] = Reference(Triveram10mg5mg5mg-CUD-int14)
+* clinicalUseIssue[+] = Reference(Triveram10mg5mg5mg-CUD-int15)
+* clinicalUseIssue[+] = Reference(Triveram10mg5mg5mg-CUD-int16)
+* clinicalUseIssue[+] = Reference(Triveram10mg5mg5mg-CUD-int17)
+* clinicalUseIssue[+] = Reference(Triveram10mg5mg5mg-CUD-int18)
+* clinicalUseIssue[+] = Reference(Triveram10mg5mg5mg-CUD-int19)
+* clinicalUseIssue[+] = Reference(Triveram10mg5mg5mg-CUD-int20)
+* clinicalUseIssue[+] = Reference(Triveram10mg5mg5mg-CUD-int21)
 
 
 // ---------------------------------------------------------
@@ -161,7 +162,7 @@ Description: "Informação do medicamento Triveram [Atorvastatina + Perindopril 
 // ClinicalUseDefinition — Contraindicações (secção 4.3)
 // =============================================================
 
-Instance: Triveram1055mg-CUD-contra1
+Instance: Triveram10mg5mg5mg-CUD-contra1
 InstanceOf: ContraIndicacoesPDH
 Description: "Contraindicação: Hipersensibilidade às substâncias ativas, a IECAs, di-hidropiridinas, estatinas ou excipientes"
 
@@ -170,7 +171,7 @@ Description: "Contraindicação: Hipersensibilidade às substâncias ativas, a I
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Hypersensitivity to angiotensin-converting enzyme inhibitor (finding)"
 
 
-Instance: Triveram1055mg-CUD-contra2
+Instance: Triveram10mg5mg5mg-CUD-contra2
 InstanceOf: ContraIndicacoesPDH
 Description: "Contraindicação: Doença hepática ativa ou aumento persistente das transaminases séricas"
 
@@ -179,7 +180,7 @@ Description: "Contraindicação: Doença hepática ativa ou aumento persistente 
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Active liver disease (disorder)"
 
 
-Instance: Triveram1055mg-CUD-contra3
+Instance: Triveram10mg5mg5mg-CUD-contra3
 InstanceOf: ContraIndicacoesPDH
 Description: "Contraindicação: Gravidez, amamentação e mulheres em idade fértil sem contraceção apropriada"
 
@@ -188,7 +189,7 @@ Description: "Contraindicação: Gravidez, amamentação e mulheres em idade fé
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Pregnancy (finding)"
 
 
-Instance: Triveram1055mg-CUD-contra4
+Instance: Triveram10mg5mg5mg-CUD-contra4
 InstanceOf: ContraIndicacoesPDH
 Description: "Contraindicação: Tratamento concomitante com glecaprevir/pibrentasvir"
 
@@ -197,7 +198,7 @@ Description: "Contraindicação: Tratamento concomitante com glecaprevir/pibrent
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Drug interaction with glecaprevir and pibrentasvir (finding)"
 
 
-Instance: Triveram1055mg-CUD-contra5
+Instance: Triveram10mg5mg5mg-CUD-contra5
 InstanceOf: ContraIndicacoesPDH
 Description: "Contraindicação: Hipotensão grave"
 
@@ -206,7 +207,7 @@ Description: "Contraindicação: Hipotensão grave"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Severe hypotension (disorder)"
 
 
-Instance: Triveram1055mg-CUD-contra6
+Instance: Triveram10mg5mg5mg-CUD-contra6
 InstanceOf: ContraIndicacoesPDH
 Description: "Contraindicação: Choque, incluindo choque cardiogénico"
 
@@ -215,7 +216,7 @@ Description: "Contraindicação: Choque, incluindo choque cardiogénico"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Cardiogenic shock (disorder)"
 
 
-Instance: Triveram1055mg-CUD-contra7
+Instance: Triveram10mg5mg5mg-CUD-contra7
 InstanceOf: ContraIndicacoesPDH
 Description: "Contraindicação: Obstrução do fluxo de saída do ventrículo esquerdo"
 
@@ -224,7 +225,7 @@ Description: "Contraindicação: Obstrução do fluxo de saída do ventrículo e
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Left ventricular outflow tract obstruction (disorder)"
 
 
-Instance: Triveram1055mg-CUD-contra8
+Instance: Triveram10mg5mg5mg-CUD-contra8
 InstanceOf: ContraIndicacoesPDH
 Description: "Contraindicação: Insuficiência cardíaca hemodinamicamente instável após enfarte agudo do miocárdio"
 
@@ -233,7 +234,7 @@ Description: "Contraindicação: Insuficiência cardíaca hemodinamicamente inst
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Heart failure with hemodynamic instability after acute myocardial infarction (disorder)"
 
 
-Instance: Triveram1055mg-CUD-contra9
+Instance: Triveram10mg5mg5mg-CUD-contra9
 InstanceOf: ContraIndicacoesPDH
 Description: "Contraindicação: Antecedentes de angioedema associado a terapêutica prévia com IECAs"
 
@@ -242,7 +243,7 @@ Description: "Contraindicação: Antecedentes de angioedema associado a terapêu
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "History of angioedema (situation)"
 
 
-Instance: Triveram1055mg-CUD-contra10
+Instance: Triveram10mg5mg5mg-CUD-contra10
 InstanceOf: ContraIndicacoesPDH
 Description: "Contraindicação: Angioedema hereditário ou idiopático"
 
@@ -251,7 +252,7 @@ Description: "Contraindicação: Angioedema hereditário ou idiopático"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Hereditary angioedema (disorder)"
 
 
-Instance: Triveram1055mg-CUD-contra11
+Instance: Triveram10mg5mg5mg-CUD-contra11
 InstanceOf: ContraIndicacoesPDH
 Description: "Contraindicação: Uso concomitante com aliscireno em doentes com diabetes mellitus ou compromisso renal"
 
@@ -262,7 +263,7 @@ Description: "Contraindicação: Uso concomitante com aliscireno em doentes com 
 * contraindication.comorbidity[0].concept = http://snomed.info/sct#[PREENCHER] "Diabetes mellitus (disorder)"
 
 
-Instance: Triveram1055mg-CUD-contra12
+Instance: Triveram10mg5mg5mg-CUD-contra12
 InstanceOf: ContraIndicacoesPDH
 Description: "Contraindicação: Uso concomitante com sacubitril/valsartan"
 
@@ -271,7 +272,7 @@ Description: "Contraindicação: Uso concomitante com sacubitril/valsartan"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Drug interaction with sacubitril and valsartan (finding)"
 
 
-Instance: Triveram1055mg-CUD-contra13
+Instance: Triveram10mg5mg5mg-CUD-contra13
 InstanceOf: ContraIndicacoesPDH
 Description: "Contraindicação: Tratamentos extracorporais com superfícies eletrizadas negativamente"
 
@@ -280,7 +281,7 @@ Description: "Contraindicação: Tratamentos extracorporais com superfícies ele
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Extracorporeal treatment procedure (procedure)"
 
 
-Instance: Triveram1055mg-CUD-contra14
+Instance: Triveram10mg5mg5mg-CUD-contra14
 InstanceOf: ContraIndicacoesPDH
 Description: "Contraindicação: Estenose bilateral da artéria renal ou estenose da artéria para o único rim funcional"
 
@@ -293,7 +294,7 @@ Description: "Contraindicação: Estenose bilateral da artéria renal ou estenos
 // ClinicalUseDefinition — Indicações (secção 4.1)
 // =============================================================
 
-Instance: Triveram1055mg-CUD-ind1
+Instance: Triveram10mg5mg5mg-CUD-ind1
 InstanceOf: IndicacoesPDH
 Description: "Indicação: Hipertensão arterial essencial e/ou doença arterial coronária estável com hipercolesterolemia primária ou hiperlipidemia mista"
 
@@ -308,7 +309,7 @@ Description: "Indicação: Hipertensão arterial essencial e/ou doença arterial
 
 // --- Utilização concomitante contraindicada ---
 
-Instance: Triveram1055mg-CUD-int1
+Instance: Triveram10mg5mg5mg-CUD-int1
 InstanceOf: InteracoesPDH
 Description: "Interação: Sacubitril/valsartan (associação contraindicada — risco de angioedema)"
 
@@ -319,7 +320,7 @@ Description: "Interação: Sacubitril/valsartan (associação contraindicada —
 * interaction.effect.concept.text = "A utilização concomitante de IECAs com sacubitril/valsartan está contraindicada, uma vez que aumenta o risco de angioedema. Sacubitril/valsartan não deve ser iniciado até 36 horas após a administração da última dose de perindopril, e vice-versa."
 
 
-Instance: Triveram1055mg-CUD-int2
+Instance: Triveram10mg5mg5mg-CUD-int2
 InstanceOf: InteracoesPDH
 Description: "Interação: Glecaprevir/pibrentasvir (associação contraindicada — risco de miopatia)"
 
@@ -330,7 +331,7 @@ Description: "Interação: Glecaprevir/pibrentasvir (associação contraindicada
 * interaction.effect.concept.text = "A terapia concomitante com Triveram é contraindicada devido a um risco aumentado de miopatia."
 
 
-Instance: Triveram1055mg-CUD-int3
+Instance: Triveram10mg5mg5mg-CUD-int3
 InstanceOf: InteracoesPDH
 Description: "Interação: Tratamentos extracorporais com superfícies eletrizadas negativamente (contraindicados)"
 
@@ -341,7 +342,7 @@ Description: "Interação: Tratamentos extracorporais com superfícies eletrizad
 * interaction.effect.concept.text = "Aumento do risco de reações anafiláticas graves. Se for necessário algum destes tratamentos, deve considerar-se o uso de um tipo diferente de membrana de diálise ou de uma classe diferente de medicamento anti-hipertensivo."
 
 
-Instance: Triveram1055mg-CUD-int4
+Instance: Triveram10mg5mg5mg-CUD-int4
 InstanceOf: InteracoesPDH
 Description: "Interação: Aliscireno (contraindicada em diabetes ou compromisso renal; não recomendada nos restantes doentes)"
 
@@ -354,7 +355,7 @@ Description: "Interação: Aliscireno (contraindicada em diabetes ou compromisso
 
 // --- Utilização concomitante não recomendada ---
 
-Instance: Triveram1055mg-CUD-int5
+Instance: Triveram10mg5mg5mg-CUD-int5
 InstanceOf: InteracoesPDH
 Description: "Interação: Inibidores potentes do CYP3A4 (risco de miopatia)"
 
@@ -365,7 +366,7 @@ Description: "Interação: Inibidores potentes do CYP3A4 (risco de miopatia)"
 * interaction.effect.concept.text = "Aumento acentuado da concentração plasmática de atorvastatina e do risco de miopatia. A administração concomitante deve ser evitada, se possível. Quando não puder ser evitada, devem ser consideradas as doses mais baixas de atorvastatina e recomenda-se monitorização clínica adequada."
 
 
-Instance: Triveram1055mg-CUD-int6
+Instance: Triveram10mg5mg5mg-CUD-int6
 InstanceOf: InteracoesPDH
 Description: "Interação: Duplo bloqueio do SRAA com antagonistas dos recetores da angiotensina II"
 
@@ -376,7 +377,7 @@ Description: "Interação: Duplo bloqueio do SRAA com antagonistas dos recetores
 * interaction.effect.concept.text = "Associado a uma maior frequência de hipotensão, síncope, hipercaliemia e deterioração da função renal (incluindo insuficiência renal aguda) comparativamente à utilização de um único fármaco do SRAA. O duplo bloqueio deve ser limitado a casos individuais com monitorização cuidadosa da função renal, níveis de potássio e pressão arterial."
 
 
-Instance: Triveram1055mg-CUD-int7
+Instance: Triveram10mg5mg5mg-CUD-int7
 InstanceOf: InteracoesPDH
 Description: "Interação: Medicamentos que aumentam o risco de angioedema (racecadotril, inibidores mTOR, gliptinas)"
 
@@ -387,7 +388,7 @@ Description: "Interação: Medicamentos que aumentam o risco de angioedema (race
 * interaction.effect.concept.text = "A utilização concomitante de IECAs com estes medicamentos pode levar a um aumento do risco de angioedema."
 
 
-Instance: Triveram1055mg-CUD-int8
+Instance: Triveram10mg5mg5mg-CUD-int8
 InstanceOf: InteracoesPDH
 Description: "Interação: Medicamentos que induzem hipercaliemia (associação não recomendada)"
 
@@ -398,7 +399,7 @@ Description: "Interação: Medicamentos que induzem hipercaliemia (associação 
 * interaction.effect.concept.text = "Risco aumentado de hipercaliemia, potencialmente fatal, especialmente em conjunto com insuficiência renal (efeitos hipercaliémicos aditivos). A combinação não é recomendada; se a utilização concomitante for indicada, usar com cuidado e com monitorização frequente do potássio sérico e da creatinina."
 
 
-Instance: Triveram1055mg-CUD-int9
+Instance: Triveram10mg5mg5mg-CUD-int9
 InstanceOf: InteracoesPDH
 Description: "Interação: Estramustina (risco de angioedema)"
 
@@ -409,7 +410,7 @@ Description: "Interação: Estramustina (risco de angioedema)"
 * interaction.effect.concept.text = "Risco de efeitos indesejáveis tais como edema angioneurótico (angioedema)."
 
 
-Instance: Triveram1055mg-CUD-int10
+Instance: Triveram10mg5mg5mg-CUD-int10
 InstanceOf: InteracoesPDH
 Description: "Interação: Lítio (associação não recomendada)"
 
@@ -420,7 +421,7 @@ Description: "Interação: Lítio (associação não recomendada)"
 * interaction.effect.concept.text = "Foram notificados durante a administração concomitante de lítio e IECAs aumentos reversíveis das concentrações séricas e toxicidade. A associação não é recomendada, mas se for necessária deve ser feita uma cuidadosa monitorização dos níveis séricos do lítio."
 
 
-Instance: Triveram1055mg-CUD-int11
+Instance: Triveram10mg5mg5mg-CUD-int11
 InstanceOf: InteracoesPDH
 Description: "Interação: Dantroleno em perfusão (risco de hipercaliemia)"
 
@@ -431,7 +432,7 @@ Description: "Interação: Dantroleno em perfusão (risco de hipercaliemia)"
 * interaction.effect.concept.text = "Em animais, foram observadas fibrilhação ventricular letal e colapso cardiovascular em associação com hipercaliemia. Devido ao risco de hipercaliemia, recomenda-se que a administração concomitante de bloqueadores dos canais de cálcio seja evitada em doentes suscetíveis de hipertermia maligna e no tratamento da hipertermia maligna."
 
 
-Instance: Triveram1055mg-CUD-int12
+Instance: Triveram10mg5mg5mg-CUD-int12
 InstanceOf: InteracoesPDH
 Description: "Interação: Toranja ou sumo de toranja (associação não recomendada)"
 
@@ -444,7 +445,7 @@ Description: "Interação: Toranja ou sumo de toranja (associação não recomen
 
 // --- Utilização concomitante que requer cuidados especiais ---
 
-Instance: Triveram1055mg-CUD-int13
+Instance: Triveram10mg5mg5mg-CUD-int13
 InstanceOf: InteracoesPDH
 Description: "Interação: Inibidores moderados e indutores do CYP3A4"
 
@@ -455,7 +456,7 @@ Description: "Interação: Inibidores moderados e indutores do CYP3A4"
 * interaction.effect.concept.text = "Os inibidores moderados do CYP3A4 podem aumentar as concentrações plasmáticas de atorvastatina e de amlodipina, com risco aumentado de miopatia e de hipotensão. Os indutores do CYP3A4 podem reduzir as concentrações plasmáticas. Recomenda-se monitorização clínica e eventual ajuste posológico com os componentes individuais."
 
 
-Instance: Triveram1055mg-CUD-int14
+Instance: Triveram10mg5mg5mg-CUD-int14
 InstanceOf: InteracoesPDH
 Description: "Interação: Gemfibrozil, derivados do ácido fíbrico e ezetimiba (risco de miopatia)"
 
@@ -466,7 +467,7 @@ Description: "Interação: Gemfibrozil, derivados do ácido fíbrico e ezetimiba
 * interaction.effect.concept.text = "Risco aumentado de miopatia quando administrados concomitantemente com atorvastatina, por terem um potencial elevado para induzir miopatia."
 
 
-Instance: Triveram1055mg-CUD-int15
+Instance: Triveram10mg5mg5mg-CUD-int15
 InstanceOf: InteracoesPDH
 Description: "Interação: Ácido fusídico (risco de rabdomiólise)"
 
@@ -477,7 +478,7 @@ Description: "Interação: Ácido fusídico (risco de rabdomiólise)"
 * interaction.effect.concept.text = "O risco de miopatia, incluindo rabdomiólise, pode estar aumentado com a administração concomitante de ácido fusídico sistémico com estatinas."
 
 
-Instance: Triveram1055mg-CUD-int16
+Instance: Triveram10mg5mg5mg-CUD-int16
 InstanceOf: InteracoesPDH
 Description: "Interação: Digoxina (aumento das concentrações plasmáticas)"
 
@@ -488,7 +489,7 @@ Description: "Interação: Digoxina (aumento das concentrações plasmáticas)"
 * interaction.effect.concept.text = "As concentrações plasmáticas de digoxina no estado estacionário podem aumentar com a administração concomitante de atorvastatina. Os doentes devem ser monitorizados adequadamente."
 
 
-Instance: Triveram1055mg-CUD-int17
+Instance: Triveram10mg5mg5mg-CUD-int17
 InstanceOf: InteracoesPDH
 Description: "Interação: Varfarina (efeito sobre o tempo de protrombina)"
 
@@ -499,7 +500,7 @@ Description: "Interação: Varfarina (efeito sobre o tempo de protrombina)"
 * interaction.effect.concept.text = "A atorvastatina pode afetar o tempo de protrombina em doentes a receber anticoagulantes cumarínicos. O tempo de protrombina deve ser monitorizado no início do tratamento e com suficiente frequência no período inicial."
 
 
-Instance: Triveram1055mg-CUD-int18
+Instance: Triveram10mg5mg5mg-CUD-int18
 InstanceOf: InteracoesPDH
 Description: "Interação: Antidiabéticos (risco de hipoglicemia)"
 
@@ -510,7 +511,7 @@ Description: "Interação: Antidiabéticos (risco de hipoglicemia)"
 * interaction.effect.concept.text = "A administração concomitante de IECAs e medicamentos antidiabéticos pode causar um aumento do efeito de diminuição da glucose sanguínea com risco de hipoglicemia, mais provável durante as primeiras semanas do tratamento associado e em doentes com compromisso renal."
 
 
-Instance: Triveram1055mg-CUD-int19
+Instance: Triveram10mg5mg5mg-CUD-int19
 InstanceOf: InteracoesPDH
 Description: "Interação: Baclofeno (potenciação do efeito anti-hipertensor)"
 
@@ -521,7 +522,7 @@ Description: "Interação: Baclofeno (potenciação do efeito anti-hipertensor)"
 * interaction.effect.concept.text = "Aumento do efeito anti-hipertensor. Recomenda-se a monitorização da pressão sanguínea e, se necessário, o ajuste da dose do anti-hipertensor."
 
 
-Instance: Triveram1055mg-CUD-int20
+Instance: Triveram10mg5mg5mg-CUD-int20
 InstanceOf: InteracoesPDH
 Description: "Interação: AINEs, incluindo ácido acetilsalicílico em dose ≥ 3 g/dia"
 
@@ -532,7 +533,7 @@ Description: "Interação: AINEs, incluindo ácido acetilsalicílico em dose ≥
 * interaction.effect.concept.text = "O uso concomitante de IECAs e AINEs pode conduzir à atenuação do efeito anti-hipertensor, a um risco aumentado de agravamento da função renal (incluindo insuficiência renal aguda) e a um aumento do potássio sérico. A associação deve ser administrada com precaução, com hidratação adequada e monitorização da função renal."
 
 
-Instance: Triveram1055mg-CUD-int21
+Instance: Triveram10mg5mg5mg-CUD-int21
 InstanceOf: InteracoesPDH
 Description: "Interação: Colquicina (risco de miopatia)"
 

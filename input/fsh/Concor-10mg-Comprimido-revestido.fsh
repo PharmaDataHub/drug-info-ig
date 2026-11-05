@@ -1,7 +1,7 @@
 
-Instance: Concor-10-mg-Comprimido-revestido
+Instance: Concor-10mg-Comprimido-revestido
 InstanceOf: MedicationKnowledgePDH
-Description: "Informação do medicamento Concor [Bisoprolol] 10 mg Comprimido revestido: composição, forma farmacêutica, via de administração, indicações, posologia, contraindicações e interações."
+Description: "Concor [Bisoprolol] 10 mg Comprimido revestido, código ATC C07AB07"
 
 
 * code = http://infarmed.pt/medicamentos/prod_id#2142 "Concor 10 mg [C07AB07]"
@@ -51,13 +51,14 @@ Description: "Informação do medicamento Concor [Bisoprolol] 10 mg Comprimido r
 * definitional.ingredient[+].item = http://infarmed.pt/substancia#[PREENCHER] "Óxido de ferro vermelho (E172)"
 * definitional.ingredient[=].type = http://terminology.hl7.org/CodeSystem/v3-RoleClass#IACT
 
+* medicineClassification[0].type = http://hl7.org/fhir/medication-classification-type#anatomical
 * medicineClassification[0].type.text = "Código ATC"
 * medicineClassification[0].classification = http://terminology.hl7.org/CodeSystem/v3-ATC#C07AB07 "Bisoprolol"
+* medicineClassification[1].type = http://hl7.org/fhir/medication-classification-type#therapeutic
 * medicineClassification[1].type.text = "Grupo farmacoterapêutico"
 * medicineClassification[1].classification.text = "3.4.4.2.1 - Aparelho cardiovascular. Anti-hipertensores. Depressores de atividade adrenérgica. Bloqueadores Beta. Seletivos cardíacos"
 
-* definitional.doseForm.coding[0] = FormaFarmaceuticaCS#38 "Comprimido revestido"
-* definitional.doseForm.coding[1] = https://extranet.infarmed.pt/INFOMED-fo/detalhes-medicamento.xhtml#038 "Comprimido revestido"
+* definitional.doseForm = FormaFarmaceuticaCS#38 "Comprimido revestido"
 * definitional.intendedRoute = ViaAdministracaoCS#48 "Via oral"
 
 * clinicalUseIssue[+] = Reference(Concor10mg-CUD-contra1)

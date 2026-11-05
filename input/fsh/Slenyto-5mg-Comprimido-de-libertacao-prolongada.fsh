@@ -1,7 +1,7 @@
 
-Instance: Slenyto-5-mg-Comprimido-de-libertacao-prolongada
+Instance: Slenyto-5mg-Comprimido-de-libertacao-prolongada
 InstanceOf: MedicationKnowledgePDH
-Description: "Informação do medicamento Slenyto [Melatonina] 5 mg Comprimido de libertação prolongada: composição, forma farmacêutica, via de administração, indicações, posologia, contraindicações e interações."
+Description: "Slenyto [Melatonina] 5 mg Comprimido de libertação prolongada, código ATC N05CH01"
 
 
 * code = http://infarmed.pt/medicamentos/prod_id#638983 "Slenyto 5 mg [N05CH01]"
@@ -49,13 +49,14 @@ Description: "Informação do medicamento Slenyto [Melatonina] 5 mg Comprimido d
 * definitional.ingredient[+].item = http://infarmed.pt/substancia#[PREENCHER] "Óxido de ferro amarelo (E172)"
 * definitional.ingredient[=].type = http://terminology.hl7.org/CodeSystem/v3-RoleClass#IACT
 
+* medicineClassification[0].type = http://hl7.org/fhir/medication-classification-type#anatomical
 * medicineClassification[0].type.text = "Código ATC"
 * medicineClassification[0].classification = http://terminology.hl7.org/CodeSystem/v3-ATC#N05CH01 "Melatonina"
+* medicineClassification[1].type = http://hl7.org/fhir/medication-classification-type#therapeutic
 * medicineClassification[1].type.text = "Grupo farmacoterapêutico"
 * medicineClassification[1].classification.text = "Psicolépticos, agonistas do recetor da melatonina"
 
-* definitional.doseForm.coding[0] = FormaFarmaceuticaCS#43 "Comprimido de libertação prolongada"
-* definitional.doseForm.coding[1] = https://extranet.infarmed.pt/INFOMED-fo/detalhes-medicamento.xhtml#043 "Comprimido de libertação prolongada"
+* definitional.doseForm = FormaFarmaceuticaCS#43 "Comprimido de libertação prolongada"
 * definitional.intendedRoute = ViaAdministracaoCS#48 "Via oral"
 
 * clinicalUseIssue[+] = Reference(Slenyto5mg-CUD-contra1)

@@ -1,7 +1,7 @@
 
 Instance: Abstral-100-microgramas-Comprimido-sublingual
 InstanceOf: MedicationKnowledgePDH
-Description: "Informação do medicamento Abstral [Fentanilo] 100 microgramas Comprimido sublingual: composição, forma farmacêutica, via de administração, indicações, posologia, contraindicações e interações."
+Description: "Abstral [Fentanilo] 100 microgramas Comprimido sublingual, código ATC N02AB03"
 
 
 * code = http://infarmed.pt/medicamentos/prod_id#42334 "Abstral 100 microgramas [N02AB03]"
@@ -25,13 +25,14 @@ Description: "Informação do medicamento Abstral [Fentanilo] 100 microgramas Co
 * definitional.ingredient[+].item = http://infarmed.pt/substancia#[PREENCHER] "Estearato de magnésio"
 * definitional.ingredient[=].type = http://terminology.hl7.org/CodeSystem/v3-RoleClass#IACT
 
+* medicineClassification[0].type = http://hl7.org/fhir/medication-classification-type#anatomical
 * medicineClassification[0].type.text = "Código ATC"
 * medicineClassification[0].classification = http://terminology.hl7.org/CodeSystem/v3-ATC#N02AB03 "Fentanilo"
+* medicineClassification[1].type = http://hl7.org/fhir/medication-classification-type#therapeutic
 * medicineClassification[1].type.text = "Grupo farmacoterapêutico"
 * medicineClassification[1].classification.text = "2.12. – Sistema Nervoso Central. Analgésicos estupefacientes"
 
-* definitional.doseForm.coding[0] = FormaFarmaceuticaCS#71 "Comprimido sublingual"
-* definitional.doseForm.coding[1] = https://extranet.infarmed.pt/INFOMED-fo/detalhes-medicamento.xhtml#071 "Comprimido sublingual"
+* definitional.doseForm = FormaFarmaceuticaCS#71 "Comprimido sublingual"
 * definitional.intendedRoute = ViaAdministracaoCS#73 "Via sublingual"
 
 * clinicalUseIssue[+] = Reference(Abstral100mcg-CUD-contra1)

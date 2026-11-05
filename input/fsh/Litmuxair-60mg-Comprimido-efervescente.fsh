@@ -5,14 +5,15 @@ Description: "Litmuxair 60 mg comprimidos efervescentes - cloridrato de ambroxol
 * code = http://infarmed.pt/medicamentos/prod_id#667924 "Litmuxair 60 mg [R05CB06]"
 * name = "Litmuxair [cloridrato de ambroxol] 60 mg comprimido efervescente"
 
+* medicineClassification[0].type = http://hl7.org/fhir/medication-classification-type#anatomical
 * medicineClassification[0].type.text = "Código ATC"
 * medicineClassification[0].classification = http://terminology.hl7.org/CodeSystem/v3-ATC#R05CB06 "ambroxol"
+* medicineClassification[1].type = http://hl7.org/fhir/medication-classification-type#therapeutic
 * medicineClassification[1].type.text = "Grupo farmacoterapêutico"
 * medicineClassification[1].classification.text = "5.2.2. Aparelho respiratório. Antitússicos e expetorantes. Expetorantes"
 
 // Forma farmacêutica e via de administração
-* definitional.doseForm.coding[0] = FormaFarmaceuticaCS#40 "Comprimido efervescente"
-* definitional.doseForm.coding[1] = https://extranet.infarmed.pt/INFOMED-fo/detalhes-medicamento.xhtml#040 "Comprimido efervescente"
+* definitional.doseForm = FormaFarmaceuticaCS#40 "Comprimido efervescente"
 * definitional.intendedRoute = ViaAdministracaoCS#48 "Via oral"
 
 // Ingrediente ativo
@@ -82,11 +83,11 @@ Description: "Litmuxair 60 mg comprimidos efervescentes - cloridrato de ambroxol
 * definitional.ingredient[=].type = http://terminology.hl7.org/CodeSystem/v3-RoleClass#IACT
 
 // Referências a ClinicalUseDefinition
-* clinicalUseIssue[+] = Reference(Litmuxair-CUD-ind1)
-* clinicalUseIssue[+] = Reference(Litmuxair-CUD-contra1)
-* clinicalUseIssue[+] = Reference(Litmuxair-CUD-contra2)
-* clinicalUseIssue[+] = Reference(Litmuxair-CUD-contra3)
-* clinicalUseIssue[+] = Reference(Litmuxair-CUD-int1)
+* clinicalUseIssue[+] = Reference(Litmuxair60mg-CUD-ind1)
+* clinicalUseIssue[+] = Reference(Litmuxair60mg-CUD-contra1)
+* clinicalUseIssue[+] = Reference(Litmuxair60mg-CUD-contra2)
+* clinicalUseIssue[+] = Reference(Litmuxair60mg-CUD-contra3)
+* clinicalUseIssue[+] = Reference(Litmuxair60mg-CUD-int1)
 
 // Indicação 1
 * indicationGuideline[0].indication[0].concept.text = "Terapêutica mucolítica da tosse produtiva em doenças broncopulmonares agudas e crónicas associadas a secreção anormal de muco e transporte deficiente do muco, em adultos e adolescentes com mais de 12 anos"
@@ -130,27 +131,27 @@ Description: "Litmuxair 60 mg comprimidos efervescentes - cloridrato de ambroxol
 * indicationGuideline[0].dosingGuideline[0].patientCharacteristic[0].valueCodeableConcept.text = "Adultos e adolescentes com mais de 12 anos"
 
 // CUDs
-Instance: Litmuxair-CUD-ind1
+Instance: Litmuxair60mg-CUD-ind1
 InstanceOf: IndicacoesPDH
 * indication.diseaseSymptomProcedure[0].concept.text = "Terapêutica mucolítica da tosse produtiva em doenças broncopulmonares agudas e crónicas associadas a secreção anormal de muco e transporte deficiente do muco"
 * indication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Tosse produtiva em doença broncopulmonar"
 
-Instance: Litmuxair-CUD-contra1
+Instance: Litmuxair60mg-CUD-contra1
 InstanceOf: ContraIndicacoesPDH
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Hipersensibilidade à substância ativa"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Hipersensibilidade à substância ativa"
 
-Instance: Litmuxair-CUD-contra2
+Instance: Litmuxair60mg-CUD-contra2
 InstanceOf: ContraIndicacoesPDH
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Hipersensibilidade a qualquer um dos excipientes"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Hipersensibilidade a excipientes"
 
-Instance: Litmuxair-CUD-contra3
+Instance: Litmuxair60mg-CUD-contra3
 InstanceOf: ContraIndicacoesPDH
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Crianças com menos de 12 anos (devido ao elevado conteúdo de substância ativa, não se destina a esta população)"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Restrição pediátrica"
 
-Instance: Litmuxair-CUD-int1
+Instance: Litmuxair60mg-CUD-int1
 InstanceOf: InteracoesPDH
 * interaction.interactant[0].itemCodeableConcept.text = "Antitússicos"
 * interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Antitússicos"

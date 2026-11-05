@@ -1,7 +1,7 @@
 
-Instance: Forxiga-10-mg-Comprimido-revestido-por-pelicula
+Instance: Forxiga-10mg-Comprimido-revestido-por-pelicula
 InstanceOf: MedicationKnowledgePDH
-Description: "Informação do medicamento Forxiga [Dapagliflozina] 10 mg Comprimido revestido por película: composição, forma farmacêutica, via de administração, indicações, posologia, contraindicações e interações."
+Description: "Forxiga [Dapagliflozina] 10 mg Comprimido revestido por película, código ATC A10BK01"
 
 
 * code = http://infarmed.pt/medicamentos/prod_id#54633 "Forxiga 10 mg [A10BK01]"
@@ -46,13 +46,14 @@ Description: "Informação do medicamento Forxiga [Dapagliflozina] 10 mg Comprim
 * definitional.ingredient[+].item = http://infarmed.pt/substancia#[PREENCHER] "Óxido de ferro amarelo (E172)"
 * definitional.ingredient[=].type = http://terminology.hl7.org/CodeSystem/v3-RoleClass#IACT
 
+* medicineClassification[0].type = http://hl7.org/fhir/medication-classification-type#anatomical
 * medicineClassification[0].type.text = "Código ATC"
 * medicineClassification[0].classification = http://terminology.hl7.org/CodeSystem/v3-ATC#A10BK01 "Dapagliflozina"
+* medicineClassification[1].type = http://hl7.org/fhir/medication-classification-type#therapeutic
 * medicineClassification[1].type.text = "Grupo farmacoterapêutico"
 * medicineClassification[1].classification.text = "Fármacos usados na diabetes, inibidores do co-transportador de sódio e glucose 2 (SGLT2)"
 
-* definitional.doseForm.coding[0] = FormaFarmaceuticaCS#39 "Comprimido revestido por película"
-* definitional.doseForm.coding[1] = https://extranet.infarmed.pt/INFOMED-fo/detalhes-medicamento.xhtml#039 "Comprimido revestido por película"
+* definitional.doseForm = FormaFarmaceuticaCS#39 "Comprimido revestido por película"
 * definitional.intendedRoute = ViaAdministracaoCS#48 "Via oral"
 
 * clinicalUseIssue[+] = Reference(Forxiga10mg-CUD-contra1)

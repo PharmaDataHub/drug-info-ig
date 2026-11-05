@@ -5,14 +5,15 @@ Description: "Omacor 1000 mg cápsulas moles - ésteres etílicos 90 do ácido �
 * code = http://infarmed.pt/medicamentos/prod_id#35001 "Omacor 1000 mg [C10AX06]"
 * name = "Omacor [ésteres etílicos 90 do ácido ómega-3] 1000 mg cápsula mole"
 
+* medicineClassification[0].type = http://hl7.org/fhir/medication-classification-type#anatomical
 * medicineClassification[0].type.text = "Código ATC"
 * medicineClassification[0].classification = http://terminology.hl7.org/CodeSystem/v3-ATC#C10AX06 "ésteres etílicos 90 do ácido ómega-3"
+* medicineClassification[1].type = http://hl7.org/fhir/medication-classification-type#therapeutic
 * medicineClassification[1].type.text = "Grupo farmacoterapêutico"
 * medicineClassification[1].classification.text = "3.7 Aparelho Cardiovascular, Antidislipidémicos"
 
 // Forma farmacêutica e via de administração
-* definitional.doseForm.coding[0] = FormaFarmaceuticaCS#30 "Cápsula mole"
-* definitional.doseForm.coding[1] = https://extranet.infarmed.pt/INFOMED-fo/detalhes-medicamento.xhtml#030 "Cápsula mole"
+* definitional.doseForm = FormaFarmaceuticaCS#30 "Cápsula mole"
 * definitional.intendedRoute = ViaAdministracaoCS#48 "Via oral"
 
 // Ingrediente ativo
@@ -43,13 +44,13 @@ Description: "Omacor 1000 mg cápsulas moles - ésteres etílicos 90 do ácido �
 * definitional.ingredient[=].type = http://terminology.hl7.org/CodeSystem/v3-RoleClass#IACT
 
 // Referências a ClinicalUseDefinition
-* clinicalUseIssue[+] = Reference(Omacor-CUD-ind1)
-* clinicalUseIssue[+] = Reference(Omacor-CUD-ind2)
-* clinicalUseIssue[+] = Reference(Omacor-CUD-contra1)
-* clinicalUseIssue[+] = Reference(Omacor-CUD-contra2)
-* clinicalUseIssue[+] = Reference(Omacor-CUD-contra3)
-* clinicalUseIssue[+] = Reference(Omacor-CUD-contra4)
-* clinicalUseIssue[+] = Reference(Omacor-CUD-int1)
+* clinicalUseIssue[+] = Reference(Omacor1000mg-CUD-ind1)
+* clinicalUseIssue[+] = Reference(Omacor1000mg-CUD-ind2)
+* clinicalUseIssue[+] = Reference(Omacor1000mg-CUD-contra1)
+* clinicalUseIssue[+] = Reference(Omacor1000mg-CUD-contra2)
+* clinicalUseIssue[+] = Reference(Omacor1000mg-CUD-contra3)
+* clinicalUseIssue[+] = Reference(Omacor1000mg-CUD-contra4)
+* clinicalUseIssue[+] = Reference(Omacor1000mg-CUD-int1)
 
 // Indicação 1
 * indicationGuideline[0].indication[0].concept.text = "Hipertrigliceridemia endógena tipo IV em monoterapia, como suplemento à dieta, quando as medidas de dietas isoladas são por si só insuficientes para produzir uma resposta adequada"
@@ -84,37 +85,37 @@ Description: "Omacor 1000 mg cápsulas moles - ésteres etílicos 90 do ácido �
 * indicationGuideline[1].dosingGuideline[0].patientCharacteristic[0].valueCodeableConcept.text = "Doses gerais (população não especificada na RCM)"
 
 // CUDs
-Instance: Omacor-CUD-ind1
+Instance: Omacor1000mg-CUD-ind1
 InstanceOf: IndicacoesPDH
 * indication.diseaseSymptomProcedure[0].concept.text = "Hipertrigliceridemia endógena tipo IV em monoterapia, como suplemento à dieta, quando as medidas de dietas isoladas são por si só insuficientes para produzir uma resposta adequada"
 * indication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Hipertrigliceridemia endógena tipo IV"
 
-Instance: Omacor-CUD-ind2
+Instance: Omacor1000mg-CUD-ind2
 InstanceOf: IndicacoesPDH
 * indication.diseaseSymptomProcedure[0].concept.text = "Hipertrigliceridemia endógena tipo IIb/III em associação com estatinas, como suplemento à dieta, quando o controlo dos triglicéridos é insuficiente"
 * indication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Hipertrigliceridemia endógena tipo IIb/III"
 
-Instance: Omacor-CUD-contra1
+Instance: Omacor1000mg-CUD-contra1
 InstanceOf: ContraIndicacoesPDH
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Hipersensibilidade à substância ativa"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Hipersensibilidade à substância ativa"
 
-Instance: Omacor-CUD-contra2
+Instance: Omacor1000mg-CUD-contra2
 InstanceOf: ContraIndicacoesPDH
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Hipersensibilidade à soja"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Alergia à soja"
 
-Instance: Omacor-CUD-contra3
+Instance: Omacor1000mg-CUD-contra3
 InstanceOf: ContraIndicacoesPDH
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Hipersensibilidade a qualquer um dos excipientes"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Hipersensibilidade a excipientes"
 
-Instance: Omacor-CUD-contra4
+Instance: Omacor1000mg-CUD-contra4
 InstanceOf: ContraIndicacoesPDH
 * contraindication.diseaseSymptomProcedure[0].concept.text = "Alergia ao amendoim (o medicamento contém óleo de soja)"
 * contraindication.diseaseSymptomProcedure[0].concept = http://snomed.info/sct#[PREENCHER] "Alergia ao amendoim"
 
-Instance: Omacor-CUD-int1
+Instance: Omacor1000mg-CUD-int1
 InstanceOf: InteracoesPDH
 * interaction.interactant[0].itemCodeableConcept.text = "Anticoagulantes orais (varfarina)"
 * interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Anticoagulantes orais"
