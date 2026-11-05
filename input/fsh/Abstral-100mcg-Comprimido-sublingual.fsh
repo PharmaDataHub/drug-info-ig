@@ -1,5 +1,5 @@
 
-Instance: Abstral-100-microgramas-Comprimido-sublingual
+Instance: Abstral-100mcg-Comprimido-sublingual
 InstanceOf: MedicationKnowledgePDH
 Description: "Abstral [Fentanilo] 100 microgramas Comprimido sublingual, código ATC N02AB03"
 
