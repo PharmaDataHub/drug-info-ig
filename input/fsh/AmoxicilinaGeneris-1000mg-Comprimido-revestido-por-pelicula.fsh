@@ -1,150 +1,3 @@
-// Doentes em situações especiais (secção 4.2): aplicam-se a todas as indicações.
-// Índices: [1] Idosos, [2] compromisso renal (adultos), [3] compromisso renal (crianças),
-// [4] hemodiálise (adultos), [5] hemodiálise (crianças), [6] diálise peritoneal, [7] compromisso hepático.
-RuleSet: AmoxPopulacoesEspeciais(g)
-// Idosos
-* indicationGuideline[{g}].dosingGuideline[1].dosage[0].type.text = "Sem ajuste posológico"
-* indicationGuideline[{g}].dosingGuideline[1].dosage[0].dosage[0].text = "Não é necessário ajuste de dose."
-* indicationGuideline[{g}].dosingGuideline[1].patientCharacteristic[0].type.text = "Population"
-* indicationGuideline[{g}].dosingGuideline[1].patientCharacteristic[0].valueCodeableConcept.text = "Idosos"
-// Compromisso renal - Adultos e crianças ≥ 40 kg (cada banda de TFG é um regime alternativo)
-* indicationGuideline[{g}].dosingGuideline[2].dosage[0].type.text = "TFG superior a 30 ml/min"
-* indicationGuideline[{g}].dosingGuideline[2].dosage[0].dosage[0].text = "Não é necessário ajuste."
-* indicationGuideline[{g}].dosingGuideline[2].dosage[1].type.text = "TFG 10 a 30 ml/min"
-* indicationGuideline[{g}].dosingGuideline[2].dosage[1].dosage[0].text = "Máximo 500 mg duas vezes por dia."
-* indicationGuideline[{g}].dosingGuideline[2].dosage[1].dosage[0].timing.repeat.frequency = 2
-* indicationGuideline[{g}].dosingGuideline[2].dosage[1].dosage[0].timing.repeat.period = 1
-* indicationGuideline[{g}].dosingGuideline[2].dosage[1].dosage[0].timing.repeat.periodUnit = #d
-* indicationGuideline[{g}].dosingGuideline[2].dosage[1].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
-* indicationGuideline[{g}].dosingGuideline[2].dosage[2].type.text = "TFG inferior a 10 ml/min"
-* indicationGuideline[{g}].dosingGuideline[2].dosage[2].dosage[0].text = "Máximo 500 mg/dia."
-* indicationGuideline[{g}].dosingGuideline[2].dosage[2].dosage[0].timing.repeat.frequency = 1
-* indicationGuideline[{g}].dosingGuideline[2].dosage[2].dosage[0].timing.repeat.period = 1
-* indicationGuideline[{g}].dosingGuideline[2].dosage[2].dosage[0].timing.repeat.periodUnit = #d
-* indicationGuideline[{g}].dosingGuideline[2].dosage[2].dosage[0].maxDosePerPeriod.numerator = 500 'mg' "mg"
-* indicationGuideline[{g}].dosingGuideline[2].dosage[2].dosage[0].maxDosePerPeriod.denominator = 1 'd' "day"
-* indicationGuideline[{g}].dosingGuideline[2].patientCharacteristic[0].type.text = "Population"
-* indicationGuideline[{g}].dosingGuideline[2].patientCharacteristic[0].valueCodeableConcept.text = "Compromisso renal: adultos e crianças ≥ 40 kg"
-// Compromisso renal - Crianças < 40 kg
-* indicationGuideline[{g}].dosingGuideline[3].dosage[0].type.text = "TFG superior a 30 ml/min"
-* indicationGuideline[{g}].dosingGuideline[3].dosage[0].dosage[0].text = "Não é necessário ajuste."
-* indicationGuideline[{g}].dosingGuideline[3].dosage[1].type.text = "TFG 10 a 30 ml/min"
-* indicationGuideline[{g}].dosingGuideline[3].dosage[1].dosage[0].text = "15 mg/kg administrados duas vezes por dia (máximo 500 mg duas vezes por dia)."
-* indicationGuideline[{g}].dosingGuideline[3].dosage[1].dosage[0].additionalInstruction[0].text = "Na maioria dos casos, a terapêutica parentérica é preferida."
-* indicationGuideline[{g}].dosingGuideline[3].dosage[1].dosage[0].timing.repeat.frequency = 2
-* indicationGuideline[{g}].dosingGuideline[3].dosage[1].dosage[0].timing.repeat.period = 1
-* indicationGuideline[{g}].dosingGuideline[3].dosage[1].dosage[0].timing.repeat.periodUnit = #d
-* indicationGuideline[{g}].dosingGuideline[3].dosage[1].dosage[0].doseAndRate[0].doseQuantity = 15 'mg/kg' "mg/kg"
-* indicationGuideline[{g}].dosingGuideline[3].dosage[1].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
-* indicationGuideline[{g}].dosingGuideline[3].dosage[2].type.text = "TFG inferior a 10 ml/min"
-* indicationGuideline[{g}].dosingGuideline[3].dosage[2].dosage[0].text = "15 mg/kg administrados como dose única diária (máximo 500 mg)."
-* indicationGuideline[{g}].dosingGuideline[3].dosage[2].dosage[0].additionalInstruction[0].text = "Na maioria dos casos, a terapêutica parentérica é preferida."
-* indicationGuideline[{g}].dosingGuideline[3].dosage[2].dosage[0].timing.repeat.frequency = 1
-* indicationGuideline[{g}].dosingGuideline[3].dosage[2].dosage[0].timing.repeat.period = 1
-* indicationGuideline[{g}].dosingGuideline[3].dosage[2].dosage[0].timing.repeat.periodUnit = #d
-* indicationGuideline[{g}].dosingGuideline[3].dosage[2].dosage[0].doseAndRate[0].doseQuantity = 15 'mg/kg' "mg/kg"
-* indicationGuideline[{g}].dosingGuideline[3].dosage[2].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
-* indicationGuideline[{g}].dosingGuideline[3].patientCharacteristic[0].type.text = "Population"
-* indicationGuideline[{g}].dosingGuideline[3].patientCharacteristic[0].valueCodeableConcept.text = "Compromisso renal: crianças < 40 kg"
-// Hemodiálise - Adultos e crianças ≥ 40 kg
-* indicationGuideline[{g}].dosingGuideline[4].dosage[0].type.text = "Hemodiálise"
-* indicationGuideline[{g}].dosingGuideline[4].dosage[0].dosage[0].text = "500 mg a cada 24 horas. Antes da hemodiálise, deve ser administrada uma dose adicional de 500 mg; para repor os níveis circulantes do fármaco, deve ser administrada outra dose de 500 mg após a hemodiálise."
-* indicationGuideline[{g}].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.frequency = 1
-* indicationGuideline[{g}].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.period = 24
-* indicationGuideline[{g}].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.periodUnit = #h
-* indicationGuideline[{g}].dosingGuideline[4].dosage[0].dosage[0].doseAndRate[0].doseQuantity = 500 'mg' "mg"
-* indicationGuideline[{g}].dosingGuideline[4].patientCharacteristic[0].type.text = "Population"
-* indicationGuideline[{g}].dosingGuideline[4].patientCharacteristic[0].valueCodeableConcept.text = "Doentes em hemodiálise: adultos e crianças ≥ 40 kg"
-// Hemodiálise - Crianças < 40 kg
-* indicationGuideline[{g}].dosingGuideline[5].dosage[0].type.text = "Hemodiálise"
-* indicationGuideline[{g}].dosingGuideline[5].dosage[0].dosage[0].text = "15 mg/kg/dia administrados como dose única diária (máximo 500 mg). Antes da hemodiálise, deve ser administrada uma dose adicional de 15 mg/kg; para repor os níveis circulantes do fármaco, deve ser administrada outra dose de 15 mg/kg após a hemodiálise."
-* indicationGuideline[{g}].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.frequency = 1
-* indicationGuideline[{g}].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.period = 1
-* indicationGuideline[{g}].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.periodUnit = #d
-* indicationGuideline[{g}].dosingGuideline[5].dosage[0].dosage[0].doseAndRate[0].doseQuantity = 15 'mg/kg' "mg/kg"
-* indicationGuideline[{g}].dosingGuideline[5].dosage[0].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
-* indicationGuideline[{g}].dosingGuideline[5].patientCharacteristic[0].type.text = "Population"
-* indicationGuideline[{g}].dosingGuideline[5].patientCharacteristic[0].valueCodeableConcept.text = "Doentes em hemodiálise: crianças < 40 kg"
-// Diálise peritoneal
-* indicationGuideline[{g}].dosingGuideline[6].dosage[0].type.text = "Diálise peritoneal"
-* indicationGuideline[{g}].dosingGuideline[6].dosage[0].dosage[0].text = "Máximo de 500 mg/dia de amoxicilina."
-* indicationGuideline[{g}].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.frequency = 1
-* indicationGuideline[{g}].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.period = 1
-* indicationGuideline[{g}].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.periodUnit = #d
-* indicationGuideline[{g}].dosingGuideline[6].dosage[0].dosage[0].maxDosePerPeriod.numerator = 500 'mg' "mg"
-* indicationGuideline[{g}].dosingGuideline[6].dosage[0].dosage[0].maxDosePerPeriod.denominator = 1 'd' "day"
-* indicationGuideline[{g}].dosingGuideline[6].patientCharacteristic[0].type.text = "Population"
-* indicationGuideline[{g}].dosingGuideline[6].patientCharacteristic[0].valueCodeableConcept.text = "Doentes em diálise peritoneal"
-// Compromisso hepático
-* indicationGuideline[{g}].dosingGuideline[7].dosage[0].type.text = "Precaução na dosagem"
-* indicationGuideline[{g}].dosingGuideline[7].dosage[0].dosage[0].text = "Dosear com precaução e monitorizar a função hepática em intervalos regulares."
-* indicationGuideline[{g}].dosingGuideline[7].patientCharacteristic[0].type.text = "Population"
-* indicationGuideline[{g}].dosingGuideline[7].patientCharacteristic[0].valueCodeableConcept.text = "Compromisso hepático"
-
-// População de referência para a posologia dos adultos (dosingGuideline[0])
-RuleSet: AmoxPopulacaoAdultos(g)
-* indicationGuideline[{g}].dosingGuideline[0].patientCharacteristic[0].type.text = "Population"
-* indicationGuideline[{g}].dosingGuideline[0].patientCharacteristic[0].valueCodeableConcept.text = "Adultos e Crianças ≥40 kg"
-
-// Posologia dos adultos: sinusite, bacteriúria assintomática na gravidez, pielonefrite, abcesso dentário e cistite aguda
-RuleSet: AmoxAdultosGrupo1(g)
-* indicationGuideline[{g}].dosingGuideline[0].dosage[0].type.text = "Regime a cada 8 horas"
-* indicationGuideline[{g}].dosingGuideline[0].dosage[0].dosage[0].text = "250 mg a 500 mg a cada 8 horas."
-* indicationGuideline[{g}].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.frequency = 1
-* indicationGuideline[{g}].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.period = 8
-* indicationGuideline[{g}].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.periodUnit = #h
-* indicationGuideline[{g}].dosingGuideline[0].dosage[0].dosage[0].doseAndRate[0].doseRange.low = 250 'mg' "mg"
-* indicationGuideline[{g}].dosingGuideline[0].dosage[0].dosage[0].doseAndRate[0].doseRange.high = 500 'mg' "mg"
-* indicationGuideline[{g}].dosingGuideline[0].dosage[1].type.text = "Regime a cada 12 horas"
-* indicationGuideline[{g}].dosingGuideline[0].dosage[1].dosage[0].text = "750 mg a 1 g a cada 12 horas."
-* indicationGuideline[{g}].dosingGuideline[0].dosage[1].dosage[0].timing.repeat.frequency = 1
-* indicationGuideline[{g}].dosingGuideline[0].dosage[1].dosage[0].timing.repeat.period = 12
-* indicationGuideline[{g}].dosingGuideline[0].dosage[1].dosage[0].timing.repeat.periodUnit = #h
-* indicationGuideline[{g}].dosingGuideline[0].dosage[1].dosage[0].doseAndRate[0].doseRange.low = 750 'mg' "mg"
-* indicationGuideline[{g}].dosingGuideline[0].dosage[1].dosage[0].doseAndRate[0].doseRange.high = 1000 'mg' "mg"
-* indicationGuideline[{g}].dosingGuideline[0].dosage[2].type.text = "Infeções graves"
-* indicationGuideline[{g}].dosingGuideline[0].dosage[2].dosage[0].text = "Para infeções graves, 750 mg a 1 g a cada 8 horas."
-* indicationGuideline[{g}].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.frequency = 1
-* indicationGuideline[{g}].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.period = 8
-* indicationGuideline[{g}].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.periodUnit = #h
-* indicationGuideline[{g}].dosingGuideline[0].dosage[2].dosage[0].doseAndRate[0].doseRange.low = 750 'mg' "mg"
-* indicationGuideline[{g}].dosingGuideline[0].dosage[2].dosage[0].doseAndRate[0].doseRange.high = 1000 'mg' "mg"
-* insert AmoxPopulacaoAdultos({g})
-
-// Posologia dos adultos: otite média aguda, amigdalite e faringite agudas estreptocócicas, exacerbações agudas da bronquite crónica
-RuleSet: AmoxAdultosGrupo2(g)
-* indicationGuideline[{g}].dosingGuideline[0].dosage[0].type.text = "Regime a cada 8 horas"
-* indicationGuideline[{g}].dosingGuideline[0].dosage[0].dosage[0].text = "500 mg a cada 8 horas."
-* indicationGuideline[{g}].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.frequency = 1
-* indicationGuideline[{g}].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.period = 8
-* indicationGuideline[{g}].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.periodUnit = #h
-* indicationGuideline[{g}].dosingGuideline[0].dosage[0].dosage[0].doseAndRate[0].doseQuantity = 500 'mg' "mg"
-* indicationGuideline[{g}].dosingGuideline[0].dosage[1].type.text = "Regime a cada 12 horas"
-* indicationGuideline[{g}].dosingGuideline[0].dosage[1].dosage[0].text = "750 mg a 1 g a cada 12 horas."
-* indicationGuideline[{g}].dosingGuideline[0].dosage[1].dosage[0].timing.repeat.frequency = 1
-* indicationGuideline[{g}].dosingGuideline[0].dosage[1].dosage[0].timing.repeat.period = 12
-* indicationGuideline[{g}].dosingGuideline[0].dosage[1].dosage[0].timing.repeat.periodUnit = #h
-* indicationGuideline[{g}].dosingGuideline[0].dosage[1].dosage[0].doseAndRate[0].doseRange.low = 750 'mg' "mg"
-* indicationGuideline[{g}].dosingGuideline[0].dosage[1].dosage[0].doseAndRate[0].doseRange.high = 1000 'mg' "mg"
-* indicationGuideline[{g}].dosingGuideline[0].dosage[2].type.text = "Infeções graves"
-* indicationGuideline[{g}].dosingGuideline[0].dosage[2].dosage[0].text = "Para infeções graves, 750 mg a 1 g a cada 8 horas durante 10 dias."
-* indicationGuideline[{g}].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.frequency = 1
-* indicationGuideline[{g}].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.period = 8
-* indicationGuideline[{g}].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.periodUnit = #h
-* indicationGuideline[{g}].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.boundsDuration = 10 'd' "day"
-* indicationGuideline[{g}].dosingGuideline[0].dosage[2].dosage[0].doseAndRate[0].doseRange.low = 750 'mg' "mg"
-* indicationGuideline[{g}].dosingGuideline[0].dosage[2].dosage[0].doseAndRate[0].doseRange.high = 1000 'mg' "mg"
-* insert AmoxPopulacaoAdultos({g})
-
-// Crianças < 40 kg (dosingGuideline[8]): 20 a 90 mg/kg/dia
-// (sinusite, otite média aguda, pneumonia adquirida na comunidade, cistite aguda, pielonefrite aguda, abcesso dentário)
-RuleSet: AmoxCriancasGrupoA(g)
-* indicationGuideline[{g}].dosingGuideline[8].dosage[0].type.text = "Dose diária"
-* indicationGuideline[{g}].dosingGuideline[8].dosage[0].dosage[0].text = "20 a 90 mg/kg/dia em doses divididas."
-* indicationGuideline[{g}].dosingGuideline[8].dosage[0].dosage[0].additionalInstruction[0].text = "Só devem ser considerados regimes terapêuticos de duas vezes por dia quando a dose se encontra no limite superior."
-* indicationGuideline[{g}].dosingGuideline[8].patientCharacteristic[0].type.text = "Population"
-* indicationGuideline[{g}].dosingGuideline[8].patientCharacteristic[0].valueCodeableConcept.text = "Crianças <40 kg"
-
 Instance: AmoxicilinaGeneris-1000mg-Comprimido-revestido-por-pelicula
 InstanceOf: MedicationKnowledgePDH
 Description: "Amoxicilina Generis 1000 mg comprimidos revestidos por película - amoxicilina 1000 mg por comprimido. Comprimidos biconvexos, oblongos, brancos a esbranquiçados, gravados com A1000 e com ranhura."
@@ -153,7 +6,7 @@ Description: "Amoxicilina Generis 1000 mg comprimidos revestidos por película -
 * name = "Amoxicilina Generis [amoxicilina] 1000 mg comprimido revestido por película"
 
 // Substância ativa (secção 2): amoxicilina tri-hidratada equivalente a 1000 mg de amoxicilina
-* definitional.ingredient[0].item = http://infarmed.pt/substancia#21465 "Amoxicilina"
+* definitional.ingredient[0].item = http://infarmed.pt/substancia#[PREENCHER] "Amoxicilina"
 * definitional.ingredient[0].type = http://terminology.hl7.org/CodeSystem/v3-RoleClass#ACTI
 * definitional.ingredient[0].strengthQuantity = 1000 'mg' "mg"
 
@@ -217,24 +70,350 @@ Description: "Amoxicilina Generis 1000 mg comprimidos revestidos por película -
 // 1) Sinusite bacteriana aguda
 // ---------------------------------------------------------
 * indicationGuideline[0].indication[0].concept.text = "Sinusite bacteriana aguda"
-* insert AmoxAdultosGrupo1(0)
-* insert AmoxPopulacoesEspeciais(0)
-* insert AmoxCriancasGrupoA(0)
+* indicationGuideline[0].dosingGuideline[0].dosage[0].type.text = "Regime a cada 8 horas"
+* indicationGuideline[0].dosingGuideline[0].dosage[0].dosage[0].text = "250 mg a 500 mg a cada 8 horas."
+* indicationGuideline[0].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[0].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.period = 8
+* indicationGuideline[0].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.periodUnit = #h
+* indicationGuideline[0].dosingGuideline[0].dosage[0].dosage[0].doseAndRate[0].doseRange.low = 250 'mg' "mg"
+* indicationGuideline[0].dosingGuideline[0].dosage[0].dosage[0].doseAndRate[0].doseRange.high = 500 'mg' "mg"
+* indicationGuideline[0].dosingGuideline[0].dosage[1].type.text = "Regime a cada 12 horas"
+* indicationGuideline[0].dosingGuideline[0].dosage[1].dosage[0].text = "750 mg a 1 g a cada 12 horas."
+* indicationGuideline[0].dosingGuideline[0].dosage[1].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[0].dosingGuideline[0].dosage[1].dosage[0].timing.repeat.period = 12
+* indicationGuideline[0].dosingGuideline[0].dosage[1].dosage[0].timing.repeat.periodUnit = #h
+* indicationGuideline[0].dosingGuideline[0].dosage[1].dosage[0].doseAndRate[0].doseRange.low = 750 'mg' "mg"
+* indicationGuideline[0].dosingGuideline[0].dosage[1].dosage[0].doseAndRate[0].doseRange.high = 1000 'mg' "mg"
+* indicationGuideline[0].dosingGuideline[0].dosage[2].type.text = "Infeções graves"
+* indicationGuideline[0].dosingGuideline[0].dosage[2].dosage[0].text = "Para infeções graves, 750 mg a 1 g a cada 8 horas."
+* indicationGuideline[0].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[0].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.period = 8
+* indicationGuideline[0].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.periodUnit = #h
+* indicationGuideline[0].dosingGuideline[0].dosage[2].dosage[0].doseAndRate[0].doseRange.low = 750 'mg' "mg"
+* indicationGuideline[0].dosingGuideline[0].dosage[2].dosage[0].doseAndRate[0].doseRange.high = 1000 'mg' "mg"
+* indicationGuideline[0].dosingGuideline[0].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[0].dosingGuideline[0].patientCharacteristic[0].valueCodeableConcept.text = "Adultos e Crianças ≥40 kg"
+
+// Idosos
+* indicationGuideline[0].dosingGuideline[1].dosage[0].type.text = "Sem ajuste posológico"
+* indicationGuideline[0].dosingGuideline[1].dosage[0].dosage[0].text = "Não é necessário ajuste de dose."
+* indicationGuideline[0].dosingGuideline[1].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[0].dosingGuideline[1].patientCharacteristic[0].valueCodeableConcept.text = "Idosos"
+
+// Compromisso renal - Adultos e crianças ≥ 40 kg (cada banda de TFG é um regime alternativo)
+* indicationGuideline[0].dosingGuideline[2].dosage[0].type.text = "TFG superior a 30 ml/min"
+* indicationGuideline[0].dosingGuideline[2].dosage[0].dosage[0].text = "Não é necessário ajuste."
+* indicationGuideline[0].dosingGuideline[2].dosage[1].type.text = "TFG 10 a 30 ml/min"
+* indicationGuideline[0].dosingGuideline[2].dosage[1].dosage[0].text = "Máximo 500 mg duas vezes por dia."
+* indicationGuideline[0].dosingGuideline[2].dosage[1].dosage[0].timing.repeat.frequency = 2
+* indicationGuideline[0].dosingGuideline[2].dosage[1].dosage[0].timing.repeat.period = 1
+* indicationGuideline[0].dosingGuideline[2].dosage[1].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[0].dosingGuideline[2].dosage[1].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[0].dosingGuideline[2].dosage[2].type.text = "TFG inferior a 10 ml/min"
+* indicationGuideline[0].dosingGuideline[2].dosage[2].dosage[0].text = "Máximo 500 mg/dia."
+* indicationGuideline[0].dosingGuideline[2].dosage[2].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[0].dosingGuideline[2].dosage[2].dosage[0].timing.repeat.period = 1
+* indicationGuideline[0].dosingGuideline[2].dosage[2].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[0].dosingGuideline[2].dosage[2].dosage[0].maxDosePerPeriod.numerator = 500 'mg' "mg"
+* indicationGuideline[0].dosingGuideline[2].dosage[2].dosage[0].maxDosePerPeriod.denominator = 1 'd' "day"
+* indicationGuideline[0].dosingGuideline[2].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[0].dosingGuideline[2].patientCharacteristic[0].valueCodeableConcept.text = "Compromisso renal: adultos e crianças ≥ 40 kg"
+
+// Compromisso renal - Crianças < 40 kg
+* indicationGuideline[0].dosingGuideline[3].dosage[0].type.text = "TFG superior a 30 ml/min"
+* indicationGuideline[0].dosingGuideline[3].dosage[0].dosage[0].text = "Não é necessário ajuste."
+* indicationGuideline[0].dosingGuideline[3].dosage[1].type.text = "TFG 10 a 30 ml/min"
+* indicationGuideline[0].dosingGuideline[3].dosage[1].dosage[0].text = "15 mg/kg administrados duas vezes por dia (máximo 500 mg duas vezes por dia)."
+* indicationGuideline[0].dosingGuideline[3].dosage[1].dosage[0].additionalInstruction[0].text = "Na maioria dos casos, a terapêutica parentérica é preferida."
+* indicationGuideline[0].dosingGuideline[3].dosage[1].dosage[0].timing.repeat.frequency = 2
+* indicationGuideline[0].dosingGuideline[3].dosage[1].dosage[0].timing.repeat.period = 1
+* indicationGuideline[0].dosingGuideline[3].dosage[1].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[0].dosingGuideline[3].dosage[1].dosage[0].doseAndRate[0].doseQuantity = 15 'mg/kg' "mg/kg"
+* indicationGuideline[0].dosingGuideline[3].dosage[1].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[0].dosingGuideline[3].dosage[2].type.text = "TFG inferior a 10 ml/min"
+* indicationGuideline[0].dosingGuideline[3].dosage[2].dosage[0].text = "15 mg/kg administrados como dose única diária (máximo 500 mg)."
+* indicationGuideline[0].dosingGuideline[3].dosage[2].dosage[0].additionalInstruction[0].text = "Na maioria dos casos, a terapêutica parentérica é preferida."
+* indicationGuideline[0].dosingGuideline[3].dosage[2].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[0].dosingGuideline[3].dosage[2].dosage[0].timing.repeat.period = 1
+* indicationGuideline[0].dosingGuideline[3].dosage[2].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[0].dosingGuideline[3].dosage[2].dosage[0].doseAndRate[0].doseQuantity = 15 'mg/kg' "mg/kg"
+* indicationGuideline[0].dosingGuideline[3].dosage[2].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[0].dosingGuideline[3].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[0].dosingGuideline[3].patientCharacteristic[0].valueCodeableConcept.text = "Compromisso renal: crianças < 40 kg"
+
+// Hemodiálise - Adultos e crianças ≥ 40 kg
+* indicationGuideline[0].dosingGuideline[4].dosage[0].type.text = "Hemodiálise"
+* indicationGuideline[0].dosingGuideline[4].dosage[0].dosage[0].text = "500 mg a cada 24 horas. Antes da hemodiálise, deve ser administrada uma dose adicional de 500 mg; para repor os níveis circulantes do fármaco, deve ser administrada outra dose de 500 mg após a hemodiálise."
+* indicationGuideline[0].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[0].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.period = 24
+* indicationGuideline[0].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.periodUnit = #h
+* indicationGuideline[0].dosingGuideline[4].dosage[0].dosage[0].doseAndRate[0].doseQuantity = 500 'mg' "mg"
+* indicationGuideline[0].dosingGuideline[4].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[0].dosingGuideline[4].patientCharacteristic[0].valueCodeableConcept.text = "Doentes em hemodiálise: adultos e crianças ≥ 40 kg"
+
+// Hemodiálise - Crianças < 40 kg
+* indicationGuideline[0].dosingGuideline[5].dosage[0].type.text = "Hemodiálise"
+* indicationGuideline[0].dosingGuideline[5].dosage[0].dosage[0].text = "15 mg/kg/dia administrados como dose única diária (máximo 500 mg). Antes da hemodiálise, deve ser administrada uma dose adicional de 15 mg/kg; para repor os níveis circulantes do fármaco, deve ser administrada outra dose de 15 mg/kg após a hemodiálise."
+* indicationGuideline[0].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[0].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.period = 1
+* indicationGuideline[0].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[0].dosingGuideline[5].dosage[0].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[0].dosingGuideline[5].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[0].dosingGuideline[5].patientCharacteristic[0].valueCodeableConcept.text = "Doentes em hemodiálise: crianças < 40 kg"
+
+// Diálise peritoneal
+* indicationGuideline[0].dosingGuideline[6].dosage[0].type.text = "Diálise peritoneal"
+* indicationGuideline[0].dosingGuideline[6].dosage[0].dosage[0].text = "Máximo de 500 mg/dia de amoxicilina."
+* indicationGuideline[0].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[0].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.period = 1
+* indicationGuideline[0].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[0].dosingGuideline[6].dosage[0].dosage[0].maxDosePerPeriod.numerator = 500 'mg' "mg"
+* indicationGuideline[0].dosingGuideline[6].dosage[0].dosage[0].maxDosePerPeriod.denominator = 1 'd' "day"
+* indicationGuideline[0].dosingGuideline[6].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[0].dosingGuideline[6].patientCharacteristic[0].valueCodeableConcept.text = "Doentes em diálise peritoneal"
+
+// Compromisso hepático
+* indicationGuideline[0].dosingGuideline[7].dosage[0].type.text = "Precaução na dosagem"
+* indicationGuideline[0].dosingGuideline[7].dosage[0].dosage[0].text = "Dosear com precaução e monitorizar a função hepática em intervalos regulares."
+* indicationGuideline[0].dosingGuideline[7].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[0].dosingGuideline[7].patientCharacteristic[0].valueCodeableConcept.text = "Compromisso hepático"
+
+* indicationGuideline[0].dosingGuideline[8].dosage[0].type.text = "Dose diária"
+* indicationGuideline[0].dosingGuideline[8].dosage[0].dosage[0].text = "20 a 90 mg/kg/dia em doses divididas."
+* indicationGuideline[0].dosingGuideline[8].dosage[0].dosage[0].additionalInstruction[0].text = "Só devem ser considerados regimes terapêuticos de duas vezes por dia quando a dose se encontra no limite superior."
+* indicationGuideline[0].dosingGuideline[8].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[0].dosingGuideline[8].patientCharacteristic[0].valueCodeableConcept.text = "Crianças <40 kg"
 
 // ---------------------------------------------------------
 // 2) Otite média aguda
 // ---------------------------------------------------------
 * indicationGuideline[1].indication[0].concept.text = "Otite média aguda"
-* insert AmoxAdultosGrupo2(1)
-* insert AmoxPopulacoesEspeciais(1)
-* insert AmoxCriancasGrupoA(1)
+* indicationGuideline[1].dosingGuideline[0].dosage[0].type.text = "Regime a cada 8 horas"
+* indicationGuideline[1].dosingGuideline[0].dosage[0].dosage[0].text = "500 mg a cada 8 horas."
+* indicationGuideline[1].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[1].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.period = 8
+* indicationGuideline[1].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.periodUnit = #h
+* indicationGuideline[1].dosingGuideline[0].dosage[0].dosage[0].doseAndRate[0].doseQuantity = 500 'mg' "mg"
+* indicationGuideline[1].dosingGuideline[0].dosage[1].type.text = "Regime a cada 12 horas"
+* indicationGuideline[1].dosingGuideline[0].dosage[1].dosage[0].text = "750 mg a 1 g a cada 12 horas."
+* indicationGuideline[1].dosingGuideline[0].dosage[1].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[1].dosingGuideline[0].dosage[1].dosage[0].timing.repeat.period = 12
+* indicationGuideline[1].dosingGuideline[0].dosage[1].dosage[0].timing.repeat.periodUnit = #h
+* indicationGuideline[1].dosingGuideline[0].dosage[1].dosage[0].doseAndRate[0].doseRange.low = 750 'mg' "mg"
+* indicationGuideline[1].dosingGuideline[0].dosage[1].dosage[0].doseAndRate[0].doseRange.high = 1000 'mg' "mg"
+* indicationGuideline[1].dosingGuideline[0].dosage[2].type.text = "Infeções graves"
+* indicationGuideline[1].dosingGuideline[0].dosage[2].dosage[0].text = "Para infeções graves, 750 mg a 1 g a cada 8 horas durante 10 dias."
+* indicationGuideline[1].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[1].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.period = 8
+* indicationGuideline[1].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.periodUnit = #h
+* indicationGuideline[1].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.boundsDuration = 10 'd' "day"
+* indicationGuideline[1].dosingGuideline[0].dosage[2].dosage[0].doseAndRate[0].doseRange.low = 750 'mg' "mg"
+* indicationGuideline[1].dosingGuideline[0].dosage[2].dosage[0].doseAndRate[0].doseRange.high = 1000 'mg' "mg"
+* indicationGuideline[1].dosingGuideline[0].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[1].dosingGuideline[0].patientCharacteristic[0].valueCodeableConcept.text = "Adultos e Crianças ≥40 kg"
+
+// Idosos
+* indicationGuideline[1].dosingGuideline[1].dosage[0].type.text = "Sem ajuste posológico"
+* indicationGuideline[1].dosingGuideline[1].dosage[0].dosage[0].text = "Não é necessário ajuste de dose."
+* indicationGuideline[1].dosingGuideline[1].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[1].dosingGuideline[1].patientCharacteristic[0].valueCodeableConcept.text = "Idosos"
+
+// Compromisso renal - Adultos e crianças ≥ 40 kg (cada banda de TFG é um regime alternativo)
+* indicationGuideline[1].dosingGuideline[2].dosage[0].type.text = "TFG superior a 30 ml/min"
+* indicationGuideline[1].dosingGuideline[2].dosage[0].dosage[0].text = "Não é necessário ajuste."
+* indicationGuideline[1].dosingGuideline[2].dosage[1].type.text = "TFG 10 a 30 ml/min"
+* indicationGuideline[1].dosingGuideline[2].dosage[1].dosage[0].text = "Máximo 500 mg duas vezes por dia."
+* indicationGuideline[1].dosingGuideline[2].dosage[1].dosage[0].timing.repeat.frequency = 2
+* indicationGuideline[1].dosingGuideline[2].dosage[1].dosage[0].timing.repeat.period = 1
+* indicationGuideline[1].dosingGuideline[2].dosage[1].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[1].dosingGuideline[2].dosage[1].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[1].dosingGuideline[2].dosage[2].type.text = "TFG inferior a 10 ml/min"
+* indicationGuideline[1].dosingGuideline[2].dosage[2].dosage[0].text = "Máximo 500 mg/dia."
+* indicationGuideline[1].dosingGuideline[2].dosage[2].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[1].dosingGuideline[2].dosage[2].dosage[0].timing.repeat.period = 1
+* indicationGuideline[1].dosingGuideline[2].dosage[2].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[1].dosingGuideline[2].dosage[2].dosage[0].maxDosePerPeriod.numerator = 500 'mg' "mg"
+* indicationGuideline[1].dosingGuideline[2].dosage[2].dosage[0].maxDosePerPeriod.denominator = 1 'd' "day"
+* indicationGuideline[1].dosingGuideline[2].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[1].dosingGuideline[2].patientCharacteristic[0].valueCodeableConcept.text = "Compromisso renal: adultos e crianças ≥ 40 kg"
+
+// Compromisso renal - Crianças < 40 kg
+* indicationGuideline[1].dosingGuideline[3].dosage[0].type.text = "TFG superior a 30 ml/min"
+* indicationGuideline[1].dosingGuideline[3].dosage[0].dosage[0].text = "Não é necessário ajuste."
+* indicationGuideline[1].dosingGuideline[3].dosage[1].type.text = "TFG 10 a 30 ml/min"
+* indicationGuideline[1].dosingGuideline[3].dosage[1].dosage[0].text = "15 mg/kg administrados duas vezes por dia (máximo 500 mg duas vezes por dia)."
+* indicationGuideline[1].dosingGuideline[3].dosage[1].dosage[0].additionalInstruction[0].text = "Na maioria dos casos, a terapêutica parentérica é preferida."
+* indicationGuideline[1].dosingGuideline[3].dosage[1].dosage[0].timing.repeat.frequency = 2
+* indicationGuideline[1].dosingGuideline[3].dosage[1].dosage[0].timing.repeat.period = 1
+* indicationGuideline[1].dosingGuideline[3].dosage[1].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[1].dosingGuideline[3].dosage[1].dosage[0].doseAndRate[0].doseQuantity = 15 'mg/kg' "mg/kg"
+* indicationGuideline[1].dosingGuideline[3].dosage[1].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[1].dosingGuideline[3].dosage[2].type.text = "TFG inferior a 10 ml/min"
+* indicationGuideline[1].dosingGuideline[3].dosage[2].dosage[0].text = "15 mg/kg administrados como dose única diária (máximo 500 mg)."
+* indicationGuideline[1].dosingGuideline[3].dosage[2].dosage[0].additionalInstruction[0].text = "Na maioria dos casos, a terapêutica parentérica é preferida."
+* indicationGuideline[1].dosingGuideline[3].dosage[2].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[1].dosingGuideline[3].dosage[2].dosage[0].timing.repeat.period = 1
+* indicationGuideline[1].dosingGuideline[3].dosage[2].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[1].dosingGuideline[3].dosage[2].dosage[0].doseAndRate[0].doseQuantity = 15 'mg/kg' "mg/kg"
+* indicationGuideline[1].dosingGuideline[3].dosage[2].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[1].dosingGuideline[3].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[1].dosingGuideline[3].patientCharacteristic[0].valueCodeableConcept.text = "Compromisso renal: crianças < 40 kg"
+
+// Hemodiálise - Adultos e crianças ≥ 40 kg
+* indicationGuideline[1].dosingGuideline[4].dosage[0].type.text = "Hemodiálise"
+* indicationGuideline[1].dosingGuideline[4].dosage[0].dosage[0].text = "500 mg a cada 24 horas. Antes da hemodiálise, deve ser administrada uma dose adicional de 500 mg; para repor os níveis circulantes do fármaco, deve ser administrada outra dose de 500 mg após a hemodiálise."
+* indicationGuideline[1].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[1].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.period = 24
+* indicationGuideline[1].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.periodUnit = #h
+* indicationGuideline[1].dosingGuideline[4].dosage[0].dosage[0].doseAndRate[0].doseQuantity = 500 'mg' "mg"
+* indicationGuideline[1].dosingGuideline[4].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[1].dosingGuideline[4].patientCharacteristic[0].valueCodeableConcept.text = "Doentes em hemodiálise: adultos e crianças ≥ 40 kg"
+
+// Hemodiálise - Crianças < 40 kg
+* indicationGuideline[1].dosingGuideline[5].dosage[0].type.text = "Hemodiálise"
+* indicationGuideline[1].dosingGuideline[5].dosage[0].dosage[0].text = "15 mg/kg/dia administrados como dose única diária (máximo 500 mg). Antes da hemodiálise, deve ser administrada uma dose adicional de 15 mg/kg; para repor os níveis circulantes do fármaco, deve ser administrada outra dose de 15 mg/kg após a hemodiálise."
+* indicationGuideline[1].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[1].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.period = 1
+* indicationGuideline[1].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[1].dosingGuideline[5].dosage[0].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[1].dosingGuideline[5].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[1].dosingGuideline[5].patientCharacteristic[0].valueCodeableConcept.text = "Doentes em hemodiálise: crianças < 40 kg"
+
+// Diálise peritoneal
+* indicationGuideline[1].dosingGuideline[6].dosage[0].type.text = "Diálise peritoneal"
+* indicationGuideline[1].dosingGuideline[6].dosage[0].dosage[0].text = "Máximo de 500 mg/dia de amoxicilina."
+* indicationGuideline[1].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[1].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.period = 1
+* indicationGuideline[1].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[1].dosingGuideline[6].dosage[0].dosage[0].maxDosePerPeriod.numerator = 500 'mg' "mg"
+* indicationGuideline[1].dosingGuideline[6].dosage[0].dosage[0].maxDosePerPeriod.denominator = 1 'd' "day"
+* indicationGuideline[1].dosingGuideline[6].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[1].dosingGuideline[6].patientCharacteristic[0].valueCodeableConcept.text = "Doentes em diálise peritoneal"
+
+// Compromisso hepático
+* indicationGuideline[1].dosingGuideline[7].dosage[0].type.text = "Precaução na dosagem"
+* indicationGuideline[1].dosingGuideline[7].dosage[0].dosage[0].text = "Dosear com precaução e monitorizar a função hepática em intervalos regulares."
+* indicationGuideline[1].dosingGuideline[7].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[1].dosingGuideline[7].patientCharacteristic[0].valueCodeableConcept.text = "Compromisso hepático"
+
+* indicationGuideline[1].dosingGuideline[8].dosage[0].type.text = "Dose diária"
+* indicationGuideline[1].dosingGuideline[8].dosage[0].dosage[0].text = "20 a 90 mg/kg/dia em doses divididas."
+* indicationGuideline[1].dosingGuideline[8].dosage[0].dosage[0].additionalInstruction[0].text = "Só devem ser considerados regimes terapêuticos de duas vezes por dia quando a dose se encontra no limite superior."
+* indicationGuideline[1].dosingGuideline[8].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[1].dosingGuideline[8].patientCharacteristic[0].valueCodeableConcept.text = "Crianças <40 kg"
 
 // ---------------------------------------------------------
 // 3) Amigdalite e faringite agudas estreptocócicas
 // ---------------------------------------------------------
 * indicationGuideline[2].indication[0].concept.text = "Amigdalite e faringite agudas estreptocócicas"
-* insert AmoxAdultosGrupo2(2)
-* insert AmoxPopulacoesEspeciais(2)
+* indicationGuideline[2].dosingGuideline[0].dosage[0].type.text = "Regime a cada 8 horas"
+* indicationGuideline[2].dosingGuideline[0].dosage[0].dosage[0].text = "500 mg a cada 8 horas."
+* indicationGuideline[2].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[2].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.period = 8
+* indicationGuideline[2].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.periodUnit = #h
+* indicationGuideline[2].dosingGuideline[0].dosage[0].dosage[0].doseAndRate[0].doseQuantity = 500 'mg' "mg"
+* indicationGuideline[2].dosingGuideline[0].dosage[1].type.text = "Regime a cada 12 horas"
+* indicationGuideline[2].dosingGuideline[0].dosage[1].dosage[0].text = "750 mg a 1 g a cada 12 horas."
+* indicationGuideline[2].dosingGuideline[0].dosage[1].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[2].dosingGuideline[0].dosage[1].dosage[0].timing.repeat.period = 12
+* indicationGuideline[2].dosingGuideline[0].dosage[1].dosage[0].timing.repeat.periodUnit = #h
+* indicationGuideline[2].dosingGuideline[0].dosage[1].dosage[0].doseAndRate[0].doseRange.low = 750 'mg' "mg"
+* indicationGuideline[2].dosingGuideline[0].dosage[1].dosage[0].doseAndRate[0].doseRange.high = 1000 'mg' "mg"
+* indicationGuideline[2].dosingGuideline[0].dosage[2].type.text = "Infeções graves"
+* indicationGuideline[2].dosingGuideline[0].dosage[2].dosage[0].text = "Para infeções graves, 750 mg a 1 g a cada 8 horas durante 10 dias."
+* indicationGuideline[2].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[2].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.period = 8
+* indicationGuideline[2].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.periodUnit = #h
+* indicationGuideline[2].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.boundsDuration = 10 'd' "day"
+* indicationGuideline[2].dosingGuideline[0].dosage[2].dosage[0].doseAndRate[0].doseRange.low = 750 'mg' "mg"
+* indicationGuideline[2].dosingGuideline[0].dosage[2].dosage[0].doseAndRate[0].doseRange.high = 1000 'mg' "mg"
+* indicationGuideline[2].dosingGuideline[0].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[2].dosingGuideline[0].patientCharacteristic[0].valueCodeableConcept.text = "Adultos e Crianças ≥40 kg"
+
+// Idosos
+* indicationGuideline[2].dosingGuideline[1].dosage[0].type.text = "Sem ajuste posológico"
+* indicationGuideline[2].dosingGuideline[1].dosage[0].dosage[0].text = "Não é necessário ajuste de dose."
+* indicationGuideline[2].dosingGuideline[1].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[2].dosingGuideline[1].patientCharacteristic[0].valueCodeableConcept.text = "Idosos"
+
+// Compromisso renal - Adultos e crianças ≥ 40 kg (cada banda de TFG é um regime alternativo)
+* indicationGuideline[2].dosingGuideline[2].dosage[0].type.text = "TFG superior a 30 ml/min"
+* indicationGuideline[2].dosingGuideline[2].dosage[0].dosage[0].text = "Não é necessário ajuste."
+* indicationGuideline[2].dosingGuideline[2].dosage[1].type.text = "TFG 10 a 30 ml/min"
+* indicationGuideline[2].dosingGuideline[2].dosage[1].dosage[0].text = "Máximo 500 mg duas vezes por dia."
+* indicationGuideline[2].dosingGuideline[2].dosage[1].dosage[0].timing.repeat.frequency = 2
+* indicationGuideline[2].dosingGuideline[2].dosage[1].dosage[0].timing.repeat.period = 1
+* indicationGuideline[2].dosingGuideline[2].dosage[1].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[2].dosingGuideline[2].dosage[1].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[2].dosingGuideline[2].dosage[2].type.text = "TFG inferior a 10 ml/min"
+* indicationGuideline[2].dosingGuideline[2].dosage[2].dosage[0].text = "Máximo 500 mg/dia."
+* indicationGuideline[2].dosingGuideline[2].dosage[2].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[2].dosingGuideline[2].dosage[2].dosage[0].timing.repeat.period = 1
+* indicationGuideline[2].dosingGuideline[2].dosage[2].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[2].dosingGuideline[2].dosage[2].dosage[0].maxDosePerPeriod.numerator = 500 'mg' "mg"
+* indicationGuideline[2].dosingGuideline[2].dosage[2].dosage[0].maxDosePerPeriod.denominator = 1 'd' "day"
+* indicationGuideline[2].dosingGuideline[2].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[2].dosingGuideline[2].patientCharacteristic[0].valueCodeableConcept.text = "Compromisso renal: adultos e crianças ≥ 40 kg"
+
+// Compromisso renal - Crianças < 40 kg
+* indicationGuideline[2].dosingGuideline[3].dosage[0].type.text = "TFG superior a 30 ml/min"
+* indicationGuideline[2].dosingGuideline[3].dosage[0].dosage[0].text = "Não é necessário ajuste."
+* indicationGuideline[2].dosingGuideline[3].dosage[1].type.text = "TFG 10 a 30 ml/min"
+* indicationGuideline[2].dosingGuideline[3].dosage[1].dosage[0].text = "15 mg/kg administrados duas vezes por dia (máximo 500 mg duas vezes por dia)."
+* indicationGuideline[2].dosingGuideline[3].dosage[1].dosage[0].additionalInstruction[0].text = "Na maioria dos casos, a terapêutica parentérica é preferida."
+* indicationGuideline[2].dosingGuideline[3].dosage[1].dosage[0].timing.repeat.frequency = 2
+* indicationGuideline[2].dosingGuideline[3].dosage[1].dosage[0].timing.repeat.period = 1
+* indicationGuideline[2].dosingGuideline[3].dosage[1].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[2].dosingGuideline[3].dosage[1].dosage[0].doseAndRate[0].doseQuantity = 15 'mg/kg' "mg/kg"
+* indicationGuideline[2].dosingGuideline[3].dosage[1].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[2].dosingGuideline[3].dosage[2].type.text = "TFG inferior a 10 ml/min"
+* indicationGuideline[2].dosingGuideline[3].dosage[2].dosage[0].text = "15 mg/kg administrados como dose única diária (máximo 500 mg)."
+* indicationGuideline[2].dosingGuideline[3].dosage[2].dosage[0].additionalInstruction[0].text = "Na maioria dos casos, a terapêutica parentérica é preferida."
+* indicationGuideline[2].dosingGuideline[3].dosage[2].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[2].dosingGuideline[3].dosage[2].dosage[0].timing.repeat.period = 1
+* indicationGuideline[2].dosingGuideline[3].dosage[2].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[2].dosingGuideline[3].dosage[2].dosage[0].doseAndRate[0].doseQuantity = 15 'mg/kg' "mg/kg"
+* indicationGuideline[2].dosingGuideline[3].dosage[2].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[2].dosingGuideline[3].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[2].dosingGuideline[3].patientCharacteristic[0].valueCodeableConcept.text = "Compromisso renal: crianças < 40 kg"
+
+// Hemodiálise - Adultos e crianças ≥ 40 kg
+* indicationGuideline[2].dosingGuideline[4].dosage[0].type.text = "Hemodiálise"
+* indicationGuideline[2].dosingGuideline[4].dosage[0].dosage[0].text = "500 mg a cada 24 horas. Antes da hemodiálise, deve ser administrada uma dose adicional de 500 mg; para repor os níveis circulantes do fármaco, deve ser administrada outra dose de 500 mg após a hemodiálise."
+* indicationGuideline[2].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[2].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.period = 24
+* indicationGuideline[2].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.periodUnit = #h
+* indicationGuideline[2].dosingGuideline[4].dosage[0].dosage[0].doseAndRate[0].doseQuantity = 500 'mg' "mg"
+* indicationGuideline[2].dosingGuideline[4].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[2].dosingGuideline[4].patientCharacteristic[0].valueCodeableConcept.text = "Doentes em hemodiálise: adultos e crianças ≥ 40 kg"
+
+// Hemodiálise - Crianças < 40 kg
+* indicationGuideline[2].dosingGuideline[5].dosage[0].type.text = "Hemodiálise"
+* indicationGuideline[2].dosingGuideline[5].dosage[0].dosage[0].text = "15 mg/kg/dia administrados como dose única diária (máximo 500 mg). Antes da hemodiálise, deve ser administrada uma dose adicional de 15 mg/kg; para repor os níveis circulantes do fármaco, deve ser administrada outra dose de 15 mg/kg após a hemodiálise."
+* indicationGuideline[2].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[2].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.period = 1
+* indicationGuideline[2].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[2].dosingGuideline[5].dosage[0].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[2].dosingGuideline[5].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[2].dosingGuideline[5].patientCharacteristic[0].valueCodeableConcept.text = "Doentes em hemodiálise: crianças < 40 kg"
+
+// Diálise peritoneal
+* indicationGuideline[2].dosingGuideline[6].dosage[0].type.text = "Diálise peritoneal"
+* indicationGuideline[2].dosingGuideline[6].dosage[0].dosage[0].text = "Máximo de 500 mg/dia de amoxicilina."
+* indicationGuideline[2].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[2].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.period = 1
+* indicationGuideline[2].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[2].dosingGuideline[6].dosage[0].dosage[0].maxDosePerPeriod.numerator = 500 'mg' "mg"
+* indicationGuideline[2].dosingGuideline[6].dosage[0].dosage[0].maxDosePerPeriod.denominator = 1 'd' "day"
+* indicationGuideline[2].dosingGuideline[6].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[2].dosingGuideline[6].patientCharacteristic[0].valueCodeableConcept.text = "Doentes em diálise peritoneal"
+
+// Compromisso hepático
+* indicationGuideline[2].dosingGuideline[7].dosage[0].type.text = "Precaução na dosagem"
+* indicationGuideline[2].dosingGuideline[7].dosage[0].dosage[0].text = "Dosear com precaução e monitorizar a função hepática em intervalos regulares."
+* indicationGuideline[2].dosingGuideline[7].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[2].dosingGuideline[7].patientCharacteristic[0].valueCodeableConcept.text = "Compromisso hepático"
+
 * indicationGuideline[2].dosingGuideline[8].dosage[0].type.text = "Dose diária"
 * indicationGuideline[2].dosingGuideline[8].dosage[0].dosage[0].text = "40 a 90 mg/kg/dia em doses divididas."
 * indicationGuideline[2].dosingGuideline[8].dosage[0].dosage[0].additionalInstruction[0].text = "Só devem ser considerados regimes terapêuticos de duas vezes por dia quando a dose se encontra no limite superior."
@@ -245,8 +424,113 @@ Description: "Amoxicilina Generis 1000 mg comprimidos revestidos por película -
 // 4) Exacerbações agudas da bronquite crónica
 // ---------------------------------------------------------
 * indicationGuideline[3].indication[0].concept.text = "Exacerbações agudas da bronquite crónica"
-* insert AmoxAdultosGrupo2(3)
-* insert AmoxPopulacoesEspeciais(3)
+* indicationGuideline[3].dosingGuideline[0].dosage[0].type.text = "Regime a cada 8 horas"
+* indicationGuideline[3].dosingGuideline[0].dosage[0].dosage[0].text = "500 mg a cada 8 horas."
+* indicationGuideline[3].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[3].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.period = 8
+* indicationGuideline[3].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.periodUnit = #h
+* indicationGuideline[3].dosingGuideline[0].dosage[0].dosage[0].doseAndRate[0].doseQuantity = 500 'mg' "mg"
+* indicationGuideline[3].dosingGuideline[0].dosage[1].type.text = "Regime a cada 12 horas"
+* indicationGuideline[3].dosingGuideline[0].dosage[1].dosage[0].text = "750 mg a 1 g a cada 12 horas."
+* indicationGuideline[3].dosingGuideline[0].dosage[1].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[3].dosingGuideline[0].dosage[1].dosage[0].timing.repeat.period = 12
+* indicationGuideline[3].dosingGuideline[0].dosage[1].dosage[0].timing.repeat.periodUnit = #h
+* indicationGuideline[3].dosingGuideline[0].dosage[1].dosage[0].doseAndRate[0].doseRange.low = 750 'mg' "mg"
+* indicationGuideline[3].dosingGuideline[0].dosage[1].dosage[0].doseAndRate[0].doseRange.high = 1000 'mg' "mg"
+* indicationGuideline[3].dosingGuideline[0].dosage[2].type.text = "Infeções graves"
+* indicationGuideline[3].dosingGuideline[0].dosage[2].dosage[0].text = "Para infeções graves, 750 mg a 1 g a cada 8 horas durante 10 dias."
+* indicationGuideline[3].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[3].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.period = 8
+* indicationGuideline[3].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.periodUnit = #h
+* indicationGuideline[3].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.boundsDuration = 10 'd' "day"
+* indicationGuideline[3].dosingGuideline[0].dosage[2].dosage[0].doseAndRate[0].doseRange.low = 750 'mg' "mg"
+* indicationGuideline[3].dosingGuideline[0].dosage[2].dosage[0].doseAndRate[0].doseRange.high = 1000 'mg' "mg"
+* indicationGuideline[3].dosingGuideline[0].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[3].dosingGuideline[0].patientCharacteristic[0].valueCodeableConcept.text = "Adultos e Crianças ≥40 kg"
+
+// Idosos
+* indicationGuideline[3].dosingGuideline[1].dosage[0].type.text = "Sem ajuste posológico"
+* indicationGuideline[3].dosingGuideline[1].dosage[0].dosage[0].text = "Não é necessário ajuste de dose."
+* indicationGuideline[3].dosingGuideline[1].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[3].dosingGuideline[1].patientCharacteristic[0].valueCodeableConcept.text = "Idosos"
+
+// Compromisso renal - Adultos e crianças ≥ 40 kg (cada banda de TFG é um regime alternativo)
+* indicationGuideline[3].dosingGuideline[2].dosage[0].type.text = "TFG superior a 30 ml/min"
+* indicationGuideline[3].dosingGuideline[2].dosage[0].dosage[0].text = "Não é necessário ajuste."
+* indicationGuideline[3].dosingGuideline[2].dosage[1].type.text = "TFG 10 a 30 ml/min"
+* indicationGuideline[3].dosingGuideline[2].dosage[1].dosage[0].text = "Máximo 500 mg duas vezes por dia."
+* indicationGuideline[3].dosingGuideline[2].dosage[1].dosage[0].timing.repeat.frequency = 2
+* indicationGuideline[3].dosingGuideline[2].dosage[1].dosage[0].timing.repeat.period = 1
+* indicationGuideline[3].dosingGuideline[2].dosage[1].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[3].dosingGuideline[2].dosage[1].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[3].dosingGuideline[2].dosage[2].type.text = "TFG inferior a 10 ml/min"
+* indicationGuideline[3].dosingGuideline[2].dosage[2].dosage[0].text = "Máximo 500 mg/dia."
+* indicationGuideline[3].dosingGuideline[2].dosage[2].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[3].dosingGuideline[2].dosage[2].dosage[0].timing.repeat.period = 1
+* indicationGuideline[3].dosingGuideline[2].dosage[2].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[3].dosingGuideline[2].dosage[2].dosage[0].maxDosePerPeriod.numerator = 500 'mg' "mg"
+* indicationGuideline[3].dosingGuideline[2].dosage[2].dosage[0].maxDosePerPeriod.denominator = 1 'd' "day"
+* indicationGuideline[3].dosingGuideline[2].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[3].dosingGuideline[2].patientCharacteristic[0].valueCodeableConcept.text = "Compromisso renal: adultos e crianças ≥ 40 kg"
+
+// Compromisso renal - Crianças < 40 kg
+* indicationGuideline[3].dosingGuideline[3].dosage[0].type.text = "TFG superior a 30 ml/min"
+* indicationGuideline[3].dosingGuideline[3].dosage[0].dosage[0].text = "Não é necessário ajuste."
+* indicationGuideline[3].dosingGuideline[3].dosage[1].type.text = "TFG 10 a 30 ml/min"
+* indicationGuideline[3].dosingGuideline[3].dosage[1].dosage[0].text = "15 mg/kg administrados duas vezes por dia (máximo 500 mg duas vezes por dia)."
+* indicationGuideline[3].dosingGuideline[3].dosage[1].dosage[0].additionalInstruction[0].text = "Na maioria dos casos, a terapêutica parentérica é preferida."
+* indicationGuideline[3].dosingGuideline[3].dosage[1].dosage[0].timing.repeat.frequency = 2
+* indicationGuideline[3].dosingGuideline[3].dosage[1].dosage[0].timing.repeat.period = 1
+* indicationGuideline[3].dosingGuideline[3].dosage[1].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[3].dosingGuideline[3].dosage[1].dosage[0].doseAndRate[0].doseQuantity = 15 'mg/kg' "mg/kg"
+* indicationGuideline[3].dosingGuideline[3].dosage[1].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[3].dosingGuideline[3].dosage[2].type.text = "TFG inferior a 10 ml/min"
+* indicationGuideline[3].dosingGuideline[3].dosage[2].dosage[0].text = "15 mg/kg administrados como dose única diária (máximo 500 mg)."
+* indicationGuideline[3].dosingGuideline[3].dosage[2].dosage[0].additionalInstruction[0].text = "Na maioria dos casos, a terapêutica parentérica é preferida."
+* indicationGuideline[3].dosingGuideline[3].dosage[2].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[3].dosingGuideline[3].dosage[2].dosage[0].timing.repeat.period = 1
+* indicationGuideline[3].dosingGuideline[3].dosage[2].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[3].dosingGuideline[3].dosage[2].dosage[0].doseAndRate[0].doseQuantity = 15 'mg/kg' "mg/kg"
+* indicationGuideline[3].dosingGuideline[3].dosage[2].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[3].dosingGuideline[3].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[3].dosingGuideline[3].patientCharacteristic[0].valueCodeableConcept.text = "Compromisso renal: crianças < 40 kg"
+
+// Hemodiálise - Adultos e crianças ≥ 40 kg
+* indicationGuideline[3].dosingGuideline[4].dosage[0].type.text = "Hemodiálise"
+* indicationGuideline[3].dosingGuideline[4].dosage[0].dosage[0].text = "500 mg a cada 24 horas. Antes da hemodiálise, deve ser administrada uma dose adicional de 500 mg; para repor os níveis circulantes do fármaco, deve ser administrada outra dose de 500 mg após a hemodiálise."
+* indicationGuideline[3].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[3].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.period = 24
+* indicationGuideline[3].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.periodUnit = #h
+* indicationGuideline[3].dosingGuideline[4].dosage[0].dosage[0].doseAndRate[0].doseQuantity = 500 'mg' "mg"
+* indicationGuideline[3].dosingGuideline[4].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[3].dosingGuideline[4].patientCharacteristic[0].valueCodeableConcept.text = "Doentes em hemodiálise: adultos e crianças ≥ 40 kg"
+
+// Hemodiálise - Crianças < 40 kg
+* indicationGuideline[3].dosingGuideline[5].dosage[0].type.text = "Hemodiálise"
+* indicationGuideline[3].dosingGuideline[5].dosage[0].dosage[0].text = "15 mg/kg/dia administrados como dose única diária (máximo 500 mg). Antes da hemodiálise, deve ser administrada uma dose adicional de 15 mg/kg; para repor os níveis circulantes do fármaco, deve ser administrada outra dose de 15 mg/kg após a hemodiálise."
+* indicationGuideline[3].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[3].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.period = 1
+* indicationGuideline[3].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[3].dosingGuideline[5].dosage[0].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[3].dosingGuideline[5].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[3].dosingGuideline[5].patientCharacteristic[0].valueCodeableConcept.text = "Doentes em hemodiálise: crianças < 40 kg"
+
+// Diálise peritoneal
+* indicationGuideline[3].dosingGuideline[6].dosage[0].type.text = "Diálise peritoneal"
+* indicationGuideline[3].dosingGuideline[6].dosage[0].dosage[0].text = "Máximo de 500 mg/dia de amoxicilina."
+* indicationGuideline[3].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[3].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.period = 1
+* indicationGuideline[3].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[3].dosingGuideline[6].dosage[0].dosage[0].maxDosePerPeriod.numerator = 500 'mg' "mg"
+* indicationGuideline[3].dosingGuideline[6].dosage[0].dosage[0].maxDosePerPeriod.denominator = 1 'd' "day"
+* indicationGuideline[3].dosingGuideline[6].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[3].dosingGuideline[6].patientCharacteristic[0].valueCodeableConcept.text = "Doentes em diálise peritoneal"
+
+// Compromisso hepático
+* indicationGuideline[3].dosingGuideline[7].dosage[0].type.text = "Precaução na dosagem"
+* indicationGuideline[3].dosingGuideline[7].dosage[0].dosage[0].text = "Dosear com precaução e monitorizar a função hepática em intervalos regulares."
+* indicationGuideline[3].dosingGuideline[7].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[3].dosingGuideline[7].patientCharacteristic[0].valueCodeableConcept.text = "Compromisso hepático"
 
 // ---------------------------------------------------------
 // 5) Pneumonia adquirida na comunidade
@@ -259,15 +543,126 @@ Description: "Amoxicilina Generis 1000 mg comprimidos revestidos por película -
 * indicationGuideline[4].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.periodUnit = #h
 * indicationGuideline[4].dosingGuideline[0].dosage[0].dosage[0].doseAndRate[0].doseRange.low = 500 'mg' "mg"
 * indicationGuideline[4].dosingGuideline[0].dosage[0].dosage[0].doseAndRate[0].doseRange.high = 1000 'mg' "mg"
-* insert AmoxPopulacaoAdultos(4)
-* insert AmoxPopulacoesEspeciais(4)
-* insert AmoxCriancasGrupoA(4)
+* indicationGuideline[4].dosingGuideline[0].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[4].dosingGuideline[0].patientCharacteristic[0].valueCodeableConcept.text = "Adultos e Crianças ≥40 kg"
+
+// Idosos
+* indicationGuideline[4].dosingGuideline[1].dosage[0].type.text = "Sem ajuste posológico"
+* indicationGuideline[4].dosingGuideline[1].dosage[0].dosage[0].text = "Não é necessário ajuste de dose."
+* indicationGuideline[4].dosingGuideline[1].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[4].dosingGuideline[1].patientCharacteristic[0].valueCodeableConcept.text = "Idosos"
+
+// Compromisso renal - Adultos e crianças ≥ 40 kg (cada banda de TFG é um regime alternativo)
+* indicationGuideline[4].dosingGuideline[2].dosage[0].type.text = "TFG superior a 30 ml/min"
+* indicationGuideline[4].dosingGuideline[2].dosage[0].dosage[0].text = "Não é necessário ajuste."
+* indicationGuideline[4].dosingGuideline[2].dosage[1].type.text = "TFG 10 a 30 ml/min"
+* indicationGuideline[4].dosingGuideline[2].dosage[1].dosage[0].text = "Máximo 500 mg duas vezes por dia."
+* indicationGuideline[4].dosingGuideline[2].dosage[1].dosage[0].timing.repeat.frequency = 2
+* indicationGuideline[4].dosingGuideline[2].dosage[1].dosage[0].timing.repeat.period = 1
+* indicationGuideline[4].dosingGuideline[2].dosage[1].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[4].dosingGuideline[2].dosage[1].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[4].dosingGuideline[2].dosage[2].type.text = "TFG inferior a 10 ml/min"
+* indicationGuideline[4].dosingGuideline[2].dosage[2].dosage[0].text = "Máximo 500 mg/dia."
+* indicationGuideline[4].dosingGuideline[2].dosage[2].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[4].dosingGuideline[2].dosage[2].dosage[0].timing.repeat.period = 1
+* indicationGuideline[4].dosingGuideline[2].dosage[2].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[4].dosingGuideline[2].dosage[2].dosage[0].maxDosePerPeriod.numerator = 500 'mg' "mg"
+* indicationGuideline[4].dosingGuideline[2].dosage[2].dosage[0].maxDosePerPeriod.denominator = 1 'd' "day"
+* indicationGuideline[4].dosingGuideline[2].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[4].dosingGuideline[2].patientCharacteristic[0].valueCodeableConcept.text = "Compromisso renal: adultos e crianças ≥ 40 kg"
+
+// Compromisso renal - Crianças < 40 kg
+* indicationGuideline[4].dosingGuideline[3].dosage[0].type.text = "TFG superior a 30 ml/min"
+* indicationGuideline[4].dosingGuideline[3].dosage[0].dosage[0].text = "Não é necessário ajuste."
+* indicationGuideline[4].dosingGuideline[3].dosage[1].type.text = "TFG 10 a 30 ml/min"
+* indicationGuideline[4].dosingGuideline[3].dosage[1].dosage[0].text = "15 mg/kg administrados duas vezes por dia (máximo 500 mg duas vezes por dia)."
+* indicationGuideline[4].dosingGuideline[3].dosage[1].dosage[0].additionalInstruction[0].text = "Na maioria dos casos, a terapêutica parentérica é preferida."
+* indicationGuideline[4].dosingGuideline[3].dosage[1].dosage[0].timing.repeat.frequency = 2
+* indicationGuideline[4].dosingGuideline[3].dosage[1].dosage[0].timing.repeat.period = 1
+* indicationGuideline[4].dosingGuideline[3].dosage[1].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[4].dosingGuideline[3].dosage[1].dosage[0].doseAndRate[0].doseQuantity = 15 'mg/kg' "mg/kg"
+* indicationGuideline[4].dosingGuideline[3].dosage[1].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[4].dosingGuideline[3].dosage[2].type.text = "TFG inferior a 10 ml/min"
+* indicationGuideline[4].dosingGuideline[3].dosage[2].dosage[0].text = "15 mg/kg administrados como dose única diária (máximo 500 mg)."
+* indicationGuideline[4].dosingGuideline[3].dosage[2].dosage[0].additionalInstruction[0].text = "Na maioria dos casos, a terapêutica parentérica é preferida."
+* indicationGuideline[4].dosingGuideline[3].dosage[2].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[4].dosingGuideline[3].dosage[2].dosage[0].timing.repeat.period = 1
+* indicationGuideline[4].dosingGuideline[3].dosage[2].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[4].dosingGuideline[3].dosage[2].dosage[0].doseAndRate[0].doseQuantity = 15 'mg/kg' "mg/kg"
+* indicationGuideline[4].dosingGuideline[3].dosage[2].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[4].dosingGuideline[3].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[4].dosingGuideline[3].patientCharacteristic[0].valueCodeableConcept.text = "Compromisso renal: crianças < 40 kg"
+
+// Hemodiálise - Adultos e crianças ≥ 40 kg
+* indicationGuideline[4].dosingGuideline[4].dosage[0].type.text = "Hemodiálise"
+* indicationGuideline[4].dosingGuideline[4].dosage[0].dosage[0].text = "500 mg a cada 24 horas. Antes da hemodiálise, deve ser administrada uma dose adicional de 500 mg; para repor os níveis circulantes do fármaco, deve ser administrada outra dose de 500 mg após a hemodiálise."
+* indicationGuideline[4].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[4].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.period = 24
+* indicationGuideline[4].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.periodUnit = #h
+* indicationGuideline[4].dosingGuideline[4].dosage[0].dosage[0].doseAndRate[0].doseQuantity = 500 'mg' "mg"
+* indicationGuideline[4].dosingGuideline[4].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[4].dosingGuideline[4].patientCharacteristic[0].valueCodeableConcept.text = "Doentes em hemodiálise: adultos e crianças ≥ 40 kg"
+
+// Hemodiálise - Crianças < 40 kg
+* indicationGuideline[4].dosingGuideline[5].dosage[0].type.text = "Hemodiálise"
+* indicationGuideline[4].dosingGuideline[5].dosage[0].dosage[0].text = "15 mg/kg/dia administrados como dose única diária (máximo 500 mg). Antes da hemodiálise, deve ser administrada uma dose adicional de 15 mg/kg; para repor os níveis circulantes do fármaco, deve ser administrada outra dose de 15 mg/kg após a hemodiálise."
+* indicationGuideline[4].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[4].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.period = 1
+* indicationGuideline[4].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[4].dosingGuideline[5].dosage[0].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[4].dosingGuideline[5].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[4].dosingGuideline[5].patientCharacteristic[0].valueCodeableConcept.text = "Doentes em hemodiálise: crianças < 40 kg"
+
+// Diálise peritoneal
+* indicationGuideline[4].dosingGuideline[6].dosage[0].type.text = "Diálise peritoneal"
+* indicationGuideline[4].dosingGuideline[6].dosage[0].dosage[0].text = "Máximo de 500 mg/dia de amoxicilina."
+* indicationGuideline[4].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[4].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.period = 1
+* indicationGuideline[4].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[4].dosingGuideline[6].dosage[0].dosage[0].maxDosePerPeriod.numerator = 500 'mg' "mg"
+* indicationGuideline[4].dosingGuideline[6].dosage[0].dosage[0].maxDosePerPeriod.denominator = 1 'd' "day"
+* indicationGuideline[4].dosingGuideline[6].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[4].dosingGuideline[6].patientCharacteristic[0].valueCodeableConcept.text = "Doentes em diálise peritoneal"
+
+// Compromisso hepático
+* indicationGuideline[4].dosingGuideline[7].dosage[0].type.text = "Precaução na dosagem"
+* indicationGuideline[4].dosingGuideline[7].dosage[0].dosage[0].text = "Dosear com precaução e monitorizar a função hepática em intervalos regulares."
+* indicationGuideline[4].dosingGuideline[7].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[4].dosingGuideline[7].patientCharacteristic[0].valueCodeableConcept.text = "Compromisso hepático"
+
+* indicationGuideline[4].dosingGuideline[8].dosage[0].type.text = "Dose diária"
+* indicationGuideline[4].dosingGuideline[8].dosage[0].dosage[0].text = "20 a 90 mg/kg/dia em doses divididas."
+* indicationGuideline[4].dosingGuideline[8].dosage[0].dosage[0].additionalInstruction[0].text = "Só devem ser considerados regimes terapêuticos de duas vezes por dia quando a dose se encontra no limite superior."
+* indicationGuideline[4].dosingGuideline[8].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[4].dosingGuideline[8].patientCharacteristic[0].valueCodeableConcept.text = "Crianças <40 kg"
 
 // ---------------------------------------------------------
 // 6) Cistite aguda
 // ---------------------------------------------------------
 * indicationGuideline[5].indication[0].concept.text = "Cistite aguda"
-* insert AmoxAdultosGrupo1(5)
+* indicationGuideline[5].dosingGuideline[0].dosage[0].type.text = "Regime a cada 8 horas"
+* indicationGuideline[5].dosingGuideline[0].dosage[0].dosage[0].text = "250 mg a 500 mg a cada 8 horas."
+* indicationGuideline[5].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[5].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.period = 8
+* indicationGuideline[5].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.periodUnit = #h
+* indicationGuideline[5].dosingGuideline[0].dosage[0].dosage[0].doseAndRate[0].doseRange.low = 250 'mg' "mg"
+* indicationGuideline[5].dosingGuideline[0].dosage[0].dosage[0].doseAndRate[0].doseRange.high = 500 'mg' "mg"
+* indicationGuideline[5].dosingGuideline[0].dosage[1].type.text = "Regime a cada 12 horas"
+* indicationGuideline[5].dosingGuideline[0].dosage[1].dosage[0].text = "750 mg a 1 g a cada 12 horas."
+* indicationGuideline[5].dosingGuideline[0].dosage[1].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[5].dosingGuideline[0].dosage[1].dosage[0].timing.repeat.period = 12
+* indicationGuideline[5].dosingGuideline[0].dosage[1].dosage[0].timing.repeat.periodUnit = #h
+* indicationGuideline[5].dosingGuideline[0].dosage[1].dosage[0].doseAndRate[0].doseRange.low = 750 'mg' "mg"
+* indicationGuideline[5].dosingGuideline[0].dosage[1].dosage[0].doseAndRate[0].doseRange.high = 1000 'mg' "mg"
+* indicationGuideline[5].dosingGuideline[0].dosage[2].type.text = "Infeções graves"
+* indicationGuideline[5].dosingGuideline[0].dosage[2].dosage[0].text = "Para infeções graves, 750 mg a 1 g a cada 8 horas."
+* indicationGuideline[5].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[5].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.period = 8
+* indicationGuideline[5].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.periodUnit = #h
+* indicationGuideline[5].dosingGuideline[0].dosage[2].dosage[0].doseAndRate[0].doseRange.low = 750 'mg' "mg"
+* indicationGuideline[5].dosingGuideline[0].dosage[2].dosage[0].doseAndRate[0].doseRange.high = 1000 'mg' "mg"
+* indicationGuideline[5].dosingGuideline[0].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[5].dosingGuideline[0].patientCharacteristic[0].valueCodeableConcept.text = "Adultos e Crianças ≥40 kg"
 * indicationGuideline[5].dosingGuideline[0].dosage[3].type.text = "Tratamento de um dia"
 * indicationGuideline[5].dosingGuideline[0].dosage[3].dosage[0].text = "A cistite aguda pode ser tratada com 3 g duas vezes ao dia durante um dia."
 * indicationGuideline[5].dosingGuideline[0].dosage[3].dosage[0].timing.repeat.frequency = 2
@@ -275,23 +670,326 @@ Description: "Amoxicilina Generis 1000 mg comprimidos revestidos por película -
 * indicationGuideline[5].dosingGuideline[0].dosage[3].dosage[0].timing.repeat.periodUnit = #d
 * indicationGuideline[5].dosingGuideline[0].dosage[3].dosage[0].timing.repeat.boundsDuration = 1 'd' "day"
 * indicationGuideline[5].dosingGuideline[0].dosage[3].dosage[0].doseAndRate[0].doseQuantity = 3000 'mg' "mg"
-* insert AmoxPopulacoesEspeciais(5)
-* insert AmoxCriancasGrupoA(5)
+
+// Idosos
+* indicationGuideline[5].dosingGuideline[1].dosage[0].type.text = "Sem ajuste posológico"
+* indicationGuideline[5].dosingGuideline[1].dosage[0].dosage[0].text = "Não é necessário ajuste de dose."
+* indicationGuideline[5].dosingGuideline[1].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[5].dosingGuideline[1].patientCharacteristic[0].valueCodeableConcept.text = "Idosos"
+
+// Compromisso renal - Adultos e crianças ≥ 40 kg (cada banda de TFG é um regime alternativo)
+* indicationGuideline[5].dosingGuideline[2].dosage[0].type.text = "TFG superior a 30 ml/min"
+* indicationGuideline[5].dosingGuideline[2].dosage[0].dosage[0].text = "Não é necessário ajuste."
+* indicationGuideline[5].dosingGuideline[2].dosage[1].type.text = "TFG 10 a 30 ml/min"
+* indicationGuideline[5].dosingGuideline[2].dosage[1].dosage[0].text = "Máximo 500 mg duas vezes por dia."
+* indicationGuideline[5].dosingGuideline[2].dosage[1].dosage[0].timing.repeat.frequency = 2
+* indicationGuideline[5].dosingGuideline[2].dosage[1].dosage[0].timing.repeat.period = 1
+* indicationGuideline[5].dosingGuideline[2].dosage[1].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[5].dosingGuideline[2].dosage[1].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[5].dosingGuideline[2].dosage[2].type.text = "TFG inferior a 10 ml/min"
+* indicationGuideline[5].dosingGuideline[2].dosage[2].dosage[0].text = "Máximo 500 mg/dia."
+* indicationGuideline[5].dosingGuideline[2].dosage[2].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[5].dosingGuideline[2].dosage[2].dosage[0].timing.repeat.period = 1
+* indicationGuideline[5].dosingGuideline[2].dosage[2].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[5].dosingGuideline[2].dosage[2].dosage[0].maxDosePerPeriod.numerator = 500 'mg' "mg"
+* indicationGuideline[5].dosingGuideline[2].dosage[2].dosage[0].maxDosePerPeriod.denominator = 1 'd' "day"
+* indicationGuideline[5].dosingGuideline[2].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[5].dosingGuideline[2].patientCharacteristic[0].valueCodeableConcept.text = "Compromisso renal: adultos e crianças ≥ 40 kg"
+
+// Compromisso renal - Crianças < 40 kg
+* indicationGuideline[5].dosingGuideline[3].dosage[0].type.text = "TFG superior a 30 ml/min"
+* indicationGuideline[5].dosingGuideline[3].dosage[0].dosage[0].text = "Não é necessário ajuste."
+* indicationGuideline[5].dosingGuideline[3].dosage[1].type.text = "TFG 10 a 30 ml/min"
+* indicationGuideline[5].dosingGuideline[3].dosage[1].dosage[0].text = "15 mg/kg administrados duas vezes por dia (máximo 500 mg duas vezes por dia)."
+* indicationGuideline[5].dosingGuideline[3].dosage[1].dosage[0].additionalInstruction[0].text = "Na maioria dos casos, a terapêutica parentérica é preferida."
+* indicationGuideline[5].dosingGuideline[3].dosage[1].dosage[0].timing.repeat.frequency = 2
+* indicationGuideline[5].dosingGuideline[3].dosage[1].dosage[0].timing.repeat.period = 1
+* indicationGuideline[5].dosingGuideline[3].dosage[1].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[5].dosingGuideline[3].dosage[1].dosage[0].doseAndRate[0].doseQuantity = 15 'mg/kg' "mg/kg"
+* indicationGuideline[5].dosingGuideline[3].dosage[1].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[5].dosingGuideline[3].dosage[2].type.text = "TFG inferior a 10 ml/min"
+* indicationGuideline[5].dosingGuideline[3].dosage[2].dosage[0].text = "15 mg/kg administrados como dose única diária (máximo 500 mg)."
+* indicationGuideline[5].dosingGuideline[3].dosage[2].dosage[0].additionalInstruction[0].text = "Na maioria dos casos, a terapêutica parentérica é preferida."
+* indicationGuideline[5].dosingGuideline[3].dosage[2].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[5].dosingGuideline[3].dosage[2].dosage[0].timing.repeat.period = 1
+* indicationGuideline[5].dosingGuideline[3].dosage[2].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[5].dosingGuideline[3].dosage[2].dosage[0].doseAndRate[0].doseQuantity = 15 'mg/kg' "mg/kg"
+* indicationGuideline[5].dosingGuideline[3].dosage[2].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[5].dosingGuideline[3].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[5].dosingGuideline[3].patientCharacteristic[0].valueCodeableConcept.text = "Compromisso renal: crianças < 40 kg"
+
+// Hemodiálise - Adultos e crianças ≥ 40 kg
+* indicationGuideline[5].dosingGuideline[4].dosage[0].type.text = "Hemodiálise"
+* indicationGuideline[5].dosingGuideline[4].dosage[0].dosage[0].text = "500 mg a cada 24 horas. Antes da hemodiálise, deve ser administrada uma dose adicional de 500 mg; para repor os níveis circulantes do fármaco, deve ser administrada outra dose de 500 mg após a hemodiálise."
+* indicationGuideline[5].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[5].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.period = 24
+* indicationGuideline[5].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.periodUnit = #h
+* indicationGuideline[5].dosingGuideline[4].dosage[0].dosage[0].doseAndRate[0].doseQuantity = 500 'mg' "mg"
+* indicationGuideline[5].dosingGuideline[4].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[5].dosingGuideline[4].patientCharacteristic[0].valueCodeableConcept.text = "Doentes em hemodiálise: adultos e crianças ≥ 40 kg"
+
+// Hemodiálise - Crianças < 40 kg
+* indicationGuideline[5].dosingGuideline[5].dosage[0].type.text = "Hemodiálise"
+* indicationGuideline[5].dosingGuideline[5].dosage[0].dosage[0].text = "15 mg/kg/dia administrados como dose única diária (máximo 500 mg). Antes da hemodiálise, deve ser administrada uma dose adicional de 15 mg/kg; para repor os níveis circulantes do fármaco, deve ser administrada outra dose de 15 mg/kg após a hemodiálise."
+* indicationGuideline[5].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[5].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.period = 1
+* indicationGuideline[5].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[5].dosingGuideline[5].dosage[0].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[5].dosingGuideline[5].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[5].dosingGuideline[5].patientCharacteristic[0].valueCodeableConcept.text = "Doentes em hemodiálise: crianças < 40 kg"
+
+// Diálise peritoneal
+* indicationGuideline[5].dosingGuideline[6].dosage[0].type.text = "Diálise peritoneal"
+* indicationGuideline[5].dosingGuideline[6].dosage[0].dosage[0].text = "Máximo de 500 mg/dia de amoxicilina."
+* indicationGuideline[5].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[5].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.period = 1
+* indicationGuideline[5].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[5].dosingGuideline[6].dosage[0].dosage[0].maxDosePerPeriod.numerator = 500 'mg' "mg"
+* indicationGuideline[5].dosingGuideline[6].dosage[0].dosage[0].maxDosePerPeriod.denominator = 1 'd' "day"
+* indicationGuideline[5].dosingGuideline[6].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[5].dosingGuideline[6].patientCharacteristic[0].valueCodeableConcept.text = "Doentes em diálise peritoneal"
+
+// Compromisso hepático
+* indicationGuideline[5].dosingGuideline[7].dosage[0].type.text = "Precaução na dosagem"
+* indicationGuideline[5].dosingGuideline[7].dosage[0].dosage[0].text = "Dosear com precaução e monitorizar a função hepática em intervalos regulares."
+* indicationGuideline[5].dosingGuideline[7].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[5].dosingGuideline[7].patientCharacteristic[0].valueCodeableConcept.text = "Compromisso hepático"
+
+* indicationGuideline[5].dosingGuideline[8].dosage[0].type.text = "Dose diária"
+* indicationGuideline[5].dosingGuideline[8].dosage[0].dosage[0].text = "20 a 90 mg/kg/dia em doses divididas."
+* indicationGuideline[5].dosingGuideline[8].dosage[0].dosage[0].additionalInstruction[0].text = "Só devem ser considerados regimes terapêuticos de duas vezes por dia quando a dose se encontra no limite superior."
+* indicationGuideline[5].dosingGuideline[8].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[5].dosingGuideline[8].patientCharacteristic[0].valueCodeableConcept.text = "Crianças <40 kg"
 
 // ---------------------------------------------------------
 // 7) Bacteriúria assintomática na gravidez
 // ---------------------------------------------------------
 * indicationGuideline[6].indication[0].concept.text = "Bacteriúria assintomática na gravidez"
-* insert AmoxAdultosGrupo1(6)
-* insert AmoxPopulacoesEspeciais(6)
+* indicationGuideline[6].dosingGuideline[0].dosage[0].type.text = "Regime a cada 8 horas"
+* indicationGuideline[6].dosingGuideline[0].dosage[0].dosage[0].text = "250 mg a 500 mg a cada 8 horas."
+* indicationGuideline[6].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[6].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.period = 8
+* indicationGuideline[6].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.periodUnit = #h
+* indicationGuideline[6].dosingGuideline[0].dosage[0].dosage[0].doseAndRate[0].doseRange.low = 250 'mg' "mg"
+* indicationGuideline[6].dosingGuideline[0].dosage[0].dosage[0].doseAndRate[0].doseRange.high = 500 'mg' "mg"
+* indicationGuideline[6].dosingGuideline[0].dosage[1].type.text = "Regime a cada 12 horas"
+* indicationGuideline[6].dosingGuideline[0].dosage[1].dosage[0].text = "750 mg a 1 g a cada 12 horas."
+* indicationGuideline[6].dosingGuideline[0].dosage[1].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[6].dosingGuideline[0].dosage[1].dosage[0].timing.repeat.period = 12
+* indicationGuideline[6].dosingGuideline[0].dosage[1].dosage[0].timing.repeat.periodUnit = #h
+* indicationGuideline[6].dosingGuideline[0].dosage[1].dosage[0].doseAndRate[0].doseRange.low = 750 'mg' "mg"
+* indicationGuideline[6].dosingGuideline[0].dosage[1].dosage[0].doseAndRate[0].doseRange.high = 1000 'mg' "mg"
+* indicationGuideline[6].dosingGuideline[0].dosage[2].type.text = "Infeções graves"
+* indicationGuideline[6].dosingGuideline[0].dosage[2].dosage[0].text = "Para infeções graves, 750 mg a 1 g a cada 8 horas."
+* indicationGuideline[6].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[6].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.period = 8
+* indicationGuideline[6].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.periodUnit = #h
+* indicationGuideline[6].dosingGuideline[0].dosage[2].dosage[0].doseAndRate[0].doseRange.low = 750 'mg' "mg"
+* indicationGuideline[6].dosingGuideline[0].dosage[2].dosage[0].doseAndRate[0].doseRange.high = 1000 'mg' "mg"
+* indicationGuideline[6].dosingGuideline[0].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[6].dosingGuideline[0].patientCharacteristic[0].valueCodeableConcept.text = "Adultos e Crianças ≥40 kg"
+
+// Idosos
+* indicationGuideline[6].dosingGuideline[1].dosage[0].type.text = "Sem ajuste posológico"
+* indicationGuideline[6].dosingGuideline[1].dosage[0].dosage[0].text = "Não é necessário ajuste de dose."
+* indicationGuideline[6].dosingGuideline[1].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[6].dosingGuideline[1].patientCharacteristic[0].valueCodeableConcept.text = "Idosos"
+
+// Compromisso renal - Adultos e crianças ≥ 40 kg (cada banda de TFG é um regime alternativo)
+* indicationGuideline[6].dosingGuideline[2].dosage[0].type.text = "TFG superior a 30 ml/min"
+* indicationGuideline[6].dosingGuideline[2].dosage[0].dosage[0].text = "Não é necessário ajuste."
+* indicationGuideline[6].dosingGuideline[2].dosage[1].type.text = "TFG 10 a 30 ml/min"
+* indicationGuideline[6].dosingGuideline[2].dosage[1].dosage[0].text = "Máximo 500 mg duas vezes por dia."
+* indicationGuideline[6].dosingGuideline[2].dosage[1].dosage[0].timing.repeat.frequency = 2
+* indicationGuideline[6].dosingGuideline[2].dosage[1].dosage[0].timing.repeat.period = 1
+* indicationGuideline[6].dosingGuideline[2].dosage[1].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[6].dosingGuideline[2].dosage[1].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[6].dosingGuideline[2].dosage[2].type.text = "TFG inferior a 10 ml/min"
+* indicationGuideline[6].dosingGuideline[2].dosage[2].dosage[0].text = "Máximo 500 mg/dia."
+* indicationGuideline[6].dosingGuideline[2].dosage[2].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[6].dosingGuideline[2].dosage[2].dosage[0].timing.repeat.period = 1
+* indicationGuideline[6].dosingGuideline[2].dosage[2].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[6].dosingGuideline[2].dosage[2].dosage[0].maxDosePerPeriod.numerator = 500 'mg' "mg"
+* indicationGuideline[6].dosingGuideline[2].dosage[2].dosage[0].maxDosePerPeriod.denominator = 1 'd' "day"
+* indicationGuideline[6].dosingGuideline[2].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[6].dosingGuideline[2].patientCharacteristic[0].valueCodeableConcept.text = "Compromisso renal: adultos e crianças ≥ 40 kg"
+
+// Compromisso renal - Crianças < 40 kg
+* indicationGuideline[6].dosingGuideline[3].dosage[0].type.text = "TFG superior a 30 ml/min"
+* indicationGuideline[6].dosingGuideline[3].dosage[0].dosage[0].text = "Não é necessário ajuste."
+* indicationGuideline[6].dosingGuideline[3].dosage[1].type.text = "TFG 10 a 30 ml/min"
+* indicationGuideline[6].dosingGuideline[3].dosage[1].dosage[0].text = "15 mg/kg administrados duas vezes por dia (máximo 500 mg duas vezes por dia)."
+* indicationGuideline[6].dosingGuideline[3].dosage[1].dosage[0].additionalInstruction[0].text = "Na maioria dos casos, a terapêutica parentérica é preferida."
+* indicationGuideline[6].dosingGuideline[3].dosage[1].dosage[0].timing.repeat.frequency = 2
+* indicationGuideline[6].dosingGuideline[3].dosage[1].dosage[0].timing.repeat.period = 1
+* indicationGuideline[6].dosingGuideline[3].dosage[1].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[6].dosingGuideline[3].dosage[1].dosage[0].doseAndRate[0].doseQuantity = 15 'mg/kg' "mg/kg"
+* indicationGuideline[6].dosingGuideline[3].dosage[1].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[6].dosingGuideline[3].dosage[2].type.text = "TFG inferior a 10 ml/min"
+* indicationGuideline[6].dosingGuideline[3].dosage[2].dosage[0].text = "15 mg/kg administrados como dose única diária (máximo 500 mg)."
+* indicationGuideline[6].dosingGuideline[3].dosage[2].dosage[0].additionalInstruction[0].text = "Na maioria dos casos, a terapêutica parentérica é preferida."
+* indicationGuideline[6].dosingGuideline[3].dosage[2].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[6].dosingGuideline[3].dosage[2].dosage[0].timing.repeat.period = 1
+* indicationGuideline[6].dosingGuideline[3].dosage[2].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[6].dosingGuideline[3].dosage[2].dosage[0].doseAndRate[0].doseQuantity = 15 'mg/kg' "mg/kg"
+* indicationGuideline[6].dosingGuideline[3].dosage[2].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[6].dosingGuideline[3].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[6].dosingGuideline[3].patientCharacteristic[0].valueCodeableConcept.text = "Compromisso renal: crianças < 40 kg"
+
+// Hemodiálise - Adultos e crianças ≥ 40 kg
+* indicationGuideline[6].dosingGuideline[4].dosage[0].type.text = "Hemodiálise"
+* indicationGuideline[6].dosingGuideline[4].dosage[0].dosage[0].text = "500 mg a cada 24 horas. Antes da hemodiálise, deve ser administrada uma dose adicional de 500 mg; para repor os níveis circulantes do fármaco, deve ser administrada outra dose de 500 mg após a hemodiálise."
+* indicationGuideline[6].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[6].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.period = 24
+* indicationGuideline[6].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.periodUnit = #h
+* indicationGuideline[6].dosingGuideline[4].dosage[0].dosage[0].doseAndRate[0].doseQuantity = 500 'mg' "mg"
+* indicationGuideline[6].dosingGuideline[4].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[6].dosingGuideline[4].patientCharacteristic[0].valueCodeableConcept.text = "Doentes em hemodiálise: adultos e crianças ≥ 40 kg"
+
+// Hemodiálise - Crianças < 40 kg
+* indicationGuideline[6].dosingGuideline[5].dosage[0].type.text = "Hemodiálise"
+* indicationGuideline[6].dosingGuideline[5].dosage[0].dosage[0].text = "15 mg/kg/dia administrados como dose única diária (máximo 500 mg). Antes da hemodiálise, deve ser administrada uma dose adicional de 15 mg/kg; para repor os níveis circulantes do fármaco, deve ser administrada outra dose de 15 mg/kg após a hemodiálise."
+* indicationGuideline[6].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[6].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.period = 1
+* indicationGuideline[6].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[6].dosingGuideline[5].dosage[0].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[6].dosingGuideline[5].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[6].dosingGuideline[5].patientCharacteristic[0].valueCodeableConcept.text = "Doentes em hemodiálise: crianças < 40 kg"
+
+// Diálise peritoneal
+* indicationGuideline[6].dosingGuideline[6].dosage[0].type.text = "Diálise peritoneal"
+* indicationGuideline[6].dosingGuideline[6].dosage[0].dosage[0].text = "Máximo de 500 mg/dia de amoxicilina."
+* indicationGuideline[6].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[6].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.period = 1
+* indicationGuideline[6].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[6].dosingGuideline[6].dosage[0].dosage[0].maxDosePerPeriod.numerator = 500 'mg' "mg"
+* indicationGuideline[6].dosingGuideline[6].dosage[0].dosage[0].maxDosePerPeriod.denominator = 1 'd' "day"
+* indicationGuideline[6].dosingGuideline[6].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[6].dosingGuideline[6].patientCharacteristic[0].valueCodeableConcept.text = "Doentes em diálise peritoneal"
+
+// Compromisso hepático
+* indicationGuideline[6].dosingGuideline[7].dosage[0].type.text = "Precaução na dosagem"
+* indicationGuideline[6].dosingGuideline[7].dosage[0].dosage[0].text = "Dosear com precaução e monitorizar a função hepática em intervalos regulares."
+* indicationGuideline[6].dosingGuideline[7].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[6].dosingGuideline[7].patientCharacteristic[0].valueCodeableConcept.text = "Compromisso hepático"
 
 // ---------------------------------------------------------
 // 8) Pielonefrite aguda
 // ---------------------------------------------------------
 * indicationGuideline[7].indication[0].concept.text = "Pielonefrite aguda"
-* insert AmoxAdultosGrupo1(7)
-* insert AmoxPopulacoesEspeciais(7)
-* insert AmoxCriancasGrupoA(7)
+* indicationGuideline[7].dosingGuideline[0].dosage[0].type.text = "Regime a cada 8 horas"
+* indicationGuideline[7].dosingGuideline[0].dosage[0].dosage[0].text = "250 mg a 500 mg a cada 8 horas."
+* indicationGuideline[7].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[7].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.period = 8
+* indicationGuideline[7].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.periodUnit = #h
+* indicationGuideline[7].dosingGuideline[0].dosage[0].dosage[0].doseAndRate[0].doseRange.low = 250 'mg' "mg"
+* indicationGuideline[7].dosingGuideline[0].dosage[0].dosage[0].doseAndRate[0].doseRange.high = 500 'mg' "mg"
+* indicationGuideline[7].dosingGuideline[0].dosage[1].type.text = "Regime a cada 12 horas"
+* indicationGuideline[7].dosingGuideline[0].dosage[1].dosage[0].text = "750 mg a 1 g a cada 12 horas."
+* indicationGuideline[7].dosingGuideline[0].dosage[1].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[7].dosingGuideline[0].dosage[1].dosage[0].timing.repeat.period = 12
+* indicationGuideline[7].dosingGuideline[0].dosage[1].dosage[0].timing.repeat.periodUnit = #h
+* indicationGuideline[7].dosingGuideline[0].dosage[1].dosage[0].doseAndRate[0].doseRange.low = 750 'mg' "mg"
+* indicationGuideline[7].dosingGuideline[0].dosage[1].dosage[0].doseAndRate[0].doseRange.high = 1000 'mg' "mg"
+* indicationGuideline[7].dosingGuideline[0].dosage[2].type.text = "Infeções graves"
+* indicationGuideline[7].dosingGuideline[0].dosage[2].dosage[0].text = "Para infeções graves, 750 mg a 1 g a cada 8 horas."
+* indicationGuideline[7].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[7].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.period = 8
+* indicationGuideline[7].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.periodUnit = #h
+* indicationGuideline[7].dosingGuideline[0].dosage[2].dosage[0].doseAndRate[0].doseRange.low = 750 'mg' "mg"
+* indicationGuideline[7].dosingGuideline[0].dosage[2].dosage[0].doseAndRate[0].doseRange.high = 1000 'mg' "mg"
+* indicationGuideline[7].dosingGuideline[0].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[7].dosingGuideline[0].patientCharacteristic[0].valueCodeableConcept.text = "Adultos e Crianças ≥40 kg"
+
+// Idosos
+* indicationGuideline[7].dosingGuideline[1].dosage[0].type.text = "Sem ajuste posológico"
+* indicationGuideline[7].dosingGuideline[1].dosage[0].dosage[0].text = "Não é necessário ajuste de dose."
+* indicationGuideline[7].dosingGuideline[1].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[7].dosingGuideline[1].patientCharacteristic[0].valueCodeableConcept.text = "Idosos"
+
+// Compromisso renal - Adultos e crianças ≥ 40 kg (cada banda de TFG é um regime alternativo)
+* indicationGuideline[7].dosingGuideline[2].dosage[0].type.text = "TFG superior a 30 ml/min"
+* indicationGuideline[7].dosingGuideline[2].dosage[0].dosage[0].text = "Não é necessário ajuste."
+* indicationGuideline[7].dosingGuideline[2].dosage[1].type.text = "TFG 10 a 30 ml/min"
+* indicationGuideline[7].dosingGuideline[2].dosage[1].dosage[0].text = "Máximo 500 mg duas vezes por dia."
+* indicationGuideline[7].dosingGuideline[2].dosage[1].dosage[0].timing.repeat.frequency = 2
+* indicationGuideline[7].dosingGuideline[2].dosage[1].dosage[0].timing.repeat.period = 1
+* indicationGuideline[7].dosingGuideline[2].dosage[1].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[7].dosingGuideline[2].dosage[1].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[7].dosingGuideline[2].dosage[2].type.text = "TFG inferior a 10 ml/min"
+* indicationGuideline[7].dosingGuideline[2].dosage[2].dosage[0].text = "Máximo 500 mg/dia."
+* indicationGuideline[7].dosingGuideline[2].dosage[2].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[7].dosingGuideline[2].dosage[2].dosage[0].timing.repeat.period = 1
+* indicationGuideline[7].dosingGuideline[2].dosage[2].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[7].dosingGuideline[2].dosage[2].dosage[0].maxDosePerPeriod.numerator = 500 'mg' "mg"
+* indicationGuideline[7].dosingGuideline[2].dosage[2].dosage[0].maxDosePerPeriod.denominator = 1 'd' "day"
+* indicationGuideline[7].dosingGuideline[2].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[7].dosingGuideline[2].patientCharacteristic[0].valueCodeableConcept.text = "Compromisso renal: adultos e crianças ≥ 40 kg"
+
+// Compromisso renal - Crianças < 40 kg
+* indicationGuideline[7].dosingGuideline[3].dosage[0].type.text = "TFG superior a 30 ml/min"
+* indicationGuideline[7].dosingGuideline[3].dosage[0].dosage[0].text = "Não é necessário ajuste."
+* indicationGuideline[7].dosingGuideline[3].dosage[1].type.text = "TFG 10 a 30 ml/min"
+* indicationGuideline[7].dosingGuideline[3].dosage[1].dosage[0].text = "15 mg/kg administrados duas vezes por dia (máximo 500 mg duas vezes por dia)."
+* indicationGuideline[7].dosingGuideline[3].dosage[1].dosage[0].additionalInstruction[0].text = "Na maioria dos casos, a terapêutica parentérica é preferida."
+* indicationGuideline[7].dosingGuideline[3].dosage[1].dosage[0].timing.repeat.frequency = 2
+* indicationGuideline[7].dosingGuideline[3].dosage[1].dosage[0].timing.repeat.period = 1
+* indicationGuideline[7].dosingGuideline[3].dosage[1].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[7].dosingGuideline[3].dosage[1].dosage[0].doseAndRate[0].doseQuantity = 15 'mg/kg' "mg/kg"
+* indicationGuideline[7].dosingGuideline[3].dosage[1].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[7].dosingGuideline[3].dosage[2].type.text = "TFG inferior a 10 ml/min"
+* indicationGuideline[7].dosingGuideline[3].dosage[2].dosage[0].text = "15 mg/kg administrados como dose única diária (máximo 500 mg)."
+* indicationGuideline[7].dosingGuideline[3].dosage[2].dosage[0].additionalInstruction[0].text = "Na maioria dos casos, a terapêutica parentérica é preferida."
+* indicationGuideline[7].dosingGuideline[3].dosage[2].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[7].dosingGuideline[3].dosage[2].dosage[0].timing.repeat.period = 1
+* indicationGuideline[7].dosingGuideline[3].dosage[2].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[7].dosingGuideline[3].dosage[2].dosage[0].doseAndRate[0].doseQuantity = 15 'mg/kg' "mg/kg"
+* indicationGuideline[7].dosingGuideline[3].dosage[2].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[7].dosingGuideline[3].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[7].dosingGuideline[3].patientCharacteristic[0].valueCodeableConcept.text = "Compromisso renal: crianças < 40 kg"
+
+// Hemodiálise - Adultos e crianças ≥ 40 kg
+* indicationGuideline[7].dosingGuideline[4].dosage[0].type.text = "Hemodiálise"
+* indicationGuideline[7].dosingGuideline[4].dosage[0].dosage[0].text = "500 mg a cada 24 horas. Antes da hemodiálise, deve ser administrada uma dose adicional de 500 mg; para repor os níveis circulantes do fármaco, deve ser administrada outra dose de 500 mg após a hemodiálise."
+* indicationGuideline[7].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[7].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.period = 24
+* indicationGuideline[7].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.periodUnit = #h
+* indicationGuideline[7].dosingGuideline[4].dosage[0].dosage[0].doseAndRate[0].doseQuantity = 500 'mg' "mg"
+* indicationGuideline[7].dosingGuideline[4].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[7].dosingGuideline[4].patientCharacteristic[0].valueCodeableConcept.text = "Doentes em hemodiálise: adultos e crianças ≥ 40 kg"
+
+// Hemodiálise - Crianças < 40 kg
+* indicationGuideline[7].dosingGuideline[5].dosage[0].type.text = "Hemodiálise"
+* indicationGuideline[7].dosingGuideline[5].dosage[0].dosage[0].text = "15 mg/kg/dia administrados como dose única diária (máximo 500 mg). Antes da hemodiálise, deve ser administrada uma dose adicional de 15 mg/kg; para repor os níveis circulantes do fármaco, deve ser administrada outra dose de 15 mg/kg após a hemodiálise."
+* indicationGuideline[7].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[7].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.period = 1
+* indicationGuideline[7].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[7].dosingGuideline[5].dosage[0].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[7].dosingGuideline[5].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[7].dosingGuideline[5].patientCharacteristic[0].valueCodeableConcept.text = "Doentes em hemodiálise: crianças < 40 kg"
+
+// Diálise peritoneal
+* indicationGuideline[7].dosingGuideline[6].dosage[0].type.text = "Diálise peritoneal"
+* indicationGuideline[7].dosingGuideline[6].dosage[0].dosage[0].text = "Máximo de 500 mg/dia de amoxicilina."
+* indicationGuideline[7].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[7].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.period = 1
+* indicationGuideline[7].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[7].dosingGuideline[6].dosage[0].dosage[0].maxDosePerPeriod.numerator = 500 'mg' "mg"
+* indicationGuideline[7].dosingGuideline[6].dosage[0].dosage[0].maxDosePerPeriod.denominator = 1 'd' "day"
+* indicationGuideline[7].dosingGuideline[6].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[7].dosingGuideline[6].patientCharacteristic[0].valueCodeableConcept.text = "Doentes em diálise peritoneal"
+
+// Compromisso hepático
+* indicationGuideline[7].dosingGuideline[7].dosage[0].type.text = "Precaução na dosagem"
+* indicationGuideline[7].dosingGuideline[7].dosage[0].dosage[0].text = "Dosear com precaução e monitorizar a função hepática em intervalos regulares."
+* indicationGuideline[7].dosingGuideline[7].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[7].dosingGuideline[7].patientCharacteristic[0].valueCodeableConcept.text = "Compromisso hepático"
+
+* indicationGuideline[7].dosingGuideline[8].dosage[0].type.text = "Dose diária"
+* indicationGuideline[7].dosingGuideline[8].dosage[0].dosage[0].text = "20 a 90 mg/kg/dia em doses divididas."
+* indicationGuideline[7].dosingGuideline[8].dosage[0].dosage[0].additionalInstruction[0].text = "Só devem ser considerados regimes terapêuticos de duas vezes por dia quando a dose se encontra no limite superior."
+* indicationGuideline[7].dosingGuideline[8].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[7].dosingGuideline[8].patientCharacteristic[0].valueCodeableConcept.text = "Crianças <40 kg"
 
 // ---------------------------------------------------------
 // 9) Febre tifoide e paratifoide
@@ -304,8 +1002,93 @@ Description: "Amoxicilina Generis 1000 mg comprimidos revestidos por película -
 * indicationGuideline[8].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.periodUnit = #h
 * indicationGuideline[8].dosingGuideline[0].dosage[0].dosage[0].doseAndRate[0].doseRange.low = 500 'mg' "mg"
 * indicationGuideline[8].dosingGuideline[0].dosage[0].dosage[0].doseAndRate[0].doseRange.high = 2000 'mg' "mg"
-* insert AmoxPopulacaoAdultos(8)
-* insert AmoxPopulacoesEspeciais(8)
+* indicationGuideline[8].dosingGuideline[0].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[8].dosingGuideline[0].patientCharacteristic[0].valueCodeableConcept.text = "Adultos e Crianças ≥40 kg"
+
+// Idosos
+* indicationGuideline[8].dosingGuideline[1].dosage[0].type.text = "Sem ajuste posológico"
+* indicationGuideline[8].dosingGuideline[1].dosage[0].dosage[0].text = "Não é necessário ajuste de dose."
+* indicationGuideline[8].dosingGuideline[1].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[8].dosingGuideline[1].patientCharacteristic[0].valueCodeableConcept.text = "Idosos"
+
+// Compromisso renal - Adultos e crianças ≥ 40 kg (cada banda de TFG é um regime alternativo)
+* indicationGuideline[8].dosingGuideline[2].dosage[0].type.text = "TFG superior a 30 ml/min"
+* indicationGuideline[8].dosingGuideline[2].dosage[0].dosage[0].text = "Não é necessário ajuste."
+* indicationGuideline[8].dosingGuideline[2].dosage[1].type.text = "TFG 10 a 30 ml/min"
+* indicationGuideline[8].dosingGuideline[2].dosage[1].dosage[0].text = "Máximo 500 mg duas vezes por dia."
+* indicationGuideline[8].dosingGuideline[2].dosage[1].dosage[0].timing.repeat.frequency = 2
+* indicationGuideline[8].dosingGuideline[2].dosage[1].dosage[0].timing.repeat.period = 1
+* indicationGuideline[8].dosingGuideline[2].dosage[1].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[8].dosingGuideline[2].dosage[1].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[8].dosingGuideline[2].dosage[2].type.text = "TFG inferior a 10 ml/min"
+* indicationGuideline[8].dosingGuideline[2].dosage[2].dosage[0].text = "Máximo 500 mg/dia."
+* indicationGuideline[8].dosingGuideline[2].dosage[2].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[8].dosingGuideline[2].dosage[2].dosage[0].timing.repeat.period = 1
+* indicationGuideline[8].dosingGuideline[2].dosage[2].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[8].dosingGuideline[2].dosage[2].dosage[0].maxDosePerPeriod.numerator = 500 'mg' "mg"
+* indicationGuideline[8].dosingGuideline[2].dosage[2].dosage[0].maxDosePerPeriod.denominator = 1 'd' "day"
+* indicationGuideline[8].dosingGuideline[2].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[8].dosingGuideline[2].patientCharacteristic[0].valueCodeableConcept.text = "Compromisso renal: adultos e crianças ≥ 40 kg"
+
+// Compromisso renal - Crianças < 40 kg
+* indicationGuideline[8].dosingGuideline[3].dosage[0].type.text = "TFG superior a 30 ml/min"
+* indicationGuideline[8].dosingGuideline[3].dosage[0].dosage[0].text = "Não é necessário ajuste."
+* indicationGuideline[8].dosingGuideline[3].dosage[1].type.text = "TFG 10 a 30 ml/min"
+* indicationGuideline[8].dosingGuideline[3].dosage[1].dosage[0].text = "15 mg/kg administrados duas vezes por dia (máximo 500 mg duas vezes por dia)."
+* indicationGuideline[8].dosingGuideline[3].dosage[1].dosage[0].additionalInstruction[0].text = "Na maioria dos casos, a terapêutica parentérica é preferida."
+* indicationGuideline[8].dosingGuideline[3].dosage[1].dosage[0].timing.repeat.frequency = 2
+* indicationGuideline[8].dosingGuideline[3].dosage[1].dosage[0].timing.repeat.period = 1
+* indicationGuideline[8].dosingGuideline[3].dosage[1].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[8].dosingGuideline[3].dosage[1].dosage[0].doseAndRate[0].doseQuantity = 15 'mg/kg' "mg/kg"
+* indicationGuideline[8].dosingGuideline[3].dosage[1].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[8].dosingGuideline[3].dosage[2].type.text = "TFG inferior a 10 ml/min"
+* indicationGuideline[8].dosingGuideline[3].dosage[2].dosage[0].text = "15 mg/kg administrados como dose única diária (máximo 500 mg)."
+* indicationGuideline[8].dosingGuideline[3].dosage[2].dosage[0].additionalInstruction[0].text = "Na maioria dos casos, a terapêutica parentérica é preferida."
+* indicationGuideline[8].dosingGuideline[3].dosage[2].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[8].dosingGuideline[3].dosage[2].dosage[0].timing.repeat.period = 1
+* indicationGuideline[8].dosingGuideline[3].dosage[2].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[8].dosingGuideline[3].dosage[2].dosage[0].doseAndRate[0].doseQuantity = 15 'mg/kg' "mg/kg"
+* indicationGuideline[8].dosingGuideline[3].dosage[2].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[8].dosingGuideline[3].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[8].dosingGuideline[3].patientCharacteristic[0].valueCodeableConcept.text = "Compromisso renal: crianças < 40 kg"
+
+// Hemodiálise - Adultos e crianças ≥ 40 kg
+* indicationGuideline[8].dosingGuideline[4].dosage[0].type.text = "Hemodiálise"
+* indicationGuideline[8].dosingGuideline[4].dosage[0].dosage[0].text = "500 mg a cada 24 horas. Antes da hemodiálise, deve ser administrada uma dose adicional de 500 mg; para repor os níveis circulantes do fármaco, deve ser administrada outra dose de 500 mg após a hemodiálise."
+* indicationGuideline[8].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[8].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.period = 24
+* indicationGuideline[8].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.periodUnit = #h
+* indicationGuideline[8].dosingGuideline[4].dosage[0].dosage[0].doseAndRate[0].doseQuantity = 500 'mg' "mg"
+* indicationGuideline[8].dosingGuideline[4].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[8].dosingGuideline[4].patientCharacteristic[0].valueCodeableConcept.text = "Doentes em hemodiálise: adultos e crianças ≥ 40 kg"
+
+// Hemodiálise - Crianças < 40 kg
+* indicationGuideline[8].dosingGuideline[5].dosage[0].type.text = "Hemodiálise"
+* indicationGuideline[8].dosingGuideline[5].dosage[0].dosage[0].text = "15 mg/kg/dia administrados como dose única diária (máximo 500 mg). Antes da hemodiálise, deve ser administrada uma dose adicional de 15 mg/kg; para repor os níveis circulantes do fármaco, deve ser administrada outra dose de 15 mg/kg após a hemodiálise."
+* indicationGuideline[8].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[8].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.period = 1
+* indicationGuideline[8].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[8].dosingGuideline[5].dosage[0].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[8].dosingGuideline[5].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[8].dosingGuideline[5].patientCharacteristic[0].valueCodeableConcept.text = "Doentes em hemodiálise: crianças < 40 kg"
+
+// Diálise peritoneal
+* indicationGuideline[8].dosingGuideline[6].dosage[0].type.text = "Diálise peritoneal"
+* indicationGuideline[8].dosingGuideline[6].dosage[0].dosage[0].text = "Máximo de 500 mg/dia de amoxicilina."
+* indicationGuideline[8].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[8].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.period = 1
+* indicationGuideline[8].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[8].dosingGuideline[6].dosage[0].dosage[0].maxDosePerPeriod.numerator = 500 'mg' "mg"
+* indicationGuideline[8].dosingGuideline[6].dosage[0].dosage[0].maxDosePerPeriod.denominator = 1 'd' "day"
+* indicationGuideline[8].dosingGuideline[6].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[8].dosingGuideline[6].patientCharacteristic[0].valueCodeableConcept.text = "Doentes em diálise peritoneal"
+
+// Compromisso hepático
+* indicationGuideline[8].dosingGuideline[7].dosage[0].type.text = "Precaução na dosagem"
+* indicationGuideline[8].dosingGuideline[7].dosage[0].dosage[0].text = "Dosear com precaução e monitorizar a função hepática em intervalos regulares."
+* indicationGuideline[8].dosingGuideline[7].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[8].dosingGuideline[7].patientCharacteristic[0].valueCodeableConcept.text = "Compromisso hepático"
+
 * indicationGuideline[8].dosingGuideline[8].dosage[0].type.text = "Dose diária"
 * indicationGuideline[8].dosingGuideline[8].dosage[0].dosage[0].text = "100 mg/kg/dia em três doses divididas."
 * indicationGuideline[8].dosingGuideline[8].dosage[0].dosage[0].timing.repeat.frequency = 3
@@ -318,9 +1101,119 @@ Description: "Amoxicilina Generis 1000 mg comprimidos revestidos por película -
 // 10) Abcesso dentário com celulite disseminada
 // ---------------------------------------------------------
 * indicationGuideline[9].indication[0].concept.text = "Abcesso dentário com celulite disseminada"
-* insert AmoxAdultosGrupo1(9)
-* insert AmoxPopulacoesEspeciais(9)
-* insert AmoxCriancasGrupoA(9)
+* indicationGuideline[9].dosingGuideline[0].dosage[0].type.text = "Regime a cada 8 horas"
+* indicationGuideline[9].dosingGuideline[0].dosage[0].dosage[0].text = "250 mg a 500 mg a cada 8 horas."
+* indicationGuideline[9].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[9].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.period = 8
+* indicationGuideline[9].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.periodUnit = #h
+* indicationGuideline[9].dosingGuideline[0].dosage[0].dosage[0].doseAndRate[0].doseRange.low = 250 'mg' "mg"
+* indicationGuideline[9].dosingGuideline[0].dosage[0].dosage[0].doseAndRate[0].doseRange.high = 500 'mg' "mg"
+* indicationGuideline[9].dosingGuideline[0].dosage[1].type.text = "Regime a cada 12 horas"
+* indicationGuideline[9].dosingGuideline[0].dosage[1].dosage[0].text = "750 mg a 1 g a cada 12 horas."
+* indicationGuideline[9].dosingGuideline[0].dosage[1].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[9].dosingGuideline[0].dosage[1].dosage[0].timing.repeat.period = 12
+* indicationGuideline[9].dosingGuideline[0].dosage[1].dosage[0].timing.repeat.periodUnit = #h
+* indicationGuideline[9].dosingGuideline[0].dosage[1].dosage[0].doseAndRate[0].doseRange.low = 750 'mg' "mg"
+* indicationGuideline[9].dosingGuideline[0].dosage[1].dosage[0].doseAndRate[0].doseRange.high = 1000 'mg' "mg"
+* indicationGuideline[9].dosingGuideline[0].dosage[2].type.text = "Infeções graves"
+* indicationGuideline[9].dosingGuideline[0].dosage[2].dosage[0].text = "Para infeções graves, 750 mg a 1 g a cada 8 horas."
+* indicationGuideline[9].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[9].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.period = 8
+* indicationGuideline[9].dosingGuideline[0].dosage[2].dosage[0].timing.repeat.periodUnit = #h
+* indicationGuideline[9].dosingGuideline[0].dosage[2].dosage[0].doseAndRate[0].doseRange.low = 750 'mg' "mg"
+* indicationGuideline[9].dosingGuideline[0].dosage[2].dosage[0].doseAndRate[0].doseRange.high = 1000 'mg' "mg"
+* indicationGuideline[9].dosingGuideline[0].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[9].dosingGuideline[0].patientCharacteristic[0].valueCodeableConcept.text = "Adultos e Crianças ≥40 kg"
+
+// Idosos
+* indicationGuideline[9].dosingGuideline[1].dosage[0].type.text = "Sem ajuste posológico"
+* indicationGuideline[9].dosingGuideline[1].dosage[0].dosage[0].text = "Não é necessário ajuste de dose."
+* indicationGuideline[9].dosingGuideline[1].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[9].dosingGuideline[1].patientCharacteristic[0].valueCodeableConcept.text = "Idosos"
+
+// Compromisso renal - Adultos e crianças ≥ 40 kg (cada banda de TFG é um regime alternativo)
+* indicationGuideline[9].dosingGuideline[2].dosage[0].type.text = "TFG superior a 30 ml/min"
+* indicationGuideline[9].dosingGuideline[2].dosage[0].dosage[0].text = "Não é necessário ajuste."
+* indicationGuideline[9].dosingGuideline[2].dosage[1].type.text = "TFG 10 a 30 ml/min"
+* indicationGuideline[9].dosingGuideline[2].dosage[1].dosage[0].text = "Máximo 500 mg duas vezes por dia."
+* indicationGuideline[9].dosingGuideline[2].dosage[1].dosage[0].timing.repeat.frequency = 2
+* indicationGuideline[9].dosingGuideline[2].dosage[1].dosage[0].timing.repeat.period = 1
+* indicationGuideline[9].dosingGuideline[2].dosage[1].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[9].dosingGuideline[2].dosage[1].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[9].dosingGuideline[2].dosage[2].type.text = "TFG inferior a 10 ml/min"
+* indicationGuideline[9].dosingGuideline[2].dosage[2].dosage[0].text = "Máximo 500 mg/dia."
+* indicationGuideline[9].dosingGuideline[2].dosage[2].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[9].dosingGuideline[2].dosage[2].dosage[0].timing.repeat.period = 1
+* indicationGuideline[9].dosingGuideline[2].dosage[2].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[9].dosingGuideline[2].dosage[2].dosage[0].maxDosePerPeriod.numerator = 500 'mg' "mg"
+* indicationGuideline[9].dosingGuideline[2].dosage[2].dosage[0].maxDosePerPeriod.denominator = 1 'd' "day"
+* indicationGuideline[9].dosingGuideline[2].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[9].dosingGuideline[2].patientCharacteristic[0].valueCodeableConcept.text = "Compromisso renal: adultos e crianças ≥ 40 kg"
+
+// Compromisso renal - Crianças < 40 kg
+* indicationGuideline[9].dosingGuideline[3].dosage[0].type.text = "TFG superior a 30 ml/min"
+* indicationGuideline[9].dosingGuideline[3].dosage[0].dosage[0].text = "Não é necessário ajuste."
+* indicationGuideline[9].dosingGuideline[3].dosage[1].type.text = "TFG 10 a 30 ml/min"
+* indicationGuideline[9].dosingGuideline[3].dosage[1].dosage[0].text = "15 mg/kg administrados duas vezes por dia (máximo 500 mg duas vezes por dia)."
+* indicationGuideline[9].dosingGuideline[3].dosage[1].dosage[0].additionalInstruction[0].text = "Na maioria dos casos, a terapêutica parentérica é preferida."
+* indicationGuideline[9].dosingGuideline[3].dosage[1].dosage[0].timing.repeat.frequency = 2
+* indicationGuideline[9].dosingGuideline[3].dosage[1].dosage[0].timing.repeat.period = 1
+* indicationGuideline[9].dosingGuideline[3].dosage[1].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[9].dosingGuideline[3].dosage[1].dosage[0].doseAndRate[0].doseQuantity = 15 'mg/kg' "mg/kg"
+* indicationGuideline[9].dosingGuideline[3].dosage[1].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[9].dosingGuideline[3].dosage[2].type.text = "TFG inferior a 10 ml/min"
+* indicationGuideline[9].dosingGuideline[3].dosage[2].dosage[0].text = "15 mg/kg administrados como dose única diária (máximo 500 mg)."
+* indicationGuideline[9].dosingGuideline[3].dosage[2].dosage[0].additionalInstruction[0].text = "Na maioria dos casos, a terapêutica parentérica é preferida."
+* indicationGuideline[9].dosingGuideline[3].dosage[2].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[9].dosingGuideline[3].dosage[2].dosage[0].timing.repeat.period = 1
+* indicationGuideline[9].dosingGuideline[3].dosage[2].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[9].dosingGuideline[3].dosage[2].dosage[0].doseAndRate[0].doseQuantity = 15 'mg/kg' "mg/kg"
+* indicationGuideline[9].dosingGuideline[3].dosage[2].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[9].dosingGuideline[3].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[9].dosingGuideline[3].patientCharacteristic[0].valueCodeableConcept.text = "Compromisso renal: crianças < 40 kg"
+
+// Hemodiálise - Adultos e crianças ≥ 40 kg
+* indicationGuideline[9].dosingGuideline[4].dosage[0].type.text = "Hemodiálise"
+* indicationGuideline[9].dosingGuideline[4].dosage[0].dosage[0].text = "500 mg a cada 24 horas. Antes da hemodiálise, deve ser administrada uma dose adicional de 500 mg; para repor os níveis circulantes do fármaco, deve ser administrada outra dose de 500 mg após a hemodiálise."
+* indicationGuideline[9].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[9].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.period = 24
+* indicationGuideline[9].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.periodUnit = #h
+* indicationGuideline[9].dosingGuideline[4].dosage[0].dosage[0].doseAndRate[0].doseQuantity = 500 'mg' "mg"
+* indicationGuideline[9].dosingGuideline[4].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[9].dosingGuideline[4].patientCharacteristic[0].valueCodeableConcept.text = "Doentes em hemodiálise: adultos e crianças ≥ 40 kg"
+
+// Hemodiálise - Crianças < 40 kg
+* indicationGuideline[9].dosingGuideline[5].dosage[0].type.text = "Hemodiálise"
+* indicationGuideline[9].dosingGuideline[5].dosage[0].dosage[0].text = "15 mg/kg/dia administrados como dose única diária (máximo 500 mg). Antes da hemodiálise, deve ser administrada uma dose adicional de 15 mg/kg; para repor os níveis circulantes do fármaco, deve ser administrada outra dose de 15 mg/kg após a hemodiálise."
+* indicationGuideline[9].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[9].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.period = 1
+* indicationGuideline[9].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[9].dosingGuideline[5].dosage[0].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[9].dosingGuideline[5].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[9].dosingGuideline[5].patientCharacteristic[0].valueCodeableConcept.text = "Doentes em hemodiálise: crianças < 40 kg"
+
+// Diálise peritoneal
+* indicationGuideline[9].dosingGuideline[6].dosage[0].type.text = "Diálise peritoneal"
+* indicationGuideline[9].dosingGuideline[6].dosage[0].dosage[0].text = "Máximo de 500 mg/dia de amoxicilina."
+* indicationGuideline[9].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[9].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.period = 1
+* indicationGuideline[9].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[9].dosingGuideline[6].dosage[0].dosage[0].maxDosePerPeriod.numerator = 500 'mg' "mg"
+* indicationGuideline[9].dosingGuideline[6].dosage[0].dosage[0].maxDosePerPeriod.denominator = 1 'd' "day"
+* indicationGuideline[9].dosingGuideline[6].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[9].dosingGuideline[6].patientCharacteristic[0].valueCodeableConcept.text = "Doentes em diálise peritoneal"
+
+// Compromisso hepático
+* indicationGuideline[9].dosingGuideline[7].dosage[0].type.text = "Precaução na dosagem"
+* indicationGuideline[9].dosingGuideline[7].dosage[0].dosage[0].text = "Dosear com precaução e monitorizar a função hepática em intervalos regulares."
+* indicationGuideline[9].dosingGuideline[7].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[9].dosingGuideline[7].patientCharacteristic[0].valueCodeableConcept.text = "Compromisso hepático"
+
+* indicationGuideline[9].dosingGuideline[8].dosage[0].type.text = "Dose diária"
+* indicationGuideline[9].dosingGuideline[8].dosage[0].dosage[0].text = "20 a 90 mg/kg/dia em doses divididas."
+* indicationGuideline[9].dosingGuideline[8].dosage[0].dosage[0].additionalInstruction[0].text = "Só devem ser considerados regimes terapêuticos de duas vezes por dia quando a dose se encontra no limite superior."
+* indicationGuideline[9].dosingGuideline[8].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[9].dosingGuideline[8].patientCharacteristic[0].valueCodeableConcept.text = "Crianças <40 kg"
 
 // ---------------------------------------------------------
 // 11) Infeções de próteses articulares
@@ -333,8 +1226,92 @@ Description: "Amoxicilina Generis 1000 mg comprimidos revestidos por película -
 * indicationGuideline[10].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.periodUnit = #h
 * indicationGuideline[10].dosingGuideline[0].dosage[0].dosage[0].doseAndRate[0].doseRange.low = 500 'mg' "mg"
 * indicationGuideline[10].dosingGuideline[0].dosage[0].dosage[0].doseAndRate[0].doseRange.high = 1000 'mg' "mg"
-* insert AmoxPopulacaoAdultos(10)
-* insert AmoxPopulacoesEspeciais(10)
+* indicationGuideline[10].dosingGuideline[0].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[10].dosingGuideline[0].patientCharacteristic[0].valueCodeableConcept.text = "Adultos e Crianças ≥40 kg"
+
+// Idosos
+* indicationGuideline[10].dosingGuideline[1].dosage[0].type.text = "Sem ajuste posológico"
+* indicationGuideline[10].dosingGuideline[1].dosage[0].dosage[0].text = "Não é necessário ajuste de dose."
+* indicationGuideline[10].dosingGuideline[1].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[10].dosingGuideline[1].patientCharacteristic[0].valueCodeableConcept.text = "Idosos"
+
+// Compromisso renal - Adultos e crianças ≥ 40 kg (cada banda de TFG é um regime alternativo)
+* indicationGuideline[10].dosingGuideline[2].dosage[0].type.text = "TFG superior a 30 ml/min"
+* indicationGuideline[10].dosingGuideline[2].dosage[0].dosage[0].text = "Não é necessário ajuste."
+* indicationGuideline[10].dosingGuideline[2].dosage[1].type.text = "TFG 10 a 30 ml/min"
+* indicationGuideline[10].dosingGuideline[2].dosage[1].dosage[0].text = "Máximo 500 mg duas vezes por dia."
+* indicationGuideline[10].dosingGuideline[2].dosage[1].dosage[0].timing.repeat.frequency = 2
+* indicationGuideline[10].dosingGuideline[2].dosage[1].dosage[0].timing.repeat.period = 1
+* indicationGuideline[10].dosingGuideline[2].dosage[1].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[10].dosingGuideline[2].dosage[1].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[10].dosingGuideline[2].dosage[2].type.text = "TFG inferior a 10 ml/min"
+* indicationGuideline[10].dosingGuideline[2].dosage[2].dosage[0].text = "Máximo 500 mg/dia."
+* indicationGuideline[10].dosingGuideline[2].dosage[2].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[10].dosingGuideline[2].dosage[2].dosage[0].timing.repeat.period = 1
+* indicationGuideline[10].dosingGuideline[2].dosage[2].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[10].dosingGuideline[2].dosage[2].dosage[0].maxDosePerPeriod.numerator = 500 'mg' "mg"
+* indicationGuideline[10].dosingGuideline[2].dosage[2].dosage[0].maxDosePerPeriod.denominator = 1 'd' "day"
+* indicationGuideline[10].dosingGuideline[2].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[10].dosingGuideline[2].patientCharacteristic[0].valueCodeableConcept.text = "Compromisso renal: adultos e crianças ≥ 40 kg"
+
+// Compromisso renal - Crianças < 40 kg
+* indicationGuideline[10].dosingGuideline[3].dosage[0].type.text = "TFG superior a 30 ml/min"
+* indicationGuideline[10].dosingGuideline[3].dosage[0].dosage[0].text = "Não é necessário ajuste."
+* indicationGuideline[10].dosingGuideline[3].dosage[1].type.text = "TFG 10 a 30 ml/min"
+* indicationGuideline[10].dosingGuideline[3].dosage[1].dosage[0].text = "15 mg/kg administrados duas vezes por dia (máximo 500 mg duas vezes por dia)."
+* indicationGuideline[10].dosingGuideline[3].dosage[1].dosage[0].additionalInstruction[0].text = "Na maioria dos casos, a terapêutica parentérica é preferida."
+* indicationGuideline[10].dosingGuideline[3].dosage[1].dosage[0].timing.repeat.frequency = 2
+* indicationGuideline[10].dosingGuideline[3].dosage[1].dosage[0].timing.repeat.period = 1
+* indicationGuideline[10].dosingGuideline[3].dosage[1].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[10].dosingGuideline[3].dosage[1].dosage[0].doseAndRate[0].doseQuantity = 15 'mg/kg' "mg/kg"
+* indicationGuideline[10].dosingGuideline[3].dosage[1].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[10].dosingGuideline[3].dosage[2].type.text = "TFG inferior a 10 ml/min"
+* indicationGuideline[10].dosingGuideline[3].dosage[2].dosage[0].text = "15 mg/kg administrados como dose única diária (máximo 500 mg)."
+* indicationGuideline[10].dosingGuideline[3].dosage[2].dosage[0].additionalInstruction[0].text = "Na maioria dos casos, a terapêutica parentérica é preferida."
+* indicationGuideline[10].dosingGuideline[3].dosage[2].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[10].dosingGuideline[3].dosage[2].dosage[0].timing.repeat.period = 1
+* indicationGuideline[10].dosingGuideline[3].dosage[2].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[10].dosingGuideline[3].dosage[2].dosage[0].doseAndRate[0].doseQuantity = 15 'mg/kg' "mg/kg"
+* indicationGuideline[10].dosingGuideline[3].dosage[2].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[10].dosingGuideline[3].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[10].dosingGuideline[3].patientCharacteristic[0].valueCodeableConcept.text = "Compromisso renal: crianças < 40 kg"
+
+// Hemodiálise - Adultos e crianças ≥ 40 kg
+* indicationGuideline[10].dosingGuideline[4].dosage[0].type.text = "Hemodiálise"
+* indicationGuideline[10].dosingGuideline[4].dosage[0].dosage[0].text = "500 mg a cada 24 horas. Antes da hemodiálise, deve ser administrada uma dose adicional de 500 mg; para repor os níveis circulantes do fármaco, deve ser administrada outra dose de 500 mg após a hemodiálise."
+* indicationGuideline[10].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[10].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.period = 24
+* indicationGuideline[10].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.periodUnit = #h
+* indicationGuideline[10].dosingGuideline[4].dosage[0].dosage[0].doseAndRate[0].doseQuantity = 500 'mg' "mg"
+* indicationGuideline[10].dosingGuideline[4].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[10].dosingGuideline[4].patientCharacteristic[0].valueCodeableConcept.text = "Doentes em hemodiálise: adultos e crianças ≥ 40 kg"
+
+// Hemodiálise - Crianças < 40 kg
+* indicationGuideline[10].dosingGuideline[5].dosage[0].type.text = "Hemodiálise"
+* indicationGuideline[10].dosingGuideline[5].dosage[0].dosage[0].text = "15 mg/kg/dia administrados como dose única diária (máximo 500 mg). Antes da hemodiálise, deve ser administrada uma dose adicional de 15 mg/kg; para repor os níveis circulantes do fármaco, deve ser administrada outra dose de 15 mg/kg após a hemodiálise."
+* indicationGuideline[10].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[10].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.period = 1
+* indicationGuideline[10].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[10].dosingGuideline[5].dosage[0].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[10].dosingGuideline[5].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[10].dosingGuideline[5].patientCharacteristic[0].valueCodeableConcept.text = "Doentes em hemodiálise: crianças < 40 kg"
+
+// Diálise peritoneal
+* indicationGuideline[10].dosingGuideline[6].dosage[0].type.text = "Diálise peritoneal"
+* indicationGuideline[10].dosingGuideline[6].dosage[0].dosage[0].text = "Máximo de 500 mg/dia de amoxicilina."
+* indicationGuideline[10].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[10].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.period = 1
+* indicationGuideline[10].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[10].dosingGuideline[6].dosage[0].dosage[0].maxDosePerPeriod.numerator = 500 'mg' "mg"
+* indicationGuideline[10].dosingGuideline[6].dosage[0].dosage[0].maxDosePerPeriod.denominator = 1 'd' "day"
+* indicationGuideline[10].dosingGuideline[6].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[10].dosingGuideline[6].patientCharacteristic[0].valueCodeableConcept.text = "Doentes em diálise peritoneal"
+
+// Compromisso hepático
+* indicationGuideline[10].dosingGuideline[7].dosage[0].type.text = "Precaução na dosagem"
+* indicationGuideline[10].dosingGuideline[7].dosage[0].dosage[0].text = "Dosear com precaução e monitorizar a função hepática em intervalos regulares."
+* indicationGuideline[10].dosingGuideline[7].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[10].dosingGuideline[7].patientCharacteristic[0].valueCodeableConcept.text = "Compromisso hepático"
 
 // ---------------------------------------------------------
 // 12) Erradicação de Helicobacter pylori
@@ -349,8 +1326,92 @@ Description: "Amoxicilina Generis 1000 mg comprimidos revestidos por película -
 * indicationGuideline[11].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.boundsDuration = 7 'd' "day"
 * indicationGuideline[11].dosingGuideline[0].dosage[0].dosage[0].doseAndRate[0].doseRange.low = 750 'mg' "mg"
 * indicationGuideline[11].dosingGuideline[0].dosage[0].dosage[0].doseAndRate[0].doseRange.high = 1000 'mg' "mg"
-* insert AmoxPopulacaoAdultos(11)
-* insert AmoxPopulacoesEspeciais(11)
+* indicationGuideline[11].dosingGuideline[0].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[11].dosingGuideline[0].patientCharacteristic[0].valueCodeableConcept.text = "Adultos e Crianças ≥40 kg"
+
+// Idosos
+* indicationGuideline[11].dosingGuideline[1].dosage[0].type.text = "Sem ajuste posológico"
+* indicationGuideline[11].dosingGuideline[1].dosage[0].dosage[0].text = "Não é necessário ajuste de dose."
+* indicationGuideline[11].dosingGuideline[1].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[11].dosingGuideline[1].patientCharacteristic[0].valueCodeableConcept.text = "Idosos"
+
+// Compromisso renal - Adultos e crianças ≥ 40 kg (cada banda de TFG é um regime alternativo)
+* indicationGuideline[11].dosingGuideline[2].dosage[0].type.text = "TFG superior a 30 ml/min"
+* indicationGuideline[11].dosingGuideline[2].dosage[0].dosage[0].text = "Não é necessário ajuste."
+* indicationGuideline[11].dosingGuideline[2].dosage[1].type.text = "TFG 10 a 30 ml/min"
+* indicationGuideline[11].dosingGuideline[2].dosage[1].dosage[0].text = "Máximo 500 mg duas vezes por dia."
+* indicationGuideline[11].dosingGuideline[2].dosage[1].dosage[0].timing.repeat.frequency = 2
+* indicationGuideline[11].dosingGuideline[2].dosage[1].dosage[0].timing.repeat.period = 1
+* indicationGuideline[11].dosingGuideline[2].dosage[1].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[11].dosingGuideline[2].dosage[1].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[11].dosingGuideline[2].dosage[2].type.text = "TFG inferior a 10 ml/min"
+* indicationGuideline[11].dosingGuideline[2].dosage[2].dosage[0].text = "Máximo 500 mg/dia."
+* indicationGuideline[11].dosingGuideline[2].dosage[2].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[11].dosingGuideline[2].dosage[2].dosage[0].timing.repeat.period = 1
+* indicationGuideline[11].dosingGuideline[2].dosage[2].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[11].dosingGuideline[2].dosage[2].dosage[0].maxDosePerPeriod.numerator = 500 'mg' "mg"
+* indicationGuideline[11].dosingGuideline[2].dosage[2].dosage[0].maxDosePerPeriod.denominator = 1 'd' "day"
+* indicationGuideline[11].dosingGuideline[2].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[11].dosingGuideline[2].patientCharacteristic[0].valueCodeableConcept.text = "Compromisso renal: adultos e crianças ≥ 40 kg"
+
+// Compromisso renal - Crianças < 40 kg
+* indicationGuideline[11].dosingGuideline[3].dosage[0].type.text = "TFG superior a 30 ml/min"
+* indicationGuideline[11].dosingGuideline[3].dosage[0].dosage[0].text = "Não é necessário ajuste."
+* indicationGuideline[11].dosingGuideline[3].dosage[1].type.text = "TFG 10 a 30 ml/min"
+* indicationGuideline[11].dosingGuideline[3].dosage[1].dosage[0].text = "15 mg/kg administrados duas vezes por dia (máximo 500 mg duas vezes por dia)."
+* indicationGuideline[11].dosingGuideline[3].dosage[1].dosage[0].additionalInstruction[0].text = "Na maioria dos casos, a terapêutica parentérica é preferida."
+* indicationGuideline[11].dosingGuideline[3].dosage[1].dosage[0].timing.repeat.frequency = 2
+* indicationGuideline[11].dosingGuideline[3].dosage[1].dosage[0].timing.repeat.period = 1
+* indicationGuideline[11].dosingGuideline[3].dosage[1].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[11].dosingGuideline[3].dosage[1].dosage[0].doseAndRate[0].doseQuantity = 15 'mg/kg' "mg/kg"
+* indicationGuideline[11].dosingGuideline[3].dosage[1].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[11].dosingGuideline[3].dosage[2].type.text = "TFG inferior a 10 ml/min"
+* indicationGuideline[11].dosingGuideline[3].dosage[2].dosage[0].text = "15 mg/kg administrados como dose única diária (máximo 500 mg)."
+* indicationGuideline[11].dosingGuideline[3].dosage[2].dosage[0].additionalInstruction[0].text = "Na maioria dos casos, a terapêutica parentérica é preferida."
+* indicationGuideline[11].dosingGuideline[3].dosage[2].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[11].dosingGuideline[3].dosage[2].dosage[0].timing.repeat.period = 1
+* indicationGuideline[11].dosingGuideline[3].dosage[2].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[11].dosingGuideline[3].dosage[2].dosage[0].doseAndRate[0].doseQuantity = 15 'mg/kg' "mg/kg"
+* indicationGuideline[11].dosingGuideline[3].dosage[2].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[11].dosingGuideline[3].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[11].dosingGuideline[3].patientCharacteristic[0].valueCodeableConcept.text = "Compromisso renal: crianças < 40 kg"
+
+// Hemodiálise - Adultos e crianças ≥ 40 kg
+* indicationGuideline[11].dosingGuideline[4].dosage[0].type.text = "Hemodiálise"
+* indicationGuideline[11].dosingGuideline[4].dosage[0].dosage[0].text = "500 mg a cada 24 horas. Antes da hemodiálise, deve ser administrada uma dose adicional de 500 mg; para repor os níveis circulantes do fármaco, deve ser administrada outra dose de 500 mg após a hemodiálise."
+* indicationGuideline[11].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[11].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.period = 24
+* indicationGuideline[11].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.periodUnit = #h
+* indicationGuideline[11].dosingGuideline[4].dosage[0].dosage[0].doseAndRate[0].doseQuantity = 500 'mg' "mg"
+* indicationGuideline[11].dosingGuideline[4].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[11].dosingGuideline[4].patientCharacteristic[0].valueCodeableConcept.text = "Doentes em hemodiálise: adultos e crianças ≥ 40 kg"
+
+// Hemodiálise - Crianças < 40 kg
+* indicationGuideline[11].dosingGuideline[5].dosage[0].type.text = "Hemodiálise"
+* indicationGuideline[11].dosingGuideline[5].dosage[0].dosage[0].text = "15 mg/kg/dia administrados como dose única diária (máximo 500 mg). Antes da hemodiálise, deve ser administrada uma dose adicional de 15 mg/kg; para repor os níveis circulantes do fármaco, deve ser administrada outra dose de 15 mg/kg após a hemodiálise."
+* indicationGuideline[11].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[11].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.period = 1
+* indicationGuideline[11].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[11].dosingGuideline[5].dosage[0].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[11].dosingGuideline[5].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[11].dosingGuideline[5].patientCharacteristic[0].valueCodeableConcept.text = "Doentes em hemodiálise: crianças < 40 kg"
+
+// Diálise peritoneal
+* indicationGuideline[11].dosingGuideline[6].dosage[0].type.text = "Diálise peritoneal"
+* indicationGuideline[11].dosingGuideline[6].dosage[0].dosage[0].text = "Máximo de 500 mg/dia de amoxicilina."
+* indicationGuideline[11].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[11].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.period = 1
+* indicationGuideline[11].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[11].dosingGuideline[6].dosage[0].dosage[0].maxDosePerPeriod.numerator = 500 'mg' "mg"
+* indicationGuideline[11].dosingGuideline[6].dosage[0].dosage[0].maxDosePerPeriod.denominator = 1 'd' "day"
+* indicationGuideline[11].dosingGuideline[6].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[11].dosingGuideline[6].patientCharacteristic[0].valueCodeableConcept.text = "Doentes em diálise peritoneal"
+
+// Compromisso hepático
+* indicationGuideline[11].dosingGuideline[7].dosage[0].type.text = "Precaução na dosagem"
+* indicationGuideline[11].dosingGuideline[7].dosage[0].dosage[0].text = "Dosear com precaução e monitorizar a função hepática em intervalos regulares."
+* indicationGuideline[11].dosingGuideline[7].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[11].dosingGuideline[7].patientCharacteristic[0].valueCodeableConcept.text = "Compromisso hepático"
 
 // ---------------------------------------------------------
 // 13) Doença de Lyme
@@ -378,8 +1439,93 @@ Description: "Amoxicilina Generis 1000 mg comprimidos revestidos por película -
 * indicationGuideline[12].dosingGuideline[0].dosage[1].dosage[0].doseAndRate[0].doseRange.high = 2000 'mg' "mg"
 * indicationGuideline[12].dosingGuideline[0].dosage[1].dosage[0].maxDosePerPeriod.numerator = 6 'g' "g"
 * indicationGuideline[12].dosingGuideline[0].dosage[1].dosage[0].maxDosePerPeriod.denominator = 1 'd' "day"
-* insert AmoxPopulacaoAdultos(12)
-* insert AmoxPopulacoesEspeciais(12)
+* indicationGuideline[12].dosingGuideline[0].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[12].dosingGuideline[0].patientCharacteristic[0].valueCodeableConcept.text = "Adultos e Crianças ≥40 kg"
+
+// Idosos
+* indicationGuideline[12].dosingGuideline[1].dosage[0].type.text = "Sem ajuste posológico"
+* indicationGuideline[12].dosingGuideline[1].dosage[0].dosage[0].text = "Não é necessário ajuste de dose."
+* indicationGuideline[12].dosingGuideline[1].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[12].dosingGuideline[1].patientCharacteristic[0].valueCodeableConcept.text = "Idosos"
+
+// Compromisso renal - Adultos e crianças ≥ 40 kg (cada banda de TFG é um regime alternativo)
+* indicationGuideline[12].dosingGuideline[2].dosage[0].type.text = "TFG superior a 30 ml/min"
+* indicationGuideline[12].dosingGuideline[2].dosage[0].dosage[0].text = "Não é necessário ajuste."
+* indicationGuideline[12].dosingGuideline[2].dosage[1].type.text = "TFG 10 a 30 ml/min"
+* indicationGuideline[12].dosingGuideline[2].dosage[1].dosage[0].text = "Máximo 500 mg duas vezes por dia."
+* indicationGuideline[12].dosingGuideline[2].dosage[1].dosage[0].timing.repeat.frequency = 2
+* indicationGuideline[12].dosingGuideline[2].dosage[1].dosage[0].timing.repeat.period = 1
+* indicationGuideline[12].dosingGuideline[2].dosage[1].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[12].dosingGuideline[2].dosage[1].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[12].dosingGuideline[2].dosage[2].type.text = "TFG inferior a 10 ml/min"
+* indicationGuideline[12].dosingGuideline[2].dosage[2].dosage[0].text = "Máximo 500 mg/dia."
+* indicationGuideline[12].dosingGuideline[2].dosage[2].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[12].dosingGuideline[2].dosage[2].dosage[0].timing.repeat.period = 1
+* indicationGuideline[12].dosingGuideline[2].dosage[2].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[12].dosingGuideline[2].dosage[2].dosage[0].maxDosePerPeriod.numerator = 500 'mg' "mg"
+* indicationGuideline[12].dosingGuideline[2].dosage[2].dosage[0].maxDosePerPeriod.denominator = 1 'd' "day"
+* indicationGuideline[12].dosingGuideline[2].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[12].dosingGuideline[2].patientCharacteristic[0].valueCodeableConcept.text = "Compromisso renal: adultos e crianças ≥ 40 kg"
+
+// Compromisso renal - Crianças < 40 kg
+* indicationGuideline[12].dosingGuideline[3].dosage[0].type.text = "TFG superior a 30 ml/min"
+* indicationGuideline[12].dosingGuideline[3].dosage[0].dosage[0].text = "Não é necessário ajuste."
+* indicationGuideline[12].dosingGuideline[3].dosage[1].type.text = "TFG 10 a 30 ml/min"
+* indicationGuideline[12].dosingGuideline[3].dosage[1].dosage[0].text = "15 mg/kg administrados duas vezes por dia (máximo 500 mg duas vezes por dia)."
+* indicationGuideline[12].dosingGuideline[3].dosage[1].dosage[0].additionalInstruction[0].text = "Na maioria dos casos, a terapêutica parentérica é preferida."
+* indicationGuideline[12].dosingGuideline[3].dosage[1].dosage[0].timing.repeat.frequency = 2
+* indicationGuideline[12].dosingGuideline[3].dosage[1].dosage[0].timing.repeat.period = 1
+* indicationGuideline[12].dosingGuideline[3].dosage[1].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[12].dosingGuideline[3].dosage[1].dosage[0].doseAndRate[0].doseQuantity = 15 'mg/kg' "mg/kg"
+* indicationGuideline[12].dosingGuideline[3].dosage[1].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[12].dosingGuideline[3].dosage[2].type.text = "TFG inferior a 10 ml/min"
+* indicationGuideline[12].dosingGuideline[3].dosage[2].dosage[0].text = "15 mg/kg administrados como dose única diária (máximo 500 mg)."
+* indicationGuideline[12].dosingGuideline[3].dosage[2].dosage[0].additionalInstruction[0].text = "Na maioria dos casos, a terapêutica parentérica é preferida."
+* indicationGuideline[12].dosingGuideline[3].dosage[2].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[12].dosingGuideline[3].dosage[2].dosage[0].timing.repeat.period = 1
+* indicationGuideline[12].dosingGuideline[3].dosage[2].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[12].dosingGuideline[3].dosage[2].dosage[0].doseAndRate[0].doseQuantity = 15 'mg/kg' "mg/kg"
+* indicationGuideline[12].dosingGuideline[3].dosage[2].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[12].dosingGuideline[3].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[12].dosingGuideline[3].patientCharacteristic[0].valueCodeableConcept.text = "Compromisso renal: crianças < 40 kg"
+
+// Hemodiálise - Adultos e crianças ≥ 40 kg
+* indicationGuideline[12].dosingGuideline[4].dosage[0].type.text = "Hemodiálise"
+* indicationGuideline[12].dosingGuideline[4].dosage[0].dosage[0].text = "500 mg a cada 24 horas. Antes da hemodiálise, deve ser administrada uma dose adicional de 500 mg; para repor os níveis circulantes do fármaco, deve ser administrada outra dose de 500 mg após a hemodiálise."
+* indicationGuideline[12].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[12].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.period = 24
+* indicationGuideline[12].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.periodUnit = #h
+* indicationGuideline[12].dosingGuideline[4].dosage[0].dosage[0].doseAndRate[0].doseQuantity = 500 'mg' "mg"
+* indicationGuideline[12].dosingGuideline[4].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[12].dosingGuideline[4].patientCharacteristic[0].valueCodeableConcept.text = "Doentes em hemodiálise: adultos e crianças ≥ 40 kg"
+
+// Hemodiálise - Crianças < 40 kg
+* indicationGuideline[12].dosingGuideline[5].dosage[0].type.text = "Hemodiálise"
+* indicationGuideline[12].dosingGuideline[5].dosage[0].dosage[0].text = "15 mg/kg/dia administrados como dose única diária (máximo 500 mg). Antes da hemodiálise, deve ser administrada uma dose adicional de 15 mg/kg; para repor os níveis circulantes do fármaco, deve ser administrada outra dose de 15 mg/kg após a hemodiálise."
+* indicationGuideline[12].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[12].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.period = 1
+* indicationGuideline[12].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[12].dosingGuideline[5].dosage[0].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[12].dosingGuideline[5].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[12].dosingGuideline[5].patientCharacteristic[0].valueCodeableConcept.text = "Doentes em hemodiálise: crianças < 40 kg"
+
+// Diálise peritoneal
+* indicationGuideline[12].dosingGuideline[6].dosage[0].type.text = "Diálise peritoneal"
+* indicationGuideline[12].dosingGuideline[6].dosage[0].dosage[0].text = "Máximo de 500 mg/dia de amoxicilina."
+* indicationGuideline[12].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[12].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.period = 1
+* indicationGuideline[12].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[12].dosingGuideline[6].dosage[0].dosage[0].maxDosePerPeriod.numerator = 500 'mg' "mg"
+* indicationGuideline[12].dosingGuideline[6].dosage[0].dosage[0].maxDosePerPeriod.denominator = 1 'd' "day"
+* indicationGuideline[12].dosingGuideline[6].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[12].dosingGuideline[6].patientCharacteristic[0].valueCodeableConcept.text = "Doentes em diálise peritoneal"
+
+// Compromisso hepático
+* indicationGuideline[12].dosingGuideline[7].dosage[0].type.text = "Precaução na dosagem"
+* indicationGuideline[12].dosingGuideline[7].dosage[0].dosage[0].text = "Dosear com precaução e monitorizar a função hepática em intervalos regulares."
+* indicationGuideline[12].dosingGuideline[7].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[12].dosingGuideline[7].patientCharacteristic[0].valueCodeableConcept.text = "Compromisso hepático"
+
 * indicationGuideline[12].dosingGuideline[8].dosage[0].type.text = "Fase inicial"
 * indicationGuideline[12].dosingGuideline[8].dosage[0].dosage[0].text = "25 a 50 mg/kg/dia em três doses divididas durante 10 a 21 dias."
 * indicationGuideline[12].dosingGuideline[8].dosage[0].dosage[0].timing.repeat.frequency = 3
@@ -405,15 +1551,99 @@ Description: "Amoxicilina Generis 1000 mg comprimidos revestidos por película -
 * indicationGuideline[13].dosingGuideline[0].dosage[0].dosage[0].text = "2 g oralmente, dose única 30 a 60 minutos antes do procedimento."
 * indicationGuideline[13].dosingGuideline[0].dosage[0].dosage[0].timing.repeat.count = 1
 * indicationGuideline[13].dosingGuideline[0].dosage[0].dosage[0].doseAndRate[0].doseQuantity = 2000 'mg' "mg"
-* insert AmoxPopulacaoAdultos(13)
-* insert AmoxPopulacoesEspeciais(13)
+* indicationGuideline[13].dosingGuideline[0].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[13].dosingGuideline[0].patientCharacteristic[0].valueCodeableConcept.text = "Adultos e Crianças ≥40 kg"
+
+// Idosos
+* indicationGuideline[13].dosingGuideline[1].dosage[0].type.text = "Sem ajuste posológico"
+* indicationGuideline[13].dosingGuideline[1].dosage[0].dosage[0].text = "Não é necessário ajuste de dose."
+* indicationGuideline[13].dosingGuideline[1].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[13].dosingGuideline[1].patientCharacteristic[0].valueCodeableConcept.text = "Idosos"
+
+// Compromisso renal - Adultos e crianças ≥ 40 kg (cada banda de TFG é um regime alternativo)
+* indicationGuideline[13].dosingGuideline[2].dosage[0].type.text = "TFG superior a 30 ml/min"
+* indicationGuideline[13].dosingGuideline[2].dosage[0].dosage[0].text = "Não é necessário ajuste."
+* indicationGuideline[13].dosingGuideline[2].dosage[1].type.text = "TFG 10 a 30 ml/min"
+* indicationGuideline[13].dosingGuideline[2].dosage[1].dosage[0].text = "Máximo 500 mg duas vezes por dia."
+* indicationGuideline[13].dosingGuideline[2].dosage[1].dosage[0].timing.repeat.frequency = 2
+* indicationGuideline[13].dosingGuideline[2].dosage[1].dosage[0].timing.repeat.period = 1
+* indicationGuideline[13].dosingGuideline[2].dosage[1].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[13].dosingGuideline[2].dosage[1].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[13].dosingGuideline[2].dosage[2].type.text = "TFG inferior a 10 ml/min"
+* indicationGuideline[13].dosingGuideline[2].dosage[2].dosage[0].text = "Máximo 500 mg/dia."
+* indicationGuideline[13].dosingGuideline[2].dosage[2].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[13].dosingGuideline[2].dosage[2].dosage[0].timing.repeat.period = 1
+* indicationGuideline[13].dosingGuideline[2].dosage[2].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[13].dosingGuideline[2].dosage[2].dosage[0].maxDosePerPeriod.numerator = 500 'mg' "mg"
+* indicationGuideline[13].dosingGuideline[2].dosage[2].dosage[0].maxDosePerPeriod.denominator = 1 'd' "day"
+* indicationGuideline[13].dosingGuideline[2].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[13].dosingGuideline[2].patientCharacteristic[0].valueCodeableConcept.text = "Compromisso renal: adultos e crianças ≥ 40 kg"
+
+// Compromisso renal - Crianças < 40 kg
+* indicationGuideline[13].dosingGuideline[3].dosage[0].type.text = "TFG superior a 30 ml/min"
+* indicationGuideline[13].dosingGuideline[3].dosage[0].dosage[0].text = "Não é necessário ajuste."
+* indicationGuideline[13].dosingGuideline[3].dosage[1].type.text = "TFG 10 a 30 ml/min"
+* indicationGuideline[13].dosingGuideline[3].dosage[1].dosage[0].text = "15 mg/kg administrados duas vezes por dia (máximo 500 mg duas vezes por dia)."
+* indicationGuideline[13].dosingGuideline[3].dosage[1].dosage[0].additionalInstruction[0].text = "Na maioria dos casos, a terapêutica parentérica é preferida."
+* indicationGuideline[13].dosingGuideline[3].dosage[1].dosage[0].timing.repeat.frequency = 2
+* indicationGuideline[13].dosingGuideline[3].dosage[1].dosage[0].timing.repeat.period = 1
+* indicationGuideline[13].dosingGuideline[3].dosage[1].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[13].dosingGuideline[3].dosage[1].dosage[0].doseAndRate[0].doseQuantity = 15 'mg/kg' "mg/kg"
+* indicationGuideline[13].dosingGuideline[3].dosage[1].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[13].dosingGuideline[3].dosage[2].type.text = "TFG inferior a 10 ml/min"
+* indicationGuideline[13].dosingGuideline[3].dosage[2].dosage[0].text = "15 mg/kg administrados como dose única diária (máximo 500 mg)."
+* indicationGuideline[13].dosingGuideline[3].dosage[2].dosage[0].additionalInstruction[0].text = "Na maioria dos casos, a terapêutica parentérica é preferida."
+* indicationGuideline[13].dosingGuideline[3].dosage[2].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[13].dosingGuideline[3].dosage[2].dosage[0].timing.repeat.period = 1
+* indicationGuideline[13].dosingGuideline[3].dosage[2].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[13].dosingGuideline[3].dosage[2].dosage[0].doseAndRate[0].doseQuantity = 15 'mg/kg' "mg/kg"
+* indicationGuideline[13].dosingGuideline[3].dosage[2].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[13].dosingGuideline[3].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[13].dosingGuideline[3].patientCharacteristic[0].valueCodeableConcept.text = "Compromisso renal: crianças < 40 kg"
+
+// Hemodiálise - Adultos e crianças ≥ 40 kg
+* indicationGuideline[13].dosingGuideline[4].dosage[0].type.text = "Hemodiálise"
+* indicationGuideline[13].dosingGuideline[4].dosage[0].dosage[0].text = "500 mg a cada 24 horas. Antes da hemodiálise, deve ser administrada uma dose adicional de 500 mg; para repor os níveis circulantes do fármaco, deve ser administrada outra dose de 500 mg após a hemodiálise."
+* indicationGuideline[13].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[13].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.period = 24
+* indicationGuideline[13].dosingGuideline[4].dosage[0].dosage[0].timing.repeat.periodUnit = #h
+* indicationGuideline[13].dosingGuideline[4].dosage[0].dosage[0].doseAndRate[0].doseQuantity = 500 'mg' "mg"
+* indicationGuideline[13].dosingGuideline[4].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[13].dosingGuideline[4].patientCharacteristic[0].valueCodeableConcept.text = "Doentes em hemodiálise: adultos e crianças ≥ 40 kg"
+
+// Hemodiálise - Crianças < 40 kg
+* indicationGuideline[13].dosingGuideline[5].dosage[0].type.text = "Hemodiálise"
+* indicationGuideline[13].dosingGuideline[5].dosage[0].dosage[0].text = "15 mg/kg/dia administrados como dose única diária (máximo 500 mg). Antes da hemodiálise, deve ser administrada uma dose adicional de 15 mg/kg; para repor os níveis circulantes do fármaco, deve ser administrada outra dose de 15 mg/kg após a hemodiálise."
+* indicationGuideline[13].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[13].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.period = 1
+* indicationGuideline[13].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[13].dosingGuideline[5].dosage[0].dosage[0].maxDosePerAdministration = 500 'mg' "mg"
+* indicationGuideline[13].dosingGuideline[5].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[13].dosingGuideline[5].patientCharacteristic[0].valueCodeableConcept.text = "Doentes em hemodiálise: crianças < 40 kg"
+
+// Diálise peritoneal
+* indicationGuideline[13].dosingGuideline[6].dosage[0].type.text = "Diálise peritoneal"
+* indicationGuideline[13].dosingGuideline[6].dosage[0].dosage[0].text = "Máximo de 500 mg/dia de amoxicilina."
+* indicationGuideline[13].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.frequency = 1
+* indicationGuideline[13].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.period = 1
+* indicationGuideline[13].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[13].dosingGuideline[6].dosage[0].dosage[0].maxDosePerPeriod.numerator = 500 'mg' "mg"
+* indicationGuideline[13].dosingGuideline[6].dosage[0].dosage[0].maxDosePerPeriod.denominator = 1 'd' "day"
+* indicationGuideline[13].dosingGuideline[6].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[13].dosingGuideline[6].patientCharacteristic[0].valueCodeableConcept.text = "Doentes em diálise peritoneal"
+
+// Compromisso hepático
+* indicationGuideline[13].dosingGuideline[7].dosage[0].type.text = "Precaução na dosagem"
+* indicationGuideline[13].dosingGuideline[7].dosage[0].dosage[0].text = "Dosear com precaução e monitorizar a função hepática em intervalos regulares."
+* indicationGuideline[13].dosingGuideline[7].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[13].dosingGuideline[7].patientCharacteristic[0].valueCodeableConcept.text = "Compromisso hepático"
+
 * indicationGuideline[13].dosingGuideline[8].dosage[0].type.text = "Dose única"
 * indicationGuideline[13].dosingGuideline[8].dosage[0].dosage[0].text = "50 mg/kg oralmente, dose única 30 a 60 minutos antes do procedimento."
 * indicationGuideline[13].dosingGuideline[8].dosage[0].dosage[0].timing.repeat.count = 1
 * indicationGuideline[13].dosingGuideline[8].dosage[0].dosage[0].doseAndRate[0].doseQuantity = 50 'mg/kg' "mg/kg"
 * indicationGuideline[13].dosingGuideline[8].patientCharacteristic[0].type.text = "Population"
 * indicationGuideline[13].dosingGuideline[8].patientCharacteristic[0].valueCodeableConcept.text = "Crianças <40 kg"
-
 
 // =============================================================
 // ClinicalUseDefinition - Indicações, contraindicações e interações (secções 4.1, 4.3 e 4.5)
@@ -546,3 +1776,4 @@ InstanceOf: InteracoesPDH
 * interaction.interactant[0].itemCodeableConcept.coding = http://snomed.info/sct#[PREENCHER] "Tetraciclinas"
 * interaction.type = http://hl7.org/fhir/interaction-type#drug-drug "drug to drug interaction"
 * interaction.effect.concept.text = "Podem interferir nos efeitos bactericidas da amoxicilina."
+

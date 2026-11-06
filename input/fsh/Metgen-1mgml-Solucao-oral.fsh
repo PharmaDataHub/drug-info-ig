@@ -1,4 +1,4 @@
-RuleSet: MetgenPopulacoesAdultas(g)
+RuleSet: Metgen1mgmlPopulacoesAdultas(g)
 // Doentes adultos (secção 4.2, "Todas as indicações")
 * indicationGuideline[{g}].dosingGuideline[0].dosage[0].type.text = "Dose única recomendada"
 * indicationGuideline[{g}].dosingGuideline[0].dosage[0].dosage[0].text = "A dose única recomendada é 10 mg, repetida até 3 vezes ao dia. A dose diária máxima recomendada é 30 mg ou 0,5 mg/kg de peso corporal. A duração máxima do tratamento recomendada é 5 dias."
@@ -103,7 +103,7 @@ Description: "Metgen 1 mg/ml solução oral - cloridrato de metoclopramida mono-
 // 1) Prevenção de náuseas e vómitos tardios induzidos por quimioterapia (NVIQ)
 // ---------------------------------------------------------
 * indicationGuideline[0].indication[0].concept.text = "Prevenção de náuseas e vómitos tardios induzidos por quimioterapia (NVIQ)"
-* insert MetgenPopulacoesAdultas(0)
+* insert Metgen1mgmlPopulacoesAdultas(0)
 // População pediátrica (1 a 18 anos): opção de segunda linha
 * indicationGuideline[0].dosingGuideline[4].dosage[0].type.text = "Opção de segunda linha: dose por peso corporal"
 * indicationGuideline[0].dosingGuideline[4].dosage[0].dosage[0].text = "A dose recomendada é 0,1 a 0,15 mg/kg de peso corporal, repetida até três vezes ao dia por via oral. A dose máxima nas 24 horas é 0,5 mg/kg de peso corporal. A duração máxima do tratamento é de 5 dias."
@@ -116,55 +116,70 @@ Description: "Metgen 1 mg/ml solução oral - cloridrato de metoclopramida mono-
 * indicationGuideline[0].dosingGuideline[4].dosage[0].dosage[0].doseAndRate[0].doseRange.high = 0.15 'mg/kg' "mg/kg"
 * indicationGuideline[0].dosingGuideline[4].dosage[0].dosage[0].maxDosePerPeriod.numerator = 0.5 'mg/kg' "mg/kg"
 * indicationGuideline[0].dosingGuideline[4].dosage[0].dosage[0].maxDosePerPeriod.denominator = 1 'd' "day"
-* indicationGuideline[0].dosingGuideline[4].dosage[1].type.text = "Tabela de doses: 1-3 anos, 10-14 kg"
-* indicationGuideline[0].dosingGuideline[4].dosage[1].dosage[0].text = "1-3 anos, 10-14 kg: 1 mg por toma, até 3 vezes ao dia."
-* indicationGuideline[0].dosingGuideline[4].dosage[1].dosage[0].timing.repeat.frequencyMax = 3
-* indicationGuideline[0].dosingGuideline[4].dosage[1].dosage[0].timing.repeat.period = 1
-* indicationGuideline[0].dosingGuideline[4].dosage[1].dosage[0].timing.repeat.periodUnit = #d
-* indicationGuideline[0].dosingGuideline[4].dosage[1].dosage[0].timing.repeat.boundsRange.high = 5 'd' "day"
-* indicationGuideline[0].dosingGuideline[4].dosage[1].dosage[0].doseAndRate[0].doseQuantity = 1 'mg' "mg"
-* indicationGuideline[0].dosingGuideline[4].dosage[2].type.text = "Tabela de doses: 3-5 anos, 15-19 kg"
-* indicationGuideline[0].dosingGuideline[4].dosage[2].dosage[0].text = "3-5 anos, 15-19 kg: 2 mg por toma, até 3 vezes ao dia."
-* indicationGuideline[0].dosingGuideline[4].dosage[2].dosage[0].timing.repeat.frequencyMax = 3
-* indicationGuideline[0].dosingGuideline[4].dosage[2].dosage[0].timing.repeat.period = 1
-* indicationGuideline[0].dosingGuideline[4].dosage[2].dosage[0].timing.repeat.periodUnit = #d
-* indicationGuideline[0].dosingGuideline[4].dosage[2].dosage[0].timing.repeat.boundsRange.high = 5 'd' "day"
-* indicationGuideline[0].dosingGuideline[4].dosage[2].dosage[0].doseAndRate[0].doseQuantity = 2 'mg' "mg"
-* indicationGuideline[0].dosingGuideline[4].dosage[3].type.text = "Tabela de doses: 5-9 anos, 20-29 kg"
-* indicationGuideline[0].dosingGuideline[4].dosage[3].dosage[0].text = "5-9 anos, 20-29 kg: 2,5 mg por toma, até 3 vezes ao dia."
-* indicationGuideline[0].dosingGuideline[4].dosage[3].dosage[0].timing.repeat.frequencyMax = 3
-* indicationGuideline[0].dosingGuideline[4].dosage[3].dosage[0].timing.repeat.period = 1
-* indicationGuideline[0].dosingGuideline[4].dosage[3].dosage[0].timing.repeat.periodUnit = #d
-* indicationGuideline[0].dosingGuideline[4].dosage[3].dosage[0].timing.repeat.boundsRange.high = 5 'd' "day"
-* indicationGuideline[0].dosingGuideline[4].dosage[3].dosage[0].doseAndRate[0].doseQuantity = 2.5 'mg' "mg"
-* indicationGuideline[0].dosingGuideline[4].dosage[4].type.text = "Tabela de doses: 9-18 anos, 30-60 kg"
-* indicationGuideline[0].dosingGuideline[4].dosage[4].dosage[0].text = "9-18 anos, 30-60 kg: 5 mg por toma, até 3 vezes ao dia."
-* indicationGuideline[0].dosingGuideline[4].dosage[4].dosage[0].timing.repeat.frequencyMax = 3
-* indicationGuideline[0].dosingGuideline[4].dosage[4].dosage[0].timing.repeat.period = 1
-* indicationGuideline[0].dosingGuideline[4].dosage[4].dosage[0].timing.repeat.periodUnit = #d
-* indicationGuideline[0].dosingGuideline[4].dosage[4].dosage[0].timing.repeat.boundsRange.high = 5 'd' "day"
-* indicationGuideline[0].dosingGuideline[4].dosage[4].dosage[0].doseAndRate[0].doseQuantity = 5 'mg' "mg"
-* indicationGuideline[0].dosingGuideline[4].dosage[5].type.text = "Tabela de doses: 15-18 anos, acima de 60 kg"
-* indicationGuideline[0].dosingGuideline[4].dosage[5].dosage[0].text = "15-18 anos, acima de 60 kg: 10 mg por toma, até 3 vezes ao dia."
-* indicationGuideline[0].dosingGuideline[4].dosage[5].dosage[0].timing.repeat.frequencyMax = 3
-* indicationGuideline[0].dosingGuideline[4].dosage[5].dosage[0].timing.repeat.period = 1
-* indicationGuideline[0].dosingGuideline[4].dosage[5].dosage[0].timing.repeat.periodUnit = #d
-* indicationGuideline[0].dosingGuideline[4].dosage[5].dosage[0].timing.repeat.boundsRange.high = 5 'd' "day"
-* indicationGuideline[0].dosingGuideline[4].dosage[5].dosage[0].doseAndRate[0].doseQuantity = 10 'mg' "mg"
 * indicationGuideline[0].dosingGuideline[4].patientCharacteristic[0].type.text = "Population"
 * indicationGuideline[0].dosingGuideline[4].patientCharacteristic[0].valueCodeableConcept.text = "Doentes pediátricos com idades entre 1 a 18 anos"
+// Tabela de doses pediátrica: 1-3 anos, 10-14 kg
+* indicationGuideline[0].dosingGuideline[5].dosage[0].type.text = "Dose por toma"
+* indicationGuideline[0].dosingGuideline[5].dosage[0].dosage[0].text = "1 mg por toma, até 3 vezes ao dia."
+* indicationGuideline[0].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.frequencyMax = 3
+* indicationGuideline[0].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.period = 1
+* indicationGuideline[0].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[0].dosingGuideline[5].dosage[0].dosage[0].timing.repeat.boundsRange.high = 5 'd' "day"
+* indicationGuideline[0].dosingGuideline[5].dosage[0].dosage[0].doseAndRate[0].doseQuantity = 1 'mg' "mg"
+* indicationGuideline[0].dosingGuideline[5].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[0].dosingGuideline[5].patientCharacteristic[0].valueCodeableConcept.text = "1-3 anos, 10-14 kg"
+// Tabela de doses pediátrica: 3-5 anos, 15-19 kg
+* indicationGuideline[0].dosingGuideline[6].dosage[0].type.text = "Dose por toma"
+* indicationGuideline[0].dosingGuideline[6].dosage[0].dosage[0].text = "2 mg por toma, até 3 vezes ao dia."
+* indicationGuideline[0].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.frequencyMax = 3
+* indicationGuideline[0].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.period = 1
+* indicationGuideline[0].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[0].dosingGuideline[6].dosage[0].dosage[0].timing.repeat.boundsRange.high = 5 'd' "day"
+* indicationGuideline[0].dosingGuideline[6].dosage[0].dosage[0].doseAndRate[0].doseQuantity = 2 'mg' "mg"
+* indicationGuideline[0].dosingGuideline[6].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[0].dosingGuideline[6].patientCharacteristic[0].valueCodeableConcept.text = "3-5 anos, 15-19 kg"
+// Tabela de doses pediátrica: 5-9 anos, 20-29 kg
+* indicationGuideline[0].dosingGuideline[7].dosage[0].type.text = "Dose por toma"
+* indicationGuideline[0].dosingGuideline[7].dosage[0].dosage[0].text = "2,5 mg por toma, até 3 vezes ao dia."
+* indicationGuideline[0].dosingGuideline[7].dosage[0].dosage[0].timing.repeat.frequencyMax = 3
+* indicationGuideline[0].dosingGuideline[7].dosage[0].dosage[0].timing.repeat.period = 1
+* indicationGuideline[0].dosingGuideline[7].dosage[0].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[0].dosingGuideline[7].dosage[0].dosage[0].timing.repeat.boundsRange.high = 5 'd' "day"
+* indicationGuideline[0].dosingGuideline[7].dosage[0].dosage[0].doseAndRate[0].doseQuantity = 2.5 'mg' "mg"
+* indicationGuideline[0].dosingGuideline[7].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[0].dosingGuideline[7].patientCharacteristic[0].valueCodeableConcept.text = "5-9 anos, 20-29 kg"
+// Tabela de doses pediátrica: 9-18 anos, 30-60 kg
+* indicationGuideline[0].dosingGuideline[8].dosage[0].type.text = "Dose por toma"
+* indicationGuideline[0].dosingGuideline[8].dosage[0].dosage[0].text = "5 mg por toma, até 3 vezes ao dia."
+* indicationGuideline[0].dosingGuideline[8].dosage[0].dosage[0].timing.repeat.frequencyMax = 3
+* indicationGuideline[0].dosingGuideline[8].dosage[0].dosage[0].timing.repeat.period = 1
+* indicationGuideline[0].dosingGuideline[8].dosage[0].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[0].dosingGuideline[8].dosage[0].dosage[0].timing.repeat.boundsRange.high = 5 'd' "day"
+* indicationGuideline[0].dosingGuideline[8].dosage[0].dosage[0].doseAndRate[0].doseQuantity = 5 'mg' "mg"
+* indicationGuideline[0].dosingGuideline[8].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[0].dosingGuideline[8].patientCharacteristic[0].valueCodeableConcept.text = "9-18 anos, 30-60 kg"
+// Tabela de doses pediátrica: 15-18 anos, acima de 60 kg
+* indicationGuideline[0].dosingGuideline[9].dosage[0].type.text = "Dose por toma"
+* indicationGuideline[0].dosingGuideline[9].dosage[0].dosage[0].text = "10 mg por toma, até 3 vezes ao dia."
+* indicationGuideline[0].dosingGuideline[9].dosage[0].dosage[0].timing.repeat.frequencyMax = 3
+* indicationGuideline[0].dosingGuideline[9].dosage[0].dosage[0].timing.repeat.period = 1
+* indicationGuideline[0].dosingGuideline[9].dosage[0].dosage[0].timing.repeat.periodUnit = #d
+* indicationGuideline[0].dosingGuideline[9].dosage[0].dosage[0].timing.repeat.boundsRange.high = 5 'd' "day"
+* indicationGuideline[0].dosingGuideline[9].dosage[0].dosage[0].doseAndRate[0].doseQuantity = 10 'mg' "mg"
+* indicationGuideline[0].dosingGuideline[9].patientCharacteristic[0].type.text = "Population"
+* indicationGuideline[0].dosingGuideline[9].patientCharacteristic[0].valueCodeableConcept.text = "15-18 anos, acima de 60 kg"
 
 // ---------------------------------------------------------
 // 2) Prevenção de náuseas e vómitos induzidos por radioterapia (NVIR)
 // ---------------------------------------------------------
 * indicationGuideline[1].indication[0].concept.text = "Prevenção de náuseas e vómitos induzidos por radioterapia (NVIR)"
-* insert MetgenPopulacoesAdultas(1)
+* insert Metgen1mgmlPopulacoesAdultas(1)
 
 // ---------------------------------------------------------
 // 3) Tratamento sintomático de náuseas e vómitos
 // ---------------------------------------------------------
 * indicationGuideline[2].indication[0].concept.text = "Tratamento sintomático de náuseas e vómitos, incluindo náuseas e vómitos induzidos por enxaqueca aguda"
-* insert MetgenPopulacoesAdultas(2)
+* insert Metgen1mgmlPopulacoesAdultas(2)
 
 
 // =============================================================
