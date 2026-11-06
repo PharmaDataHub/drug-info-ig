@@ -1,0 +1,689 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/MedicationKnowledge/TiclopidinaGP-250mg-Comprimido-revestido-por-pelicula> a fhir:MedicationKnowledge ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TiclopidinaGP-250mg-Comprimido-revestido-por-pelicula"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH"^^xsd:anyURI ;
+       fhir:link <http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationKnowledge TiclopidinaGP-250mg-Comprimido-revestido-por-pelicula</b></p><a name=\"TiclopidinaGP-250mg-Comprimido-revestido-por-pelicula\"> </a><a name=\"hcTiclopidinaGP-250mg-Comprimido-revestido-por-pelicula\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MedicationKnowledgePDH.html\">Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento</a></p></div><p><b>code</b>: <span title=\"Codes:{http://infarmed.pt/medicamentos/prod_id 4644}\">Ticlopidina GP 250 mg [B01AC05]</span></p><p><b>name</b>: Ticlopidina GP [ticlopidina] 250 mg comprimido revestido por película</p><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Redução do risco de ocorrência e recorrência de um acidente vascular cerebral, em doentes que sofreram acidente vascular cerebral isquémico constituído, acidente vascular cerebral menor, défice neurológico reversível de origem isquémica ou acidente isquémico transitório (AIT), incluindo cegueira unilateral transitória</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Posologia habitual</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td></tr><tr><td style=\"display: none\">*</td><td>A posologia habitual é de dois comprimidos por dia, a tomar durante as refeições.</td><td><span title=\"Codes:\">Os comprimidos devem ser ingeridos com água e sem mastigar.</span></td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Adultos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Sem ajuste posológico</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Embora a farmacocinética da ticlopidina se encontre alterada no idoso, a atividade farmacológica e terapêutica, na dose de 500 mg por dia, não é afetada pela idade.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Utilização no idoso</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Não indicado</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Não se encontra indicado.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Crianças</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Prevenção dos acidentes isquémicos, em particular coronários, em doentes com arteriopatia dos membros inferiores no estadio de claudicação intermitente</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Posologia habitual</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td></tr><tr><td style=\"display: none\">*</td><td>A posologia habitual é de dois comprimidos por dia, a tomar durante as refeições.</td><td><span title=\"Codes:\">Os comprimidos devem ser ingeridos com água e sem mastigar.</span></td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Adultos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Sem ajuste posológico</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Embora a farmacocinética da ticlopidina se encontre alterada no idoso, a atividade farmacológica e terapêutica, na dose de 500 mg por dia, não é afetada pela idade.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Utilização no idoso</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Não indicado</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Não se encontra indicado.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Crianças</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Prevenção e correção das alterações plaquetárias induzidas pelos circuitos extracorporais na cirurgia com circulação extracorporal</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Posologia habitual</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td></tr><tr><td style=\"display: none\">*</td><td>A posologia habitual é de dois comprimidos por dia, a tomar durante as refeições.</td><td><span title=\"Codes:\">Os comprimidos devem ser ingeridos com água e sem mastigar.</span></td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Adultos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Sem ajuste posológico</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Embora a farmacocinética da ticlopidina se encontre alterada no idoso, a atividade farmacológica e terapêutica, na dose de 500 mg por dia, não é afetada pela idade.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Utilização no idoso</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Não indicado</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Não se encontra indicado.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Crianças</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Prevenção e correção das alterações plaquetárias induzidas pelos circuitos extracorporais na hemodiálise crónica</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Posologia habitual</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td></tr><tr><td style=\"display: none\">*</td><td>A posologia habitual é de dois comprimidos por dia, a tomar durante as refeições.</td><td><span title=\"Codes:\">Os comprimidos devem ser ingeridos com água e sem mastigar.</span></td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Adultos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Sem ajuste posológico</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Embora a farmacocinética da ticlopidina se encontre alterada no idoso, a atividade farmacológica e terapêutica, na dose de 500 mg por dia, não é afetada pela idade.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Utilização no idoso</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Não indicado</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Não se encontra indicado.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Crianças</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Prevenção das oclusões subagudas após implante de stent coronário</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Após implante de stent coronário</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td><td><b>Timing</b></td></tr><tr><td style=\"display: none\">*</td><td>O tratamento pode ser iniciado imediatamente antes ou imediatamente após o implante do stent, devendo ser continuado durante cerca de um mês (dois comprimidos por dia), em associação com ácido acetilsalicílico (100 a 325 mg por dia).</td><td><span title=\"Codes:\">Tomar durante as refeições, com água e sem mastigar.</span></td><td>Once</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Adultos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Sem ajuste posológico</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Embora a farmacocinética da ticlopidina se encontre alterada no idoso, a atividade farmacológica e terapêutica, na dose de 500 mg por dia, não é afetada pela idade.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Utilização no idoso</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Não indicado</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Não se encontra indicado.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Crianças</span></td></tr></table></blockquote></blockquote><blockquote><p><b>medicineClassification</b></p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/medication-classification-type anatomical}\">Código ATC</span></p><p><b>classification</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ATC B01AC05}\">Ticlopidina</span></p></blockquote><blockquote><p><b>medicineClassification</b></p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/medication-classification-type therapeutic}\">Grupo farmacoterapêutico</span></p><p><b>classification</b>: <span title=\"Codes:\">4.3.1.4 Sangue. Anticoagulantes e antitrombóticos. Anticoagulantes. Antiagregantes plaquetários.</span></p></blockquote><p><b>clinicalUseIssue</b>: </p><ul><li><a href=\"ClinicalUseDefinition-TiclopidinaGP250mg-CUD-ind1.html\">ClinicalUseDefinition: type = indication</a></li><li><a href=\"ClinicalUseDefinition-TiclopidinaGP250mg-CUD-ind2.html\">ClinicalUseDefinition: type = indication</a></li><li><a href=\"ClinicalUseDefinition-TiclopidinaGP250mg-CUD-ind3.html\">ClinicalUseDefinition: type = indication</a></li><li><a href=\"ClinicalUseDefinition-TiclopidinaGP250mg-CUD-ind4.html\">ClinicalUseDefinition: type = indication</a></li><li><a href=\"ClinicalUseDefinition-TiclopidinaGP250mg-CUD-ind5.html\">ClinicalUseDefinition: type = indication</a></li><li><a href=\"ClinicalUseDefinition-TiclopidinaGP250mg-CUD-contra1.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-TiclopidinaGP250mg-CUD-contra2.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-TiclopidinaGP250mg-CUD-contra3.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-TiclopidinaGP250mg-CUD-contra4.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-TiclopidinaGP250mg-CUD-contra5.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-TiclopidinaGP250mg-CUD-contra6.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-TiclopidinaGP250mg-CUD-contra7.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-TiclopidinaGP250mg-CUD-contra8.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-TiclopidinaGP250mg-CUD-contra9.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-TiclopidinaGP250mg-CUD-contra10.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-TiclopidinaGP250mg-CUD-contra11.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-TiclopidinaGP250mg-CUD-int1.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-TiclopidinaGP250mg-CUD-int2.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-TiclopidinaGP250mg-CUD-int3.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-TiclopidinaGP250mg-CUD-int4.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-TiclopidinaGP250mg-CUD-int5.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-TiclopidinaGP250mg-CUD-int6.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-TiclopidinaGP250mg-CUD-int7.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-TiclopidinaGP250mg-CUD-int8.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-TiclopidinaGP250mg-CUD-int9.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-TiclopidinaGP250mg-CUD-int10.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-TiclopidinaGP250mg-CUD-int11.html\">ClinicalUseDefinition: type = interaction</a></li></ul><blockquote><p><b>definitional</b></p><p><b>doseForm</b>: <span title=\"Codes:{http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs 39}\">Comprimido revestido por película</span></p><p><b>intendedRoute</b>: <span title=\"Codes:{http://example.com/fhir/example/CodeSystem/via-administracao-cs 48}\">Via oral</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Cloridrato de ticlopidina</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass ACTI}\">active ingredient</span></p><p><b>strength</b>: 250 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Amido de milho</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Celulose microcristalina</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Talco</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Povidona</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Ácido cítrico monoidratado</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Estearato de magnésio</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Hidroxipropilmetilcelulose</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Dióxido de titânio (E171)</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Polietilenoglicol</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Propilenoglicol</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Monolaureato de sorbitano</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://infarmed.pt/medicamentos/prod_id"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "4644" ] ;
+       fhir:display [ fhir:v "Ticlopidina GP 250 mg [B01AC05]" ]
+     ] )
+  ] ; # 
+  fhir:name ( [ fhir:v "Ticlopidina GP [ticlopidina] 250 mg comprimido revestido por película"] ) ; # 
+  fhir:indicationGuideline ( [
+     fhir:indication ( [
+       fhir:concept [
+         fhir:text [ fhir:v "Redução do risco de ocorrência e recorrência de um acidente vascular cerebral, em doentes que sofreram acidente vascular cerebral isquémico constituído, acidente vascular cerebral menor, défice neurológico reversível de origem isquémica ou acidente isquémico transitório (AIT), incluindo cegueira unilateral transitória" ]
+       ]
+     ] ) ;
+     fhir:dosingGuideline ( [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Posologia habitual" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "A posologia habitual é de dois comprimidos por dia, a tomar durante as refeições." ] ;
+           fhir:additionalInstruction ( [
+             fhir:text [ fhir:v "Os comprimidos devem ser ingeridos com água e sem mastigar." ]
+           ] )
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Adultos" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Sem ajuste posológico" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Embora a farmacocinética da ticlopidina se encontre alterada no idoso, a atividade farmacológica e terapêutica, na dose de 500 mg por dia, não é afetada pela idade." ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Utilização no idoso" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Não indicado" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Não se encontra indicado." ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Crianças" ]
+         ]
+       ] )
+     ] )
+  ] [
+     fhir:indication ( [
+       fhir:concept [
+         fhir:text [ fhir:v "Prevenção dos acidentes isquémicos, em particular coronários, em doentes com arteriopatia dos membros inferiores no estadio de claudicação intermitente" ]
+       ]
+     ] ) ;
+     fhir:dosingGuideline ( [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Posologia habitual" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "A posologia habitual é de dois comprimidos por dia, a tomar durante as refeições." ] ;
+           fhir:additionalInstruction ( [
+             fhir:text [ fhir:v "Os comprimidos devem ser ingeridos com água e sem mastigar." ]
+           ] )
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Adultos" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Sem ajuste posológico" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Embora a farmacocinética da ticlopidina se encontre alterada no idoso, a atividade farmacológica e terapêutica, na dose de 500 mg por dia, não é afetada pela idade." ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Utilização no idoso" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Não indicado" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Não se encontra indicado." ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Crianças" ]
+         ]
+       ] )
+     ] )
+  ] [
+     fhir:indication ( [
+       fhir:concept [
+         fhir:text [ fhir:v "Prevenção e correção das alterações plaquetárias induzidas pelos circuitos extracorporais na cirurgia com circulação extracorporal" ]
+       ]
+     ] ) ;
+     fhir:dosingGuideline ( [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Posologia habitual" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "A posologia habitual é de dois comprimidos por dia, a tomar durante as refeições." ] ;
+           fhir:additionalInstruction ( [
+             fhir:text [ fhir:v "Os comprimidos devem ser ingeridos com água e sem mastigar." ]
+           ] )
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Adultos" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Sem ajuste posológico" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Embora a farmacocinética da ticlopidina se encontre alterada no idoso, a atividade farmacológica e terapêutica, na dose de 500 mg por dia, não é afetada pela idade." ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Utilização no idoso" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Não indicado" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Não se encontra indicado." ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Crianças" ]
+         ]
+       ] )
+     ] )
+  ] [
+     fhir:indication ( [
+       fhir:concept [
+         fhir:text [ fhir:v "Prevenção e correção das alterações plaquetárias induzidas pelos circuitos extracorporais na hemodiálise crónica" ]
+       ]
+     ] ) ;
+     fhir:dosingGuideline ( [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Posologia habitual" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "A posologia habitual é de dois comprimidos por dia, a tomar durante as refeições." ] ;
+           fhir:additionalInstruction ( [
+             fhir:text [ fhir:v "Os comprimidos devem ser ingeridos com água e sem mastigar." ]
+           ] )
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Adultos" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Sem ajuste posológico" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Embora a farmacocinética da ticlopidina se encontre alterada no idoso, a atividade farmacológica e terapêutica, na dose de 500 mg por dia, não é afetada pela idade." ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Utilização no idoso" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Não indicado" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Não se encontra indicado." ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Crianças" ]
+         ]
+       ] )
+     ] )
+  ] [
+     fhir:indication ( [
+       fhir:concept [
+         fhir:text [ fhir:v "Prevenção das oclusões subagudas após implante de stent coronário" ]
+       ]
+     ] ) ;
+     fhir:dosingGuideline ( [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Após implante de stent coronário" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "O tratamento pode ser iniciado imediatamente antes ou imediatamente após o implante do stent, devendo ser continuado durante cerca de um mês (dois comprimidos por dia), em associação com ácido acetilsalicílico (100 a 325 mg por dia)." ] ;
+           fhir:additionalInstruction ( [
+             fhir:text [ fhir:v "Tomar durante as refeições, com água e sem mastigar." ]
+           ] ) ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:bounds [
+                 a fhir:Duration ;
+                 fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+                 fhir:unit [ fhir:v "month" ] ;
+                 fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+                 fhir:code [ fhir:v "mo" ]
+               ]
+             ]
+           ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Adultos" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Sem ajuste posológico" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Embora a farmacocinética da ticlopidina se encontre alterada no idoso, a atividade farmacológica e terapêutica, na dose de 500 mg por dia, não é afetada pela idade." ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Utilização no idoso" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Não indicado" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Não se encontra indicado." ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Crianças" ]
+         ]
+       ] )
+     ] )
+  ] ) ; # 
+  fhir:medicineClassification ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/medication-classification-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "anatomical" ]
+       ] ) ;
+       fhir:text [ fhir:v "Código ATC" ]
+     ] ;
+     fhir:classification ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ATC"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "B01AC05" ] ;
+         fhir:display [ fhir:v "Ticlopidina" ]
+       ] )
+     ] )
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/medication-classification-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "therapeutic" ]
+       ] ) ;
+       fhir:text [ fhir:v "Grupo farmacoterapêutico" ]
+     ] ;
+     fhir:classification ( [
+       fhir:text [ fhir:v "4.3.1.4 Sangue. Anticoagulantes e antitrombóticos. Anticoagulantes. Antiagregantes plaquetários." ]
+     ] )
+  ] ) ; # 
+  fhir:clinicalUseIssue ( [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TiclopidinaGP250mg-CUD-ind1> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TiclopidinaGP250mg-CUD-ind1" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TiclopidinaGP250mg-CUD-ind2> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TiclopidinaGP250mg-CUD-ind2" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TiclopidinaGP250mg-CUD-ind3> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TiclopidinaGP250mg-CUD-ind3" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TiclopidinaGP250mg-CUD-ind4> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TiclopidinaGP250mg-CUD-ind4" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TiclopidinaGP250mg-CUD-ind5> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TiclopidinaGP250mg-CUD-ind5" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TiclopidinaGP250mg-CUD-contra1> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TiclopidinaGP250mg-CUD-contra1" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TiclopidinaGP250mg-CUD-contra2> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TiclopidinaGP250mg-CUD-contra2" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TiclopidinaGP250mg-CUD-contra3> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TiclopidinaGP250mg-CUD-contra3" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TiclopidinaGP250mg-CUD-contra4> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TiclopidinaGP250mg-CUD-contra4" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TiclopidinaGP250mg-CUD-contra5> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TiclopidinaGP250mg-CUD-contra5" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TiclopidinaGP250mg-CUD-contra6> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TiclopidinaGP250mg-CUD-contra6" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TiclopidinaGP250mg-CUD-contra7> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TiclopidinaGP250mg-CUD-contra7" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TiclopidinaGP250mg-CUD-contra8> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TiclopidinaGP250mg-CUD-contra8" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TiclopidinaGP250mg-CUD-contra9> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TiclopidinaGP250mg-CUD-contra9" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TiclopidinaGP250mg-CUD-contra10> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TiclopidinaGP250mg-CUD-contra10" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TiclopidinaGP250mg-CUD-contra11> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TiclopidinaGP250mg-CUD-contra11" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TiclopidinaGP250mg-CUD-int1> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TiclopidinaGP250mg-CUD-int1" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TiclopidinaGP250mg-CUD-int2> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TiclopidinaGP250mg-CUD-int2" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TiclopidinaGP250mg-CUD-int3> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TiclopidinaGP250mg-CUD-int3" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TiclopidinaGP250mg-CUD-int4> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TiclopidinaGP250mg-CUD-int4" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TiclopidinaGP250mg-CUD-int5> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TiclopidinaGP250mg-CUD-int5" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TiclopidinaGP250mg-CUD-int6> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TiclopidinaGP250mg-CUD-int6" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TiclopidinaGP250mg-CUD-int7> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TiclopidinaGP250mg-CUD-int7" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TiclopidinaGP250mg-CUD-int8> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TiclopidinaGP250mg-CUD-int8" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TiclopidinaGP250mg-CUD-int9> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TiclopidinaGP250mg-CUD-int9" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TiclopidinaGP250mg-CUD-int10> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TiclopidinaGP250mg-CUD-int10" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TiclopidinaGP250mg-CUD-int11> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TiclopidinaGP250mg-CUD-int11" ]
+  ] ) ; # 
+  fhir:definitional [
+     fhir:doseForm [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "39" ] ;
+         fhir:display [ fhir:v "Comprimido revestido por película" ]
+       ] )
+     ] ;
+     fhir:intendedRoute ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://example.com/fhir/example/CodeSystem/via-administracao-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "48" ] ;
+         fhir:display [ fhir:v "Via oral" ]
+       ] )
+     ] ) ;
+     fhir:ingredient ( [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Cloridrato de ticlopidina" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "ACTI" ]
+         ] )
+       ] ;
+       fhir:strength [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "250"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "mg" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mg" ]
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Amido de milho" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Celulose microcristalina" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Talco" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Povidona" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Ácido cítrico monoidratado" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Estearato de magnésio" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Hidroxipropilmetilcelulose" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Dióxido de titânio (E171)" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Polietilenoglicol" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Propilenoglicol" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Monolaureato de sorbitano" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

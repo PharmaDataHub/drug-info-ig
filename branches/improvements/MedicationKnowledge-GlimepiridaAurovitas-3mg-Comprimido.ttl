@@ -1,0 +1,474 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/MedicationKnowledge/GlimepiridaAurovitas-3mg-Comprimido> a fhir:MedicationKnowledge ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "GlimepiridaAurovitas-3mg-Comprimido"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH"^^xsd:anyURI ;
+       fhir:link <http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationKnowledge GlimepiridaAurovitas-3mg-Comprimido</b></p><a name=\"GlimepiridaAurovitas-3mg-Comprimido\"> </a><a name=\"hcGlimepiridaAurovitas-3mg-Comprimido\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MedicationKnowledgePDH.html\">Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento</a></p></div><p><b>code</b>: <span title=\"Codes:{http://infarmed.pt/medicamentos/prod_id 599044}\">Glimepirida Aurovitas 3 mg [A10BB12]</span></p><p><b>name</b>: Glimepirida Aurovitas [glimepirida] 3 mg comprimido</p><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 44054006}\">Tratamento da diabetes mellitus tipo 2, quando a dieta, exercício físico e redução de peso por si só não são suficientes</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose inicial e de manutenção</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td><td><b>Timing</b></td></tr><tr><td style=\"display: none\">*</td><td>Dose inicial de 1 mg de glimepirida por dia. Se for alcançado um bom controlo, esta dose deve ser usada na terapêutica de manutenção.</td><td><span title=\"Codes:\">Tomar pouco antes ou durante um pequeno-almoço substancial ou, caso não seja tomado, pouco antes ou durante a primeira refeição principal. Se uma dose for esquecida, não deve ser corrigido aumentando a dose seguinte.</span></td><td>Once per 1 day</td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Titulação em caso de controlo insatisfatório</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td><td><b>Timing</b></td><td><b>MaxDosePerPeriod</b></td></tr><tr><td style=\"display: none\">*</td><td>Aumento gradual da posologia para 2 mg, 3 mg ou 4 mg de glimepirida por dia, com intervalos de cerca de 1 a 2 semanas entre cada aumento da dose. A dose máxima recomendada é de 6 mg de glimepirida por dia.</td><td><span title=\"Codes:\">Doses superiores a 4 mg de glimepirida por dia só dão melhores resultados em casos excecionais.</span></td><td>Once per 1 day</td><td>6 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Terapêutica concomitante com metformina</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td></tr><tr><td style=\"display: none\">*</td><td>Em doentes não controlados adequadamente com a dose diária máxima de metformina, mantendo a dose de metformina, a glimepirida é iniciada com uma dose baixa e aumentada por titulação, dependendo do nível desejado de controlo metabólico, até à dose diária máxima.</td><td><span title=\"Codes:\">A terapêutica de combinação deve ser iniciada sob estrita vigilância médica.</span></td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Terapêutica concomitante com insulina</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td></tr><tr><td style=\"display: none\">*</td><td>Em doentes não controlados adequadamente com a dose máxima diária de glimepirida, pode ser iniciada insulina, se necessário. Mantendo a mesma dose de glimepirida, a insulina é iniciada com uma dose baixa e aumentada por titulação em função do nível desejado de controlo metabólico.</td><td><span title=\"Codes:\">A terapêutica de combinação deve ser iniciada sob estrita vigilância médica.</span></td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Passagem de outros antidiabéticos orais</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td><td><b>Timing</b></td></tr><tr><td style=\"display: none\">*</td><td>A dose inicial recomendada é de 1 mg de glimepirida por dia; com base na resposta, a dose pode ser aumentada gradualmente, como indicado anteriormente.</td><td><span title=\"Codes:\">Deve ter-se em consideração a potência e a semivida da medicação anterior. Nalguns casos, especialmente em antidiabéticos com semivida longa (por exemplo, clorpropamida), é recomendado um período de wash out de alguns dias para minimizar o risco de reações hipoglicémicas devidas ao efeito aditivo.</span></td><td>Once per 1 day</td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Passagem de insulina</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td></tr><tr><td style=\"display: none\">*</td><td>Em casos excecionais de doentes diabéticos tipo 2 controlados com insulina, pode ser indicada a passagem para glimepirida.</td><td><span title=\"Codes:\">A passagem deve ser feita sob vigilância médica estreita.</span></td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Doses gerais (população não especificada na RCM)</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Uso não recomendado</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Os dados de segurança e eficácia disponíveis na população pediátrica são insuficientes, pelo que o seu uso não é recomendado. Não há dados disponíveis em doentes com menos de 8 anos de idade; para crianças dos 8 aos 17 anos há dados limitados do uso em monoterapia.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">População pediátrica</span></td></tr></table></blockquote></blockquote><blockquote><p><b>medicineClassification</b></p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/medication-classification-type anatomical}\">Código ATC</span></p><p><b>classification</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ATC A10BB12}\">Glimepirida</span></p></blockquote><blockquote><p><b>medicineClassification</b></p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/medication-classification-type therapeutic}\">Grupo farmacoterapêutico</span></p><p><b>classification</b>: <span title=\"Codes:\">8.4.2. Hormonas e medicamentos usados no tratamento das doenças endócrinas. Insulinas, antidiabéticos orais e glucagom. Sulfonilureias</span></p></blockquote><p><b>clinicalUseIssue</b>: </p><ul><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas3mg-CUD-ind1.html\">ClinicalUseDefinition: type = indication</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas3mg-CUD-contra1.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas3mg-CUD-contra2.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas3mg-CUD-contra3.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas3mg-CUD-contra4.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas3mg-CUD-contra5.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas3mg-CUD-contra6.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas3mg-CUD-contra7.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas3mg-CUD-contra8.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas3mg-CUD-contra9.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas3mg-CUD-int1.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas3mg-CUD-int2.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas3mg-CUD-int3.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas3mg-CUD-int4.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas3mg-CUD-int5.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas3mg-CUD-int6.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas3mg-CUD-int7.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas3mg-CUD-int8.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas3mg-CUD-int9.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas3mg-CUD-int10.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas3mg-CUD-int11.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas3mg-CUD-int12.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas3mg-CUD-int13.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas3mg-CUD-int14.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas3mg-CUD-int15.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas3mg-CUD-int16.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas3mg-CUD-int17.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas3mg-CUD-int18.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas3mg-CUD-int19.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas3mg-CUD-int20.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas3mg-CUD-int21.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas3mg-CUD-int22.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas3mg-CUD-int23.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas3mg-CUD-int24.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas3mg-CUD-int25.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas3mg-CUD-int26.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas3mg-CUD-int27.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas3mg-CUD-int28.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas3mg-CUD-int29.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas3mg-CUD-int30.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas3mg-CUD-int31.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas3mg-CUD-int32.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas3mg-CUD-int33.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas3mg-CUD-int34.html\">ClinicalUseDefinition: type = interaction</a></li></ul><blockquote><p><b>definitional</b></p><p><b>doseForm</b>: <span title=\"Codes:{http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs 271}\">Comprimido</span></p><p><b>intendedRoute</b>: <span title=\"Codes:{http://example.com/fhir/example/CodeSystem/via-administracao-cs 48}\">Via oral</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Glimepirida</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass ACTI}\">active ingredient</span></p><p><b>strength</b>: 3 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Lactose mono-hidratada</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p><p><b>strength</b>: 156.45 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Celulose microcristalina (PH-101)</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Povidona (K 25)</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Amidoglicolato de sódio (Tipo A)</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Estearato de magnésio</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Óxido de ferro amarelo (E 172)</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://infarmed.pt/medicamentos/prod_id"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "599044" ] ;
+       fhir:display [ fhir:v "Glimepirida Aurovitas 3 mg [A10BB12]" ]
+     ] )
+  ] ; # 
+  fhir:name ( [ fhir:v "Glimepirida Aurovitas [glimepirida] 3 mg comprimido"] ) ; # 
+  fhir:indicationGuideline ( [
+     fhir:indication ( [
+       fhir:concept [
+         fhir:coding ( [
+           a sct:44054006 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "44054006" ] ;
+           fhir:display [ fhir:v "Diabetes mellitus type 2" ]
+         ] ) ;
+         fhir:text [ fhir:v "Tratamento da diabetes mellitus tipo 2, quando a dieta, exercício físico e redução de peso por si só não são suficientes" ]
+       ]
+     ] ) ;
+     fhir:dosingGuideline ( [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose inicial e de manutenção" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Dose inicial de 1 mg de glimepirida por dia. Se for alcançado um bom controlo, esta dose deve ser usada na terapêutica de manutenção." ] ;
+           fhir:additionalInstruction ( [
+             fhir:text [ fhir:v "Tomar pouco antes ou durante um pequeno-almoço substancial ou, caso não seja tomado, pouco antes ou durante a primeira refeição principal. Se uma dose for esquecida, não deve ser corrigido aumentando a dose seguinte." ]
+           ] ) ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ]
+         ] )
+       ] [
+         fhir:type [
+           fhir:text [ fhir:v "Titulação em caso de controlo insatisfatório" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Aumento gradual da posologia para 2 mg, 3 mg ou 4 mg de glimepirida por dia, com intervalos de cerca de 1 a 2 semanas entre cada aumento da dose. A dose máxima recomendada é de 6 mg de glimepirida por dia." ] ;
+           fhir:additionalInstruction ( [
+             fhir:text [ fhir:v "Doses superiores a 4 mg de glimepirida por dia só dão melhores resultados em casos excecionais." ]
+           ] ) ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ] ;
+           fhir:maxDosePerPeriod ( [
+             fhir:numerator [
+               fhir:value [ fhir:v "6"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "mg" ] ;
+               fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "mg" ]
+             ] ;
+             fhir:denominator [
+               fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "day" ] ;
+               fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "d" ]
+             ]
+           ] )
+         ] )
+       ] [
+         fhir:type [
+           fhir:text [ fhir:v "Terapêutica concomitante com metformina" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Em doentes não controlados adequadamente com a dose diária máxima de metformina, mantendo a dose de metformina, a glimepirida é iniciada com uma dose baixa e aumentada por titulação, dependendo do nível desejado de controlo metabólico, até à dose diária máxima." ] ;
+           fhir:additionalInstruction ( [
+             fhir:text [ fhir:v "A terapêutica de combinação deve ser iniciada sob estrita vigilância médica." ]
+           ] )
+         ] )
+       ] [
+         fhir:type [
+           fhir:text [ fhir:v "Terapêutica concomitante com insulina" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Em doentes não controlados adequadamente com a dose máxima diária de glimepirida, pode ser iniciada insulina, se necessário. Mantendo a mesma dose de glimepirida, a insulina é iniciada com uma dose baixa e aumentada por titulação em função do nível desejado de controlo metabólico." ] ;
+           fhir:additionalInstruction ( [
+             fhir:text [ fhir:v "A terapêutica de combinação deve ser iniciada sob estrita vigilância médica." ]
+           ] )
+         ] )
+       ] [
+         fhir:type [
+           fhir:text [ fhir:v "Passagem de outros antidiabéticos orais" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "A dose inicial recomendada é de 1 mg de glimepirida por dia; com base na resposta, a dose pode ser aumentada gradualmente, como indicado anteriormente." ] ;
+           fhir:additionalInstruction ( [
+             fhir:text [ fhir:v "Deve ter-se em consideração a potência e a semivida da medicação anterior. Nalguns casos, especialmente em antidiabéticos com semivida longa (por exemplo, clorpropamida), é recomendado um período de wash out de alguns dias para minimizar o risco de reações hipoglicémicas devidas ao efeito aditivo." ]
+           ] ) ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ]
+         ] )
+       ] [
+         fhir:type [
+           fhir:text [ fhir:v "Passagem de insulina" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Em casos excecionais de doentes diabéticos tipo 2 controlados com insulina, pode ser indicada a passagem para glimepirida." ] ;
+           fhir:additionalInstruction ( [
+             fhir:text [ fhir:v "A passagem deve ser feita sob vigilância médica estreita." ]
+           ] )
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Doses gerais (população não especificada na RCM)" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Uso não recomendado" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Os dados de segurança e eficácia disponíveis na população pediátrica são insuficientes, pelo que o seu uso não é recomendado. Não há dados disponíveis em doentes com menos de 8 anos de idade; para crianças dos 8 aos 17 anos há dados limitados do uso em monoterapia." ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "População pediátrica" ]
+         ]
+       ] )
+     ] )
+  ] ) ; # 
+  fhir:medicineClassification ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/medication-classification-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "anatomical" ]
+       ] ) ;
+       fhir:text [ fhir:v "Código ATC" ]
+     ] ;
+     fhir:classification ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ATC"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "A10BB12" ] ;
+         fhir:display [ fhir:v "Glimepirida" ]
+       ] )
+     ] )
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/medication-classification-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "therapeutic" ]
+       ] ) ;
+       fhir:text [ fhir:v "Grupo farmacoterapêutico" ]
+     ] ;
+     fhir:classification ( [
+       fhir:text [ fhir:v "8.4.2. Hormonas e medicamentos usados no tratamento das doenças endócrinas. Insulinas, antidiabéticos orais e glucagom. Sulfonilureias" ]
+     ] )
+  ] ) ; # 
+  fhir:clinicalUseIssue ( [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-ind1> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-ind1" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-contra1> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-contra1" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-contra2> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-contra2" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-contra3> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-contra3" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-contra4> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-contra4" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-contra5> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-contra5" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-contra6> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-contra6" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-contra7> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-contra7" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-contra8> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-contra8" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-contra9> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-contra9" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int1> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int1" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int2> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int2" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int3> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int3" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int4> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int4" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int5> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int5" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int6> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int6" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int7> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int7" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int8> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int8" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int9> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int9" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int10> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int10" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int11> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int11" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int12> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int12" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int13> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int13" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int14> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int14" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int15> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int15" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int16> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int16" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int17> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int17" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int18> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int18" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int19> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int19" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int20> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int20" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int21> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int21" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int22> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int22" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int23> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int23" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int24> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int24" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int25> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int25" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int26> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int26" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int27> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int27" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int28> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int28" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int29> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int29" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int30> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int30" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int31> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int31" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int32> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int32" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int33> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int33" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int34> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/GlimepiridaAurovitas3mg-CUD-int34" ]
+  ] ) ; # 
+  fhir:definitional [
+     fhir:doseForm [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "271" ] ;
+         fhir:display [ fhir:v "Comprimido" ]
+       ] )
+     ] ;
+     fhir:intendedRoute ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://example.com/fhir/example/CodeSystem/via-administracao-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "48" ] ;
+         fhir:display [ fhir:v "Via oral" ]
+       ] )
+     ] ) ;
+     fhir:ingredient ( [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Glimepirida" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "ACTI" ]
+         ] )
+       ] ;
+       fhir:strength [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "3"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "mg" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mg" ]
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Lactose mono-hidratada" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ] ;
+       fhir:strength [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v 156.45 ] ;
+         fhir:unit [ fhir:v "mg" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mg" ]
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Celulose microcristalina (PH-101)" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Povidona (K 25)" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Amidoglicolato de sódio (Tipo A)" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Estearato de magnésio" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Óxido de ferro amarelo (E 172)" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

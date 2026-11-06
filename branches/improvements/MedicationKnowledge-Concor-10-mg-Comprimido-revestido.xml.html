@@ -1,0 +1,857 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Concor-10-mg-Comprimido-revestido - XML Representation - HL7 PT FHIR Implementation Guide: IG de Exemplo Versão 1 | STU1 v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/affiliate.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"7.95"}
+    h3,h4,h5,h6{--heading-prefix:"7.95"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a id="affiliate-logo" no-external="true" href="http://hl7.eu">
+    <img height="71" alt="Visit the HL7 affiliate website" src="assets/images/affiliate.png"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="30" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 PT FHIR Implementation Guide: IG de Exemplo Versão 1 | STU1</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - STU1
+
+
+
+  Portugal (PRT)
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="background.html">Introdução</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Especificação
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="spec.html">Conteúdo</a>
+      </li>
+      <li>
+        <a href="terminology.html">Terminologias</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artefactos</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Concor-10-mg-Comprimido-revestido</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 7" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">HL7 PT FHIR Implementation Guide: IG de Exemplo Versão 1 | STU1, published by HL7 Portugal. This guide is not an authorized publication; it is the continuous build for version 1.0.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href='https://github.com/PharmaDataHub/drug-info-ig/tree/improvements'>https://github.com/PharmaDataHub/drug-info-ig/tree/improvements</a> and changes regularly. See the <a href='http://example.com/fhir/example/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="MedicationKnowledge-Concor-10-mg-Comprimido-revestido.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li class="active">
+      <a href="#">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="MedicationKnowledge-Concor-10-mg-Comprimido-revestido.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="MedicationKnowledge-Concor-10-mg-Comprimido-revestido.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Concor-10-mg-Comprimido-revestido - XML Representation</h2>
+
+
+<p><a href="MedicationKnowledge-Concor-10-mg-Comprimido-revestido.xml" no-download="true">Raw xml</a> | <a href="MedicationKnowledge-Concor-10-mg-Comprimido-revestido.xml" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="xml" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">
+&lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge">MedicationKnowledge</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/resource.html#XMedicationKnowledge.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;Concor-10-mg-Comprimido-revestido&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/resource.html#XMedicationKnowledge.meta">meta</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/resource.html#Meta#XMeta.profile">profile</a>
+             <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/resource.html#XMedicationKnowledge.meta">meta</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/domainresource.html#XMedicationKnowledge.text">text</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#XNarrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: MedicationKnowledge Concor-10-mg-Comprimido-revestido&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;Concor-10-mg-Comprimido-revestido&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcConcor-10-mg-Comprimido-revestido&quot;&gt; &lt;/a&gt;&lt;div style=&quot;display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;/&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profile: &lt;a href=&quot;StructureDefinition-MedicationKnowledgePDH.html&quot;&gt;Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=&quot;Codes:{http://infarmed.pt/medicamentos/prod_id 2142}&quot;&gt;Concor 10 mg [C07AB07]&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Concor [Bisoprolol] 10 mg Comprimido revestido&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;indicationGuideline&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Indications&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Concept&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=&quot;Codes:&quot;&gt;Tratamento da hipertensão&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;dosingGuideline&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;dosage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:&quot;&gt;Dose habitual diária&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;dosage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;text&lt;/b&gt;: A dose é de 5 mg de bisoprolol, fumarato, uma vez por dia. Se necessário, a dose pode ser aumentada para 10 mg uma vez por dia. A dose máxima recomendada é de 20 mg uma vez por dia. Tomar de manhã, com ou sem alimentos, engolindo os comprimidos com um pouco de líquido, sem os mastigar.&lt;/p&gt;&lt;p&gt;&lt;b&gt;additionalInstruction&lt;/b&gt;: &lt;span title=&quot;Codes:&quot;&gt;Em todos os casos a dose deve ser ajustada individualmente, tendo em conta a frequência cardíaca e a eficácia terapêutica. O tratamento é geralmente de longa duração e não deve ser interrompido abruptamente, especialmente em doentes com doença isquémica cardíaca; recomenda-se a redução gradual da dose.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;timing&lt;/b&gt;: Morning, Once per 1 day&lt;/p&gt;&lt;h3&gt;DoseAndRates&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Dose[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;5-10 mg&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;maxDosePerPeriod&lt;/b&gt;: 20 mg&lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt; (Details: UCUM  codemg = 'mg')&lt;/span&gt;/1 day&lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt; (Details: UCUM  coded = 'd')&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;h3&gt;PatientCharacteristics&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=&quot;Codes:&quot;&gt;Population&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;span title=&quot;Codes:&quot;&gt;Adultos&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;dosingGuideline&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;dosage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:&quot;&gt;Dose em doentes com insuficiência renal ou hepática grave&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Dosages&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Text&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;AdditionalInstruction&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Timing&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;MaxDosePerPeriod&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;Em doentes com insuficiência renal grave (depuração da creatinina &amp;lt; 20 ml/min) e em doentes com perturbações graves da função hepática, não se recomenda exceder uma dose de 10 mg de bisoprolol, fumarato uma vez por dia.&lt;/td&gt;&lt;td&gt;&lt;span title=&quot;Codes:&quot;&gt;Em doentes com insuficiência renal ou hepática de gravidade ligeira a moderada, normalmente não é necessário efetuar um ajuste posológico. A experiência em doentes em diálise renal é limitada, contudo não há evidência de que seja necessário alterar o regime posológico.&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Once per 1 day&lt;/td&gt;&lt;td&gt;10 mg&lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt; (Details: UCUM  codemg = 'mg')&lt;/span&gt;/1 day&lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt; (Details: UCUM  coded = 'd')&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;h3&gt;PatientCharacteristics&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=&quot;Codes:&quot;&gt;Population&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;span title=&quot;Codes:&quot;&gt;Doentes com insuficiência renal grave (depuração da creatinina &amp;lt; 20 ml/min) ou perturbações graves da função hepática&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;indicationGuideline&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Indications&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Concept&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=&quot;Codes:&quot;&gt;Tratamento da cardiopatia coronária (angina de peito)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;dosingGuideline&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;dosage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:&quot;&gt;Dose habitual diária&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;dosage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;text&lt;/b&gt;: A dose é de 5 mg de bisoprolol, fumarato, uma vez por dia. Se necessário, a dose pode ser aumentada para 10 mg uma vez por dia. A dose máxima recomendada é de 20 mg uma vez por dia. Tomar de manhã, com ou sem alimentos, engolindo os comprimidos com um pouco de líquido, sem os mastigar.&lt;/p&gt;&lt;p&gt;&lt;b&gt;additionalInstruction&lt;/b&gt;: &lt;span title=&quot;Codes:&quot;&gt;Em todos os casos a dose deve ser ajustada individualmente, tendo em conta a frequência cardíaca e a eficácia terapêutica. O tratamento é geralmente de longa duração e não deve ser interrompido abruptamente, especialmente em doentes com doença isquémica cardíaca; recomenda-se a redução gradual da dose.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;timing&lt;/b&gt;: Morning, Once per 1 day&lt;/p&gt;&lt;h3&gt;DoseAndRates&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Dose[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;5-10 mg&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;maxDosePerPeriod&lt;/b&gt;: 20 mg&lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt; (Details: UCUM  codemg = 'mg')&lt;/span&gt;/1 day&lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt; (Details: UCUM  coded = 'd')&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;h3&gt;PatientCharacteristics&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=&quot;Codes:&quot;&gt;Population&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;span title=&quot;Codes:&quot;&gt;Adultos&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;dosingGuideline&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;dosage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:&quot;&gt;Dose em doentes com insuficiência renal ou hepática grave&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Dosages&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Text&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Timing&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;MaxDosePerPeriod&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;Em doentes com insuficiência renal grave (depuração da creatinina &amp;lt; 20 ml/min) e em doentes com perturbações graves da função hepática, não se recomenda exceder uma dose de 10 mg de bisoprolol, fumarato uma vez por dia.&lt;/td&gt;&lt;td&gt;Once per 1 day&lt;/td&gt;&lt;td&gt;10 mg&lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt; (Details: UCUM  codemg = 'mg')&lt;/span&gt;/1 day&lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt; (Details: UCUM  coded = 'd')&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;h3&gt;PatientCharacteristics&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=&quot;Codes:&quot;&gt;Population&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;span title=&quot;Codes:&quot;&gt;Doentes com insuficiência renal grave (depuração da creatinina &amp;lt; 20 ml/min) ou perturbações graves da função hepática&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;medicineClassification&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:&quot;&gt;Código ATC&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;classification&lt;/b&gt;: &lt;span title=&quot;Codes:{http://terminology.hl7.org/CodeSystem/v3-ATC C07AB07}&quot;&gt;Bisoprolol&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;medicineClassification&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:&quot;&gt;Grupo farmacoterapêutico&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;classification&lt;/b&gt;: &lt;span title=&quot;Codes:&quot;&gt;3.4.4.2.1 - Aparelho cardiovascular. Anti-hipertensores. Depressores de atividade adrenérgica. Bloqueadores Beta. Seletivos cardíacos&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;clinicalUseIssue&lt;/b&gt;: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;ClinicalUseDefinition-Concor10mg-CUD-contra1.html&quot;&gt;ClinicalUseDefinition: type = contraindication&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;ClinicalUseDefinition-Concor10mg-CUD-contra2.html&quot;&gt;ClinicalUseDefinition: type = contraindication&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;ClinicalUseDefinition-Concor10mg-CUD-contra3.html&quot;&gt;ClinicalUseDefinition: type = contraindication&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;ClinicalUseDefinition-Concor10mg-CUD-contra4.html&quot;&gt;ClinicalUseDefinition: type = contraindication&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;ClinicalUseDefinition-Concor10mg-CUD-contra5.html&quot;&gt;ClinicalUseDefinition: type = contraindication&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;ClinicalUseDefinition-Concor10mg-CUD-contra6.html&quot;&gt;ClinicalUseDefinition: type = contraindication&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;ClinicalUseDefinition-Concor10mg-CUD-contra7.html&quot;&gt;ClinicalUseDefinition: type = contraindication&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;ClinicalUseDefinition-Concor10mg-CUD-contra8.html&quot;&gt;ClinicalUseDefinition: type = contraindication&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;ClinicalUseDefinition-Concor10mg-CUD-contra9.html&quot;&gt;ClinicalUseDefinition: type = contraindication&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;ClinicalUseDefinition-Concor10mg-CUD-contra10.html&quot;&gt;ClinicalUseDefinition: type = contraindication&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;ClinicalUseDefinition-Concor10mg-CUD-contra11.html&quot;&gt;ClinicalUseDefinition: type = contraindication&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;ClinicalUseDefinition-Concor10mg-CUD-contra12.html&quot;&gt;ClinicalUseDefinition: type = contraindication&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;ClinicalUseDefinition-Concor10mg-CUD-ind1.html&quot;&gt;ClinicalUseDefinition: type = indication&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;ClinicalUseDefinition-Concor10mg-CUD-ind2.html&quot;&gt;ClinicalUseDefinition: type = indication&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;ClinicalUseDefinition-Concor10mg-CUD-int1.html&quot;&gt;ClinicalUseDefinition: type = interaction&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;ClinicalUseDefinition-Concor10mg-CUD-int2.html&quot;&gt;ClinicalUseDefinition: type = interaction&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;ClinicalUseDefinition-Concor10mg-CUD-int3.html&quot;&gt;ClinicalUseDefinition: type = interaction&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;ClinicalUseDefinition-Concor10mg-CUD-int4.html&quot;&gt;ClinicalUseDefinition: type = interaction&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;ClinicalUseDefinition-Concor10mg-CUD-int5.html&quot;&gt;ClinicalUseDefinition: type = interaction&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;ClinicalUseDefinition-Concor10mg-CUD-int6.html&quot;&gt;ClinicalUseDefinition: type = interaction&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;ClinicalUseDefinition-Concor10mg-CUD-int7.html&quot;&gt;ClinicalUseDefinition: type = interaction&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;ClinicalUseDefinition-Concor10mg-CUD-int8.html&quot;&gt;ClinicalUseDefinition: type = interaction&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;ClinicalUseDefinition-Concor10mg-CUD-int9.html&quot;&gt;ClinicalUseDefinition: type = interaction&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;ClinicalUseDefinition-Concor10mg-CUD-int10.html&quot;&gt;ClinicalUseDefinition: type = interaction&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;ClinicalUseDefinition-Concor10mg-CUD-int11.html&quot;&gt;ClinicalUseDefinition: type = interaction&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;ClinicalUseDefinition-Concor10mg-CUD-int12.html&quot;&gt;ClinicalUseDefinition: type = interaction&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;ClinicalUseDefinition-Concor10mg-CUD-int13.html&quot;&gt;ClinicalUseDefinition: type = interaction&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;definitional&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;doseForm&lt;/b&gt;: &lt;span title=&quot;Codes:{http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs 38}, {https://extranet.infarmed.pt/INFOMED-fo/detalhes-medicamento.xhtml 038}&quot;&gt;Comprimido revestido&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;intendedRoute&lt;/b&gt;: &lt;span title=&quot;Codes:{http://example.com/fhir/example/CodeSystem/via-administracao-cs 48}&quot;&gt;Via oral&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;ingredient&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Items&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Concept&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=&quot;Codes:{http://infarmed.pt/substancia 21790}&quot;&gt;Bisoprolol, fumarato&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass ACTI}&quot;&gt;active ingredient&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;strength&lt;/b&gt;: 10 mg&lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt; (Details: UCUM  codemg = 'mg')&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;ingredient&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Items&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Concept&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=&quot;Codes:{http://infarmed.pt/substancia [PREENCHER]}&quot;&gt;Sílica anidra coloidal&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}&quot;&gt;inactive ingredient&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;ingredient&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Items&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Concept&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=&quot;Codes:{http://infarmed.pt/substancia [PREENCHER]}&quot;&gt;Estearato de magnésio&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}&quot;&gt;inactive ingredient&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;ingredient&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Items&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Concept&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=&quot;Codes:{http://infarmed.pt/substancia [PREENCHER]}&quot;&gt;Crospovidona&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}&quot;&gt;inactive ingredient&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;ingredient&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Items&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Concept&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=&quot;Codes:{http://infarmed.pt/substancia [PREENCHER]}&quot;&gt;Celulose microcristalina&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}&quot;&gt;inactive ingredient&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;ingredient&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Items&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Concept&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=&quot;Codes:{http://infarmed.pt/substancia [PREENCHER]}&quot;&gt;Amido de milho&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}&quot;&gt;inactive ingredient&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;ingredient&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Items&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Concept&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=&quot;Codes:{http://infarmed.pt/substancia [PREENCHER]}&quot;&gt;Hidrogenofosfato de cálcio anidro&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}&quot;&gt;inactive ingredient&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;ingredient&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Items&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Concept&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=&quot;Codes:{http://infarmed.pt/substancia [PREENCHER]}&quot;&gt;Óxido de ferro amarelo (E172)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}&quot;&gt;inactive ingredient&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;ingredient&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Items&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Concept&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=&quot;Codes:{http://infarmed.pt/substancia [PREENCHER]}&quot;&gt;Dimeticone&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}&quot;&gt;inactive ingredient&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;ingredient&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Items&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Concept&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=&quot;Codes:{http://infarmed.pt/substancia [PREENCHER]}&quot;&gt;Macrogol 400&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}&quot;&gt;inactive ingredient&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;ingredient&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Items&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Concept&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=&quot;Codes:{http://infarmed.pt/substancia [PREENCHER]}&quot;&gt;Dióxido de titânio (E171)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}&quot;&gt;inactive ingredient&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;ingredient&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Items&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Concept&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=&quot;Codes:{http://infarmed.pt/substancia [PREENCHER]}&quot;&gt;Hipromelose&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}&quot;&gt;inactive ingredient&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;ingredient&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Items&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Concept&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=&quot;Codes:{http://infarmed.pt/substancia [PREENCHER]}&quot;&gt;Óxido de ferro vermelho (E172)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}&quot;&gt;inactive ingredient&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+  &lt;/<a href="http://hl7.org/fhir/R5/domainresource.html#XMedicationKnowledge.text">text</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.code">code</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://infarmed.pt/medicamentos/prod_id&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;2142&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Concor 10 mg [C07AB07]&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.code">code</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Concor [Bisoprolol] 10 mg Comprimido revestido&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline">indicationGuideline</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.indication">indication</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Tratamento da hipertensão&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.concept">concept</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.indication">indication</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline">dosingGuideline</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.dosage">dosage</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.dosage.type">type</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Dose habitual diária&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.dosage.type">type</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.dosage.dosage">dosage</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.text">text</a>
+                <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;A dose é de 5 mg de bisoprolol, fumarato, uma vez por dia. Se necessário, a dose pode ser aumentada para 10 mg uma vez por dia. A dose máxima recomendada é de 20 mg uma vez por dia. Tomar de manhã, com ou sem alimentos, engolindo os comprimidos com um pouco de líquido, sem os mastigar.&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.additionalInstruction">additionalInstruction</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.text">text</a>
+                  <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Em todos os casos a dose deve ser ajustada individualmente, tendo em conta a frequência cardíaca e a eficácia terapêutica. O tratamento é geralmente de longa duração e não deve ser interrompido abruptamente, especialmente em doentes com doença isquémica cardíaca; recomenda-se a redução gradual da dose.&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.additionalInstruction">additionalInstruction</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.timing">timing</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#XTiming.repeat">repeat</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#XTiming.repeat.frequency">frequency</a> <a href="http://hl7.org/fhir/R5/datatypes.html#positiveInt">value</a>=&quot;1&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#XTiming.repeat.period">period</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>=&quot;1&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#XTiming.repeat.periodUnit">periodUnit</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;d&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#XTiming.repeat.when">when</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;MORN&quot;/&gt;
+            &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#XTiming.repeat">repeat</a>&gt;
+          &lt;/<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.timing">timing</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.doseAndRate">doseAndRate</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.doseAndRate.dose_x_">doseRange</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Range#XRange.low">low</a>&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>=&quot;5&quot;/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.unit">unit</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;mg&quot;/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://unitsofmeasure.org&quot;/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;mg&quot;/&gt;
+              &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#Range#XRange.low">low</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Range#XRange.high">high</a>&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>=&quot;10&quot;/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.unit">unit</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;mg&quot;/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://unitsofmeasure.org&quot;/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;mg&quot;/&gt;
+              &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#Range#XRange.high">high</a>&gt;
+            &lt;/<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.doseAndRate.dose_x_">doseRange</a>&gt;
+          &lt;/<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.doseAndRate">doseAndRate</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.maxDosePerPeriod">maxDosePerPeriod</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Ratio#XRatio.numerator">numerator</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>=&quot;20&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.unit">unit</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;mg&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://unitsofmeasure.org&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;mg&quot;/&gt;
+            &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#Ratio#XRatio.numerator">numerator</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Ratio#XRatio.denominator">denominator</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>=&quot;1&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.unit">unit</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;day&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://unitsofmeasure.org&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;d&quot;/&gt;
+            &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#Ratio#XRatio.denominator">denominator</a>&gt;
+          &lt;/<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.maxDosePerPeriod">maxDosePerPeriod</a>&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.dosage.dosage">dosage</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.dosage">dosage</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.patientCharacteristic">patientCharacteristic</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.patientCharacteristic.type">type</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Population&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.patientCharacteristic.type">type</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.patientCharacteristic.value_x_">valueCodeableConcept</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Adultos&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.patientCharacteristic.value_x_">valueCodeableConcept</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.patientCharacteristic">patientCharacteristic</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline">dosingGuideline</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline">dosingGuideline</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.dosage">dosage</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.dosage.type">type</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.text">text</a>
+                <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Dose em doentes com insuficiência renal ou hepática grave&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.dosage.type">type</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.dosage.dosage">dosage</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.text">text</a>
+                <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Em doentes com insuficiência renal grave (depuração da creatinina &amp;lt; 20 ml/min) e em doentes com perturbações graves da função hepática, não se recomenda exceder uma dose de 10 mg de bisoprolol, fumarato uma vez por dia.&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.additionalInstruction">additionalInstruction</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.text">text</a>
+                  <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Em doentes com insuficiência renal ou hepática de gravidade ligeira a moderada, normalmente não é necessário efetuar um ajuste posológico. A experiência em doentes em diálise renal é limitada, contudo não há evidência de que seja necessário alterar o regime posológico.&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.additionalInstruction">additionalInstruction</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.timing">timing</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#XTiming.repeat">repeat</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#XTiming.repeat.frequency">frequency</a> <a href="http://hl7.org/fhir/R5/datatypes.html#positiveInt">value</a>=&quot;1&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#XTiming.repeat.period">period</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>=&quot;1&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#XTiming.repeat.periodUnit">periodUnit</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;d&quot;/&gt;
+            &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#XTiming.repeat">repeat</a>&gt;
+          &lt;/<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.timing">timing</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.maxDosePerPeriod">maxDosePerPeriod</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Ratio#XRatio.numerator">numerator</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>=&quot;10&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.unit">unit</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;mg&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://unitsofmeasure.org&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;mg&quot;/&gt;
+            &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#Ratio#XRatio.numerator">numerator</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Ratio#XRatio.denominator">denominator</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>=&quot;1&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.unit">unit</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;day&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://unitsofmeasure.org&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;d&quot;/&gt;
+            &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#Ratio#XRatio.denominator">denominator</a>&gt;
+          &lt;/<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.maxDosePerPeriod">maxDosePerPeriod</a>&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.dosage.dosage">dosage</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.dosage">dosage</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.patientCharacteristic">patientCharacteristic</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.patientCharacteristic.type">type</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Population&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.patientCharacteristic.type">type</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.patientCharacteristic.value_x_">valueCodeableConcept</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.text">text</a>
+                <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Doentes com insuficiência renal grave (depuração da creatinina &amp;lt; 20 ml/min) ou perturbações graves da função hepática&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.patientCharacteristic.value_x_">valueCodeableConcept</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.patientCharacteristic">patientCharacteristic</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline">dosingGuideline</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline">indicationGuideline</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline">indicationGuideline</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.indication">indication</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Tratamento da cardiopatia coronária (angina de peito)&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.concept">concept</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.indication">indication</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline">dosingGuideline</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.dosage">dosage</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.dosage.type">type</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Dose habitual diária&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.dosage.type">type</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.dosage.dosage">dosage</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.text">text</a>
+                <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;A dose é de 5 mg de bisoprolol, fumarato, uma vez por dia. Se necessário, a dose pode ser aumentada para 10 mg uma vez por dia. A dose máxima recomendada é de 20 mg uma vez por dia. Tomar de manhã, com ou sem alimentos, engolindo os comprimidos com um pouco de líquido, sem os mastigar.&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.additionalInstruction">additionalInstruction</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.text">text</a>
+                  <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Em todos os casos a dose deve ser ajustada individualmente, tendo em conta a frequência cardíaca e a eficácia terapêutica. O tratamento é geralmente de longa duração e não deve ser interrompido abruptamente, especialmente em doentes com doença isquémica cardíaca; recomenda-se a redução gradual da dose.&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.additionalInstruction">additionalInstruction</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.timing">timing</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#XTiming.repeat">repeat</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#XTiming.repeat.frequency">frequency</a> <a href="http://hl7.org/fhir/R5/datatypes.html#positiveInt">value</a>=&quot;1&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#XTiming.repeat.period">period</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>=&quot;1&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#XTiming.repeat.periodUnit">periodUnit</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;d&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#XTiming.repeat.when">when</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;MORN&quot;/&gt;
+            &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#XTiming.repeat">repeat</a>&gt;
+          &lt;/<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.timing">timing</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.doseAndRate">doseAndRate</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.doseAndRate.dose_x_">doseRange</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Range#XRange.low">low</a>&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>=&quot;5&quot;/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.unit">unit</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;mg&quot;/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://unitsofmeasure.org&quot;/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;mg&quot;/&gt;
+              &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#Range#XRange.low">low</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Range#XRange.high">high</a>&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>=&quot;10&quot;/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.unit">unit</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;mg&quot;/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://unitsofmeasure.org&quot;/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;mg&quot;/&gt;
+              &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#Range#XRange.high">high</a>&gt;
+            &lt;/<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.doseAndRate.dose_x_">doseRange</a>&gt;
+          &lt;/<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.doseAndRate">doseAndRate</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.maxDosePerPeriod">maxDosePerPeriod</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Ratio#XRatio.numerator">numerator</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>=&quot;20&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.unit">unit</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;mg&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://unitsofmeasure.org&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;mg&quot;/&gt;
+            &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#Ratio#XRatio.numerator">numerator</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Ratio#XRatio.denominator">denominator</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>=&quot;1&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.unit">unit</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;day&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://unitsofmeasure.org&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;d&quot;/&gt;
+            &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#Ratio#XRatio.denominator">denominator</a>&gt;
+          &lt;/<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.maxDosePerPeriod">maxDosePerPeriod</a>&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.dosage.dosage">dosage</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.dosage">dosage</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.patientCharacteristic">patientCharacteristic</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.patientCharacteristic.type">type</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Population&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.patientCharacteristic.type">type</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.patientCharacteristic.value_x_">valueCodeableConcept</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Adultos&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.patientCharacteristic.value_x_">valueCodeableConcept</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.patientCharacteristic">patientCharacteristic</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline">dosingGuideline</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline">dosingGuideline</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.dosage">dosage</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.dosage.type">type</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.text">text</a>
+                <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Dose em doentes com insuficiência renal ou hepática grave&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.dosage.type">type</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.dosage.dosage">dosage</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.text">text</a>
+                <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Em doentes com insuficiência renal grave (depuração da creatinina &amp;lt; 20 ml/min) e em doentes com perturbações graves da função hepática, não se recomenda exceder uma dose de 10 mg de bisoprolol, fumarato uma vez por dia.&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.timing">timing</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#XTiming.repeat">repeat</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#XTiming.repeat.frequency">frequency</a> <a href="http://hl7.org/fhir/R5/datatypes.html#positiveInt">value</a>=&quot;1&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#XTiming.repeat.period">period</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>=&quot;1&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#XTiming.repeat.periodUnit">periodUnit</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;d&quot;/&gt;
+            &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#XTiming.repeat">repeat</a>&gt;
+          &lt;/<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.timing">timing</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.maxDosePerPeriod">maxDosePerPeriod</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Ratio#XRatio.numerator">numerator</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>=&quot;10&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.unit">unit</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;mg&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://unitsofmeasure.org&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;mg&quot;/&gt;
+            &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#Ratio#XRatio.numerator">numerator</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Ratio#XRatio.denominator">denominator</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>=&quot;1&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.unit">unit</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;day&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://unitsofmeasure.org&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;d&quot;/&gt;
+            &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#Ratio#XRatio.denominator">denominator</a>&gt;
+          &lt;/<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#XDosage.maxDosePerPeriod">maxDosePerPeriod</a>&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.dosage.dosage">dosage</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.dosage">dosage</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.patientCharacteristic">patientCharacteristic</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.patientCharacteristic.type">type</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Population&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.patientCharacteristic.type">type</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.patientCharacteristic.value_x_">valueCodeableConcept</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.text">text</a>
+                <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Doentes com insuficiência renal grave (depuração da creatinina &amp;lt; 20 ml/min) ou perturbações graves da função hepática&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.patientCharacteristic.value_x_">valueCodeableConcept</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline.patientCharacteristic">patientCharacteristic</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline.dosingGuideline">dosingGuideline</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.indicationGuideline">indicationGuideline</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.medicineClassification">medicineClassification</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.medicineClassification.type">type</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Código ATC&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.medicineClassification.type">type</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.medicineClassification.classification">classification</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v3-ATC&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;C07AB07&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Bisoprolol&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.medicineClassification.classification">classification</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.medicineClassification">medicineClassification</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.medicineClassification">medicineClassification</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.medicineClassification.type">type</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Grupo farmacoterapêutico&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.medicineClassification.type">type</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.medicineClassification.classification">classification</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.text">text</a>
+            <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;3.4.4.2.1 - Aparelho cardiovascular. Anti-hipertensores. Depressores de atividade adrenérgica. Bloqueadores Beta. Seletivos cardíacos&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.medicineClassification.classification">classification</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.medicineClassification">medicineClassification</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;<a href="ClinicalUseDefinition-Concor10mg-CUD-contra1.html" class="targetLink" aria-label="Link to the referenced resource (repeats the reference, can be ignored)">&#x1F517;</a> 
+    &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#XReference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ClinicalUseDefinition/Concor10mg-CUD-contra1&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;<a href="ClinicalUseDefinition-Concor10mg-CUD-contra2.html" class="targetLink" aria-label="Link to the referenced resource (repeats the reference, can be ignored)">&#x1F517;</a> 
+    &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#XReference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ClinicalUseDefinition/Concor10mg-CUD-contra2&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;<a href="ClinicalUseDefinition-Concor10mg-CUD-contra3.html" class="targetLink" aria-label="Link to the referenced resource (repeats the reference, can be ignored)">&#x1F517;</a> 
+    &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#XReference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ClinicalUseDefinition/Concor10mg-CUD-contra3&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;<a href="ClinicalUseDefinition-Concor10mg-CUD-contra4.html" class="targetLink" aria-label="Link to the referenced resource (repeats the reference, can be ignored)">&#x1F517;</a> 
+    &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#XReference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ClinicalUseDefinition/Concor10mg-CUD-contra4&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;<a href="ClinicalUseDefinition-Concor10mg-CUD-contra5.html" class="targetLink" aria-label="Link to the referenced resource (repeats the reference, can be ignored)">&#x1F517;</a> 
+    &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#XReference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ClinicalUseDefinition/Concor10mg-CUD-contra5&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;<a href="ClinicalUseDefinition-Concor10mg-CUD-contra6.html" class="targetLink" aria-label="Link to the referenced resource (repeats the reference, can be ignored)">&#x1F517;</a> 
+    &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#XReference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ClinicalUseDefinition/Concor10mg-CUD-contra6&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;<a href="ClinicalUseDefinition-Concor10mg-CUD-contra7.html" class="targetLink" aria-label="Link to the referenced resource (repeats the reference, can be ignored)">&#x1F517;</a> 
+    &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#XReference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ClinicalUseDefinition/Concor10mg-CUD-contra7&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;<a href="ClinicalUseDefinition-Concor10mg-CUD-contra8.html" class="targetLink" aria-label="Link to the referenced resource (repeats the reference, can be ignored)">&#x1F517;</a> 
+    &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#XReference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ClinicalUseDefinition/Concor10mg-CUD-contra8&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;<a href="ClinicalUseDefinition-Concor10mg-CUD-contra9.html" class="targetLink" aria-label="Link to the referenced resource (repeats the reference, can be ignored)">&#x1F517;</a> 
+    &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#XReference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ClinicalUseDefinition/Concor10mg-CUD-contra9&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;<a href="ClinicalUseDefinition-Concor10mg-CUD-contra10.html" class="targetLink" aria-label="Link to the referenced resource (repeats the reference, can be ignored)">&#x1F517;</a> 
+    &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#XReference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ClinicalUseDefinition/Concor10mg-CUD-contra10&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;<a href="ClinicalUseDefinition-Concor10mg-CUD-contra11.html" class="targetLink" aria-label="Link to the referenced resource (repeats the reference, can be ignored)">&#x1F517;</a> 
+    &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#XReference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ClinicalUseDefinition/Concor10mg-CUD-contra11&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;<a href="ClinicalUseDefinition-Concor10mg-CUD-contra12.html" class="targetLink" aria-label="Link to the referenced resource (repeats the reference, can be ignored)">&#x1F517;</a> 
+    &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#XReference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ClinicalUseDefinition/Concor10mg-CUD-contra12&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;<a href="ClinicalUseDefinition-Concor10mg-CUD-ind1.html" class="targetLink" aria-label="Link to the referenced resource (repeats the reference, can be ignored)">&#x1F517;</a> 
+    &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#XReference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ClinicalUseDefinition/Concor10mg-CUD-ind1&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;<a href="ClinicalUseDefinition-Concor10mg-CUD-ind2.html" class="targetLink" aria-label="Link to the referenced resource (repeats the reference, can be ignored)">&#x1F517;</a> 
+    &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#XReference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ClinicalUseDefinition/Concor10mg-CUD-ind2&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;<a href="ClinicalUseDefinition-Concor10mg-CUD-int1.html" class="targetLink" aria-label="Link to the referenced resource (repeats the reference, can be ignored)">&#x1F517;</a> 
+    &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#XReference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ClinicalUseDefinition/Concor10mg-CUD-int1&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;<a href="ClinicalUseDefinition-Concor10mg-CUD-int2.html" class="targetLink" aria-label="Link to the referenced resource (repeats the reference, can be ignored)">&#x1F517;</a> 
+    &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#XReference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ClinicalUseDefinition/Concor10mg-CUD-int2&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;<a href="ClinicalUseDefinition-Concor10mg-CUD-int3.html" class="targetLink" aria-label="Link to the referenced resource (repeats the reference, can be ignored)">&#x1F517;</a> 
+    &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#XReference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ClinicalUseDefinition/Concor10mg-CUD-int3&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;<a href="ClinicalUseDefinition-Concor10mg-CUD-int4.html" class="targetLink" aria-label="Link to the referenced resource (repeats the reference, can be ignored)">&#x1F517;</a> 
+    &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#XReference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ClinicalUseDefinition/Concor10mg-CUD-int4&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;<a href="ClinicalUseDefinition-Concor10mg-CUD-int5.html" class="targetLink" aria-label="Link to the referenced resource (repeats the reference, can be ignored)">&#x1F517;</a> 
+    &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#XReference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ClinicalUseDefinition/Concor10mg-CUD-int5&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;<a href="ClinicalUseDefinition-Concor10mg-CUD-int6.html" class="targetLink" aria-label="Link to the referenced resource (repeats the reference, can be ignored)">&#x1F517;</a> 
+    &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#XReference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ClinicalUseDefinition/Concor10mg-CUD-int6&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;<a href="ClinicalUseDefinition-Concor10mg-CUD-int7.html" class="targetLink" aria-label="Link to the referenced resource (repeats the reference, can be ignored)">&#x1F517;</a> 
+    &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#XReference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ClinicalUseDefinition/Concor10mg-CUD-int7&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;<a href="ClinicalUseDefinition-Concor10mg-CUD-int8.html" class="targetLink" aria-label="Link to the referenced resource (repeats the reference, can be ignored)">&#x1F517;</a> 
+    &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#XReference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ClinicalUseDefinition/Concor10mg-CUD-int8&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;<a href="ClinicalUseDefinition-Concor10mg-CUD-int9.html" class="targetLink" aria-label="Link to the referenced resource (repeats the reference, can be ignored)">&#x1F517;</a> 
+    &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#XReference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ClinicalUseDefinition/Concor10mg-CUD-int9&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;<a href="ClinicalUseDefinition-Concor10mg-CUD-int10.html" class="targetLink" aria-label="Link to the referenced resource (repeats the reference, can be ignored)">&#x1F517;</a> 
+    &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#XReference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ClinicalUseDefinition/Concor10mg-CUD-int10&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;<a href="ClinicalUseDefinition-Concor10mg-CUD-int11.html" class="targetLink" aria-label="Link to the referenced resource (repeats the reference, can be ignored)">&#x1F517;</a> 
+    &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#XReference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ClinicalUseDefinition/Concor10mg-CUD-int11&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;<a href="ClinicalUseDefinition-Concor10mg-CUD-int12.html" class="targetLink" aria-label="Link to the referenced resource (repeats the reference, can be ignored)">&#x1F517;</a> 
+    &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#XReference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ClinicalUseDefinition/Concor10mg-CUD-int12&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;<a href="ClinicalUseDefinition-Concor10mg-CUD-int13.html" class="targetLink" aria-label="Link to the referenced resource (repeats the reference, can be ignored)">&#x1F517;</a> 
+    &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#XReference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ClinicalUseDefinition/Concor10mg-CUD-int13&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.clinicalUseIssue">clinicalUseIssue</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional">definitional</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.doseForm">doseForm</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>
+                <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;38&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Comprimido revestido&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>
+                <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;https://extranet.infarmed.pt/INFOMED-fo/detalhes-medicamento.xhtml&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;038&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Comprimido revestido&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.doseForm">doseForm</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.intendedRoute">intendedRoute</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>
+                <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://example.com/fhir/example/CodeSystem/via-administracao-cs&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;48&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Via oral&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.intendedRoute">intendedRoute</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient">ingredient</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.item">item</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.concept">concept</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://infarmed.pt/substancia&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;21790&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Bisoprolol, fumarato&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.concept">concept</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.item">item</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.type">type</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v3-RoleClass&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;ACTI&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.type">type</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.strength_x_">strengthQuantity</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>=&quot;10&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.unit">unit</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;mg&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://unitsofmeasure.org&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#XQuantity.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;mg&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.strength_x_">strengthQuantity</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient">ingredient</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient">ingredient</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.item">item</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.concept">concept</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://infarmed.pt/substancia&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;[PREENCHER]&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Sílica anidra coloidal&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.concept">concept</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.item">item</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.type">type</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v3-RoleClass&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;IACT&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.type">type</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient">ingredient</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient">ingredient</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.item">item</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.concept">concept</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://infarmed.pt/substancia&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;[PREENCHER]&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Estearato de magnésio&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.concept">concept</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.item">item</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.type">type</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v3-RoleClass&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;IACT&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.type">type</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient">ingredient</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient">ingredient</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.item">item</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.concept">concept</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://infarmed.pt/substancia&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;[PREENCHER]&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Crospovidona&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.concept">concept</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.item">item</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.type">type</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v3-RoleClass&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;IACT&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.type">type</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient">ingredient</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient">ingredient</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.item">item</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.concept">concept</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://infarmed.pt/substancia&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;[PREENCHER]&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Celulose microcristalina&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.concept">concept</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.item">item</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.type">type</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v3-RoleClass&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;IACT&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.type">type</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient">ingredient</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient">ingredient</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.item">item</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.concept">concept</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://infarmed.pt/substancia&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;[PREENCHER]&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Amido de milho&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.concept">concept</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.item">item</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.type">type</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v3-RoleClass&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;IACT&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.type">type</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient">ingredient</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient">ingredient</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.item">item</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.concept">concept</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://infarmed.pt/substancia&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;[PREENCHER]&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Hidrogenofosfato de cálcio anidro&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.concept">concept</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.item">item</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.type">type</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v3-RoleClass&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;IACT&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.type">type</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient">ingredient</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient">ingredient</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.item">item</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.concept">concept</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://infarmed.pt/substancia&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;[PREENCHER]&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Óxido de ferro amarelo (E172)&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.concept">concept</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.item">item</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.type">type</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v3-RoleClass&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;IACT&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.type">type</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient">ingredient</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient">ingredient</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.item">item</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.concept">concept</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://infarmed.pt/substancia&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;[PREENCHER]&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Dimeticone&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.concept">concept</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.item">item</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.type">type</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v3-RoleClass&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;IACT&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.type">type</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient">ingredient</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient">ingredient</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.item">item</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.concept">concept</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://infarmed.pt/substancia&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;[PREENCHER]&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Macrogol 400&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.concept">concept</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.item">item</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.type">type</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v3-RoleClass&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;IACT&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.type">type</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient">ingredient</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient">ingredient</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.item">item</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.concept">concept</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://infarmed.pt/substancia&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;[PREENCHER]&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Dióxido de titânio (E171)&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.concept">concept</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.item">item</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.type">type</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v3-RoleClass&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;IACT&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.type">type</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient">ingredient</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient">ingredient</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.item">item</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.concept">concept</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://infarmed.pt/substancia&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;[PREENCHER]&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Hipromelose&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.concept">concept</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.item">item</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.type">type</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v3-RoleClass&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;IACT&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.type">type</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient">ingredient</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient">ingredient</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.item">item</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.concept">concept</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://infarmed.pt/substancia&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;[PREENCHER]&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Óxido de ferro vermelho (E172)&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#XCodeableReference.concept">concept</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.item">item</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.type">type</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v3-RoleClass&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;IACT&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient.type">type</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional.ingredient">ingredient</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge.definitional">definitional</a>&gt;
+&lt;/<a href="http://hl7.org/fhir/R5/medicationknowledge.html#XMedicationKnowledge">MedicationKnowledge</a>&gt;</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.pt">HL7 Portugal</a>.  Package my-ig#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, Nov 2, 2026 15:47+0000">2026-11-02</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

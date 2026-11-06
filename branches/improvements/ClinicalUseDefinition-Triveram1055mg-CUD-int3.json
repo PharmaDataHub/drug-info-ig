@@ -1,0 +1,36 @@
+{
+  "resourceType" : "ClinicalUseDefinition",
+  "id" : "Triveram1055mg-CUD-int3",
+  "meta" : {
+    "profile" : ["http://example.com/fhir/example/StructureDefinition/InteracoesPDH"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ClinicalUseDefinition Triveram1055mg-CUD-int3</b></p><a name=\"Triveram1055mg-CUD-int3\"> </a><a name=\"hcTriveram1055mg-CUD-int3\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-InteracoesPDH.html\">Perfil do recurso para interações de medicação</a></p></div><p><b>type</b>: Interaction</p><blockquote><p><b>interaction</b></p><h3>Interactants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Item[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct [PREENCHER]}\">Tratamentos extracorporais com superfícies eletrizadas negativamente (diálise ou hemofiltração com membranas de alto fluxo, p. ex. poliacrilonitrilo; aférese de lipoproteínas de baixa densidade com sulfato de dextrano)</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/interaction-type other}\">other interaction</span></p><h3>Effects</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Aumento do risco de reações anafiláticas graves. Se for necessário algum destes tratamentos, deve considerar-se o uso de um tipo diferente de membrana de diálise ou de uma classe diferente de medicamento anti-hipertensivo.</span></td></tr></table></blockquote></div>"
+  },
+  "type" : "interaction",
+  "interaction" : {
+    "interactant" : [{
+      "itemCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "[PREENCHER]",
+          "display" : "Extracorporeal treatment procedure (procedure)"
+        }],
+        "text" : "Tratamentos extracorporais com superfícies eletrizadas negativamente (diálise ou hemofiltração com membranas de alto fluxo, p. ex. poliacrilonitrilo; aférese de lipoproteínas de baixa densidade com sulfato de dextrano)"
+      }
+    }],
+    "type" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/interaction-type",
+        "code" : "other",
+        "display" : "other interaction"
+      }]
+    },
+    "effect" : {
+      "concept" : {
+        "text" : "Aumento do risco de reações anafiláticas graves. Se for necessário algum destes tratamentos, deve considerar-se o uso de um tipo diferente de membrana de diálise ou de uma classe diferente de medicamento anti-hipertensivo."
+      }
+    }
+  }
+}

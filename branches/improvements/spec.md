@@ -1,0 +1,76 @@
+# Especificação - HL7 PT FHIR Implementation Guide: IG de Exemplo Versão 1 | STU1 v1.0.0
+
+* [**Table of Contents**](toc.md)
+* **Especificação**
+
+## Especificação
+
+| | | | |
+| :--- | :--- | :--- | :--- |
+| A10BK | Inibidores do co-transportador 2 sódio-glucose (SGLT2) | Forxiga 5 mg [A10BK01]Forxiga 10 mg [A10BK01] | [MedicationKnowledge-Forxiga-5mg-Comprimido-revestido-por-pelicula.html](MedicationKnowledge-Forxiga-5mg-Comprimido-revestido-por-pelicula.md)[MedicationKnowledge-Forxiga-10mg-Comprimido-revestido-por-pelicula.html](MedicationKnowledge-Forxiga-10mg-Comprimido-revestido-por-pelicula.md) |
+| C07 | Agentes bloqueadores dos recetores adrenérgicos beta | Concor 5 mg [C07AB07]Concor 10 mg [C07AB07] | [MedicationKnowledge-Concor-5mg-Comprimido-revestido.html](MedicationKnowledge-Concor-5mg-Comprimido-revestido.md)[MedicationKnowledge-Concor-10mg-Comprimido-revestido.html](MedicationKnowledge-Concor-10mg-Comprimido-revestido.md) |
+| C09B | Inibidores da ECA, associações | Lisonorm 20 mg + 5 mg [C09BB03] | [MedicationKnowledge-Lisonorm-20mg5mg-Comprimido.html](MedicationKnowledge-Lisonorm-20mg5mg-Comprimido.md) |
+| J01 | Anti-bacterianos de uso sistémico | Amoxicilina Generis 500 mg [J01CA04]Amoxicilina Generis 1000 mg [J01CA04] | [MedicationKnowledge-AmoxicilinaGeneris-500mg-Comprimido-revestido-por-pelicula.html](MedicationKnowledge-AmoxicilinaGeneris-500mg-Comprimido-revestido-por-pelicula.md)[MedicationKnowledge-AmoxicilinaGeneris-1000mg-Comprimido-revestido-por-pelicula.html](MedicationKnowledge-AmoxicilinaGeneris-1000mg-Comprimido-revestido-por-pelicula.md) |
+| N02AB03 | Fentanil | Abstral 100 µg [N02AB03] | [MedicationKnowledge-Abstral-100mcg-Comprimido-sublingual.html](MedicationKnowledge-Abstral-100mcg-Comprimido-sublingual.md) |
+| N05BA | Derivados da benzodiazepina | Lorazepam Bluepharma 0,5 mg [N05BA06] | [MedicationKnowledge-LorazepamBluepharma-0p5mg-Comprimido.html](MedicationKnowledge-LorazepamBluepharma-0p5mg-Comprimido.md) |
+| N06A | Antidepressivos | Triticum AC 150 mg [N06AX05] | [MedicationKnowledge-TriticumAC-150mg-Comprimido-de-libertacao-modificada.html](MedicationKnowledge-TriticumAC-150mg-Comprimido-de-libertacao-modificada.md) |
+| A02BC | Inibidores da bomba de protões | Pantoc 20 mg [A02BC02] | [MedicationKnowledge-Pantoc-20mg-Comprimido-gastrorresistente.html](MedicationKnowledge-Pantoc-20mg-Comprimido-gastrorresistente.md) |
+| A03FA01 | Metoclopramida |   |   |
+| A06AD | Laxantes osmóticos |   |   |
+| A10BB12 | Glimepirida |   |   |
+| A10BD05 | Metformina + Pioglitazona |   |   |
+| B01AA | Antagonistas da vitamina K |   |   |
+| B01AC04 | Clopidogrel |   |   |
+| B01AC05 | Ticlopidina |   |   |
+| B01AC06 | Ácido acetilsalicílico |   |   |
+| B01AE07 | Dabigatrano etexilato |   |   |
+| B01AF03 | Edoxaban |   |   |
+| B03AD | Ferro associado ao ácido fólico |   |   |
+| C01AA05 | Digoxina |   |   |
+| C01BD01 | Amiodarona |   |   |
+| C02A | Agentes anti-adrenérgicos de acção central |   |   |
+| C02CA | Bloqueadores alfa |   |   |
+| C03A | Diuréticos tiazídicos |   |   |
+| C03C | Diuréticos da ansa |   |   |
+| C03DA | Antagonistas da aldosterona |   |   |
+| C04A | Vasodilatadores periféricos |   |   |
+| C07AG02 | Carvedilol |   |   |
+| C08DB01 | Diltiazem |   |   |
+| C10AA | Inibidores da HMG CoA redutase |   |   |
+| G03C | Estrogénios |   |   |
+| G03F | Progestagénios ou progestativos associados a estrogénios |   |   |
+| G04BD11 | Fesoterodina |   |   |
+| G04BD12 | Mirabegrom |   |   |
+| G04BE10 | Avanafil |   |   |
+| G04CA53 | Tansulosina + Solifenacina |   |   |
+| H01BA | Vasopressina e análogos |   |   |
+| H02 | Corticosteróides de uso sistémico |   |   |
+| H03AA01 | Levotiroxina sódica |   |   |
+| J01XE01 | Nitrofurantoína |   |   |
+| L02AB01 | Megestrol |   |   |
+| L04AX03 | Metotrexato |   |   |
+| M01AX | Outros anti-inflamatórios e anti-reumatismais não esteróides |   |   |
+| M04AA | Inibidores da síntese do ácido úrico |   |   |
+| M04AC01 | Colchicina |   |   |
+| M05BB | Bifosfonatos, associações |   |   |
+| N01BB52 | Lidocaína + Associações |   |   |
+| N02BE51 | Paracetamol + Associações excl. psicolépticos |   |   |
+| N02BF | Gabapentinoids |   |   |
+| N03AE01 | Clonazepam |   |   |
+| N04A | Agentes anti-colinérgicos |   |   |
+| N04BC | Agonistas da dopamina |   |   |
+| N05AA02 | Levomepromazina |   |   |
+| N05CF | Benzodiazepinas substâncias afins |   |   |
+| N06AA | Inibidores não selectivos da recaptação de monoaminas |   |   |
+| N06AB10 | Escitalopram |   | [MedicationKnowledge-Cipralex-20mgml-Gotas-orais-solucao.html](MedicationKnowledge-Cipralex-20mgml-Gotas-orais-solucao.md) |
+| N06AX21 | Duloxetina |   |   |
+| N06DX01 | Memantina |   |   |
+| N07AA | Anticholinesterases |   |   |
+| R03BB07 | Brometo de umeclidínio |   |   |
+| R03DA04 | Teofilina |   |   |
+| R06AB02 | Dexclorofeniramina |   |   |
+| C10AX | Outros fármacos que reduzem o colesterol e os triglicéridos (outros agentes modificadores dos lípidos) | Omacor 1000 mg [C10AX06] | [MedicationKnowledge-Omacor-1000mg-Capsula-mole.html](MedicationKnowledge-Omacor-1000mg-Capsula-mole.md) |
+| R05CB06 | Ambroxol | Litmuxair 60 mg [R05CB06] | [MedicationKnowledge-Litmuxair-60mg-Comprimido-efervescente.html](MedicationKnowledge-Litmuxair-60mg-Comprimido-efervescente.md) |
+| N05CH01 | Melatonina | Slenyto 1 mg [N05CH01]Slenyto 5 mg [N05CH01] | [MedicationKnowledge-Slenyto-1mg-Comprimido-de-libertacao-prolongada.html](MedicationKnowledge-Slenyto-1mg-Comprimido-de-libertacao-prolongada.md)[MedicationKnowledge-Slenyto-5mg-Comprimido-de-libertacao-prolongada.html](MedicationKnowledge-Slenyto-5mg-Comprimido-de-libertacao-prolongada.md) |
+| C10BX11 | Atorvastatina + Amlodipina + Perindopril | Triveram 10 mg + 5 mg + 5 mg [C10BX11] | [MedicationKnowledge-Triveram-10mg5mg5mg-Comprimido-revestido-por-pelicula.html](MedicationKnowledge-Triveram-10mg5mg5mg-Comprimido-revestido-por-pelicula.md) |
+

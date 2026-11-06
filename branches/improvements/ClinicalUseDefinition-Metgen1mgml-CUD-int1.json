@@ -1,0 +1,36 @@
+{
+  "resourceType" : "ClinicalUseDefinition",
+  "id" : "Metgen1mgml-CUD-int1",
+  "meta" : {
+    "profile" : ["http://example.com/fhir/example/StructureDefinition/InteracoesPDH"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ClinicalUseDefinition Metgen1mgml-CUD-int1</b></p><a name=\"Metgen1mgml-CUD-int1\"> </a><a name=\"hcMetgen1mgml-CUD-int1\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-InteracoesPDH.html\">Perfil do recurso para interações de medicação</a></p></div><p><b>type</b>: Interaction</p><blockquote><p><b>interaction</b></p><h3>Interactants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Item[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct [PREENCHER]}\">Levodopa ou agonistas dopaminérgicos</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/interaction-type drug-drug}\">drug to drug interaction</span></p><h3>Effects</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">A levodopa ou agonistas dopaminérgicos e metoclopramida têm um antagonismo mútuo. Combinação contraindicada.</span></td></tr></table></blockquote></div>"
+  },
+  "type" : "interaction",
+  "interaction" : {
+    "interactant" : [{
+      "itemCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "[PREENCHER]",
+          "display" : "Levodopa and dopamine agonist (substance)"
+        }],
+        "text" : "Levodopa ou agonistas dopaminérgicos"
+      }
+    }],
+    "type" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/interaction-type",
+        "code" : "drug-drug",
+        "display" : "drug to drug interaction"
+      }]
+    },
+    "effect" : {
+      "concept" : {
+        "text" : "A levodopa ou agonistas dopaminérgicos e metoclopramida têm um antagonismo mútuo. Combinação contraindicada."
+      }
+    }
+  }
+}

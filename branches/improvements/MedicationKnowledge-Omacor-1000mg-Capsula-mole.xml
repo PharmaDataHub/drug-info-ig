@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationKnowledge xmlns="http://hl7.org/fhir">
+  <id value="Omacor-1000mg-Capsula-mole"/>
+  <meta>
+    <profile value="http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: MedicationKnowledge Omacor-1000mg-Capsula-mole</b></p><a name="Omacor-1000mg-Capsula-mole"> </a><a name="hcOmacor-1000mg-Capsula-mole"> </a><div style="display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-MedicationKnowledgePDH.html">Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento</a></p></div><p><b>code</b>: <span title="Codes:{http://infarmed.pt/medicamentos/prod_id 35001}">Omacor 1000 mg [C10AX06]</span></p><p><b>name</b>: Omacor [ésteres etílicos 90 do ácido ómega-3] 1000 mg cápsula mole</p><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct [PREENCHER]}">Hipertrigliceridemia endógena tipo IV em monoterapia, como suplemento à dieta, quando as medidas de dietas isoladas são por si só insuficientes para produzir uma resposta adequada</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Tratamento inicial</span></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td><td><b>Timing</b></td></tr><tr><td style="display: none">*</td><td>O tratamento inicial é de 2 cápsulas por dia</td><td><span title="Codes:">Tomar durante a refeição para evitar distúrbios gastrointestinais</span></td><td>at meals, Once</td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Aumento da dose</span></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td><td><b>Timing</b></td></tr><tr><td style="display: none">*</td><td>Se não for obtida resposta adequada, a dose pode ser aumentada para 4 cápsulas por dia</td><td><span title="Codes:">Tomar durante a refeição para evitar distúrbios gastrointestinais</span></td><td>at meals, Once</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Doses gerais (população não especificada na RCM)</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct [PREENCHER]}">Hipertrigliceridemia endógena tipo IIb/III em associação com estatinas, como suplemento à dieta, quando o controlo dos triglicéridos é insuficiente</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Tratamento inicial</span></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td><td><b>Timing</b></td></tr><tr><td style="display: none">*</td><td>O tratamento inicial é de 2 cápsulas por dia</td><td><span title="Codes:">Tomar durante a refeição para evitar distúrbios gastrointestinais</span></td><td>at meals, Once</td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Aumento da dose</span></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td><td><b>Timing</b></td></tr><tr><td style="display: none">*</td><td>Se não for obtida resposta adequada, a dose pode ser aumentada para 4 cápsulas por dia</td><td><span title="Codes:">Tomar durante a refeição para evitar distúrbios gastrointestinais</span></td><td>at meals, Once</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Doses gerais (população não especificada na RCM)</span></td></tr></table></blockquote></blockquote><blockquote><p><b>medicineClassification</b></p><p><b>type</b>: <span title="Codes:{http://hl7.org/fhir/medication-classification-type anatomical}">Código ATC</span></p><p><b>classification</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ATC C10AX06}">ésteres etílicos 90 do ácido ómega-3</span></p></blockquote><blockquote><p><b>medicineClassification</b></p><p><b>type</b>: <span title="Codes:{http://hl7.org/fhir/medication-classification-type therapeutic}">Grupo farmacoterapêutico</span></p><p><b>classification</b>: <span title="Codes:">3.7 Aparelho Cardiovascular, Antidislipidémicos</span></p></blockquote><p><b>clinicalUseIssue</b>: </p><ul><li><a href="ClinicalUseDefinition-Omacor1000mg-CUD-ind1.html">ClinicalUseDefinition: type = indication</a></li><li><a href="ClinicalUseDefinition-Omacor1000mg-CUD-ind2.html">ClinicalUseDefinition: type = indication</a></li><li><a href="ClinicalUseDefinition-Omacor1000mg-CUD-contra1.html">ClinicalUseDefinition: type = contraindication</a></li><li><a href="ClinicalUseDefinition-Omacor1000mg-CUD-contra2.html">ClinicalUseDefinition: type = contraindication</a></li><li><a href="ClinicalUseDefinition-Omacor1000mg-CUD-contra3.html">ClinicalUseDefinition: type = contraindication</a></li><li><a href="ClinicalUseDefinition-Omacor1000mg-CUD-contra4.html">ClinicalUseDefinition: type = contraindication</a></li><li><a href="ClinicalUseDefinition-Omacor1000mg-CUD-int1.html">ClinicalUseDefinition: type = interaction</a></li></ul><blockquote><p><b>definitional</b></p><p><b>doseForm</b>: <span title="Codes:{http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs 30}">Cápsula mole</span></p><p><b>intendedRoute</b>: <span title="Codes:{http://example.com/fhir/example/CodeSystem/via-administracao-cs 48}">Via oral</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia 41863}">ésteres etílicos 90 do ácido ómega-3</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass ACTI}">active ingredient</span></p><p><b>strength</b>: 1000 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">alfa-tocoferol</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">gelatina</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">glicerol</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">água purificada</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">triglicéridos de cadeia média</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">lecitina (de soja)</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p></blockquote></blockquote></div>
+  </text>
+  <code>
+    <coding>
+      <system value="http://infarmed.pt/medicamentos/prod_id"/>
+      <code value="35001"/>
+      <display value="Omacor 1000 mg [C10AX06]"/>
+    </coding>
+  </code>
+  <name value="Omacor [ésteres etílicos 90 do ácido ómega-3] 1000 mg cápsula mole"/>
+  <indicationGuideline>
+    <indication>
+      <concept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="[PREENCHER]"/>
+          <display value="Hipertrigliceridemia endógena tipo IV"/>
+        </coding>
+        <text value="Hipertrigliceridemia endógena tipo IV em monoterapia, como suplemento à dieta, quando as medidas de dietas isoladas são por si só insuficientes para produzir uma resposta adequada"/>
+      </concept>
+    </indication>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Tratamento inicial"/>
+        </type>
+        <dosage>
+          <text value="O tratamento inicial é de 2 cápsulas por dia"/>
+          <additionalInstruction>
+            <text value="Tomar durante a refeição para evitar distúrbios gastrointestinais"/>
+          </additionalInstruction>
+          <timing>
+            <repeat>
+              <when value="C"/>
+            </repeat>
+          </timing>
+        </dosage>
+      </dosage>
+      <dosage>
+        <type>
+          <text value="Aumento da dose"/>
+        </type>
+        <dosage>
+          <text value="Se não for obtida resposta adequada, a dose pode ser aumentada para 4 cápsulas por dia"/>
+          <additionalInstruction>
+            <text value="Tomar durante a refeição para evitar distúrbios gastrointestinais"/>
+          </additionalInstruction>
+          <timing>
+            <repeat>
+              <when value="C"/>
+            </repeat>
+          </timing>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Doses gerais (população não especificada na RCM)"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+  </indicationGuideline>
+  <indicationGuideline>
+    <indication>
+      <concept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="[PREENCHER]"/>
+          <display value="Hipertrigliceridemia endógena tipo IIb/III"/>
+        </coding>
+        <text value="Hipertrigliceridemia endógena tipo IIb/III em associação com estatinas, como suplemento à dieta, quando o controlo dos triglicéridos é insuficiente"/>
+      </concept>
+    </indication>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Tratamento inicial"/>
+        </type>
+        <dosage>
+          <text value="O tratamento inicial é de 2 cápsulas por dia"/>
+          <additionalInstruction>
+            <text value="Tomar durante a refeição para evitar distúrbios gastrointestinais"/>
+          </additionalInstruction>
+          <timing>
+            <repeat>
+              <when value="C"/>
+            </repeat>
+          </timing>
+        </dosage>
+      </dosage>
+      <dosage>
+        <type>
+          <text value="Aumento da dose"/>
+        </type>
+        <dosage>
+          <text value="Se não for obtida resposta adequada, a dose pode ser aumentada para 4 cápsulas por dia"/>
+          <additionalInstruction>
+            <text value="Tomar durante a refeição para evitar distúrbios gastrointestinais"/>
+          </additionalInstruction>
+          <timing>
+            <repeat>
+              <when value="C"/>
+            </repeat>
+          </timing>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Doses gerais (população não especificada na RCM)"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+  </indicationGuideline>
+  <medicineClassification>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/medication-classification-type"/>
+        <code value="anatomical"/>
+      </coding>
+      <text value="Código ATC"/>
+    </type>
+    <classification>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ATC"/>
+        <code value="C10AX06"/>
+        <display value="ésteres etílicos 90 do ácido ómega-3"/>
+      </coding>
+    </classification>
+  </medicineClassification>
+  <medicineClassification>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/medication-classification-type"/>
+        <code value="therapeutic"/>
+      </coding>
+      <text value="Grupo farmacoterapêutico"/>
+    </type>
+    <classification>
+      <text value="3.7 Aparelho Cardiovascular, Antidislipidémicos"/>
+    </classification>
+  </medicineClassification>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Omacor1000mg-CUD-ind1"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Omacor1000mg-CUD-ind2"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Omacor1000mg-CUD-contra1"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Omacor1000mg-CUD-contra2"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Omacor1000mg-CUD-contra3"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Omacor1000mg-CUD-contra4"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Omacor1000mg-CUD-int1"/>
+  </clinicalUseIssue>
+  <definitional>
+    <doseForm>
+      <coding>
+        <system value="http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs"/>
+        <code value="30"/>
+        <display value="Cápsula mole"/>
+      </coding>
+    </doseForm>
+    <intendedRoute>
+      <coding>
+        <system value="http://example.com/fhir/example/CodeSystem/via-administracao-cs"/>
+        <code value="48"/>
+        <display value="Via oral"/>
+      </coding>
+    </intendedRoute>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="41863"/>
+            <display value="ésteres etílicos 90 do ácido ómega-3"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="ACTI"/>
+        </coding>
+      </type>
+      <strengthQuantity>
+        <value value="1000"/>
+        <unit value="mg"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mg"/>
+      </strengthQuantity>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="alfa-tocoferol"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="gelatina"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="glicerol"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="água purificada"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="triglicéridos de cadeia média"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="lecitina (de soja)"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+    </ingredient>
+  </definitional>
+</MedicationKnowledge>

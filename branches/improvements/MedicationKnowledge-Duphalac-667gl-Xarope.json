@@ -1,0 +1,594 @@
+{
+  "resourceType" : "MedicationKnowledge",
+  "id" : "Duphalac-667gl-Xarope",
+  "meta" : {
+    "profile" : ["http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationKnowledge Duphalac-667gl-Xarope</b></p><a name=\"Duphalac-667gl-Xarope\"> </a><a name=\"hcDuphalac-667gl-Xarope\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MedicationKnowledgePDH.html\">Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento</a></p></div><p><b>code</b>: <span title=\"Codes:{http://infarmed.pt/medicamentos/prod_id 2877}\">Duphalac 667 g/l [A06AD11]</span></p><p><b>name</b>: Duphalac [Lactulose] 667 g/l Xarope</p><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Tratamento da obstipação crónica habitual</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose diária inicial</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td><td><b>Timing</b></td></tr><tr><td style=\"display: none\">*</td><td>15-45 ml por dia, em dose única diária ou dividida em duas doses.</td><td><span title=\"Codes:\">Pode ser administrado diluído ou não diluído, engolido de uma só vez e sem ser conservado na boca. Em dose única diária, tomar sempre ao mesmo tempo (por exemplo, ao pequeno-almoço). Recomenda-se a ingestão de 1,5-2 litros de líquidos (6-8 copos) durante o dia. Podem ser necessários 2-3 dias de tratamento até à regularização da defecação.</span></td><td>1-2 per 1 day</td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose diária de manutenção</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Timing</b></td></tr><tr><td style=\"display: none\">*</td><td>15-30 ml por dia, em dose única diária ou dividida em duas doses, ajustada de acordo com a resposta ao tratamento.</td><td>1-2 per 1 day</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Adultos e adolescentes</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose diária inicial</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Timing</b></td></tr><tr><td style=\"display: none\">*</td><td>15 ml por dia, em dose única diária ou dividida em duas doses.</td><td>1-2 per 1 day</td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose diária de manutenção</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Timing</b></td></tr><tr><td style=\"display: none\">*</td><td>10-15 ml por dia, em dose única diária ou dividida em duas doses, ajustada de acordo com a resposta ao tratamento.</td><td>1-2 per 1 day</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Crianças (7-14 anos)</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose diária inicial</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Timing</b></td></tr><tr><td style=\"display: none\">*</td><td>5-10 ml por dia, em dose única diária ou dividida em duas doses.</td><td>1-2 per 1 day</td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose diária de manutenção</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Timing</b></td></tr><tr><td style=\"display: none\">*</td><td>5-10 ml por dia, em dose única diária ou dividida em duas doses, ajustada de acordo com a resposta ao tratamento.</td><td>1-2 per 1 day</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Crianças (1 – 6 anos)</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose diária inicial</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Timing</b></td><td><b>MaxDosePerPeriod</b></td></tr><tr><td style=\"display: none\">*</td><td>Até 5 ml por dia, em dose única diária ou dividida em duas doses.</td><td>1-2 per 1 day</td><td>5 ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemL = 'mL')</span>/1 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose diária de manutenção</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Timing</b></td><td><b>MaxDosePerPeriod</b></td></tr><tr><td style=\"display: none\">*</td><td>Até 5 ml por dia, em dose única diária ou dividida em duas doses, ajustada de acordo com a resposta ao tratamento.</td><td>1-2 per 1 day</td><td>5 ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemL = 'mL')</span>/1 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Lactentes (menos de 1 ano)</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Encefalopatia Porto-Sistémica (EPS): tratamento e prevenção do pré-coma e coma</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose inicial</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dose inicial: 30-45 ml, 3 a 4 vezes por dia.</p><p><b>timing</b>: 3-4 per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>30-45 ml</td></tr></table></blockquote></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose de manutenção</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>A dose inicial pode ser ajustada para a dose de manutenção, de modo a que sejam produzidas fezes moles, 2 a 3 vezes por dia.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Adultos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Sem dados disponíveis</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Não foi estabelecida a segurança e eficácia em crianças (recém-nascidos e até aos 18 anos de idade) com Encefalopatia Porto-Sistémica (EPS). Não existem dados disponíveis.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">População pediátrica (recém-nascidos e até aos 18 anos de idade)</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Situações em que as fezes moles sejam consideradas um benefício clínico (hemorroidas, fissura anal, fístulas, abcessos anais, úlceras solitárias e no pós-operatório ano-retal)</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose diária inicial</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td><td><b>Timing</b></td></tr><tr><td style=\"display: none\">*</td><td>15-45 ml por dia, em dose única diária ou dividida em duas doses.</td><td><span title=\"Codes:\">Pode ser administrado diluído ou não diluído, engolido de uma só vez e sem ser conservado na boca. Em dose única diária, tomar sempre ao mesmo tempo (por exemplo, ao pequeno-almoço). Recomenda-se a ingestão de 1,5-2 litros de líquidos (6-8 copos) durante o dia. Podem ser necessários 2-3 dias de tratamento até à regularização da defecação.</span></td><td>1-2 per 1 day</td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose diária de manutenção</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Timing</b></td></tr><tr><td style=\"display: none\">*</td><td>15-30 ml por dia, em dose única diária ou dividida em duas doses, ajustada de acordo com a resposta ao tratamento.</td><td>1-2 per 1 day</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Adultos e adolescentes</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose diária inicial</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Timing</b></td></tr><tr><td style=\"display: none\">*</td><td>15 ml por dia, em dose única diária ou dividida em duas doses.</td><td>1-2 per 1 day</td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose diária de manutenção</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Timing</b></td></tr><tr><td style=\"display: none\">*</td><td>10-15 ml por dia, em dose única diária ou dividida em duas doses, ajustada de acordo com a resposta ao tratamento.</td><td>1-2 per 1 day</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Crianças (7-14 anos)</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose diária inicial</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Timing</b></td></tr><tr><td style=\"display: none\">*</td><td>5-10 ml por dia, em dose única diária ou dividida em duas doses.</td><td>1-2 per 1 day</td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose diária de manutenção</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Timing</b></td></tr><tr><td style=\"display: none\">*</td><td>5-10 ml por dia, em dose única diária ou dividida em duas doses, ajustada de acordo com a resposta ao tratamento.</td><td>1-2 per 1 day</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Crianças (1 – 6 anos)</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose diária inicial</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Timing</b></td><td><b>MaxDosePerPeriod</b></td></tr><tr><td style=\"display: none\">*</td><td>Até 5 ml por dia, em dose única diária ou dividida em duas doses.</td><td>1-2 per 1 day</td><td>5 ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemL = 'mL')</span>/1 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose diária de manutenção</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Timing</b></td><td><b>MaxDosePerPeriod</b></td></tr><tr><td style=\"display: none\">*</td><td>Até 5 ml por dia, em dose única diária ou dividida em duas doses, ajustada de acordo com a resposta ao tratamento.</td><td>1-2 per 1 day</td><td>5 ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemL = 'mL')</span>/1 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Lactentes (menos de 1 ano)</span></td></tr></table></blockquote></blockquote><blockquote><p><b>medicineClassification</b></p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/medication-classification-type anatomical}\">Código ATC</span></p><p><b>classification</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ATC A06AD11}\">Lactulose</span></p></blockquote><blockquote><p><b>medicineClassification</b></p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/medication-classification-type therapeutic}\">Grupo farmacoterapêutico</span></p><p><b>classification</b>: <span title=\"Codes:\">6.3.2.1.4. Aparelho digestivo. Modificadores da motilidade intestinal. Laxantes e catárticos. Laxantes osmóticos</span></p></blockquote><p><b>clinicalUseIssue</b>: </p><ul><li><a href=\"ClinicalUseDefinition-Duphalac667gl-CUD-ind1.html\">ClinicalUseDefinition: type = indication</a></li><li><a href=\"ClinicalUseDefinition-Duphalac667gl-CUD-ind2.html\">ClinicalUseDefinition: type = indication</a></li><li><a href=\"ClinicalUseDefinition-Duphalac667gl-CUD-ind3.html\">ClinicalUseDefinition: type = indication</a></li><li><a href=\"ClinicalUseDefinition-Duphalac667gl-CUD-contra1.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Duphalac667gl-CUD-contra2.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Duphalac667gl-CUD-contra3.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Duphalac667gl-CUD-contra4.html\">ClinicalUseDefinition: type = contraindication</a></li></ul><blockquote><p><b>definitional</b></p><p><b>doseForm</b>: <span title=\"Codes:{http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs 13}\">Xarope</span></p><p><b>intendedRoute</b>: <span title=\"Codes:{http://example.com/fhir/example/CodeSystem/via-administracao-cs 48}\">Via oral</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Lactulose</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass ACTI}\">active ingredient</span></p><p><b>strength</b>: 667 g/l<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeg/L = 'g/L')</span></p></blockquote></blockquote></div>"
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "http://infarmed.pt/medicamentos/prod_id",
+      "code" : "2877",
+      "display" : "Duphalac 667 g/l [A06AD11]"
+    }]
+  },
+  "name" : ["Duphalac [Lactulose] 667 g/l Xarope"],
+  "indicationGuideline" : [{
+    "indication" : [{
+      "concept" : {
+        "text" : "Tratamento da obstipação crónica habitual"
+      }
+    }],
+    "dosingGuideline" : [{
+      "dosage" : [{
+        "type" : {
+          "text" : "Dose diária inicial"
+        },
+        "dosage" : [{
+          "text" : "15-45 ml por dia, em dose única diária ou dividida em duas doses.",
+          "additionalInstruction" : [{
+            "text" : "Pode ser administrado diluído ou não diluído, engolido de uma só vez e sem ser conservado na boca. Em dose única diária, tomar sempre ao mesmo tempo (por exemplo, ao pequeno-almoço). Recomenda-se a ingestão de 1,5-2 litros de líquidos (6-8 copos) durante o dia. Podem ser necessários 2-3 dias de tratamento até à regularização da defecação."
+          }],
+          "timing" : {
+            "repeat" : {
+              "frequency" : 1,
+              "frequencyMax" : 2,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          }
+        }]
+      },
+      {
+        "type" : {
+          "text" : "Dose diária de manutenção"
+        },
+        "dosage" : [{
+          "text" : "15-30 ml por dia, em dose única diária ou dividida em duas doses, ajustada de acordo com a resposta ao tratamento.",
+          "timing" : {
+            "repeat" : {
+              "frequency" : 1,
+              "frequencyMax" : 2,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          }
+        }]
+      }],
+      "patientCharacteristic" : [{
+        "type" : {
+          "text" : "Population"
+        },
+        "valueCodeableConcept" : {
+          "text" : "Adultos e adolescentes"
+        }
+      }]
+    },
+    {
+      "dosage" : [{
+        "type" : {
+          "text" : "Dose diária inicial"
+        },
+        "dosage" : [{
+          "text" : "15 ml por dia, em dose única diária ou dividida em duas doses.",
+          "timing" : {
+            "repeat" : {
+              "frequency" : 1,
+              "frequencyMax" : 2,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          }
+        }]
+      },
+      {
+        "type" : {
+          "text" : "Dose diária de manutenção"
+        },
+        "dosage" : [{
+          "text" : "10-15 ml por dia, em dose única diária ou dividida em duas doses, ajustada de acordo com a resposta ao tratamento.",
+          "timing" : {
+            "repeat" : {
+              "frequency" : 1,
+              "frequencyMax" : 2,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          }
+        }]
+      }],
+      "patientCharacteristic" : [{
+        "type" : {
+          "text" : "Population"
+        },
+        "valueCodeableConcept" : {
+          "text" : "Crianças (7-14 anos)"
+        }
+      }]
+    },
+    {
+      "dosage" : [{
+        "type" : {
+          "text" : "Dose diária inicial"
+        },
+        "dosage" : [{
+          "text" : "5-10 ml por dia, em dose única diária ou dividida em duas doses.",
+          "timing" : {
+            "repeat" : {
+              "frequency" : 1,
+              "frequencyMax" : 2,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          }
+        }]
+      },
+      {
+        "type" : {
+          "text" : "Dose diária de manutenção"
+        },
+        "dosage" : [{
+          "text" : "5-10 ml por dia, em dose única diária ou dividida em duas doses, ajustada de acordo com a resposta ao tratamento.",
+          "timing" : {
+            "repeat" : {
+              "frequency" : 1,
+              "frequencyMax" : 2,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          }
+        }]
+      }],
+      "patientCharacteristic" : [{
+        "type" : {
+          "text" : "Population"
+        },
+        "valueCodeableConcept" : {
+          "text" : "Crianças (1 – 6 anos)"
+        }
+      }]
+    },
+    {
+      "dosage" : [{
+        "type" : {
+          "text" : "Dose diária inicial"
+        },
+        "dosage" : [{
+          "text" : "Até 5 ml por dia, em dose única diária ou dividida em duas doses.",
+          "timing" : {
+            "repeat" : {
+              "frequency" : 1,
+              "frequencyMax" : 2,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          },
+          "maxDosePerPeriod" : [{
+            "numerator" : {
+              "value" : 5,
+              "unit" : "ml",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mL"
+            },
+            "denominator" : {
+              "value" : 1,
+              "unit" : "day",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "d"
+            }
+          }]
+        }]
+      },
+      {
+        "type" : {
+          "text" : "Dose diária de manutenção"
+        },
+        "dosage" : [{
+          "text" : "Até 5 ml por dia, em dose única diária ou dividida em duas doses, ajustada de acordo com a resposta ao tratamento.",
+          "timing" : {
+            "repeat" : {
+              "frequency" : 1,
+              "frequencyMax" : 2,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          },
+          "maxDosePerPeriod" : [{
+            "numerator" : {
+              "value" : 5,
+              "unit" : "ml",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mL"
+            },
+            "denominator" : {
+              "value" : 1,
+              "unit" : "day",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "d"
+            }
+          }]
+        }]
+      }],
+      "patientCharacteristic" : [{
+        "type" : {
+          "text" : "Population"
+        },
+        "valueCodeableConcept" : {
+          "text" : "Lactentes (menos de 1 ano)"
+        }
+      }]
+    }]
+  },
+  {
+    "indication" : [{
+      "concept" : {
+        "text" : "Encefalopatia Porto-Sistémica (EPS): tratamento e prevenção do pré-coma e coma"
+      }
+    }],
+    "dosingGuideline" : [{
+      "dosage" : [{
+        "type" : {
+          "text" : "Dose inicial"
+        },
+        "dosage" : [{
+          "text" : "Dose inicial: 30-45 ml, 3 a 4 vezes por dia.",
+          "timing" : {
+            "repeat" : {
+              "frequency" : 3,
+              "frequencyMax" : 4,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          },
+          "doseAndRate" : [{
+            "doseRange" : {
+              "low" : {
+                "value" : 30,
+                "unit" : "ml",
+                "system" : "http://unitsofmeasure.org",
+                "code" : "mL"
+              },
+              "high" : {
+                "value" : 45,
+                "unit" : "ml",
+                "system" : "http://unitsofmeasure.org",
+                "code" : "mL"
+              }
+            }
+          }]
+        }]
+      },
+      {
+        "type" : {
+          "text" : "Dose de manutenção"
+        },
+        "dosage" : [{
+          "text" : "A dose inicial pode ser ajustada para a dose de manutenção, de modo a que sejam produzidas fezes moles, 2 a 3 vezes por dia."
+        }]
+      }],
+      "patientCharacteristic" : [{
+        "type" : {
+          "text" : "Population"
+        },
+        "valueCodeableConcept" : {
+          "text" : "Adultos"
+        }
+      }]
+    },
+    {
+      "dosage" : [{
+        "type" : {
+          "text" : "Sem dados disponíveis"
+        },
+        "dosage" : [{
+          "text" : "Não foi estabelecida a segurança e eficácia em crianças (recém-nascidos e até aos 18 anos de idade) com Encefalopatia Porto-Sistémica (EPS). Não existem dados disponíveis."
+        }]
+      }],
+      "patientCharacteristic" : [{
+        "type" : {
+          "text" : "Population"
+        },
+        "valueCodeableConcept" : {
+          "text" : "População pediátrica (recém-nascidos e até aos 18 anos de idade)"
+        }
+      }]
+    }]
+  },
+  {
+    "indication" : [{
+      "concept" : {
+        "text" : "Situações em que as fezes moles sejam consideradas um benefício clínico (hemorroidas, fissura anal, fístulas, abcessos anais, úlceras solitárias e no pós-operatório ano-retal)"
+      }
+    }],
+    "dosingGuideline" : [{
+      "dosage" : [{
+        "type" : {
+          "text" : "Dose diária inicial"
+        },
+        "dosage" : [{
+          "text" : "15-45 ml por dia, em dose única diária ou dividida em duas doses.",
+          "additionalInstruction" : [{
+            "text" : "Pode ser administrado diluído ou não diluído, engolido de uma só vez e sem ser conservado na boca. Em dose única diária, tomar sempre ao mesmo tempo (por exemplo, ao pequeno-almoço). Recomenda-se a ingestão de 1,5-2 litros de líquidos (6-8 copos) durante o dia. Podem ser necessários 2-3 dias de tratamento até à regularização da defecação."
+          }],
+          "timing" : {
+            "repeat" : {
+              "frequency" : 1,
+              "frequencyMax" : 2,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          }
+        }]
+      },
+      {
+        "type" : {
+          "text" : "Dose diária de manutenção"
+        },
+        "dosage" : [{
+          "text" : "15-30 ml por dia, em dose única diária ou dividida em duas doses, ajustada de acordo com a resposta ao tratamento.",
+          "timing" : {
+            "repeat" : {
+              "frequency" : 1,
+              "frequencyMax" : 2,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          }
+        }]
+      }],
+      "patientCharacteristic" : [{
+        "type" : {
+          "text" : "Population"
+        },
+        "valueCodeableConcept" : {
+          "text" : "Adultos e adolescentes"
+        }
+      }]
+    },
+    {
+      "dosage" : [{
+        "type" : {
+          "text" : "Dose diária inicial"
+        },
+        "dosage" : [{
+          "text" : "15 ml por dia, em dose única diária ou dividida em duas doses.",
+          "timing" : {
+            "repeat" : {
+              "frequency" : 1,
+              "frequencyMax" : 2,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          }
+        }]
+      },
+      {
+        "type" : {
+          "text" : "Dose diária de manutenção"
+        },
+        "dosage" : [{
+          "text" : "10-15 ml por dia, em dose única diária ou dividida em duas doses, ajustada de acordo com a resposta ao tratamento.",
+          "timing" : {
+            "repeat" : {
+              "frequency" : 1,
+              "frequencyMax" : 2,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          }
+        }]
+      }],
+      "patientCharacteristic" : [{
+        "type" : {
+          "text" : "Population"
+        },
+        "valueCodeableConcept" : {
+          "text" : "Crianças (7-14 anos)"
+        }
+      }]
+    },
+    {
+      "dosage" : [{
+        "type" : {
+          "text" : "Dose diária inicial"
+        },
+        "dosage" : [{
+          "text" : "5-10 ml por dia, em dose única diária ou dividida em duas doses.",
+          "timing" : {
+            "repeat" : {
+              "frequency" : 1,
+              "frequencyMax" : 2,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          }
+        }]
+      },
+      {
+        "type" : {
+          "text" : "Dose diária de manutenção"
+        },
+        "dosage" : [{
+          "text" : "5-10 ml por dia, em dose única diária ou dividida em duas doses, ajustada de acordo com a resposta ao tratamento.",
+          "timing" : {
+            "repeat" : {
+              "frequency" : 1,
+              "frequencyMax" : 2,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          }
+        }]
+      }],
+      "patientCharacteristic" : [{
+        "type" : {
+          "text" : "Population"
+        },
+        "valueCodeableConcept" : {
+          "text" : "Crianças (1 – 6 anos)"
+        }
+      }]
+    },
+    {
+      "dosage" : [{
+        "type" : {
+          "text" : "Dose diária inicial"
+        },
+        "dosage" : [{
+          "text" : "Até 5 ml por dia, em dose única diária ou dividida em duas doses.",
+          "timing" : {
+            "repeat" : {
+              "frequency" : 1,
+              "frequencyMax" : 2,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          },
+          "maxDosePerPeriod" : [{
+            "numerator" : {
+              "value" : 5,
+              "unit" : "ml",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mL"
+            },
+            "denominator" : {
+              "value" : 1,
+              "unit" : "day",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "d"
+            }
+          }]
+        }]
+      },
+      {
+        "type" : {
+          "text" : "Dose diária de manutenção"
+        },
+        "dosage" : [{
+          "text" : "Até 5 ml por dia, em dose única diária ou dividida em duas doses, ajustada de acordo com a resposta ao tratamento.",
+          "timing" : {
+            "repeat" : {
+              "frequency" : 1,
+              "frequencyMax" : 2,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          },
+          "maxDosePerPeriod" : [{
+            "numerator" : {
+              "value" : 5,
+              "unit" : "ml",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mL"
+            },
+            "denominator" : {
+              "value" : 1,
+              "unit" : "day",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "d"
+            }
+          }]
+        }]
+      }],
+      "patientCharacteristic" : [{
+        "type" : {
+          "text" : "Population"
+        },
+        "valueCodeableConcept" : {
+          "text" : "Lactentes (menos de 1 ano)"
+        }
+      }]
+    }]
+  }],
+  "medicineClassification" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/medication-classification-type",
+        "code" : "anatomical"
+      }],
+      "text" : "Código ATC"
+    },
+    "classification" : [{
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ATC",
+        "code" : "A06AD11",
+        "display" : "Lactulose"
+      }]
+    }]
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/medication-classification-type",
+        "code" : "therapeutic"
+      }],
+      "text" : "Grupo farmacoterapêutico"
+    },
+    "classification" : [{
+      "text" : "6.3.2.1.4. Aparelho digestivo. Modificadores da motilidade intestinal. Laxantes e catárticos. Laxantes osmóticos"
+    }]
+  }],
+  "clinicalUseIssue" : [{
+    "reference" : "ClinicalUseDefinition/Duphalac667gl-CUD-ind1"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Duphalac667gl-CUD-ind2"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Duphalac667gl-CUD-ind3"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Duphalac667gl-CUD-contra1"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Duphalac667gl-CUD-contra2"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Duphalac667gl-CUD-contra3"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Duphalac667gl-CUD-contra4"
+  }],
+  "definitional" : {
+    "doseForm" : {
+      "coding" : [{
+        "system" : "http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs",
+        "code" : "13",
+        "display" : "Xarope"
+      }]
+    },
+    "intendedRoute" : [{
+      "coding" : [{
+        "system" : "http://example.com/fhir/example/CodeSystem/via-administracao-cs",
+        "code" : "48",
+        "display" : "Via oral"
+      }]
+    }],
+    "ingredient" : [{
+      "item" : {
+        "concept" : {
+          "coding" : [{
+            "system" : "http://infarmed.pt/substancia",
+            "code" : "[PREENCHER]",
+            "display" : "Lactulose"
+          }]
+        }
+      },
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+          "code" : "ACTI"
+        }]
+      },
+      "strengthQuantity" : {
+        "value" : 667,
+        "unit" : "g/l",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "g/L"
+      }
+    }]
+  }
+}

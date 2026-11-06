@@ -1,0 +1,1471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationKnowledge xmlns="http://hl7.org/fhir">
+  <id value="AmoxicilinaGeneris-500mg-Comprimido-revestido-por-pelicula"/>
+  <meta>
+    <profile value="http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: MedicationKnowledge AmoxicilinaGeneris-500mg-Comprimido-revestido-por-pelicula</b></p><a name="AmoxicilinaGeneris-500mg-Comprimido-revestido-por-pelicula"> </a><a name="hcAmoxicilinaGeneris-500mg-Comprimido-revestido-por-pelicula"> </a><div style="display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-MedicationKnowledgePDH.html">Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento</a></p></div><p><b>code</b>: <span title="Codes:{http://infarmed.pt/medicamentos/prod_id 645424}">Amoxicilina Generis 500 mg [J01CA04]</span></p><p><b>name</b>: Amoxicilina Generis [Amoxicilina] 500 mg Comprimido revestido por película</p><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Tratamento da sinusite bacteriana aguda</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose em adultos e crianças com peso igual ou superior a 40 kg</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 250 mg a 500 mg a cada 8 horas ou 750 mg a 1 g a cada 12 horas. Para infeções graves, 750 mg a 1 g a cada 8 horas.</p><p><b>additionalInstruction</b>: <span title="Codes:">Compromisso renal: TFG &gt; 30 ml/min não requer ajuste; TFG 10 a 30 ml/min máximo 500 mg duas vezes por dia; TFG &lt; 10 ml/min máximo 500 mg/dia. Hemodiálise: 500 mg a cada 24 horas, com dose adicional de 500 mg antes e após a diálise. Diálise peritoneal: máximo 500 mg/dia. Compromisso hepático: dosear com precaução e monitorizar a função hepática em intervalos regulares.</span></p><p><b>timing</b>: Once per 8 hours</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>250-500 mg</td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Adultos e crianças com peso igual ou superior a 40 kg</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose em crianças com peso inferior a 40 kg</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 20 a 90 mg/kg/dia em doses divididas. Só devem ser considerados regimes de duas vezes por dia quando a dose se encontra no limite superior.</p><p><b>additionalInstruction</b>: <span title="Codes:">As crianças podem ser tratadas com amoxicilina cápsulas, comprimidos dispersíveis, suspensões ou saquetas; a suspensão pediátrica é recomendada para crianças com menos de seis meses. Às crianças que pesem 40 kg ou mais deve ser prescrita a dosagem para adultos.</span></p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>20-90 mg/kg</td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Crianças com peso inferior a 40 kg</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Tratamento da otite média aguda</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose em adultos e crianças com peso igual ou superior a 40 kg</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 500 mg a cada 8 horas ou 750 mg a 1 g a cada 12 horas. Para infeções graves, 750 mg a 1 g a cada 8 horas durante 10 dias.</p><p><b>additionalInstruction</b>: <span title="Codes:">Compromisso renal: TFG &gt; 30 ml/min não requer ajuste; TFG 10 a 30 ml/min máximo 500 mg duas vezes por dia; TFG &lt; 10 ml/min máximo 500 mg/dia. Hemodiálise: 500 mg a cada 24 horas, com dose adicional de 500 mg antes e após a diálise. Diálise peritoneal: máximo 500 mg/dia. Compromisso hepático: dosear com precaução e monitorizar a função hepática em intervalos regulares.</span></p><p><b>timing</b>: Once per 8 hours</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>500 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Adultos e crianças com peso igual ou superior a 40 kg</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose em crianças com peso inferior a 40 kg</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 20 a 90 mg/kg/dia em doses divididas. Só devem ser considerados regimes de duas vezes por dia quando a dose se encontra no limite superior.</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>20-90 mg/kg</td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Crianças com peso inferior a 40 kg</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Tratamento da amigdalite e faringite agudas estreptocócicas</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose em adultos e crianças com peso igual ou superior a 40 kg</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 500 mg a cada 8 horas ou 750 mg a 1 g a cada 12 horas. Para infeções graves, 750 mg a 1 g a cada 8 horas durante 10 dias.</p><p><b>additionalInstruction</b>: <span title="Codes:">Compromisso renal: TFG &gt; 30 ml/min não requer ajuste; TFG 10 a 30 ml/min máximo 500 mg duas vezes por dia; TFG &lt; 10 ml/min máximo 500 mg/dia. Hemodiálise: 500 mg a cada 24 horas, com dose adicional de 500 mg antes e após a diálise. Diálise peritoneal: máximo 500 mg/dia. Compromisso hepático: dosear com precaução e monitorizar a função hepática em intervalos regulares.</span></p><p><b>timing</b>: Once per 8 hours</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>500 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Adultos e crianças com peso igual ou superior a 40 kg</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose em crianças com peso inferior a 40 kg</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 40 a 90 mg/kg/dia em doses divididas. Só devem ser considerados regimes de duas vezes por dia quando a dose se encontra no limite superior.</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>40-90 mg/kg</td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Crianças com peso inferior a 40 kg</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Tratamento das exacerbações agudas da bronquite crónica</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose em adultos e crianças com peso igual ou superior a 40 kg</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 500 mg a cada 8 horas ou 750 mg a 1 g a cada 12 horas. Para infeções graves, 750 mg a 1 g a cada 8 horas durante 10 dias.</p><p><b>additionalInstruction</b>: <span title="Codes:">Compromisso renal: TFG &gt; 30 ml/min não requer ajuste; TFG 10 a 30 ml/min máximo 500 mg duas vezes por dia; TFG &lt; 10 ml/min máximo 500 mg/dia. Hemodiálise: 500 mg a cada 24 horas, com dose adicional de 500 mg antes e após a diálise. Diálise peritoneal: máximo 500 mg/dia. Compromisso hepático: dosear com precaução e monitorizar a função hepática em intervalos regulares.</span></p><p><b>timing</b>: Once per 8 hours</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>500 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Adultos e crianças com peso igual ou superior a 40 kg</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Tratamento da pneumonia adquirida na comunidade</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose em adultos e crianças com peso igual ou superior a 40 kg</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 500 mg a 1 g a cada 8 horas.</p><p><b>additionalInstruction</b>: <span title="Codes:">Compromisso renal: TFG &gt; 30 ml/min não requer ajuste; TFG 10 a 30 ml/min máximo 500 mg duas vezes por dia; TFG &lt; 10 ml/min máximo 500 mg/dia. Hemodiálise: 500 mg a cada 24 horas, com dose adicional de 500 mg antes e após a diálise. Diálise peritoneal: máximo 500 mg/dia. Compromisso hepático: dosear com precaução e monitorizar a função hepática em intervalos regulares.</span></p><p><b>timing</b>: Once per 8 hours</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>500-1 mg</td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Adultos e crianças com peso igual ou superior a 40 kg</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose em crianças com peso inferior a 40 kg</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 20 a 90 mg/kg/dia em doses divididas. Só devem ser considerados regimes de duas vezes por dia quando a dose se encontra no limite superior.</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>20-90 mg/kg</td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Crianças com peso inferior a 40 kg</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Tratamento da cistite aguda</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose em adultos e crianças com peso igual ou superior a 40 kg</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 250 mg a 500 mg a cada 8 horas ou 750 mg a 1 g a cada 12 horas. Para infeções graves, 750 mg a 1 g a cada 8 horas. A cistite aguda pode ser tratada com 3 g duas vezes ao dia durante um dia.</p><p><b>additionalInstruction</b>: <span title="Codes:">Compromisso renal: TFG &gt; 30 ml/min não requer ajuste; TFG 10 a 30 ml/min máximo 500 mg duas vezes por dia; TFG &lt; 10 ml/min máximo 500 mg/dia. Hemodiálise: 500 mg a cada 24 horas, com dose adicional de 500 mg antes e após a diálise. Diálise peritoneal: máximo 500 mg/dia. Compromisso hepático: dosear com precaução e monitorizar a função hepática em intervalos regulares.</span></p><p><b>timing</b>: Once per 8 hours</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>250-500 mg</td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Adultos e crianças com peso igual ou superior a 40 kg</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose em crianças com peso inferior a 40 kg</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 20 a 90 mg/kg/dia em doses divididas. Só devem ser considerados regimes de duas vezes por dia quando a dose se encontra no limite superior.</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>20-90 mg/kg</td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Crianças com peso inferior a 40 kg</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Tratamento da bacteriúria assintomática na gravidez</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose em adultos e crianças com peso igual ou superior a 40 kg</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 250 mg a 500 mg a cada 8 horas ou 750 mg a 1 g a cada 12 horas. Para infeções graves, 750 mg a 1 g a cada 8 horas.</p><p><b>additionalInstruction</b>: <span title="Codes:">Compromisso renal: TFG &gt; 30 ml/min não requer ajuste; TFG 10 a 30 ml/min máximo 500 mg duas vezes por dia; TFG &lt; 10 ml/min máximo 500 mg/dia. Hemodiálise: 500 mg a cada 24 horas, com dose adicional de 500 mg antes e após a diálise. Diálise peritoneal: máximo 500 mg/dia. Compromisso hepático: dosear com precaução e monitorizar a função hepática em intervalos regulares.</span></p><p><b>timing</b>: Once per 8 hours</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>250-500 mg</td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Adultos e crianças com peso igual ou superior a 40 kg</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Tratamento da pielonefrite aguda</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose em adultos e crianças com peso igual ou superior a 40 kg</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 250 mg a 500 mg a cada 8 horas ou 750 mg a 1 g a cada 12 horas. Para infeções graves, 750 mg a 1 g a cada 8 horas.</p><p><b>additionalInstruction</b>: <span title="Codes:">Compromisso renal: TFG &gt; 30 ml/min não requer ajuste; TFG 10 a 30 ml/min máximo 500 mg duas vezes por dia; TFG &lt; 10 ml/min máximo 500 mg/dia. Hemodiálise: 500 mg a cada 24 horas, com dose adicional de 500 mg antes e após a diálise. Diálise peritoneal: máximo 500 mg/dia. Compromisso hepático: dosear com precaução e monitorizar a função hepática em intervalos regulares.</span></p><p><b>timing</b>: Once per 8 hours</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>250-500 mg</td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Adultos e crianças com peso igual ou superior a 40 kg</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose em crianças com peso inferior a 40 kg</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 20 a 90 mg/kg/dia em doses divididas. Só devem ser considerados regimes de duas vezes por dia quando a dose se encontra no limite superior.</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>20-90 mg/kg</td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Crianças com peso inferior a 40 kg</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Tratamento da febre tifoide e paratifoide</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose em adultos e crianças com peso igual ou superior a 40 kg</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 500 mg a 2 g a cada 8 horas.</p><p><b>additionalInstruction</b>: <span title="Codes:">Compromisso renal: TFG &gt; 30 ml/min não requer ajuste; TFG 10 a 30 ml/min máximo 500 mg duas vezes por dia; TFG &lt; 10 ml/min máximo 500 mg/dia. Hemodiálise: 500 mg a cada 24 horas, com dose adicional de 500 mg antes e após a diálise. Diálise peritoneal: máximo 500 mg/dia. Compromisso hepático: dosear com precaução e monitorizar a função hepática em intervalos regulares.</span></p><p><b>timing</b>: Once per 8 hours</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>500-2 mg</td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Adultos e crianças com peso igual ou superior a 40 kg</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose em crianças com peso inferior a 40 kg</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 100 mg/kg/dia em três doses divididas.</p><p><b>timing</b>: 3 per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>100 mg/kg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg/kg = 'mg/kg')</span></td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Crianças com peso inferior a 40 kg</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Tratamento do abcesso dentário com celulite disseminada</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose em adultos e crianças com peso igual ou superior a 40 kg</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 250 mg a 500 mg a cada 8 horas ou 750 mg a 1 g a cada 12 horas. Para infeções graves, 750 mg a 1 g a cada 8 horas.</p><p><b>additionalInstruction</b>: <span title="Codes:">Compromisso renal: TFG &gt; 30 ml/min não requer ajuste; TFG 10 a 30 ml/min máximo 500 mg duas vezes por dia; TFG &lt; 10 ml/min máximo 500 mg/dia. Hemodiálise: 500 mg a cada 24 horas, com dose adicional de 500 mg antes e após a diálise. Diálise peritoneal: máximo 500 mg/dia. Compromisso hepático: dosear com precaução e monitorizar a função hepática em intervalos regulares.</span></p><p><b>timing</b>: Once per 8 hours</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>250-500 mg</td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Adultos e crianças com peso igual ou superior a 40 kg</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose em crianças com peso inferior a 40 kg</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 20 a 90 mg/kg/dia em doses divididas. Só devem ser considerados regimes de duas vezes por dia quando a dose se encontra no limite superior.</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>20-90 mg/kg</td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Crianças com peso inferior a 40 kg</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Tratamento de infeções de próteses articulares</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose em adultos e crianças com peso igual ou superior a 40 kg</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 500 mg a 1 g a cada 8 horas.</p><p><b>additionalInstruction</b>: <span title="Codes:">Compromisso renal: TFG &gt; 30 ml/min não requer ajuste; TFG 10 a 30 ml/min máximo 500 mg duas vezes por dia; TFG &lt; 10 ml/min máximo 500 mg/dia. Hemodiálise: 500 mg a cada 24 horas, com dose adicional de 500 mg antes e após a diálise. Diálise peritoneal: máximo 500 mg/dia. Compromisso hepático: dosear com precaução e monitorizar a função hepática em intervalos regulares.</span></p><p><b>timing</b>: Once per 8 hours</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>500-1 mg</td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Adultos e crianças com peso igual ou superior a 40 kg</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Erradicação de Helicobacter pylori</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose em adultos e crianças com peso igual ou superior a 40 kg</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 750 mg a 1 g duas vezes ao dia, em combinação com um inibidor da bomba de protões (por exemplo, omeprazol, lansoprazol) e outro antibiótico (por exemplo, claritromicina, metronidazol), durante 7 dias.</p><p><b>additionalInstruction</b>: <span title="Codes:">Compromisso renal: TFG &gt; 30 ml/min não requer ajuste; TFG 10 a 30 ml/min máximo 500 mg duas vezes por dia; TFG &lt; 10 ml/min máximo 500 mg/dia. Hemodiálise: 500 mg a cada 24 horas, com dose adicional de 500 mg antes e após a diálise. Diálise peritoneal: máximo 500 mg/dia. Compromisso hepático: dosear com precaução e monitorizar a função hepática em intervalos regulares.</span></p><p><b>timing</b>: 2 per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>750-1 mg</td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Adultos e crianças com peso igual ou superior a 40 kg</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Tratamento da doença de Lyme</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose na fase inicial em adultos e crianças com peso igual ou superior a 40 kg</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Fase inicial: 500 mg a 1 g a cada 8 horas, até um máximo de 4 g/dia em doses divididas, durante 14 dias (10 a 21 dias).</p><p><b>additionalInstruction</b>: <span title="Codes:">Compromisso renal: TFG &gt; 30 ml/min não requer ajuste; TFG 10 a 30 ml/min máximo 500 mg duas vezes por dia; TFG &lt; 10 ml/min máximo 500 mg/dia. Compromisso hepático: dosear com precaução e monitorizar a função hepática em intervalos regulares.</span></p><p><b>timing</b>: Once per 8 hours</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>500-1 mg</td></tr></table><p><b>maxDosePerPeriod</b>: 4 g<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeg = 'g')</span>/1 day<span style="background: LightGoldenRodYellow"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Adultos e crianças com peso igual ou superior a 40 kg — fase inicial</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose na fase tardia em adultos e crianças com peso igual ou superior a 40 kg</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Fase tardia (envolvimento sistémico): 500 mg a 2 g a cada 8 horas, até um máximo de 6 g/dia em doses divididas, durante 10 a 30 dias.</p><p><b>timing</b>: Once per 8 hours</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>500-2 mg</td></tr></table><p><b>maxDosePerPeriod</b>: 6 g<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeg = 'g')</span>/1 day<span style="background: LightGoldenRodYellow"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Adultos e crianças com peso igual ou superior a 40 kg — fase tardia (envolvimento sistémico)</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose na fase inicial em crianças com peso inferior a 40 kg</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Fase inicial: 25 a 50 mg/kg/dia em três doses divididas durante 10 a 21 dias.</p><p><b>timing</b>: 3 per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>25-50 mg/kg</td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Crianças com peso inferior a 40 kg — fase inicial</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose na fase tardia em crianças com peso inferior a 40 kg</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Fase tardia (envolvimento sistémico): 100 mg/kg/dia em três doses divididas durante 10 a 30 dias.</p><p><b>timing</b>: 3 per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>100 mg/kg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg/kg = 'mg/kg')</span></td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Crianças com peso inferior a 40 kg — fase tardia (envolvimento sistémico)</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Profilaxia da endocardite</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose em adultos e crianças com peso igual ou superior a 40 kg</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 2 g oralmente, em dose única, 30 a 60 minutos antes do procedimento.</p><p><b>timing</b>: Code </p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>2 g<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeg = 'g')</span></td></tr></table><p><b>maxDosePerAdministration</b>: 2 g<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeg = 'g')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Adultos e crianças com peso igual ou superior a 40 kg</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose em crianças com peso inferior a 40 kg</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 50 mg/kg oralmente, em dose única, 30 a 60 minutos antes do procedimento.</p><p><b>timing</b>: Code </p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>50 mg/kg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg/kg = 'mg/kg')</span></td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Crianças com peso inferior a 40 kg</span></td></tr></table></blockquote></blockquote><blockquote><p><b>medicineClassification</b></p><p><b>type</b>: <span title="Codes:{http://hl7.org/fhir/medication-classification-type anatomical}">Código ATC</span></p><p><b>classification</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ATC J01CA04}">Amoxicilina</span></p></blockquote><blockquote><p><b>medicineClassification</b></p><p><b>type</b>: <span title="Codes:{http://hl7.org/fhir/medication-classification-type therapeutic}">Grupo farmacoterapêutico</span></p><p><b>classification</b>: <span title="Codes:">1.1.1.2. Medicamentos anti-infeciosos. Antibacterianos. Penicilinas. Aminopenicilinas</span></p></blockquote><p><b>clinicalUseIssue</b>: </p><ul><li><a href="ClinicalUseDefinition-AmoxicilinaGeneris500mg-CUD-contra1.html">ClinicalUseDefinition: type = contraindication</a></li><li><a href="ClinicalUseDefinition-AmoxicilinaGeneris500mg-CUD-contra2.html">ClinicalUseDefinition: type = contraindication</a></li><li><a href="ClinicalUseDefinition-AmoxicilinaGeneris500mg-CUD-ind1.html">ClinicalUseDefinition: type = indication</a></li><li><a href="ClinicalUseDefinition-AmoxicilinaGeneris500mg-CUD-ind2.html">ClinicalUseDefinition: type = indication</a></li><li><a href="ClinicalUseDefinition-AmoxicilinaGeneris500mg-CUD-ind3.html">ClinicalUseDefinition: type = indication</a></li><li><a href="ClinicalUseDefinition-AmoxicilinaGeneris500mg-CUD-ind4.html">ClinicalUseDefinition: type = indication</a></li><li><a href="ClinicalUseDefinition-AmoxicilinaGeneris500mg-CUD-ind5.html">ClinicalUseDefinition: type = indication</a></li><li><a href="ClinicalUseDefinition-AmoxicilinaGeneris500mg-CUD-ind6.html">ClinicalUseDefinition: type = indication</a></li><li><a href="ClinicalUseDefinition-AmoxicilinaGeneris500mg-CUD-ind7.html">ClinicalUseDefinition: type = indication</a></li><li><a href="ClinicalUseDefinition-AmoxicilinaGeneris500mg-CUD-ind8.html">ClinicalUseDefinition: type = indication</a></li><li><a href="ClinicalUseDefinition-AmoxicilinaGeneris500mg-CUD-ind9.html">ClinicalUseDefinition: type = indication</a></li><li><a href="ClinicalUseDefinition-AmoxicilinaGeneris500mg-CUD-ind10.html">ClinicalUseDefinition: type = indication</a></li><li><a href="ClinicalUseDefinition-AmoxicilinaGeneris500mg-CUD-ind11.html">ClinicalUseDefinition: type = indication</a></li><li><a href="ClinicalUseDefinition-AmoxicilinaGeneris500mg-CUD-ind12.html">ClinicalUseDefinition: type = indication</a></li><li><a href="ClinicalUseDefinition-AmoxicilinaGeneris500mg-CUD-ind13.html">ClinicalUseDefinition: type = indication</a></li><li><a href="ClinicalUseDefinition-AmoxicilinaGeneris500mg-CUD-ind14.html">ClinicalUseDefinition: type = indication</a></li><li><a href="ClinicalUseDefinition-AmoxicilinaGeneris500mg-CUD-int1.html">ClinicalUseDefinition: type = interaction</a></li><li><a href="ClinicalUseDefinition-AmoxicilinaGeneris500mg-CUD-int2.html">ClinicalUseDefinition: type = interaction</a></li><li><a href="ClinicalUseDefinition-AmoxicilinaGeneris500mg-CUD-int3.html">ClinicalUseDefinition: type = interaction</a></li><li><a href="ClinicalUseDefinition-AmoxicilinaGeneris500mg-CUD-int4.html">ClinicalUseDefinition: type = interaction</a></li><li><a href="ClinicalUseDefinition-AmoxicilinaGeneris500mg-CUD-int5.html">ClinicalUseDefinition: type = interaction</a></li></ul><blockquote><p><b>definitional</b></p><p><b>doseForm</b>: <span title="Codes:{http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs 39}">Comprimido revestido por película</span></p><p><b>intendedRoute</b>: <span title="Codes:{http://example.com/fhir/example/CodeSystem/via-administracao-cs 48}">Via oral</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia 21465}">Amoxicilina</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass ACTI}">active ingredient</span></p><p><b>strength</b>: 500 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Celulose microcristalina (Grau 101)</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Carboximetilamido sódico (Tipo A)</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Povidona (K-30)</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Celulose microcristalina (Grau 102)</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Estearato de magnésio</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Hipromelose 2910 (6 cP) (E464)</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Macrogol 6000 (E1521)</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Dióxido de titânio (E171)</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p></blockquote></blockquote></div>
+  </text>
+  <code>
+    <coding>
+      <system value="http://infarmed.pt/medicamentos/prod_id"/>
+      <code value="645424"/>
+      <display value="Amoxicilina Generis 500 mg [J01CA04]"/>
+    </coding>
+  </code>
+  <name value="Amoxicilina Generis [Amoxicilina] 500 mg Comprimido revestido por película"/>
+  <indicationGuideline>
+    <indication>
+      <concept>
+        <text value="Tratamento da sinusite bacteriana aguda"/>
+      </concept>
+    </indication>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose em adultos e crianças com peso igual ou superior a 40 kg"/>
+        </type>
+        <dosage>
+          <text value="250 mg a 500 mg a cada 8 horas ou 750 mg a 1 g a cada 12 horas. Para infeções graves, 750 mg a 1 g a cada 8 horas."/>
+          <additionalInstruction>
+            <text value="Compromisso renal: TFG &gt; 30 ml/min não requer ajuste; TFG 10 a 30 ml/min máximo 500 mg duas vezes por dia; TFG &lt; 10 ml/min máximo 500 mg/dia. Hemodiálise: 500 mg a cada 24 horas, com dose adicional de 500 mg antes e após a diálise. Diálise peritoneal: máximo 500 mg/dia. Compromisso hepático: dosear com precaução e monitorizar a função hepática em intervalos regulares."/>
+          </additionalInstruction>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="8"/>
+              <periodUnit value="h"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseRange>
+              <low>
+                <value value="250"/>
+                <unit value="mg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg"/>
+              </low>
+              <high>
+                <value value="500"/>
+                <unit value="mg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg"/>
+              </high>
+            </doseRange>
+          </doseAndRate>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Adultos e crianças com peso igual ou superior a 40 kg"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose em crianças com peso inferior a 40 kg"/>
+        </type>
+        <dosage>
+          <text value="20 a 90 mg/kg/dia em doses divididas. Só devem ser considerados regimes de duas vezes por dia quando a dose se encontra no limite superior."/>
+          <additionalInstruction>
+            <text value="As crianças podem ser tratadas com amoxicilina cápsulas, comprimidos dispersíveis, suspensões ou saquetas; a suspensão pediátrica é recomendada para crianças com menos de seis meses. Às crianças que pesem 40 kg ou mais deve ser prescrita a dosagem para adultos."/>
+          </additionalInstruction>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseRange>
+              <low>
+                <value value="20"/>
+                <unit value="mg/kg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg/kg"/>
+              </low>
+              <high>
+                <value value="90"/>
+                <unit value="mg/kg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg/kg"/>
+              </high>
+            </doseRange>
+          </doseAndRate>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Crianças com peso inferior a 40 kg"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+  </indicationGuideline>
+  <indicationGuideline>
+    <indication>
+      <concept>
+        <text value="Tratamento da otite média aguda"/>
+      </concept>
+    </indication>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose em adultos e crianças com peso igual ou superior a 40 kg"/>
+        </type>
+        <dosage>
+          <text value="500 mg a cada 8 horas ou 750 mg a 1 g a cada 12 horas. Para infeções graves, 750 mg a 1 g a cada 8 horas durante 10 dias."/>
+          <additionalInstruction>
+            <text value="Compromisso renal: TFG &gt; 30 ml/min não requer ajuste; TFG 10 a 30 ml/min máximo 500 mg duas vezes por dia; TFG &lt; 10 ml/min máximo 500 mg/dia. Hemodiálise: 500 mg a cada 24 horas, com dose adicional de 500 mg antes e após a diálise. Diálise peritoneal: máximo 500 mg/dia. Compromisso hepático: dosear com precaução e monitorizar a função hepática em intervalos regulares."/>
+          </additionalInstruction>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="8"/>
+              <periodUnit value="h"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="500"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </doseQuantity>
+          </doseAndRate>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Adultos e crianças com peso igual ou superior a 40 kg"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose em crianças com peso inferior a 40 kg"/>
+        </type>
+        <dosage>
+          <text value="20 a 90 mg/kg/dia em doses divididas. Só devem ser considerados regimes de duas vezes por dia quando a dose se encontra no limite superior."/>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseRange>
+              <low>
+                <value value="20"/>
+                <unit value="mg/kg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg/kg"/>
+              </low>
+              <high>
+                <value value="90"/>
+                <unit value="mg/kg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg/kg"/>
+              </high>
+            </doseRange>
+          </doseAndRate>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Crianças com peso inferior a 40 kg"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+  </indicationGuideline>
+  <indicationGuideline>
+    <indication>
+      <concept>
+        <text value="Tratamento da amigdalite e faringite agudas estreptocócicas"/>
+      </concept>
+    </indication>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose em adultos e crianças com peso igual ou superior a 40 kg"/>
+        </type>
+        <dosage>
+          <text value="500 mg a cada 8 horas ou 750 mg a 1 g a cada 12 horas. Para infeções graves, 750 mg a 1 g a cada 8 horas durante 10 dias."/>
+          <additionalInstruction>
+            <text value="Compromisso renal: TFG &gt; 30 ml/min não requer ajuste; TFG 10 a 30 ml/min máximo 500 mg duas vezes por dia; TFG &lt; 10 ml/min máximo 500 mg/dia. Hemodiálise: 500 mg a cada 24 horas, com dose adicional de 500 mg antes e após a diálise. Diálise peritoneal: máximo 500 mg/dia. Compromisso hepático: dosear com precaução e monitorizar a função hepática em intervalos regulares."/>
+          </additionalInstruction>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="8"/>
+              <periodUnit value="h"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="500"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </doseQuantity>
+          </doseAndRate>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Adultos e crianças com peso igual ou superior a 40 kg"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose em crianças com peso inferior a 40 kg"/>
+        </type>
+        <dosage>
+          <text value="40 a 90 mg/kg/dia em doses divididas. Só devem ser considerados regimes de duas vezes por dia quando a dose se encontra no limite superior."/>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseRange>
+              <low>
+                <value value="40"/>
+                <unit value="mg/kg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg/kg"/>
+              </low>
+              <high>
+                <value value="90"/>
+                <unit value="mg/kg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg/kg"/>
+              </high>
+            </doseRange>
+          </doseAndRate>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Crianças com peso inferior a 40 kg"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+  </indicationGuideline>
+  <indicationGuideline>
+    <indication>
+      <concept>
+        <text value="Tratamento das exacerbações agudas da bronquite crónica"/>
+      </concept>
+    </indication>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose em adultos e crianças com peso igual ou superior a 40 kg"/>
+        </type>
+        <dosage>
+          <text value="500 mg a cada 8 horas ou 750 mg a 1 g a cada 12 horas. Para infeções graves, 750 mg a 1 g a cada 8 horas durante 10 dias."/>
+          <additionalInstruction>
+            <text value="Compromisso renal: TFG &gt; 30 ml/min não requer ajuste; TFG 10 a 30 ml/min máximo 500 mg duas vezes por dia; TFG &lt; 10 ml/min máximo 500 mg/dia. Hemodiálise: 500 mg a cada 24 horas, com dose adicional de 500 mg antes e após a diálise. Diálise peritoneal: máximo 500 mg/dia. Compromisso hepático: dosear com precaução e monitorizar a função hepática em intervalos regulares."/>
+          </additionalInstruction>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="8"/>
+              <periodUnit value="h"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="500"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </doseQuantity>
+          </doseAndRate>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Adultos e crianças com peso igual ou superior a 40 kg"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+  </indicationGuideline>
+  <indicationGuideline>
+    <indication>
+      <concept>
+        <text value="Tratamento da pneumonia adquirida na comunidade"/>
+      </concept>
+    </indication>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose em adultos e crianças com peso igual ou superior a 40 kg"/>
+        </type>
+        <dosage>
+          <text value="500 mg a 1 g a cada 8 horas."/>
+          <additionalInstruction>
+            <text value="Compromisso renal: TFG &gt; 30 ml/min não requer ajuste; TFG 10 a 30 ml/min máximo 500 mg duas vezes por dia; TFG &lt; 10 ml/min máximo 500 mg/dia. Hemodiálise: 500 mg a cada 24 horas, com dose adicional de 500 mg antes e após a diálise. Diálise peritoneal: máximo 500 mg/dia. Compromisso hepático: dosear com precaução e monitorizar a função hepática em intervalos regulares."/>
+          </additionalInstruction>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="8"/>
+              <periodUnit value="h"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseRange>
+              <low>
+                <value value="500"/>
+                <unit value="mg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg"/>
+              </low>
+              <high>
+                <value value="1"/>
+                <unit value="g"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="g"/>
+              </high>
+            </doseRange>
+          </doseAndRate>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Adultos e crianças com peso igual ou superior a 40 kg"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose em crianças com peso inferior a 40 kg"/>
+        </type>
+        <dosage>
+          <text value="20 a 90 mg/kg/dia em doses divididas. Só devem ser considerados regimes de duas vezes por dia quando a dose se encontra no limite superior."/>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseRange>
+              <low>
+                <value value="20"/>
+                <unit value="mg/kg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg/kg"/>
+              </low>
+              <high>
+                <value value="90"/>
+                <unit value="mg/kg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg/kg"/>
+              </high>
+            </doseRange>
+          </doseAndRate>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Crianças com peso inferior a 40 kg"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+  </indicationGuideline>
+  <indicationGuideline>
+    <indication>
+      <concept>
+        <text value="Tratamento da cistite aguda"/>
+      </concept>
+    </indication>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose em adultos e crianças com peso igual ou superior a 40 kg"/>
+        </type>
+        <dosage>
+          <text value="250 mg a 500 mg a cada 8 horas ou 750 mg a 1 g a cada 12 horas. Para infeções graves, 750 mg a 1 g a cada 8 horas. A cistite aguda pode ser tratada com 3 g duas vezes ao dia durante um dia."/>
+          <additionalInstruction>
+            <text value="Compromisso renal: TFG &gt; 30 ml/min não requer ajuste; TFG 10 a 30 ml/min máximo 500 mg duas vezes por dia; TFG &lt; 10 ml/min máximo 500 mg/dia. Hemodiálise: 500 mg a cada 24 horas, com dose adicional de 500 mg antes e após a diálise. Diálise peritoneal: máximo 500 mg/dia. Compromisso hepático: dosear com precaução e monitorizar a função hepática em intervalos regulares."/>
+          </additionalInstruction>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="8"/>
+              <periodUnit value="h"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseRange>
+              <low>
+                <value value="250"/>
+                <unit value="mg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg"/>
+              </low>
+              <high>
+                <value value="500"/>
+                <unit value="mg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg"/>
+              </high>
+            </doseRange>
+          </doseAndRate>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Adultos e crianças com peso igual ou superior a 40 kg"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose em crianças com peso inferior a 40 kg"/>
+        </type>
+        <dosage>
+          <text value="20 a 90 mg/kg/dia em doses divididas. Só devem ser considerados regimes de duas vezes por dia quando a dose se encontra no limite superior."/>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseRange>
+              <low>
+                <value value="20"/>
+                <unit value="mg/kg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg/kg"/>
+              </low>
+              <high>
+                <value value="90"/>
+                <unit value="mg/kg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg/kg"/>
+              </high>
+            </doseRange>
+          </doseAndRate>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Crianças com peso inferior a 40 kg"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+  </indicationGuideline>
+  <indicationGuideline>
+    <indication>
+      <concept>
+        <text value="Tratamento da bacteriúria assintomática na gravidez"/>
+      </concept>
+    </indication>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose em adultos e crianças com peso igual ou superior a 40 kg"/>
+        </type>
+        <dosage>
+          <text value="250 mg a 500 mg a cada 8 horas ou 750 mg a 1 g a cada 12 horas. Para infeções graves, 750 mg a 1 g a cada 8 horas."/>
+          <additionalInstruction>
+            <text value="Compromisso renal: TFG &gt; 30 ml/min não requer ajuste; TFG 10 a 30 ml/min máximo 500 mg duas vezes por dia; TFG &lt; 10 ml/min máximo 500 mg/dia. Hemodiálise: 500 mg a cada 24 horas, com dose adicional de 500 mg antes e após a diálise. Diálise peritoneal: máximo 500 mg/dia. Compromisso hepático: dosear com precaução e monitorizar a função hepática em intervalos regulares."/>
+          </additionalInstruction>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="8"/>
+              <periodUnit value="h"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseRange>
+              <low>
+                <value value="250"/>
+                <unit value="mg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg"/>
+              </low>
+              <high>
+                <value value="500"/>
+                <unit value="mg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg"/>
+              </high>
+            </doseRange>
+          </doseAndRate>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Adultos e crianças com peso igual ou superior a 40 kg"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+  </indicationGuideline>
+  <indicationGuideline>
+    <indication>
+      <concept>
+        <text value="Tratamento da pielonefrite aguda"/>
+      </concept>
+    </indication>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose em adultos e crianças com peso igual ou superior a 40 kg"/>
+        </type>
+        <dosage>
+          <text value="250 mg a 500 mg a cada 8 horas ou 750 mg a 1 g a cada 12 horas. Para infeções graves, 750 mg a 1 g a cada 8 horas."/>
+          <additionalInstruction>
+            <text value="Compromisso renal: TFG &gt; 30 ml/min não requer ajuste; TFG 10 a 30 ml/min máximo 500 mg duas vezes por dia; TFG &lt; 10 ml/min máximo 500 mg/dia. Hemodiálise: 500 mg a cada 24 horas, com dose adicional de 500 mg antes e após a diálise. Diálise peritoneal: máximo 500 mg/dia. Compromisso hepático: dosear com precaução e monitorizar a função hepática em intervalos regulares."/>
+          </additionalInstruction>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="8"/>
+              <periodUnit value="h"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseRange>
+              <low>
+                <value value="250"/>
+                <unit value="mg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg"/>
+              </low>
+              <high>
+                <value value="500"/>
+                <unit value="mg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg"/>
+              </high>
+            </doseRange>
+          </doseAndRate>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Adultos e crianças com peso igual ou superior a 40 kg"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose em crianças com peso inferior a 40 kg"/>
+        </type>
+        <dosage>
+          <text value="20 a 90 mg/kg/dia em doses divididas. Só devem ser considerados regimes de duas vezes por dia quando a dose se encontra no limite superior."/>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseRange>
+              <low>
+                <value value="20"/>
+                <unit value="mg/kg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg/kg"/>
+              </low>
+              <high>
+                <value value="90"/>
+                <unit value="mg/kg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg/kg"/>
+              </high>
+            </doseRange>
+          </doseAndRate>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Crianças com peso inferior a 40 kg"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+  </indicationGuideline>
+  <indicationGuideline>
+    <indication>
+      <concept>
+        <text value="Tratamento da febre tifoide e paratifoide"/>
+      </concept>
+    </indication>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose em adultos e crianças com peso igual ou superior a 40 kg"/>
+        </type>
+        <dosage>
+          <text value="500 mg a 2 g a cada 8 horas."/>
+          <additionalInstruction>
+            <text value="Compromisso renal: TFG &gt; 30 ml/min não requer ajuste; TFG 10 a 30 ml/min máximo 500 mg duas vezes por dia; TFG &lt; 10 ml/min máximo 500 mg/dia. Hemodiálise: 500 mg a cada 24 horas, com dose adicional de 500 mg antes e após a diálise. Diálise peritoneal: máximo 500 mg/dia. Compromisso hepático: dosear com precaução e monitorizar a função hepática em intervalos regulares."/>
+          </additionalInstruction>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="8"/>
+              <periodUnit value="h"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseRange>
+              <low>
+                <value value="500"/>
+                <unit value="mg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg"/>
+              </low>
+              <high>
+                <value value="2"/>
+                <unit value="g"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="g"/>
+              </high>
+            </doseRange>
+          </doseAndRate>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Adultos e crianças com peso igual ou superior a 40 kg"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose em crianças com peso inferior a 40 kg"/>
+        </type>
+        <dosage>
+          <text value="100 mg/kg/dia em três doses divididas."/>
+          <timing>
+            <repeat>
+              <frequency value="3"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="100"/>
+              <unit value="mg/kg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg/kg"/>
+            </doseQuantity>
+          </doseAndRate>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Crianças com peso inferior a 40 kg"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+  </indicationGuideline>
+  <indicationGuideline>
+    <indication>
+      <concept>
+        <text value="Tratamento do abcesso dentário com celulite disseminada"/>
+      </concept>
+    </indication>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose em adultos e crianças com peso igual ou superior a 40 kg"/>
+        </type>
+        <dosage>
+          <text value="250 mg a 500 mg a cada 8 horas ou 750 mg a 1 g a cada 12 horas. Para infeções graves, 750 mg a 1 g a cada 8 horas."/>
+          <additionalInstruction>
+            <text value="Compromisso renal: TFG &gt; 30 ml/min não requer ajuste; TFG 10 a 30 ml/min máximo 500 mg duas vezes por dia; TFG &lt; 10 ml/min máximo 500 mg/dia. Hemodiálise: 500 mg a cada 24 horas, com dose adicional de 500 mg antes e após a diálise. Diálise peritoneal: máximo 500 mg/dia. Compromisso hepático: dosear com precaução e monitorizar a função hepática em intervalos regulares."/>
+          </additionalInstruction>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="8"/>
+              <periodUnit value="h"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseRange>
+              <low>
+                <value value="250"/>
+                <unit value="mg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg"/>
+              </low>
+              <high>
+                <value value="500"/>
+                <unit value="mg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg"/>
+              </high>
+            </doseRange>
+          </doseAndRate>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Adultos e crianças com peso igual ou superior a 40 kg"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose em crianças com peso inferior a 40 kg"/>
+        </type>
+        <dosage>
+          <text value="20 a 90 mg/kg/dia em doses divididas. Só devem ser considerados regimes de duas vezes por dia quando a dose se encontra no limite superior."/>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseRange>
+              <low>
+                <value value="20"/>
+                <unit value="mg/kg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg/kg"/>
+              </low>
+              <high>
+                <value value="90"/>
+                <unit value="mg/kg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg/kg"/>
+              </high>
+            </doseRange>
+          </doseAndRate>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Crianças com peso inferior a 40 kg"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+  </indicationGuideline>
+  <indicationGuideline>
+    <indication>
+      <concept>
+        <text value="Tratamento de infeções de próteses articulares"/>
+      </concept>
+    </indication>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose em adultos e crianças com peso igual ou superior a 40 kg"/>
+        </type>
+        <dosage>
+          <text value="500 mg a 1 g a cada 8 horas."/>
+          <additionalInstruction>
+            <text value="Compromisso renal: TFG &gt; 30 ml/min não requer ajuste; TFG 10 a 30 ml/min máximo 500 mg duas vezes por dia; TFG &lt; 10 ml/min máximo 500 mg/dia. Hemodiálise: 500 mg a cada 24 horas, com dose adicional de 500 mg antes e após a diálise. Diálise peritoneal: máximo 500 mg/dia. Compromisso hepático: dosear com precaução e monitorizar a função hepática em intervalos regulares."/>
+          </additionalInstruction>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="8"/>
+              <periodUnit value="h"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseRange>
+              <low>
+                <value value="500"/>
+                <unit value="mg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg"/>
+              </low>
+              <high>
+                <value value="1"/>
+                <unit value="g"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="g"/>
+              </high>
+            </doseRange>
+          </doseAndRate>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Adultos e crianças com peso igual ou superior a 40 kg"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+  </indicationGuideline>
+  <indicationGuideline>
+    <indication>
+      <concept>
+        <text value="Erradicação de Helicobacter pylori"/>
+      </concept>
+    </indication>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose em adultos e crianças com peso igual ou superior a 40 kg"/>
+        </type>
+        <dosage>
+          <text value="750 mg a 1 g duas vezes ao dia, em combinação com um inibidor da bomba de protões (por exemplo, omeprazol, lansoprazol) e outro antibiótico (por exemplo, claritromicina, metronidazol), durante 7 dias."/>
+          <additionalInstruction>
+            <text value="Compromisso renal: TFG &gt; 30 ml/min não requer ajuste; TFG 10 a 30 ml/min máximo 500 mg duas vezes por dia; TFG &lt; 10 ml/min máximo 500 mg/dia. Hemodiálise: 500 mg a cada 24 horas, com dose adicional de 500 mg antes e após a diálise. Diálise peritoneal: máximo 500 mg/dia. Compromisso hepático: dosear com precaução e monitorizar a função hepática em intervalos regulares."/>
+          </additionalInstruction>
+          <timing>
+            <repeat>
+              <boundsDuration>
+                <value value="7"/>
+                <unit value="days"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="d"/>
+              </boundsDuration>
+              <frequency value="2"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseRange>
+              <low>
+                <value value="750"/>
+                <unit value="mg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg"/>
+              </low>
+              <high>
+                <value value="1"/>
+                <unit value="g"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="g"/>
+              </high>
+            </doseRange>
+          </doseAndRate>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Adultos e crianças com peso igual ou superior a 40 kg"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+  </indicationGuideline>
+  <indicationGuideline>
+    <indication>
+      <concept>
+        <text value="Tratamento da doença de Lyme"/>
+      </concept>
+    </indication>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose na fase inicial em adultos e crianças com peso igual ou superior a 40 kg"/>
+        </type>
+        <dosage>
+          <text value="Fase inicial: 500 mg a 1 g a cada 8 horas, até um máximo de 4 g/dia em doses divididas, durante 14 dias (10 a 21 dias)."/>
+          <additionalInstruction>
+            <text value="Compromisso renal: TFG &gt; 30 ml/min não requer ajuste; TFG 10 a 30 ml/min máximo 500 mg duas vezes por dia; TFG &lt; 10 ml/min máximo 500 mg/dia. Compromisso hepático: dosear com precaução e monitorizar a função hepática em intervalos regulares."/>
+          </additionalInstruction>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="8"/>
+              <periodUnit value="h"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseRange>
+              <low>
+                <value value="500"/>
+                <unit value="mg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg"/>
+              </low>
+              <high>
+                <value value="1"/>
+                <unit value="g"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="g"/>
+              </high>
+            </doseRange>
+          </doseAndRate>
+          <maxDosePerPeriod>
+            <numerator>
+              <value value="4"/>
+              <unit value="g"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="g"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+              <unit value="day"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="d"/>
+            </denominator>
+          </maxDosePerPeriod>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Adultos e crianças com peso igual ou superior a 40 kg — fase inicial"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose na fase tardia em adultos e crianças com peso igual ou superior a 40 kg"/>
+        </type>
+        <dosage>
+          <text value="Fase tardia (envolvimento sistémico): 500 mg a 2 g a cada 8 horas, até um máximo de 6 g/dia em doses divididas, durante 10 a 30 dias."/>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="8"/>
+              <periodUnit value="h"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseRange>
+              <low>
+                <value value="500"/>
+                <unit value="mg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg"/>
+              </low>
+              <high>
+                <value value="2"/>
+                <unit value="g"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="g"/>
+              </high>
+            </doseRange>
+          </doseAndRate>
+          <maxDosePerPeriod>
+            <numerator>
+              <value value="6"/>
+              <unit value="g"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="g"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+              <unit value="day"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="d"/>
+            </denominator>
+          </maxDosePerPeriod>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Adultos e crianças com peso igual ou superior a 40 kg — fase tardia (envolvimento sistémico)"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose na fase inicial em crianças com peso inferior a 40 kg"/>
+        </type>
+        <dosage>
+          <text value="Fase inicial: 25 a 50 mg/kg/dia em três doses divididas durante 10 a 21 dias."/>
+          <timing>
+            <repeat>
+              <frequency value="3"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseRange>
+              <low>
+                <value value="25"/>
+                <unit value="mg/kg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg/kg"/>
+              </low>
+              <high>
+                <value value="50"/>
+                <unit value="mg/kg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg/kg"/>
+              </high>
+            </doseRange>
+          </doseAndRate>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Crianças com peso inferior a 40 kg — fase inicial"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose na fase tardia em crianças com peso inferior a 40 kg"/>
+        </type>
+        <dosage>
+          <text value="Fase tardia (envolvimento sistémico): 100 mg/kg/dia em três doses divididas durante 10 a 30 dias."/>
+          <timing>
+            <repeat>
+              <frequency value="3"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="100"/>
+              <unit value="mg/kg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg/kg"/>
+            </doseQuantity>
+          </doseAndRate>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Crianças com peso inferior a 40 kg — fase tardia (envolvimento sistémico)"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+  </indicationGuideline>
+  <indicationGuideline>
+    <indication>
+      <concept>
+        <text value="Profilaxia da endocardite"/>
+      </concept>
+    </indication>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose em adultos e crianças com peso igual ou superior a 40 kg"/>
+        </type>
+        <dosage>
+          <text value="2 g oralmente, em dose única, 30 a 60 minutos antes do procedimento."/>
+          <timing>
+            <code>
+              <text value="30 a 60 minutos antes do procedimento"/>
+            </code>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="2"/>
+              <unit value="g"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="g"/>
+            </doseQuantity>
+          </doseAndRate>
+          <maxDosePerAdministration>
+            <value value="2"/>
+            <unit value="g"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="g"/>
+          </maxDosePerAdministration>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Adultos e crianças com peso igual ou superior a 40 kg"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose em crianças com peso inferior a 40 kg"/>
+        </type>
+        <dosage>
+          <text value="50 mg/kg oralmente, em dose única, 30 a 60 minutos antes do procedimento."/>
+          <timing>
+            <code>
+              <text value="30 a 60 minutos antes do procedimento"/>
+            </code>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="50"/>
+              <unit value="mg/kg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg/kg"/>
+            </doseQuantity>
+          </doseAndRate>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Crianças com peso inferior a 40 kg"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+  </indicationGuideline>
+  <medicineClassification>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/medication-classification-type"/>
+        <code value="anatomical"/>
+      </coding>
+      <text value="Código ATC"/>
+    </type>
+    <classification>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ATC"/>
+        <code value="J01CA04"/>
+        <display value="Amoxicilina"/>
+      </coding>
+    </classification>
+  </medicineClassification>
+  <medicineClassification>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/medication-classification-type"/>
+        <code value="therapeutic"/>
+      </coding>
+      <text value="Grupo farmacoterapêutico"/>
+    </type>
+    <classification>
+      <text value="1.1.1.2. Medicamentos anti-infeciosos. Antibacterianos. Penicilinas. Aminopenicilinas"/>
+    </classification>
+  </medicineClassification>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/AmoxicilinaGeneris500mg-CUD-contra1"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/AmoxicilinaGeneris500mg-CUD-contra2"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/AmoxicilinaGeneris500mg-CUD-ind1"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/AmoxicilinaGeneris500mg-CUD-ind2"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/AmoxicilinaGeneris500mg-CUD-ind3"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/AmoxicilinaGeneris500mg-CUD-ind4"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/AmoxicilinaGeneris500mg-CUD-ind5"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/AmoxicilinaGeneris500mg-CUD-ind6"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/AmoxicilinaGeneris500mg-CUD-ind7"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/AmoxicilinaGeneris500mg-CUD-ind8"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/AmoxicilinaGeneris500mg-CUD-ind9"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/AmoxicilinaGeneris500mg-CUD-ind10"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/AmoxicilinaGeneris500mg-CUD-ind11"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/AmoxicilinaGeneris500mg-CUD-ind12"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/AmoxicilinaGeneris500mg-CUD-ind13"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/AmoxicilinaGeneris500mg-CUD-ind14"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/AmoxicilinaGeneris500mg-CUD-int1"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/AmoxicilinaGeneris500mg-CUD-int2"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/AmoxicilinaGeneris500mg-CUD-int3"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/AmoxicilinaGeneris500mg-CUD-int4"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/AmoxicilinaGeneris500mg-CUD-int5"/>
+  </clinicalUseIssue>
+  <definitional>
+    <doseForm>
+      <coding>
+        <system value="http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs"/>
+        <code value="39"/>
+        <display value="Comprimido revestido por película"/>
+      </coding>
+    </doseForm>
+    <intendedRoute>
+      <coding>
+        <system value="http://example.com/fhir/example/CodeSystem/via-administracao-cs"/>
+        <code value="48"/>
+        <display value="Via oral"/>
+      </coding>
+    </intendedRoute>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="21465"/>
+            <display value="Amoxicilina"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="ACTI"/>
+        </coding>
+      </type>
+      <strengthQuantity>
+        <value value="500"/>
+        <unit value="mg"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mg"/>
+      </strengthQuantity>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Celulose microcristalina (Grau 101)"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Carboximetilamido sódico (Tipo A)"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Povidona (K-30)"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Celulose microcristalina (Grau 102)"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Estearato de magnésio"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Hipromelose 2910 (6 cP) (E464)"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Macrogol 6000 (E1521)"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Dióxido de titânio (E171)"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+    </ingredient>
+  </definitional>
+</MedicationKnowledge>

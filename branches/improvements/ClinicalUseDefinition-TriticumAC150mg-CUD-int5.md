@@ -1,0 +1,70 @@
+# TriticumAC150mg-CUD-int5 - HL7 PT FHIR Implementation Guide: IG de Exemplo Versão 1 | STU1 v1.0.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **TriticumAC150mg-CUD-int5**
+
+## Example ClinicalUseDefinition: TriticumAC150mg-CUD-int5
+
+Profile: [Perfil do recurso para interações de medicação](StructureDefinition-InteracoesPDH.md)
+
+**type**: Interaction
+
+> **interaction**
+
+### Interactants
+
+| | |
+| :--- | :--- |
+| - | **Item[x]** |
+| * | Fármacos que prolongam o intervalo QT |
+
+**type**: drug to drug interaction
+
+### Effects
+
+| | |
+| :--- | :--- |
+| - | **Concept** |
+| * | O uso concomitante pode aumentar o risco de arritmias ventriculares, incluindo torsade de pointes; deverá ter-se precaução |
+
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "ClinicalUseDefinition",
+  "id" : "TriticumAC150mg-CUD-int5",
+  "meta" : {
+    "profile" : ["http://example.com/fhir/example/StructureDefinition/InteracoesPDH"]
+  },
+  "type" : "interaction",
+  "interaction" : {
+    "interactant" : [{
+      "itemCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "[PREENCHER]",
+          "display" : "Fármacos que prolongam o intervalo QT"
+        }],
+        "text" : "Fármacos que prolongam o intervalo QT"
+      }
+    }],
+    "type" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/interaction-type",
+        "code" : "drug-drug",
+        "display" : "drug to drug interaction"
+      }]
+    },
+    "effect" : {
+      "concept" : {
+        "text" : "O uso concomitante pode aumentar o risco de arritmias ventriculares, incluindo torsade de pointes; deverá ter-se precaução"
+      }
+    }
+  }
+}
+
+```

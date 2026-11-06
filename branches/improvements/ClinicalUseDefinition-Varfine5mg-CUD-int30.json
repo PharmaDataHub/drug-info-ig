@@ -1,0 +1,36 @@
+{
+  "resourceType" : "ClinicalUseDefinition",
+  "id" : "Varfine5mg-CUD-int30",
+  "meta" : {
+    "profile" : ["http://example.com/fhir/example/StructureDefinition/InteracoesPDH"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ClinicalUseDefinition Varfine5mg-CUD-int30</b></p><a name=\"Varfine5mg-CUD-int30\"> </a><a name=\"hcVarfine5mg-CUD-int30\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-InteracoesPDH.html\">Perfil do recurso para interações de medicação</a></p></div><p><b>type</b>: Interaction</p><blockquote><p><b>interaction</b></p><h3>Interactants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Item[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct [PREENCHER]}\">Alimentos ricos em vitamina K (fígado, bróculos, couves de Bruxelas e folhas verdes)</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/interaction-type drug-food}\">drug to food interaction</span></p><h3>Effects</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Mudanças repentinas na dieta podem potencialmente afetar o controlo da anticoagulação. Os doentes devem informar o médico antes de realizar grandes alterações na dieta.</span></td></tr></table></blockquote></div>"
+  },
+  "type" : "interaction",
+  "interaction" : {
+    "interactant" : [{
+      "itemCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "[PREENCHER]",
+          "display" : "Alimentos ricos em vitamina K"
+        }],
+        "text" : "Alimentos ricos em vitamina K (fígado, bróculos, couves de Bruxelas e folhas verdes)"
+      }
+    }],
+    "type" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/interaction-type",
+        "code" : "drug-food",
+        "display" : "drug to food interaction"
+      }]
+    },
+    "effect" : {
+      "concept" : {
+        "text" : "Mudanças repentinas na dieta podem potencialmente afetar o controlo da anticoagulação. Os doentes devem informar o médico antes de realizar grandes alterações na dieta."
+      }
+    }
+  }
+}

@@ -1,0 +1,480 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/MedicationKnowledge/Slenyto-1-mg-Comprimido-de-libertacao-prolongada> a fhir:MedicationKnowledge ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Slenyto-1-mg-Comprimido-de-libertacao-prolongada"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH"^^xsd:anyURI ;
+       fhir:link <http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationKnowledge Slenyto-1-mg-Comprimido-de-libertacao-prolongada</b></p><a name=\"Slenyto-1-mg-Comprimido-de-libertacao-prolongada\"> </a><a name=\"hcSlenyto-1-mg-Comprimido-de-libertacao-prolongada\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MedicationKnowledgePDH.html\">Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento</a></p></div><p><b>code</b>: <span title=\"Codes:{http://infarmed.pt/medicamentos/prod_id 638506}\">Slenyto 1 mg [N05CH01]</span></p><p><b>name</b>: Slenyto [Melatonina] 1 mg Comprimido de libertação prolongada</p><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Tratamento da insónia em crianças e adolescentes com idades entre os 2 e 18 anos com Perturbação do Espetro do Autismo (PEA) e/ou síndrome de Smith-Magenis, nos quais as medidas de higiene do sono não foram suficientes</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose inicial e de manutenção</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: A dose inicial recomendada é de 2 mg. Caso se verifique uma resposta inadequada, a dose deve ser aumentada para 5 mg, com uma dose máxima de 10 mg. Slenyto deve ser tomado uma vez por dia, 30 minutos a 1 hora antes da hora de deitar e com ou sem alimentos.</p><p><b>additionalInstruction</b>: <span title=\"Codes:\">Os comprimidos devem ser deglutidos inteiros. O comprimido não deve ser partido, esmagado ou mastigado, porque irá perder as propriedades de libertação prolongada. O comprimido pode ser misturado com alimentos, como iogurte, sumo de laranja ou gelado, para facilitar a deglutição; se misturado com alimentos ou bebida, deve ser tomado de imediato e a mistura não pode ser guardada.</span>, <span title=\"Codes:\">Estão disponíveis dados até 2 anos de tratamento. O doente deve ser monitorizado em intervalos regulares (pelo menos de 6 em 6 meses). Após pelo menos três meses de tratamento, o médico deverá avaliar o efeito do tratamento e considerar a interrupção do mesmo, caso não seja observado qualquer efeito clinicamente relevante. Se for observado um menor efeito após o aumento da posologia, o prescritor deve primeiro considerar uma redução da posologia antes de decidir interromper totalmente o tratamento.</span>, <span title=\"Codes:\">Em caso de esquecimento de tomar um comprimido, este pode ser tomado antes da hora de deitar do doente, mas após este período não deve ser dado nenhum outro comprimido antes da próxima dose agendada.</span></p><p><b>timing</b>: 30min , before sleeping, Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>2-5 mg</td></tr></table><p><b>maxDosePerPeriod</b>: 10 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Crianças e adolescentes com idades entre os 2 e 18 anos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose em doentes com compromisso renal</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>O efeito de qualquer estádio de compromisso renal na farmacocinética da melatonina não foi estudado. Deverão ser tomadas precauções quando se administra melatonina a doentes com compromisso renal.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Doentes com compromisso renal</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose em doentes com compromisso hepático</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Não há experiência de utilização de melatonina em doentes com compromisso hepático. Por este motivo, não é recomendada a utilização de melatonina em doentes com compromisso hepático.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Doentes com compromisso hepático</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Utilização em crianças com menos de 2 anos de idade</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Não existe utilização relevante de melatonina em crianças dos 0 aos 2 anos para o tratamento da insónia.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Crianças com menos de 2 anos de idade</span></td></tr></table></blockquote></blockquote><blockquote><p><b>medicineClassification</b></p><p><b>type</b>: <span title=\"Codes:\">Código ATC</span></p><p><b>classification</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ATC N05CH01}\">Melatonina</span></p></blockquote><blockquote><p><b>medicineClassification</b></p><p><b>type</b>: <span title=\"Codes:\">Grupo farmacoterapêutico</span></p><p><b>classification</b>: <span title=\"Codes:\">Psicolépticos, agonistas do recetor da melatonina</span></p></blockquote><p><b>clinicalUseIssue</b>: </p><ul><li><a href=\"ClinicalUseDefinition-Slenyto1mg-CUD-contra1.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Slenyto1mg-CUD-ind1.html\">ClinicalUseDefinition: type = indication</a></li><li><a href=\"ClinicalUseDefinition-Slenyto1mg-CUD-int1.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Slenyto1mg-CUD-int2.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Slenyto1mg-CUD-int3.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Slenyto1mg-CUD-int4.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Slenyto1mg-CUD-int5.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Slenyto1mg-CUD-int6.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Slenyto1mg-CUD-int7.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Slenyto1mg-CUD-int8.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Slenyto1mg-CUD-int9.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Slenyto1mg-CUD-int10.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Slenyto1mg-CUD-int11.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Slenyto1mg-CUD-int12.html\">ClinicalUseDefinition: type = interaction</a></li></ul><blockquote><p><b>definitional</b></p><p><b>doseForm</b>: <span title=\"Codes:{http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs 43}, {https://extranet.infarmed.pt/INFOMED-fo/detalhes-medicamento.xhtml 043}\">Comprimido de libertação prolongada</span></p><p><b>intendedRoute</b>: <span title=\"Codes:{http://example.com/fhir/example/CodeSystem/via-administracao-cs 48}\">Via oral</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia 30206}\">Melatonina</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass ACTI}\">active ingredient</span></p><p><b>strength</b>: 1 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Copolímero tipo B do metacrilato de amónio</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Hidrogenofosfato de cálcio di-hidratado</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Lactose mono-hidratada</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass BASE}\">base</span></p><p><b>strength</b>: 8.32 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Sílica coloidal anidra</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Talco</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Estearato de magnésio</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Carmelose sódica (E466)</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Maltodextrina</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Glucose mono-hidratada</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Lecitina (E322)</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Dióxido de titânio (E171)</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Óxido de ferro vermelho (E172)</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Óxido de ferro amarelo (E172)</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://infarmed.pt/medicamentos/prod_id"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "638506" ] ;
+       fhir:display [ fhir:v "Slenyto 1 mg [N05CH01]" ]
+     ] )
+  ] ; # 
+  fhir:name ( [ fhir:v "Slenyto [Melatonina] 1 mg Comprimido de libertação prolongada"] ) ; # 
+  fhir:indicationGuideline ( [
+     fhir:indication ( [
+       fhir:concept [
+         fhir:text [ fhir:v "Tratamento da insónia em crianças e adolescentes com idades entre os 2 e 18 anos com Perturbação do Espetro do Autismo (PEA) e/ou síndrome de Smith-Magenis, nos quais as medidas de higiene do sono não foram suficientes" ]
+       ]
+     ] ) ;
+     fhir:dosingGuideline ( [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose inicial e de manutenção" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "A dose inicial recomendada é de 2 mg. Caso se verifique uma resposta inadequada, a dose deve ser aumentada para 5 mg, com uma dose máxima de 10 mg. Slenyto deve ser tomado uma vez por dia, 30 minutos a 1 hora antes da hora de deitar e com ou sem alimentos." ] ;
+           fhir:additionalInstruction ( [
+             fhir:text [ fhir:v "Os comprimidos devem ser deglutidos inteiros. O comprimido não deve ser partido, esmagado ou mastigado, porque irá perder as propriedades de libertação prolongada. O comprimido pode ser misturado com alimentos, como iogurte, sumo de laranja ou gelado, para facilitar a deglutição; se misturado com alimentos ou bebida, deve ser tomado de imediato e a mistura não pode ser guardada." ]
+           ] [
+             fhir:text [ fhir:v "Estão disponíveis dados até 2 anos de tratamento. O doente deve ser monitorizado em intervalos regulares (pelo menos de 6 em 6 meses). Após pelo menos três meses de tratamento, o médico deverá avaliar o efeito do tratamento e considerar a interrupção do mesmo, caso não seja observado qualquer efeito clinicamente relevante. Se for observado um menor efeito após o aumento da posologia, o prescritor deve primeiro considerar uma redução da posologia antes de decidir interromper totalmente o tratamento." ]
+           ] [
+             fhir:text [ fhir:v "Em caso de esquecimento de tomar um comprimido, este pode ser tomado antes da hora de deitar do doente, mas após este período não deve ser dado nenhum outro comprimido antes da próxima dose agendada." ]
+           ] ) ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ] ;
+               fhir:when ( [ fhir:v "HS" ] ) ;
+               fhir:offset [ fhir:v "30"^^xsd:nonNegativeInteger ]
+             ]
+           ] ;
+           fhir:doseAndRate ( [
+             fhir:dose [
+               a fhir:Range ;
+               fhir:low [
+                 fhir:value [ fhir:v "2"^^xsd:decimal ] ;
+                 fhir:unit [ fhir:v "mg" ] ;
+                 fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+                 fhir:code [ fhir:v "mg" ]
+               ] ;
+               fhir:high [
+                 fhir:value [ fhir:v "5"^^xsd:decimal ] ;
+                 fhir:unit [ fhir:v "mg" ] ;
+                 fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+                 fhir:code [ fhir:v "mg" ]
+               ]
+             ]
+           ] ) ;
+           fhir:maxDosePerPeriod ( [
+             fhir:numerator [
+               fhir:value [ fhir:v "10"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "mg" ] ;
+               fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "mg" ]
+             ] ;
+             fhir:denominator [
+               fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "day" ] ;
+               fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "d" ]
+             ]
+           ] )
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Crianças e adolescentes com idades entre os 2 e 18 anos" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose em doentes com compromisso renal" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "O efeito de qualquer estádio de compromisso renal na farmacocinética da melatonina não foi estudado. Deverão ser tomadas precauções quando se administra melatonina a doentes com compromisso renal." ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Doentes com compromisso renal" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose em doentes com compromisso hepático" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Não há experiência de utilização de melatonina em doentes com compromisso hepático. Por este motivo, não é recomendada a utilização de melatonina em doentes com compromisso hepático." ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Doentes com compromisso hepático" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Utilização em crianças com menos de 2 anos de idade" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Não existe utilização relevante de melatonina em crianças dos 0 aos 2 anos para o tratamento da insónia." ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Crianças com menos de 2 anos de idade" ]
+         ]
+       ] )
+     ] )
+  ] ) ; # 
+  fhir:medicineClassification ( [
+     fhir:type [
+       fhir:text [ fhir:v "Código ATC" ]
+     ] ;
+     fhir:classification ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ATC"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "N05CH01" ] ;
+         fhir:display [ fhir:v "Melatonina" ]
+       ] )
+     ] )
+  ] [
+     fhir:type [
+       fhir:text [ fhir:v "Grupo farmacoterapêutico" ]
+     ] ;
+     fhir:classification ( [
+       fhir:text [ fhir:v "Psicolépticos, agonistas do recetor da melatonina" ]
+     ] )
+  ] ) ; # 
+  fhir:clinicalUseIssue ( [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Slenyto1mg-CUD-contra1> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Slenyto1mg-CUD-contra1" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Slenyto1mg-CUD-ind1> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Slenyto1mg-CUD-ind1" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Slenyto1mg-CUD-int1> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Slenyto1mg-CUD-int1" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Slenyto1mg-CUD-int2> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Slenyto1mg-CUD-int2" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Slenyto1mg-CUD-int3> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Slenyto1mg-CUD-int3" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Slenyto1mg-CUD-int4> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Slenyto1mg-CUD-int4" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Slenyto1mg-CUD-int5> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Slenyto1mg-CUD-int5" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Slenyto1mg-CUD-int6> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Slenyto1mg-CUD-int6" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Slenyto1mg-CUD-int7> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Slenyto1mg-CUD-int7" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Slenyto1mg-CUD-int8> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Slenyto1mg-CUD-int8" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Slenyto1mg-CUD-int9> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Slenyto1mg-CUD-int9" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Slenyto1mg-CUD-int10> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Slenyto1mg-CUD-int10" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Slenyto1mg-CUD-int11> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Slenyto1mg-CUD-int11" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Slenyto1mg-CUD-int12> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Slenyto1mg-CUD-int12" ]
+  ] ) ; # 
+  fhir:definitional [
+     fhir:doseForm [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "43" ] ;
+         fhir:display [ fhir:v "Comprimido de libertação prolongada" ]
+       ] [
+         fhir:system [ fhir:v "https://extranet.infarmed.pt/INFOMED-fo/detalhes-medicamento.xhtml"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "043" ] ;
+         fhir:display [ fhir:v "Comprimido de libertação prolongada" ]
+       ] )
+     ] ;
+     fhir:intendedRoute ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://example.com/fhir/example/CodeSystem/via-administracao-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "48" ] ;
+         fhir:display [ fhir:v "Via oral" ]
+       ] )
+     ] ) ;
+     fhir:ingredient ( [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "30206" ] ;
+             fhir:display [ fhir:v "Melatonina" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "ACTI" ]
+         ] )
+       ] ;
+       fhir:strength [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "mg" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mg" ]
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Copolímero tipo B do metacrilato de amónio" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Hidrogenofosfato de cálcio di-hidratado" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Lactose mono-hidratada" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "BASE" ]
+         ] )
+       ] ;
+       fhir:strength [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v 8.32 ] ;
+         fhir:unit [ fhir:v "mg" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mg" ]
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Sílica coloidal anidra" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Talco" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Estearato de magnésio" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Carmelose sódica (E466)" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Maltodextrina" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Glucose mono-hidratada" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Lecitina (E322)" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Dióxido de titânio (E171)" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Óxido de ferro vermelho (E172)" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Óxido de ferro amarelo (E172)" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

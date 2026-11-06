@@ -1,0 +1,589 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/MedicationKnowledge/Concor-10mg-Comprimido-revestido> a fhir:MedicationKnowledge ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Concor-10mg-Comprimido-revestido"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH"^^xsd:anyURI ;
+       fhir:link <http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationKnowledge Concor-10mg-Comprimido-revestido</b></p><a name=\"Concor-10mg-Comprimido-revestido\"> </a><a name=\"hcConcor-10mg-Comprimido-revestido\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MedicationKnowledgePDH.html\">Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento</a></p></div><p><b>code</b>: <span title=\"Codes:{http://infarmed.pt/medicamentos/prod_id 2142}\">Concor 10 mg [C07AB07]</span></p><p><b>name</b>: Concor [Bisoprolol] 10 mg Comprimido revestido</p><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Tratamento da hipertensão</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose habitual diária</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: A dose é de 5 mg de bisoprolol, fumarato, uma vez por dia. Se necessário, a dose pode ser aumentada para 10 mg uma vez por dia. A dose máxima recomendada é de 20 mg uma vez por dia. Tomar de manhã, com ou sem alimentos, engolindo os comprimidos com um pouco de líquido, sem os mastigar.</p><p><b>additionalInstruction</b>: <span title=\"Codes:\">Em todos os casos a dose deve ser ajustada individualmente, tendo em conta a frequência cardíaca e a eficácia terapêutica. O tratamento é geralmente de longa duração e não deve ser interrompido abruptamente, especialmente em doentes com doença isquémica cardíaca; recomenda-se a redução gradual da dose.</span></p><p><b>timing</b>: Morning, Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>5-10 mg</td></tr></table><p><b>maxDosePerPeriod</b>: 20 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Adultos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose em doentes com insuficiência renal ou hepática grave</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td><td><b>Timing</b></td><td><b>MaxDosePerPeriod</b></td></tr><tr><td style=\"display: none\">*</td><td>Em doentes com insuficiência renal grave (depuração da creatinina &lt; 20 ml/min) e em doentes com perturbações graves da função hepática, não se recomenda exceder uma dose de 10 mg de bisoprolol, fumarato uma vez por dia.</td><td><span title=\"Codes:\">Em doentes com insuficiência renal ou hepática de gravidade ligeira a moderada, normalmente não é necessário efetuar um ajuste posológico. A experiência em doentes em diálise renal é limitada, contudo não há evidência de que seja necessário alterar o regime posológico.</span></td><td>Once per 1 day</td><td>10 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Doentes com insuficiência renal grave (depuração da creatinina &lt; 20 ml/min) ou perturbações graves da função hepática</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Tratamento da cardiopatia coronária (angina de peito)</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose habitual diária</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: A dose é de 5 mg de bisoprolol, fumarato, uma vez por dia. Se necessário, a dose pode ser aumentada para 10 mg uma vez por dia. A dose máxima recomendada é de 20 mg uma vez por dia. Tomar de manhã, com ou sem alimentos, engolindo os comprimidos com um pouco de líquido, sem os mastigar.</p><p><b>additionalInstruction</b>: <span title=\"Codes:\">Em todos os casos a dose deve ser ajustada individualmente, tendo em conta a frequência cardíaca e a eficácia terapêutica. O tratamento é geralmente de longa duração e não deve ser interrompido abruptamente, especialmente em doentes com doença isquémica cardíaca; recomenda-se a redução gradual da dose.</span></p><p><b>timing</b>: Morning, Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>5-10 mg</td></tr></table><p><b>maxDosePerPeriod</b>: 20 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Adultos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose em doentes com insuficiência renal ou hepática grave</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Timing</b></td><td><b>MaxDosePerPeriod</b></td></tr><tr><td style=\"display: none\">*</td><td>Em doentes com insuficiência renal grave (depuração da creatinina &lt; 20 ml/min) e em doentes com perturbações graves da função hepática, não se recomenda exceder uma dose de 10 mg de bisoprolol, fumarato uma vez por dia.</td><td>Once per 1 day</td><td>10 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Doentes com insuficiência renal grave (depuração da creatinina &lt; 20 ml/min) ou perturbações graves da função hepática</span></td></tr></table></blockquote></blockquote><blockquote><p><b>medicineClassification</b></p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/medication-classification-type anatomical}\">Código ATC</span></p><p><b>classification</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ATC C07AB07}\">Bisoprolol</span></p></blockquote><blockquote><p><b>medicineClassification</b></p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/medication-classification-type therapeutic}\">Grupo farmacoterapêutico</span></p><p><b>classification</b>: <span title=\"Codes:\">3.4.4.2.1 - Aparelho cardiovascular. Anti-hipertensores. Depressores de atividade adrenérgica. Bloqueadores Beta. Seletivos cardíacos</span></p></blockquote><p><b>clinicalUseIssue</b>: </p><ul><li><a href=\"ClinicalUseDefinition-Concor10mg-CUD-contra1.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Concor10mg-CUD-contra2.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Concor10mg-CUD-contra3.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Concor10mg-CUD-contra4.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Concor10mg-CUD-contra5.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Concor10mg-CUD-contra6.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Concor10mg-CUD-contra7.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Concor10mg-CUD-contra8.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Concor10mg-CUD-contra9.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Concor10mg-CUD-contra10.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Concor10mg-CUD-contra11.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Concor10mg-CUD-contra12.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Concor10mg-CUD-ind1.html\">ClinicalUseDefinition: type = indication</a></li><li><a href=\"ClinicalUseDefinition-Concor10mg-CUD-ind2.html\">ClinicalUseDefinition: type = indication</a></li><li><a href=\"ClinicalUseDefinition-Concor10mg-CUD-int1.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Concor10mg-CUD-int2.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Concor10mg-CUD-int3.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Concor10mg-CUD-int4.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Concor10mg-CUD-int5.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Concor10mg-CUD-int6.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Concor10mg-CUD-int7.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Concor10mg-CUD-int8.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Concor10mg-CUD-int9.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Concor10mg-CUD-int10.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Concor10mg-CUD-int11.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Concor10mg-CUD-int12.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Concor10mg-CUD-int13.html\">ClinicalUseDefinition: type = interaction</a></li></ul><blockquote><p><b>definitional</b></p><p><b>doseForm</b>: <span title=\"Codes:{http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs 38}\">Comprimido revestido</span></p><p><b>intendedRoute</b>: <span title=\"Codes:{http://example.com/fhir/example/CodeSystem/via-administracao-cs 48}\">Via oral</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia 21790}\">Bisoprolol, fumarato</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass ACTI}\">active ingredient</span></p><p><b>strength</b>: 10 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Sílica anidra coloidal</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Estearato de magnésio</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Crospovidona</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Celulose microcristalina</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Amido de milho</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Hidrogenofosfato de cálcio anidro</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Óxido de ferro amarelo (E172)</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Dimeticone</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Macrogol 400</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Dióxido de titânio (E171)</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Hipromelose</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Óxido de ferro vermelho (E172)</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://infarmed.pt/medicamentos/prod_id"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "2142" ] ;
+       fhir:display [ fhir:v "Concor 10 mg [C07AB07]" ]
+     ] )
+  ] ; # 
+  fhir:name ( [ fhir:v "Concor [Bisoprolol] 10 mg Comprimido revestido"] ) ; # 
+  fhir:indicationGuideline ( [
+     fhir:indication ( [
+       fhir:concept [
+         fhir:text [ fhir:v "Tratamento da hipertensão" ]
+       ]
+     ] ) ;
+     fhir:dosingGuideline ( [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose habitual diária" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "A dose é de 5 mg de bisoprolol, fumarato, uma vez por dia. Se necessário, a dose pode ser aumentada para 10 mg uma vez por dia. A dose máxima recomendada é de 20 mg uma vez por dia. Tomar de manhã, com ou sem alimentos, engolindo os comprimidos com um pouco de líquido, sem os mastigar." ] ;
+           fhir:additionalInstruction ( [
+             fhir:text [ fhir:v "Em todos os casos a dose deve ser ajustada individualmente, tendo em conta a frequência cardíaca e a eficácia terapêutica. O tratamento é geralmente de longa duração e não deve ser interrompido abruptamente, especialmente em doentes com doença isquémica cardíaca; recomenda-se a redução gradual da dose." ]
+           ] ) ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ] ;
+               fhir:when ( [ fhir:v "MORN" ] )
+             ]
+           ] ;
+           fhir:doseAndRate ( [
+             fhir:dose [
+               a fhir:Range ;
+               fhir:low [
+                 fhir:value [ fhir:v "5"^^xsd:decimal ] ;
+                 fhir:unit [ fhir:v "mg" ] ;
+                 fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+                 fhir:code [ fhir:v "mg" ]
+               ] ;
+               fhir:high [
+                 fhir:value [ fhir:v "10"^^xsd:decimal ] ;
+                 fhir:unit [ fhir:v "mg" ] ;
+                 fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+                 fhir:code [ fhir:v "mg" ]
+               ]
+             ]
+           ] ) ;
+           fhir:maxDosePerPeriod ( [
+             fhir:numerator [
+               fhir:value [ fhir:v "20"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "mg" ] ;
+               fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "mg" ]
+             ] ;
+             fhir:denominator [
+               fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "day" ] ;
+               fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "d" ]
+             ]
+           ] )
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Adultos" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose em doentes com insuficiência renal ou hepática grave" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Em doentes com insuficiência renal grave (depuração da creatinina < 20 ml/min) e em doentes com perturbações graves da função hepática, não se recomenda exceder uma dose de 10 mg de bisoprolol, fumarato uma vez por dia." ] ;
+           fhir:additionalInstruction ( [
+             fhir:text [ fhir:v "Em doentes com insuficiência renal ou hepática de gravidade ligeira a moderada, normalmente não é necessário efetuar um ajuste posológico. A experiência em doentes em diálise renal é limitada, contudo não há evidência de que seja necessário alterar o regime posológico." ]
+           ] ) ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ] ;
+           fhir:maxDosePerPeriod ( [
+             fhir:numerator [
+               fhir:value [ fhir:v "10"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "mg" ] ;
+               fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "mg" ]
+             ] ;
+             fhir:denominator [
+               fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "day" ] ;
+               fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "d" ]
+             ]
+           ] )
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Doentes com insuficiência renal grave (depuração da creatinina < 20 ml/min) ou perturbações graves da função hepática" ]
+         ]
+       ] )
+     ] )
+  ] [
+     fhir:indication ( [
+       fhir:concept [
+         fhir:text [ fhir:v "Tratamento da cardiopatia coronária (angina de peito)" ]
+       ]
+     ] ) ;
+     fhir:dosingGuideline ( [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose habitual diária" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "A dose é de 5 mg de bisoprolol, fumarato, uma vez por dia. Se necessário, a dose pode ser aumentada para 10 mg uma vez por dia. A dose máxima recomendada é de 20 mg uma vez por dia. Tomar de manhã, com ou sem alimentos, engolindo os comprimidos com um pouco de líquido, sem os mastigar." ] ;
+           fhir:additionalInstruction ( [
+             fhir:text [ fhir:v "Em todos os casos a dose deve ser ajustada individualmente, tendo em conta a frequência cardíaca e a eficácia terapêutica. O tratamento é geralmente de longa duração e não deve ser interrompido abruptamente, especialmente em doentes com doença isquémica cardíaca; recomenda-se a redução gradual da dose." ]
+           ] ) ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ] ;
+               fhir:when ( [ fhir:v "MORN" ] )
+             ]
+           ] ;
+           fhir:doseAndRate ( [
+             fhir:dose [
+               a fhir:Range ;
+               fhir:low [
+                 fhir:value [ fhir:v "5"^^xsd:decimal ] ;
+                 fhir:unit [ fhir:v "mg" ] ;
+                 fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+                 fhir:code [ fhir:v "mg" ]
+               ] ;
+               fhir:high [
+                 fhir:value [ fhir:v "10"^^xsd:decimal ] ;
+                 fhir:unit [ fhir:v "mg" ] ;
+                 fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+                 fhir:code [ fhir:v "mg" ]
+               ]
+             ]
+           ] ) ;
+           fhir:maxDosePerPeriod ( [
+             fhir:numerator [
+               fhir:value [ fhir:v "20"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "mg" ] ;
+               fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "mg" ]
+             ] ;
+             fhir:denominator [
+               fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "day" ] ;
+               fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "d" ]
+             ]
+           ] )
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Adultos" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose em doentes com insuficiência renal ou hepática grave" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Em doentes com insuficiência renal grave (depuração da creatinina < 20 ml/min) e em doentes com perturbações graves da função hepática, não se recomenda exceder uma dose de 10 mg de bisoprolol, fumarato uma vez por dia." ] ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ] ;
+           fhir:maxDosePerPeriod ( [
+             fhir:numerator [
+               fhir:value [ fhir:v "10"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "mg" ] ;
+               fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "mg" ]
+             ] ;
+             fhir:denominator [
+               fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "day" ] ;
+               fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "d" ]
+             ]
+           ] )
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Doentes com insuficiência renal grave (depuração da creatinina < 20 ml/min) ou perturbações graves da função hepática" ]
+         ]
+       ] )
+     ] )
+  ] ) ; # 
+  fhir:medicineClassification ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/medication-classification-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "anatomical" ]
+       ] ) ;
+       fhir:text [ fhir:v "Código ATC" ]
+     ] ;
+     fhir:classification ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ATC"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "C07AB07" ] ;
+         fhir:display [ fhir:v "Bisoprolol" ]
+       ] )
+     ] )
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/medication-classification-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "therapeutic" ]
+       ] ) ;
+       fhir:text [ fhir:v "Grupo farmacoterapêutico" ]
+     ] ;
+     fhir:classification ( [
+       fhir:text [ fhir:v "3.4.4.2.1 - Aparelho cardiovascular. Anti-hipertensores. Depressores de atividade adrenérgica. Bloqueadores Beta. Seletivos cardíacos" ]
+     ] )
+  ] ) ; # 
+  fhir:clinicalUseIssue ( [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Concor10mg-CUD-contra1> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Concor10mg-CUD-contra1" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Concor10mg-CUD-contra2> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Concor10mg-CUD-contra2" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Concor10mg-CUD-contra3> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Concor10mg-CUD-contra3" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Concor10mg-CUD-contra4> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Concor10mg-CUD-contra4" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Concor10mg-CUD-contra5> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Concor10mg-CUD-contra5" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Concor10mg-CUD-contra6> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Concor10mg-CUD-contra6" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Concor10mg-CUD-contra7> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Concor10mg-CUD-contra7" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Concor10mg-CUD-contra8> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Concor10mg-CUD-contra8" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Concor10mg-CUD-contra9> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Concor10mg-CUD-contra9" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Concor10mg-CUD-contra10> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Concor10mg-CUD-contra10" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Concor10mg-CUD-contra11> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Concor10mg-CUD-contra11" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Concor10mg-CUD-contra12> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Concor10mg-CUD-contra12" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Concor10mg-CUD-ind1> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Concor10mg-CUD-ind1" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Concor10mg-CUD-ind2> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Concor10mg-CUD-ind2" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Concor10mg-CUD-int1> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Concor10mg-CUD-int1" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Concor10mg-CUD-int2> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Concor10mg-CUD-int2" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Concor10mg-CUD-int3> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Concor10mg-CUD-int3" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Concor10mg-CUD-int4> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Concor10mg-CUD-int4" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Concor10mg-CUD-int5> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Concor10mg-CUD-int5" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Concor10mg-CUD-int6> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Concor10mg-CUD-int6" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Concor10mg-CUD-int7> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Concor10mg-CUD-int7" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Concor10mg-CUD-int8> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Concor10mg-CUD-int8" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Concor10mg-CUD-int9> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Concor10mg-CUD-int9" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Concor10mg-CUD-int10> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Concor10mg-CUD-int10" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Concor10mg-CUD-int11> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Concor10mg-CUD-int11" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Concor10mg-CUD-int12> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Concor10mg-CUD-int12" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Concor10mg-CUD-int13> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Concor10mg-CUD-int13" ]
+  ] ) ; # 
+  fhir:definitional [
+     fhir:doseForm [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "38" ] ;
+         fhir:display [ fhir:v "Comprimido revestido" ]
+       ] )
+     ] ;
+     fhir:intendedRoute ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://example.com/fhir/example/CodeSystem/via-administracao-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "48" ] ;
+         fhir:display [ fhir:v "Via oral" ]
+       ] )
+     ] ) ;
+     fhir:ingredient ( [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "21790" ] ;
+             fhir:display [ fhir:v "Bisoprolol, fumarato" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "ACTI" ]
+         ] )
+       ] ;
+       fhir:strength [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "10"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "mg" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mg" ]
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Sílica anidra coloidal" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Estearato de magnésio" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Crospovidona" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Celulose microcristalina" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Amido de milho" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Hidrogenofosfato de cálcio anidro" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Óxido de ferro amarelo (E172)" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Dimeticone" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Macrogol 400" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Dióxido de titânio (E171)" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Hipromelose" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Óxido de ferro vermelho (E172)" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

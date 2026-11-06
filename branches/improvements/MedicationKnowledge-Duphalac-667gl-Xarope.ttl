@@ -1,0 +1,601 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/MedicationKnowledge/Duphalac-667gl-Xarope> a fhir:MedicationKnowledge ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Duphalac-667gl-Xarope"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH"^^xsd:anyURI ;
+       fhir:link <http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationKnowledge Duphalac-667gl-Xarope</b></p><a name=\"Duphalac-667gl-Xarope\"> </a><a name=\"hcDuphalac-667gl-Xarope\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MedicationKnowledgePDH.html\">Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento</a></p></div><p><b>code</b>: <span title=\"Codes:{http://infarmed.pt/medicamentos/prod_id 2877}\">Duphalac 667 g/l [A06AD11]</span></p><p><b>name</b>: Duphalac [Lactulose] 667 g/l Xarope</p><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Tratamento da obstipação crónica habitual</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose diária inicial</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td><td><b>Timing</b></td></tr><tr><td style=\"display: none\">*</td><td>15-45 ml por dia, em dose única diária ou dividida em duas doses.</td><td><span title=\"Codes:\">Pode ser administrado diluído ou não diluído, engolido de uma só vez e sem ser conservado na boca. Em dose única diária, tomar sempre ao mesmo tempo (por exemplo, ao pequeno-almoço). Recomenda-se a ingestão de 1,5-2 litros de líquidos (6-8 copos) durante o dia. Podem ser necessários 2-3 dias de tratamento até à regularização da defecação.</span></td><td>1-2 per 1 day</td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose diária de manutenção</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Timing</b></td></tr><tr><td style=\"display: none\">*</td><td>15-30 ml por dia, em dose única diária ou dividida em duas doses, ajustada de acordo com a resposta ao tratamento.</td><td>1-2 per 1 day</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Adultos e adolescentes</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose diária inicial</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Timing</b></td></tr><tr><td style=\"display: none\">*</td><td>15 ml por dia, em dose única diária ou dividida em duas doses.</td><td>1-2 per 1 day</td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose diária de manutenção</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Timing</b></td></tr><tr><td style=\"display: none\">*</td><td>10-15 ml por dia, em dose única diária ou dividida em duas doses, ajustada de acordo com a resposta ao tratamento.</td><td>1-2 per 1 day</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Crianças (7-14 anos)</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose diária inicial</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Timing</b></td></tr><tr><td style=\"display: none\">*</td><td>5-10 ml por dia, em dose única diária ou dividida em duas doses.</td><td>1-2 per 1 day</td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose diária de manutenção</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Timing</b></td></tr><tr><td style=\"display: none\">*</td><td>5-10 ml por dia, em dose única diária ou dividida em duas doses, ajustada de acordo com a resposta ao tratamento.</td><td>1-2 per 1 day</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Crianças (1 – 6 anos)</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose diária inicial</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Timing</b></td><td><b>MaxDosePerPeriod</b></td></tr><tr><td style=\"display: none\">*</td><td>Até 5 ml por dia, em dose única diária ou dividida em duas doses.</td><td>1-2 per 1 day</td><td>5 ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemL = 'mL')</span>/1 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose diária de manutenção</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Timing</b></td><td><b>MaxDosePerPeriod</b></td></tr><tr><td style=\"display: none\">*</td><td>Até 5 ml por dia, em dose única diária ou dividida em duas doses, ajustada de acordo com a resposta ao tratamento.</td><td>1-2 per 1 day</td><td>5 ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemL = 'mL')</span>/1 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Lactentes (menos de 1 ano)</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Encefalopatia Porto-Sistémica (EPS): tratamento e prevenção do pré-coma e coma</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose inicial</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dose inicial: 30-45 ml, 3 a 4 vezes por dia.</p><p><b>timing</b>: 3-4 per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>30-45 ml</td></tr></table></blockquote></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose de manutenção</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>A dose inicial pode ser ajustada para a dose de manutenção, de modo a que sejam produzidas fezes moles, 2 a 3 vezes por dia.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Adultos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Sem dados disponíveis</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Não foi estabelecida a segurança e eficácia em crianças (recém-nascidos e até aos 18 anos de idade) com Encefalopatia Porto-Sistémica (EPS). Não existem dados disponíveis.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">População pediátrica (recém-nascidos e até aos 18 anos de idade)</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Situações em que as fezes moles sejam consideradas um benefício clínico (hemorroidas, fissura anal, fístulas, abcessos anais, úlceras solitárias e no pós-operatório ano-retal)</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose diária inicial</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td><td><b>Timing</b></td></tr><tr><td style=\"display: none\">*</td><td>15-45 ml por dia, em dose única diária ou dividida em duas doses.</td><td><span title=\"Codes:\">Pode ser administrado diluído ou não diluído, engolido de uma só vez e sem ser conservado na boca. Em dose única diária, tomar sempre ao mesmo tempo (por exemplo, ao pequeno-almoço). Recomenda-se a ingestão de 1,5-2 litros de líquidos (6-8 copos) durante o dia. Podem ser necessários 2-3 dias de tratamento até à regularização da defecação.</span></td><td>1-2 per 1 day</td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose diária de manutenção</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Timing</b></td></tr><tr><td style=\"display: none\">*</td><td>15-30 ml por dia, em dose única diária ou dividida em duas doses, ajustada de acordo com a resposta ao tratamento.</td><td>1-2 per 1 day</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Adultos e adolescentes</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose diária inicial</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Timing</b></td></tr><tr><td style=\"display: none\">*</td><td>15 ml por dia, em dose única diária ou dividida em duas doses.</td><td>1-2 per 1 day</td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose diária de manutenção</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Timing</b></td></tr><tr><td style=\"display: none\">*</td><td>10-15 ml por dia, em dose única diária ou dividida em duas doses, ajustada de acordo com a resposta ao tratamento.</td><td>1-2 per 1 day</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Crianças (7-14 anos)</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose diária inicial</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Timing</b></td></tr><tr><td style=\"display: none\">*</td><td>5-10 ml por dia, em dose única diária ou dividida em duas doses.</td><td>1-2 per 1 day</td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose diária de manutenção</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Timing</b></td></tr><tr><td style=\"display: none\">*</td><td>5-10 ml por dia, em dose única diária ou dividida em duas doses, ajustada de acordo com a resposta ao tratamento.</td><td>1-2 per 1 day</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Crianças (1 – 6 anos)</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose diária inicial</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Timing</b></td><td><b>MaxDosePerPeriod</b></td></tr><tr><td style=\"display: none\">*</td><td>Até 5 ml por dia, em dose única diária ou dividida em duas doses.</td><td>1-2 per 1 day</td><td>5 ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemL = 'mL')</span>/1 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose diária de manutenção</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Timing</b></td><td><b>MaxDosePerPeriod</b></td></tr><tr><td style=\"display: none\">*</td><td>Até 5 ml por dia, em dose única diária ou dividida em duas doses, ajustada de acordo com a resposta ao tratamento.</td><td>1-2 per 1 day</td><td>5 ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemL = 'mL')</span>/1 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Lactentes (menos de 1 ano)</span></td></tr></table></blockquote></blockquote><blockquote><p><b>medicineClassification</b></p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/medication-classification-type anatomical}\">Código ATC</span></p><p><b>classification</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ATC A06AD11}\">Lactulose</span></p></blockquote><blockquote><p><b>medicineClassification</b></p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/medication-classification-type therapeutic}\">Grupo farmacoterapêutico</span></p><p><b>classification</b>: <span title=\"Codes:\">6.3.2.1.4. Aparelho digestivo. Modificadores da motilidade intestinal. Laxantes e catárticos. Laxantes osmóticos</span></p></blockquote><p><b>clinicalUseIssue</b>: </p><ul><li><a href=\"ClinicalUseDefinition-Duphalac667gl-CUD-ind1.html\">ClinicalUseDefinition: type = indication</a></li><li><a href=\"ClinicalUseDefinition-Duphalac667gl-CUD-ind2.html\">ClinicalUseDefinition: type = indication</a></li><li><a href=\"ClinicalUseDefinition-Duphalac667gl-CUD-ind3.html\">ClinicalUseDefinition: type = indication</a></li><li><a href=\"ClinicalUseDefinition-Duphalac667gl-CUD-contra1.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Duphalac667gl-CUD-contra2.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Duphalac667gl-CUD-contra3.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Duphalac667gl-CUD-contra4.html\">ClinicalUseDefinition: type = contraindication</a></li></ul><blockquote><p><b>definitional</b></p><p><b>doseForm</b>: <span title=\"Codes:{http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs 13}\">Xarope</span></p><p><b>intendedRoute</b>: <span title=\"Codes:{http://example.com/fhir/example/CodeSystem/via-administracao-cs 48}\">Via oral</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Lactulose</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass ACTI}\">active ingredient</span></p><p><b>strength</b>: 667 g/l<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeg/L = 'g/L')</span></p></blockquote></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://infarmed.pt/medicamentos/prod_id"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "2877" ] ;
+       fhir:display [ fhir:v "Duphalac 667 g/l [A06AD11]" ]
+     ] )
+  ] ; # 
+  fhir:name ( [ fhir:v "Duphalac [Lactulose] 667 g/l Xarope"] ) ; # 
+  fhir:indicationGuideline ( [
+     fhir:indication ( [
+       fhir:concept [
+         fhir:text [ fhir:v "Tratamento da obstipação crónica habitual" ]
+       ]
+     ] ) ;
+     fhir:dosingGuideline ( [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose diária inicial" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "15-45 ml por dia, em dose única diária ou dividida em duas doses." ] ;
+           fhir:additionalInstruction ( [
+             fhir:text [ fhir:v "Pode ser administrado diluído ou não diluído, engolido de uma só vez e sem ser conservado na boca. Em dose única diária, tomar sempre ao mesmo tempo (por exemplo, ao pequeno-almoço). Recomenda-se a ingestão de 1,5-2 litros de líquidos (6-8 copos) durante o dia. Podem ser necessários 2-3 dias de tratamento até à regularização da defecação." ]
+           ] ) ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+               fhir:frequencyMax [ fhir:v "2"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ]
+         ] )
+       ] [
+         fhir:type [
+           fhir:text [ fhir:v "Dose diária de manutenção" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "15-30 ml por dia, em dose única diária ou dividida em duas doses, ajustada de acordo com a resposta ao tratamento." ] ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+               fhir:frequencyMax [ fhir:v "2"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Adultos e adolescentes" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose diária inicial" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "15 ml por dia, em dose única diária ou dividida em duas doses." ] ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+               fhir:frequencyMax [ fhir:v "2"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ]
+         ] )
+       ] [
+         fhir:type [
+           fhir:text [ fhir:v "Dose diária de manutenção" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "10-15 ml por dia, em dose única diária ou dividida em duas doses, ajustada de acordo com a resposta ao tratamento." ] ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+               fhir:frequencyMax [ fhir:v "2"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Crianças (7-14 anos)" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose diária inicial" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "5-10 ml por dia, em dose única diária ou dividida em duas doses." ] ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+               fhir:frequencyMax [ fhir:v "2"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ]
+         ] )
+       ] [
+         fhir:type [
+           fhir:text [ fhir:v "Dose diária de manutenção" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "5-10 ml por dia, em dose única diária ou dividida em duas doses, ajustada de acordo com a resposta ao tratamento." ] ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+               fhir:frequencyMax [ fhir:v "2"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Crianças (1 – 6 anos)" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose diária inicial" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Até 5 ml por dia, em dose única diária ou dividida em duas doses." ] ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+               fhir:frequencyMax [ fhir:v "2"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ] ;
+           fhir:maxDosePerPeriod ( [
+             fhir:numerator [
+               fhir:value [ fhir:v "5"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "ml" ] ;
+               fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "mL" ]
+             ] ;
+             fhir:denominator [
+               fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "day" ] ;
+               fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "d" ]
+             ]
+           ] )
+         ] )
+       ] [
+         fhir:type [
+           fhir:text [ fhir:v "Dose diária de manutenção" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Até 5 ml por dia, em dose única diária ou dividida em duas doses, ajustada de acordo com a resposta ao tratamento." ] ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+               fhir:frequencyMax [ fhir:v "2"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ] ;
+           fhir:maxDosePerPeriod ( [
+             fhir:numerator [
+               fhir:value [ fhir:v "5"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "ml" ] ;
+               fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "mL" ]
+             ] ;
+             fhir:denominator [
+               fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "day" ] ;
+               fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "d" ]
+             ]
+           ] )
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Lactentes (menos de 1 ano)" ]
+         ]
+       ] )
+     ] )
+  ] [
+     fhir:indication ( [
+       fhir:concept [
+         fhir:text [ fhir:v "Encefalopatia Porto-Sistémica (EPS): tratamento e prevenção do pré-coma e coma" ]
+       ]
+     ] ) ;
+     fhir:dosingGuideline ( [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose inicial" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Dose inicial: 30-45 ml, 3 a 4 vezes por dia." ] ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:frequency [ fhir:v "3"^^xsd:positiveInteger ] ;
+               fhir:frequencyMax [ fhir:v "4"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ] ;
+           fhir:doseAndRate ( [
+             fhir:dose [
+               a fhir:Range ;
+               fhir:low [
+                 fhir:value [ fhir:v "30"^^xsd:decimal ] ;
+                 fhir:unit [ fhir:v "ml" ] ;
+                 fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+                 fhir:code [ fhir:v "mL" ]
+               ] ;
+               fhir:high [
+                 fhir:value [ fhir:v "45"^^xsd:decimal ] ;
+                 fhir:unit [ fhir:v "ml" ] ;
+                 fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+                 fhir:code [ fhir:v "mL" ]
+               ]
+             ]
+           ] )
+         ] )
+       ] [
+         fhir:type [
+           fhir:text [ fhir:v "Dose de manutenção" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "A dose inicial pode ser ajustada para a dose de manutenção, de modo a que sejam produzidas fezes moles, 2 a 3 vezes por dia." ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Adultos" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Sem dados disponíveis" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Não foi estabelecida a segurança e eficácia em crianças (recém-nascidos e até aos 18 anos de idade) com Encefalopatia Porto-Sistémica (EPS). Não existem dados disponíveis." ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "População pediátrica (recém-nascidos e até aos 18 anos de idade)" ]
+         ]
+       ] )
+     ] )
+  ] [
+     fhir:indication ( [
+       fhir:concept [
+         fhir:text [ fhir:v "Situações em que as fezes moles sejam consideradas um benefício clínico (hemorroidas, fissura anal, fístulas, abcessos anais, úlceras solitárias e no pós-operatório ano-retal)" ]
+       ]
+     ] ) ;
+     fhir:dosingGuideline ( [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose diária inicial" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "15-45 ml por dia, em dose única diária ou dividida em duas doses." ] ;
+           fhir:additionalInstruction ( [
+             fhir:text [ fhir:v "Pode ser administrado diluído ou não diluído, engolido de uma só vez e sem ser conservado na boca. Em dose única diária, tomar sempre ao mesmo tempo (por exemplo, ao pequeno-almoço). Recomenda-se a ingestão de 1,5-2 litros de líquidos (6-8 copos) durante o dia. Podem ser necessários 2-3 dias de tratamento até à regularização da defecação." ]
+           ] ) ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+               fhir:frequencyMax [ fhir:v "2"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ]
+         ] )
+       ] [
+         fhir:type [
+           fhir:text [ fhir:v "Dose diária de manutenção" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "15-30 ml por dia, em dose única diária ou dividida em duas doses, ajustada de acordo com a resposta ao tratamento." ] ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+               fhir:frequencyMax [ fhir:v "2"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Adultos e adolescentes" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose diária inicial" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "15 ml por dia, em dose única diária ou dividida em duas doses." ] ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+               fhir:frequencyMax [ fhir:v "2"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ]
+         ] )
+       ] [
+         fhir:type [
+           fhir:text [ fhir:v "Dose diária de manutenção" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "10-15 ml por dia, em dose única diária ou dividida em duas doses, ajustada de acordo com a resposta ao tratamento." ] ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+               fhir:frequencyMax [ fhir:v "2"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Crianças (7-14 anos)" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose diária inicial" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "5-10 ml por dia, em dose única diária ou dividida em duas doses." ] ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+               fhir:frequencyMax [ fhir:v "2"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ]
+         ] )
+       ] [
+         fhir:type [
+           fhir:text [ fhir:v "Dose diária de manutenção" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "5-10 ml por dia, em dose única diária ou dividida em duas doses, ajustada de acordo com a resposta ao tratamento." ] ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+               fhir:frequencyMax [ fhir:v "2"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Crianças (1 – 6 anos)" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose diária inicial" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Até 5 ml por dia, em dose única diária ou dividida em duas doses." ] ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+               fhir:frequencyMax [ fhir:v "2"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ] ;
+           fhir:maxDosePerPeriod ( [
+             fhir:numerator [
+               fhir:value [ fhir:v "5"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "ml" ] ;
+               fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "mL" ]
+             ] ;
+             fhir:denominator [
+               fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "day" ] ;
+               fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "d" ]
+             ]
+           ] )
+         ] )
+       ] [
+         fhir:type [
+           fhir:text [ fhir:v "Dose diária de manutenção" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Até 5 ml por dia, em dose única diária ou dividida em duas doses, ajustada de acordo com a resposta ao tratamento." ] ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+               fhir:frequencyMax [ fhir:v "2"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ] ;
+           fhir:maxDosePerPeriod ( [
+             fhir:numerator [
+               fhir:value [ fhir:v "5"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "ml" ] ;
+               fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "mL" ]
+             ] ;
+             fhir:denominator [
+               fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "day" ] ;
+               fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "d" ]
+             ]
+           ] )
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Lactentes (menos de 1 ano)" ]
+         ]
+       ] )
+     ] )
+  ] ) ; # 
+  fhir:medicineClassification ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/medication-classification-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "anatomical" ]
+       ] ) ;
+       fhir:text [ fhir:v "Código ATC" ]
+     ] ;
+     fhir:classification ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ATC"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "A06AD11" ] ;
+         fhir:display [ fhir:v "Lactulose" ]
+       ] )
+     ] )
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/medication-classification-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "therapeutic" ]
+       ] ) ;
+       fhir:text [ fhir:v "Grupo farmacoterapêutico" ]
+     ] ;
+     fhir:classification ( [
+       fhir:text [ fhir:v "6.3.2.1.4. Aparelho digestivo. Modificadores da motilidade intestinal. Laxantes e catárticos. Laxantes osmóticos" ]
+     ] )
+  ] ) ; # 
+  fhir:clinicalUseIssue ( [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Duphalac667gl-CUD-ind1> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Duphalac667gl-CUD-ind1" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Duphalac667gl-CUD-ind2> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Duphalac667gl-CUD-ind2" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Duphalac667gl-CUD-ind3> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Duphalac667gl-CUD-ind3" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Duphalac667gl-CUD-contra1> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Duphalac667gl-CUD-contra1" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Duphalac667gl-CUD-contra2> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Duphalac667gl-CUD-contra2" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Duphalac667gl-CUD-contra3> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Duphalac667gl-CUD-contra3" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Duphalac667gl-CUD-contra4> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Duphalac667gl-CUD-contra4" ]
+  ] ) ; # 
+  fhir:definitional [
+     fhir:doseForm [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "13" ] ;
+         fhir:display [ fhir:v "Xarope" ]
+       ] )
+     ] ;
+     fhir:intendedRoute ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://example.com/fhir/example/CodeSystem/via-administracao-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "48" ] ;
+         fhir:display [ fhir:v "Via oral" ]
+       ] )
+     ] ) ;
+     fhir:ingredient ( [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Lactulose" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "ACTI" ]
+         ] )
+       ] ;
+       fhir:strength [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "667"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "g/l" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "g/L" ]
+       ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

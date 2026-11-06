@@ -1,0 +1,445 @@
+{
+  "resourceType" : "MedicationKnowledge",
+  "id" : "Slenyto-5-mg-Comprimido-de-libertacao-prolongada",
+  "meta" : {
+    "profile" : ["http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationKnowledge Slenyto-5-mg-Comprimido-de-libertacao-prolongada</b></p><a name=\"Slenyto-5-mg-Comprimido-de-libertacao-prolongada\"> </a><a name=\"hcSlenyto-5-mg-Comprimido-de-libertacao-prolongada\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MedicationKnowledgePDH.html\">Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento</a></p></div><p><b>code</b>: <span title=\"Codes:{http://infarmed.pt/medicamentos/prod_id 638983}\">Slenyto 5 mg [N05CH01]</span></p><p><b>name</b>: Slenyto [Melatonina] 5 mg Comprimido de libertação prolongada</p><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Tratamento da insónia em crianças e adolescentes com idades entre os 2 e 18 anos com Perturbação do Espetro do Autismo (PEA) e/ou síndrome de Smith-Magenis, nos quais as medidas de higiene do sono não foram suficientes</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose inicial e de manutenção</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: A dose inicial recomendada é de 2 mg. Caso se verifique uma resposta inadequada, a dose deve ser aumentada para 5 mg, com uma dose máxima de 10 mg. Slenyto deve ser tomado uma vez por dia, 30 minutos a 1 hora antes da hora de deitar e com ou sem alimentos.</p><p><b>additionalInstruction</b>: <span title=\"Codes:\">Os comprimidos devem ser deglutidos inteiros. O comprimido não deve ser partido, esmagado ou mastigado, porque irá perder as propriedades de libertação prolongada. O comprimido pode ser misturado com alimentos, como iogurte, sumo de laranja ou gelado, para facilitar a deglutição; se misturado com alimentos ou bebida, deve ser tomado de imediato e a mistura não pode ser guardada.</span>, <span title=\"Codes:\">Estão disponíveis dados até 2 anos de tratamento. O doente deve ser monitorizado em intervalos regulares (pelo menos de 6 em 6 meses). Após pelo menos três meses de tratamento, o médico deverá avaliar o efeito do tratamento e considerar a interrupção do mesmo, caso não seja observado qualquer efeito clinicamente relevante. Se for observado um menor efeito após o aumento da posologia, o prescritor deve primeiro considerar uma redução da posologia antes de decidir interromper totalmente o tratamento.</span>, <span title=\"Codes:\">Em caso de esquecimento de tomar um comprimido, este pode ser tomado antes da hora de deitar do doente, mas após este período não deve ser dado nenhum outro comprimido antes da próxima dose agendada.</span></p><p><b>timing</b>: 30min , before sleeping, Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>2-5 mg</td></tr></table><p><b>maxDosePerPeriod</b>: 10 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Crianças e adolescentes com idades entre os 2 e 18 anos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose em doentes com compromisso renal</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>O efeito de qualquer estádio de compromisso renal na farmacocinética da melatonina não foi estudado. Deverão ser tomadas precauções quando se administra melatonina a doentes com compromisso renal.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Doentes com compromisso renal</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose em doentes com compromisso hepático</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Não há experiência de utilização de melatonina em doentes com compromisso hepático. Por este motivo, não é recomendada a utilização de melatonina em doentes com compromisso hepático.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Doentes com compromisso hepático</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Utilização em crianças com menos de 2 anos de idade</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Não existe utilização relevante de melatonina em crianças dos 0 aos 2 anos para o tratamento da insónia.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Crianças com menos de 2 anos de idade</span></td></tr></table></blockquote></blockquote><blockquote><p><b>medicineClassification</b></p><p><b>type</b>: <span title=\"Codes:\">Código ATC</span></p><p><b>classification</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ATC N05CH01}\">Melatonina</span></p></blockquote><blockquote><p><b>medicineClassification</b></p><p><b>type</b>: <span title=\"Codes:\">Grupo farmacoterapêutico</span></p><p><b>classification</b>: <span title=\"Codes:\">Psicolépticos, agonistas do recetor da melatonina</span></p></blockquote><p><b>clinicalUseIssue</b>: </p><ul><li><a href=\"ClinicalUseDefinition-Slenyto5mg-CUD-contra1.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Slenyto5mg-CUD-ind1.html\">ClinicalUseDefinition: type = indication</a></li><li><a href=\"ClinicalUseDefinition-Slenyto5mg-CUD-int1.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Slenyto5mg-CUD-int2.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Slenyto5mg-CUD-int3.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Slenyto5mg-CUD-int4.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Slenyto5mg-CUD-int5.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Slenyto5mg-CUD-int6.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Slenyto5mg-CUD-int7.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Slenyto5mg-CUD-int8.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Slenyto5mg-CUD-int9.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Slenyto5mg-CUD-int10.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Slenyto5mg-CUD-int11.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Slenyto5mg-CUD-int12.html\">ClinicalUseDefinition: type = interaction</a></li></ul><blockquote><p><b>definitional</b></p><p><b>doseForm</b>: <span title=\"Codes:{http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs 43}, {https://extranet.infarmed.pt/INFOMED-fo/detalhes-medicamento.xhtml 043}\">Comprimido de libertação prolongada</span></p><p><b>intendedRoute</b>: <span title=\"Codes:{http://example.com/fhir/example/CodeSystem/via-administracao-cs 48}\">Via oral</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia 30206}\">Melatonina</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass ACTI}\">active ingredient</span></p><p><b>strength</b>: 5 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Copolímero tipo A do metacrilato de amónio</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Hidrogenofosfato de cálcio di-hidratado</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Lactose mono-hidratada</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass BASE}\">base</span></p><p><b>strength</b>: 8.86 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Sílica coloidal anidra</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Estearato de magnésio</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Carmelose sódica (E466)</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Maltodextrina</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Glucose mono-hidratada</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Lecitina (E322)</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Dióxido de titânio (E171)</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Óxido de ferro amarelo (E172)</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote></blockquote></div>"
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "http://infarmed.pt/medicamentos/prod_id",
+      "code" : "638983",
+      "display" : "Slenyto 5 mg [N05CH01]"
+    }]
+  },
+  "name" : ["Slenyto [Melatonina] 5 mg Comprimido de libertação prolongada"],
+  "indicationGuideline" : [{
+    "indication" : [{
+      "concept" : {
+        "text" : "Tratamento da insónia em crianças e adolescentes com idades entre os 2 e 18 anos com Perturbação do Espetro do Autismo (PEA) e/ou síndrome de Smith-Magenis, nos quais as medidas de higiene do sono não foram suficientes"
+      }
+    }],
+    "dosingGuideline" : [{
+      "dosage" : [{
+        "type" : {
+          "text" : "Dose inicial e de manutenção"
+        },
+        "dosage" : [{
+          "text" : "A dose inicial recomendada é de 2 mg. Caso se verifique uma resposta inadequada, a dose deve ser aumentada para 5 mg, com uma dose máxima de 10 mg. Slenyto deve ser tomado uma vez por dia, 30 minutos a 1 hora antes da hora de deitar e com ou sem alimentos.",
+          "additionalInstruction" : [{
+            "text" : "Os comprimidos devem ser deglutidos inteiros. O comprimido não deve ser partido, esmagado ou mastigado, porque irá perder as propriedades de libertação prolongada. O comprimido pode ser misturado com alimentos, como iogurte, sumo de laranja ou gelado, para facilitar a deglutição; se misturado com alimentos ou bebida, deve ser tomado de imediato e a mistura não pode ser guardada."
+          },
+          {
+            "text" : "Estão disponíveis dados até 2 anos de tratamento. O doente deve ser monitorizado em intervalos regulares (pelo menos de 6 em 6 meses). Após pelo menos três meses de tratamento, o médico deverá avaliar o efeito do tratamento e considerar a interrupção do mesmo, caso não seja observado qualquer efeito clinicamente relevante. Se for observado um menor efeito após o aumento da posologia, o prescritor deve primeiro considerar uma redução da posologia antes de decidir interromper totalmente o tratamento."
+          },
+          {
+            "text" : "Em caso de esquecimento de tomar um comprimido, este pode ser tomado antes da hora de deitar do doente, mas após este período não deve ser dado nenhum outro comprimido antes da próxima dose agendada."
+          }],
+          "timing" : {
+            "repeat" : {
+              "frequency" : 1,
+              "period" : 1,
+              "periodUnit" : "d",
+              "when" : ["HS"],
+              "offset" : 30
+            }
+          },
+          "doseAndRate" : [{
+            "doseRange" : {
+              "low" : {
+                "value" : 2,
+                "unit" : "mg",
+                "system" : "http://unitsofmeasure.org",
+                "code" : "mg"
+              },
+              "high" : {
+                "value" : 5,
+                "unit" : "mg",
+                "system" : "http://unitsofmeasure.org",
+                "code" : "mg"
+              }
+            }
+          }],
+          "maxDosePerPeriod" : [{
+            "numerator" : {
+              "value" : 10,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            },
+            "denominator" : {
+              "value" : 1,
+              "unit" : "day",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "d"
+            }
+          }]
+        }]
+      }],
+      "patientCharacteristic" : [{
+        "type" : {
+          "text" : "Population"
+        },
+        "valueCodeableConcept" : {
+          "text" : "Crianças e adolescentes com idades entre os 2 e 18 anos"
+        }
+      }]
+    },
+    {
+      "dosage" : [{
+        "type" : {
+          "text" : "Dose em doentes com compromisso renal"
+        },
+        "dosage" : [{
+          "text" : "O efeito de qualquer estádio de compromisso renal na farmacocinética da melatonina não foi estudado. Deverão ser tomadas precauções quando se administra melatonina a doentes com compromisso renal."
+        }]
+      }],
+      "patientCharacteristic" : [{
+        "type" : {
+          "text" : "Population"
+        },
+        "valueCodeableConcept" : {
+          "text" : "Doentes com compromisso renal"
+        }
+      }]
+    },
+    {
+      "dosage" : [{
+        "type" : {
+          "text" : "Dose em doentes com compromisso hepático"
+        },
+        "dosage" : [{
+          "text" : "Não há experiência de utilização de melatonina em doentes com compromisso hepático. Por este motivo, não é recomendada a utilização de melatonina em doentes com compromisso hepático."
+        }]
+      }],
+      "patientCharacteristic" : [{
+        "type" : {
+          "text" : "Population"
+        },
+        "valueCodeableConcept" : {
+          "text" : "Doentes com compromisso hepático"
+        }
+      }]
+    },
+    {
+      "dosage" : [{
+        "type" : {
+          "text" : "Utilização em crianças com menos de 2 anos de idade"
+        },
+        "dosage" : [{
+          "text" : "Não existe utilização relevante de melatonina em crianças dos 0 aos 2 anos para o tratamento da insónia."
+        }]
+      }],
+      "patientCharacteristic" : [{
+        "type" : {
+          "text" : "Population"
+        },
+        "valueCodeableConcept" : {
+          "text" : "Crianças com menos de 2 anos de idade"
+        }
+      }]
+    }]
+  }],
+  "medicineClassification" : [{
+    "type" : {
+      "text" : "Código ATC"
+    },
+    "classification" : [{
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ATC",
+        "code" : "N05CH01",
+        "display" : "Melatonina"
+      }]
+    }]
+  },
+  {
+    "type" : {
+      "text" : "Grupo farmacoterapêutico"
+    },
+    "classification" : [{
+      "text" : "Psicolépticos, agonistas do recetor da melatonina"
+    }]
+  }],
+  "clinicalUseIssue" : [{
+    "reference" : "ClinicalUseDefinition/Slenyto5mg-CUD-contra1"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Slenyto5mg-CUD-ind1"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Slenyto5mg-CUD-int1"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Slenyto5mg-CUD-int2"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Slenyto5mg-CUD-int3"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Slenyto5mg-CUD-int4"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Slenyto5mg-CUD-int5"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Slenyto5mg-CUD-int6"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Slenyto5mg-CUD-int7"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Slenyto5mg-CUD-int8"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Slenyto5mg-CUD-int9"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Slenyto5mg-CUD-int10"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Slenyto5mg-CUD-int11"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Slenyto5mg-CUD-int12"
+  }],
+  "definitional" : {
+    "doseForm" : {
+      "coding" : [{
+        "system" : "http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs",
+        "code" : "43",
+        "display" : "Comprimido de libertação prolongada"
+      },
+      {
+        "system" : "https://extranet.infarmed.pt/INFOMED-fo/detalhes-medicamento.xhtml",
+        "code" : "043",
+        "display" : "Comprimido de libertação prolongada"
+      }]
+    },
+    "intendedRoute" : [{
+      "coding" : [{
+        "system" : "http://example.com/fhir/example/CodeSystem/via-administracao-cs",
+        "code" : "48",
+        "display" : "Via oral"
+      }]
+    }],
+    "ingredient" : [{
+      "item" : {
+        "concept" : {
+          "coding" : [{
+            "system" : "http://infarmed.pt/substancia",
+            "code" : "30206",
+            "display" : "Melatonina"
+          }]
+        }
+      },
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+          "code" : "ACTI"
+        }]
+      },
+      "strengthQuantity" : {
+        "value" : 5,
+        "unit" : "mg",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mg"
+      }
+    },
+    {
+      "item" : {
+        "concept" : {
+          "coding" : [{
+            "system" : "http://infarmed.pt/substancia",
+            "code" : "[PREENCHER]",
+            "display" : "Copolímero tipo A do metacrilato de amónio"
+          }]
+        }
+      },
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+          "code" : "IACT"
+        }]
+      }
+    },
+    {
+      "item" : {
+        "concept" : {
+          "coding" : [{
+            "system" : "http://infarmed.pt/substancia",
+            "code" : "[PREENCHER]",
+            "display" : "Hidrogenofosfato de cálcio di-hidratado"
+          }]
+        }
+      },
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+          "code" : "IACT"
+        }]
+      }
+    },
+    {
+      "item" : {
+        "concept" : {
+          "coding" : [{
+            "system" : "http://infarmed.pt/substancia",
+            "code" : "[PREENCHER]",
+            "display" : "Lactose mono-hidratada"
+          }]
+        }
+      },
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+          "code" : "BASE"
+        }]
+      },
+      "strengthQuantity" : {
+        "value" : 8.86,
+        "unit" : "mg",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mg"
+      }
+    },
+    {
+      "item" : {
+        "concept" : {
+          "coding" : [{
+            "system" : "http://infarmed.pt/substancia",
+            "code" : "[PREENCHER]",
+            "display" : "Sílica coloidal anidra"
+          }]
+        }
+      },
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+          "code" : "IACT"
+        }]
+      }
+    },
+    {
+      "item" : {
+        "concept" : {
+          "coding" : [{
+            "system" : "http://infarmed.pt/substancia",
+            "code" : "[PREENCHER]",
+            "display" : "Estearato de magnésio"
+          }]
+        }
+      },
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+          "code" : "IACT"
+        }]
+      }
+    },
+    {
+      "item" : {
+        "concept" : {
+          "coding" : [{
+            "system" : "http://infarmed.pt/substancia",
+            "code" : "[PREENCHER]",
+            "display" : "Carmelose sódica (E466)"
+          }]
+        }
+      },
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+          "code" : "IACT"
+        }]
+      }
+    },
+    {
+      "item" : {
+        "concept" : {
+          "coding" : [{
+            "system" : "http://infarmed.pt/substancia",
+            "code" : "[PREENCHER]",
+            "display" : "Maltodextrina"
+          }]
+        }
+      },
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+          "code" : "IACT"
+        }]
+      }
+    },
+    {
+      "item" : {
+        "concept" : {
+          "coding" : [{
+            "system" : "http://infarmed.pt/substancia",
+            "code" : "[PREENCHER]",
+            "display" : "Glucose mono-hidratada"
+          }]
+        }
+      },
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+          "code" : "IACT"
+        }]
+      }
+    },
+    {
+      "item" : {
+        "concept" : {
+          "coding" : [{
+            "system" : "http://infarmed.pt/substancia",
+            "code" : "[PREENCHER]",
+            "display" : "Lecitina (E322)"
+          }]
+        }
+      },
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+          "code" : "IACT"
+        }]
+      }
+    },
+    {
+      "item" : {
+        "concept" : {
+          "coding" : [{
+            "system" : "http://infarmed.pt/substancia",
+            "code" : "[PREENCHER]",
+            "display" : "Dióxido de titânio (E171)"
+          }]
+        }
+      },
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+          "code" : "IACT"
+        }]
+      }
+    },
+    {
+      "item" : {
+        "concept" : {
+          "coding" : [{
+            "system" : "http://infarmed.pt/substancia",
+            "code" : "[PREENCHER]",
+            "display" : "Óxido de ferro amarelo (E172)"
+          }]
+        }
+      },
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+          "code" : "IACT"
+        }]
+      }
+    }]
+  }
+}

@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationKnowledge xmlns="http://hl7.org/fhir">
+  <id value="Forxiga-10mg-Comprimido-revestido-por-pelicula"/>
+  <meta>
+    <profile value="http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: MedicationKnowledge Forxiga-10mg-Comprimido-revestido-por-pelicula</b></p><a name="Forxiga-10mg-Comprimido-revestido-por-pelicula"> </a><a name="hcForxiga-10mg-Comprimido-revestido-por-pelicula"> </a><div style="display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-MedicationKnowledgePDH.html">Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento</a></p></div><p><b>code</b>: <span title="Codes:{http://infarmed.pt/medicamentos/prod_id 54633}">Forxiga 10 mg [A10BK01]</span></p><p><b>name</b>: Forxiga [Dapagliflozina] 10 mg Comprimido revestido por película</p><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Tratamento da diabetes mellitus tipo 2 inadequadamente controlada, como adjuvante da dieta e exercício, em monoterapia (quando a metformina é inapropriada por intolerância) ou em associação com outros medicamentos para o tratamento da diabetes tipo 2</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose habitual diária</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: A dose recomendada é de 10 mg de dapagliflozina uma vez por dia, a qualquer hora do dia, com ou sem alimentos. Os comprimidos devem ser deglutidos inteiros.</p><p><b>additionalInstruction</b>: <span title="Codes:">Quando utilizada em associação com insulina ou um secretagogo da insulina (p.ex. sulfonilureia), deve ser considerada uma dose mais baixa de insulina ou do secretagogo para reduzir o risco de hipoglicemia.</span></p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>10 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table><p><b>maxDosePerPeriod</b>: 10 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style="background: LightGoldenRodYellow"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Adultos e crianças com idade igual ou superior a 10 anos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose em doentes com compromisso hepático grave</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Em doentes com compromisso hepático grave recomenda-se uma dose inicial de 5 mg uma vez por dia. Se for bem tolerada, a dose pode ser aumentada para 10 mg.</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>5 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table><p><b>maxDosePerPeriod</b>: 10 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style="background: LightGoldenRodYellow"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Doentes com compromisso hepático grave</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Tratamento da insuficiência cardíaca crónica sintomática em adultos</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose habitual diária</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: A dose recomendada é de 10 mg de dapagliflozina uma vez por dia, a qualquer hora do dia, com ou sem alimentos. Os comprimidos devem ser deglutidos inteiros.</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>10 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table><p><b>maxDosePerPeriod</b>: 10 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style="background: LightGoldenRodYellow"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Adultos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose em doentes com compromisso hepático grave</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Em doentes com compromisso hepático grave recomenda-se uma dose inicial de 5 mg uma vez por dia. Se for bem tolerada, a dose pode ser aumentada para 10 mg.</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>5 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table><p><b>maxDosePerPeriod</b>: 10 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style="background: LightGoldenRodYellow"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Doentes com compromisso hepático grave</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Tratamento da doença renal crónica em adultos</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose habitual diária</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: A dose recomendada é de 10 mg de dapagliflozina uma vez por dia, a qualquer hora do dia, com ou sem alimentos. Os comprimidos devem ser deglutidos inteiros.</p><p><b>additionalInstruction</b>: <span title="Codes:">Não é necessário ajuste de dose com base na função renal. Devido à experiência limitada, não é recomendado iniciar o tratamento em doentes com TFG &lt; 25 ml/min.</span></p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>10 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table><p><b>maxDosePerPeriod</b>: 10 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style="background: LightGoldenRodYellow"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Adultos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose em doentes com compromisso hepático grave</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Em doentes com compromisso hepático grave recomenda-se uma dose inicial de 5 mg uma vez por dia. Se for bem tolerada, a dose pode ser aumentada para 10 mg.</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>5 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table><p><b>maxDosePerPeriod</b>: 10 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style="background: LightGoldenRodYellow"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Doentes com compromisso hepático grave</span></td></tr></table></blockquote></blockquote><blockquote><p><b>medicineClassification</b></p><p><b>type</b>: <span title="Codes:{http://hl7.org/fhir/medication-classification-type anatomical}">Código ATC</span></p><p><b>classification</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ATC A10BK01}">Dapagliflozina</span></p></blockquote><blockquote><p><b>medicineClassification</b></p><p><b>type</b>: <span title="Codes:{http://hl7.org/fhir/medication-classification-type therapeutic}">Grupo farmacoterapêutico</span></p><p><b>classification</b>: <span title="Codes:">Fármacos usados na diabetes, inibidores do co-transportador de sódio e glucose 2 (SGLT2)</span></p></blockquote><p><b>clinicalUseIssue</b>: </p><ul><li><a href="ClinicalUseDefinition-Forxiga10mg-CUD-contra1.html">ClinicalUseDefinition: type = contraindication</a></li><li><a href="ClinicalUseDefinition-Forxiga10mg-CUD-ind1.html">ClinicalUseDefinition: type = indication</a></li><li><a href="ClinicalUseDefinition-Forxiga10mg-CUD-ind2.html">ClinicalUseDefinition: type = indication</a></li><li><a href="ClinicalUseDefinition-Forxiga10mg-CUD-ind3.html">ClinicalUseDefinition: type = indication</a></li><li><a href="ClinicalUseDefinition-Forxiga10mg-CUD-int1.html">ClinicalUseDefinition: type = interaction</a></li><li><a href="ClinicalUseDefinition-Forxiga10mg-CUD-int2.html">ClinicalUseDefinition: type = interaction</a></li><li><a href="ClinicalUseDefinition-Forxiga10mg-CUD-int3.html">ClinicalUseDefinition: type = interaction</a></li><li><a href="ClinicalUseDefinition-Forxiga10mg-CUD-int4.html">ClinicalUseDefinition: type = interaction</a></li></ul><blockquote><p><b>definitional</b></p><p><b>doseForm</b>: <span title="Codes:{http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs 39}">Comprimido revestido por película</span></p><p><b>intendedRoute</b>: <span title="Codes:{http://example.com/fhir/example/CodeSystem/via-administracao-cs 48}">Via oral</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia 45232}">Dapagliflozina</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass ACTI}">active ingredient</span></p><p><b>strength</b>: 10 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Celulose microcristalina (E460i)</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Lactose</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass BASE}">base</span></p><p><b>strength</b>: 50 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Crospovidona (E1202)</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Dióxido de silicone (E551)</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Estearato de magnésio (E470b)</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Álcool polivinílico (E1203)</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Dióxido de titânio (E171)</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Macrogol 3350 (E1521)</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Talco (E553b)</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Óxido de ferro amarelo (E172)</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p></blockquote></blockquote></div>
+  </text>
+  <code>
+    <coding>
+      <system value="http://infarmed.pt/medicamentos/prod_id"/>
+      <code value="54633"/>
+      <display value="Forxiga 10 mg [A10BK01]"/>
+    </coding>
+  </code>
+  <name value="Forxiga [Dapagliflozina] 10 mg Comprimido revestido por película"/>
+  <indicationGuideline>
+    <indication>
+      <concept>
+        <text value="Tratamento da diabetes mellitus tipo 2 inadequadamente controlada, como adjuvante da dieta e exercício, em monoterapia (quando a metformina é inapropriada por intolerância) ou em associação com outros medicamentos para o tratamento da diabetes tipo 2"/>
+      </concept>
+    </indication>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose habitual diária"/>
+        </type>
+        <dosage>
+          <text value="A dose recomendada é de 10 mg de dapagliflozina uma vez por dia, a qualquer hora do dia, com ou sem alimentos. Os comprimidos devem ser deglutidos inteiros."/>
+          <additionalInstruction>
+            <text value="Quando utilizada em associação com insulina ou um secretagogo da insulina (p.ex. sulfonilureia), deve ser considerada uma dose mais baixa de insulina ou do secretagogo para reduzir o risco de hipoglicemia."/>
+          </additionalInstruction>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="10"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </doseQuantity>
+          </doseAndRate>
+          <maxDosePerPeriod>
+            <numerator>
+              <value value="10"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+              <unit value="day"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="d"/>
+            </denominator>
+          </maxDosePerPeriod>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Adultos e crianças com idade igual ou superior a 10 anos"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose em doentes com compromisso hepático grave"/>
+        </type>
+        <dosage>
+          <text value="Em doentes com compromisso hepático grave recomenda-se uma dose inicial de 5 mg uma vez por dia. Se for bem tolerada, a dose pode ser aumentada para 10 mg."/>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="5"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </doseQuantity>
+          </doseAndRate>
+          <maxDosePerPeriod>
+            <numerator>
+              <value value="10"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+              <unit value="day"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="d"/>
+            </denominator>
+          </maxDosePerPeriod>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Doentes com compromisso hepático grave"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+  </indicationGuideline>
+  <indicationGuideline>
+    <indication>
+      <concept>
+        <text value="Tratamento da insuficiência cardíaca crónica sintomática em adultos"/>
+      </concept>
+    </indication>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose habitual diária"/>
+        </type>
+        <dosage>
+          <text value="A dose recomendada é de 10 mg de dapagliflozina uma vez por dia, a qualquer hora do dia, com ou sem alimentos. Os comprimidos devem ser deglutidos inteiros."/>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="10"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </doseQuantity>
+          </doseAndRate>
+          <maxDosePerPeriod>
+            <numerator>
+              <value value="10"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+              <unit value="day"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="d"/>
+            </denominator>
+          </maxDosePerPeriod>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Adultos"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose em doentes com compromisso hepático grave"/>
+        </type>
+        <dosage>
+          <text value="Em doentes com compromisso hepático grave recomenda-se uma dose inicial de 5 mg uma vez por dia. Se for bem tolerada, a dose pode ser aumentada para 10 mg."/>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="5"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </doseQuantity>
+          </doseAndRate>
+          <maxDosePerPeriod>
+            <numerator>
+              <value value="10"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+              <unit value="day"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="d"/>
+            </denominator>
+          </maxDosePerPeriod>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Doentes com compromisso hepático grave"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+  </indicationGuideline>
+  <indicationGuideline>
+    <indication>
+      <concept>
+        <text value="Tratamento da doença renal crónica em adultos"/>
+      </concept>
+    </indication>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose habitual diária"/>
+        </type>
+        <dosage>
+          <text value="A dose recomendada é de 10 mg de dapagliflozina uma vez por dia, a qualquer hora do dia, com ou sem alimentos. Os comprimidos devem ser deglutidos inteiros."/>
+          <additionalInstruction>
+            <text value="Não é necessário ajuste de dose com base na função renal. Devido à experiência limitada, não é recomendado iniciar o tratamento em doentes com TFG &lt; 25 ml/min."/>
+          </additionalInstruction>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="10"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </doseQuantity>
+          </doseAndRate>
+          <maxDosePerPeriod>
+            <numerator>
+              <value value="10"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+              <unit value="day"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="d"/>
+            </denominator>
+          </maxDosePerPeriod>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Adultos"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose em doentes com compromisso hepático grave"/>
+        </type>
+        <dosage>
+          <text value="Em doentes com compromisso hepático grave recomenda-se uma dose inicial de 5 mg uma vez por dia. Se for bem tolerada, a dose pode ser aumentada para 10 mg."/>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="5"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </doseQuantity>
+          </doseAndRate>
+          <maxDosePerPeriod>
+            <numerator>
+              <value value="10"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+              <unit value="day"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="d"/>
+            </denominator>
+          </maxDosePerPeriod>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Doentes com compromisso hepático grave"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+  </indicationGuideline>
+  <medicineClassification>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/medication-classification-type"/>
+        <code value="anatomical"/>
+      </coding>
+      <text value="Código ATC"/>
+    </type>
+    <classification>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ATC"/>
+        <code value="A10BK01"/>
+        <display value="Dapagliflozina"/>
+      </coding>
+    </classification>
+  </medicineClassification>
+  <medicineClassification>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/medication-classification-type"/>
+        <code value="therapeutic"/>
+      </coding>
+      <text value="Grupo farmacoterapêutico"/>
+    </type>
+    <classification>
+      <text value="Fármacos usados na diabetes, inibidores do co-transportador de sódio e glucose 2 (SGLT2)"/>
+    </classification>
+  </medicineClassification>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Forxiga10mg-CUD-contra1"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Forxiga10mg-CUD-ind1"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Forxiga10mg-CUD-ind2"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Forxiga10mg-CUD-ind3"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Forxiga10mg-CUD-int1"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Forxiga10mg-CUD-int2"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Forxiga10mg-CUD-int3"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Forxiga10mg-CUD-int4"/>
+  </clinicalUseIssue>
+  <definitional>
+    <doseForm>
+      <coding>
+        <system value="http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs"/>
+        <code value="39"/>
+        <display value="Comprimido revestido por película"/>
+      </coding>
+    </doseForm>
+    <intendedRoute>
+      <coding>
+        <system value="http://example.com/fhir/example/CodeSystem/via-administracao-cs"/>
+        <code value="48"/>
+        <display value="Via oral"/>
+      </coding>
+    </intendedRoute>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="45232"/>
+            <display value="Dapagliflozina"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="ACTI"/>
+        </coding>
+      </type>
+      <strengthQuantity>
+        <value value="10"/>
+        <unit value="mg"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mg"/>
+      </strengthQuantity>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Celulose microcristalina (E460i)"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Lactose"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="BASE"/>
+        </coding>
+      </type>
+      <strengthQuantity>
+        <value value="50"/>
+        <unit value="mg"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mg"/>
+      </strengthQuantity>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Crospovidona (E1202)"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Dióxido de silicone (E551)"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Estearato de magnésio (E470b)"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Álcool polivinílico (E1203)"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Dióxido de titânio (E171)"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Macrogol 3350 (E1521)"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Talco (E553b)"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Óxido de ferro amarelo (E172)"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+    </ingredient>
+  </definitional>
+</MedicationKnowledge>

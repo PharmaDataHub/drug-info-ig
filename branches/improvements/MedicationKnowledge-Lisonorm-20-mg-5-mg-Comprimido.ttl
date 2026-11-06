@@ -1,0 +1,355 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/MedicationKnowledge/Lisonorm-20-mg-5-mg-Comprimido> a fhir:MedicationKnowledge ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Lisonorm-20-mg-5-mg-Comprimido"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH"^^xsd:anyURI ;
+       fhir:link <http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationKnowledge Lisonorm-20-mg-5-mg-Comprimido</b></p><a name=\"Lisonorm-20-mg-5-mg-Comprimido\"> </a><a name=\"hcLisonorm-20-mg-5-mg-Comprimido\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MedicationKnowledgePDH.html\">Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento</a></p></div><p><b>code</b>: <span title=\"Codes:{http://infarmed.pt/medicamentos/prod_id 52934}\">Lisonorm 20 mg + 5 mg [C09BB03]</span></p><p><b>name</b>: Lisonorm [Lisinopril + Amlodipina] 20 mg + 5 mg Comprimido</p><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Tratamento da hipertensão essencial em adultos, como terapêutica de substituição em doentes com a tensão arterial adequadamente controlada com lisinopril e amlodipina administrados simultaneamente no mesmo nível de doses</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose habitual diária</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: A dose recomendada é de um comprimido por dia. A dose diária máxima é de um comprimido. Pode ser tomado independentemente das refeições.</p><p><b>additionalInstruction</b>: <span title=\"Codes:\">Em geral, as preparações de associações de dose fixa não são adequadas para o início de terapêutica. Lisonorm é indicado apenas em doentes nos quais a dose de manutenção ótima de lisinopril e amlodipina foi titulada, respetivamente, para 20 mg e 5 mg. Caso seja necessário ajuste posológico, pode considerar-se a titulação da dose com os componentes individuais.</span></p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>1 comprimido<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code{tablet} = '{tablet}')</span></td></tr></table><p><b>maxDosePerPeriod</b>: 1 comprimido<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code{tablet} = '{tablet}')</span>/1 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Adultos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose em doentes com compromisso renal</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td></tr><tr><td style=\"display: none\">*</td><td>Para obter a dose inicial e a dose de manutenção ótimas em doentes com compromisso renal, os doentes devem ser titulados individualmente utilizando os componentes individuais lisinopril e amlodipina.</td><td><span title=\"Codes:\">A monitorização da função renal e dos níveis séricos de potássio e sódio deve prosseguir durante a terapêutica. No caso de deterioração da função renal, Lisonorm deve ser suspenso e substituído por terapêutica com os componentes individuais adequadamente ajustados. A amlodipina não é dialisável.</span></td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Doentes com compromisso renal</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose em doentes com compromisso hepático</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td></tr><tr><td style=\"display: none\">*</td><td>Não foram estabelecidas recomendações posológicas em doentes com compromisso hepático ligeiro a moderado; a dose deve ser selecionada com precaução e iniciada no limite inferior do intervalo de doses. Os doentes devem ser titulados individualmente utilizando a associação livre de lisinopril e amlodipina.</td><td><span title=\"Codes:\">A farmacocinética da amlodipina não foi estudada no compromisso hepático grave. A amlodipina deve ser iniciada na dose mais baixa e titulada lentamente em doentes com alteração grave da função hepática.</span></td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Doentes com compromisso hepático</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose em doentes idosos</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td></tr><tr><td style=\"display: none\">*</td><td>Os doentes idosos devem ser tratados com precaução. Para obter a dose de manutenção ótima em doentes idosos, deve efetuar-se a titulação individual utilizando a associação livre de lisinopril e amlodipina.</td><td><span title=\"Codes:\">Em estudos clínicos não se observou qualquer alteração do perfil de eficácia ou segurança da amlodipina ou do lisinopril relacionada com a idade.</span></td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Doentes idosos (&gt; 65 anos de idade)</span></td></tr></table></blockquote></blockquote><blockquote><p><b>medicineClassification</b></p><p><b>type</b>: <span title=\"Codes:\">Código ATC</span></p><p><b>classification</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ATC C09BB03}\">Lisinopril e amlodipina</span></p></blockquote><blockquote><p><b>medicineClassification</b></p><p><b>type</b>: <span title=\"Codes:\">Grupo farmacoterapêutico</span></p><p><b>classification</b>: <span title=\"Codes:\">3.4.2.1 – Aparelho cardiovascular. Anti-hipertensores. Modificadores do eixo renina angiotensina. Inibidores da Enzima de Conversão da Angiotensina 3.4.3 – Aparelho cardiovascular. Anti-hipertensores. Bloqueadores dos canais de cálcio 3.5.1 Aparelho Cardiovascular. Vasodilatadores. Antianginosos</span></p></blockquote><p><b>clinicalUseIssue</b>: </p><ul><li><a href=\"ClinicalUseDefinition-Lisonorm205mg-CUD-contra1.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Lisonorm205mg-CUD-contra2.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Lisonorm205mg-CUD-contra3.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Lisonorm205mg-CUD-contra4.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Lisonorm205mg-CUD-contra5.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Lisonorm205mg-CUD-contra6.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Lisonorm205mg-CUD-contra7.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Lisonorm205mg-CUD-contra8.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Lisonorm205mg-CUD-contra9.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Lisonorm205mg-CUD-contra10.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Lisonorm205mg-CUD-contra11.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Lisonorm205mg-CUD-contra12.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Lisonorm205mg-CUD-ind1.html\">ClinicalUseDefinition: type = indication</a></li><li><a href=\"ClinicalUseDefinition-Lisonorm205mg-CUD-int1.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Lisonorm205mg-CUD-int2.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Lisonorm205mg-CUD-int3.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Lisonorm205mg-CUD-int4.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Lisonorm205mg-CUD-int5.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Lisonorm205mg-CUD-int6.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Lisonorm205mg-CUD-int7.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Lisonorm205mg-CUD-int8.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Lisonorm205mg-CUD-int9.html\">ClinicalUseDefinition: type = interaction</a></li></ul><blockquote><p><b>definitional</b></p><p><b>doseForm</b>: <span title=\"Codes:{http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs 271}, {https://extranet.infarmed.pt/INFOMED-fo/detalhes-medicamento.xhtml 271}\">Comprimido</span></p><p><b>intendedRoute</b>: <span title=\"Codes:{http://example.com/fhir/example/CodeSystem/via-administracao-cs 48}\">Via oral</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia 29567}\">Lisinopril</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass ACTI}\">active ingredient</span></p><p><b>strength</b>: 20 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia 28811}\">Amlodipina</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass ACTI}\">active ingredient</span></p><p><b>strength</b>: 5 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Celulose microcristalina</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Amido de sódio glicolado (tipo A)</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Estearato de magnésio</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://infarmed.pt/medicamentos/prod_id"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "52934" ] ;
+       fhir:display [ fhir:v "Lisonorm 20 mg + 5 mg [C09BB03]" ]
+     ] )
+  ] ; # 
+  fhir:name ( [ fhir:v "Lisonorm [Lisinopril + Amlodipina] 20 mg + 5 mg Comprimido"] ) ; # 
+  fhir:indicationGuideline ( [
+     fhir:indication ( [
+       fhir:concept [
+         fhir:text [ fhir:v "Tratamento da hipertensão essencial em adultos, como terapêutica de substituição em doentes com a tensão arterial adequadamente controlada com lisinopril e amlodipina administrados simultaneamente no mesmo nível de doses" ]
+       ]
+     ] ) ;
+     fhir:dosingGuideline ( [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose habitual diária" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "A dose recomendada é de um comprimido por dia. A dose diária máxima é de um comprimido. Pode ser tomado independentemente das refeições." ] ;
+           fhir:additionalInstruction ( [
+             fhir:text [ fhir:v "Em geral, as preparações de associações de dose fixa não são adequadas para o início de terapêutica. Lisonorm é indicado apenas em doentes nos quais a dose de manutenção ótima de lisinopril e amlodipina foi titulada, respetivamente, para 20 mg e 5 mg. Caso seja necessário ajuste posológico, pode considerar-se a titulação da dose com os componentes individuais." ]
+           ] ) ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ] ;
+           fhir:doseAndRate ( [
+             fhir:dose [
+               a fhir:Quantity ;
+               fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "comprimido" ] ;
+               fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "{tablet}" ]
+             ]
+           ] ) ;
+           fhir:maxDosePerPeriod ( [
+             fhir:numerator [
+               fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "comprimido" ] ;
+               fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "{tablet}" ]
+             ] ;
+             fhir:denominator [
+               fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "day" ] ;
+               fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "d" ]
+             ]
+           ] )
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Adultos" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose em doentes com compromisso renal" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Para obter a dose inicial e a dose de manutenção ótimas em doentes com compromisso renal, os doentes devem ser titulados individualmente utilizando os componentes individuais lisinopril e amlodipina." ] ;
+           fhir:additionalInstruction ( [
+             fhir:text [ fhir:v "A monitorização da função renal e dos níveis séricos de potássio e sódio deve prosseguir durante a terapêutica. No caso de deterioração da função renal, Lisonorm deve ser suspenso e substituído por terapêutica com os componentes individuais adequadamente ajustados. A amlodipina não é dialisável." ]
+           ] )
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Doentes com compromisso renal" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose em doentes com compromisso hepático" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Não foram estabelecidas recomendações posológicas em doentes com compromisso hepático ligeiro a moderado; a dose deve ser selecionada com precaução e iniciada no limite inferior do intervalo de doses. Os doentes devem ser titulados individualmente utilizando a associação livre de lisinopril e amlodipina." ] ;
+           fhir:additionalInstruction ( [
+             fhir:text [ fhir:v "A farmacocinética da amlodipina não foi estudada no compromisso hepático grave. A amlodipina deve ser iniciada na dose mais baixa e titulada lentamente em doentes com alteração grave da função hepática." ]
+           ] )
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Doentes com compromisso hepático" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose em doentes idosos" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Os doentes idosos devem ser tratados com precaução. Para obter a dose de manutenção ótima em doentes idosos, deve efetuar-se a titulação individual utilizando a associação livre de lisinopril e amlodipina." ] ;
+           fhir:additionalInstruction ( [
+             fhir:text [ fhir:v "Em estudos clínicos não se observou qualquer alteração do perfil de eficácia ou segurança da amlodipina ou do lisinopril relacionada com a idade." ]
+           ] )
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Doentes idosos (> 65 anos de idade)" ]
+         ]
+       ] )
+     ] )
+  ] ) ; # 
+  fhir:medicineClassification ( [
+     fhir:type [
+       fhir:text [ fhir:v "Código ATC" ]
+     ] ;
+     fhir:classification ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ATC"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "C09BB03" ] ;
+         fhir:display [ fhir:v "Lisinopril e amlodipina" ]
+       ] )
+     ] )
+  ] [
+     fhir:type [
+       fhir:text [ fhir:v "Grupo farmacoterapêutico" ]
+     ] ;
+     fhir:classification ( [
+       fhir:text [ fhir:v "3.4.2.1 – Aparelho cardiovascular. Anti-hipertensores. Modificadores do eixo renina angiotensina. Inibidores da Enzima de Conversão da Angiotensina 3.4.3 – Aparelho cardiovascular. Anti-hipertensores. Bloqueadores dos canais de cálcio 3.5.1 Aparelho Cardiovascular. Vasodilatadores. Antianginosos" ]
+     ] )
+  ] ) ; # 
+  fhir:clinicalUseIssue ( [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Lisonorm205mg-CUD-contra1> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Lisonorm205mg-CUD-contra1" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Lisonorm205mg-CUD-contra2> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Lisonorm205mg-CUD-contra2" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Lisonorm205mg-CUD-contra3> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Lisonorm205mg-CUD-contra3" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Lisonorm205mg-CUD-contra4> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Lisonorm205mg-CUD-contra4" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Lisonorm205mg-CUD-contra5> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Lisonorm205mg-CUD-contra5" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Lisonorm205mg-CUD-contra6> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Lisonorm205mg-CUD-contra6" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Lisonorm205mg-CUD-contra7> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Lisonorm205mg-CUD-contra7" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Lisonorm205mg-CUD-contra8> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Lisonorm205mg-CUD-contra8" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Lisonorm205mg-CUD-contra9> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Lisonorm205mg-CUD-contra9" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Lisonorm205mg-CUD-contra10> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Lisonorm205mg-CUD-contra10" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Lisonorm205mg-CUD-contra11> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Lisonorm205mg-CUD-contra11" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Lisonorm205mg-CUD-contra12> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Lisonorm205mg-CUD-contra12" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Lisonorm205mg-CUD-ind1> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Lisonorm205mg-CUD-ind1" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Lisonorm205mg-CUD-int1> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Lisonorm205mg-CUD-int1" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Lisonorm205mg-CUD-int2> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Lisonorm205mg-CUD-int2" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Lisonorm205mg-CUD-int3> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Lisonorm205mg-CUD-int3" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Lisonorm205mg-CUD-int4> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Lisonorm205mg-CUD-int4" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Lisonorm205mg-CUD-int5> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Lisonorm205mg-CUD-int5" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Lisonorm205mg-CUD-int6> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Lisonorm205mg-CUD-int6" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Lisonorm205mg-CUD-int7> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Lisonorm205mg-CUD-int7" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Lisonorm205mg-CUD-int8> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Lisonorm205mg-CUD-int8" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Lisonorm205mg-CUD-int9> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Lisonorm205mg-CUD-int9" ]
+  ] ) ; # 
+  fhir:definitional [
+     fhir:doseForm [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "271" ] ;
+         fhir:display [ fhir:v "Comprimido" ]
+       ] [
+         fhir:system [ fhir:v "https://extranet.infarmed.pt/INFOMED-fo/detalhes-medicamento.xhtml"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "271" ] ;
+         fhir:display [ fhir:v "Comprimido" ]
+       ] )
+     ] ;
+     fhir:intendedRoute ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://example.com/fhir/example/CodeSystem/via-administracao-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "48" ] ;
+         fhir:display [ fhir:v "Via oral" ]
+       ] )
+     ] ) ;
+     fhir:ingredient ( [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "29567" ] ;
+             fhir:display [ fhir:v "Lisinopril" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "ACTI" ]
+         ] )
+       ] ;
+       fhir:strength [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "20"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "mg" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mg" ]
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "28811" ] ;
+             fhir:display [ fhir:v "Amlodipina" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "ACTI" ]
+         ] )
+       ] ;
+       fhir:strength [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "5"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "mg" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mg" ]
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Celulose microcristalina" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Amido de sódio glicolado (tipo A)" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Estearato de magnésio" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

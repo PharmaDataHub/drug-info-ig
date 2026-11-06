@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationKnowledge xmlns="http://hl7.org/fhir">
+  <id value="LorazepamBluepharma-05mg-Comprimido"/>
+  <meta>
+    <profile value="http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: MedicationKnowledge LorazepamBluepharma-05mg-Comprimido</b></p><a name="LorazepamBluepharma-05mg-Comprimido"> </a><a name="hcLorazepamBluepharma-05mg-Comprimido"> </a><div style="display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-MedicationKnowledgePDH.html">Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento</a></p></div><p><b>code</b>: <span title="Codes:{http://infarmed.pt/medicamentos/prod_id 672984}">Lorazepam Bluepharma 0,5 mg [N05BA06]</span></p><p><b>name</b>: Lorazepam Bluepharma [lorazepam] 0,5 mg comprimido</p><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct [PREENCHER]}">Tratamento sintomático de curta duração de ansiedade, tensão e agitação, perturbações do sono causadas por estas condições</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose diária dividida</span></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td><td><b>Timing</b></td><td><b>MaxDosePerPeriod</b></td></tr><tr><td style="display: none">*</td><td>Dose diária geralmente de 0,5 a 2,5 mg de lorazepam, dividida em 2 a 3 doses individuais; pode ser aumentada até ao máximo de 7,5 mg por dia</td><td><span title="Codes:">Aumento até ao máximo apenas tendo em consideração todas as advertências e precauções, em especial em contexto hospitalar</span></td><td>2-3 per 1 day</td><td>7.5 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style="background: LightGoldenRodYellow"> (Details: UCUM  coded = 'd')</span></td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose única noturna</span></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td><td><b>Timing</b></td><td><b>MaxDosePerPeriod</b></td></tr><tr><td style="display: none">*</td><td>Dose diária geralmente de 0,5 a 2,5 mg de lorazepam numa única toma, à noite (cerca de meia hora antes do deitar se o foco forem perturbações do sono); pode ser aumentada até ao máximo de 7,5 mg por dia</td><td><span title="Codes:">Aumento até ao máximo apenas tendo em consideração todas as advertências e precauções, em especial em contexto hospitalar</span></td><td>Night, Once per 1 day</td><td>7.5 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style="background: LightGoldenRodYellow"> (Details: UCUM  coded = 'd')</span></td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Doses gerais (população não especificada na RCM)</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose inicial reduzida</span></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td></tr><tr><td style="display: none">*</td><td>A dose inicial total diária deve ser reduzida para aproximadamente 50%; ajustar com base no efeito pretendido e na tolerância individual</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Doentes idosos ou debilitados</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose reduzida</span></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td><td><b>MaxDosePerAdministration</b></td></tr><tr><td style="display: none">*</td><td>A dose deve ser reduzida em conformidade em crianças, não devendo ser excedidas as doses únicas de 0,5 a 1 mg e 0,05 mg/kg de peso corporal</td><td>1 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Crianças e adolescentes</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Ajuste da dose</span></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td></tr><tr><td style="display: none">*</td><td>A dose deve ser cuidadosamente ajustada à resposta individual ao tratamento; os doentes com insuficiência ligeira a moderada podem necessitar de doses reduzidas</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Doentes com compromisso hepático</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Ajuste da dose</span></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td></tr><tr><td style="display: none">*</td><td>Em geral, a dose de lorazepam não tem de ser ajustada em doentes com compromisso renal</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Doentes com compromisso renal</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct [PREENCHER]}">Pré-medicação antes de intervenções de diagnóstico, bem como antes e após uma cirurgia</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Noite anterior à intervenção</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 1 a 2,5 mg de lorazepam na noite anterior à intervenção</p><p><b>additionalInstruction</b>: <span title="Codes:">Pode ser utilizada e/ou em combinação com a dose antes da intervenção</span></p><p><b>timing</b>: Night, Once per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>1-2.5 mg</td></tr></table></blockquote></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Antes da intervenção</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 2 a 4 mg de lorazepam cerca de 1 a 2 horas antes da intervenção</p><p><b>additionalInstruction</b>: <span title="Codes:">Cerca de 1 a 2 horas antes da intervenção; pode ser utilizada e/ou em combinação com a dose da noite anterior</span></p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>2-4 mg</td></tr></table></blockquote></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Pós-operatório</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 1 a 2,5 mg de lorazepam em intervalos adequados no pós-operatório</p><p><b>additionalInstruction</b>: <span title="Codes:">No pós-operatório, em intervalos adequados</span></p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>1-2.5 mg</td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Doses gerais (população não especificada na RCM)</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose inicial reduzida</span></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td></tr><tr><td style="display: none">*</td><td>A dose inicial total diária deve ser reduzida para aproximadamente 50%; ajustar com base no efeito pretendido e na tolerância individual</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Doentes idosos ou debilitados</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose reduzida</span></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td><td><b>MaxDosePerAdministration</b></td></tr><tr><td style="display: none">*</td><td>A dose deve ser reduzida em conformidade em crianças, não devendo ser excedidas as doses únicas de 0,5 a 1 mg e 0,05 mg/kg de peso corporal</td><td>1 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Crianças e adolescentes</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Ajuste da dose</span></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td></tr><tr><td style="display: none">*</td><td>A dose deve ser cuidadosamente ajustada à resposta individual ao tratamento; os doentes com insuficiência ligeira a moderada podem necessitar de doses reduzidas</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Doentes com compromisso hepático</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Ajuste da dose</span></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td></tr><tr><td style="display: none">*</td><td>Em geral, a dose de lorazepam não tem de ser ajustada em doentes com compromisso renal</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Doentes com compromisso renal</span></td></tr></table></blockquote></blockquote><blockquote><p><b>medicineClassification</b></p><p><b>type</b>: <span title="Codes:">Código ATC</span></p><p><b>classification</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ATC N05BA06}">lorazepam</span></p></blockquote><blockquote><p><b>medicineClassification</b></p><p><b>type</b>: <span title="Codes:">Grupo farmacoterapêutico</span></p><p><b>classification</b>: <span title="Codes:">2.9.1 - Ansiolíticos, sedativos e hipnóticos, derivados das benzodiazepinas</span></p></blockquote><p><b>clinicalUseIssue</b>: </p><ul><li><a href="ClinicalUseDefinition-LorazepamBluepharm-CUD-ind1.html">ClinicalUseDefinition: type = indication</a></li><li><a href="ClinicalUseDefinition-LorazepamBluepharm-CUD-ind2.html">ClinicalUseDefinition: type = indication</a></li><li><a href="ClinicalUseDefinition-LorazepamBluepharm-CUD-contra1.html">ClinicalUseDefinition: type = contraindication</a></li><li><a href="ClinicalUseDefinition-LorazepamBluepharm-CUD-contra2.html">ClinicalUseDefinition: type = contraindication</a></li><li><a href="ClinicalUseDefinition-LorazepamBluepharm-CUD-contra3.html">ClinicalUseDefinition: type = contraindication</a></li><li><a href="ClinicalUseDefinition-LorazepamBluepharm-CUD-contra4.html">ClinicalUseDefinition: type = contraindication</a></li><li><a href="ClinicalUseDefinition-LorazepamBluepharm-CUD-contra5.html">ClinicalUseDefinition: type = contraindication</a></li><li><a href="ClinicalUseDefinition-LorazepamBluepharm-CUD-contra6.html">ClinicalUseDefinition: type = contraindication</a></li><li><a href="ClinicalUseDefinition-LorazepamBluepharm-CUD-contra7.html">ClinicalUseDefinition: type = contraindication</a></li><li><a href="ClinicalUseDefinition-LorazepamBluepharm-CUD-contra8.html">ClinicalUseDefinition: type = contraindication</a></li><li><a href="ClinicalUseDefinition-LorazepamBluepharm-CUD-contra9.html">ClinicalUseDefinition: type = contraindication</a></li><li><a href="ClinicalUseDefinition-LorazepamBluepharm-CUD-contra10.html">ClinicalUseDefinition: type = contraindication</a></li><li><a href="ClinicalUseDefinition-LorazepamBluepharm-CUD-contra11.html">ClinicalUseDefinition: type = contraindication</a></li><li><a href="ClinicalUseDefinition-LorazepamBluepharm-CUD-contra12.html">ClinicalUseDefinition: type = contraindication</a></li><li><a href="ClinicalUseDefinition-LorazepamBluepharm-CUD-contra13.html">ClinicalUseDefinition: type = contraindication</a></li><li><a href="ClinicalUseDefinition-LorazepamBluepharm-CUD-contra14.html">ClinicalUseDefinition: type = contraindication</a></li><li><a href="ClinicalUseDefinition-LorazepamBluepharm-CUD-int1.html">ClinicalUseDefinition: type = interaction</a></li><li><a href="ClinicalUseDefinition-LorazepamBluepharm-CUD-int2.html">ClinicalUseDefinition: type = interaction</a></li><li><a href="ClinicalUseDefinition-LorazepamBluepharm-CUD-int3.html">ClinicalUseDefinition: type = interaction</a></li><li><a href="ClinicalUseDefinition-LorazepamBluepharm-CUD-int4.html">ClinicalUseDefinition: type = interaction</a></li><li><a href="ClinicalUseDefinition-LorazepamBluepharm-CUD-int5.html">ClinicalUseDefinition: type = interaction</a></li></ul><blockquote><p><b>definitional</b></p><p><b>doseForm</b>: <span title="Codes:{http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs 271}, {https://extranet.infarmed.pt/INFOMED-fo/detalhes-medicamento.xhtml 271}">Comprimido</span></p><p><b>intendedRoute</b>: <span title="Codes:{http://example.com/fhir/example/CodeSystem/via-administracao-cs 48}">Via oral</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia 7612}">Lorazepam</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass ACTI}">active ingredient</span></p><p><b>strength</b>: 0.5 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Lactose mono-hidratada</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p><p><b>strength</b>: 24 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Celulose microcristalina tipo 102</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Carboximetilamido sódico (tipo A)</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Estearato de magnésio</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p></blockquote></blockquote></div>
+  </text>
+  <code>
+    <coding>
+      <system value="http://infarmed.pt/medicamentos/prod_id"/>
+      <code value="672984"/>
+      <display value="Lorazepam Bluepharma 0,5 mg [N05BA06]"/>
+    </coding>
+  </code>
+  <name value="Lorazepam Bluepharma [lorazepam] 0,5 mg comprimido"/>
+  <indicationGuideline>
+    <indication>
+      <concept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="[PREENCHER]"/>
+          <display value="Ansiedade/tensão/perturbações do sono"/>
+        </coding>
+        <text value="Tratamento sintomático de curta duração de ansiedade, tensão e agitação, perturbações do sono causadas por estas condições"/>
+      </concept>
+    </indication>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose diária dividida"/>
+        </type>
+        <dosage>
+          <text value="Dose diária geralmente de 0,5 a 2,5 mg de lorazepam, dividida em 2 a 3 doses individuais; pode ser aumentada até ao máximo de 7,5 mg por dia"/>
+          <additionalInstruction>
+            <text value="Aumento até ao máximo apenas tendo em consideração todas as advertências e precauções, em especial em contexto hospitalar"/>
+          </additionalInstruction>
+          <timing>
+            <repeat>
+              <frequency value="2"/>
+              <frequencyMax value="3"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <maxDosePerPeriod>
+            <numerator>
+              <value value="7.5"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+              <unit value="day"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="d"/>
+            </denominator>
+          </maxDosePerPeriod>
+        </dosage>
+      </dosage>
+      <dosage>
+        <type>
+          <text value="Dose única noturna"/>
+        </type>
+        <dosage>
+          <text value="Dose diária geralmente de 0,5 a 2,5 mg de lorazepam numa única toma, à noite (cerca de meia hora antes do deitar se o foco forem perturbações do sono); pode ser aumentada até ao máximo de 7,5 mg por dia"/>
+          <additionalInstruction>
+            <text value="Aumento até ao máximo apenas tendo em consideração todas as advertências e precauções, em especial em contexto hospitalar"/>
+          </additionalInstruction>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+              <when value="NIGHT"/>
+            </repeat>
+          </timing>
+          <maxDosePerPeriod>
+            <numerator>
+              <value value="7.5"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+              <unit value="day"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="d"/>
+            </denominator>
+          </maxDosePerPeriod>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Doses gerais (população não especificada na RCM)"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose inicial reduzida"/>
+        </type>
+        <dosage>
+          <text value="A dose inicial total diária deve ser reduzida para aproximadamente 50%; ajustar com base no efeito pretendido e na tolerância individual"/>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Doentes idosos ou debilitados"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose reduzida"/>
+        </type>
+        <dosage>
+          <text value="A dose deve ser reduzida em conformidade em crianças, não devendo ser excedidas as doses únicas de 0,5 a 1 mg e 0,05 mg/kg de peso corporal"/>
+          <maxDosePerAdministration>
+            <value value="1"/>
+            <unit value="mg"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="mg"/>
+          </maxDosePerAdministration>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Crianças e adolescentes"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Ajuste da dose"/>
+        </type>
+        <dosage>
+          <text value="A dose deve ser cuidadosamente ajustada à resposta individual ao tratamento; os doentes com insuficiência ligeira a moderada podem necessitar de doses reduzidas"/>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Doentes com compromisso hepático"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Ajuste da dose"/>
+        </type>
+        <dosage>
+          <text value="Em geral, a dose de lorazepam não tem de ser ajustada em doentes com compromisso renal"/>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Doentes com compromisso renal"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+  </indicationGuideline>
+  <indicationGuideline>
+    <indication>
+      <concept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="[PREENCHER]"/>
+          <display value="Pré-medicação"/>
+        </coding>
+        <text value="Pré-medicação antes de intervenções de diagnóstico, bem como antes e após uma cirurgia"/>
+      </concept>
+    </indication>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Noite anterior à intervenção"/>
+        </type>
+        <dosage>
+          <text value="1 a 2,5 mg de lorazepam na noite anterior à intervenção"/>
+          <additionalInstruction>
+            <text value="Pode ser utilizada e/ou em combinação com a dose antes da intervenção"/>
+          </additionalInstruction>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+              <when value="NIGHT"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseRange>
+              <low>
+                <value value="1"/>
+                <unit value="mg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg"/>
+              </low>
+              <high>
+                <value value="2.5"/>
+                <unit value="mg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg"/>
+              </high>
+            </doseRange>
+          </doseAndRate>
+        </dosage>
+      </dosage>
+      <dosage>
+        <type>
+          <text value="Antes da intervenção"/>
+        </type>
+        <dosage>
+          <text value="2 a 4 mg de lorazepam cerca de 1 a 2 horas antes da intervenção"/>
+          <additionalInstruction>
+            <text value="Cerca de 1 a 2 horas antes da intervenção; pode ser utilizada e/ou em combinação com a dose da noite anterior"/>
+          </additionalInstruction>
+          <doseAndRate>
+            <doseRange>
+              <low>
+                <value value="2"/>
+                <unit value="mg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg"/>
+              </low>
+              <high>
+                <value value="4"/>
+                <unit value="mg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg"/>
+              </high>
+            </doseRange>
+          </doseAndRate>
+        </dosage>
+      </dosage>
+      <dosage>
+        <type>
+          <text value="Pós-operatório"/>
+        </type>
+        <dosage>
+          <text value="1 a 2,5 mg de lorazepam em intervalos adequados no pós-operatório"/>
+          <additionalInstruction>
+            <text value="No pós-operatório, em intervalos adequados"/>
+          </additionalInstruction>
+          <doseAndRate>
+            <doseRange>
+              <low>
+                <value value="1"/>
+                <unit value="mg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg"/>
+              </low>
+              <high>
+                <value value="2.5"/>
+                <unit value="mg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg"/>
+              </high>
+            </doseRange>
+          </doseAndRate>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Doses gerais (população não especificada na RCM)"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose inicial reduzida"/>
+        </type>
+        <dosage>
+          <text value="A dose inicial total diária deve ser reduzida para aproximadamente 50%; ajustar com base no efeito pretendido e na tolerância individual"/>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Doentes idosos ou debilitados"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose reduzida"/>
+        </type>
+        <dosage>
+          <text value="A dose deve ser reduzida em conformidade em crianças, não devendo ser excedidas as doses únicas de 0,5 a 1 mg e 0,05 mg/kg de peso corporal"/>
+          <maxDosePerAdministration>
+            <value value="1"/>
+            <unit value="mg"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="mg"/>
+          </maxDosePerAdministration>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Crianças e adolescentes"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Ajuste da dose"/>
+        </type>
+        <dosage>
+          <text value="A dose deve ser cuidadosamente ajustada à resposta individual ao tratamento; os doentes com insuficiência ligeira a moderada podem necessitar de doses reduzidas"/>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Doentes com compromisso hepático"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Ajuste da dose"/>
+        </type>
+        <dosage>
+          <text value="Em geral, a dose de lorazepam não tem de ser ajustada em doentes com compromisso renal"/>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Doentes com compromisso renal"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+  </indicationGuideline>
+  <medicineClassification>
+    <type>
+      <text value="Código ATC"/>
+    </type>
+    <classification>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ATC"/>
+        <code value="N05BA06"/>
+        <display value="lorazepam"/>
+      </coding>
+    </classification>
+  </medicineClassification>
+  <medicineClassification>
+    <type>
+      <text value="Grupo farmacoterapêutico"/>
+    </type>
+    <classification>
+      <text value="2.9.1 - Ansiolíticos, sedativos e hipnóticos, derivados das benzodiazepinas"/>
+    </classification>
+  </medicineClassification>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/LorazepamBluepharm-CUD-ind1"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/LorazepamBluepharm-CUD-ind2"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/LorazepamBluepharm-CUD-contra1"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/LorazepamBluepharm-CUD-contra2"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/LorazepamBluepharm-CUD-contra3"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/LorazepamBluepharm-CUD-contra4"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/LorazepamBluepharm-CUD-contra5"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/LorazepamBluepharm-CUD-contra6"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/LorazepamBluepharm-CUD-contra7"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/LorazepamBluepharm-CUD-contra8"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/LorazepamBluepharm-CUD-contra9"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/LorazepamBluepharm-CUD-contra10"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/LorazepamBluepharm-CUD-contra11"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/LorazepamBluepharm-CUD-contra12"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/LorazepamBluepharm-CUD-contra13"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/LorazepamBluepharm-CUD-contra14"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/LorazepamBluepharm-CUD-int1"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/LorazepamBluepharm-CUD-int2"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/LorazepamBluepharm-CUD-int3"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/LorazepamBluepharm-CUD-int4"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/LorazepamBluepharm-CUD-int5"/>
+  </clinicalUseIssue>
+  <definitional>
+    <doseForm>
+      <coding>
+        <system value="http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs"/>
+        <code value="271"/>
+        <display value="Comprimido"/>
+      </coding>
+      <coding>
+        <system value="https://extranet.infarmed.pt/INFOMED-fo/detalhes-medicamento.xhtml"/>
+        <code value="271"/>
+        <display value="Comprimido"/>
+      </coding>
+    </doseForm>
+    <intendedRoute>
+      <coding>
+        <system value="http://example.com/fhir/example/CodeSystem/via-administracao-cs"/>
+        <code value="48"/>
+        <display value="Via oral"/>
+      </coding>
+    </intendedRoute>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="7612"/>
+            <display value="Lorazepam"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="ACTI"/>
+        </coding>
+      </type>
+      <strengthQuantity>
+        <value value="0.5"/>
+        <unit value="mg"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mg"/>
+      </strengthQuantity>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Lactose mono-hidratada"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+      <strengthQuantity>
+        <value value="24"/>
+        <unit value="mg"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mg"/>
+      </strengthQuantity>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Celulose microcristalina tipo 102"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Carboximetilamido sódico (tipo A)"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Estearato de magnésio"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+    </ingredient>
+  </definitional>
+</MedicationKnowledge>

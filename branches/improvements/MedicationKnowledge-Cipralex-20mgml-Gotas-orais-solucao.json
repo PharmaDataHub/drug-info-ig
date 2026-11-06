@@ -1,0 +1,1634 @@
+{
+  "resourceType" : "MedicationKnowledge",
+  "id" : "Cipralex-20mgml-Gotas-orais-solucao",
+  "meta" : {
+    "profile" : ["http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationKnowledge Cipralex-20mgml-Gotas-orais-solucao</b></p><a name=\"Cipralex-20mgml-Gotas-orais-solucao\"> </a><a name=\"hcCipralex-20mgml-Gotas-orais-solucao\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MedicationKnowledgePDH.html\">Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento</a></p></div><p><b>code</b>: <span title=\"Codes:{http://infarmed.pt/medicamentos/prod_id 44201}\">Cipralex 20 mg/ml [N06AB10]</span></p><p><b>name</b>: Cipralex [escitalopram] 20 mg/ml gotas orais, solução</p><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 35489007}\">Tratamento de episódios depressivos major</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Regime habitual</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 10 mg (10 gotas) uma vez por dia; a dose pode ser aumentada até um máximo de 20 mg (20 gotas) por dia, dependendo da resposta individual</p><p><b>additionalInstruction</b>: <span title=\"Codes:\">Após o desaparecimento dos sintomas é necessário um período de tratamento de, pelo menos, 6 meses para consolidação da resposta</span></p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>10 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table><p><b>maxDosePerPeriod</b>: 20 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Doses gerais (população não especificada na RCM)</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Regime habitual</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dose inicial de 5 mg (5 gotas) uma vez por dia; a dose pode ser aumentada até um máximo de 10 mg (10 gotas) por dia, dependendo da resposta individual</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>5 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table><p><b>maxDosePerPeriod</b>: 10 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Doentes idosos (&gt; 65 anos de idade)</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Insuficiência renal ligeira ou moderada</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Não é necessário o ajuste da dose</td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Função renal gravemente diminuída (Clcr inferior a 30 ml/min)</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>É recomendada precaução</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Função renal diminuída</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Insuficiência hepática ligeira ou moderada - primeiras duas semanas</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dose inicial de 5 mg (5 gotas) por dia nas duas primeiras semanas de tratamento</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>5 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Insuficiência hepática ligeira ou moderada - após as duas primeiras semanas</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dependendo da resposta individual, a dose poderá ser aumentada para 10 mg (10 gotas) por dia</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>10 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Função hepática gravemente diminuída</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>É recomendada precaução e especial cuidado na titulação da dose</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Função hepática diminuída</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Primeiras duas semanas de tratamento</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dose inicial de 5 mg (5 gotas) por dia durante as primeiras duas semanas de tratamento</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>5 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Após as duas primeiras semanas</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dependendo da resposta individual, a dose poderá ser aumentada para 10 mg (10 gotas) por dia</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>10 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Metabolizadores fracos no que se refere ao CYP2C19</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 371631005}\">Tratamento de perturbações de pânico com ou sem agorafobia</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Fase inicial (primeira semana)</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 5 mg (5 gotas) uma vez por dia na primeira semana de tratamento</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>5 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Fase seguinte</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 10 mg (10 gotas) por dia após a primeira semana; a dose pode ser posteriormente aumentada até um máximo de 20 mg (20 gotas) por dia, dependendo da resposta individual</p><p><b>additionalInstruction</b>: <span title=\"Codes:\">A eficácia máxima é atingida após cerca de 3 meses; o tratamento tem uma duração de vários meses</span></p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>10 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table><p><b>maxDosePerPeriod</b>: 20 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Doses gerais (população não especificada na RCM)</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Regime habitual</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dose inicial de 5 mg (5 gotas) uma vez por dia; a dose pode ser aumentada até um máximo de 10 mg (10 gotas) por dia, dependendo da resposta individual</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>5 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table><p><b>maxDosePerPeriod</b>: 10 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Doentes idosos (&gt; 65 anos de idade)</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Insuficiência renal ligeira ou moderada</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Não é necessário o ajuste da dose</td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Função renal gravemente diminuída (Clcr inferior a 30 ml/min)</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>É recomendada precaução</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Função renal diminuída</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Insuficiência hepática ligeira ou moderada - primeiras duas semanas</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dose inicial de 5 mg (5 gotas) por dia nas duas primeiras semanas de tratamento</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>5 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Insuficiência hepática ligeira ou moderada - após as duas primeiras semanas</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dependendo da resposta individual, a dose poderá ser aumentada para 10 mg (10 gotas) por dia</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>10 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Função hepática gravemente diminuída</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>É recomendada precaução e especial cuidado na titulação da dose</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Função hepática diminuída</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Primeiras duas semanas de tratamento</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dose inicial de 5 mg (5 gotas) por dia durante as primeiras duas semanas de tratamento</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>5 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Após as duas primeiras semanas</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dependendo da resposta individual, a dose poderá ser aumentada para 10 mg (10 gotas) por dia</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>10 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Metabolizadores fracos no que se refere ao CYP2C19</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 394924000}\">Tratamento da perturbação da ansiedade social (fobia social)</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Regime habitual</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 10 mg (10 gotas) uma vez por dia; a dose pode ser diminuída para 5 mg (5 gotas) ou aumentada para um máximo de 20 mg (20 gotas) por dia, dependendo da resposta individual</p><p><b>additionalInstruction</b>: <span title=\"Codes:\">Habitualmente são necessárias 2 a 4 semanas para obter o alívio dos sintomas; tratamento desejável durante 12 semanas para consolidação da resposta; benefícios do tratamento a longo prazo devem ser reavaliados em intervalos regulares</span></p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>10 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table><p><b>maxDosePerPeriod</b>: 20 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Doses gerais (população não especificada na RCM)</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Regime habitual</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dose inicial de 5 mg (5 gotas) uma vez por dia; a dose pode ser aumentada até um máximo de 10 mg (10 gotas) por dia, dependendo da resposta individual</p><p><b>additionalInstruction</b>: <span title=\"Codes:\">A eficácia no tratamento da perturbação da ansiedade social não foi estudada em doentes idosos</span></p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>5 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table><p><b>maxDosePerPeriod</b>: 10 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Doentes idosos (&gt; 65 anos de idade)</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Insuficiência renal ligeira ou moderada</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Não é necessário o ajuste da dose</td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Função renal gravemente diminuída (Clcr inferior a 30 ml/min)</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>É recomendada precaução</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Função renal diminuída</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Insuficiência hepática ligeira ou moderada - primeiras duas semanas</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dose inicial de 5 mg (5 gotas) por dia nas duas primeiras semanas de tratamento</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>5 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Insuficiência hepática ligeira ou moderada - após as duas primeiras semanas</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dependendo da resposta individual, a dose poderá ser aumentada para 10 mg (10 gotas) por dia</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>10 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Função hepática gravemente diminuída</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>É recomendada precaução e especial cuidado na titulação da dose</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Função hepática diminuída</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Primeiras duas semanas de tratamento</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dose inicial de 5 mg (5 gotas) por dia durante as primeiras duas semanas de tratamento</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>5 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Após as duas primeiras semanas</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dependendo da resposta individual, a dose poderá ser aumentada para 10 mg (10 gotas) por dia</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>10 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Metabolizadores fracos no que se refere ao CYP2C19</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 21897009}\">Tratamento da perturbação da ansiedade generalizada</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Regime habitual</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dose inicial de 10 mg (10 gotas) uma vez por dia; a dose pode ser aumentada até um máximo de 20 mg (20 gotas) por dia, dependendo da resposta individual</p><p><b>additionalInstruction</b>: <span title=\"Codes:\">Tratamento a longo prazo estudado durante, pelo menos, 6 meses com 20 mg por dia; benefícios do tratamento e dose devem ser reavaliados em intervalos regulares</span></p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>10 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table><p><b>maxDosePerPeriod</b>: 20 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Doses gerais (população não especificada na RCM)</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Regime habitual</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dose inicial de 5 mg (5 gotas) uma vez por dia; a dose pode ser aumentada até um máximo de 10 mg (10 gotas) por dia, dependendo da resposta individual</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>5 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table><p><b>maxDosePerPeriod</b>: 10 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Doentes idosos (&gt; 65 anos de idade)</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Insuficiência renal ligeira ou moderada</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Não é necessário o ajuste da dose</td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Função renal gravemente diminuída (Clcr inferior a 30 ml/min)</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>É recomendada precaução</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Função renal diminuída</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Insuficiência hepática ligeira ou moderada - primeiras duas semanas</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dose inicial de 5 mg (5 gotas) por dia nas duas primeiras semanas de tratamento</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>5 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Insuficiência hepática ligeira ou moderada - após as duas primeiras semanas</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dependendo da resposta individual, a dose poderá ser aumentada para 10 mg (10 gotas) por dia</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>10 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Função hepática gravemente diminuída</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>É recomendada precaução e especial cuidado na titulação da dose</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Função hepática diminuída</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Primeiras duas semanas de tratamento</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dose inicial de 5 mg (5 gotas) por dia durante as primeiras duas semanas de tratamento</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>5 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Após as duas primeiras semanas</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dependendo da resposta individual, a dose poderá ser aumentada para 10 mg (10 gotas) por dia</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>10 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Metabolizadores fracos no que se refere ao CYP2C19</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 191736004}\">Tratamento da perturbação obsessiva-compulsiva</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Regime habitual</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dose inicial de 10 mg (10 gotas) uma vez por dia; a dose pode ser aumentada até um máximo de 20 mg (20 gotas) por dia, dependendo da resposta individual</p><p><b>additionalInstruction</b>: <span title=\"Codes:\">Doentes devem ser tratados durante um período suficiente para assegurar que já não apresentam sintomas; benefícios do tratamento e dose devem ser reavaliados em intervalos regulares</span></p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>10 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table><p><b>maxDosePerPeriod</b>: 20 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Doses gerais (população não especificada na RCM)</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Regime habitual</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dose inicial de 5 mg (5 gotas) uma vez por dia; a dose pode ser aumentada até um máximo de 10 mg (10 gotas) por dia, dependendo da resposta individual</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>5 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table><p><b>maxDosePerPeriod</b>: 10 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Doentes idosos (&gt; 65 anos de idade)</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Insuficiência renal ligeira ou moderada</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Não é necessário o ajuste da dose</td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Função renal gravemente diminuída (Clcr inferior a 30 ml/min)</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>É recomendada precaução</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Função renal diminuída</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Insuficiência hepática ligeira ou moderada - primeiras duas semanas</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dose inicial de 5 mg (5 gotas) por dia nas duas primeiras semanas de tratamento</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>5 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Insuficiência hepática ligeira ou moderada - após as duas primeiras semanas</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dependendo da resposta individual, a dose poderá ser aumentada para 10 mg (10 gotas) por dia</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>10 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Função hepática gravemente diminuída</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>É recomendada precaução e especial cuidado na titulação da dose</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Função hepática diminuída</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Primeiras duas semanas de tratamento</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dose inicial de 5 mg (5 gotas) por dia durante as primeiras duas semanas de tratamento</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>5 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Após as duas primeiras semanas</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Dependendo da resposta individual, a dose poderá ser aumentada para 10 mg (10 gotas) por dia</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>10 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Metabolizadores fracos no que se refere ao CYP2C19</span></td></tr></table></blockquote></blockquote><blockquote><p><b>medicineClassification</b></p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/medication-classification-type anatomical}\">Código ATC</span></p><p><b>classification</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ATC N06AB10}\">escitalopram</span></p></blockquote><blockquote><p><b>medicineClassification</b></p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/medication-classification-type therapeutic}\">Grupo farmacoterapêutico</span></p><p><b>classification</b>: <span title=\"Codes:\">2.9.3 Sistema Nervoso Central. Psicofármacos. Antidepressores</span></p></blockquote><p><b>clinicalUseIssue</b>: </p><ul><li><a href=\"ClinicalUseDefinition-Cipralex20mgml-CUD-ind1.html\">ClinicalUseDefinition: type = indication</a></li><li><a href=\"ClinicalUseDefinition-Cipralex20mgml-CUD-ind2.html\">ClinicalUseDefinition: type = indication</a></li><li><a href=\"ClinicalUseDefinition-Cipralex20mgml-CUD-ind3.html\">ClinicalUseDefinition: type = indication</a></li><li><a href=\"ClinicalUseDefinition-Cipralex20mgml-CUD-ind4.html\">ClinicalUseDefinition: type = indication</a></li><li><a href=\"ClinicalUseDefinition-Cipralex20mgml-CUD-ind5.html\">ClinicalUseDefinition: type = indication</a></li><li><a href=\"ClinicalUseDefinition-Cipralex20mgml-CUD-contra1.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Cipralex20mgml-CUD-contra2.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Cipralex20mgml-CUD-contra3.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Cipralex20mgml-CUD-contra4.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Cipralex20mgml-CUD-contra5.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Cipralex20mgml-CUD-contra6.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Cipralex20mgml-CUD-contra7.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Cipralex20mgml-CUD-contra8.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Cipralex20mgml-CUD-contra9.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Cipralex20mgml-CUD-int1.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Cipralex20mgml-CUD-int2.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Cipralex20mgml-CUD-int3.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Cipralex20mgml-CUD-int4.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Cipralex20mgml-CUD-int5.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Cipralex20mgml-CUD-int6.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Cipralex20mgml-CUD-int7.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Cipralex20mgml-CUD-int8.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Cipralex20mgml-CUD-int9.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Cipralex20mgml-CUD-int10.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Cipralex20mgml-CUD-int11.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Cipralex20mgml-CUD-int12.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Cipralex20mgml-CUD-int13.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Cipralex20mgml-CUD-int14.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Cipralex20mgml-CUD-int15.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Cipralex20mgml-CUD-int16.html\">ClinicalUseDefinition: type = interaction</a></li></ul><blockquote><p><b>definitional</b></p><p><b>doseForm</b>: <span title=\"Codes:{http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs 1}\">Gotas orais, solução</span></p><p><b>intendedRoute</b>: <span title=\"Codes:{http://example.com/fhir/example/CodeSystem/via-administracao-cs 48}\">Via oral</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">escitalopram</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass ACTI}\">active ingredient</span></p><p><b>strength</b>: 20 mg/ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/mL = 'mg/mL')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Galhato de propilo</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Ácido cítrico anidro</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Etanol 96%</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p><p><b>strength</b>: 100 mg/ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/mL = 'mg/mL')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Hidróxido de sódio</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Água purificada</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote></blockquote></div>"
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "http://infarmed.pt/medicamentos/prod_id",
+      "code" : "44201",
+      "display" : "Cipralex 20 mg/ml [N06AB10]"
+    }]
+  },
+  "name" : ["Cipralex [escitalopram] 20 mg/ml gotas orais, solução"],
+  "indicationGuideline" : [{
+    "indication" : [{
+      "concept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "35489007",
+          "display" : "Major depressive disorder"
+        }],
+        "text" : "Tratamento de episódios depressivos major"
+      }
+    }],
+    "dosingGuideline" : [{
+      "dosage" : [{
+        "type" : {
+          "text" : "Regime habitual"
+        },
+        "dosage" : [{
+          "text" : "10 mg (10 gotas) uma vez por dia; a dose pode ser aumentada até um máximo de 20 mg (20 gotas) por dia, dependendo da resposta individual",
+          "additionalInstruction" : [{
+            "text" : "Após o desaparecimento dos sintomas é necessário um período de tratamento de, pelo menos, 6 meses para consolidação da resposta"
+          }],
+          "timing" : {
+            "repeat" : {
+              "frequency" : 1,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          },
+          "doseAndRate" : [{
+            "doseQuantity" : {
+              "value" : 10,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            }
+          }],
+          "maxDosePerPeriod" : [{
+            "numerator" : {
+              "value" : 20,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            },
+            "denominator" : {
+              "value" : 1,
+              "unit" : "day",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "d"
+            }
+          }]
+        }]
+      }],
+      "patientCharacteristic" : [{
+        "type" : {
+          "text" : "Population"
+        },
+        "valueCodeableConcept" : {
+          "text" : "Doses gerais (população não especificada na RCM)"
+        }
+      }]
+    },
+    {
+      "dosage" : [{
+        "type" : {
+          "text" : "Regime habitual"
+        },
+        "dosage" : [{
+          "text" : "Dose inicial de 5 mg (5 gotas) uma vez por dia; a dose pode ser aumentada até um máximo de 10 mg (10 gotas) por dia, dependendo da resposta individual",
+          "timing" : {
+            "repeat" : {
+              "frequency" : 1,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          },
+          "doseAndRate" : [{
+            "doseQuantity" : {
+              "value" : 5,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            }
+          }],
+          "maxDosePerPeriod" : [{
+            "numerator" : {
+              "value" : 10,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            },
+            "denominator" : {
+              "value" : 1,
+              "unit" : "day",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "d"
+            }
+          }]
+        }]
+      }],
+      "patientCharacteristic" : [{
+        "type" : {
+          "text" : "Population"
+        },
+        "valueCodeableConcept" : {
+          "text" : "Doentes idosos (> 65 anos de idade)"
+        }
+      }]
+    },
+    {
+      "dosage" : [{
+        "type" : {
+          "text" : "Insuficiência renal ligeira ou moderada"
+        },
+        "dosage" : [{
+          "text" : "Não é necessário o ajuste da dose"
+        }]
+      },
+      {
+        "type" : {
+          "text" : "Função renal gravemente diminuída (Clcr inferior a 30 ml/min)"
+        },
+        "dosage" : [{
+          "text" : "É recomendada precaução"
+        }]
+      }],
+      "patientCharacteristic" : [{
+        "type" : {
+          "text" : "Population"
+        },
+        "valueCodeableConcept" : {
+          "text" : "Função renal diminuída"
+        }
+      }]
+    },
+    {
+      "dosage" : [{
+        "type" : {
+          "text" : "Insuficiência hepática ligeira ou moderada - primeiras duas semanas"
+        },
+        "dosage" : [{
+          "text" : "Dose inicial de 5 mg (5 gotas) por dia nas duas primeiras semanas de tratamento",
+          "timing" : {
+            "repeat" : {
+              "boundsDuration" : {
+                "value" : 2,
+                "unit" : "week",
+                "system" : "http://unitsofmeasure.org",
+                "code" : "wk"
+              },
+              "frequency" : 1,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          },
+          "doseAndRate" : [{
+            "doseQuantity" : {
+              "value" : 5,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            }
+          }]
+        }]
+      },
+      {
+        "type" : {
+          "text" : "Insuficiência hepática ligeira ou moderada - após as duas primeiras semanas"
+        },
+        "dosage" : [{
+          "text" : "Dependendo da resposta individual, a dose poderá ser aumentada para 10 mg (10 gotas) por dia",
+          "timing" : {
+            "repeat" : {
+              "frequency" : 1,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          },
+          "doseAndRate" : [{
+            "doseQuantity" : {
+              "value" : 10,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            }
+          }]
+        }]
+      },
+      {
+        "type" : {
+          "text" : "Função hepática gravemente diminuída"
+        },
+        "dosage" : [{
+          "text" : "É recomendada precaução e especial cuidado na titulação da dose"
+        }]
+      }],
+      "patientCharacteristic" : [{
+        "type" : {
+          "text" : "Population"
+        },
+        "valueCodeableConcept" : {
+          "text" : "Função hepática diminuída"
+        }
+      }]
+    },
+    {
+      "dosage" : [{
+        "type" : {
+          "text" : "Primeiras duas semanas de tratamento"
+        },
+        "dosage" : [{
+          "text" : "Dose inicial de 5 mg (5 gotas) por dia durante as primeiras duas semanas de tratamento",
+          "timing" : {
+            "repeat" : {
+              "boundsDuration" : {
+                "value" : 2,
+                "unit" : "week",
+                "system" : "http://unitsofmeasure.org",
+                "code" : "wk"
+              },
+              "frequency" : 1,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          },
+          "doseAndRate" : [{
+            "doseQuantity" : {
+              "value" : 5,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            }
+          }]
+        }]
+      },
+      {
+        "type" : {
+          "text" : "Após as duas primeiras semanas"
+        },
+        "dosage" : [{
+          "text" : "Dependendo da resposta individual, a dose poderá ser aumentada para 10 mg (10 gotas) por dia",
+          "timing" : {
+            "repeat" : {
+              "frequency" : 1,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          },
+          "doseAndRate" : [{
+            "doseQuantity" : {
+              "value" : 10,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            }
+          }]
+        }]
+      }],
+      "patientCharacteristic" : [{
+        "type" : {
+          "text" : "Population"
+        },
+        "valueCodeableConcept" : {
+          "text" : "Metabolizadores fracos no que se refere ao CYP2C19"
+        }
+      }]
+    }]
+  },
+  {
+    "indication" : [{
+      "concept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "371631005",
+          "display" : "Panic disorder"
+        }],
+        "text" : "Tratamento de perturbações de pânico com ou sem agorafobia"
+      }
+    }],
+    "dosingGuideline" : [{
+      "dosage" : [{
+        "type" : {
+          "text" : "Fase inicial (primeira semana)"
+        },
+        "dosage" : [{
+          "text" : "5 mg (5 gotas) uma vez por dia na primeira semana de tratamento",
+          "timing" : {
+            "repeat" : {
+              "boundsDuration" : {
+                "value" : 1,
+                "unit" : "week",
+                "system" : "http://unitsofmeasure.org",
+                "code" : "wk"
+              },
+              "frequency" : 1,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          },
+          "doseAndRate" : [{
+            "doseQuantity" : {
+              "value" : 5,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            }
+          }]
+        }]
+      },
+      {
+        "type" : {
+          "text" : "Fase seguinte"
+        },
+        "dosage" : [{
+          "text" : "10 mg (10 gotas) por dia após a primeira semana; a dose pode ser posteriormente aumentada até um máximo de 20 mg (20 gotas) por dia, dependendo da resposta individual",
+          "additionalInstruction" : [{
+            "text" : "A eficácia máxima é atingida após cerca de 3 meses; o tratamento tem uma duração de vários meses"
+          }],
+          "timing" : {
+            "repeat" : {
+              "frequency" : 1,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          },
+          "doseAndRate" : [{
+            "doseQuantity" : {
+              "value" : 10,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            }
+          }],
+          "maxDosePerPeriod" : [{
+            "numerator" : {
+              "value" : 20,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            },
+            "denominator" : {
+              "value" : 1,
+              "unit" : "day",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "d"
+            }
+          }]
+        }]
+      }],
+      "patientCharacteristic" : [{
+        "type" : {
+          "text" : "Population"
+        },
+        "valueCodeableConcept" : {
+          "text" : "Doses gerais (população não especificada na RCM)"
+        }
+      }]
+    },
+    {
+      "dosage" : [{
+        "type" : {
+          "text" : "Regime habitual"
+        },
+        "dosage" : [{
+          "text" : "Dose inicial de 5 mg (5 gotas) uma vez por dia; a dose pode ser aumentada até um máximo de 10 mg (10 gotas) por dia, dependendo da resposta individual",
+          "timing" : {
+            "repeat" : {
+              "frequency" : 1,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          },
+          "doseAndRate" : [{
+            "doseQuantity" : {
+              "value" : 5,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            }
+          }],
+          "maxDosePerPeriod" : [{
+            "numerator" : {
+              "value" : 10,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            },
+            "denominator" : {
+              "value" : 1,
+              "unit" : "day",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "d"
+            }
+          }]
+        }]
+      }],
+      "patientCharacteristic" : [{
+        "type" : {
+          "text" : "Population"
+        },
+        "valueCodeableConcept" : {
+          "text" : "Doentes idosos (> 65 anos de idade)"
+        }
+      }]
+    },
+    {
+      "dosage" : [{
+        "type" : {
+          "text" : "Insuficiência renal ligeira ou moderada"
+        },
+        "dosage" : [{
+          "text" : "Não é necessário o ajuste da dose"
+        }]
+      },
+      {
+        "type" : {
+          "text" : "Função renal gravemente diminuída (Clcr inferior a 30 ml/min)"
+        },
+        "dosage" : [{
+          "text" : "É recomendada precaução"
+        }]
+      }],
+      "patientCharacteristic" : [{
+        "type" : {
+          "text" : "Population"
+        },
+        "valueCodeableConcept" : {
+          "text" : "Função renal diminuída"
+        }
+      }]
+    },
+    {
+      "dosage" : [{
+        "type" : {
+          "text" : "Insuficiência hepática ligeira ou moderada - primeiras duas semanas"
+        },
+        "dosage" : [{
+          "text" : "Dose inicial de 5 mg (5 gotas) por dia nas duas primeiras semanas de tratamento",
+          "timing" : {
+            "repeat" : {
+              "boundsDuration" : {
+                "value" : 2,
+                "unit" : "week",
+                "system" : "http://unitsofmeasure.org",
+                "code" : "wk"
+              },
+              "frequency" : 1,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          },
+          "doseAndRate" : [{
+            "doseQuantity" : {
+              "value" : 5,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            }
+          }]
+        }]
+      },
+      {
+        "type" : {
+          "text" : "Insuficiência hepática ligeira ou moderada - após as duas primeiras semanas"
+        },
+        "dosage" : [{
+          "text" : "Dependendo da resposta individual, a dose poderá ser aumentada para 10 mg (10 gotas) por dia",
+          "timing" : {
+            "repeat" : {
+              "frequency" : 1,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          },
+          "doseAndRate" : [{
+            "doseQuantity" : {
+              "value" : 10,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            }
+          }]
+        }]
+      },
+      {
+        "type" : {
+          "text" : "Função hepática gravemente diminuída"
+        },
+        "dosage" : [{
+          "text" : "É recomendada precaução e especial cuidado na titulação da dose"
+        }]
+      }],
+      "patientCharacteristic" : [{
+        "type" : {
+          "text" : "Population"
+        },
+        "valueCodeableConcept" : {
+          "text" : "Função hepática diminuída"
+        }
+      }]
+    },
+    {
+      "dosage" : [{
+        "type" : {
+          "text" : "Primeiras duas semanas de tratamento"
+        },
+        "dosage" : [{
+          "text" : "Dose inicial de 5 mg (5 gotas) por dia durante as primeiras duas semanas de tratamento",
+          "timing" : {
+            "repeat" : {
+              "boundsDuration" : {
+                "value" : 2,
+                "unit" : "week",
+                "system" : "http://unitsofmeasure.org",
+                "code" : "wk"
+              },
+              "frequency" : 1,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          },
+          "doseAndRate" : [{
+            "doseQuantity" : {
+              "value" : 5,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            }
+          }]
+        }]
+      },
+      {
+        "type" : {
+          "text" : "Após as duas primeiras semanas"
+        },
+        "dosage" : [{
+          "text" : "Dependendo da resposta individual, a dose poderá ser aumentada para 10 mg (10 gotas) por dia",
+          "timing" : {
+            "repeat" : {
+              "frequency" : 1,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          },
+          "doseAndRate" : [{
+            "doseQuantity" : {
+              "value" : 10,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            }
+          }]
+        }]
+      }],
+      "patientCharacteristic" : [{
+        "type" : {
+          "text" : "Population"
+        },
+        "valueCodeableConcept" : {
+          "text" : "Metabolizadores fracos no que se refere ao CYP2C19"
+        }
+      }]
+    }]
+  },
+  {
+    "indication" : [{
+      "concept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "394924000",
+          "display" : "Social anxiety disorder"
+        }],
+        "text" : "Tratamento da perturbação da ansiedade social (fobia social)"
+      }
+    }],
+    "dosingGuideline" : [{
+      "dosage" : [{
+        "type" : {
+          "text" : "Regime habitual"
+        },
+        "dosage" : [{
+          "text" : "10 mg (10 gotas) uma vez por dia; a dose pode ser diminuída para 5 mg (5 gotas) ou aumentada para um máximo de 20 mg (20 gotas) por dia, dependendo da resposta individual",
+          "additionalInstruction" : [{
+            "text" : "Habitualmente são necessárias 2 a 4 semanas para obter o alívio dos sintomas; tratamento desejável durante 12 semanas para consolidação da resposta; benefícios do tratamento a longo prazo devem ser reavaliados em intervalos regulares"
+          }],
+          "timing" : {
+            "repeat" : {
+              "frequency" : 1,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          },
+          "doseAndRate" : [{
+            "doseQuantity" : {
+              "value" : 10,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            }
+          }],
+          "maxDosePerPeriod" : [{
+            "numerator" : {
+              "value" : 20,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            },
+            "denominator" : {
+              "value" : 1,
+              "unit" : "day",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "d"
+            }
+          }]
+        }]
+      }],
+      "patientCharacteristic" : [{
+        "type" : {
+          "text" : "Population"
+        },
+        "valueCodeableConcept" : {
+          "text" : "Doses gerais (população não especificada na RCM)"
+        }
+      }]
+    },
+    {
+      "dosage" : [{
+        "type" : {
+          "text" : "Regime habitual"
+        },
+        "dosage" : [{
+          "text" : "Dose inicial de 5 mg (5 gotas) uma vez por dia; a dose pode ser aumentada até um máximo de 10 mg (10 gotas) por dia, dependendo da resposta individual",
+          "additionalInstruction" : [{
+            "text" : "A eficácia no tratamento da perturbação da ansiedade social não foi estudada em doentes idosos"
+          }],
+          "timing" : {
+            "repeat" : {
+              "frequency" : 1,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          },
+          "doseAndRate" : [{
+            "doseQuantity" : {
+              "value" : 5,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            }
+          }],
+          "maxDosePerPeriod" : [{
+            "numerator" : {
+              "value" : 10,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            },
+            "denominator" : {
+              "value" : 1,
+              "unit" : "day",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "d"
+            }
+          }]
+        }]
+      }],
+      "patientCharacteristic" : [{
+        "type" : {
+          "text" : "Population"
+        },
+        "valueCodeableConcept" : {
+          "text" : "Doentes idosos (> 65 anos de idade)"
+        }
+      }]
+    },
+    {
+      "dosage" : [{
+        "type" : {
+          "text" : "Insuficiência renal ligeira ou moderada"
+        },
+        "dosage" : [{
+          "text" : "Não é necessário o ajuste da dose"
+        }]
+      },
+      {
+        "type" : {
+          "text" : "Função renal gravemente diminuída (Clcr inferior a 30 ml/min)"
+        },
+        "dosage" : [{
+          "text" : "É recomendada precaução"
+        }]
+      }],
+      "patientCharacteristic" : [{
+        "type" : {
+          "text" : "Population"
+        },
+        "valueCodeableConcept" : {
+          "text" : "Função renal diminuída"
+        }
+      }]
+    },
+    {
+      "dosage" : [{
+        "type" : {
+          "text" : "Insuficiência hepática ligeira ou moderada - primeiras duas semanas"
+        },
+        "dosage" : [{
+          "text" : "Dose inicial de 5 mg (5 gotas) por dia nas duas primeiras semanas de tratamento",
+          "timing" : {
+            "repeat" : {
+              "boundsDuration" : {
+                "value" : 2,
+                "unit" : "week",
+                "system" : "http://unitsofmeasure.org",
+                "code" : "wk"
+              },
+              "frequency" : 1,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          },
+          "doseAndRate" : [{
+            "doseQuantity" : {
+              "value" : 5,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            }
+          }]
+        }]
+      },
+      {
+        "type" : {
+          "text" : "Insuficiência hepática ligeira ou moderada - após as duas primeiras semanas"
+        },
+        "dosage" : [{
+          "text" : "Dependendo da resposta individual, a dose poderá ser aumentada para 10 mg (10 gotas) por dia",
+          "timing" : {
+            "repeat" : {
+              "frequency" : 1,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          },
+          "doseAndRate" : [{
+            "doseQuantity" : {
+              "value" : 10,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            }
+          }]
+        }]
+      },
+      {
+        "type" : {
+          "text" : "Função hepática gravemente diminuída"
+        },
+        "dosage" : [{
+          "text" : "É recomendada precaução e especial cuidado na titulação da dose"
+        }]
+      }],
+      "patientCharacteristic" : [{
+        "type" : {
+          "text" : "Population"
+        },
+        "valueCodeableConcept" : {
+          "text" : "Função hepática diminuída"
+        }
+      }]
+    },
+    {
+      "dosage" : [{
+        "type" : {
+          "text" : "Primeiras duas semanas de tratamento"
+        },
+        "dosage" : [{
+          "text" : "Dose inicial de 5 mg (5 gotas) por dia durante as primeiras duas semanas de tratamento",
+          "timing" : {
+            "repeat" : {
+              "boundsDuration" : {
+                "value" : 2,
+                "unit" : "week",
+                "system" : "http://unitsofmeasure.org",
+                "code" : "wk"
+              },
+              "frequency" : 1,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          },
+          "doseAndRate" : [{
+            "doseQuantity" : {
+              "value" : 5,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            }
+          }]
+        }]
+      },
+      {
+        "type" : {
+          "text" : "Após as duas primeiras semanas"
+        },
+        "dosage" : [{
+          "text" : "Dependendo da resposta individual, a dose poderá ser aumentada para 10 mg (10 gotas) por dia",
+          "timing" : {
+            "repeat" : {
+              "frequency" : 1,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          },
+          "doseAndRate" : [{
+            "doseQuantity" : {
+              "value" : 10,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            }
+          }]
+        }]
+      }],
+      "patientCharacteristic" : [{
+        "type" : {
+          "text" : "Population"
+        },
+        "valueCodeableConcept" : {
+          "text" : "Metabolizadores fracos no que se refere ao CYP2C19"
+        }
+      }]
+    }]
+  },
+  {
+    "indication" : [{
+      "concept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "21897009",
+          "display" : "Generalized anxiety disorder"
+        }],
+        "text" : "Tratamento da perturbação da ansiedade generalizada"
+      }
+    }],
+    "dosingGuideline" : [{
+      "dosage" : [{
+        "type" : {
+          "text" : "Regime habitual"
+        },
+        "dosage" : [{
+          "text" : "Dose inicial de 10 mg (10 gotas) uma vez por dia; a dose pode ser aumentada até um máximo de 20 mg (20 gotas) por dia, dependendo da resposta individual",
+          "additionalInstruction" : [{
+            "text" : "Tratamento a longo prazo estudado durante, pelo menos, 6 meses com 20 mg por dia; benefícios do tratamento e dose devem ser reavaliados em intervalos regulares"
+          }],
+          "timing" : {
+            "repeat" : {
+              "frequency" : 1,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          },
+          "doseAndRate" : [{
+            "doseQuantity" : {
+              "value" : 10,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            }
+          }],
+          "maxDosePerPeriod" : [{
+            "numerator" : {
+              "value" : 20,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            },
+            "denominator" : {
+              "value" : 1,
+              "unit" : "day",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "d"
+            }
+          }]
+        }]
+      }],
+      "patientCharacteristic" : [{
+        "type" : {
+          "text" : "Population"
+        },
+        "valueCodeableConcept" : {
+          "text" : "Doses gerais (população não especificada na RCM)"
+        }
+      }]
+    },
+    {
+      "dosage" : [{
+        "type" : {
+          "text" : "Regime habitual"
+        },
+        "dosage" : [{
+          "text" : "Dose inicial de 5 mg (5 gotas) uma vez por dia; a dose pode ser aumentada até um máximo de 10 mg (10 gotas) por dia, dependendo da resposta individual",
+          "timing" : {
+            "repeat" : {
+              "frequency" : 1,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          },
+          "doseAndRate" : [{
+            "doseQuantity" : {
+              "value" : 5,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            }
+          }],
+          "maxDosePerPeriod" : [{
+            "numerator" : {
+              "value" : 10,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            },
+            "denominator" : {
+              "value" : 1,
+              "unit" : "day",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "d"
+            }
+          }]
+        }]
+      }],
+      "patientCharacteristic" : [{
+        "type" : {
+          "text" : "Population"
+        },
+        "valueCodeableConcept" : {
+          "text" : "Doentes idosos (> 65 anos de idade)"
+        }
+      }]
+    },
+    {
+      "dosage" : [{
+        "type" : {
+          "text" : "Insuficiência renal ligeira ou moderada"
+        },
+        "dosage" : [{
+          "text" : "Não é necessário o ajuste da dose"
+        }]
+      },
+      {
+        "type" : {
+          "text" : "Função renal gravemente diminuída (Clcr inferior a 30 ml/min)"
+        },
+        "dosage" : [{
+          "text" : "É recomendada precaução"
+        }]
+      }],
+      "patientCharacteristic" : [{
+        "type" : {
+          "text" : "Population"
+        },
+        "valueCodeableConcept" : {
+          "text" : "Função renal diminuída"
+        }
+      }]
+    },
+    {
+      "dosage" : [{
+        "type" : {
+          "text" : "Insuficiência hepática ligeira ou moderada - primeiras duas semanas"
+        },
+        "dosage" : [{
+          "text" : "Dose inicial de 5 mg (5 gotas) por dia nas duas primeiras semanas de tratamento",
+          "timing" : {
+            "repeat" : {
+              "boundsDuration" : {
+                "value" : 2,
+                "unit" : "week",
+                "system" : "http://unitsofmeasure.org",
+                "code" : "wk"
+              },
+              "frequency" : 1,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          },
+          "doseAndRate" : [{
+            "doseQuantity" : {
+              "value" : 5,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            }
+          }]
+        }]
+      },
+      {
+        "type" : {
+          "text" : "Insuficiência hepática ligeira ou moderada - após as duas primeiras semanas"
+        },
+        "dosage" : [{
+          "text" : "Dependendo da resposta individual, a dose poderá ser aumentada para 10 mg (10 gotas) por dia",
+          "timing" : {
+            "repeat" : {
+              "frequency" : 1,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          },
+          "doseAndRate" : [{
+            "doseQuantity" : {
+              "value" : 10,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            }
+          }]
+        }]
+      },
+      {
+        "type" : {
+          "text" : "Função hepática gravemente diminuída"
+        },
+        "dosage" : [{
+          "text" : "É recomendada precaução e especial cuidado na titulação da dose"
+        }]
+      }],
+      "patientCharacteristic" : [{
+        "type" : {
+          "text" : "Population"
+        },
+        "valueCodeableConcept" : {
+          "text" : "Função hepática diminuída"
+        }
+      }]
+    },
+    {
+      "dosage" : [{
+        "type" : {
+          "text" : "Primeiras duas semanas de tratamento"
+        },
+        "dosage" : [{
+          "text" : "Dose inicial de 5 mg (5 gotas) por dia durante as primeiras duas semanas de tratamento",
+          "timing" : {
+            "repeat" : {
+              "boundsDuration" : {
+                "value" : 2,
+                "unit" : "week",
+                "system" : "http://unitsofmeasure.org",
+                "code" : "wk"
+              },
+              "frequency" : 1,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          },
+          "doseAndRate" : [{
+            "doseQuantity" : {
+              "value" : 5,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            }
+          }]
+        }]
+      },
+      {
+        "type" : {
+          "text" : "Após as duas primeiras semanas"
+        },
+        "dosage" : [{
+          "text" : "Dependendo da resposta individual, a dose poderá ser aumentada para 10 mg (10 gotas) por dia",
+          "timing" : {
+            "repeat" : {
+              "frequency" : 1,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          },
+          "doseAndRate" : [{
+            "doseQuantity" : {
+              "value" : 10,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            }
+          }]
+        }]
+      }],
+      "patientCharacteristic" : [{
+        "type" : {
+          "text" : "Population"
+        },
+        "valueCodeableConcept" : {
+          "text" : "Metabolizadores fracos no que se refere ao CYP2C19"
+        }
+      }]
+    }]
+  },
+  {
+    "indication" : [{
+      "concept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "191736004",
+          "display" : "Obsessive-compulsive disorder"
+        }],
+        "text" : "Tratamento da perturbação obsessiva-compulsiva"
+      }
+    }],
+    "dosingGuideline" : [{
+      "dosage" : [{
+        "type" : {
+          "text" : "Regime habitual"
+        },
+        "dosage" : [{
+          "text" : "Dose inicial de 10 mg (10 gotas) uma vez por dia; a dose pode ser aumentada até um máximo de 20 mg (20 gotas) por dia, dependendo da resposta individual",
+          "additionalInstruction" : [{
+            "text" : "Doentes devem ser tratados durante um período suficiente para assegurar que já não apresentam sintomas; benefícios do tratamento e dose devem ser reavaliados em intervalos regulares"
+          }],
+          "timing" : {
+            "repeat" : {
+              "frequency" : 1,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          },
+          "doseAndRate" : [{
+            "doseQuantity" : {
+              "value" : 10,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            }
+          }],
+          "maxDosePerPeriod" : [{
+            "numerator" : {
+              "value" : 20,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            },
+            "denominator" : {
+              "value" : 1,
+              "unit" : "day",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "d"
+            }
+          }]
+        }]
+      }],
+      "patientCharacteristic" : [{
+        "type" : {
+          "text" : "Population"
+        },
+        "valueCodeableConcept" : {
+          "text" : "Doses gerais (população não especificada na RCM)"
+        }
+      }]
+    },
+    {
+      "dosage" : [{
+        "type" : {
+          "text" : "Regime habitual"
+        },
+        "dosage" : [{
+          "text" : "Dose inicial de 5 mg (5 gotas) uma vez por dia; a dose pode ser aumentada até um máximo de 10 mg (10 gotas) por dia, dependendo da resposta individual",
+          "timing" : {
+            "repeat" : {
+              "frequency" : 1,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          },
+          "doseAndRate" : [{
+            "doseQuantity" : {
+              "value" : 5,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            }
+          }],
+          "maxDosePerPeriod" : [{
+            "numerator" : {
+              "value" : 10,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            },
+            "denominator" : {
+              "value" : 1,
+              "unit" : "day",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "d"
+            }
+          }]
+        }]
+      }],
+      "patientCharacteristic" : [{
+        "type" : {
+          "text" : "Population"
+        },
+        "valueCodeableConcept" : {
+          "text" : "Doentes idosos (> 65 anos de idade)"
+        }
+      }]
+    },
+    {
+      "dosage" : [{
+        "type" : {
+          "text" : "Insuficiência renal ligeira ou moderada"
+        },
+        "dosage" : [{
+          "text" : "Não é necessário o ajuste da dose"
+        }]
+      },
+      {
+        "type" : {
+          "text" : "Função renal gravemente diminuída (Clcr inferior a 30 ml/min)"
+        },
+        "dosage" : [{
+          "text" : "É recomendada precaução"
+        }]
+      }],
+      "patientCharacteristic" : [{
+        "type" : {
+          "text" : "Population"
+        },
+        "valueCodeableConcept" : {
+          "text" : "Função renal diminuída"
+        }
+      }]
+    },
+    {
+      "dosage" : [{
+        "type" : {
+          "text" : "Insuficiência hepática ligeira ou moderada - primeiras duas semanas"
+        },
+        "dosage" : [{
+          "text" : "Dose inicial de 5 mg (5 gotas) por dia nas duas primeiras semanas de tratamento",
+          "timing" : {
+            "repeat" : {
+              "boundsDuration" : {
+                "value" : 2,
+                "unit" : "week",
+                "system" : "http://unitsofmeasure.org",
+                "code" : "wk"
+              },
+              "frequency" : 1,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          },
+          "doseAndRate" : [{
+            "doseQuantity" : {
+              "value" : 5,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            }
+          }]
+        }]
+      },
+      {
+        "type" : {
+          "text" : "Insuficiência hepática ligeira ou moderada - após as duas primeiras semanas"
+        },
+        "dosage" : [{
+          "text" : "Dependendo da resposta individual, a dose poderá ser aumentada para 10 mg (10 gotas) por dia",
+          "timing" : {
+            "repeat" : {
+              "frequency" : 1,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          },
+          "doseAndRate" : [{
+            "doseQuantity" : {
+              "value" : 10,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            }
+          }]
+        }]
+      },
+      {
+        "type" : {
+          "text" : "Função hepática gravemente diminuída"
+        },
+        "dosage" : [{
+          "text" : "É recomendada precaução e especial cuidado na titulação da dose"
+        }]
+      }],
+      "patientCharacteristic" : [{
+        "type" : {
+          "text" : "Population"
+        },
+        "valueCodeableConcept" : {
+          "text" : "Função hepática diminuída"
+        }
+      }]
+    },
+    {
+      "dosage" : [{
+        "type" : {
+          "text" : "Primeiras duas semanas de tratamento"
+        },
+        "dosage" : [{
+          "text" : "Dose inicial de 5 mg (5 gotas) por dia durante as primeiras duas semanas de tratamento",
+          "timing" : {
+            "repeat" : {
+              "boundsDuration" : {
+                "value" : 2,
+                "unit" : "week",
+                "system" : "http://unitsofmeasure.org",
+                "code" : "wk"
+              },
+              "frequency" : 1,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          },
+          "doseAndRate" : [{
+            "doseQuantity" : {
+              "value" : 5,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            }
+          }]
+        }]
+      },
+      {
+        "type" : {
+          "text" : "Após as duas primeiras semanas"
+        },
+        "dosage" : [{
+          "text" : "Dependendo da resposta individual, a dose poderá ser aumentada para 10 mg (10 gotas) por dia",
+          "timing" : {
+            "repeat" : {
+              "frequency" : 1,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          },
+          "doseAndRate" : [{
+            "doseQuantity" : {
+              "value" : 10,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            }
+          }]
+        }]
+      }],
+      "patientCharacteristic" : [{
+        "type" : {
+          "text" : "Population"
+        },
+        "valueCodeableConcept" : {
+          "text" : "Metabolizadores fracos no que se refere ao CYP2C19"
+        }
+      }]
+    }]
+  }],
+  "medicineClassification" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/medication-classification-type",
+        "code" : "anatomical"
+      }],
+      "text" : "Código ATC"
+    },
+    "classification" : [{
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ATC",
+        "code" : "N06AB10",
+        "display" : "escitalopram"
+      }]
+    }]
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/medication-classification-type",
+        "code" : "therapeutic"
+      }],
+      "text" : "Grupo farmacoterapêutico"
+    },
+    "classification" : [{
+      "text" : "2.9.3 Sistema Nervoso Central. Psicofármacos. Antidepressores"
+    }]
+  }],
+  "clinicalUseIssue" : [{
+    "reference" : "ClinicalUseDefinition/Cipralex20mgml-CUD-ind1"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Cipralex20mgml-CUD-ind2"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Cipralex20mgml-CUD-ind3"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Cipralex20mgml-CUD-ind4"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Cipralex20mgml-CUD-ind5"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Cipralex20mgml-CUD-contra1"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Cipralex20mgml-CUD-contra2"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Cipralex20mgml-CUD-contra3"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Cipralex20mgml-CUD-contra4"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Cipralex20mgml-CUD-contra5"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Cipralex20mgml-CUD-contra6"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Cipralex20mgml-CUD-contra7"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Cipralex20mgml-CUD-contra8"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Cipralex20mgml-CUD-contra9"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Cipralex20mgml-CUD-int1"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Cipralex20mgml-CUD-int2"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Cipralex20mgml-CUD-int3"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Cipralex20mgml-CUD-int4"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Cipralex20mgml-CUD-int5"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Cipralex20mgml-CUD-int6"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Cipralex20mgml-CUD-int7"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Cipralex20mgml-CUD-int8"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Cipralex20mgml-CUD-int9"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Cipralex20mgml-CUD-int10"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Cipralex20mgml-CUD-int11"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Cipralex20mgml-CUD-int12"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Cipralex20mgml-CUD-int13"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Cipralex20mgml-CUD-int14"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Cipralex20mgml-CUD-int15"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/Cipralex20mgml-CUD-int16"
+  }],
+  "definitional" : {
+    "doseForm" : {
+      "coding" : [{
+        "system" : "http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs",
+        "code" : "1",
+        "display" : "Gotas orais, solução"
+      }]
+    },
+    "intendedRoute" : [{
+      "coding" : [{
+        "system" : "http://example.com/fhir/example/CodeSystem/via-administracao-cs",
+        "code" : "48",
+        "display" : "Via oral"
+      }]
+    }],
+    "ingredient" : [{
+      "item" : {
+        "concept" : {
+          "coding" : [{
+            "system" : "http://infarmed.pt/substancia",
+            "code" : "[PREENCHER]",
+            "display" : "escitalopram"
+          }]
+        }
+      },
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+          "code" : "ACTI"
+        }]
+      },
+      "strengthQuantity" : {
+        "value" : 20,
+        "unit" : "mg/ml",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mg/mL"
+      }
+    },
+    {
+      "item" : {
+        "concept" : {
+          "coding" : [{
+            "system" : "http://infarmed.pt/substancia",
+            "code" : "[PREENCHER]",
+            "display" : "Galhato de propilo"
+          }]
+        }
+      },
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+          "code" : "IACT"
+        }]
+      }
+    },
+    {
+      "item" : {
+        "concept" : {
+          "coding" : [{
+            "system" : "http://infarmed.pt/substancia",
+            "code" : "[PREENCHER]",
+            "display" : "Ácido cítrico anidro"
+          }]
+        }
+      },
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+          "code" : "IACT"
+        }]
+      }
+    },
+    {
+      "item" : {
+        "concept" : {
+          "coding" : [{
+            "system" : "http://infarmed.pt/substancia",
+            "code" : "[PREENCHER]",
+            "display" : "Etanol 96%"
+          }]
+        }
+      },
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+          "code" : "IACT"
+        }]
+      },
+      "strengthQuantity" : {
+        "value" : 100,
+        "unit" : "mg/ml",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mg/mL"
+      }
+    },
+    {
+      "item" : {
+        "concept" : {
+          "coding" : [{
+            "system" : "http://infarmed.pt/substancia",
+            "code" : "[PREENCHER]",
+            "display" : "Hidróxido de sódio"
+          }]
+        }
+      },
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+          "code" : "IACT"
+        }]
+      }
+    },
+    {
+      "item" : {
+        "concept" : {
+          "coding" : [{
+            "system" : "http://infarmed.pt/substancia",
+            "code" : "[PREENCHER]",
+            "display" : "Água purificada"
+          }]
+        }
+      },
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+          "code" : "IACT"
+        }]
+      }
+    }]
+  }
+}

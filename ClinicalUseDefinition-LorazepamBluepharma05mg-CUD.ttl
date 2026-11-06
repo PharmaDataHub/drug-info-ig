@@ -1,0 +1,42 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/ClinicalUseDefinition/LorazepamBluepharma05mg-CUD> a fhir:ClinicalUseDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "LorazepamBluepharma05mg-CUD"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.com/fhir/example/StructureDefinition/ContraIndicacoesPDH"^^xsd:anyURI ;
+       fhir:l <http://example.com/fhir/example/StructureDefinition/ContraIndicacoesPDH>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ClinicalUseDefinition LorazepamBluepharma05mg-CUD</b></p><a name=\"LorazepamBluepharma05mg-CUD\"> </a><a name=\"hcLorazepamBluepharma05mg-CUD\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ContraIndicacoesPDH.html\">Perfil do recurso para contraindicações de medicação</a></p></div><p><b>type</b>: Contraindication</p><blockquote><p><b>contraindication</b></p><h3>DiseaseSymptomProcedures</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 237600008}\">Miastenia grave</span></td></tr></table></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:type [ fhir:v "contraindication"] ; # 
+  fhir:contraindication [
+     fhir:diseaseSymptomProcedure [
+       fhir:concept [
+         fhir:coding ( [
+           a sct:237600008 ;
+           fhir:system [
+             fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+             fhir:l <http://snomed.info/sct>
+           ] ;
+           fhir:code [ fhir:v "237600008" ] ;
+           fhir:display [ fhir:v "Myasthenia gravis (disorder)" ]
+         ] ) ;
+         fhir:text [ fhir:v "Miastenia grave" ]
+       ]
+     ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

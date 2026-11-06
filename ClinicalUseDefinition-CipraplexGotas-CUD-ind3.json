@@ -1,0 +1,21 @@
+{
+  "resourceType" : "ClinicalUseDefinition",
+  "id" : "CipraplexGotas-CUD-ind3",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ClinicalUseDefinition CipraplexGotas-CUD-ind3</b></p><a name=\"CipraplexGotas-CUD-ind3\"> </a><a name=\"hcCipraplexGotas-CUD-ind3\"> </a><p><b>type</b>: Indication</p><blockquote><p><b>indication</b></p><h3>DiseaseSymptomProcedures</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct [PREENCHER]}\">Tratamento da perturbação da ansiedade social (fobia social)</span></td></tr></table></blockquote></div>"
+  },
+  "type" : "indication",
+  "indication" : {
+    "diseaseSymptomProcedure" : {
+      "concept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "[PREENCHER]",
+          "display" : "Social anxiety disorder (disorder)"
+        }],
+        "text" : "Tratamento da perturbação da ansiedade social (fobia social)"
+      }
+    }
+  }
+}

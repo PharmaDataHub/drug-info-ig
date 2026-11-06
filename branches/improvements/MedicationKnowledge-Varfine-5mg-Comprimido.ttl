@@ -1,0 +1,829 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/MedicationKnowledge/Varfine-5mg-Comprimido> a fhir:MedicationKnowledge ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Varfine-5mg-Comprimido"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH"^^xsd:anyURI ;
+       fhir:link <http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationKnowledge Varfine-5mg-Comprimido</b></p><a name=\"Varfine-5mg-Comprimido\"> </a><a name=\"hcVarfine-5mg-Comprimido\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MedicationKnowledgePDH.html\">Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento</a></p></div><p><b>code</b>: <span title=\"Codes:{http://infarmed.pt/medicamentos/prod_id 9007}\">Varfine 5 mg [B01AA03]</span></p><p><b>name</b>: Varfine [varfarina] 5 mg comprimido</p><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Anticoagulante oral na terapêutica e profilaxia de doenças tromboembólicas</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose de indução</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td><td><b>Timing</b></td></tr><tr><td style=\"display: none\">*</td><td>A dose típica de indução com varfarina é de 10 mg por dia durante 2 dias.</td><td><span title=\"Codes:\">Antes do início da terapêutica devem ser realizados testes de coagulação basal e testes da função hepática.</span></td><td>Once per 1 day</td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose de manutenção</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td><td><b>Timing</b></td></tr><tr><td style=\"display: none\">*</td><td>A dose diária de manutenção é habitualmente de 2,5 mg a 10 mg, dependendo do tempo de protrombina estabelecido com o INR. O valor alvo de INR encontra-se habitualmente entre 2 e 3, exceto em casos específicos.</td><td><span title=\"Codes:\">A dose diária deve ser tomada sempre no mesmo horário. Devem ser realizados testes de controlo a intervalos regulares e a dose de manutenção deve ser ajustada de acordo com esses resultados; uma vez estabelecida, raramente é necessário alterá-la.</span></td><td>Once per 1 day</td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Início em situações de emergência</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td></tr><tr><td style=\"display: none\">*</td><td>Em situações de emergência, a terapêutica anticoagulante deve ser iniciada com heparina e varfarina em conjunto.</td><td><span title=\"Codes:\">A terapêutica concomitante com heparina afeta os resultados dos testes de controlo, pelo que esta deve ser descontinuada pelo menos seis horas antes do primeiro teste ser realizado.</span></td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Início em situações menos urgentes</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Em situações menos urgentes, como em doentes dispostos ou com risco especial de tromboembolismo, a terapia anticoagulante pode ser iniciada apenas com a varfarina.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Adultos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose mais baixa</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Usar tal como nos adultos, contudo a dose deve ser mais baixa. O idoso é normalmente mais sensível aos efeitos da varfarina e por isso requer uma dose mais baixa.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Idosos e doentes em risco de hemorragia</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Uso não recomendado</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>A varfarina em comprimidos não deve ser usada em crianças uma vez que não há dados suficientes quanto à segurança e eficácia.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">População pediátrica</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose inicial inferior</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>A dose habitual de início em doentes com insuficiência renal ligeira/moderada deve ser inferior.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Insuficiência renal ligeira/moderada</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Doses de início e de manutenção inferiores</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Doentes com insuficiência hepática ligeira/moderada requerem doses de início e de manutenção inferiores.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Insuficiência hepática ligeira/moderada</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose de indução inferior</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>A dose de indução em doentes com insuficiência cardíaca, alimentação parentérica, baixo peso corporal e naqueles em que o baseline do tempo de protrombina é reduzido, deve ser inferior.</td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose de adaptação</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Pode ser necessária uma dose de adaptação nos casos de doença intercorrente (tais como infeção aguda), início ou suspensão de terapia concomitante do medicamento e numa considerável alteração na dieta.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Outras condições</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Terapêutica e profilaxia de tromboses das veias profundas e de tromboembolismo pulmonar</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose de indução</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td><td><b>Timing</b></td></tr><tr><td style=\"display: none\">*</td><td>A dose típica de indução com varfarina é de 10 mg por dia durante 2 dias.</td><td><span title=\"Codes:\">Antes do início da terapêutica devem ser realizados testes de coagulação basal e testes da função hepática.</span></td><td>Once per 1 day</td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose de manutenção</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td><td><b>Timing</b></td></tr><tr><td style=\"display: none\">*</td><td>A dose diária de manutenção é habitualmente de 2,5 mg a 10 mg, dependendo do tempo de protrombina estabelecido com o INR. O valor alvo de INR encontra-se habitualmente entre 2 e 3, exceto em casos específicos.</td><td><span title=\"Codes:\">A dose diária deve ser tomada sempre no mesmo horário. Devem ser realizados testes de controlo a intervalos regulares e a dose de manutenção deve ser ajustada de acordo com esses resultados; uma vez estabelecida, raramente é necessário alterá-la.</span></td><td>Once per 1 day</td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Início em situações de emergência</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td></tr><tr><td style=\"display: none\">*</td><td>Em situações de emergência, a terapêutica anticoagulante deve ser iniciada com heparina e varfarina em conjunto.</td><td><span title=\"Codes:\">A terapêutica concomitante com heparina afeta os resultados dos testes de controlo, pelo que esta deve ser descontinuada pelo menos seis horas antes do primeiro teste ser realizado.</span></td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Início em situações menos urgentes</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Em situações menos urgentes, como em doentes dispostos ou com risco especial de tromboembolismo, a terapia anticoagulante pode ser iniciada apenas com a varfarina.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Adultos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose mais baixa</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Usar tal como nos adultos, contudo a dose deve ser mais baixa. O idoso é normalmente mais sensível aos efeitos da varfarina e por isso requer uma dose mais baixa.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Idosos e doentes em risco de hemorragia</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Uso não recomendado</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>A varfarina em comprimidos não deve ser usada em crianças uma vez que não há dados suficientes quanto à segurança e eficácia.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">População pediátrica</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose inicial inferior</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>A dose habitual de início em doentes com insuficiência renal ligeira/moderada deve ser inferior.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Insuficiência renal ligeira/moderada</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Doses de início e de manutenção inferiores</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Doentes com insuficiência hepática ligeira/moderada requerem doses de início e de manutenção inferiores.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Insuficiência hepática ligeira/moderada</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose de indução inferior</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>A dose de indução em doentes com insuficiência cardíaca, alimentação parentérica, baixo peso corporal e naqueles em que o baseline do tempo de protrombina é reduzido, deve ser inferior.</td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose de adaptação</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Pode ser necessária uma dose de adaptação nos casos de doença intercorrente (tais como infeção aguda), início ou suspensão de terapia concomitante do medicamento e numa considerável alteração na dieta.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Outras condições</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Prevenção do tromboembolismo em doentes com fibrilhação auricular ou submetidos a plastias valvulares</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose de indução</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td><td><b>Timing</b></td></tr><tr><td style=\"display: none\">*</td><td>A dose típica de indução com varfarina é de 10 mg por dia durante 2 dias.</td><td><span title=\"Codes:\">Antes do início da terapêutica devem ser realizados testes de coagulação basal e testes da função hepática.</span></td><td>Once per 1 day</td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose de manutenção</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td><td><b>Timing</b></td></tr><tr><td style=\"display: none\">*</td><td>A dose diária de manutenção é habitualmente de 2,5 mg a 10 mg, dependendo do tempo de protrombina estabelecido com o INR. O valor alvo de INR encontra-se habitualmente entre 2 e 3, exceto em casos específicos.</td><td><span title=\"Codes:\">A dose diária deve ser tomada sempre no mesmo horário. Devem ser realizados testes de controlo a intervalos regulares e a dose de manutenção deve ser ajustada de acordo com esses resultados; uma vez estabelecida, raramente é necessário alterá-la.</span></td><td>Once per 1 day</td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Início em situações de emergência</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td></tr><tr><td style=\"display: none\">*</td><td>Em situações de emergência, a terapêutica anticoagulante deve ser iniciada com heparina e varfarina em conjunto.</td><td><span title=\"Codes:\">A terapêutica concomitante com heparina afeta os resultados dos testes de controlo, pelo que esta deve ser descontinuada pelo menos seis horas antes do primeiro teste ser realizado.</span></td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Início em situações menos urgentes</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Em situações menos urgentes, como em doentes dispostos ou com risco especial de tromboembolismo, a terapia anticoagulante pode ser iniciada apenas com a varfarina.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Adultos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose mais baixa</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Usar tal como nos adultos, contudo a dose deve ser mais baixa. O idoso é normalmente mais sensível aos efeitos da varfarina e por isso requer uma dose mais baixa.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Idosos e doentes em risco de hemorragia</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Uso não recomendado</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>A varfarina em comprimidos não deve ser usada em crianças uma vez que não há dados suficientes quanto à segurança e eficácia.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">População pediátrica</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose inicial inferior</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>A dose habitual de início em doentes com insuficiência renal ligeira/moderada deve ser inferior.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Insuficiência renal ligeira/moderada</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Doses de início e de manutenção inferiores</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Doentes com insuficiência hepática ligeira/moderada requerem doses de início e de manutenção inferiores.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Insuficiência hepática ligeira/moderada</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose de indução inferior</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>A dose de indução em doentes com insuficiência cardíaca, alimentação parentérica, baixo peso corporal e naqueles em que o baseline do tempo de protrombina é reduzido, deve ser inferior.</td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose de adaptação</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Pode ser necessária uma dose de adaptação nos casos de doença intercorrente (tais como infeção aguda), início ou suspensão de terapia concomitante do medicamento e numa considerável alteração na dieta.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Outras condições</span></td></tr></table></blockquote></blockquote><blockquote><p><b>medicineClassification</b></p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/medication-classification-type anatomical}\">Código ATC</span></p><p><b>classification</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ATC B01AA03}\">Varfarina</span></p></blockquote><blockquote><p><b>medicineClassification</b></p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/medication-classification-type therapeutic}\">Grupo farmacoterapêutico</span></p><p><b>classification</b>: <span title=\"Codes:\">4.3.1.2 - Antivitamínicos K</span></p></blockquote><p><b>clinicalUseIssue</b>: </p><ul><li><a href=\"ClinicalUseDefinition-Varfine5mg-CUD-ind1.html\">ClinicalUseDefinition: type = indication</a></li><li><a href=\"ClinicalUseDefinition-Varfine5mg-CUD-ind2.html\">ClinicalUseDefinition: type = indication</a></li><li><a href=\"ClinicalUseDefinition-Varfine5mg-CUD-ind3.html\">ClinicalUseDefinition: type = indication</a></li><li><a href=\"ClinicalUseDefinition-Varfine5mg-CUD-contra1.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Varfine5mg-CUD-contra2.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Varfine5mg-CUD-contra3.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Varfine5mg-CUD-contra4.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Varfine5mg-CUD-contra5.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Varfine5mg-CUD-contra6.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Varfine5mg-CUD-contra7.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Varfine5mg-CUD-contra8.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Varfine5mg-CUD-contra9.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Varfine5mg-CUD-int1.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Varfine5mg-CUD-int2.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Varfine5mg-CUD-int3.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Varfine5mg-CUD-int4.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Varfine5mg-CUD-int5.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Varfine5mg-CUD-int6.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Varfine5mg-CUD-int7.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Varfine5mg-CUD-int8.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Varfine5mg-CUD-int9.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Varfine5mg-CUD-int10.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Varfine5mg-CUD-int11.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Varfine5mg-CUD-int12.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Varfine5mg-CUD-int13.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Varfine5mg-CUD-int14.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Varfine5mg-CUD-int15.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Varfine5mg-CUD-int16.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Varfine5mg-CUD-int17.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Varfine5mg-CUD-int18.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Varfine5mg-CUD-int19.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Varfine5mg-CUD-int20.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Varfine5mg-CUD-int21.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Varfine5mg-CUD-int22.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Varfine5mg-CUD-int23.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Varfine5mg-CUD-int24.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Varfine5mg-CUD-int25.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Varfine5mg-CUD-int26.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Varfine5mg-CUD-int27.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Varfine5mg-CUD-int28.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Varfine5mg-CUD-int29.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Varfine5mg-CUD-int30.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Varfine5mg-CUD-int31.html\">ClinicalUseDefinition: type = interaction</a></li></ul><blockquote><p><b>definitional</b></p><p><b>doseForm</b>: <span title=\"Codes:{http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs 271}\">Comprimido</span></p><p><b>intendedRoute</b>: <span title=\"Codes:{http://example.com/fhir/example/CodeSystem/via-administracao-cs 48}\">Via oral</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Varfarina sódica</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass ACTI}\">active ingredient</span></p><p><b>strength</b>: 5 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Talco</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Estearato de magnésio</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Fosfato dibásico de cálcio dihidratado (Encompress)</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Lactose</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Amido de milho</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://infarmed.pt/medicamentos/prod_id"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "9007" ] ;
+       fhir:display [ fhir:v "Varfine 5 mg [B01AA03]" ]
+     ] )
+  ] ; # 
+  fhir:name ( [ fhir:v "Varfine [varfarina] 5 mg comprimido"] ) ; # 
+  fhir:indicationGuideline ( [
+     fhir:indication ( [
+       fhir:concept [
+         fhir:text [ fhir:v "Anticoagulante oral na terapêutica e profilaxia de doenças tromboembólicas" ]
+       ]
+     ] ) ;
+     fhir:dosingGuideline ( [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose de indução" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "A dose típica de indução com varfarina é de 10 mg por dia durante 2 dias." ] ;
+           fhir:additionalInstruction ( [
+             fhir:text [ fhir:v "Antes do início da terapêutica devem ser realizados testes de coagulação basal e testes da função hepática." ]
+           ] ) ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:bounds [
+                 a fhir:Duration ;
+                 fhir:value [ fhir:v "2"^^xsd:decimal ] ;
+                 fhir:unit [ fhir:v "day" ] ;
+                 fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+                 fhir:code [ fhir:v "d" ]
+               ] ;
+               fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ]
+         ] )
+       ] [
+         fhir:type [
+           fhir:text [ fhir:v "Dose de manutenção" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "A dose diária de manutenção é habitualmente de 2,5 mg a 10 mg, dependendo do tempo de protrombina estabelecido com o INR. O valor alvo de INR encontra-se habitualmente entre 2 e 3, exceto em casos específicos." ] ;
+           fhir:additionalInstruction ( [
+             fhir:text [ fhir:v "A dose diária deve ser tomada sempre no mesmo horário. Devem ser realizados testes de controlo a intervalos regulares e a dose de manutenção deve ser ajustada de acordo com esses resultados; uma vez estabelecida, raramente é necessário alterá-la." ]
+           ] ) ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ]
+         ] )
+       ] [
+         fhir:type [
+           fhir:text [ fhir:v "Início em situações de emergência" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Em situações de emergência, a terapêutica anticoagulante deve ser iniciada com heparina e varfarina em conjunto." ] ;
+           fhir:additionalInstruction ( [
+             fhir:text [ fhir:v "A terapêutica concomitante com heparina afeta os resultados dos testes de controlo, pelo que esta deve ser descontinuada pelo menos seis horas antes do primeiro teste ser realizado." ]
+           ] )
+         ] )
+       ] [
+         fhir:type [
+           fhir:text [ fhir:v "Início em situações menos urgentes" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Em situações menos urgentes, como em doentes dispostos ou com risco especial de tromboembolismo, a terapia anticoagulante pode ser iniciada apenas com a varfarina." ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Adultos" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose mais baixa" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Usar tal como nos adultos, contudo a dose deve ser mais baixa. O idoso é normalmente mais sensível aos efeitos da varfarina e por isso requer uma dose mais baixa." ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Idosos e doentes em risco de hemorragia" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Uso não recomendado" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "A varfarina em comprimidos não deve ser usada em crianças uma vez que não há dados suficientes quanto à segurança e eficácia." ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "População pediátrica" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose inicial inferior" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "A dose habitual de início em doentes com insuficiência renal ligeira/moderada deve ser inferior." ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Insuficiência renal ligeira/moderada" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Doses de início e de manutenção inferiores" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Doentes com insuficiência hepática ligeira/moderada requerem doses de início e de manutenção inferiores." ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Insuficiência hepática ligeira/moderada" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose de indução inferior" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "A dose de indução em doentes com insuficiência cardíaca, alimentação parentérica, baixo peso corporal e naqueles em que o baseline do tempo de protrombina é reduzido, deve ser inferior." ]
+         ] )
+       ] [
+         fhir:type [
+           fhir:text [ fhir:v "Dose de adaptação" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Pode ser necessária uma dose de adaptação nos casos de doença intercorrente (tais como infeção aguda), início ou suspensão de terapia concomitante do medicamento e numa considerável alteração na dieta." ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Outras condições" ]
+         ]
+       ] )
+     ] )
+  ] [
+     fhir:indication ( [
+       fhir:concept [
+         fhir:text [ fhir:v "Terapêutica e profilaxia de tromboses das veias profundas e de tromboembolismo pulmonar" ]
+       ]
+     ] ) ;
+     fhir:dosingGuideline ( [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose de indução" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "A dose típica de indução com varfarina é de 10 mg por dia durante 2 dias." ] ;
+           fhir:additionalInstruction ( [
+             fhir:text [ fhir:v "Antes do início da terapêutica devem ser realizados testes de coagulação basal e testes da função hepática." ]
+           ] ) ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:bounds [
+                 a fhir:Duration ;
+                 fhir:value [ fhir:v "2"^^xsd:decimal ] ;
+                 fhir:unit [ fhir:v "day" ] ;
+                 fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+                 fhir:code [ fhir:v "d" ]
+               ] ;
+               fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ]
+         ] )
+       ] [
+         fhir:type [
+           fhir:text [ fhir:v "Dose de manutenção" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "A dose diária de manutenção é habitualmente de 2,5 mg a 10 mg, dependendo do tempo de protrombina estabelecido com o INR. O valor alvo de INR encontra-se habitualmente entre 2 e 3, exceto em casos específicos." ] ;
+           fhir:additionalInstruction ( [
+             fhir:text [ fhir:v "A dose diária deve ser tomada sempre no mesmo horário. Devem ser realizados testes de controlo a intervalos regulares e a dose de manutenção deve ser ajustada de acordo com esses resultados; uma vez estabelecida, raramente é necessário alterá-la." ]
+           ] ) ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ]
+         ] )
+       ] [
+         fhir:type [
+           fhir:text [ fhir:v "Início em situações de emergência" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Em situações de emergência, a terapêutica anticoagulante deve ser iniciada com heparina e varfarina em conjunto." ] ;
+           fhir:additionalInstruction ( [
+             fhir:text [ fhir:v "A terapêutica concomitante com heparina afeta os resultados dos testes de controlo, pelo que esta deve ser descontinuada pelo menos seis horas antes do primeiro teste ser realizado." ]
+           ] )
+         ] )
+       ] [
+         fhir:type [
+           fhir:text [ fhir:v "Início em situações menos urgentes" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Em situações menos urgentes, como em doentes dispostos ou com risco especial de tromboembolismo, a terapia anticoagulante pode ser iniciada apenas com a varfarina." ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Adultos" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose mais baixa" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Usar tal como nos adultos, contudo a dose deve ser mais baixa. O idoso é normalmente mais sensível aos efeitos da varfarina e por isso requer uma dose mais baixa." ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Idosos e doentes em risco de hemorragia" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Uso não recomendado" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "A varfarina em comprimidos não deve ser usada em crianças uma vez que não há dados suficientes quanto à segurança e eficácia." ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "População pediátrica" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose inicial inferior" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "A dose habitual de início em doentes com insuficiência renal ligeira/moderada deve ser inferior." ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Insuficiência renal ligeira/moderada" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Doses de início e de manutenção inferiores" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Doentes com insuficiência hepática ligeira/moderada requerem doses de início e de manutenção inferiores." ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Insuficiência hepática ligeira/moderada" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose de indução inferior" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "A dose de indução em doentes com insuficiência cardíaca, alimentação parentérica, baixo peso corporal e naqueles em que o baseline do tempo de protrombina é reduzido, deve ser inferior." ]
+         ] )
+       ] [
+         fhir:type [
+           fhir:text [ fhir:v "Dose de adaptação" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Pode ser necessária uma dose de adaptação nos casos de doença intercorrente (tais como infeção aguda), início ou suspensão de terapia concomitante do medicamento e numa considerável alteração na dieta." ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Outras condições" ]
+         ]
+       ] )
+     ] )
+  ] [
+     fhir:indication ( [
+       fhir:concept [
+         fhir:text [ fhir:v "Prevenção do tromboembolismo em doentes com fibrilhação auricular ou submetidos a plastias valvulares" ]
+       ]
+     ] ) ;
+     fhir:dosingGuideline ( [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose de indução" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "A dose típica de indução com varfarina é de 10 mg por dia durante 2 dias." ] ;
+           fhir:additionalInstruction ( [
+             fhir:text [ fhir:v "Antes do início da terapêutica devem ser realizados testes de coagulação basal e testes da função hepática." ]
+           ] ) ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:bounds [
+                 a fhir:Duration ;
+                 fhir:value [ fhir:v "2"^^xsd:decimal ] ;
+                 fhir:unit [ fhir:v "day" ] ;
+                 fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+                 fhir:code [ fhir:v "d" ]
+               ] ;
+               fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ]
+         ] )
+       ] [
+         fhir:type [
+           fhir:text [ fhir:v "Dose de manutenção" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "A dose diária de manutenção é habitualmente de 2,5 mg a 10 mg, dependendo do tempo de protrombina estabelecido com o INR. O valor alvo de INR encontra-se habitualmente entre 2 e 3, exceto em casos específicos." ] ;
+           fhir:additionalInstruction ( [
+             fhir:text [ fhir:v "A dose diária deve ser tomada sempre no mesmo horário. Devem ser realizados testes de controlo a intervalos regulares e a dose de manutenção deve ser ajustada de acordo com esses resultados; uma vez estabelecida, raramente é necessário alterá-la." ]
+           ] ) ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ]
+         ] )
+       ] [
+         fhir:type [
+           fhir:text [ fhir:v "Início em situações de emergência" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Em situações de emergência, a terapêutica anticoagulante deve ser iniciada com heparina e varfarina em conjunto." ] ;
+           fhir:additionalInstruction ( [
+             fhir:text [ fhir:v "A terapêutica concomitante com heparina afeta os resultados dos testes de controlo, pelo que esta deve ser descontinuada pelo menos seis horas antes do primeiro teste ser realizado." ]
+           ] )
+         ] )
+       ] [
+         fhir:type [
+           fhir:text [ fhir:v "Início em situações menos urgentes" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Em situações menos urgentes, como em doentes dispostos ou com risco especial de tromboembolismo, a terapia anticoagulante pode ser iniciada apenas com a varfarina." ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Adultos" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose mais baixa" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Usar tal como nos adultos, contudo a dose deve ser mais baixa. O idoso é normalmente mais sensível aos efeitos da varfarina e por isso requer uma dose mais baixa." ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Idosos e doentes em risco de hemorragia" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Uso não recomendado" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "A varfarina em comprimidos não deve ser usada em crianças uma vez que não há dados suficientes quanto à segurança e eficácia." ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "População pediátrica" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose inicial inferior" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "A dose habitual de início em doentes com insuficiência renal ligeira/moderada deve ser inferior." ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Insuficiência renal ligeira/moderada" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Doses de início e de manutenção inferiores" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Doentes com insuficiência hepática ligeira/moderada requerem doses de início e de manutenção inferiores." ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Insuficiência hepática ligeira/moderada" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose de indução inferior" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "A dose de indução em doentes com insuficiência cardíaca, alimentação parentérica, baixo peso corporal e naqueles em que o baseline do tempo de protrombina é reduzido, deve ser inferior." ]
+         ] )
+       ] [
+         fhir:type [
+           fhir:text [ fhir:v "Dose de adaptação" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Pode ser necessária uma dose de adaptação nos casos de doença intercorrente (tais como infeção aguda), início ou suspensão de terapia concomitante do medicamento e numa considerável alteração na dieta." ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Outras condições" ]
+         ]
+       ] )
+     ] )
+  ] ) ; # 
+  fhir:medicineClassification ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/medication-classification-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "anatomical" ]
+       ] ) ;
+       fhir:text [ fhir:v "Código ATC" ]
+     ] ;
+     fhir:classification ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ATC"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "B01AA03" ] ;
+         fhir:display [ fhir:v "Varfarina" ]
+       ] )
+     ] )
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/medication-classification-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "therapeutic" ]
+       ] ) ;
+       fhir:text [ fhir:v "Grupo farmacoterapêutico" ]
+     ] ;
+     fhir:classification ( [
+       fhir:text [ fhir:v "4.3.1.2 - Antivitamínicos K" ]
+     ] )
+  ] ) ; # 
+  fhir:clinicalUseIssue ( [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Varfine5mg-CUD-ind1> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Varfine5mg-CUD-ind1" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Varfine5mg-CUD-ind2> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Varfine5mg-CUD-ind2" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Varfine5mg-CUD-ind3> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Varfine5mg-CUD-ind3" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Varfine5mg-CUD-contra1> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Varfine5mg-CUD-contra1" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Varfine5mg-CUD-contra2> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Varfine5mg-CUD-contra2" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Varfine5mg-CUD-contra3> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Varfine5mg-CUD-contra3" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Varfine5mg-CUD-contra4> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Varfine5mg-CUD-contra4" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Varfine5mg-CUD-contra5> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Varfine5mg-CUD-contra5" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Varfine5mg-CUD-contra6> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Varfine5mg-CUD-contra6" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Varfine5mg-CUD-contra7> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Varfine5mg-CUD-contra7" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Varfine5mg-CUD-contra8> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Varfine5mg-CUD-contra8" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Varfine5mg-CUD-contra9> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Varfine5mg-CUD-contra9" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Varfine5mg-CUD-int1> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Varfine5mg-CUD-int1" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Varfine5mg-CUD-int2> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Varfine5mg-CUD-int2" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Varfine5mg-CUD-int3> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Varfine5mg-CUD-int3" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Varfine5mg-CUD-int4> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Varfine5mg-CUD-int4" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Varfine5mg-CUD-int5> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Varfine5mg-CUD-int5" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Varfine5mg-CUD-int6> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Varfine5mg-CUD-int6" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Varfine5mg-CUD-int7> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Varfine5mg-CUD-int7" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Varfine5mg-CUD-int8> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Varfine5mg-CUD-int8" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Varfine5mg-CUD-int9> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Varfine5mg-CUD-int9" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Varfine5mg-CUD-int10> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Varfine5mg-CUD-int10" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Varfine5mg-CUD-int11> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Varfine5mg-CUD-int11" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Varfine5mg-CUD-int12> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Varfine5mg-CUD-int12" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Varfine5mg-CUD-int13> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Varfine5mg-CUD-int13" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Varfine5mg-CUD-int14> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Varfine5mg-CUD-int14" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Varfine5mg-CUD-int15> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Varfine5mg-CUD-int15" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Varfine5mg-CUD-int16> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Varfine5mg-CUD-int16" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Varfine5mg-CUD-int17> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Varfine5mg-CUD-int17" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Varfine5mg-CUD-int18> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Varfine5mg-CUD-int18" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Varfine5mg-CUD-int19> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Varfine5mg-CUD-int19" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Varfine5mg-CUD-int20> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Varfine5mg-CUD-int20" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Varfine5mg-CUD-int21> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Varfine5mg-CUD-int21" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Varfine5mg-CUD-int22> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Varfine5mg-CUD-int22" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Varfine5mg-CUD-int23> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Varfine5mg-CUD-int23" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Varfine5mg-CUD-int24> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Varfine5mg-CUD-int24" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Varfine5mg-CUD-int25> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Varfine5mg-CUD-int25" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Varfine5mg-CUD-int26> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Varfine5mg-CUD-int26" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Varfine5mg-CUD-int27> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Varfine5mg-CUD-int27" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Varfine5mg-CUD-int28> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Varfine5mg-CUD-int28" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Varfine5mg-CUD-int29> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Varfine5mg-CUD-int29" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Varfine5mg-CUD-int30> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Varfine5mg-CUD-int30" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Varfine5mg-CUD-int31> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Varfine5mg-CUD-int31" ]
+  ] ) ; # 
+  fhir:definitional [
+     fhir:doseForm [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "271" ] ;
+         fhir:display [ fhir:v "Comprimido" ]
+       ] )
+     ] ;
+     fhir:intendedRoute ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://example.com/fhir/example/CodeSystem/via-administracao-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "48" ] ;
+         fhir:display [ fhir:v "Via oral" ]
+       ] )
+     ] ) ;
+     fhir:ingredient ( [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Varfarina sódica" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "ACTI" ]
+         ] )
+       ] ;
+       fhir:strength [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "5"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "mg" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mg" ]
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Talco" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Estearato de magnésio" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Fosfato dibásico de cálcio dihidratado (Encompress)" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Lactose" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Amido de milho" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

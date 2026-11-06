@@ -1,0 +1,368 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/MedicationKnowledge/TriticumAC-150mg-Comprimido-de-libertacao-modificada> a fhir:MedicationKnowledge ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TriticumAC-150mg-Comprimido-de-libertacao-modificada"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH"^^xsd:anyURI ;
+       fhir:link <http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationKnowledge TriticumAC-150mg-Comprimido-de-libertacao-modificada</b></p><a name=\"TriticumAC-150mg-Comprimido-de-libertacao-modificada\"> </a><a name=\"hcTriticumAC-150mg-Comprimido-de-libertacao-modificada\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MedicationKnowledgePDH.html\">Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento</a></p></div><p><b>code</b>: <span title=\"Codes:{http://infarmed.pt/medicamentos/prod_id 9533}\">Triticum AC 150 mg [N06AX05]</span></p><p><b>name</b>: Triticum AC [trazodona] 150 mg comprimido de libertação modificada</p><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct [PREENCHER]}\">Depressão de natureza vária com ou sem componente ansiosa</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:{http://example.com/fhir/example/CodeSystem/dosage-type-cs titration-dose}\">Início e duração do ciclo terapêutico</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td><td><b>Timing</b></td></tr><tr><td style=\"display: none\">*</td><td>Iniciar o ciclo terapêutico com uma toma ao deitar e com doses diárias crescentes; devem fazer-se ciclos terapêuticos de, pelo menos, 1 mês</td><td><span title=\"Codes:\">Os comprimidos são divisíveis em 3 partes para permitir uma posologia progressiva com doses fracionadas segundo a gravidade da doença, do peso, da idade e do estado geral do doente</span></td><td>before sleeping, Once per 1 day</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Doses gerais (população não especificada na RCM)</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:{http://example.com/fhir/example/CodeSystem/dosage-type-cs titration-dose}\">Dose inicial</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>A dose inicial recomendada deve ser reduzida para 100 mg/dia, administrada em doses fracionadas ou numa dose única à noite</td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:{http://example.com/fhir/example/CodeSystem/dosage-type-cs titration-dose}\">Aumento da dose</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>MaxDosePerAdministration</b></td></tr><tr><td style=\"display: none\">*</td><td>A dose pode ser progressivamente aumentada, de acordo com a tolerância e a eficácia; em geral, as doses únicas acima de 100 mg devem ser evitadas; é improvável que seja excedida uma dose de 300 mg/dia</td><td>100 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Doentes muito idosos ou fragilizados</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:{http://example.com/fhir/example/CodeSystem/dosage-type-cs maintenance-dose}\">Ajuste de dose na insuficiência renal</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Normalmente, não é necessário ajustar a dose, mas deve ter-se cuidado em doentes com insuficiência renal grave</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Insuficiência renal</span></td></tr></table></blockquote></blockquote><blockquote><p><b>medicineClassification</b></p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/medication-classification-type anatomical}\">Código ATC</span></p><p><b>classification</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ATC N06AX05}\">trazodona</span></p></blockquote><blockquote><p><b>medicineClassification</b></p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/medication-classification-type therapeutic}\">Grupo farmacoterapêutico</span></p><p><b>classification</b>: <span title=\"Codes:\">2.9.3 - Sistema Nervoso Central. Psicofármacos. Antidepressores</span></p></blockquote><p><b>clinicalUseIssue</b>: </p><ul><li><a href=\"ClinicalUseDefinition-TriticumAC150mg-CUD-ind1.html\">ClinicalUseDefinition: type = indication</a></li><li><a href=\"ClinicalUseDefinition-TriticumAC150mg-CUD-contra1.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-TriticumAC150mg-CUD-contra2.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-TriticumAC150mg-CUD-contra3.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-TriticumAC150mg-CUD-contra4.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-TriticumAC150mg-CUD-contra5.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-TriticumAC150mg-CUD-contra6.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-TriticumAC150mg-CUD-int1.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-TriticumAC150mg-CUD-int2.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-TriticumAC150mg-CUD-int3.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-TriticumAC150mg-CUD-int4.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-TriticumAC150mg-CUD-int5.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-TriticumAC150mg-CUD-int6.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-TriticumAC150mg-CUD-int7.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-TriticumAC150mg-CUD-int8.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-TriticumAC150mg-CUD-int9.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-TriticumAC150mg-CUD-int10.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-TriticumAC150mg-CUD-int11.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-TriticumAC150mg-CUD-int12.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-TriticumAC150mg-CUD-int13.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-TriticumAC150mg-CUD-int14.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-TriticumAC150mg-CUD-int15.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-TriticumAC150mg-CUD-int16.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-TriticumAC150mg-CUD-int17.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-TriticumAC150mg-CUD-int18.html\">ClinicalUseDefinition: type = interaction</a></li></ul><blockquote><p><b>definitional</b></p><p><b>doseForm</b>: <span title=\"Codes:{http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs 44}\">Comprimido de libertação modificada</span></p><p><b>intendedRoute</b>: <span title=\"Codes:{http://example.com/fhir/example/CodeSystem/via-administracao-cs 48}\">Via oral</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia 17686}\">Trazodona, cloridrato</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass ACTI}\">active ingredient</span></p><p><b>strength</b>: 150 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Sacarose</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p><p><b>strength</b>: 84 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Povidona</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Cera Carnaúba</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Estearato de magnésio</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://infarmed.pt/medicamentos/prod_id"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "9533" ] ;
+       fhir:display [ fhir:v "Triticum AC 150 mg [N06AX05]" ]
+     ] )
+  ] ; # 
+  fhir:name ( [ fhir:v "Triticum AC [trazodona] 150 mg comprimido de libertação modificada"] ) ; # 
+  fhir:indicationGuideline ( [
+     fhir:indication ( [
+       fhir:concept [
+         fhir:coding ( [
+           a sct:[PREENCHER] ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "[PREENCHER]" ] ;
+           fhir:display [ fhir:v "Depressão" ]
+         ] ) ;
+         fhir:text [ fhir:v "Depressão de natureza vária com ou sem componente ansiosa" ]
+       ]
+     ] ) ;
+     fhir:dosingGuideline ( [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://example.com/fhir/example/CodeSystem/dosage-type-cs"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "titration-dose" ] ;
+             fhir:display [ fhir:v "Titration Dose" ]
+           ] ) ;
+           fhir:text [ fhir:v "Início e duração do ciclo terapêutico" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Iniciar o ciclo terapêutico com uma toma ao deitar e com doses diárias crescentes; devem fazer-se ciclos terapêuticos de, pelo menos, 1 mês" ] ;
+           fhir:additionalInstruction ( [
+             fhir:text [ fhir:v "Os comprimidos são divisíveis em 3 partes para permitir uma posologia progressiva com doses fracionadas segundo a gravidade da doença, do peso, da idade e do estado geral do doente" ]
+           ] ) ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:bounds [
+                 a fhir:Range ;
+                 fhir:low [
+                   fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+                   fhir:unit [ fhir:v "month" ] ;
+                   fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "mo" ]
+                 ]
+               ] ;
+               fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ] ;
+               fhir:when ( [ fhir:v "HS" ] )
+             ]
+           ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Doses gerais (população não especificada na RCM)" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://example.com/fhir/example/CodeSystem/dosage-type-cs"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "titration-dose" ] ;
+             fhir:display [ fhir:v "Titration Dose" ]
+           ] ) ;
+           fhir:text [ fhir:v "Dose inicial" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "A dose inicial recomendada deve ser reduzida para 100 mg/dia, administrada em doses fracionadas ou numa dose única à noite" ]
+         ] )
+       ] [
+         fhir:type [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://example.com/fhir/example/CodeSystem/dosage-type-cs"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "titration-dose" ] ;
+             fhir:display [ fhir:v "Titration Dose" ]
+           ] ) ;
+           fhir:text [ fhir:v "Aumento da dose" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "A dose pode ser progressivamente aumentada, de acordo com a tolerância e a eficácia; em geral, as doses únicas acima de 100 mg devem ser evitadas; é improvável que seja excedida uma dose de 300 mg/dia" ] ;
+           fhir:maxDosePerAdministration [
+             fhir:value [ fhir:v "100"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "mg" ] ;
+             fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "mg" ]
+           ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Doentes muito idosos ou fragilizados" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://example.com/fhir/example/CodeSystem/dosage-type-cs"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "maintenance-dose" ] ;
+             fhir:display [ fhir:v "Maintenance Dose" ]
+           ] ) ;
+           fhir:text [ fhir:v "Ajuste de dose na insuficiência renal" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Normalmente, não é necessário ajustar a dose, mas deve ter-se cuidado em doentes com insuficiência renal grave" ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Insuficiência renal" ]
+         ]
+       ] )
+     ] )
+  ] ) ; # 
+  fhir:medicineClassification ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/medication-classification-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "anatomical" ]
+       ] ) ;
+       fhir:text [ fhir:v "Código ATC" ]
+     ] ;
+     fhir:classification ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ATC"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "N06AX05" ] ;
+         fhir:display [ fhir:v "trazodona" ]
+       ] )
+     ] )
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/medication-classification-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "therapeutic" ]
+       ] ) ;
+       fhir:text [ fhir:v "Grupo farmacoterapêutico" ]
+     ] ;
+     fhir:classification ( [
+       fhir:text [ fhir:v "2.9.3 - Sistema Nervoso Central. Psicofármacos. Antidepressores" ]
+     ] )
+  ] ) ; # 
+  fhir:clinicalUseIssue ( [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TriticumAC150mg-CUD-ind1> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TriticumAC150mg-CUD-ind1" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TriticumAC150mg-CUD-contra1> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TriticumAC150mg-CUD-contra1" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TriticumAC150mg-CUD-contra2> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TriticumAC150mg-CUD-contra2" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TriticumAC150mg-CUD-contra3> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TriticumAC150mg-CUD-contra3" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TriticumAC150mg-CUD-contra4> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TriticumAC150mg-CUD-contra4" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TriticumAC150mg-CUD-contra5> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TriticumAC150mg-CUD-contra5" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TriticumAC150mg-CUD-contra6> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TriticumAC150mg-CUD-contra6" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TriticumAC150mg-CUD-int1> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TriticumAC150mg-CUD-int1" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TriticumAC150mg-CUD-int2> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TriticumAC150mg-CUD-int2" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TriticumAC150mg-CUD-int3> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TriticumAC150mg-CUD-int3" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TriticumAC150mg-CUD-int4> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TriticumAC150mg-CUD-int4" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TriticumAC150mg-CUD-int5> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TriticumAC150mg-CUD-int5" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TriticumAC150mg-CUD-int6> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TriticumAC150mg-CUD-int6" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TriticumAC150mg-CUD-int7> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TriticumAC150mg-CUD-int7" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TriticumAC150mg-CUD-int8> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TriticumAC150mg-CUD-int8" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TriticumAC150mg-CUD-int9> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TriticumAC150mg-CUD-int9" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TriticumAC150mg-CUD-int10> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TriticumAC150mg-CUD-int10" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TriticumAC150mg-CUD-int11> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TriticumAC150mg-CUD-int11" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TriticumAC150mg-CUD-int12> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TriticumAC150mg-CUD-int12" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TriticumAC150mg-CUD-int13> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TriticumAC150mg-CUD-int13" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TriticumAC150mg-CUD-int14> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TriticumAC150mg-CUD-int14" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TriticumAC150mg-CUD-int15> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TriticumAC150mg-CUD-int15" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TriticumAC150mg-CUD-int16> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TriticumAC150mg-CUD-int16" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TriticumAC150mg-CUD-int17> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TriticumAC150mg-CUD-int17" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/TriticumAC150mg-CUD-int18> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/TriticumAC150mg-CUD-int18" ]
+  ] ) ; # 
+  fhir:definitional [
+     fhir:doseForm [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "44" ] ;
+         fhir:display [ fhir:v "Comprimido de libertação modificada" ]
+       ] )
+     ] ;
+     fhir:intendedRoute ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://example.com/fhir/example/CodeSystem/via-administracao-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "48" ] ;
+         fhir:display [ fhir:v "Via oral" ]
+       ] )
+     ] ) ;
+     fhir:ingredient ( [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "17686" ] ;
+             fhir:display [ fhir:v "Trazodona, cloridrato" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "ACTI" ]
+         ] )
+       ] ;
+       fhir:strength [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "150"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "mg" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mg" ]
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Sacarose" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ] ;
+       fhir:strength [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "84"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "mg" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mg" ]
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Povidona" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Cera Carnaúba" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Estearato de magnésio" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

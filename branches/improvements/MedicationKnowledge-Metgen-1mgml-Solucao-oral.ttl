@@ -1,0 +1,969 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/MedicationKnowledge/Metgen-1mgml-Solucao-oral> a fhir:MedicationKnowledge ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Metgen-1mgml-Solucao-oral"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH"^^xsd:anyURI ;
+       fhir:link <http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationKnowledge Metgen-1mgml-Solucao-oral</b></p><a name=\"Metgen-1mgml-Solucao-oral\"> </a><a name=\"hcMetgen-1mgml-Solucao-oral\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MedicationKnowledgePDH.html\">Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento</a></p></div><p><b>code</b>: <span title=\"Codes:{http://infarmed.pt/medicamentos/prod_id 5515}\">Metgen 1 mg/ml [A03FA01]</span></p><p><b>name</b>: Metgen [Metoclopramida] 1 mg/ml Solução oral</p><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Prevenção de náuseas e vómitos tardios induzidos por quimioterapia (NVIQ)</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose única recomendada</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: A dose única recomendada é 10 mg, repetida até 3 vezes ao dia. A dose diária máxima recomendada é 30 mg ou 0,5 mg/kg de peso corporal. A duração máxima do tratamento recomendada é 5 dias.</p><p><b>additionalInstruction</b>: <span title=\"Codes:\">Respeitar um intervalo mínimo de 6 horas entre duas administrações, mesmo no caso de vómitos ou rejeição da dose.</span></p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>10 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table><p><b>maxDosePerPeriod</b>: 30 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Doentes adultos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Redução da dose a considerar</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Nos doentes idosos deve considerar-se uma redução da dose, com base na função renal e hepática e debilidade geral.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Idosos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Doença renal em estado terminal (depuração da creatinina ≤ 15 ml/min)</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Nos doentes com doença renal em estado terminal (depuração da creatinina ≤ 15 ml/min), a dose diária deve ser reduzida de 75%.</td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Compromisso renal médio a grave (depuração da creatinina 15-60 ml/min)</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Nos doentes com compromisso renal médio a grave (depuração da creatinina 15-60 ml/min), a dose deve ser reduzida de 50%.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Compromisso renal</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Compromisso hepático grave</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Nos doentes com compromisso hepático grave, a dose deve ser reduzida de 50%.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Compromisso hepático grave</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Opção de segunda linha: dose por peso corporal</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: A dose recomendada é 0,1 a 0,15 mg/kg de peso corporal, repetida até três vezes ao dia por via oral. A dose máxima nas 24 horas é 0,5 mg/kg de peso corporal. A duração máxima do tratamento é de 5 dias.</p><p><b>additionalInstruction</b>: <span title=\"Codes:\">A seringa doseadora oral fornecida é graduada em ml (considerar que 1 mg corresponde a 1 ml) e é de uso exclusivo desta solução; deve ser passada por água após cada utilização e não deve ser mantida mergulhada no frasco. Respeitar um intervalo mínimo de 6 horas entre duas administrações, mesmo no caso de vómitos ou rejeição da dose.</span></p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>0.1-0.15 mg/kg</td></tr></table><p><b>maxDosePerPeriod</b>: 0.5 mg/kg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/kg = 'mg/kg')</span>/1 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Doentes pediátricos com idades entre 1 a 18 anos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose por toma</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 1 mg por toma, até 3 vezes ao dia.</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>1 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">1-3 anos, 10-14 kg</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose por toma</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 2 mg por toma, até 3 vezes ao dia.</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>2 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">3-5 anos, 15-19 kg</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose por toma</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 2,5 mg por toma, até 3 vezes ao dia.</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>2.5 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">5-9 anos, 20-29 kg</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose por toma</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 5 mg por toma, até 3 vezes ao dia.</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>5 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">9-18 anos, 30-60 kg</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose por toma</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 10 mg por toma, até 3 vezes ao dia.</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>10 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">15-18 anos, acima de 60 kg</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Prevenção de náuseas e vómitos induzidos por radioterapia (NVIR)</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose única recomendada</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: A dose única recomendada é 10 mg, repetida até 3 vezes ao dia. A dose diária máxima recomendada é 30 mg ou 0,5 mg/kg de peso corporal. A duração máxima do tratamento recomendada é 5 dias.</p><p><b>additionalInstruction</b>: <span title=\"Codes:\">Respeitar um intervalo mínimo de 6 horas entre duas administrações, mesmo no caso de vómitos ou rejeição da dose.</span></p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>10 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table><p><b>maxDosePerPeriod</b>: 30 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Doentes adultos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Redução da dose a considerar</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Nos doentes idosos deve considerar-se uma redução da dose, com base na função renal e hepática e debilidade geral.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Idosos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Doença renal em estado terminal (depuração da creatinina ≤ 15 ml/min)</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Nos doentes com doença renal em estado terminal (depuração da creatinina ≤ 15 ml/min), a dose diária deve ser reduzida de 75%.</td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Compromisso renal médio a grave (depuração da creatinina 15-60 ml/min)</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Nos doentes com compromisso renal médio a grave (depuração da creatinina 15-60 ml/min), a dose deve ser reduzida de 50%.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Compromisso renal</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Compromisso hepático grave</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Nos doentes com compromisso hepático grave, a dose deve ser reduzida de 50%.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Compromisso hepático grave</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Tratamento sintomático de náuseas e vómitos, incluindo náuseas e vómitos induzidos por enxaqueca aguda</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose única recomendada</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: A dose única recomendada é 10 mg, repetida até 3 vezes ao dia. A dose diária máxima recomendada é 30 mg ou 0,5 mg/kg de peso corporal. A duração máxima do tratamento recomendada é 5 dias.</p><p><b>additionalInstruction</b>: <span title=\"Codes:\">Respeitar um intervalo mínimo de 6 horas entre duas administrações, mesmo no caso de vómitos ou rejeição da dose.</span></p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>10 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table><p><b>maxDosePerPeriod</b>: 30 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Doentes adultos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Redução da dose a considerar</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Nos doentes idosos deve considerar-se uma redução da dose, com base na função renal e hepática e debilidade geral.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Idosos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Doença renal em estado terminal (depuração da creatinina ≤ 15 ml/min)</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Nos doentes com doença renal em estado terminal (depuração da creatinina ≤ 15 ml/min), a dose diária deve ser reduzida de 75%.</td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Compromisso renal médio a grave (depuração da creatinina 15-60 ml/min)</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Nos doentes com compromisso renal médio a grave (depuração da creatinina 15-60 ml/min), a dose deve ser reduzida de 50%.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Compromisso renal</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Compromisso hepático grave</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Nos doentes com compromisso hepático grave, a dose deve ser reduzida de 50%.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Compromisso hepático grave</span></td></tr></table></blockquote></blockquote><blockquote><p><b>medicineClassification</b></p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/medication-classification-type anatomical}\">Código ATC</span></p><p><b>classification</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ATC A03FA01}\">Metoclopramida</span></p></blockquote><blockquote><p><b>medicineClassification</b></p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/medication-classification-type therapeutic}\">Grupo farmacoterapêutico</span></p><p><b>classification</b>: <span title=\"Codes:\">6.3.1 - Aparelho digestivo. Modificadores da motilidade gastrintestinal. Modificadores da motilidade gástrica ou procinético. 2.7 - Sistema nervoso central. Antieméticos e antivertiginosos</span></p></blockquote><p><b>clinicalUseIssue</b>: </p><ul><li><a href=\"ClinicalUseDefinition-Metgen1mgml-CUD-ind1.html\">ClinicalUseDefinition: type = indication</a></li><li><a href=\"ClinicalUseDefinition-Metgen1mgml-CUD-ind2.html\">ClinicalUseDefinition: type = indication</a></li><li><a href=\"ClinicalUseDefinition-Metgen1mgml-CUD-ind3.html\">ClinicalUseDefinition: type = indication</a></li><li><a href=\"ClinicalUseDefinition-Metgen1mgml-CUD-contra1.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Metgen1mgml-CUD-contra2.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Metgen1mgml-CUD-contra3.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Metgen1mgml-CUD-contra4.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Metgen1mgml-CUD-contra5.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Metgen1mgml-CUD-contra6.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Metgen1mgml-CUD-contra7.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Metgen1mgml-CUD-contra8.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Metgen1mgml-CUD-contra9.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Metgen1mgml-CUD-contra10.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Metgen1mgml-CUD-contra11.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Metgen1mgml-CUD-contra12.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Metgen1mgml-CUD-contra13.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Metgen1mgml-CUD-contra14.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-Metgen1mgml-CUD-int1.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Metgen1mgml-CUD-int2.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Metgen1mgml-CUD-int3.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Metgen1mgml-CUD-int4.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Metgen1mgml-CUD-int5.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Metgen1mgml-CUD-int6.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Metgen1mgml-CUD-int7.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Metgen1mgml-CUD-int8.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Metgen1mgml-CUD-int9.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Metgen1mgml-CUD-int10.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-Metgen1mgml-CUD-int11.html\">ClinicalUseDefinition: type = interaction</a></li></ul><blockquote><p><b>definitional</b></p><p><b>doseForm</b>: <span title=\"Codes:{http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs 4}\">Solução oral</span></p><p><b>intendedRoute</b>: <span title=\"Codes:{http://example.com/fhir/example/CodeSystem/via-administracao-cs 48}\">Via oral</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Cloridrato de metoclopramida mono-hidratado</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass ACTI}\">active ingredient</span></p><p><b>strength</b>: 1.05 mg/ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/mL = 'mg/mL')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Solução de sorbitol 70 %</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p><p><b>strength</b>: 500 mg/ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/mL = 'mg/mL')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Metilparabeno</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p><p><b>strength</b>: 1.42 mg/ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/mL = 'mg/mL')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Propilparabeno</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p><p><b>strength</b>: 0.14 mg/ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/mL = 'mg/mL')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Ácido cítrico mono-hidratado</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Essência de framboesa</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Água purificada</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://infarmed.pt/medicamentos/prod_id"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "5515" ] ;
+       fhir:display [ fhir:v "Metgen 1 mg/ml [A03FA01]" ]
+     ] )
+  ] ; # 
+  fhir:name ( [ fhir:v "Metgen [Metoclopramida] 1 mg/ml Solução oral"] ) ; # 
+  fhir:indicationGuideline ( [
+     fhir:indication ( [
+       fhir:concept [
+         fhir:text [ fhir:v "Prevenção de náuseas e vómitos tardios induzidos por quimioterapia (NVIQ)" ]
+       ]
+     ] ) ;
+     fhir:dosingGuideline ( [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose única recomendada" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "A dose única recomendada é 10 mg, repetida até 3 vezes ao dia. A dose diária máxima recomendada é 30 mg ou 0,5 mg/kg de peso corporal. A duração máxima do tratamento recomendada é 5 dias." ] ;
+           fhir:additionalInstruction ( [
+             fhir:text [ fhir:v "Respeitar um intervalo mínimo de 6 horas entre duas administrações, mesmo no caso de vómitos ou rejeição da dose." ]
+           ] ) ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:bounds [
+                 a fhir:Range ;
+                 fhir:high [
+                   fhir:value [ fhir:v "5"^^xsd:decimal ] ;
+                   fhir:unit [ fhir:v "day" ] ;
+                   fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "d" ]
+                 ]
+               ] ;
+               fhir:frequencyMax [ fhir:v "3"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ] ;
+           fhir:doseAndRate ( [
+             fhir:dose [
+               a fhir:Quantity ;
+               fhir:value [ fhir:v "10"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "mg" ] ;
+               fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "mg" ]
+             ]
+           ] ) ;
+           fhir:maxDosePerPeriod ( [
+             fhir:numerator [
+               fhir:value [ fhir:v "30"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "mg" ] ;
+               fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "mg" ]
+             ] ;
+             fhir:denominator [
+               fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "day" ] ;
+               fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "d" ]
+             ]
+           ] )
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Doentes adultos" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Redução da dose a considerar" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Nos doentes idosos deve considerar-se uma redução da dose, com base na função renal e hepática e debilidade geral." ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Idosos" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Doença renal em estado terminal (depuração da creatinina ≤ 15 ml/min)" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Nos doentes com doença renal em estado terminal (depuração da creatinina ≤ 15 ml/min), a dose diária deve ser reduzida de 75%." ]
+         ] )
+       ] [
+         fhir:type [
+           fhir:text [ fhir:v "Compromisso renal médio a grave (depuração da creatinina 15-60 ml/min)" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Nos doentes com compromisso renal médio a grave (depuração da creatinina 15-60 ml/min), a dose deve ser reduzida de 50%." ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Compromisso renal" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Compromisso hepático grave" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Nos doentes com compromisso hepático grave, a dose deve ser reduzida de 50%." ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Compromisso hepático grave" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Opção de segunda linha: dose por peso corporal" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "A dose recomendada é 0,1 a 0,15 mg/kg de peso corporal, repetida até três vezes ao dia por via oral. A dose máxima nas 24 horas é 0,5 mg/kg de peso corporal. A duração máxima do tratamento é de 5 dias." ] ;
+           fhir:additionalInstruction ( [
+             fhir:text [ fhir:v "A seringa doseadora oral fornecida é graduada em ml (considerar que 1 mg corresponde a 1 ml) e é de uso exclusivo desta solução; deve ser passada por água após cada utilização e não deve ser mantida mergulhada no frasco. Respeitar um intervalo mínimo de 6 horas entre duas administrações, mesmo no caso de vómitos ou rejeição da dose." ]
+           ] ) ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:bounds [
+                 a fhir:Range ;
+                 fhir:high [
+                   fhir:value [ fhir:v "5"^^xsd:decimal ] ;
+                   fhir:unit [ fhir:v "day" ] ;
+                   fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "d" ]
+                 ]
+               ] ;
+               fhir:frequencyMax [ fhir:v "3"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ] ;
+           fhir:doseAndRate ( [
+             fhir:dose [
+               a fhir:Range ;
+               fhir:low [
+                 fhir:value [ fhir:v 0.1 ] ;
+                 fhir:unit [ fhir:v "mg/kg" ] ;
+                 fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+                 fhir:code [ fhir:v "mg/kg" ]
+               ] ;
+               fhir:high [
+                 fhir:value [ fhir:v 0.15 ] ;
+                 fhir:unit [ fhir:v "mg/kg" ] ;
+                 fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+                 fhir:code [ fhir:v "mg/kg" ]
+               ]
+             ]
+           ] ) ;
+           fhir:maxDosePerPeriod ( [
+             fhir:numerator [
+               fhir:value [ fhir:v 0.5 ] ;
+               fhir:unit [ fhir:v "mg/kg" ] ;
+               fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "mg/kg" ]
+             ] ;
+             fhir:denominator [
+               fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "day" ] ;
+               fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "d" ]
+             ]
+           ] )
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Doentes pediátricos com idades entre 1 a 18 anos" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose por toma" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "1 mg por toma, até 3 vezes ao dia." ] ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:bounds [
+                 a fhir:Range ;
+                 fhir:high [
+                   fhir:value [ fhir:v "5"^^xsd:decimal ] ;
+                   fhir:unit [ fhir:v "day" ] ;
+                   fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "d" ]
+                 ]
+               ] ;
+               fhir:frequencyMax [ fhir:v "3"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ] ;
+           fhir:doseAndRate ( [
+             fhir:dose [
+               a fhir:Quantity ;
+               fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "mg" ] ;
+               fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "mg" ]
+             ]
+           ] )
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "1-3 anos, 10-14 kg" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose por toma" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "2 mg por toma, até 3 vezes ao dia." ] ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:bounds [
+                 a fhir:Range ;
+                 fhir:high [
+                   fhir:value [ fhir:v "5"^^xsd:decimal ] ;
+                   fhir:unit [ fhir:v "day" ] ;
+                   fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "d" ]
+                 ]
+               ] ;
+               fhir:frequencyMax [ fhir:v "3"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ] ;
+           fhir:doseAndRate ( [
+             fhir:dose [
+               a fhir:Quantity ;
+               fhir:value [ fhir:v "2"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "mg" ] ;
+               fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "mg" ]
+             ]
+           ] )
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "3-5 anos, 15-19 kg" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose por toma" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "2,5 mg por toma, até 3 vezes ao dia." ] ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:bounds [
+                 a fhir:Range ;
+                 fhir:high [
+                   fhir:value [ fhir:v "5"^^xsd:decimal ] ;
+                   fhir:unit [ fhir:v "day" ] ;
+                   fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "d" ]
+                 ]
+               ] ;
+               fhir:frequencyMax [ fhir:v "3"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ] ;
+           fhir:doseAndRate ( [
+             fhir:dose [
+               a fhir:Quantity ;
+               fhir:value [ fhir:v 2.5 ] ;
+               fhir:unit [ fhir:v "mg" ] ;
+               fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "mg" ]
+             ]
+           ] )
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "5-9 anos, 20-29 kg" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose por toma" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "5 mg por toma, até 3 vezes ao dia." ] ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:bounds [
+                 a fhir:Range ;
+                 fhir:high [
+                   fhir:value [ fhir:v "5"^^xsd:decimal ] ;
+                   fhir:unit [ fhir:v "day" ] ;
+                   fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "d" ]
+                 ]
+               ] ;
+               fhir:frequencyMax [ fhir:v "3"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ] ;
+           fhir:doseAndRate ( [
+             fhir:dose [
+               a fhir:Quantity ;
+               fhir:value [ fhir:v "5"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "mg" ] ;
+               fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "mg" ]
+             ]
+           ] )
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "9-18 anos, 30-60 kg" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose por toma" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "10 mg por toma, até 3 vezes ao dia." ] ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:bounds [
+                 a fhir:Range ;
+                 fhir:high [
+                   fhir:value [ fhir:v "5"^^xsd:decimal ] ;
+                   fhir:unit [ fhir:v "day" ] ;
+                   fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "d" ]
+                 ]
+               ] ;
+               fhir:frequencyMax [ fhir:v "3"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ] ;
+           fhir:doseAndRate ( [
+             fhir:dose [
+               a fhir:Quantity ;
+               fhir:value [ fhir:v "10"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "mg" ] ;
+               fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "mg" ]
+             ]
+           ] )
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "15-18 anos, acima de 60 kg" ]
+         ]
+       ] )
+     ] )
+  ] [
+     fhir:indication ( [
+       fhir:concept [
+         fhir:text [ fhir:v "Prevenção de náuseas e vómitos induzidos por radioterapia (NVIR)" ]
+       ]
+     ] ) ;
+     fhir:dosingGuideline ( [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose única recomendada" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "A dose única recomendada é 10 mg, repetida até 3 vezes ao dia. A dose diária máxima recomendada é 30 mg ou 0,5 mg/kg de peso corporal. A duração máxima do tratamento recomendada é 5 dias." ] ;
+           fhir:additionalInstruction ( [
+             fhir:text [ fhir:v "Respeitar um intervalo mínimo de 6 horas entre duas administrações, mesmo no caso de vómitos ou rejeição da dose." ]
+           ] ) ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:bounds [
+                 a fhir:Range ;
+                 fhir:high [
+                   fhir:value [ fhir:v "5"^^xsd:decimal ] ;
+                   fhir:unit [ fhir:v "day" ] ;
+                   fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "d" ]
+                 ]
+               ] ;
+               fhir:frequencyMax [ fhir:v "3"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ] ;
+           fhir:doseAndRate ( [
+             fhir:dose [
+               a fhir:Quantity ;
+               fhir:value [ fhir:v "10"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "mg" ] ;
+               fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "mg" ]
+             ]
+           ] ) ;
+           fhir:maxDosePerPeriod ( [
+             fhir:numerator [
+               fhir:value [ fhir:v "30"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "mg" ] ;
+               fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "mg" ]
+             ] ;
+             fhir:denominator [
+               fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "day" ] ;
+               fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "d" ]
+             ]
+           ] )
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Doentes adultos" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Redução da dose a considerar" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Nos doentes idosos deve considerar-se uma redução da dose, com base na função renal e hepática e debilidade geral." ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Idosos" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Doença renal em estado terminal (depuração da creatinina ≤ 15 ml/min)" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Nos doentes com doença renal em estado terminal (depuração da creatinina ≤ 15 ml/min), a dose diária deve ser reduzida de 75%." ]
+         ] )
+       ] [
+         fhir:type [
+           fhir:text [ fhir:v "Compromisso renal médio a grave (depuração da creatinina 15-60 ml/min)" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Nos doentes com compromisso renal médio a grave (depuração da creatinina 15-60 ml/min), a dose deve ser reduzida de 50%." ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Compromisso renal" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Compromisso hepático grave" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Nos doentes com compromisso hepático grave, a dose deve ser reduzida de 50%." ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Compromisso hepático grave" ]
+         ]
+       ] )
+     ] )
+  ] [
+     fhir:indication ( [
+       fhir:concept [
+         fhir:text [ fhir:v "Tratamento sintomático de náuseas e vómitos, incluindo náuseas e vómitos induzidos por enxaqueca aguda" ]
+       ]
+     ] ) ;
+     fhir:dosingGuideline ( [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose única recomendada" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "A dose única recomendada é 10 mg, repetida até 3 vezes ao dia. A dose diária máxima recomendada é 30 mg ou 0,5 mg/kg de peso corporal. A duração máxima do tratamento recomendada é 5 dias." ] ;
+           fhir:additionalInstruction ( [
+             fhir:text [ fhir:v "Respeitar um intervalo mínimo de 6 horas entre duas administrações, mesmo no caso de vómitos ou rejeição da dose." ]
+           ] ) ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:bounds [
+                 a fhir:Range ;
+                 fhir:high [
+                   fhir:value [ fhir:v "5"^^xsd:decimal ] ;
+                   fhir:unit [ fhir:v "day" ] ;
+                   fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "d" ]
+                 ]
+               ] ;
+               fhir:frequencyMax [ fhir:v "3"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ] ;
+           fhir:doseAndRate ( [
+             fhir:dose [
+               a fhir:Quantity ;
+               fhir:value [ fhir:v "10"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "mg" ] ;
+               fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "mg" ]
+             ]
+           ] ) ;
+           fhir:maxDosePerPeriod ( [
+             fhir:numerator [
+               fhir:value [ fhir:v "30"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "mg" ] ;
+               fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "mg" ]
+             ] ;
+             fhir:denominator [
+               fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "day" ] ;
+               fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "d" ]
+             ]
+           ] )
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Doentes adultos" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Redução da dose a considerar" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Nos doentes idosos deve considerar-se uma redução da dose, com base na função renal e hepática e debilidade geral." ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Idosos" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Doença renal em estado terminal (depuração da creatinina ≤ 15 ml/min)" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Nos doentes com doença renal em estado terminal (depuração da creatinina ≤ 15 ml/min), a dose diária deve ser reduzida de 75%." ]
+         ] )
+       ] [
+         fhir:type [
+           fhir:text [ fhir:v "Compromisso renal médio a grave (depuração da creatinina 15-60 ml/min)" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Nos doentes com compromisso renal médio a grave (depuração da creatinina 15-60 ml/min), a dose deve ser reduzida de 50%." ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Compromisso renal" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Compromisso hepático grave" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Nos doentes com compromisso hepático grave, a dose deve ser reduzida de 50%." ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Compromisso hepático grave" ]
+         ]
+       ] )
+     ] )
+  ] ) ; # 
+  fhir:medicineClassification ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/medication-classification-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "anatomical" ]
+       ] ) ;
+       fhir:text [ fhir:v "Código ATC" ]
+     ] ;
+     fhir:classification ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ATC"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "A03FA01" ] ;
+         fhir:display [ fhir:v "Metoclopramida" ]
+       ] )
+     ] )
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/medication-classification-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "therapeutic" ]
+       ] ) ;
+       fhir:text [ fhir:v "Grupo farmacoterapêutico" ]
+     ] ;
+     fhir:classification ( [
+       fhir:text [ fhir:v "6.3.1 - Aparelho digestivo. Modificadores da motilidade gastrintestinal. Modificadores da motilidade gástrica ou procinético. 2.7 - Sistema nervoso central. Antieméticos e antivertiginosos" ]
+     ] )
+  ] ) ; # 
+  fhir:clinicalUseIssue ( [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Metgen1mgml-CUD-ind1> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Metgen1mgml-CUD-ind1" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Metgen1mgml-CUD-ind2> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Metgen1mgml-CUD-ind2" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Metgen1mgml-CUD-ind3> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Metgen1mgml-CUD-ind3" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Metgen1mgml-CUD-contra1> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Metgen1mgml-CUD-contra1" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Metgen1mgml-CUD-contra2> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Metgen1mgml-CUD-contra2" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Metgen1mgml-CUD-contra3> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Metgen1mgml-CUD-contra3" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Metgen1mgml-CUD-contra4> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Metgen1mgml-CUD-contra4" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Metgen1mgml-CUD-contra5> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Metgen1mgml-CUD-contra5" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Metgen1mgml-CUD-contra6> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Metgen1mgml-CUD-contra6" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Metgen1mgml-CUD-contra7> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Metgen1mgml-CUD-contra7" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Metgen1mgml-CUD-contra8> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Metgen1mgml-CUD-contra8" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Metgen1mgml-CUD-contra9> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Metgen1mgml-CUD-contra9" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Metgen1mgml-CUD-contra10> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Metgen1mgml-CUD-contra10" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Metgen1mgml-CUD-contra11> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Metgen1mgml-CUD-contra11" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Metgen1mgml-CUD-contra12> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Metgen1mgml-CUD-contra12" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Metgen1mgml-CUD-contra13> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Metgen1mgml-CUD-contra13" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Metgen1mgml-CUD-contra14> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Metgen1mgml-CUD-contra14" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Metgen1mgml-CUD-int1> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Metgen1mgml-CUD-int1" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Metgen1mgml-CUD-int2> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Metgen1mgml-CUD-int2" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Metgen1mgml-CUD-int3> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Metgen1mgml-CUD-int3" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Metgen1mgml-CUD-int4> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Metgen1mgml-CUD-int4" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Metgen1mgml-CUD-int5> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Metgen1mgml-CUD-int5" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Metgen1mgml-CUD-int6> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Metgen1mgml-CUD-int6" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Metgen1mgml-CUD-int7> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Metgen1mgml-CUD-int7" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Metgen1mgml-CUD-int8> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Metgen1mgml-CUD-int8" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Metgen1mgml-CUD-int9> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Metgen1mgml-CUD-int9" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Metgen1mgml-CUD-int10> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Metgen1mgml-CUD-int10" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/Metgen1mgml-CUD-int11> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/Metgen1mgml-CUD-int11" ]
+  ] ) ; # 
+  fhir:definitional [
+     fhir:doseForm [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "4" ] ;
+         fhir:display [ fhir:v "Solução oral" ]
+       ] )
+     ] ;
+     fhir:intendedRoute ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://example.com/fhir/example/CodeSystem/via-administracao-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "48" ] ;
+         fhir:display [ fhir:v "Via oral" ]
+       ] )
+     ] ) ;
+     fhir:ingredient ( [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Cloridrato de metoclopramida mono-hidratado" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "ACTI" ]
+         ] )
+       ] ;
+       fhir:strength [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v 1.05 ] ;
+         fhir:unit [ fhir:v "mg/ml" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mg/mL" ]
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Solução de sorbitol 70 %" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ] ;
+       fhir:strength [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "500"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "mg/ml" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mg/mL" ]
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Metilparabeno" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ] ;
+       fhir:strength [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v 1.42 ] ;
+         fhir:unit [ fhir:v "mg/ml" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mg/mL" ]
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Propilparabeno" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ] ;
+       fhir:strength [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v 0.14 ] ;
+         fhir:unit [ fhir:v "mg/ml" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mg/mL" ]
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Ácido cítrico mono-hidratado" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Essência de framboesa" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Água purificada" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

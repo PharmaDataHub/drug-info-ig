@@ -1,0 +1,942 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationKnowledge xmlns="http://hl7.org/fhir">
+  <id value="Metgen-1mgml-Solucao-oral"/>
+  <meta>
+    <profile value="http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: MedicationKnowledge Metgen-1mgml-Solucao-oral</b></p><a name="Metgen-1mgml-Solucao-oral"> </a><a name="hcMetgen-1mgml-Solucao-oral"> </a><div style="display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-MedicationKnowledgePDH.html">Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento</a></p></div><p><b>code</b>: <span title="Codes:{http://infarmed.pt/medicamentos/prod_id 5515}">Metgen 1 mg/ml [A03FA01]</span></p><p><b>name</b>: Metgen [Metoclopramida] 1 mg/ml Solução oral</p><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Prevenção de náuseas e vómitos tardios induzidos por quimioterapia (NVIQ)</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose única recomendada</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: A dose única recomendada é 10 mg, repetida até 3 vezes ao dia. A dose diária máxima recomendada é 30 mg ou 0,5 mg/kg de peso corporal. A duração máxima do tratamento recomendada é 5 dias.</p><p><b>additionalInstruction</b>: <span title="Codes:">Respeitar um intervalo mínimo de 6 horas entre duas administrações, mesmo no caso de vómitos ou rejeição da dose.</span></p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>10 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table><p><b>maxDosePerPeriod</b>: 30 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style="background: LightGoldenRodYellow"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Doentes adultos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Redução da dose a considerar</span></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td></tr><tr><td style="display: none">*</td><td>Nos doentes idosos deve considerar-se uma redução da dose, com base na função renal e hepática e debilidade geral.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Idosos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Doença renal em estado terminal (depuração da creatinina ≤ 15 ml/min)</span></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td></tr><tr><td style="display: none">*</td><td>Nos doentes com doença renal em estado terminal (depuração da creatinina ≤ 15 ml/min), a dose diária deve ser reduzida de 75%.</td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Compromisso renal médio a grave (depuração da creatinina 15-60 ml/min)</span></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td></tr><tr><td style="display: none">*</td><td>Nos doentes com compromisso renal médio a grave (depuração da creatinina 15-60 ml/min), a dose deve ser reduzida de 50%.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Compromisso renal</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Compromisso hepático grave</span></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td></tr><tr><td style="display: none">*</td><td>Nos doentes com compromisso hepático grave, a dose deve ser reduzida de 50%.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Compromisso hepático grave</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Opção de segunda linha: dose por peso corporal</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: A dose recomendada é 0,1 a 0,15 mg/kg de peso corporal, repetida até três vezes ao dia por via oral. A dose máxima nas 24 horas é 0,5 mg/kg de peso corporal. A duração máxima do tratamento é de 5 dias.</p><p><b>additionalInstruction</b>: <span title="Codes:">A seringa doseadora oral fornecida é graduada em ml (considerar que 1 mg corresponde a 1 ml) e é de uso exclusivo desta solução; deve ser passada por água após cada utilização e não deve ser mantida mergulhada no frasco. Respeitar um intervalo mínimo de 6 horas entre duas administrações, mesmo no caso de vómitos ou rejeição da dose.</span></p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>0.1-0.15 mg/kg</td></tr></table><p><b>maxDosePerPeriod</b>: 0.5 mg/kg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg/kg = 'mg/kg')</span>/1 day<span style="background: LightGoldenRodYellow"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Doentes pediátricos com idades entre 1 a 18 anos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose por toma</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 1 mg por toma, até 3 vezes ao dia.</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>1 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">1-3 anos, 10-14 kg</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose por toma</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 2 mg por toma, até 3 vezes ao dia.</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>2 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">3-5 anos, 15-19 kg</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose por toma</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 2,5 mg por toma, até 3 vezes ao dia.</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>2.5 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">5-9 anos, 20-29 kg</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose por toma</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 5 mg por toma, até 3 vezes ao dia.</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>5 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">9-18 anos, 30-60 kg</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose por toma</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 10 mg por toma, até 3 vezes ao dia.</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>10 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">15-18 anos, acima de 60 kg</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Prevenção de náuseas e vómitos induzidos por radioterapia (NVIR)</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose única recomendada</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: A dose única recomendada é 10 mg, repetida até 3 vezes ao dia. A dose diária máxima recomendada é 30 mg ou 0,5 mg/kg de peso corporal. A duração máxima do tratamento recomendada é 5 dias.</p><p><b>additionalInstruction</b>: <span title="Codes:">Respeitar um intervalo mínimo de 6 horas entre duas administrações, mesmo no caso de vómitos ou rejeição da dose.</span></p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>10 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table><p><b>maxDosePerPeriod</b>: 30 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style="background: LightGoldenRodYellow"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Doentes adultos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Redução da dose a considerar</span></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td></tr><tr><td style="display: none">*</td><td>Nos doentes idosos deve considerar-se uma redução da dose, com base na função renal e hepática e debilidade geral.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Idosos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Doença renal em estado terminal (depuração da creatinina ≤ 15 ml/min)</span></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td></tr><tr><td style="display: none">*</td><td>Nos doentes com doença renal em estado terminal (depuração da creatinina ≤ 15 ml/min), a dose diária deve ser reduzida de 75%.</td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Compromisso renal médio a grave (depuração da creatinina 15-60 ml/min)</span></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td></tr><tr><td style="display: none">*</td><td>Nos doentes com compromisso renal médio a grave (depuração da creatinina 15-60 ml/min), a dose deve ser reduzida de 50%.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Compromisso renal</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Compromisso hepático grave</span></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td></tr><tr><td style="display: none">*</td><td>Nos doentes com compromisso hepático grave, a dose deve ser reduzida de 50%.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Compromisso hepático grave</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Tratamento sintomático de náuseas e vómitos, incluindo náuseas e vómitos induzidos por enxaqueca aguda</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose única recomendada</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: A dose única recomendada é 10 mg, repetida até 3 vezes ao dia. A dose diária máxima recomendada é 30 mg ou 0,5 mg/kg de peso corporal. A duração máxima do tratamento recomendada é 5 dias.</p><p><b>additionalInstruction</b>: <span title="Codes:">Respeitar um intervalo mínimo de 6 horas entre duas administrações, mesmo no caso de vómitos ou rejeição da dose.</span></p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>10 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table><p><b>maxDosePerPeriod</b>: 30 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style="background: LightGoldenRodYellow"> (Details: UCUM  coded = 'd')</span></p></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Doentes adultos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Redução da dose a considerar</span></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td></tr><tr><td style="display: none">*</td><td>Nos doentes idosos deve considerar-se uma redução da dose, com base na função renal e hepática e debilidade geral.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Idosos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Doença renal em estado terminal (depuração da creatinina ≤ 15 ml/min)</span></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td></tr><tr><td style="display: none">*</td><td>Nos doentes com doença renal em estado terminal (depuração da creatinina ≤ 15 ml/min), a dose diária deve ser reduzida de 75%.</td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Compromisso renal médio a grave (depuração da creatinina 15-60 ml/min)</span></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td></tr><tr><td style="display: none">*</td><td>Nos doentes com compromisso renal médio a grave (depuração da creatinina 15-60 ml/min), a dose deve ser reduzida de 50%.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Compromisso renal</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Compromisso hepático grave</span></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td></tr><tr><td style="display: none">*</td><td>Nos doentes com compromisso hepático grave, a dose deve ser reduzida de 50%.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Compromisso hepático grave</span></td></tr></table></blockquote></blockquote><blockquote><p><b>medicineClassification</b></p><p><b>type</b>: <span title="Codes:{http://hl7.org/fhir/medication-classification-type anatomical}">Código ATC</span></p><p><b>classification</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ATC A03FA01}">Metoclopramida</span></p></blockquote><blockquote><p><b>medicineClassification</b></p><p><b>type</b>: <span title="Codes:{http://hl7.org/fhir/medication-classification-type therapeutic}">Grupo farmacoterapêutico</span></p><p><b>classification</b>: <span title="Codes:">6.3.1 - Aparelho digestivo. Modificadores da motilidade gastrintestinal. Modificadores da motilidade gástrica ou procinético. 2.7 - Sistema nervoso central. Antieméticos e antivertiginosos</span></p></blockquote><p><b>clinicalUseIssue</b>: </p><ul><li><a href="ClinicalUseDefinition-Metgen1mgml-CUD-ind1.html">ClinicalUseDefinition: type = indication</a></li><li><a href="ClinicalUseDefinition-Metgen1mgml-CUD-ind2.html">ClinicalUseDefinition: type = indication</a></li><li><a href="ClinicalUseDefinition-Metgen1mgml-CUD-ind3.html">ClinicalUseDefinition: type = indication</a></li><li><a href="ClinicalUseDefinition-Metgen1mgml-CUD-contra1.html">ClinicalUseDefinition: type = contraindication</a></li><li><a href="ClinicalUseDefinition-Metgen1mgml-CUD-contra2.html">ClinicalUseDefinition: type = contraindication</a></li><li><a href="ClinicalUseDefinition-Metgen1mgml-CUD-contra3.html">ClinicalUseDefinition: type = contraindication</a></li><li><a href="ClinicalUseDefinition-Metgen1mgml-CUD-contra4.html">ClinicalUseDefinition: type = contraindication</a></li><li><a href="ClinicalUseDefinition-Metgen1mgml-CUD-contra5.html">ClinicalUseDefinition: type = contraindication</a></li><li><a href="ClinicalUseDefinition-Metgen1mgml-CUD-contra6.html">ClinicalUseDefinition: type = contraindication</a></li><li><a href="ClinicalUseDefinition-Metgen1mgml-CUD-contra7.html">ClinicalUseDefinition: type = contraindication</a></li><li><a href="ClinicalUseDefinition-Metgen1mgml-CUD-contra8.html">ClinicalUseDefinition: type = contraindication</a></li><li><a href="ClinicalUseDefinition-Metgen1mgml-CUD-contra9.html">ClinicalUseDefinition: type = contraindication</a></li><li><a href="ClinicalUseDefinition-Metgen1mgml-CUD-contra10.html">ClinicalUseDefinition: type = contraindication</a></li><li><a href="ClinicalUseDefinition-Metgen1mgml-CUD-contra11.html">ClinicalUseDefinition: type = contraindication</a></li><li><a href="ClinicalUseDefinition-Metgen1mgml-CUD-contra12.html">ClinicalUseDefinition: type = contraindication</a></li><li><a href="ClinicalUseDefinition-Metgen1mgml-CUD-contra13.html">ClinicalUseDefinition: type = contraindication</a></li><li><a href="ClinicalUseDefinition-Metgen1mgml-CUD-contra14.html">ClinicalUseDefinition: type = contraindication</a></li><li><a href="ClinicalUseDefinition-Metgen1mgml-CUD-int1.html">ClinicalUseDefinition: type = interaction</a></li><li><a href="ClinicalUseDefinition-Metgen1mgml-CUD-int2.html">ClinicalUseDefinition: type = interaction</a></li><li><a href="ClinicalUseDefinition-Metgen1mgml-CUD-int3.html">ClinicalUseDefinition: type = interaction</a></li><li><a href="ClinicalUseDefinition-Metgen1mgml-CUD-int4.html">ClinicalUseDefinition: type = interaction</a></li><li><a href="ClinicalUseDefinition-Metgen1mgml-CUD-int5.html">ClinicalUseDefinition: type = interaction</a></li><li><a href="ClinicalUseDefinition-Metgen1mgml-CUD-int6.html">ClinicalUseDefinition: type = interaction</a></li><li><a href="ClinicalUseDefinition-Metgen1mgml-CUD-int7.html">ClinicalUseDefinition: type = interaction</a></li><li><a href="ClinicalUseDefinition-Metgen1mgml-CUD-int8.html">ClinicalUseDefinition: type = interaction</a></li><li><a href="ClinicalUseDefinition-Metgen1mgml-CUD-int9.html">ClinicalUseDefinition: type = interaction</a></li><li><a href="ClinicalUseDefinition-Metgen1mgml-CUD-int10.html">ClinicalUseDefinition: type = interaction</a></li><li><a href="ClinicalUseDefinition-Metgen1mgml-CUD-int11.html">ClinicalUseDefinition: type = interaction</a></li></ul><blockquote><p><b>definitional</b></p><p><b>doseForm</b>: <span title="Codes:{http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs 4}">Solução oral</span></p><p><b>intendedRoute</b>: <span title="Codes:{http://example.com/fhir/example/CodeSystem/via-administracao-cs 48}">Via oral</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Cloridrato de metoclopramida mono-hidratado</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass ACTI}">active ingredient</span></p><p><b>strength</b>: 1.05 mg/ml<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg/mL = 'mg/mL')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Solução de sorbitol 70 %</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p><p><b>strength</b>: 500 mg/ml<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg/mL = 'mg/mL')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Metilparabeno</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p><p><b>strength</b>: 1.42 mg/ml<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg/mL = 'mg/mL')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Propilparabeno</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p><p><b>strength</b>: 0.14 mg/ml<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg/mL = 'mg/mL')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Ácido cítrico mono-hidratado</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Essência de framboesa</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Água purificada</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p></blockquote></blockquote></div>
+  </text>
+  <code>
+    <coding>
+      <system value="http://infarmed.pt/medicamentos/prod_id"/>
+      <code value="5515"/>
+      <display value="Metgen 1 mg/ml [A03FA01]"/>
+    </coding>
+  </code>
+  <name value="Metgen [Metoclopramida] 1 mg/ml Solução oral"/>
+  <indicationGuideline>
+    <indication>
+      <concept>
+        <text value="Prevenção de náuseas e vómitos tardios induzidos por quimioterapia (NVIQ)"/>
+      </concept>
+    </indication>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose única recomendada"/>
+        </type>
+        <dosage>
+          <text value="A dose única recomendada é 10 mg, repetida até 3 vezes ao dia. A dose diária máxima recomendada é 30 mg ou 0,5 mg/kg de peso corporal. A duração máxima do tratamento recomendada é 5 dias."/>
+          <additionalInstruction>
+            <text value="Respeitar um intervalo mínimo de 6 horas entre duas administrações, mesmo no caso de vómitos ou rejeição da dose."/>
+          </additionalInstruction>
+          <timing>
+            <repeat>
+              <boundsRange>
+                <high>
+                  <value value="5"/>
+                  <unit value="day"/>
+                  <system value="http://unitsofmeasure.org"/>
+                  <code value="d"/>
+                </high>
+              </boundsRange>
+              <frequencyMax value="3"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="10"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </doseQuantity>
+          </doseAndRate>
+          <maxDosePerPeriod>
+            <numerator>
+              <value value="30"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+              <unit value="day"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="d"/>
+            </denominator>
+          </maxDosePerPeriod>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Doentes adultos"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Redução da dose a considerar"/>
+        </type>
+        <dosage>
+          <text value="Nos doentes idosos deve considerar-se uma redução da dose, com base na função renal e hepática e debilidade geral."/>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Idosos"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Doença renal em estado terminal (depuração da creatinina ≤ 15 ml/min)"/>
+        </type>
+        <dosage>
+          <text value="Nos doentes com doença renal em estado terminal (depuração da creatinina ≤ 15 ml/min), a dose diária deve ser reduzida de 75%."/>
+        </dosage>
+      </dosage>
+      <dosage>
+        <type>
+          <text value="Compromisso renal médio a grave (depuração da creatinina 15-60 ml/min)"/>
+        </type>
+        <dosage>
+          <text value="Nos doentes com compromisso renal médio a grave (depuração da creatinina 15-60 ml/min), a dose deve ser reduzida de 50%."/>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Compromisso renal"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Compromisso hepático grave"/>
+        </type>
+        <dosage>
+          <text value="Nos doentes com compromisso hepático grave, a dose deve ser reduzida de 50%."/>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Compromisso hepático grave"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Opção de segunda linha: dose por peso corporal"/>
+        </type>
+        <dosage>
+          <text value="A dose recomendada é 0,1 a 0,15 mg/kg de peso corporal, repetida até três vezes ao dia por via oral. A dose máxima nas 24 horas é 0,5 mg/kg de peso corporal. A duração máxima do tratamento é de 5 dias."/>
+          <additionalInstruction>
+            <text value="A seringa doseadora oral fornecida é graduada em ml (considerar que 1 mg corresponde a 1 ml) e é de uso exclusivo desta solução; deve ser passada por água após cada utilização e não deve ser mantida mergulhada no frasco. Respeitar um intervalo mínimo de 6 horas entre duas administrações, mesmo no caso de vómitos ou rejeição da dose."/>
+          </additionalInstruction>
+          <timing>
+            <repeat>
+              <boundsRange>
+                <high>
+                  <value value="5"/>
+                  <unit value="day"/>
+                  <system value="http://unitsofmeasure.org"/>
+                  <code value="d"/>
+                </high>
+              </boundsRange>
+              <frequencyMax value="3"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseRange>
+              <low>
+                <value value="0.1"/>
+                <unit value="mg/kg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg/kg"/>
+              </low>
+              <high>
+                <value value="0.15"/>
+                <unit value="mg/kg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg/kg"/>
+              </high>
+            </doseRange>
+          </doseAndRate>
+          <maxDosePerPeriod>
+            <numerator>
+              <value value="0.5"/>
+              <unit value="mg/kg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg/kg"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+              <unit value="day"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="d"/>
+            </denominator>
+          </maxDosePerPeriod>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Doentes pediátricos com idades entre 1 a 18 anos"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose por toma"/>
+        </type>
+        <dosage>
+          <text value="1 mg por toma, até 3 vezes ao dia."/>
+          <timing>
+            <repeat>
+              <boundsRange>
+                <high>
+                  <value value="5"/>
+                  <unit value="day"/>
+                  <system value="http://unitsofmeasure.org"/>
+                  <code value="d"/>
+                </high>
+              </boundsRange>
+              <frequencyMax value="3"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="1"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </doseQuantity>
+          </doseAndRate>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="1-3 anos, 10-14 kg"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose por toma"/>
+        </type>
+        <dosage>
+          <text value="2 mg por toma, até 3 vezes ao dia."/>
+          <timing>
+            <repeat>
+              <boundsRange>
+                <high>
+                  <value value="5"/>
+                  <unit value="day"/>
+                  <system value="http://unitsofmeasure.org"/>
+                  <code value="d"/>
+                </high>
+              </boundsRange>
+              <frequencyMax value="3"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="2"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </doseQuantity>
+          </doseAndRate>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="3-5 anos, 15-19 kg"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose por toma"/>
+        </type>
+        <dosage>
+          <text value="2,5 mg por toma, até 3 vezes ao dia."/>
+          <timing>
+            <repeat>
+              <boundsRange>
+                <high>
+                  <value value="5"/>
+                  <unit value="day"/>
+                  <system value="http://unitsofmeasure.org"/>
+                  <code value="d"/>
+                </high>
+              </boundsRange>
+              <frequencyMax value="3"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="2.5"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </doseQuantity>
+          </doseAndRate>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="5-9 anos, 20-29 kg"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose por toma"/>
+        </type>
+        <dosage>
+          <text value="5 mg por toma, até 3 vezes ao dia."/>
+          <timing>
+            <repeat>
+              <boundsRange>
+                <high>
+                  <value value="5"/>
+                  <unit value="day"/>
+                  <system value="http://unitsofmeasure.org"/>
+                  <code value="d"/>
+                </high>
+              </boundsRange>
+              <frequencyMax value="3"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="5"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </doseQuantity>
+          </doseAndRate>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="9-18 anos, 30-60 kg"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose por toma"/>
+        </type>
+        <dosage>
+          <text value="10 mg por toma, até 3 vezes ao dia."/>
+          <timing>
+            <repeat>
+              <boundsRange>
+                <high>
+                  <value value="5"/>
+                  <unit value="day"/>
+                  <system value="http://unitsofmeasure.org"/>
+                  <code value="d"/>
+                </high>
+              </boundsRange>
+              <frequencyMax value="3"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="10"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </doseQuantity>
+          </doseAndRate>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="15-18 anos, acima de 60 kg"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+  </indicationGuideline>
+  <indicationGuideline>
+    <indication>
+      <concept>
+        <text value="Prevenção de náuseas e vómitos induzidos por radioterapia (NVIR)"/>
+      </concept>
+    </indication>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose única recomendada"/>
+        </type>
+        <dosage>
+          <text value="A dose única recomendada é 10 mg, repetida até 3 vezes ao dia. A dose diária máxima recomendada é 30 mg ou 0,5 mg/kg de peso corporal. A duração máxima do tratamento recomendada é 5 dias."/>
+          <additionalInstruction>
+            <text value="Respeitar um intervalo mínimo de 6 horas entre duas administrações, mesmo no caso de vómitos ou rejeição da dose."/>
+          </additionalInstruction>
+          <timing>
+            <repeat>
+              <boundsRange>
+                <high>
+                  <value value="5"/>
+                  <unit value="day"/>
+                  <system value="http://unitsofmeasure.org"/>
+                  <code value="d"/>
+                </high>
+              </boundsRange>
+              <frequencyMax value="3"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="10"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </doseQuantity>
+          </doseAndRate>
+          <maxDosePerPeriod>
+            <numerator>
+              <value value="30"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+              <unit value="day"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="d"/>
+            </denominator>
+          </maxDosePerPeriod>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Doentes adultos"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Redução da dose a considerar"/>
+        </type>
+        <dosage>
+          <text value="Nos doentes idosos deve considerar-se uma redução da dose, com base na função renal e hepática e debilidade geral."/>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Idosos"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Doença renal em estado terminal (depuração da creatinina ≤ 15 ml/min)"/>
+        </type>
+        <dosage>
+          <text value="Nos doentes com doença renal em estado terminal (depuração da creatinina ≤ 15 ml/min), a dose diária deve ser reduzida de 75%."/>
+        </dosage>
+      </dosage>
+      <dosage>
+        <type>
+          <text value="Compromisso renal médio a grave (depuração da creatinina 15-60 ml/min)"/>
+        </type>
+        <dosage>
+          <text value="Nos doentes com compromisso renal médio a grave (depuração da creatinina 15-60 ml/min), a dose deve ser reduzida de 50%."/>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Compromisso renal"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Compromisso hepático grave"/>
+        </type>
+        <dosage>
+          <text value="Nos doentes com compromisso hepático grave, a dose deve ser reduzida de 50%."/>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Compromisso hepático grave"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+  </indicationGuideline>
+  <indicationGuideline>
+    <indication>
+      <concept>
+        <text value="Tratamento sintomático de náuseas e vómitos, incluindo náuseas e vómitos induzidos por enxaqueca aguda"/>
+      </concept>
+    </indication>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose única recomendada"/>
+        </type>
+        <dosage>
+          <text value="A dose única recomendada é 10 mg, repetida até 3 vezes ao dia. A dose diária máxima recomendada é 30 mg ou 0,5 mg/kg de peso corporal. A duração máxima do tratamento recomendada é 5 dias."/>
+          <additionalInstruction>
+            <text value="Respeitar um intervalo mínimo de 6 horas entre duas administrações, mesmo no caso de vómitos ou rejeição da dose."/>
+          </additionalInstruction>
+          <timing>
+            <repeat>
+              <boundsRange>
+                <high>
+                  <value value="5"/>
+                  <unit value="day"/>
+                  <system value="http://unitsofmeasure.org"/>
+                  <code value="d"/>
+                </high>
+              </boundsRange>
+              <frequencyMax value="3"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="10"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </doseQuantity>
+          </doseAndRate>
+          <maxDosePerPeriod>
+            <numerator>
+              <value value="30"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+              <unit value="day"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="d"/>
+            </denominator>
+          </maxDosePerPeriod>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Doentes adultos"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Redução da dose a considerar"/>
+        </type>
+        <dosage>
+          <text value="Nos doentes idosos deve considerar-se uma redução da dose, com base na função renal e hepática e debilidade geral."/>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Idosos"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Doença renal em estado terminal (depuração da creatinina ≤ 15 ml/min)"/>
+        </type>
+        <dosage>
+          <text value="Nos doentes com doença renal em estado terminal (depuração da creatinina ≤ 15 ml/min), a dose diária deve ser reduzida de 75%."/>
+        </dosage>
+      </dosage>
+      <dosage>
+        <type>
+          <text value="Compromisso renal médio a grave (depuração da creatinina 15-60 ml/min)"/>
+        </type>
+        <dosage>
+          <text value="Nos doentes com compromisso renal médio a grave (depuração da creatinina 15-60 ml/min), a dose deve ser reduzida de 50%."/>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Compromisso renal"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Compromisso hepático grave"/>
+        </type>
+        <dosage>
+          <text value="Nos doentes com compromisso hepático grave, a dose deve ser reduzida de 50%."/>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Compromisso hepático grave"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+  </indicationGuideline>
+  <medicineClassification>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/medication-classification-type"/>
+        <code value="anatomical"/>
+      </coding>
+      <text value="Código ATC"/>
+    </type>
+    <classification>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ATC"/>
+        <code value="A03FA01"/>
+        <display value="Metoclopramida"/>
+      </coding>
+    </classification>
+  </medicineClassification>
+  <medicineClassification>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/medication-classification-type"/>
+        <code value="therapeutic"/>
+      </coding>
+      <text value="Grupo farmacoterapêutico"/>
+    </type>
+    <classification>
+      <text value="6.3.1 - Aparelho digestivo. Modificadores da motilidade gastrintestinal. Modificadores da motilidade gástrica ou procinético. 2.7 - Sistema nervoso central. Antieméticos e antivertiginosos"/>
+    </classification>
+  </medicineClassification>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Metgen1mgml-CUD-ind1"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Metgen1mgml-CUD-ind2"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Metgen1mgml-CUD-ind3"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Metgen1mgml-CUD-contra1"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Metgen1mgml-CUD-contra2"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Metgen1mgml-CUD-contra3"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Metgen1mgml-CUD-contra4"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Metgen1mgml-CUD-contra5"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Metgen1mgml-CUD-contra6"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Metgen1mgml-CUD-contra7"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Metgen1mgml-CUD-contra8"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Metgen1mgml-CUD-contra9"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Metgen1mgml-CUD-contra10"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Metgen1mgml-CUD-contra11"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Metgen1mgml-CUD-contra12"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Metgen1mgml-CUD-contra13"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Metgen1mgml-CUD-contra14"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Metgen1mgml-CUD-int1"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Metgen1mgml-CUD-int2"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Metgen1mgml-CUD-int3"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Metgen1mgml-CUD-int4"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Metgen1mgml-CUD-int5"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Metgen1mgml-CUD-int6"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Metgen1mgml-CUD-int7"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Metgen1mgml-CUD-int8"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Metgen1mgml-CUD-int9"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Metgen1mgml-CUD-int10"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Metgen1mgml-CUD-int11"/>
+  </clinicalUseIssue>
+  <definitional>
+    <doseForm>
+      <coding>
+        <system value="http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs"/>
+        <code value="4"/>
+        <display value="Solução oral"/>
+      </coding>
+    </doseForm>
+    <intendedRoute>
+      <coding>
+        <system value="http://example.com/fhir/example/CodeSystem/via-administracao-cs"/>
+        <code value="48"/>
+        <display value="Via oral"/>
+      </coding>
+    </intendedRoute>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Cloridrato de metoclopramida mono-hidratado"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="ACTI"/>
+        </coding>
+      </type>
+      <strengthQuantity>
+        <value value="1.05"/>
+        <unit value="mg/ml"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mg/mL"/>
+      </strengthQuantity>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Solução de sorbitol 70 %"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+      <strengthQuantity>
+        <value value="500"/>
+        <unit value="mg/ml"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mg/mL"/>
+      </strengthQuantity>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Metilparabeno"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+      <strengthQuantity>
+        <value value="1.42"/>
+        <unit value="mg/ml"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mg/mL"/>
+      </strengthQuantity>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Propilparabeno"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+      <strengthQuantity>
+        <value value="0.14"/>
+        <unit value="mg/ml"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mg/mL"/>
+      </strengthQuantity>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Ácido cítrico mono-hidratado"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Essência de framboesa"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Água purificada"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+    </ingredient>
+  </definitional>
+</MedicationKnowledge>

@@ -1,0 +1,36 @@
+{
+  "resourceType" : "ClinicalUseDefinition",
+  "id" : "Plavix75mg-CUD-int15",
+  "meta" : {
+    "profile" : ["http://example.com/fhir/example/StructureDefinition/InteracoesPDH"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ClinicalUseDefinition Plavix75mg-CUD-int15</b></p><a name=\"Plavix75mg-CUD-int15\"> </a><a name=\"hcPlavix75mg-CUD-int15\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-InteracoesPDH.html\">Perfil do recurso para interações de medicação</a></p></div><p><b>type</b>: Interaction</p><blockquote><p><b>interaction</b></p><h3>Interactants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Item[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct [PREENCHER]}\">Medicamentos substrato do CYP2C8 (por exemplo, repaglinida e paclitaxel)</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/interaction-type drug-drug}\">drug to drug interaction</span></p><h3>Effects</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">O clopidogrel aumentou a exposição à repaglinida por inibição do CYP2C8 pelo metabolito glucoronido; a coadministração deve ser tida em consideração com precaução devido ao risco de aumento das concentrações plasmáticas.</span></td></tr></table></blockquote></div>"
+  },
+  "type" : "interaction",
+  "interaction" : {
+    "interactant" : [{
+      "itemCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "[PREENCHER]",
+          "display" : "Substratos do CYP2C8"
+        }],
+        "text" : "Medicamentos substrato do CYP2C8 (por exemplo, repaglinida e paclitaxel)"
+      }
+    }],
+    "type" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/interaction-type",
+        "code" : "drug-drug",
+        "display" : "drug to drug interaction"
+      }]
+    },
+    "effect" : {
+      "concept" : {
+        "text" : "O clopidogrel aumentou a exposição à repaglinida por inibição do CYP2C8 pelo metabolito glucoronido; a coadministração deve ser tida em consideração com precaução devido ao risco de aumento das concentrações plasmáticas."
+      }
+    }
+  }
+}

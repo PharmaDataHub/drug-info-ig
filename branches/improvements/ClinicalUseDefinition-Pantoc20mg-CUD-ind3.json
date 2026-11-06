@@ -1,0 +1,24 @@
+{
+  "resourceType" : "ClinicalUseDefinition",
+  "id" : "Pantoc20mg-CUD-ind3",
+  "meta" : {
+    "profile" : ["http://example.com/fhir/example/StructureDefinition/IndicacoesPDH"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ClinicalUseDefinition Pantoc20mg-CUD-ind3</b></p><a name=\"Pantoc20mg-CUD-ind3\"> </a><a name=\"hcPantoc20mg-CUD-ind3\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-IndicacoesPDH.html\">Perfil do recurso para indicações de medicação</a></p></div><p><b>type</b>: Indication</p><blockquote><p><b>indication</b></p><h3>DiseaseSymptomProcedures</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct [PREENCHER]}\">Prevenção de úlceras gastroduodenais induzidas por medicamentos anti-inflamatórios não esteroides não seletivos (AINEs), em doentes em risco com necessidade de tratamento contínuo com anti-inflamatórios não esteroides</span></td></tr></table></blockquote></div>"
+  },
+  "type" : "indication",
+  "indication" : {
+    "diseaseSymptomProcedure" : {
+      "concept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "[PREENCHER]",
+          "display" : "Drug-induced gastroduodenal ulcer (disorder)"
+        }],
+        "text" : "Prevenção de úlceras gastroduodenais induzidas por medicamentos anti-inflamatórios não esteroides não seletivos (AINEs), em doentes em risco com necessidade de tratamento contínuo com anti-inflamatórios não esteroides"
+      }
+    }
+  }
+}

@@ -1,0 +1,467 @@
+{
+  "resourceType" : "MedicationKnowledge",
+  "id" : "GlimepiridaAurovitas-4mg-Comprimido",
+  "meta" : {
+    "profile" : ["http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationKnowledge GlimepiridaAurovitas-4mg-Comprimido</b></p><a name=\"GlimepiridaAurovitas-4mg-Comprimido\"> </a><a name=\"hcGlimepiridaAurovitas-4mg-Comprimido\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MedicationKnowledgePDH.html\">Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento</a></p></div><p><b>code</b>: <span title=\"Codes:{http://infarmed.pt/medicamentos/prod_id 599045}\">Glimepirida Aurovitas 4 mg [A10BB12]</span></p><p><b>name</b>: Glimepirida Aurovitas [glimepirida] 4 mg comprimido</p><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 44054006}\">Tratamento da diabetes mellitus tipo 2, quando a dieta, exercício físico e redução de peso por si só não são suficientes</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose inicial e de manutenção</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td><td><b>Timing</b></td></tr><tr><td style=\"display: none\">*</td><td>Dose inicial de 1 mg de glimepirida por dia. Se for alcançado um bom controlo, esta dose deve ser usada na terapêutica de manutenção.</td><td><span title=\"Codes:\">Tomar pouco antes ou durante um pequeno-almoço substancial ou, caso não seja tomado, pouco antes ou durante a primeira refeição principal. Se uma dose for esquecida, não deve ser corrigido aumentando a dose seguinte.</span></td><td>Once per 1 day</td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Titulação em caso de controlo insatisfatório</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td><td><b>Timing</b></td><td><b>MaxDosePerPeriod</b></td></tr><tr><td style=\"display: none\">*</td><td>Aumento gradual da posologia para 2 mg, 3 mg ou 4 mg de glimepirida por dia, com intervalos de cerca de 1 a 2 semanas entre cada aumento da dose. A dose máxima recomendada é de 6 mg de glimepirida por dia.</td><td><span title=\"Codes:\">Doses superiores a 4 mg de glimepirida por dia só dão melhores resultados em casos excecionais.</span></td><td>Once per 1 day</td><td>6 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Terapêutica concomitante com metformina</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td></tr><tr><td style=\"display: none\">*</td><td>Em doentes não controlados adequadamente com a dose diária máxima de metformina, mantendo a dose de metformina, a glimepirida é iniciada com uma dose baixa e aumentada por titulação, dependendo do nível desejado de controlo metabólico, até à dose diária máxima.</td><td><span title=\"Codes:\">A terapêutica de combinação deve ser iniciada sob estrita vigilância médica.</span></td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Terapêutica concomitante com insulina</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td></tr><tr><td style=\"display: none\">*</td><td>Em doentes não controlados adequadamente com a dose máxima diária de glimepirida, pode ser iniciada insulina, se necessário. Mantendo a mesma dose de glimepirida, a insulina é iniciada com uma dose baixa e aumentada por titulação em função do nível desejado de controlo metabólico.</td><td><span title=\"Codes:\">A terapêutica de combinação deve ser iniciada sob estrita vigilância médica.</span></td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Passagem de outros antidiabéticos orais</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td><td><b>Timing</b></td></tr><tr><td style=\"display: none\">*</td><td>A dose inicial recomendada é de 1 mg de glimepirida por dia; com base na resposta, a dose pode ser aumentada gradualmente, como indicado anteriormente.</td><td><span title=\"Codes:\">Deve ter-se em consideração a potência e a semivida da medicação anterior. Nalguns casos, especialmente em antidiabéticos com semivida longa (por exemplo, clorpropamida), é recomendado um período de wash out de alguns dias para minimizar o risco de reações hipoglicémicas devidas ao efeito aditivo.</span></td><td>Once per 1 day</td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Passagem de insulina</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td></tr><tr><td style=\"display: none\">*</td><td>Em casos excecionais de doentes diabéticos tipo 2 controlados com insulina, pode ser indicada a passagem para glimepirida.</td><td><span title=\"Codes:\">A passagem deve ser feita sob vigilância médica estreita.</span></td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Doses gerais (população não especificada na RCM)</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Uso não recomendado</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Os dados de segurança e eficácia disponíveis na população pediátrica são insuficientes, pelo que o seu uso não é recomendado. Não há dados disponíveis em doentes com menos de 8 anos de idade; para crianças dos 8 aos 17 anos há dados limitados do uso em monoterapia.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">População pediátrica</span></td></tr></table></blockquote></blockquote><blockquote><p><b>medicineClassification</b></p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/medication-classification-type anatomical}\">Código ATC</span></p><p><b>classification</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ATC A10BB12}\">Glimepirida</span></p></blockquote><blockquote><p><b>medicineClassification</b></p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/medication-classification-type therapeutic}\">Grupo farmacoterapêutico</span></p><p><b>classification</b>: <span title=\"Codes:\">8.4.2. Hormonas e medicamentos usados no tratamento das doenças endócrinas. Insulinas, antidiabéticos orais e glucagom. Sulfonilureias</span></p></blockquote><p><b>clinicalUseIssue</b>: </p><ul><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas4mg-CUD-ind1.html\">ClinicalUseDefinition: type = indication</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas4mg-CUD-contra1.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas4mg-CUD-contra2.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas4mg-CUD-contra3.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas4mg-CUD-contra4.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas4mg-CUD-contra5.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas4mg-CUD-contra6.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas4mg-CUD-contra7.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas4mg-CUD-contra8.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas4mg-CUD-contra9.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas4mg-CUD-int1.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas4mg-CUD-int2.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas4mg-CUD-int3.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas4mg-CUD-int4.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas4mg-CUD-int5.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas4mg-CUD-int6.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas4mg-CUD-int7.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas4mg-CUD-int8.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas4mg-CUD-int9.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas4mg-CUD-int10.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas4mg-CUD-int11.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas4mg-CUD-int12.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas4mg-CUD-int13.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas4mg-CUD-int14.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas4mg-CUD-int15.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas4mg-CUD-int16.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas4mg-CUD-int17.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas4mg-CUD-int18.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas4mg-CUD-int19.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas4mg-CUD-int20.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas4mg-CUD-int21.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas4mg-CUD-int22.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas4mg-CUD-int23.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas4mg-CUD-int24.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas4mg-CUD-int25.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas4mg-CUD-int26.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas4mg-CUD-int27.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas4mg-CUD-int28.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas4mg-CUD-int29.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas4mg-CUD-int30.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas4mg-CUD-int31.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas4mg-CUD-int32.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas4mg-CUD-int33.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-GlimepiridaAurovitas4mg-CUD-int34.html\">ClinicalUseDefinition: type = interaction</a></li></ul><blockquote><p><b>definitional</b></p><p><b>doseForm</b>: <span title=\"Codes:{http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs 271}\">Comprimido</span></p><p><b>intendedRoute</b>: <span title=\"Codes:{http://example.com/fhir/example/CodeSystem/via-administracao-cs 48}\">Via oral</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Glimepirida</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass ACTI}\">active ingredient</span></p><p><b>strength</b>: 4 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Lactose mono-hidratada</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p><p><b>strength</b>: 155.35 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Celulose microcristalina (PH-101)</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Povidona (K 25)</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Amidoglicolato de sódio (Tipo A)</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Estearato de magnésio</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Laca de alumínio índigo carmim (E 132)</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote></blockquote></div>"
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "http://infarmed.pt/medicamentos/prod_id",
+      "code" : "599045",
+      "display" : "Glimepirida Aurovitas 4 mg [A10BB12]"
+    }]
+  },
+  "name" : ["Glimepirida Aurovitas [glimepirida] 4 mg comprimido"],
+  "indicationGuideline" : [{
+    "indication" : [{
+      "concept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "44054006",
+          "display" : "Diabetes mellitus type 2"
+        }],
+        "text" : "Tratamento da diabetes mellitus tipo 2, quando a dieta, exercício físico e redução de peso por si só não são suficientes"
+      }
+    }],
+    "dosingGuideline" : [{
+      "dosage" : [{
+        "type" : {
+          "text" : "Dose inicial e de manutenção"
+        },
+        "dosage" : [{
+          "text" : "Dose inicial de 1 mg de glimepirida por dia. Se for alcançado um bom controlo, esta dose deve ser usada na terapêutica de manutenção.",
+          "additionalInstruction" : [{
+            "text" : "Tomar pouco antes ou durante um pequeno-almoço substancial ou, caso não seja tomado, pouco antes ou durante a primeira refeição principal. Se uma dose for esquecida, não deve ser corrigido aumentando a dose seguinte."
+          }],
+          "timing" : {
+            "repeat" : {
+              "frequency" : 1,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          }
+        }]
+      },
+      {
+        "type" : {
+          "text" : "Titulação em caso de controlo insatisfatório"
+        },
+        "dosage" : [{
+          "text" : "Aumento gradual da posologia para 2 mg, 3 mg ou 4 mg de glimepirida por dia, com intervalos de cerca de 1 a 2 semanas entre cada aumento da dose. A dose máxima recomendada é de 6 mg de glimepirida por dia.",
+          "additionalInstruction" : [{
+            "text" : "Doses superiores a 4 mg de glimepirida por dia só dão melhores resultados em casos excecionais."
+          }],
+          "timing" : {
+            "repeat" : {
+              "frequency" : 1,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          },
+          "maxDosePerPeriod" : [{
+            "numerator" : {
+              "value" : 6,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            },
+            "denominator" : {
+              "value" : 1,
+              "unit" : "day",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "d"
+            }
+          }]
+        }]
+      },
+      {
+        "type" : {
+          "text" : "Terapêutica concomitante com metformina"
+        },
+        "dosage" : [{
+          "text" : "Em doentes não controlados adequadamente com a dose diária máxima de metformina, mantendo a dose de metformina, a glimepirida é iniciada com uma dose baixa e aumentada por titulação, dependendo do nível desejado de controlo metabólico, até à dose diária máxima.",
+          "additionalInstruction" : [{
+            "text" : "A terapêutica de combinação deve ser iniciada sob estrita vigilância médica."
+          }]
+        }]
+      },
+      {
+        "type" : {
+          "text" : "Terapêutica concomitante com insulina"
+        },
+        "dosage" : [{
+          "text" : "Em doentes não controlados adequadamente com a dose máxima diária de glimepirida, pode ser iniciada insulina, se necessário. Mantendo a mesma dose de glimepirida, a insulina é iniciada com uma dose baixa e aumentada por titulação em função do nível desejado de controlo metabólico.",
+          "additionalInstruction" : [{
+            "text" : "A terapêutica de combinação deve ser iniciada sob estrita vigilância médica."
+          }]
+        }]
+      },
+      {
+        "type" : {
+          "text" : "Passagem de outros antidiabéticos orais"
+        },
+        "dosage" : [{
+          "text" : "A dose inicial recomendada é de 1 mg de glimepirida por dia; com base na resposta, a dose pode ser aumentada gradualmente, como indicado anteriormente.",
+          "additionalInstruction" : [{
+            "text" : "Deve ter-se em consideração a potência e a semivida da medicação anterior. Nalguns casos, especialmente em antidiabéticos com semivida longa (por exemplo, clorpropamida), é recomendado um período de wash out de alguns dias para minimizar o risco de reações hipoglicémicas devidas ao efeito aditivo."
+          }],
+          "timing" : {
+            "repeat" : {
+              "frequency" : 1,
+              "period" : 1,
+              "periodUnit" : "d"
+            }
+          }
+        }]
+      },
+      {
+        "type" : {
+          "text" : "Passagem de insulina"
+        },
+        "dosage" : [{
+          "text" : "Em casos excecionais de doentes diabéticos tipo 2 controlados com insulina, pode ser indicada a passagem para glimepirida.",
+          "additionalInstruction" : [{
+            "text" : "A passagem deve ser feita sob vigilância médica estreita."
+          }]
+        }]
+      }],
+      "patientCharacteristic" : [{
+        "type" : {
+          "text" : "Population"
+        },
+        "valueCodeableConcept" : {
+          "text" : "Doses gerais (população não especificada na RCM)"
+        }
+      }]
+    },
+    {
+      "dosage" : [{
+        "type" : {
+          "text" : "Uso não recomendado"
+        },
+        "dosage" : [{
+          "text" : "Os dados de segurança e eficácia disponíveis na população pediátrica são insuficientes, pelo que o seu uso não é recomendado. Não há dados disponíveis em doentes com menos de 8 anos de idade; para crianças dos 8 aos 17 anos há dados limitados do uso em monoterapia."
+        }]
+      }],
+      "patientCharacteristic" : [{
+        "type" : {
+          "text" : "Population"
+        },
+        "valueCodeableConcept" : {
+          "text" : "População pediátrica"
+        }
+      }]
+    }]
+  }],
+  "medicineClassification" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/medication-classification-type",
+        "code" : "anatomical"
+      }],
+      "text" : "Código ATC"
+    },
+    "classification" : [{
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ATC",
+        "code" : "A10BB12",
+        "display" : "Glimepirida"
+      }]
+    }]
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/medication-classification-type",
+        "code" : "therapeutic"
+      }],
+      "text" : "Grupo farmacoterapêutico"
+    },
+    "classification" : [{
+      "text" : "8.4.2. Hormonas e medicamentos usados no tratamento das doenças endócrinas. Insulinas, antidiabéticos orais e glucagom. Sulfonilureias"
+    }]
+  }],
+  "clinicalUseIssue" : [{
+    "reference" : "ClinicalUseDefinition/GlimepiridaAurovitas4mg-CUD-ind1"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/GlimepiridaAurovitas4mg-CUD-contra1"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/GlimepiridaAurovitas4mg-CUD-contra2"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/GlimepiridaAurovitas4mg-CUD-contra3"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/GlimepiridaAurovitas4mg-CUD-contra4"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/GlimepiridaAurovitas4mg-CUD-contra5"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/GlimepiridaAurovitas4mg-CUD-contra6"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/GlimepiridaAurovitas4mg-CUD-contra7"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/GlimepiridaAurovitas4mg-CUD-contra8"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/GlimepiridaAurovitas4mg-CUD-contra9"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/GlimepiridaAurovitas4mg-CUD-int1"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/GlimepiridaAurovitas4mg-CUD-int2"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/GlimepiridaAurovitas4mg-CUD-int3"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/GlimepiridaAurovitas4mg-CUD-int4"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/GlimepiridaAurovitas4mg-CUD-int5"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/GlimepiridaAurovitas4mg-CUD-int6"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/GlimepiridaAurovitas4mg-CUD-int7"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/GlimepiridaAurovitas4mg-CUD-int8"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/GlimepiridaAurovitas4mg-CUD-int9"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/GlimepiridaAurovitas4mg-CUD-int10"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/GlimepiridaAurovitas4mg-CUD-int11"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/GlimepiridaAurovitas4mg-CUD-int12"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/GlimepiridaAurovitas4mg-CUD-int13"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/GlimepiridaAurovitas4mg-CUD-int14"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/GlimepiridaAurovitas4mg-CUD-int15"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/GlimepiridaAurovitas4mg-CUD-int16"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/GlimepiridaAurovitas4mg-CUD-int17"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/GlimepiridaAurovitas4mg-CUD-int18"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/GlimepiridaAurovitas4mg-CUD-int19"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/GlimepiridaAurovitas4mg-CUD-int20"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/GlimepiridaAurovitas4mg-CUD-int21"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/GlimepiridaAurovitas4mg-CUD-int22"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/GlimepiridaAurovitas4mg-CUD-int23"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/GlimepiridaAurovitas4mg-CUD-int24"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/GlimepiridaAurovitas4mg-CUD-int25"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/GlimepiridaAurovitas4mg-CUD-int26"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/GlimepiridaAurovitas4mg-CUD-int27"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/GlimepiridaAurovitas4mg-CUD-int28"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/GlimepiridaAurovitas4mg-CUD-int29"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/GlimepiridaAurovitas4mg-CUD-int30"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/GlimepiridaAurovitas4mg-CUD-int31"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/GlimepiridaAurovitas4mg-CUD-int32"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/GlimepiridaAurovitas4mg-CUD-int33"
+  },
+  {
+    "reference" : "ClinicalUseDefinition/GlimepiridaAurovitas4mg-CUD-int34"
+  }],
+  "definitional" : {
+    "doseForm" : {
+      "coding" : [{
+        "system" : "http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs",
+        "code" : "271",
+        "display" : "Comprimido"
+      }]
+    },
+    "intendedRoute" : [{
+      "coding" : [{
+        "system" : "http://example.com/fhir/example/CodeSystem/via-administracao-cs",
+        "code" : "48",
+        "display" : "Via oral"
+      }]
+    }],
+    "ingredient" : [{
+      "item" : {
+        "concept" : {
+          "coding" : [{
+            "system" : "http://infarmed.pt/substancia",
+            "code" : "[PREENCHER]",
+            "display" : "Glimepirida"
+          }]
+        }
+      },
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+          "code" : "ACTI"
+        }]
+      },
+      "strengthQuantity" : {
+        "value" : 4,
+        "unit" : "mg",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mg"
+      }
+    },
+    {
+      "item" : {
+        "concept" : {
+          "coding" : [{
+            "system" : "http://infarmed.pt/substancia",
+            "code" : "[PREENCHER]",
+            "display" : "Lactose mono-hidratada"
+          }]
+        }
+      },
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+          "code" : "IACT"
+        }]
+      },
+      "strengthQuantity" : {
+        "value" : 155.35,
+        "unit" : "mg",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mg"
+      }
+    },
+    {
+      "item" : {
+        "concept" : {
+          "coding" : [{
+            "system" : "http://infarmed.pt/substancia",
+            "code" : "[PREENCHER]",
+            "display" : "Celulose microcristalina (PH-101)"
+          }]
+        }
+      },
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+          "code" : "IACT"
+        }]
+      }
+    },
+    {
+      "item" : {
+        "concept" : {
+          "coding" : [{
+            "system" : "http://infarmed.pt/substancia",
+            "code" : "[PREENCHER]",
+            "display" : "Povidona (K 25)"
+          }]
+        }
+      },
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+          "code" : "IACT"
+        }]
+      }
+    },
+    {
+      "item" : {
+        "concept" : {
+          "coding" : [{
+            "system" : "http://infarmed.pt/substancia",
+            "code" : "[PREENCHER]",
+            "display" : "Amidoglicolato de sódio (Tipo A)"
+          }]
+        }
+      },
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+          "code" : "IACT"
+        }]
+      }
+    },
+    {
+      "item" : {
+        "concept" : {
+          "coding" : [{
+            "system" : "http://infarmed.pt/substancia",
+            "code" : "[PREENCHER]",
+            "display" : "Estearato de magnésio"
+          }]
+        }
+      },
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+          "code" : "IACT"
+        }]
+      }
+    },
+    {
+      "item" : {
+        "concept" : {
+          "coding" : [{
+            "system" : "http://infarmed.pt/substancia",
+            "code" : "[PREENCHER]",
+            "display" : "Laca de alumínio índigo carmim (E 132)"
+          }]
+        }
+      },
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+          "code" : "IACT"
+        }]
+      }
+    }]
+  }
+}

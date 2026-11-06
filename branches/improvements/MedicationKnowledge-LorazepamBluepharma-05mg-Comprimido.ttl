@@ -1,0 +1,589 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/MedicationKnowledge/LorazepamBluepharma-05mg-Comprimido> a fhir:MedicationKnowledge ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "LorazepamBluepharma-05mg-Comprimido"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH"^^xsd:anyURI ;
+       fhir:link <http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationKnowledge LorazepamBluepharma-05mg-Comprimido</b></p><a name=\"LorazepamBluepharma-05mg-Comprimido\"> </a><a name=\"hcLorazepamBluepharma-05mg-Comprimido\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MedicationKnowledgePDH.html\">Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento</a></p></div><p><b>code</b>: <span title=\"Codes:{http://infarmed.pt/medicamentos/prod_id 672984}\">Lorazepam Bluepharma 0,5 mg [N05BA06]</span></p><p><b>name</b>: Lorazepam Bluepharma [lorazepam] 0,5 mg comprimido</p><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct [PREENCHER]}\">Tratamento sintomático de curta duração de ansiedade, tensão e agitação, perturbações do sono causadas por estas condições</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose diária dividida</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td><td><b>Timing</b></td><td><b>MaxDosePerPeriod</b></td></tr><tr><td style=\"display: none\">*</td><td>Dose diária geralmente de 0,5 a 2,5 mg de lorazepam, dividida em 2 a 3 doses individuais; pode ser aumentada até ao máximo de 7,5 mg por dia</td><td><span title=\"Codes:\">Aumento até ao máximo apenas tendo em consideração todas as advertências e precauções, em especial em contexto hospitalar</span></td><td>2-3 per 1 day</td><td>7.5 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose única noturna</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td><td><b>Timing</b></td><td><b>MaxDosePerPeriod</b></td></tr><tr><td style=\"display: none\">*</td><td>Dose diária geralmente de 0,5 a 2,5 mg de lorazepam numa única toma, à noite (cerca de meia hora antes do deitar se o foco forem perturbações do sono); pode ser aumentada até ao máximo de 7,5 mg por dia</td><td><span title=\"Codes:\">Aumento até ao máximo apenas tendo em consideração todas as advertências e precauções, em especial em contexto hospitalar</span></td><td>Night, Once per 1 day</td><td>7.5 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Doses gerais (população não especificada na RCM)</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose inicial reduzida</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>A dose inicial total diária deve ser reduzida para aproximadamente 50%; ajustar com base no efeito pretendido e na tolerância individual</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Doentes idosos ou debilitados</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose reduzida</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>MaxDosePerAdministration</b></td></tr><tr><td style=\"display: none\">*</td><td>A dose deve ser reduzida em conformidade em crianças, não devendo ser excedidas as doses únicas de 0,5 a 1 mg e 0,05 mg/kg de peso corporal</td><td>1 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Crianças e adolescentes</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Ajuste da dose</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>A dose deve ser cuidadosamente ajustada à resposta individual ao tratamento; os doentes com insuficiência ligeira a moderada podem necessitar de doses reduzidas</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Doentes com compromisso hepático</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Ajuste da dose</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Em geral, a dose de lorazepam não tem de ser ajustada em doentes com compromisso renal</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Doentes com compromisso renal</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct [PREENCHER]}\">Pré-medicação antes de intervenções de diagnóstico, bem como antes e após uma cirurgia</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Noite anterior à intervenção</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 1 a 2,5 mg de lorazepam na noite anterior à intervenção</p><p><b>additionalInstruction</b>: <span title=\"Codes:\">Pode ser utilizada e/ou em combinação com a dose antes da intervenção</span></p><p><b>timing</b>: Night, Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>1-2.5 mg</td></tr></table></blockquote></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Antes da intervenção</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 2 a 4 mg de lorazepam cerca de 1 a 2 horas antes da intervenção</p><p><b>additionalInstruction</b>: <span title=\"Codes:\">Cerca de 1 a 2 horas antes da intervenção; pode ser utilizada e/ou em combinação com a dose da noite anterior</span></p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>2-4 mg</td></tr></table></blockquote></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Pós-operatório</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 1 a 2,5 mg de lorazepam em intervalos adequados no pós-operatório</p><p><b>additionalInstruction</b>: <span title=\"Codes:\">No pós-operatório, em intervalos adequados</span></p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>1-2.5 mg</td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Doses gerais (população não especificada na RCM)</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose inicial reduzida</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>A dose inicial total diária deve ser reduzida para aproximadamente 50%; ajustar com base no efeito pretendido e na tolerância individual</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Doentes idosos ou debilitados</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Dose reduzida</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>MaxDosePerAdministration</b></td></tr><tr><td style=\"display: none\">*</td><td>A dose deve ser reduzida em conformidade em crianças, não devendo ser excedidas as doses únicas de 0,5 a 1 mg e 0,05 mg/kg de peso corporal</td><td>1 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Crianças e adolescentes</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Ajuste da dose</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>A dose deve ser cuidadosamente ajustada à resposta individual ao tratamento; os doentes com insuficiência ligeira a moderada podem necessitar de doses reduzidas</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Doentes com compromisso hepático</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title=\"Codes:\">Ajuste da dose</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Em geral, a dose de lorazepam não tem de ser ajustada em doentes com compromisso renal</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Population</span></td><td><span title=\"Codes:\">Doentes com compromisso renal</span></td></tr></table></blockquote></blockquote><blockquote><p><b>medicineClassification</b></p><p><b>type</b>: <span title=\"Codes:\">Código ATC</span></p><p><b>classification</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ATC N05BA06}\">lorazepam</span></p></blockquote><blockquote><p><b>medicineClassification</b></p><p><b>type</b>: <span title=\"Codes:\">Grupo farmacoterapêutico</span></p><p><b>classification</b>: <span title=\"Codes:\">2.9.1 - Ansiolíticos, sedativos e hipnóticos, derivados das benzodiazepinas</span></p></blockquote><p><b>clinicalUseIssue</b>: </p><ul><li><a href=\"ClinicalUseDefinition-LorazepamBluepharm-CUD-ind1.html\">ClinicalUseDefinition: type = indication</a></li><li><a href=\"ClinicalUseDefinition-LorazepamBluepharm-CUD-ind2.html\">ClinicalUseDefinition: type = indication</a></li><li><a href=\"ClinicalUseDefinition-LorazepamBluepharm-CUD-contra1.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-LorazepamBluepharm-CUD-contra2.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-LorazepamBluepharm-CUD-contra3.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-LorazepamBluepharm-CUD-contra4.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-LorazepamBluepharm-CUD-contra5.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-LorazepamBluepharm-CUD-contra6.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-LorazepamBluepharm-CUD-contra7.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-LorazepamBluepharm-CUD-contra8.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-LorazepamBluepharm-CUD-contra9.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-LorazepamBluepharm-CUD-contra10.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-LorazepamBluepharm-CUD-contra11.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-LorazepamBluepharm-CUD-contra12.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-LorazepamBluepharm-CUD-contra13.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-LorazepamBluepharm-CUD-contra14.html\">ClinicalUseDefinition: type = contraindication</a></li><li><a href=\"ClinicalUseDefinition-LorazepamBluepharm-CUD-int1.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-LorazepamBluepharm-CUD-int2.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-LorazepamBluepharm-CUD-int3.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-LorazepamBluepharm-CUD-int4.html\">ClinicalUseDefinition: type = interaction</a></li><li><a href=\"ClinicalUseDefinition-LorazepamBluepharm-CUD-int5.html\">ClinicalUseDefinition: type = interaction</a></li></ul><blockquote><p><b>definitional</b></p><p><b>doseForm</b>: <span title=\"Codes:{http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs 271}, {https://extranet.infarmed.pt/INFOMED-fo/detalhes-medicamento.xhtml 271}\">Comprimido</span></p><p><b>intendedRoute</b>: <span title=\"Codes:{http://example.com/fhir/example/CodeSystem/via-administracao-cs 48}\">Via oral</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia 7612}\">Lorazepam</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass ACTI}\">active ingredient</span></p><p><b>strength</b>: 0.5 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Lactose mono-hidratada</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p><p><b>strength</b>: 24 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Celulose microcristalina tipo 102</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Carboximetilamido sódico (tipo A)</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://infarmed.pt/substancia [PREENCHER]}\">Estearato de magnésio</span></td></tr></table><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}\">inactive ingredient</span></p></blockquote></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://infarmed.pt/medicamentos/prod_id"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "672984" ] ;
+       fhir:display [ fhir:v "Lorazepam Bluepharma 0,5 mg [N05BA06]" ]
+     ] )
+  ] ; # 
+  fhir:name ( [ fhir:v "Lorazepam Bluepharma [lorazepam] 0,5 mg comprimido"] ) ; # 
+  fhir:indicationGuideline ( [
+     fhir:indication ( [
+       fhir:concept [
+         fhir:coding ( [
+           a sct:[PREENCHER] ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "[PREENCHER]" ] ;
+           fhir:display [ fhir:v "Ansiedade/tensão/perturbações do sono" ]
+         ] ) ;
+         fhir:text [ fhir:v "Tratamento sintomático de curta duração de ansiedade, tensão e agitação, perturbações do sono causadas por estas condições" ]
+       ]
+     ] ) ;
+     fhir:dosingGuideline ( [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose diária dividida" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Dose diária geralmente de 0,5 a 2,5 mg de lorazepam, dividida em 2 a 3 doses individuais; pode ser aumentada até ao máximo de 7,5 mg por dia" ] ;
+           fhir:additionalInstruction ( [
+             fhir:text [ fhir:v "Aumento até ao máximo apenas tendo em consideração todas as advertências e precauções, em especial em contexto hospitalar" ]
+           ] ) ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:frequency [ fhir:v "2"^^xsd:positiveInteger ] ;
+               fhir:frequencyMax [ fhir:v "3"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ]
+             ]
+           ] ;
+           fhir:maxDosePerPeriod ( [
+             fhir:numerator [
+               fhir:value [ fhir:v 7.5 ] ;
+               fhir:unit [ fhir:v "mg" ] ;
+               fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "mg" ]
+             ] ;
+             fhir:denominator [
+               fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "day" ] ;
+               fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "d" ]
+             ]
+           ] )
+         ] )
+       ] [
+         fhir:type [
+           fhir:text [ fhir:v "Dose única noturna" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Dose diária geralmente de 0,5 a 2,5 mg de lorazepam numa única toma, à noite (cerca de meia hora antes do deitar se o foco forem perturbações do sono); pode ser aumentada até ao máximo de 7,5 mg por dia" ] ;
+           fhir:additionalInstruction ( [
+             fhir:text [ fhir:v "Aumento até ao máximo apenas tendo em consideração todas as advertências e precauções, em especial em contexto hospitalar" ]
+           ] ) ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ] ;
+               fhir:when ( [ fhir:v "NIGHT" ] )
+             ]
+           ] ;
+           fhir:maxDosePerPeriod ( [
+             fhir:numerator [
+               fhir:value [ fhir:v 7.5 ] ;
+               fhir:unit [ fhir:v "mg" ] ;
+               fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "mg" ]
+             ] ;
+             fhir:denominator [
+               fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:unit [ fhir:v "day" ] ;
+               fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "d" ]
+             ]
+           ] )
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Doses gerais (população não especificada na RCM)" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose inicial reduzida" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "A dose inicial total diária deve ser reduzida para aproximadamente 50%; ajustar com base no efeito pretendido e na tolerância individual" ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Doentes idosos ou debilitados" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose reduzida" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "A dose deve ser reduzida em conformidade em crianças, não devendo ser excedidas as doses únicas de 0,5 a 1 mg e 0,05 mg/kg de peso corporal" ] ;
+           fhir:maxDosePerAdministration [
+             fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "mg" ] ;
+             fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "mg" ]
+           ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Crianças e adolescentes" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Ajuste da dose" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "A dose deve ser cuidadosamente ajustada à resposta individual ao tratamento; os doentes com insuficiência ligeira a moderada podem necessitar de doses reduzidas" ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Doentes com compromisso hepático" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Ajuste da dose" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Em geral, a dose de lorazepam não tem de ser ajustada em doentes com compromisso renal" ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Doentes com compromisso renal" ]
+         ]
+       ] )
+     ] )
+  ] [
+     fhir:indication ( [
+       fhir:concept [
+         fhir:coding ( [
+           a sct:[PREENCHER] ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "[PREENCHER]" ] ;
+           fhir:display [ fhir:v "Pré-medicação" ]
+         ] ) ;
+         fhir:text [ fhir:v "Pré-medicação antes de intervenções de diagnóstico, bem como antes e após uma cirurgia" ]
+       ]
+     ] ) ;
+     fhir:dosingGuideline ( [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Noite anterior à intervenção" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "1 a 2,5 mg de lorazepam na noite anterior à intervenção" ] ;
+           fhir:additionalInstruction ( [
+             fhir:text [ fhir:v "Pode ser utilizada e/ou em combinação com a dose antes da intervenção" ]
+           ] ) ;
+           fhir:timing [
+             fhir:repeat [
+               fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+               fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+               fhir:periodUnit [ fhir:v "d" ] ;
+               fhir:when ( [ fhir:v "NIGHT" ] )
+             ]
+           ] ;
+           fhir:doseAndRate ( [
+             fhir:dose [
+               a fhir:Range ;
+               fhir:low [
+                 fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+                 fhir:unit [ fhir:v "mg" ] ;
+                 fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+                 fhir:code [ fhir:v "mg" ]
+               ] ;
+               fhir:high [
+                 fhir:value [ fhir:v 2.5 ] ;
+                 fhir:unit [ fhir:v "mg" ] ;
+                 fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+                 fhir:code [ fhir:v "mg" ]
+               ]
+             ]
+           ] )
+         ] )
+       ] [
+         fhir:type [
+           fhir:text [ fhir:v "Antes da intervenção" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "2 a 4 mg de lorazepam cerca de 1 a 2 horas antes da intervenção" ] ;
+           fhir:additionalInstruction ( [
+             fhir:text [ fhir:v "Cerca de 1 a 2 horas antes da intervenção; pode ser utilizada e/ou em combinação com a dose da noite anterior" ]
+           ] ) ;
+           fhir:doseAndRate ( [
+             fhir:dose [
+               a fhir:Range ;
+               fhir:low [
+                 fhir:value [ fhir:v "2"^^xsd:decimal ] ;
+                 fhir:unit [ fhir:v "mg" ] ;
+                 fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+                 fhir:code [ fhir:v "mg" ]
+               ] ;
+               fhir:high [
+                 fhir:value [ fhir:v "4"^^xsd:decimal ] ;
+                 fhir:unit [ fhir:v "mg" ] ;
+                 fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+                 fhir:code [ fhir:v "mg" ]
+               ]
+             ]
+           ] )
+         ] )
+       ] [
+         fhir:type [
+           fhir:text [ fhir:v "Pós-operatório" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "1 a 2,5 mg de lorazepam em intervalos adequados no pós-operatório" ] ;
+           fhir:additionalInstruction ( [
+             fhir:text [ fhir:v "No pós-operatório, em intervalos adequados" ]
+           ] ) ;
+           fhir:doseAndRate ( [
+             fhir:dose [
+               a fhir:Range ;
+               fhir:low [
+                 fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+                 fhir:unit [ fhir:v "mg" ] ;
+                 fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+                 fhir:code [ fhir:v "mg" ]
+               ] ;
+               fhir:high [
+                 fhir:value [ fhir:v 2.5 ] ;
+                 fhir:unit [ fhir:v "mg" ] ;
+                 fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+                 fhir:code [ fhir:v "mg" ]
+               ]
+             ]
+           ] )
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Doses gerais (população não especificada na RCM)" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose inicial reduzida" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "A dose inicial total diária deve ser reduzida para aproximadamente 50%; ajustar com base no efeito pretendido e na tolerância individual" ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Doentes idosos ou debilitados" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Dose reduzida" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "A dose deve ser reduzida em conformidade em crianças, não devendo ser excedidas as doses únicas de 0,5 a 1 mg e 0,05 mg/kg de peso corporal" ] ;
+           fhir:maxDosePerAdministration [
+             fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "mg" ] ;
+             fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "mg" ]
+           ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Crianças e adolescentes" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Ajuste da dose" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "A dose deve ser cuidadosamente ajustada à resposta individual ao tratamento; os doentes com insuficiência ligeira a moderada podem necessitar de doses reduzidas" ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Doentes com compromisso hepático" ]
+         ]
+       ] )
+     ] [
+       fhir:dosage ( [
+         fhir:type [
+           fhir:text [ fhir:v "Ajuste da dose" ]
+         ] ;
+         fhir:dosage ( [
+           fhir:text [ fhir:v "Em geral, a dose de lorazepam não tem de ser ajustada em doentes com compromisso renal" ]
+         ] )
+       ] ) ;
+       fhir:patientCharacteristic ( [
+         fhir:type [
+           fhir:text [ fhir:v "Population" ]
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Doentes com compromisso renal" ]
+         ]
+       ] )
+     ] )
+  ] ) ; # 
+  fhir:medicineClassification ( [
+     fhir:type [
+       fhir:text [ fhir:v "Código ATC" ]
+     ] ;
+     fhir:classification ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ATC"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "N05BA06" ] ;
+         fhir:display [ fhir:v "lorazepam" ]
+       ] )
+     ] )
+  ] [
+     fhir:type [
+       fhir:text [ fhir:v "Grupo farmacoterapêutico" ]
+     ] ;
+     fhir:classification ( [
+       fhir:text [ fhir:v "2.9.1 - Ansiolíticos, sedativos e hipnóticos, derivados das benzodiazepinas" ]
+     ] )
+  ] ) ; # 
+  fhir:clinicalUseIssue ( [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/LorazepamBluepharm-CUD-ind1> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/LorazepamBluepharm-CUD-ind1" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/LorazepamBluepharm-CUD-ind2> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/LorazepamBluepharm-CUD-ind2" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/LorazepamBluepharm-CUD-contra1> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/LorazepamBluepharm-CUD-contra1" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/LorazepamBluepharm-CUD-contra2> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/LorazepamBluepharm-CUD-contra2" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/LorazepamBluepharm-CUD-contra3> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/LorazepamBluepharm-CUD-contra3" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/LorazepamBluepharm-CUD-contra4> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/LorazepamBluepharm-CUD-contra4" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/LorazepamBluepharm-CUD-contra5> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/LorazepamBluepharm-CUD-contra5" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/LorazepamBluepharm-CUD-contra6> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/LorazepamBluepharm-CUD-contra6" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/LorazepamBluepharm-CUD-contra7> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/LorazepamBluepharm-CUD-contra7" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/LorazepamBluepharm-CUD-contra8> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/LorazepamBluepharm-CUD-contra8" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/LorazepamBluepharm-CUD-contra9> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/LorazepamBluepharm-CUD-contra9" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/LorazepamBluepharm-CUD-contra10> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/LorazepamBluepharm-CUD-contra10" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/LorazepamBluepharm-CUD-contra11> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/LorazepamBluepharm-CUD-contra11" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/LorazepamBluepharm-CUD-contra12> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/LorazepamBluepharm-CUD-contra12" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/LorazepamBluepharm-CUD-contra13> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/LorazepamBluepharm-CUD-contra13" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/LorazepamBluepharm-CUD-contra14> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/LorazepamBluepharm-CUD-contra14" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/LorazepamBluepharm-CUD-int1> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/LorazepamBluepharm-CUD-int1" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/LorazepamBluepharm-CUD-int2> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/LorazepamBluepharm-CUD-int2" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/LorazepamBluepharm-CUD-int3> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/LorazepamBluepharm-CUD-int3" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/LorazepamBluepharm-CUD-int4> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/LorazepamBluepharm-CUD-int4" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ClinicalUseDefinition/LorazepamBluepharm-CUD-int5> ;
+     fhir:reference [ fhir:v "ClinicalUseDefinition/LorazepamBluepharm-CUD-int5" ]
+  ] ) ; # 
+  fhir:definitional [
+     fhir:doseForm [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "271" ] ;
+         fhir:display [ fhir:v "Comprimido" ]
+       ] [
+         fhir:system [ fhir:v "https://extranet.infarmed.pt/INFOMED-fo/detalhes-medicamento.xhtml"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "271" ] ;
+         fhir:display [ fhir:v "Comprimido" ]
+       ] )
+     ] ;
+     fhir:intendedRoute ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://example.com/fhir/example/CodeSystem/via-administracao-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "48" ] ;
+         fhir:display [ fhir:v "Via oral" ]
+       ] )
+     ] ) ;
+     fhir:ingredient ( [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "7612" ] ;
+             fhir:display [ fhir:v "Lorazepam" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "ACTI" ]
+         ] )
+       ] ;
+       fhir:strength [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v 0.5 ] ;
+         fhir:unit [ fhir:v "mg" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mg" ]
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Lactose mono-hidratada" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ] ;
+       fhir:strength [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "24"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "mg" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mg" ]
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Celulose microcristalina tipo 102" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Carboximetilamido sódico (tipo A)" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://infarmed.pt/substancia"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "[PREENCHER]" ] ;
+             fhir:display [ fhir:v "Estearato de magnésio" ]
+           ] )
+         ]
+       ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IACT" ]
+         ] )
+       ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

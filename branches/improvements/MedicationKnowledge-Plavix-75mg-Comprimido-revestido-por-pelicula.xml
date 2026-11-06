@@ -1,0 +1,906 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationKnowledge xmlns="http://hl7.org/fhir">
+  <id value="Plavix-75mg-Comprimido-revestido-por-pelicula"/>
+  <meta>
+    <profile value="http://example.com/fhir/example/StructureDefinition/MedicationKnowledgePDH"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: MedicationKnowledge Plavix-75mg-Comprimido-revestido-por-pelicula</b></p><a name="Plavix-75mg-Comprimido-revestido-por-pelicula"> </a><a name="hcPlavix-75mg-Comprimido-revestido-por-pelicula"> </a><div style="display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-MedicationKnowledgePDH.html">Perfil do recurso MedicationKnowledge - Recurso base informações de medicamento</a></p></div><p><b>code</b>: <span title="Codes:{http://infarmed.pt/medicamentos/prod_id 6948}">Plavix 75 mg [B01AC04]</span></p><p><b>name</b>: Plavix [clopidogrel] 75 mg comprimido revestido por película</p><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Prevenção secundária de acidentes aterotrombóticos em doentes adultos com enfarte de miocárdio, acidente vascular cerebral isquémico ou doença arterial periférica estabelecida</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Toma única diária</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: O clopidogrel deve ser administrado sob a forma de uma toma única diária de 75 mg.</p><p><b>additionalInstruction</b>: <span title="Codes:">Pode ser administrado com ou sem alimentos. Se não for tomada uma dose: até 12 horas após a última toma, tomar de imediato e tomar a dose seguinte no horário normal; por mais de 12 horas, tomar a dose seguinte no horário habitual e não tomar a dose a dobrar.</span></p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>75 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Adultos e idosos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Uso não recomendado</span></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td></tr><tr><td style="display: none">*</td><td>O clopidogrel não deve ser utilizado em crianças por motivos de eficácia.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">População pediátrica</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Síndrome coronária aguda sem elevação do segmento ST (angina instável ou enfarte de miocárdio sem onda Q), incluindo doentes em processo de colocação de um stent após intervenção coronária percutânea, em associação com ácido acetilsalicílico (AAS)</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose de carga</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: A terapêutica deve ser iniciada com uma dose de carga de 300 mg ou de 600 mg em toma única.</p><p><b>additionalInstruction</b>: <span title="Codes:">Uma dose de carga de 600 mg pode ser considerada em doentes &lt;75 anos de idade quando se pretende realizar uma intervenção coronária percutânea.</span></p><p><b>timing</b>: Count 1  times, Once</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>300-600 mg</td></tr></table></blockquote></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Manutenção</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: O tratamento com clopidogrel deve continuar com 75 mg uma vez por dia (com ácido acetilsalicílico, AAS, 75 mg - 325 mg por dia). O uso é justificado até 12 meses, observando-se o benefício máximo aos 3 meses.</p><p><b>additionalInstruction</b>: <span title="Codes:">Dado que doses mais elevadas de ácido acetilsalicílico estão associadas a um maior risco hemorrágico, recomenda-se que a dose de ácido acetilsalicílico não seja superior a 100 mg. A duração ótima do tratamento não foi formalmente estabelecida.</span>, <span title="Codes:">Se não for tomada uma dose: até 12 horas após a última toma, tomar de imediato e tomar a dose seguinte no horário normal; por mais de 12 horas, tomar a dose seguinte no horário habitual e não tomar a dose a dobrar.</span></p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>75 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Adultos e idosos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose de carga de 600 mg</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Uma dose de carga de 600 mg pode ser considerada em doentes com &lt;75 anos de idade, quando se pretende uma intervenção coronária percutânea.</p><p><b>timing</b>: Count 1  times, Once</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>600 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Doentes idosos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Uso não recomendado</span></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td></tr><tr><td style="display: none">*</td><td>O clopidogrel não deve ser utilizado em crianças por motivos de eficácia.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">População pediátrica</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Enfarte agudo do miocárdio com elevação do segmento ST, em associação com ácido acetilsalicílico (AAS), em doentes submetidos a intervenção coronária percutânea (incluindo colocação de stent) ou em doentes sujeitos a tratamento médico indicados para terapêutica trombolítica/fibrinolítica</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Tratamento médico (terapêutica trombolítica/fibrinolítica): dose de carga</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Para doentes sujeitos a tratamento médico, indicados para terapêutica trombolítica/fibrinolítica, o clopidogrel deve ser iniciado com uma dose de carga de 300 mg.</p><p><b>timing</b>: Count 1  times, Once</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>300 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Tratamento médico (terapêutica trombolítica/fibrinolítica): manutenção</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Seguida de dose única diária de 75 mg de clopidogrel em associação com o ácido acetilsalicílico (AAS) e com ou sem trombolíticos, durante pelo menos quatro semanas.</p><p><b>additionalInstruction</b>: <span title="Codes:">A terapêutica em associação deve ser iniciada o mais cedo possível, após o início dos sintomas. O benefício da associação do clopidogrel com o ácido acetilsalicílico além das 4 semanas não foi estudado neste contexto.</span>, <span title="Codes:">Se não for tomada uma dose: até 12 horas após a última toma, tomar de imediato e tomar a dose seguinte no horário normal; por mais de 12 horas, tomar a dose seguinte no horário habitual e não tomar a dose a dobrar.</span></p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>75 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">ICP primária ou ICP mais de 24 horas após terapêutica fibrinolítica: dose de carga</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: O clopidogrel deve ser iniciado com uma dose de carga de 600 mg em doentes submetidos a ICP primária e em doentes submetidos a ICP mais de 24 horas após receberem terapêutica fibrinolítica.</p><p><b>timing</b>: Count 1  times, Once</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>600 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">ICP até 24 horas após terapêutica fibrinolítica: dose de carga</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: A dose de carga de 300 mg de clopidogrel deve ser administrada em doentes submetidos a ICP até 24 horas após terem recebido terapêutica fibrinolítica.</p><p><b>timing</b>: Count 1  times, Once</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>300 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">ICP: manutenção</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: O tratamento com clopidogrel deve ser continuado com 75 mg, uma vez ao dia, em associação com 75 mg - 100 mg de AAS diariamente, continuado até 12 meses.</p><p><b>additionalInstruction</b>: <span title="Codes:">A terapêutica combinada deve ser iniciada o mais cedo possível após o início dos sintomas.</span>, <span title="Codes:">Se não for tomada uma dose: até 12 horas após a última toma, tomar de imediato e tomar a dose seguinte no horário normal; por mais de 12 horas, tomar a dose seguinte no horário habitual e não tomar a dose a dobrar.</span></p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>75 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Adultos e idosos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Tratamento médico (terapêutica trombolítica/fibrinolítica)</span></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td></tr><tr><td style="display: none">*</td><td>Em doentes com mais de 75 anos de idade, o clopidogrel deve ser iniciado sem dose de carga.</td></tr></table></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">ICP primária ou ICP mais de 24 horas após terapêutica fibrinolítica</span></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td></tr><tr><td style="display: none">*</td><td>Em doentes &gt;75 anos de idade, a dose de carga de 600 mg deve ser administrada com precaução.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Doentes idosos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Uso não recomendado</span></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td></tr><tr><td style="display: none">*</td><td>O clopidogrel não deve ser utilizado em crianças por motivos de eficácia.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">População pediátrica</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Em combinação com AAS, em doentes adultos com risco moderado a elevado de AIT (pontuação IPCD2 ≥ 4) ou AVC isquémico minor (NIHSS ≤ 3) até 24 horas após um AIT ou AVC isquémico</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose de carga</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Deve ser dada uma dose de carga de 300 mg de clopidogrel. O tratamento deve ser iniciado até 24 horas após o acontecimento.</p><p><b>timing</b>: Count 1  times, Once</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>300 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Manutenção em associação com AAS</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Seguida de 75 mg de clopidogrel uma vez por dia e AAS (75 mg - 100 mg uma vez por dia), continuado por 21 dias seguindo-se terapia anti-plaquetária única.</p><p><b>additionalInstruction</b>: <span title="Codes:">Se não for tomada uma dose: até 12 horas após a última toma, tomar de imediato e tomar a dose seguinte no horário normal; por mais de 12 horas, tomar a dose seguinte no horário habitual e não tomar a dose a dobrar.</span></p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>75 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Adultos e idosos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Uso não recomendado</span></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td></tr><tr><td style="display: none">*</td><td>O clopidogrel não deve ser utilizado em crianças por motivos de eficácia.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">População pediátrica</span></td></tr></table></blockquote></blockquote><blockquote><p><b>indicationGuideline</b></p><h3>Indications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Prevenção de acidentes aterotrombóticos e tromboembólicos, incluindo acidente vascular cerebral, em doentes adultos com fibrilhação auricular que têm pelo menos um fator de risco para acidentes vasculares, que não podem receber antagonistas da vitamina K e que têm um baixo risco hemorrágico, em combinação com AAS</span></td></tr></table><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Dose única diária</span></p><blockquote><p><b>dosage</b></p><p><b>text</b>: O clopidogrel deve ser administrado numa dose única diária de 75 mg.</p><p><b>additionalInstruction</b>: <span title="Codes:">O AAS (75-100 mg diários) deve ser iniciado e continuado em combinação com clopidogrel.</span>, <span title="Codes:">Se não for tomada uma dose: até 12 horas após a última toma, tomar de imediato e tomar a dose seguinte no horário normal; por mais de 12 horas, tomar a dose seguinte no horário habitual e não tomar a dose a dobrar.</span></p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>75 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">Adultos e idosos</span></td></tr></table></blockquote><blockquote><p><b>dosingGuideline</b></p><blockquote><p><b>dosage</b></p><p><b>type</b>: <span title="Codes:">Uso não recomendado</span></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td></tr><tr><td style="display: none">*</td><td>O clopidogrel não deve ser utilizado em crianças por motivos de eficácia.</td></tr></table></blockquote><h3>PatientCharacteristics</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Population</span></td><td><span title="Codes:">População pediátrica</span></td></tr></table></blockquote></blockquote><blockquote><p><b>medicineClassification</b></p><p><b>type</b>: <span title="Codes:{http://hl7.org/fhir/medication-classification-type anatomical}">Código ATC</span></p><p><b>classification</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ATC B01AC04}">Clopidogrel</span></p></blockquote><blockquote><p><b>medicineClassification</b></p><p><b>type</b>: <span title="Codes:{http://hl7.org/fhir/medication-classification-type therapeutic}">Grupo farmacoterapêutico</span></p><p><b>classification</b>: <span title="Codes:">Antiagregantes plaquetários excluindo heparina</span></p></blockquote><p><b>clinicalUseIssue</b>: </p><ul><li><a href="ClinicalUseDefinition-Plavix75mg-CUD-ind1.html">ClinicalUseDefinition: type = indication</a></li><li><a href="ClinicalUseDefinition-Plavix75mg-CUD-ind2.html">ClinicalUseDefinition: type = indication</a></li><li><a href="ClinicalUseDefinition-Plavix75mg-CUD-ind3.html">ClinicalUseDefinition: type = indication</a></li><li><a href="ClinicalUseDefinition-Plavix75mg-CUD-ind4.html">ClinicalUseDefinition: type = indication</a></li><li><a href="ClinicalUseDefinition-Plavix75mg-CUD-ind5.html">ClinicalUseDefinition: type = indication</a></li><li><a href="ClinicalUseDefinition-Plavix75mg-CUD-contra1.html">ClinicalUseDefinition: type = contraindication</a></li><li><a href="ClinicalUseDefinition-Plavix75mg-CUD-contra2.html">ClinicalUseDefinition: type = contraindication</a></li><li><a href="ClinicalUseDefinition-Plavix75mg-CUD-contra3.html">ClinicalUseDefinition: type = contraindication</a></li><li><a href="ClinicalUseDefinition-Plavix75mg-CUD-contra4.html">ClinicalUseDefinition: type = contraindication</a></li><li><a href="ClinicalUseDefinition-Plavix75mg-CUD-int1.html">ClinicalUseDefinition: type = interaction</a></li><li><a href="ClinicalUseDefinition-Plavix75mg-CUD-int2.html">ClinicalUseDefinition: type = interaction</a></li><li><a href="ClinicalUseDefinition-Plavix75mg-CUD-int3.html">ClinicalUseDefinition: type = interaction</a></li><li><a href="ClinicalUseDefinition-Plavix75mg-CUD-int4.html">ClinicalUseDefinition: type = interaction</a></li><li><a href="ClinicalUseDefinition-Plavix75mg-CUD-int5.html">ClinicalUseDefinition: type = interaction</a></li><li><a href="ClinicalUseDefinition-Plavix75mg-CUD-int6.html">ClinicalUseDefinition: type = interaction</a></li><li><a href="ClinicalUseDefinition-Plavix75mg-CUD-int7.html">ClinicalUseDefinition: type = interaction</a></li><li><a href="ClinicalUseDefinition-Plavix75mg-CUD-int8.html">ClinicalUseDefinition: type = interaction</a></li><li><a href="ClinicalUseDefinition-Plavix75mg-CUD-int9.html">ClinicalUseDefinition: type = interaction</a></li><li><a href="ClinicalUseDefinition-Plavix75mg-CUD-int10.html">ClinicalUseDefinition: type = interaction</a></li><li><a href="ClinicalUseDefinition-Plavix75mg-CUD-int11.html">ClinicalUseDefinition: type = interaction</a></li><li><a href="ClinicalUseDefinition-Plavix75mg-CUD-int12.html">ClinicalUseDefinition: type = interaction</a></li><li><a href="ClinicalUseDefinition-Plavix75mg-CUD-int13.html">ClinicalUseDefinition: type = interaction</a></li><li><a href="ClinicalUseDefinition-Plavix75mg-CUD-int14.html">ClinicalUseDefinition: type = interaction</a></li><li><a href="ClinicalUseDefinition-Plavix75mg-CUD-int15.html">ClinicalUseDefinition: type = interaction</a></li><li><a href="ClinicalUseDefinition-Plavix75mg-CUD-int16.html">ClinicalUseDefinition: type = interaction</a></li></ul><blockquote><p><b>definitional</b></p><p><b>doseForm</b>: <span title="Codes:{http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs 39}">Comprimido revestido por película</span></p><p><b>intendedRoute</b>: <span title="Codes:{http://example.com/fhir/example/CodeSystem/via-administracao-cs 48}">Via oral</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Clopidogrel</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass ACTI}">active ingredient</span></p><p><b>strength</b>: 75 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Lactose mono-hidratada</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p><p><b>strength</b>: 3 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Óleo de rícino hidrogenado</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p><p><b>strength</b>: 3.3 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Manitol (E421)</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Macrogol 6 000</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Celulose microcristalina</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Hidroxipropilcelulose pouco substituída</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Hipromelose (E464)</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Triacetina (E1518)</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Dióxido de titânio (E171)</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Óxido de ferro vermelho (E172)</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://infarmed.pt/substancia [PREENCHER]}">Cera de carnaúba</span></td></tr></table><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleClass IACT}">inactive ingredient</span></p></blockquote></blockquote></div>
+  </text>
+  <code>
+    <coding>
+      <system value="http://infarmed.pt/medicamentos/prod_id"/>
+      <code value="6948"/>
+      <display value="Plavix 75 mg [B01AC04]"/>
+    </coding>
+  </code>
+  <name value="Plavix [clopidogrel] 75 mg comprimido revestido por película"/>
+  <indicationGuideline>
+    <indication>
+      <concept>
+        <text value="Prevenção secundária de acidentes aterotrombóticos em doentes adultos com enfarte de miocárdio, acidente vascular cerebral isquémico ou doença arterial periférica estabelecida"/>
+      </concept>
+    </indication>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Toma única diária"/>
+        </type>
+        <dosage>
+          <text value="O clopidogrel deve ser administrado sob a forma de uma toma única diária de 75 mg."/>
+          <additionalInstruction>
+            <text value="Pode ser administrado com ou sem alimentos. Se não for tomada uma dose: até 12 horas após a última toma, tomar de imediato e tomar a dose seguinte no horário normal; por mais de 12 horas, tomar a dose seguinte no horário habitual e não tomar a dose a dobrar."/>
+          </additionalInstruction>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="75"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </doseQuantity>
+          </doseAndRate>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Adultos e idosos"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Uso não recomendado"/>
+        </type>
+        <dosage>
+          <text value="O clopidogrel não deve ser utilizado em crianças por motivos de eficácia."/>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="População pediátrica"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+  </indicationGuideline>
+  <indicationGuideline>
+    <indication>
+      <concept>
+        <text value="Síndrome coronária aguda sem elevação do segmento ST (angina instável ou enfarte de miocárdio sem onda Q), incluindo doentes em processo de colocação de um stent após intervenção coronária percutânea, em associação com ácido acetilsalicílico (AAS)"/>
+      </concept>
+    </indication>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose de carga"/>
+        </type>
+        <dosage>
+          <text value="A terapêutica deve ser iniciada com uma dose de carga de 300 mg ou de 600 mg em toma única."/>
+          <additionalInstruction>
+            <text value="Uma dose de carga de 600 mg pode ser considerada em doentes &lt;75 anos de idade quando se pretende realizar uma intervenção coronária percutânea."/>
+          </additionalInstruction>
+          <timing>
+            <repeat>
+              <count value="1"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseRange>
+              <low>
+                <value value="300"/>
+                <unit value="mg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg"/>
+              </low>
+              <high>
+                <value value="600"/>
+                <unit value="mg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg"/>
+              </high>
+            </doseRange>
+          </doseAndRate>
+        </dosage>
+      </dosage>
+      <dosage>
+        <type>
+          <text value="Manutenção"/>
+        </type>
+        <dosage>
+          <text value="O tratamento com clopidogrel deve continuar com 75 mg uma vez por dia (com ácido acetilsalicílico, AAS, 75 mg - 325 mg por dia). O uso é justificado até 12 meses, observando-se o benefício máximo aos 3 meses."/>
+          <additionalInstruction>
+            <text value="Dado que doses mais elevadas de ácido acetilsalicílico estão associadas a um maior risco hemorrágico, recomenda-se que a dose de ácido acetilsalicílico não seja superior a 100 mg. A duração ótima do tratamento não foi formalmente estabelecida."/>
+          </additionalInstruction>
+          <additionalInstruction>
+            <text value="Se não for tomada uma dose: até 12 horas após a última toma, tomar de imediato e tomar a dose seguinte no horário normal; por mais de 12 horas, tomar a dose seguinte no horário habitual e não tomar a dose a dobrar."/>
+          </additionalInstruction>
+          <timing>
+            <repeat>
+              <boundsRange>
+                <high>
+                  <value value="12"/>
+                  <unit value="month"/>
+                  <system value="http://unitsofmeasure.org"/>
+                  <code value="mo"/>
+                </high>
+              </boundsRange>
+              <frequency value="1"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="75"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </doseQuantity>
+          </doseAndRate>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Adultos e idosos"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose de carga de 600 mg"/>
+        </type>
+        <dosage>
+          <text value="Uma dose de carga de 600 mg pode ser considerada em doentes com &lt;75 anos de idade, quando se pretende uma intervenção coronária percutânea."/>
+          <timing>
+            <repeat>
+              <count value="1"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="600"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </doseQuantity>
+          </doseAndRate>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Doentes idosos"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Uso não recomendado"/>
+        </type>
+        <dosage>
+          <text value="O clopidogrel não deve ser utilizado em crianças por motivos de eficácia."/>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="População pediátrica"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+  </indicationGuideline>
+  <indicationGuideline>
+    <indication>
+      <concept>
+        <text value="Enfarte agudo do miocárdio com elevação do segmento ST, em associação com ácido acetilsalicílico (AAS), em doentes submetidos a intervenção coronária percutânea (incluindo colocação de stent) ou em doentes sujeitos a tratamento médico indicados para terapêutica trombolítica/fibrinolítica"/>
+      </concept>
+    </indication>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Tratamento médico (terapêutica trombolítica/fibrinolítica): dose de carga"/>
+        </type>
+        <dosage>
+          <text value="Para doentes sujeitos a tratamento médico, indicados para terapêutica trombolítica/fibrinolítica, o clopidogrel deve ser iniciado com uma dose de carga de 300 mg."/>
+          <timing>
+            <repeat>
+              <count value="1"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="300"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </doseQuantity>
+          </doseAndRate>
+        </dosage>
+      </dosage>
+      <dosage>
+        <type>
+          <text value="Tratamento médico (terapêutica trombolítica/fibrinolítica): manutenção"/>
+        </type>
+        <dosage>
+          <text value="Seguida de dose única diária de 75 mg de clopidogrel em associação com o ácido acetilsalicílico (AAS) e com ou sem trombolíticos, durante pelo menos quatro semanas."/>
+          <additionalInstruction>
+            <text value="A terapêutica em associação deve ser iniciada o mais cedo possível, após o início dos sintomas. O benefício da associação do clopidogrel com o ácido acetilsalicílico além das 4 semanas não foi estudado neste contexto."/>
+          </additionalInstruction>
+          <additionalInstruction>
+            <text value="Se não for tomada uma dose: até 12 horas após a última toma, tomar de imediato e tomar a dose seguinte no horário normal; por mais de 12 horas, tomar a dose seguinte no horário habitual e não tomar a dose a dobrar."/>
+          </additionalInstruction>
+          <timing>
+            <repeat>
+              <boundsRange>
+                <low>
+                  <value value="4"/>
+                  <unit value="week"/>
+                  <system value="http://unitsofmeasure.org"/>
+                  <code value="wk"/>
+                </low>
+              </boundsRange>
+              <frequency value="1"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="75"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </doseQuantity>
+          </doseAndRate>
+        </dosage>
+      </dosage>
+      <dosage>
+        <type>
+          <text value="ICP primária ou ICP mais de 24 horas após terapêutica fibrinolítica: dose de carga"/>
+        </type>
+        <dosage>
+          <text value="O clopidogrel deve ser iniciado com uma dose de carga de 600 mg em doentes submetidos a ICP primária e em doentes submetidos a ICP mais de 24 horas após receberem terapêutica fibrinolítica."/>
+          <timing>
+            <repeat>
+              <count value="1"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="600"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </doseQuantity>
+          </doseAndRate>
+        </dosage>
+      </dosage>
+      <dosage>
+        <type>
+          <text value="ICP até 24 horas após terapêutica fibrinolítica: dose de carga"/>
+        </type>
+        <dosage>
+          <text value="A dose de carga de 300 mg de clopidogrel deve ser administrada em doentes submetidos a ICP até 24 horas após terem recebido terapêutica fibrinolítica."/>
+          <timing>
+            <repeat>
+              <count value="1"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="300"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </doseQuantity>
+          </doseAndRate>
+        </dosage>
+      </dosage>
+      <dosage>
+        <type>
+          <text value="ICP: manutenção"/>
+        </type>
+        <dosage>
+          <text value="O tratamento com clopidogrel deve ser continuado com 75 mg, uma vez ao dia, em associação com 75 mg - 100 mg de AAS diariamente, continuado até 12 meses."/>
+          <additionalInstruction>
+            <text value="A terapêutica combinada deve ser iniciada o mais cedo possível após o início dos sintomas."/>
+          </additionalInstruction>
+          <additionalInstruction>
+            <text value="Se não for tomada uma dose: até 12 horas após a última toma, tomar de imediato e tomar a dose seguinte no horário normal; por mais de 12 horas, tomar a dose seguinte no horário habitual e não tomar a dose a dobrar."/>
+          </additionalInstruction>
+          <timing>
+            <repeat>
+              <boundsRange>
+                <high>
+                  <value value="12"/>
+                  <unit value="month"/>
+                  <system value="http://unitsofmeasure.org"/>
+                  <code value="mo"/>
+                </high>
+              </boundsRange>
+              <frequency value="1"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="75"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </doseQuantity>
+          </doseAndRate>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Adultos e idosos"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Tratamento médico (terapêutica trombolítica/fibrinolítica)"/>
+        </type>
+        <dosage>
+          <text value="Em doentes com mais de 75 anos de idade, o clopidogrel deve ser iniciado sem dose de carga."/>
+        </dosage>
+      </dosage>
+      <dosage>
+        <type>
+          <text value="ICP primária ou ICP mais de 24 horas após terapêutica fibrinolítica"/>
+        </type>
+        <dosage>
+          <text value="Em doentes &gt;75 anos de idade, a dose de carga de 600 mg deve ser administrada com precaução."/>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Doentes idosos"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Uso não recomendado"/>
+        </type>
+        <dosage>
+          <text value="O clopidogrel não deve ser utilizado em crianças por motivos de eficácia."/>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="População pediátrica"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+  </indicationGuideline>
+  <indicationGuideline>
+    <indication>
+      <concept>
+        <text value="Em combinação com AAS, em doentes adultos com risco moderado a elevado de AIT (pontuação IPCD2 ≥ 4) ou AVC isquémico minor (NIHSS ≤ 3) até 24 horas após um AIT ou AVC isquémico"/>
+      </concept>
+    </indication>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose de carga"/>
+        </type>
+        <dosage>
+          <text value="Deve ser dada uma dose de carga de 300 mg de clopidogrel. O tratamento deve ser iniciado até 24 horas após o acontecimento."/>
+          <timing>
+            <repeat>
+              <count value="1"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="300"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </doseQuantity>
+          </doseAndRate>
+        </dosage>
+      </dosage>
+      <dosage>
+        <type>
+          <text value="Manutenção em associação com AAS"/>
+        </type>
+        <dosage>
+          <text value="Seguida de 75 mg de clopidogrel uma vez por dia e AAS (75 mg - 100 mg uma vez por dia), continuado por 21 dias seguindo-se terapia anti-plaquetária única."/>
+          <additionalInstruction>
+            <text value="Se não for tomada uma dose: até 12 horas após a última toma, tomar de imediato e tomar a dose seguinte no horário normal; por mais de 12 horas, tomar a dose seguinte no horário habitual e não tomar a dose a dobrar."/>
+          </additionalInstruction>
+          <timing>
+            <repeat>
+              <boundsDuration>
+                <value value="21"/>
+                <unit value="day"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="d"/>
+              </boundsDuration>
+              <frequency value="1"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="75"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </doseQuantity>
+          </doseAndRate>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Adultos e idosos"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Uso não recomendado"/>
+        </type>
+        <dosage>
+          <text value="O clopidogrel não deve ser utilizado em crianças por motivos de eficácia."/>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="População pediátrica"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+  </indicationGuideline>
+  <indicationGuideline>
+    <indication>
+      <concept>
+        <text value="Prevenção de acidentes aterotrombóticos e tromboembólicos, incluindo acidente vascular cerebral, em doentes adultos com fibrilhação auricular que têm pelo menos um fator de risco para acidentes vasculares, que não podem receber antagonistas da vitamina K e que têm um baixo risco hemorrágico, em combinação com AAS"/>
+      </concept>
+    </indication>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Dose única diária"/>
+        </type>
+        <dosage>
+          <text value="O clopidogrel deve ser administrado numa dose única diária de 75 mg."/>
+          <additionalInstruction>
+            <text value="O AAS (75-100 mg diários) deve ser iniciado e continuado em combinação com clopidogrel."/>
+          </additionalInstruction>
+          <additionalInstruction>
+            <text value="Se não for tomada uma dose: até 12 horas após a última toma, tomar de imediato e tomar a dose seguinte no horário normal; por mais de 12 horas, tomar a dose seguinte no horário habitual e não tomar a dose a dobrar."/>
+          </additionalInstruction>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="75"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </doseQuantity>
+          </doseAndRate>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="Adultos e idosos"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+    <dosingGuideline>
+      <dosage>
+        <type>
+          <text value="Uso não recomendado"/>
+        </type>
+        <dosage>
+          <text value="O clopidogrel não deve ser utilizado em crianças por motivos de eficácia."/>
+        </dosage>
+      </dosage>
+      <patientCharacteristic>
+        <type>
+          <text value="Population"/>
+        </type>
+        <valueCodeableConcept>
+          <text value="População pediátrica"/>
+        </valueCodeableConcept>
+      </patientCharacteristic>
+    </dosingGuideline>
+  </indicationGuideline>
+  <medicineClassification>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/medication-classification-type"/>
+        <code value="anatomical"/>
+      </coding>
+      <text value="Código ATC"/>
+    </type>
+    <classification>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ATC"/>
+        <code value="B01AC04"/>
+        <display value="Clopidogrel"/>
+      </coding>
+    </classification>
+  </medicineClassification>
+  <medicineClassification>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/medication-classification-type"/>
+        <code value="therapeutic"/>
+      </coding>
+      <text value="Grupo farmacoterapêutico"/>
+    </type>
+    <classification>
+      <text value="Antiagregantes plaquetários excluindo heparina"/>
+    </classification>
+  </medicineClassification>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Plavix75mg-CUD-ind1"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Plavix75mg-CUD-ind2"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Plavix75mg-CUD-ind3"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Plavix75mg-CUD-ind4"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Plavix75mg-CUD-ind5"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Plavix75mg-CUD-contra1"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Plavix75mg-CUD-contra2"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Plavix75mg-CUD-contra3"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Plavix75mg-CUD-contra4"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Plavix75mg-CUD-int1"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Plavix75mg-CUD-int2"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Plavix75mg-CUD-int3"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Plavix75mg-CUD-int4"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Plavix75mg-CUD-int5"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Plavix75mg-CUD-int6"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Plavix75mg-CUD-int7"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Plavix75mg-CUD-int8"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Plavix75mg-CUD-int9"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Plavix75mg-CUD-int10"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Plavix75mg-CUD-int11"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Plavix75mg-CUD-int12"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Plavix75mg-CUD-int13"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Plavix75mg-CUD-int14"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Plavix75mg-CUD-int15"/>
+  </clinicalUseIssue>
+  <clinicalUseIssue>
+    <reference value="ClinicalUseDefinition/Plavix75mg-CUD-int16"/>
+  </clinicalUseIssue>
+  <definitional>
+    <doseForm>
+      <coding>
+        <system value="http://example.com/fhir/example/CodeSystem/forma-farmaceutica-cs"/>
+        <code value="39"/>
+        <display value="Comprimido revestido por película"/>
+      </coding>
+    </doseForm>
+    <intendedRoute>
+      <coding>
+        <system value="http://example.com/fhir/example/CodeSystem/via-administracao-cs"/>
+        <code value="48"/>
+        <display value="Via oral"/>
+      </coding>
+    </intendedRoute>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Clopidogrel"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="ACTI"/>
+        </coding>
+      </type>
+      <strengthQuantity>
+        <value value="75"/>
+        <unit value="mg"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mg"/>
+      </strengthQuantity>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Lactose mono-hidratada"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+      <strengthQuantity>
+        <value value="3"/>
+        <unit value="mg"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mg"/>
+      </strengthQuantity>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Óleo de rícino hidrogenado"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+      <strengthQuantity>
+        <value value="3.3"/>
+        <unit value="mg"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mg"/>
+      </strengthQuantity>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Manitol (E421)"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Macrogol 6 000"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Celulose microcristalina"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Hidroxipropilcelulose pouco substituída"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Hipromelose (E464)"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Triacetina (E1518)"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Dióxido de titânio (E171)"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Óxido de ferro vermelho (E172)"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+    </ingredient>
+    <ingredient>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://infarmed.pt/substancia"/>
+            <code value="[PREENCHER]"/>
+            <display value="Cera de carnaúba"/>
+          </coding>
+        </concept>
+      </item>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="IACT"/>
+        </coding>
+      </type>
+    </ingredient>
+  </definitional>
+</MedicationKnowledge>

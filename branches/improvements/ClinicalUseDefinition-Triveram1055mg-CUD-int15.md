@@ -1,0 +1,70 @@
+# Triveram1055mg-CUD-int15 - HL7 PT FHIR Implementation Guide: IG de Exemplo Versão 1 | STU1 v1.0.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Triveram1055mg-CUD-int15**
+
+## Example ClinicalUseDefinition: Triveram1055mg-CUD-int15
+
+Profile: [Perfil do recurso para interações de medicação](StructureDefinition-InteracoesPDH.md)
+
+**type**: Interaction
+
+> **interaction**
+
+### Interactants
+
+| | |
+| :--- | :--- |
+| - | **Item[x]** |
+| * | Ácido fusídico (tratamento sistémico) |
+
+**type**: drug to drug interaction
+
+### Effects
+
+| | |
+| :--- | :--- |
+| - | **Concept** |
+| * | O risco de miopatia, incluindo rabdomiólise, pode estar aumentado com a administração concomitante de ácido fusídico sistémico com estatinas. |
+
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "ClinicalUseDefinition",
+  "id" : "Triveram1055mg-CUD-int15",
+  "meta" : {
+    "profile" : ["http://example.com/fhir/example/StructureDefinition/InteracoesPDH"]
+  },
+  "type" : "interaction",
+  "interaction" : {
+    "interactant" : [{
+      "itemCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "[PREENCHER]",
+          "display" : "Fusidic acid (substance)"
+        }],
+        "text" : "Ácido fusídico (tratamento sistémico)"
+      }
+    }],
+    "type" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/interaction-type",
+        "code" : "drug-drug",
+        "display" : "drug to drug interaction"
+      }]
+    },
+    "effect" : {
+      "concept" : {
+        "text" : "O risco de miopatia, incluindo rabdomiólise, pode estar aumentado com a administração concomitante de ácido fusídico sistémico com estatinas."
+      }
+    }
+  }
+}
+
+```
